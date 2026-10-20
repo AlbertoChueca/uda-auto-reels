@@ -1,0 +1,35 @@
+name: Comprobar conexiones
+
+# Cada lunes (y a mano): cuentas de Zernio, Gemini, reserva de piezas verificadas, fuentes y publicaciones de la semana.
+# Si algo crítico falla, el workflow sale en rojo y GitHub te avisa por correo.
+on:
+  schedule:
+    - cron: "7 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  comprobar:
+    if: github.event_name != 'schedule' || vars.ACTIVO == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: Comprobar
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_MATCH: ${{ vars.ZERNIO_MATCH || 'uniondearquitectos' }}
+          ZERNIO_IG_ACCOUNT: ${{ vars.ZERNIO_IG_ACCOUNT }}
+          ZERNIO_TT_ACCOUNT: ${{ vars.ZERNIO_TT_ACCOUNT }}
+          ZERNIO_LI_ACCOUNT: ${{ vars.ZERNIO_LI_ACCOUNT }}
+        run: python comprobar.py
+      - name: Guardar estado
+        if: always()
+        run: python sincronizar.py "Estado $(date +%F)" estado.md

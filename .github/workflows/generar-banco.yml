@@ -1,0 +1,48 @@
+name: Generar banco
+
+# Crea piezas nuevas (test, puntos clave y fichas) a partir de las fuentes (BOE y documentos/web de UDA), cada una con su
+# cita literal comprobada en código, y las verifica a continuación. Los domingos de madrugada (y a mano).
+on:
+  schedule:
+    - cron: "23 2 * * 0"
+  workflow_dispatch:
+    inputs:
+      llamadas:
+        description: "Cuántos fragmentos de fuente trabajar (cada uno da 2-4 piezas)"
+        default: "16"
+      verificar:
+        description: "Cuántas piezas pendientes verificar después"
+        default: "120"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: banco
+  cancel-in-progress: false
+
+jobs:
+  generar:
+    if: github.event_name != 'schedule' || vars.ACTIVO == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: Generar piezas
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generar_banco.py ${{ inputs.llamadas || '16' }}
+      - name: Guardar piezas nuevas
+        if: always()
+        run: python sincronizar.py "Banco generado $(date +%F)" banco/piezas.json banco/generado.json
+      - name: Verificar piezas
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python verifier.py ${{ inputs.verificar || '120' }}
+      - name: Guardar verificaciones
+        if: always()
+        run: python sincronizar.py "Verificación $(date +%F)" banco/verificacion.json banco/informe_verificacion.md

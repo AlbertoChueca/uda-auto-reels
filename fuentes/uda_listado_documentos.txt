@@ -1,0 +1,97 @@
+# UDA · Unión de Arquitectos · Listado de Documentos a Delegar · documento 02 de UDA · transcripción literal
+
+UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a delegar Marca lo que quieres delegar y en 24–72 horas tendrás tu presupuesto cerrado.
+PASO 1 Cuéntanos tu proyecto Datos, tipo de proyecto, superficies y entorno de trabajo (apartados 1 a 4). | PASO 2 Marca lo que delegas Haz clic en la casilla de cada documento que quieras que hagamos (apartados 5 a 8). | PASO 3 Envíalo desde la web Guarda el documento y súbelo en uniondearquitectos.com.
+Solo presupuestamos y hacemos lo que marques. Lo que no esté marcado se entiende que lo realiza tu despacho. Si más adelante necesitas algo más, lo valoramos contigo antes de hacerlo: tú decides siempre sobre plazos y costes. Los campos con * son imprescindibles para presupuestar. ¿Dudas sobre qué marcar? Marca lo que creas y explícalo en Observaciones: lo revisamos contigo al preparar el presupuesto.
+01 Datos del despacho y del proyecto
+Despacho *
+Persona de contacto *
+Email *
+Teléfono
+Nombre del proyecto
+Ubicación (municipio y provincia) *
+Plazo de entrega deseado
+02 Tipo de proyecto *
+Marca una opción. Si es una actuación específica, márcala también en el apartado 7.
+Vivienda unifamiliar | Reforma de vivienda
+Pareados / Adosados / Conjunto de unifamiliares | Bloque de viviendas
+Industrial y logístico | Equipamiento y servicios
+Actuación específica (apartado 7) | Otro:
+03 Superficies y viviendas
+Con estos datos calculamos tu presupuesto. Los apartados de viviendas solo si hay más de una.
+Dato | Valor | Aclaración
+Superficie construida total * | m² | Incluye garaje, trasteros, zonas comunes y locales. No cuentan jardines, parcela ni exteriores sin edificar.
+Nº total de viviendas | Solo en bloques y conjuntos de viviendas.
+Nº de viviendas tipo | Cada distribución distinta. Si la cocina o los baños cambian de sitio, es una vivienda tipo nueva.
+Nº de variantes | Misma vivienda con cambios menores: un tabique, un hueco, la terraza o su versión adaptada.
+Superficie de locales, oficinas o garaje público | m² | Solo si superan una cuarta parte del edificio.
+Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto.
+04 Entorno de trabajo y punto de partida *
+El precio del proyecto completo es el mismo en CAD y en Revit.
+Entorno de trabajo (marca uno)
+CAD (AutoCAD o similar) · entrega DWG + PDF | Revit arquitectura · modelo con sus familias · entrega IFC + PDF, y RVT con el pago final
+Si trabajas en Revit
+Instalaciones en Revit (3D): todas las instalaciones exigibles modeladas | Tengo plantilla o biblioteca de familias propia y quiero que la uséis
+Plan de Ejecución BIM (BEP) | Aporto mi propio modelo Revit
+¿De qué partimos? (marca uno)
+UDA hace también el Proyecto Básico | Mi despacho aporta el P. Básico en editable (DWG / RVT)
+Mi despacho aporta el P. Básico solo en PDF / bocetos | Rehabilitación: aporto levantamiento del estado actual
+05 Proyecto Básico
+La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad.
+Quiero el Proyecto Básico completo (si lo marcas, no hace falta marcar cada documento)
+Partida | Documento | Delegar
+Planimetría (en Revit: el modelado; en CAD: en DWG) | Plano de situación y emplazamiento (1:5.000 / 1:1.000)
+Plantas de propuesta (1:100 – 1:200)
+Alzados de propuesta (1:100 – 1:200)
+Secciones de propuesta (1:100 – 1:200)
+Planta de acabados, superficies y cotas
+Memoria | Memoria descriptiva, constructiva y estructural preliminar
+Cumplimiento del CTE: seguridad en caso de incendio (DB-SI)
+Normativa de aplicación y justificación urbanística
+Mediciones | Mediciones y presupuesto estimado
+06 Proyecto de Ejecución
+Para hacer el Proyecto de Ejecución es necesario el Proyecto Básico, nuestro o de tu despacho.
+Quiero el Proyecto de Ejecución completo (si lo marcas, no hace falta marcar cada documento)
+Partida | Documento | Delegar
+Construcción | Secciones y detalles constructivos 1:20
+Planos de acabados y superficies
+Planos de carpinterías
+Instalaciones (plantas 1:100 – 1:200) | Fontanería
+Saneamiento
+Electricidad y telecomunicaciones
+Climatización
+Ventilación
+Gas natural
+Estructuras | Cálculo y planos de estructura mediante CYPE
+Memoria | Memoria constructiva y estructural
+Cumplimiento completo del CTE (SE, SI, SUA, HS, HR, HE)
+Certificado de eficiencia energética (documento justificativo)
+Mediciones y anejos | Mediciones y presupuesto
+Pliego de condiciones
+Estudio de seguridad y salud
+Estudio de gestión de residuos
+Plan de control de calidad
+Si has marcado Instalaciones en Revit (3D) en el apartado 4, se incluyen todas las instalaciones exigibles: también protección contra incendios, red de tierras, alumbrado exterior y fotovoltaica.
+07 Actuaciones específicas
+Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto. No hace falta marcar los apartados 5 y 6.
+Instalación de ascensor en edificio existente · nº de paradas: ____ | Ascensor: incluir estructura del hueco y foso
+Ascensor exterior o en patio | Mejora de accesibilidad (rampa, salvaescaleras, portal)
+Cambio de uso a vivienda (local u oficina) | Adecuación de local: actividad inocua (comercio, oficina)
+Adecuación de local: actividad clasificada (hostelería, gimnasio, clínica…) | Licencia de actividad sin obra
+Rehabilitación de fachada · m² de fachada: ____ | Rehabilitación de cubierta · m² de cubierta: ____
+Legalización o planos de estado actual | Demolición
+Piscina privada exterior | Otra:
+08 Opciones adicionales
+Conceptualización de la idea y diseño del proyecto | Renders / infografías 3D · nº de vistas: ____
+Familias Revit a medida o singulares | Otros documentos:
+09 Observaciones
+Cualquier cosa que nos ayude a presupuestar mejor: condicionantes, dudas sobre qué marcar, fechas clave…
+10 Qué incluye y condiciones
+Incluye | No incluye
+Entrega en PDF + editables: DWG en CAD; en Revit, IFC durante el trabajo y RVT con el pago final. | Firma, visado y tramitación: la firma corresponde al despacho.
+1 revisión por fase (2 en bloques de 30 viviendas o más) para corregir errores menores. | Dirección de obra y coordinación de seguridad y salud en obra.
+Una primera compatibilización con estructuras e instalaciones contratadas. | Ensayos in situ, topografía y geotecnia, y certificaciones externas (LEED, BREEAM…).
+7 días naturales de soporte tras la entrega para dudas y erratas menores. | Rehacer planos por cambios ajenos a nuestro trabajo: se valoran antes como extra.
+En Revit, las familias estándar del proyecto, dentro del modelo. | Familias a medida o singulares, y la biblioteca de familias y plantillas de UDA como archivos independientes.
+Pagos por fases. Cada fase se paga por separado: 60 % al iniciarla y 40 % justo antes de su entrega. En P. Básico + P. Ejecución, el pago queda en cuatro momentos, para que valides cada entrega y nunca pagues todo de golpe. Después de aceptar el presupuesto te enviaremos el documento 03 · Información necesaria para empezar, con los datos técnicos que necesitamos para ponernos en marcha.
+Guarda este documento y súbelo en uniondearquitectos.com En 24–72 horas recibirás tu presupuesto cerrado, sin compromiso.

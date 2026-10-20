@@ -1,0 +1,130 @@
+name: Reels diarios
+
+on:
+  schedule:
+    # Publica hacia las 8:00 (TikTok + story de Instagram), 14:30 y 21:30 hora de España: arranca ~30 min antes y publica en cuanto el reel está listo
+    # (esperar a la hora exacta gasta minutos de GitHub; se puede activar con la variable PUBLISH_MAX_WAIT_MIN).
+    # GitHub usa UTC: el cron de verano (CEST) solo corre de marzo a octubre y el de invierno (CET) de octubre a marzo,
+    # así casi nunca se lanza un trabajo que no toca. En marzo y octubre corren los dos y "Elegir hueco" descarta uno.
+    - cron: "30 5 * 3-10 *"          # 7:30 verano (reel de las 8:00: TikTok + story de Instagram)
+    - cron: "30 6 * 1-3,10-12 *"     # 7:30 invierno
+    - cron: "57 11 * 3-10 *"         # 13:57 verano
+    - cron: "57 12 * 1-3,10-12 *"    # 13:57 invierno
+    - cron: "57 18 * 3-10 *"         # 20:57 verano
+    - cron: "57 19 * 1-3,10-12 *"    # 20:57 invierno
+  workflow_dispatch:
+    inputs:
+      formato:
+        description: "Formato (auto = lo elige el piloto automático)"
+        type: choice
+        options: [auto, test_normativa, error_tipico, mito_realidad, norma_30s, simulacro_3, caso_despacho, checklist, delegar, uda_servicio, repaso_express]
+        default: auto
+      estilo:
+        description: "Estilo visual (auto = lo elige el piloto automático)"
+        type: choice
+        options: [auto, piedra, carbon, plano, ficha, minimal, ilustrado]
+        default: auto
+      dry_run:
+        description: "Solo generar el vídeo (no publicar)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reels
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45     # tope: si algo se atasca no se come los minutos del mes
+    steps:
+      - name: Elegir hueco
+        id: slot
+        run: |
+          S="${{ github.event.schedule }}"
+          if [ -z "$S" ]; then echo "slot=manual" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "${{ vars.ACTIVO }}" != "true" ]; then echo "slot=skip" >> "$GITHUB_OUTPUT"; echo "Piloto apagado: pon la variable ACTIVO = true"; exit 0; fi
+          UTC_H=$(echo "$S" | awk '{print $2}')
+          OFF=$(TZ=Europe/Madrid date +%z | cut -c2-3 | sed 's/^0//')
+          LOCAL=$(( (UTC_H + OFF) % 24 ))
+          case "$LOCAL" in
+            7)  echo "slot=manana" >> "$GITHUB_OUTPUT" ;;
+            13) echo "slot=mediodia" >> "$GITHUB_OUTPUT" ;;
+            20) echo "slot=noche" >> "$GITHUB_OUTPUT" ;;
+            *)  echo "slot=skip" >> "$GITHUB_OUTPUT"; echo "Cron de la otra estación (hora local $LOCAL): no toca" ;;
+          esac
+
+      - uses: actions/checkout@v5
+        if: steps.slot.outputs.slot != 'skip'
+
+      - uses: actions/setup-python@v6
+        if: steps.slot.outputs.slot != 'skip'
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Paquetes del sistema
+        if: steps.slot.outputs.slot != 'skip'
+        run: command -v ffmpeg >/dev/null && command -v espeak-ng >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg espeak-ng)
+
+      - name: Paquetes de Python
+        if: steps.slot.outputs.slot != 'skip'
+        run: pip install -r requirements.txt
+
+      - name: Caché de modelos de voz y subtítulos
+        if: steps.slot.outputs.slot != 'skip'
+        uses: actions/cache@v4
+        with:
+          path: |
+            models
+            ~/.cache/huggingface
+          key: voces-es-uda-v1
+
+      - name: Voz de respaldo (Kokoro)
+        if: steps.slot.outputs.slot != 'skip'
+        run: |
+          mkdir -p models
+          [ -f models/kokoro.onnx ] || curl -sSL -o models/kokoro.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          [ -f models/voices.bin ]  || curl -sSL -o models/voices.bin  https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+
+      - name: Generar y publicar
+        if: steps.slot.outputs.slot != 'skip'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+          ELEVENLABS_VOICE_IDS: ${{ vars.ELEVENLABS_VOICE_IDS }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_MATCH: ${{ vars.ZERNIO_MATCH || 'uniondearquitectos' }}
+          ZERNIO_IG_ACCOUNT: ${{ vars.ZERNIO_IG_ACCOUNT }}
+          ZERNIO_TT_ACCOUNT: ${{ vars.ZERNIO_TT_ACCOUNT }}
+          ZERNIO_LI_ACCOUNT: ${{ vars.ZERNIO_LI_ACCOUNT }}
+          LINKEDIN_ORG_URN: ${{ vars.LINKEDIN_ORG_URN }}
+          VOICE_ENGINE: gemini
+          GEMINI_VOICE: ${{ vars.GEMINI_VOICE || 'Orus' }}
+          FORMAT_OVERRIDE: ${{ github.event_name == 'workflow_dispatch' && inputs.formato || 'auto' }}
+          STYLE_OVERRIDE: ${{ github.event_name == 'workflow_dispatch' && inputs.estilo || 'auto' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+          IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
+          IG_STORY: ${{ vars.IG_STORY || 'true' }}
+          TIKTOK: ${{ vars.TIKTOK || 'true' }}
+          TIKTOK_STORY_BORRADOR: ${{ vars.TIKTOK_STORY_BORRADOR || 'true' }}
+          LINKEDIN: ${{ vars.LINKEDIN || 'carrusel' }}
+          PUBLISH_MAX_WAIT_MIN: ${{ vars.PUBLISH_MAX_WAIT_MIN || '0' }}
+        run: python run_daily.py ${{ steps.slot.outputs.slot }}
+
+      - name: Guardar el vídeo para revisarlo
+        if: always() && steps.slot.outputs.slot != 'skip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ steps.slot.outputs.slot }}
+          path: out/**
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Recordar piezas usadas, verificaciones y aprendizajes
+        if: always() && steps.slot.outputs.slot != 'skip'
+        run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" used.json log.jsonl review_log.jsonl performance.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl agents

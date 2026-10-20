@@ -1,0 +1,82 @@
+name: Carrusel diario
+
+# Carrusel editorial (Instagram + TikTok modo foto + LinkedIn como documento PDF) a las 18:00 hora de España.
+# Interruptor: variable CARRUSEL = true (por defecto) / false. Tema o bloque concretos a mano al lanzarlo.
+on:
+  schedule:
+    - cron: "0 16 * 3-10 *"          # 18:00 verano (CEST)
+    - cron: "0 17 * 1-3,10-12 *"     # 18:00 invierno (CET)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Solo generar las imágenes (no publicar)"
+        type: boolean
+        default: true
+      bloque:
+        description: "Bloque (vacío = el del día)"
+        type: choice
+        options: [auto, normativa, proyecto, productividad, servicios]
+        default: auto
+      tema:
+        description: "Tema (opcional: cte_si, cte_proyecto, loe, cee, ess, rcd, uda_delegar, uda_servicios...). Vacío = el que toque"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: carrusel
+  cancel-in-progress: false
+
+jobs:
+  carrusel:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: ¿Toca hoy?
+        id: gate
+        run: |
+          S="${{ github.event.schedule }}"
+          if [ -n "$S" ] && [ "${{ vars.CARRUSEL || 'true' }}" = "false" ]; then echo "go=no" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ -n "$S" ] && [ "${{ vars.ACTIVO }}" != "true" ]; then echo "go=no" >> "$GITHUB_OUTPUT"; echo "Piloto apagado: pon la variable ACTIVO = true"; exit 0; fi
+          if [ -z "$S" ]; then echo "go=yes" >> "$GITHUB_OUTPUT"; exit 0; fi
+          UTC_H=$(echo "$S" | awk '{print $2}')
+          OFF=$(TZ=Europe/Madrid date +%z | cut -c2-3 | sed 's/^0//')
+          if [ $(( (UTC_H + OFF) % 24 )) -eq 18 ]; then echo "go=yes" >> "$GITHUB_OUTPUT"; else echo "go=no" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v5
+        if: steps.gate.outputs.go == 'yes'
+      - uses: actions/setup-python@v6
+        if: steps.gate.outputs.go == 'yes'
+        with:
+          python-version: "3.11"
+          cache: pip
+      - if: steps.gate.outputs.go == 'yes'
+        run: pip install pillow numpy requests
+      - name: Crear y publicar el carrusel
+        if: steps.gate.outputs.go == 'yes'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_MATCH: ${{ vars.ZERNIO_MATCH || 'uniondearquitectos' }}
+          ZERNIO_IG_ACCOUNT: ${{ vars.ZERNIO_IG_ACCOUNT }}
+          ZERNIO_TT_ACCOUNT: ${{ vars.ZERNIO_TT_ACCOUNT }}
+          ZERNIO_LI_ACCOUNT: ${{ vars.ZERNIO_LI_ACCOUNT }}
+          LINKEDIN_ORG_URN: ${{ vars.LINKEDIN_ORG_URN }}
+          IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
+          TIKTOK: ${{ vars.TIKTOK || 'true' }}
+          LINKEDIN: ${{ vars.LINKEDIN || 'carrusel' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+          CARRUSEL_TEMA: ${{ github.event_name == 'workflow_dispatch' && inputs.tema || '' }}
+          CARRUSEL_BLOQUE: ${{ github.event_name == 'workflow_dispatch' && inputs.bloque || '' }}
+        run: python carrusel.py
+      - name: Guardar las imágenes para revisarlas
+        if: always() && steps.gate.outputs.go == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: carrusel
+          path: out/**
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Recordar los temas publicados
+        if: always() && steps.gate.outputs.go == 'yes'
+        run: python sincronizar.py "Carrusel $(date +%F)" carruseles.json

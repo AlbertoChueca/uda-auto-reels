@@ -1,0 +1,29 @@
+name: Descargar fuentes
+
+# Descarga del BOE el texto oficial de las normas (CTE, LOE, RD 390/2021, RD 1627/1997, RD 105/2008, TRLSRU, LPH) y la
+# web de UDA, para que el generador y el verificador citen de verdad. El día 1 de cada mes se refresca todo (reformas).
+on:
+  schedule:
+    - cron: "41 1 1 * *"
+  workflow_dispatch:
+    inputs:
+      todas:
+        description: "Volver a descargar también las que ya están (tras una reforma)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  fuentes:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - run: python descargar_fuentes.py ${{ (github.event_name == 'schedule' || inputs.todas) && '--todas' || '' }}
+      - name: Guardar
+        run: python sincronizar.py "Fuentes $(date +%F)" fuentes

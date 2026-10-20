@@ -1,0 +1,7 @@
+pillow
+numpy
+soundfile
+requests
+num2words
+kokoro-onnx
+faster-whisper==1.1.1

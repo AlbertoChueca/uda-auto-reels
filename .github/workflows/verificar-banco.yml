@@ -1,0 +1,42 @@
+name: Verificar banco
+
+on:
+  schedule:
+    - cron: "17 3 * * 1,4"   # lunes y jueves de madrugada verifica lo pendiente (los reels verifican además lo que necesitan)
+  workflow_dispatch:
+    inputs:
+      cuantas:
+        description: "Cuántas piezas pendientes verificar"
+        default: "120"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: banco
+  cancel-in-progress: false
+
+jobs:
+  verificar:
+    if: github.event_name != 'schedule' || vars.ACTIVO == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: ¿Queda algo por verificar?
+        id: pend
+        run: |
+          N=$(python -c "import questions as Q; v=Q.verif(); print(sum(1 for p in Q.load() if p['id'] not in v and p.get('fuente_ok')))" 2>/dev/null || echo 1)
+          echo "pendientes=$N" >> "$GITHUB_OUTPUT"; echo "Piezas sin verificar: $N"
+      - name: Verificar
+        if: steps.pend.outputs.pendientes != '0'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python verifier.py ${{ inputs.cuantas || '120' }}
+      - name: Guardar resultados
+        if: always() && steps.pend.outputs.pendientes != '0'
+        run: python sincronizar.py "Verificación $(date +%F)" banco/verificacion.json banco/informe_verificacion.md
