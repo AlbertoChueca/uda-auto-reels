@@ -135,7 +135,10 @@ HECHOS CIERTOS DE UDA (solo para la descripción): {verifier.facts()}
 Elige UN subtema concreto de la fuente que funcione muy bien como carrusel (qué exige, qué documentos lleva, diferencias
 que se confunden, pasos, condiciones...). {("Evita estos subtemas ya publicados: " + "; ".join(avoid)) if avoid else ""}
 Reglas: cada frase debe poder comprobarse en la fuente; nada de "siempre/nunca/todos" si la fuente no lo dice; precios
-de UDA siempre como precio de referencia; sin emojis dentro de las diapositivas; escribe SOLO lo que se lee.
+de UDA siempre como precio de referencia; el plazo del presupuesto es SIEMPRE "24–72 horas" (nunca "24 h" a secas);
+lenguaje claro para el fundador de un despacho, sin jerga de coaching ("zona de genialidad", "mindset"...); la "clave" de
+cada lámina aporta algo concreto (margen, horas o riesgo que se evita), nunca repite la tarjeta; español de España;
+sin emojis dentro de las diapositivas; escribe SOLO lo que se lee.
 {("CORRIGE estos problemas que encontró el verificador en tu versión anterior: " + json.dumps(notes, ensure_ascii=False)) if notes else ""}
 Devuelve JSON exactamente con esta forma:
 {SCHEMA}"""
@@ -308,7 +311,7 @@ def _rich_tokens(text):
 
 
 def rich(text, size, maxw, color=INK2, hi=CARBON, path=F_REG, bold_path=F_BOLD, align="left", gap=1.32, draw_on=None, xy=(0, 0)):
-    """Texto con palabras clave en negrita (subrayado fino bronce). Devuelve la altura (y dibuja si draw_on)."""
+    """Texto con palabras clave en negrita (en tinta más clara, sin subrayado). Devuelve la altura (y dibuja si draw_on)."""
     toks = _rich_tokens(text)
     fn, fb = F(path, size), F(bold_path, size)
     sp = fn.getlength(" ")
@@ -327,9 +330,6 @@ def rich(text, size, maxw, color=INK2, hi=CARBON, path=F_REG, bold_path=F_BOLD, 
             ox = xy[0] + ((maxw - lw) / 2 if align == "center" else 0)
             y = xy[1] + li * lh
             for w, b, x in ws:
-                if b:
-                    wl = fb.getlength(w)
-                    d.rectangle([ox + x, y + size * 1.08, ox + x + wl, y + size * 1.08 + 3], fill=BRONCE + (200,))
                 d.text((ox + x, y), w, font=fb if b else fn, fill=hi if b else color)
     return lh * len(lines)
 
@@ -675,4 +675,4 @@ if __name__ == "__main__":
     except Exception as e:
         import traceback; traceback.print_exc(file=sys.stdout); raise
     finally:
-        _f.close()
+        sys.stdout = sys.stdout.a; _f.close()

@@ -50,9 +50,10 @@ def spaced(text, path, size, color, tracking=0.18):
     f = font(path, size); gap = size * tracking
     w = sum(f.getlength(c) for c in text) + gap * (len(text) - 1)
     bb = f.getbbox("ÁgÑ")
-    im = Image.new("RGBA", (int(w) + 4, bb[3] + 6), (0, 0, 0, 0)); d = ImageDraw.Draw(im); x = 0
+    top = max(0, -bb[1]) + 2                     # hueco para las tildes de las mayúsculas (Á, É...)
+    im = Image.new("RGBA", (int(w) + 4, bb[3] + top + 6), (0, 0, 0, 0)); d = ImageDraw.Draw(im); x = 0
     for c in text:
-        d.text((x, 0), c, font=f, fill=color); x += f.getlength(c) + gap
+        d.text((x, top), c, font=f, fill=color); x += f.getlength(c) + gap
     return im
 
 
