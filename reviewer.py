@@ -189,7 +189,8 @@ def review_video(path, S, caption):
         data = base64.b64encode(open(small, "rb").read()).decode()
         first, rest = (caption.split("\n", 1) + [""])[:2]
         res = _ask([{"text": f"""{PRODUCER}
-Mira este reel terminado (pregunta tipo test con cuenta atrás y solución, o 3 claves; cierre con la marca). Gancho: {S.get('screen_hook')!r}.
+Mira este reel terminado (3 claves, comparativa a dos columnas, dato de proyecto, mito o caso de despacho; cierre con la marca).
+Debe sentirse PREMIUM y elegante, para fundadores de despachos: ni repaso de examen ni anuncio de teletienda. Gancho: {S.get('screen_hook')!r}.
 Primera línea actual de la descripción: {first!r}
 
 Puntúa 1-10: gancho en 1,5 s, claridad, ritmo (ni lento ni atropellado), voz masculina natural en español de España, con energía (no plana), que diga lo

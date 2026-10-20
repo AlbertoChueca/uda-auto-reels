@@ -20,33 +20,38 @@ import verifier as V
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GEN = os.path.join(HERE, "banco", "generado.json")
-TARGET = {"normativa": 70, "proyecto": 45, "productividad": 20, "servicios": 25}       # reserva deseada (sin usar)
-PIDE = {"normativa": "2 de tipo test y 2 de tipo ficha", "proyecto": "1 de tipo puntos, 1 de tipo test y 1 de tipo ficha",
-        "productividad": "1 de tipo puntos y 1 de tipo test", "servicios": "1 de tipo puntos, 1 de tipo test y 1 de tipo ficha"}
+TARGET = {"negocio": 45, "contratar": 30, "servicios": 40, "proyecto": 40}          # reserva deseada (sin usar)
+PIDE = {"negocio": "1 de tipo puntos, 1 de tipo dato y 1 de tipo mito",
+        "contratar": "1 de tipo comparativa (columnas \"Contratar en plantilla\" y \"Contratar por servicios\"), 1 de tipo puntos y 1 de tipo mito",
+        "servicios": "1 de tipo comparativa (columnas \"En tu despacho\" y \"Delegado en UDA\"), 1 de tipo puntos y 1 de tipo dato",
+        "proyecto": "2 de tipo dato y 1 de tipo puntos"}
 GUIA = {
-    "normativa": "NORMATIVA: datos concretos y útiles para un arquitecto que redacta proyectos en España: qué exige la norma, "
-                 "cuándo se aplica, qué documento o agente interviene, qué valor o límite fija (solo si está en el texto).",
-    "proyecto": "CONSEJOS DE PROYECTO: qué conviene comprobar, incluir o justificar al redactar el Proyecto Básico o de "
-                "Ejecución para cumplir este texto. Los puntos en imperativo y en segunda persona (\"Comprueba...\", "
-                "\"Incluye...\", \"Justifica...\"), cada uno sacado directamente del texto, sin añadir requisitos.",
-    "productividad": "PRODUCTIVIDAD DEL DESPACHO: cómo ganar capacidad y facturar más sin ampliar plantilla, qué cuesta "
-                     "realmente contratar frente a delegar, recuperar tiempo para proyectar, plazos que no dependen de una "
-                     "sola persona. SOLO lo que dice el texto de UDA; cifras exactamente como aparecen.",
-    "servicios": "SERVICIOS DE UDA: qué hace UDA, qué incluye cada partida, cómo se presupuesta y se paga, CAD o Revit, "
-                 "actuaciones específicas, condiciones, qué no incluye. Un precio SIEMPRE como \"precio de referencia\" "
-                 "(el definitivo es el presupuesto cerrado). La firma corresponde siempre al despacho: UDA nunca firma.",
+    "negocio": "NEGOCIO DEL DESPACHO: cómo facturar más delegando, cómo mejorar el precio por hora del despacho, cómo ganar "
+               "capacidad para aceptar más encargos sin ampliar plantilla, dónde se va el tiempo del arquitecto (revisar, "
+               "formar, supervisar) frente a lo que se cobra mejor (proyectar, cliente, dirección). Se permiten conclusiones "
+               "y consejos razonados a partir del texto, pero toda cifra tiene que estar en el texto tal cual.",
+    "contratar": "CONTRATAR EN PLANTILLA O POR SERVICIOS: qué implica contratar a alguien indefinidamente (contrato, coste "
+                 "haya proyectos o no, formación, vacaciones, bajas, extinción) frente a contratar un servicio cerrado por "
+                 "proyecto. Con el Estatuto de los Trabajadores solo datos literales de la ley, sin asesoramiento laboral "
+                 "concreto; con los textos de UDA, sus datos tal cual.",
+    "servicios": "SERVICIOS DE UDA: cada tarea que UDA hace por el despacho (planimetría, memoria y CTE, instalaciones, "
+                 "estructuras con CYPE, mediciones, pliego, estudio de seguridad y salud, gestión de residuos, modelo Revit, "
+                 "actuaciones específicas...) y qué implicaría hacerla con equipo propio. Un precio SIEMPRE como \"precio de "
+                 "referencia\" (el definitivo es el presupuesto cerrado). La firma corresponde siempre al despacho.",
+    "proyecto": "DATOS DE PROYECTO QUE POCOS CONOCEN: lo que exige la norma que contenga un Proyecto Básico o de Ejecución, "
+                "qué documentos son obligatorios y cuándo, quién responde de qué, qué cambia en edificios grandes o de uso "
+                "residencial colectivo. Un dato sorprendente pero exacto, útil para un despacho que hace bloques.",
 }
+AUD = ("Público: fundadores y socios de despachos de arquitectura y arquitectos autónomos de España que proyectan bloques "
+       "de viviendas, promociones y edificios de envergadura. Son expertos con más encargos que horas: quieren facturar más, "
+       "mejorar su precio por hora y dedicar su tiempo a proyectar y a sus clientes. Nivel PREMIUM y elegante: nada de "
+       "obviedades ni definiciones de manual. Español de España, tuteo, de colega a colega; sin promesas ni estadísticas.")
 SCHEMA = """{"piezas": [
- {"tipo": "test", "pregunta": str (máx. 150 caracteres, clara, sin "según el texto"), "opciones": [str, str, str, str] (máx. 70 caracteres cada una, 1 correcta y 3 incorrectas verosímiles pero claramente falsas según el texto), "correcta": 0-3, "explicacion": str (15-40 palabras: por qué es la correcta), "cita": str, "referencia": str},
- {"tipo": "puntos", "titulo": str (2-7 palabras), "puntos": [str, str, str] (6-15 palabras cada uno), "citas": [str, ...] (1-3 citas literales que respaldan los puntos), "referencia": str},
- {"tipo": "ficha", "q": str (pregunta corta, máx. 100 caracteres), "a": str (respuesta corta y completa, máx. 140 caracteres), "cita": str, "referencia": str}
+ {"tipo": "puntos", "titulo": str (2-7 palabras, con gancho), "puntos": [str, str, str] (6-15 palabras cada uno), "citas": [str, ...] (1-3 citas literales que respaldan los puntos), "referencia": str},
+ {"tipo": "comparativa", "titulo": str (2-7 palabras), "col_a": str (1-4 palabras), "col_b": str (1-4 palabras), "filas": [{"aspecto": str (1-4 palabras), "a": str (2-10 palabras), "b": str (2-10 palabras)}, x3], "citas": [str, ...] (1-3 citas literales), "referencia": str},
+ {"tipo": "dato", "afirmacion": str (8-24 palabras: el dato, claro y sorprendente), "explicacion": str (15-38 palabras: por qué le importa a un despacho), "cita": str, "referencia": str},
+ {"tipo": "mito", "afirmacion": str (8-22 palabras: una creencia habitual en los despachos), "veredicto": "MITO"|"REALIDAD", "explicacion": str (15-38 palabras: lo que dice de verdad la fuente), "cita": str, "referencia": str}
 ]}"""
-AUD = ("Público: despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos). Son expertos: nivel PREMIUM, nada de obviedades ni "
-       "definiciones de diccionario; prioriza lo que pesa en bloques y proyectos grandes (uso residencial colectivo, "
-       "aparcamientos, zonas comunes, sectorización, evacuación, accesibilidad, ahorro de energía, agentes y responsabilidades)."
-       "  Español de España, tuteo, registro profesional y directo; nada de promesas ni de estadísticas.")
-
-
 def state():
     try:
         return json.load(open(GEN))
@@ -73,7 +78,28 @@ def clean(raw, tema, bloque, key, lab, txt, existing):
     W = lambda s: len(str(s or "").split())
     sp = lambda s: re.sub(r"\s+", " ", str(s or "")).strip()
     p = {"tema": tema, "bloque": bloque, "tipo": t, "norma": key, "fuente": lab, "referencia": sp(raw.get("referencia"))[:90]}
-    if t == "test":
+    if t == "comparativa":
+        filas = [{"aspecto": sp(f.get("aspecto")), "a": sp(f.get("a")), "b": sp(f.get("b"))} for f in (raw.get("filas") or [])[:3]]
+        citas = [sp(x) for x in (raw.get("citas") or [])][:3]
+        if (len(filas) != 3 or not all(1 <= W(f["aspecto"]) <= 5 and 1 <= W(f["a"]) <= 12 and 1 <= W(f["b"]) <= 12 for f in filas)
+                or not 1 <= W(raw.get("col_a")) <= 5 or not 1 <= W(raw.get("col_b")) <= 5 or not citas):
+            return None, "comparativa no válida"
+        p.update(titulo=sp(raw.get("titulo")), col_a=sp(raw.get("col_a")), col_b=sp(raw.get("col_b")), filas=filas,
+                 cita=citas[0], citas_extra=citas[1:])
+        claims = " ".join([p["titulo"]] + [f"{f['aspecto']} {f['a']} {f['b']}" for f in filas])
+        main = claims
+    elif t in ("dato", "mito"):
+        p.update(afirmacion=sp(raw.get("afirmacion")), explicacion=sp(raw.get("explicacion")), cita=sp(raw.get("cita")))
+        if t == "mito":
+            p["veredicto"] = sp(raw.get("veredicto")).upper()
+            if p["veredicto"] not in ("MITO", "REALIDAD"):
+                return None, "veredicto no válido"
+        if not 6 <= W(p["afirmacion"]) <= 26 or not 10 <= W(p["explicacion"]) <= 44:
+            return None, "longitudes"
+        claims = p["explicacion"] + (" " + p["afirmacion"] if t == "dato" or p.get("veredicto") == "REALIDAD" else "")
+        main = p["afirmacion"]
+        citas = [p["cita"]]
+    elif t == "test":
         ops = [sp(o) for o in (raw.get("opciones") or [])]
         try:
             c = int(raw.get("correcta"))

@@ -9,36 +9,26 @@ import json, os, re
 import questions as QB
 
 FORMATS = {
-    "test_normativa": "Test de normativa",
-    "error_tipico": "Error típico en proyecto",
+    "claves": "3 claves para el despacho",
+    "comparativa": "Comparativa: dos formas de hacerlo",
+    "dato": "Dato de proyecto que pocos conocen",
     "mito_realidad": "¿Mito o realidad?",
-    "norma_30s": "Normativa en 30 segundos",
-    "simulacro_3": "Test rápido: 3 preguntas",
     "caso_despacho": "Caso de despacho",
-    "checklist": "Checklist de proyecto",
-    "delegar": "Contratar o delegar",
-    "uda_servicio": "Así trabaja UDA",
-    "repaso_express": "Repaso exprés con 4 fichas",
 }
-AUDIENCE = """PÚBLICO: despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos). Profesionales
-expertos, exigentes y con más encargos que horas: no les cuentes obviedades ni definiciones de manual; háblales de lo que
-importa en un proyecto grande (uso residencial colectivo, aparcamientos, zonas comunes, sectorización, evacuación,
-plazos y responsabilidades). Nivel PREMIUM: preciso, útil y con criterio de arquitecto senior. Registro: de colega a
-colega, directo, con gancho y ritmo, nunca plano ni condescendiente ("¿sabías que...?" de manual no). Español de España, tuteo. Nada de promesas ("duplicarás tu
-facturación"), ni estadísticas inventadas ("el 80 % de los despachos..."), ni decir o insinuar que UDA firma: la firma es
-siempre del despacho."""
+AUDIENCE = """PÚBLICO: fundadores y socios de despachos de arquitectura y arquitectos autónomos de España que proyectan bloques
+de viviendas, promociones y edificios de envergadura. Profesionales expertos con más encargos que horas que quieren
+facturar más, cobrar mejor su hora y dedicar su tiempo a proyectar y a sus clientes. OBJETIVO: que vean, con datos
+ciertos y criterio, que delegar la documentación técnica en UDA les hace crecer. TONO: premium, elegante y seguro, de
+colega a colega, como un socio senior que comparte lo que sabe; con gancho y ritmo, nunca vendedor de teletienda, nunca
+condescendiente ni con "¿sabías que...?" de manual. Español de España, tuteo. Nada de promesas ("duplicarás tu
+facturación"), ni estadísticas inventadas, ni decir o insinuar que UDA firma: la firma es siempre del despacho."""
 
 SCHEMAS = {
-    "test_normativa": '"explicacion": str (18-38 palabras: por qué es la correcta, con lo que dice la fuente)',
-    "error_tipico": '"trampa": "A"|"B"|"C"|"D" (la opción INCORRECTA más tentadora), "trampa_porque": str (16-34 palabras: por qué engaña esa opción y qué dice de verdad la norma)',
-    "caso_despacho": '"escena": str (14-34 palabras, segunda persona y presente: un encargo o una situación real de despacho que lleva a la pregunta; SOLO ambientación, sin datos técnicos, cifras ni normas, sin revelar la respuesta), "escena_visual": str (máx. 40 palabras, la imagen de esa escena, sin texto), "explicacion": str (18-38 palabras: por qué es la correcta)',
-    "repaso_express": '"cierre_line": str (6-16 palabras, pregunta cuántas fichas sabía e invita a comentarlo y a guardar el reel)',
-    "mito_realidad": '"afirmacion": str (8-24 palabras, una frase afirmativa sacada de la pieza: o la respuesta correcta reformulada (REALIDAD) o una opción incorrecta reformulada (MITO)), "veredicto": "MITO"|"REALIDAD", "explicacion": str (14-34 palabras)',
-    "norma_30s": '"titulo_norma": str (2-8 palabras), "puntos": [str, str, str] (3 ideas clave de 5-14 palabras cada una, SOLO con datos de la cita, el fragmento de la fuente o la explicación)',
-    "simulacro_3": '"cierre_line": str (6-16 palabras, invita a comentar cuántas ha acertado, p. ej. 3/3)',
-    "checklist": '"intro_line": str (6-16 palabras: la voz presenta las 3 claves de la pieza sin adelantarlas)',
-    "delegar": '"intro_line": str (6-16 palabras: la voz presenta las 3 claves de la pieza sin adelantarlas)',
-    "uda_servicio": '"intro_line": str (6-16 palabras: la voz presenta las 3 claves de la pieza sin adelantarlas)',
+    "claves": '"intro_line": str (6-16 palabras: la voz presenta las 3 claves sin adelantarlas)',
+    "comparativa": '"intro_line": str (6-16 palabras: la voz plantea la disyuntiva de la comparativa)',
+    "dato": '"intro_line": str (6-16 palabras: la voz prepara el dato sin desvelarlo)',
+    "mito_realidad": '"intro_line": str (6-16 palabras: la voz presenta la creencia que vamos a comprobar)',
+    "caso_despacho": '"escena": str (14-34 palabras, segunda persona y presente: una situación real de despacho (un encargo grande que entra, una entrega encima, el equipo a tope) que lleve a las 3 claves; SOLO ambientación, sin cifras ni datos nuevos), "escena_visual": str (máx. 40 palabras, la imagen de esa escena, sin texto)',
 }
 WEB_RX = re.compile(r"uni[oó]n ?de ?arquitectos|uniondearquitectos", re.I)
 
@@ -87,11 +77,10 @@ Cada campo es EXACTAMENTE lo que se dice o se lee en pantalla: nunca escribas in
 Campos:
 - "screen_hook": texto GRANDE de los 2 primeros segundos (2-6 palabras, sin emojis): que un arquitecto deje de hacer scroll.
 - "hook_line": lo primero que dice la voz (5-14 palabras); no repitas literal el screen_hook.
-- "reveal_line": la voz da la solución (3-12 palabras), p. ej. "La correcta es la {P.get('letra', 'B')}." (solo la letra: NO vuelvas a leer el texto de la opción) (en formatos sin pregunta: una frase corta de transición).
-- {SCHEMAS.get(fmt, SCHEMAS['test_normativa'])}
-- "cta_line": cierre hablado (10-22 palabras) que lleve a uniondearquitectos.com con un hecho cierto de UDA (p. ej. delegar el proyecto con presupuesto cerrado en 24–72 horas); puedes decir "link en la bio".
+- {SCHEMAS[fmt]}
+- "cta_line": cierre hablado (10-22 palabras), elegante y nada agresivo, que lleve a uniondearquitectos.com con un hecho cierto de UDA (p. ej. delegar el proyecto con presupuesto cerrado en 24–72 horas, tu firma al final); puedes decir "link en la bio".
 - "caption_hook": primera línea de la descripción (máx. 12 palabras, como mucho 1 emoji).
-- "comment_prompt": invitación a comentar (máx. 12 palabras), p. ej. "Comenta A, B, C o D antes de ver la solución".
+- "comment_prompt": invitación a comentar (máx. 12 palabras), una pregunta abierta a un colega.
 No repitas ganchos recientes: {'; '.join(list(avoid)[-12:]) or 'ninguno'}.
 {("CORRIGE ESTOS PROBLEMAS QUE ENCONTRÓ EL VERIFICADOR:" + chr(10) + json.dumps(notes, ensure_ascii=False)) if notes else ""}
 Devuelve solo JSON con esos campos."""
@@ -176,30 +165,13 @@ def clean(fmt, items, s):
             out["reveal_line"] = base["reveal_line"]          # no vuelve a leer la opción: ya se ve marcada en pantalla
     if not WEB_RX.search(out["cta_line"]):
         out["cta_line"] = base["cta_line"]
-    if fmt == "error_tipico":
-        t = str(s.get("trampa") or "").strip().upper()[:1]
-        if t in QB.LETTERS and t != letra and out.get("trampa_porque"):
-            out["trampa"] = t
-        else:
-            raise ValueError("trampa no válida")
-    if fmt == "mito_realidad":
-        ver = str(s.get("veredicto") or "").strip().upper()
-        if ver not in ("MITO", "REALIDAD") or not _w(s.get("afirmacion"), 6, 26):
-            raise ValueError("mito/realidad no válido")
-        out["veredicto"] = ver
     if fmt == "caso_despacho":
         if not (_w(s.get("escena"), 12, 36) and not re.search(r"\d", s.get("escena", ""))):
             raise ValueError("escena no válida")
         out["escena"] = re.sub(r"\s+", " ", s["escena"]).strip()
         if _w(s.get("escena_visual"), 5, 45):
             out["escena_visual"] = s["escena_visual"].strip()
-    if fmt == "norma_30s":
-        pts = [p for p in (s.get("puntos") or []) if _w(p, 4, 16)]
-        if len(pts) != 3:
-            raise ValueError("puntos no válidos")
-        out["puntos"] = [re.sub(r"\s+", " ", p).strip() for p in pts]
-    if fmt in QB.POINTS_ONLY:                                 # los puntos verificados de la pieza, tal cual
-        out["titulo_norma"], out["puntos"] = P["titulo"], list(P["puntos"])
+    out.update(verified(fmt, P))                              # el contenido verificado de la pieza, tal cual
     allowed = _nums(source_text(items)) | {"3", "4", "30", "2"}
     for k, v in out.items():
         if k in ("trampa", "veredicto"):
@@ -226,36 +198,42 @@ def _short_expl(text, max_words=40):
     return res if len(res.split()) <= max_words + 12 else None
 
 
-CTA_DEFAULT = "Y si vas justo de equipo, delega el proyecto: presupuesto cerrado en 24–72 horas en uniondearquitectos.com."
+CTA_DEFAULT = "Si quieres crecer sin ampliar plantilla, delega el proyecto: presupuesto cerrado en 24–72 horas en uniondearquitectos.com."
+
+
+def verified(fmt, P):
+    """Textos verificados de la pieza que el reel usa TAL CUAL (la IA nunca los reescribe)."""
+    if P["tipo"] == "puntos":
+        return {"titulo_norma": P["titulo"], "puntos": list(P["puntos"])}
+    if P["tipo"] == "comparativa":
+        return {"titulo_norma": P["titulo"], "col_a": P["col_a"], "col_b": P["col_b"], "filas": [dict(f) for f in P["filas"]]}
+    if P["tipo"] in ("dato", "mito"):
+        out = {"afirmacion": P["afirmacion"], "explicacion": P["explicacion"]}
+        if P["tipo"] == "mito":
+            out["veredicto"] = P["veredicto"]
+        return out
+    return {}
 
 
 def template(fmt, items):
-    """Textos seguros sin IA: frases fijas + la explicación verificada de la pieza."""
+    """Textos seguros sin IA: frases fijas + el contenido verificado de la pieza."""
     P = items[0]
-    ex = _short_expl(P.get("explicacion", "")) or ""
-    letra = P.get("letra", "")
-    tema = QB.tema_corto(P.get("tema"))
-    hooks = {"test_normativa": ("¿Te lo sabes?", "Pregunta de normativa para arquitectos. A ver si la aciertas."),
-             "error_tipico": ("Ojo con la trampa", "Esta pregunta tiene trampa. Y en un proyecto, sale cara."),
+    hooks = {"claves": ("3 claves para tu despacho", "Tres claves que cambian cómo funciona un despacho."),
+             "comparativa": ("¿Contratar o delegar?", "Dos formas de sacar el trabajo. Compáralas."),
+             "dato": ("Pocos lo saben", "Un dato de proyecto que pocos arquitectos tienen presente."),
              "mito_realidad": ("¿Mito o realidad?", "Mito o realidad. Piénsalo antes de que lo diga."),
-             "norma_30s": ("Normativa en 30 segundos", "Normativa en treinta segundos. Lo que tienes que saber."),
-             "simulacro_3": ("¿Aciertas las 3?", "Tres preguntas rápidas de normativa. ¿Cuántas aciertas?"),
-             "caso_despacho": ("Caso de despacho", "Caso de despacho. Imagina que te llega este encargo."),
-             "checklist": ("Antes de entregar", "Tres cosas que revisar antes de entregar el proyecto."),
-             "delegar": ("¿Contratar o delegar?", "Contratar o delegar. Tres claves antes de decidir."),
-             "uda_servicio": ("Así trabaja UDA", "Así trabajamos en UDA, en tres claves."),
-             "repaso_express": ("4 fichas de repaso", f"Repaso exprés de {tema}. ¿Cuántas sabes?")}
+             "caso_despacho": ("Caso de despacho", "Caso de despacho. Imagina que te llega este encargo.")}
     sh, hl = hooks[fmt]
-    return {"screen_hook": sh, "hook_line": hl, "reveal_line": f"La correcta es la {letra}." if letra else "Vamos allá.",
-            "explicacion": ex, "intro_line": "Tres claves. Guárdalo para tu próximo proyecto.",
-            "cta_line": CTA_DEFAULT,
-            "caption_hook": {"delegar": "¿Contratar a alguien o delegar? 📐", "uda_servicio": "Así trabajamos en UDA 📐",
-                             "checklist": "Revísalo antes de entregar el proyecto 📐"}.get(fmt, "¿La aciertas sin mirar la norma? 📐"),
-            "comment_prompt": ("Comenta cuántas sabías, del 0 al 4" if fmt == "repaso_express"
-                               else "¿Qué añadirías tú? Te leemos en comentarios" if fmt in QB.POINTS_ONLY
-                               else "Comenta A, B, C o D antes de ver la solución"),
-            "cierre_line": ("¿Cuántas sabías? Coméntalo y guarda el reel para repasar." if fmt == "repaso_express"
-                            else "¿Cuántas has acertado? Comenta tu resultado, del cero al tres.")}
+    if fmt == "comparativa" and P.get("col_a"):
+        b = P["col_b"] if P["col_b"][:3].isupper() or P["col_b"].split()[0].isupper() else P["col_b"][0].lower() + P["col_b"][1:]
+        sh = f"{P['col_a']} o {b}" if len(f"{P['col_a']} o {b}".split()) <= 6 else sh
+    return {"screen_hook": sh, "hook_line": hl, "reveal_line": "Vamos allá.",
+            "intro_line": "Tres claves. Guárdalo para cuando lo necesites.", "cta_line": CTA_DEFAULT,
+            "caption_hook": {"comparativa": "Dos formas de sacar el trabajo adelante 📐", "dato": "Un dato de proyecto que pocos tienen presente 📐",
+                             "mito_realidad": "¿Mito o realidad en tu despacho? 📐"}.get(fmt, "Lo que cambia en un despacho que delega 📐"),
+            "comment_prompt": {"mito_realidad": "¿Mito o realidad? Te leemos en comentarios",
+                               "comparativa": "¿Tú qué eliges? Te leemos en comentarios"}.get(fmt, "¿Qué añadirías tú? Te leemos en comentarios"),
+            "cierre_line": "", **verified(fmt, P)}
 
 
 def script_for(fmt, items, arms=None, avoid=(), verify=True, series_info=None):
@@ -291,13 +269,9 @@ def script_for(fmt, items, arms=None, avoid=(), verify=True, series_info=None):
                 return s, fmt, "ia"
             notes = probs
             print(f"verificador: guion rechazado: {json.dumps(probs, ensure_ascii=False)[:300]}", flush=True)
-    if fmt in ("error_tipico", "mito_realidad", "norma_30s", "caso_despacho"):
+    if fmt == "caso_despacho":
         raise RuntimeError(f"el formato {fmt} necesita un guion verificado")
     s = strip_meta(fmt, items, template(fmt, items))
-    if fmt in QB.POINTS_ONLY:
-        s["titulo_norma"], s["puntos"] = items[0]["titulo"], list(items[0]["puntos"])
     if series_info:
         s["series"] = series_info["series"]; s["follow_line"] = f"Mañana: {series_info['manana']}. Síguenos"
-    if not s["explicacion"] and fmt not in ("simulacro_3", "repaso_express") and fmt not in QB.POINTS_ONLY:
-        raise RuntimeError("la explicación de la pieza es demasiado larga para el reel")
     return s, fmt, "plantilla"

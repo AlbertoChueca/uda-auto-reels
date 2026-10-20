@@ -4,8 +4,8 @@ name: Carrusel diario
 # Interruptor: variable CARRUSEL = true (por defecto) / false. Tema o bloque concretos a mano al lanzarlo.
 on:
   schedule:
-    - cron: "0 16 * 3-10 *"          # 18:00 verano (CEST)
-    - cron: "0 17 * 1-3,10-12 *"     # 18:00 invierno (CET)
+    - cron: "25 15 * 3-10 *"         # 17:25 verano (CEST): prepara y publica a las 18:00 en punto
+    - cron: "25 16 * 1-3,10-12 *"    # 17:25 invierno (CET)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -15,10 +15,10 @@ on:
       bloque:
         description: "Bloque (vacío = el del día)"
         type: choice
-        options: [auto, normativa, proyecto, productividad, servicios]
+        options: [auto, negocio, contratar, servicios, proyecto]
         default: auto
       tema:
-        description: "Tema (opcional: cte_si, cte_proyecto, loe, cee, ess, rcd, uda_delegar, uda_servicios...). Vacío = el que toque"
+        description: "Tema (opcional: uda_delegar, uda_servicios, contratacion, cte_proyecto, loe, cee, ess, rcd...). Vacío = el que toque"
         default: ""
 
 permissions:
@@ -31,7 +31,7 @@ concurrency:
 jobs:
   carrusel:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 75
     steps:
       - name: ¿Toca hoy?
         id: gate
@@ -40,9 +40,7 @@ jobs:
           if [ -n "$S" ] && [ "${{ vars.CARRUSEL || 'true' }}" = "false" ]; then echo "go=no" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ -n "$S" ] && [ "${{ vars.ACTIVO }}" != "true" ]; then echo "go=no" >> "$GITHUB_OUTPUT"; echo "Piloto apagado: pon la variable ACTIVO = true"; exit 0; fi
           if [ -z "$S" ]; then echo "go=yes" >> "$GITHUB_OUTPUT"; exit 0; fi
-          UTC_H=$(echo "$S" | awk '{print $2}')
-          OFF=$(TZ=Europe/Madrid date +%z | cut -c2-3 | sed 's/^0//')
-          if [ $(( (UTC_H + OFF) % 24 )) -eq 18 ]; then echo "go=yes" >> "$GITHUB_OUTPUT"; else echo "go=no" >> "$GITHUB_OUTPUT"; fi
+          H=$(TZ=Europe/Madrid date +%-H); if [ "$H" = "17" ] || [ "$H" = "18" ]; then echo "go=yes" >> "$GITHUB_OUTPUT"; else echo "go=no" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/checkout@v5
         if: steps.gate.outputs.go == 'yes'
       - uses: actions/setup-python@v6
@@ -67,6 +65,7 @@ jobs:
           TIKTOK: ${{ vars.TIKTOK || 'true' }}
           LINKEDIN: ${{ vars.LINKEDIN || 'carrusel' }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+          PUBLISH_AT: ${{ github.event_name == 'schedule' && '18:00' || '' }}
           CARRUSEL_TEMA: ${{ github.event_name == 'workflow_dispatch' && inputs.tema || '' }}
           CARRUSEL_BLOQUE: ${{ github.event_name == 'workflow_dispatch' && inputs.bloque || '' }}
         run: python carrusel.py

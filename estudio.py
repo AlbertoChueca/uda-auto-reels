@@ -49,13 +49,15 @@ ROLES = {
 }
 NAMES = list(ROLES)
 
-# Serie fija de cada día (0 = lunes). El hueco de mediodía sigue la serie; los de las 8:00 y las 21:30 los elige el piloto.
-SERIES = {0: ("Lunes de normativa", "norma_30s"), 1: ("Martes de errores de proyecto", "error_tipico"),
-          2: ("Miércoles de despacho", "delegar"), 3: ("Jueves de checklist", "checklist"),
-          4: ("Viernes de mitos", "mito_realidad"), 5: ("Sábado de repaso", "repaso_express"),
-          6: ("Domingo de test", "simulacro_3")}
+# Serie fija de cada día (0 = lunes). El reel de las 12:00 sigue la serie; los de las 8:00 y las 15:00 los elige el piloto.
+SERIES = {0: ("Lunes de facturación", "claves"), 1: ("Martes de contratar o delegar", "comparativa"),
+          2: ("Miércoles de datos de proyecto", "dato"), 3: ("Jueves de mitos del despacho", "mito_realidad"),
+          4: ("Viernes de casos de despacho", "caso_despacho"), 5: ("Sábado de lo que delegas", "comparativa"),
+          6: ("Domingo de productividad", "claves")}
 
-AUDIENCE = ("Público: despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos); expertos y exigentes: contenido premium, nada de obviedades. Español de España, de colega a colega, profesional y directo, nunca condescendiente; sin "
+AUDIENCE = ("Público: fundadores y socios de despachos de arquitectura y arquitectos autónomos de España que proyectan "
+            "bloques, promociones y edificios de envergadura; quieren facturar más, cobrar mejor su hora y delegar. "
+            "Contenido premium y elegante, nada de obviedades. Español de España, de colega a colega, profesional y directo, nunca condescendiente; sin "
             "promesas ni estadísticas inventadas; UDA nunca firma (la firma es del despacho).")
 
 

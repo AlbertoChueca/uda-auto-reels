@@ -5,8 +5,8 @@ bronce y trazado técnico dibujado en código.
 Qué es: un tema concreto (una sección del DB SI, el contenido del proyecto según el CTE, qué cuesta contratar frente a
 delegar, qué incluye un Proyecto de Ejecución delegado...) explicado en diapositivas, un "¿Te atreves?" con una pieza
 tipo test ya verificada del mismo tema y la solución + cierre con UDA en la última.
-Bloque de cada día: lunes normativa · martes proyecto · miércoles productividad · jueves normativa · viernes servicios ·
-sábado normativa · domingo proyecto.
+Bloque de cada día: lunes negocio · martes datos de proyecto · miércoles contratar o delegar · jueves servicios ·
+viernes negocio · sábado datos de proyecto · domingo servicios. Se publica a las 18:00 en punto (PUBLISH_AT).
 
 Rigor (igual que en los reels, más estricto):
 - Todo sale SOLO de UN o DOS fragmentos reales de la fuente del tema (BOE o documentos/web de UDA).
@@ -30,9 +30,9 @@ LOG = os.path.join(HERE, "carruseles.json")
 W, H = 1080, 1350                                        # 4:5, el formato vertical de carrusel de Instagram
 M = 84                                                   # margen
 MOCK = os.environ.get("QUIZ_MOCK") == "1"
-PLAN = {0: "normativa", 1: "proyecto", 2: "productividad", 3: "normativa", 4: "servicios", 5: "normativa", 6: "proyecto"}
-ETIQUETA = {"normativa": "NORMATIVA", "proyecto": "CONSEJOS DE PROYECTO", "productividad": "PRODUCTIVIDAD DEL DESPACHO",
-            "servicios": "ASÍ TRABAJA UDA"}
+PLAN = {0: "negocio", 1: "proyecto", 2: "contratar", 3: "servicios", 4: "negocio", 5: "proyecto", 6: "servicios"}
+ETIQUETA = {"negocio": "FACTURAR MÁS EN TU DESPACHO", "contratar": "CONTRATAR O DELEGAR", "servicios": "LO QUE PUEDES DELEGAR",
+            "proyecto": "DATOS DE PROYECTO"}
 INK2 = (70, 66, 62)                                       # texto de lectura (más contraste que el gris de los documentos)
 
 
@@ -89,9 +89,11 @@ def quiz_question(tema, seed):
 
 # ------------------------------------------------------------------ 2. guion (IA) y verificación
 ROLE = """Eres el EDITOR de los carruseles de UDA · Unión de Arquitectos (uniondearquitectos.com), un estudio online que hace
-de departamento técnico externo para despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos). Nivel PREMIUM, nada de obviedades. Haces carruseles para Instagram,
-TikTok y LinkedIn que un arquitecto GUARDA para consultarlos al redactar su próximo proyecto y ENVÍA a su socio:
-claros, ordenados, rigurosos y con un diseño editorial sobrio. Escribes en español de España, de colega a colega,
+de departamento técnico externo para despachos de arquitectura. Tu público son fundadores y socios de despachos y
+arquitectos autónomos de España que proyectan bloques, promociones y edificios de envergadura: quieren facturar más,
+cobrar mejor su hora y dedicar su tiempo a proyectar. Haces carruseles para Instagram, TikTok y LinkedIn, PREMIUM y
+elegantes, que un fundador GUARDA y ENVÍA a su socio: claros, rigurosos, con criterio de socio senior, nada de
+obviedades ni tono de teletienda. Escribes en español de España, de colega a colega,
 profesional y directo, sin promesas ni estadísticas; UDA nunca firma (la firma es del despacho)."""
 
 SCHEMA = """{
@@ -584,7 +586,7 @@ def main():
             print(f"carrusel: tema {tema} descartado: {str(e)[:200]}", flush=True); c = None
     if not c:
         raise SystemExit("hoy no hay carrusel verificado (mejor no publicar que publicar un error)")
-    P = quiz_question(tema, seed)
+    P = None                                               # sin test: no es contenido de repaso
     paths, pdf = render(c, P, bloque, tema, out_dir, seed)
     score = None
     if not MOCK:                                           # nivel premium: por debajo de 8 no se publica
@@ -598,7 +600,7 @@ def main():
                     sel2, c2 = content_for(tema2, bloque, f"{seed}-r{attempt}")
                 except Exception as e:
                     print("carrusel: reintento sin contenido:", str(e)[:150], flush=True); continue
-                P2 = quiz_question(tema2, seed)
+                P2 = None
                 paths2, pdf2 = render(c2, P2, bloque, tema2, out_dir, seed)
                 s2, probs = review(paths2, c2, tema2)
                 print(f"carrusel: reintento {tema2} {s2}/10 {probs[:3]}", flush=True)
@@ -610,6 +612,18 @@ def main():
     cap = caption(c, P)
     open(os.path.join(out_dir, "descripcion.txt"), "w").write(cap)
     print(f"carrusel: {QB.tema_titulo(tema)} · {c['subtema']} · {len(paths)} imágenes", flush=True)
+    if not dry and os.environ.get("PUBLISH_AT"):           # espera a las 18:00 en punto (hora de España)
+        try:
+            import time
+            from zoneinfo import ZoneInfo
+            hh, mm = map(int, os.environ["PUBLISH_AT"].split(":"))
+            now = datetime.datetime.now(ZoneInfo("Europe/Madrid"))
+            secs = (now.replace(hour=hh, minute=mm, second=0, microsecond=0) - now).total_seconds()
+            if 0 < secs <= 3600:
+                print(f"carrusel: espero {secs / 60:.1f} min para publicar a las {hh}:{mm:02d}", flush=True)
+                time.sleep(secs)
+        except Exception as e:
+            print("carrusel: sin espera:", str(e)[:100], flush=True)
     res = {} if dry else publish(paths, pdf, cap, c)
     print("publicación:", json.dumps(res, ensure_ascii=False), flush=True)
     ok = any(isinstance(v, str) and not v.startswith("error") for v in res.values())

@@ -64,7 +64,7 @@ total = sum(pub.values())
 ok("Banco verificado", total >= 40, f"{total} piezas publicables sin usar ({', '.join(f'{k} {n}' for k, n in pub.items())}) · "
    f"{sum(pend.values())} pendientes de verificar · ~{total // 4} días de reserva"
    + ("" if total >= 40 else " · lanza 'Generar banco'"), total < 6)
-for b in ("productividad", "servicios"):
+for b in ("negocio", "contratar", "servicios", "proyecto"):
     ok(f"Piezas de {b}", pub[b] >= 3, f"{pub[b]} publicables" + ("" if pub[b] >= 3 else " · lanza 'Generar banco'"))
 try:
     cfg = json.load(open("fuentes/fuentes.json"))["normas"]

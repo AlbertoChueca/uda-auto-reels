@@ -1,64 +1,58 @@
 # UDA · Unión de Arquitectos – Publicación automática
 
-Publica sola, cada día, **3 reels con voz y un carrusel** en **Instagram, TikTok y LinkedIn** (@uniondearquitectos, todo vía
-**Zernio**) para que los arquitectos de **toda España** sigan la cuenta y, cuando vayan justos de equipo, deleguen sus
-Proyectos Básicos y de Ejecución en **uniondearquitectos.com**. Es el mismo motor que *Aprueba TCAE* (verificador, piloto
-automático, agentes, voz controlada por reconocimiento de voz), adaptado a UDA.
+Publica sola, cada día, **3 reels con voz y 1 carrusel** en **Instagram** (directo por la API de Meta), **TikTok** y
+**LinkedIn** (vía Zernio) como @uniondearquitectos. Público: **fundadores y socios de despachos de arquitectura y
+arquitectos autónomos** que proyectan bloques, promociones y edificios de envergadura. Objetivo: que vean, con datos
+ciertos y criterio de socio senior, que delegar la documentación técnica en UDA les hace facturar más y cobrar mejor su
+hora. Contenido premium y elegante: ni repaso de examen ni teletienda.
 
 | Hora (España) | Qué | Instagram | TikTok | LinkedIn |
 |---|---|---|---|---|
-| 8:00 | Reel (`manana`) | Story (el reel completo) | Reel | — |
-| 14:30 | Reel (`mediodia`, serie del día) | Reel + story de 12 s | Reel (+ story al buzón como borrador) | — |
+| 8:00 | Reel (`manana`) | Reel + story de 12 s | Reel (+ story al buzón) | — |
+| 12:00 | Reel (`mediodia`, serie del día) | Reel + story | Reel (+ story al buzón) | — |
+| 15:00 | Reel (`tarde`) | Reel + story | Reel (+ story al buzón) | — |
 | 18:00 | Carrusel | Carrusel | Carrusel de fotos | **Documento PDF** (1 al día) |
-| 21:30 | Reel (`noche`) | Reel + story de 12 s | Reel (+ borrador) | — |
 
-**LinkedIn: como máximo una publicación al día.** Por defecto es el carrusel (como documento PDF, el formato de carrusel
-de LinkedIn). Con la variable `LINKEDIN` = `manana`, `mediodia` o `noche` va ese reel en su lugar; `false` lo apaga. El
-código comprueba antes de publicar que hoy no hay ya nada en LinkedIn. Sin YouTube.
+Cada workflow arranca ~45 min antes, genera, verifica y revisa, y **espera a la hora exacta** para publicar.
+**LinkedIn: como máximo una publicación al día** (por defecto el carrusel; con `LINKEDIN` = `manana`, `mediodia` o
+`tarde` va ese reel). El cambio de horario verano/invierno se gestiona solo.
 
 ## Contenido: 4 bloques
-| Bloque | Qué | De dónde sale |
+| Bloque | Qué | De dónde salen los datos |
 |---|---|---|
-| **Normativa** | CTE y sus DB, LOE, certificación energética, seguridad y salud, residuos, Ley de Suelo, Propiedad Horizontal | Texto oficial del **BOE** |
-| **Proyecto** | Consejos de proyecto: qué comprobar, incluir o justificar | Texto oficial del **BOE** |
-| **Productividad** | Escalar la facturación del despacho, contratar frente a delegar | Documentos y web de UDA |
-| **Servicios** | Qué hace UDA, partidas, precios de referencia, pagos 60/40, CAD o Revit | Documentos y web de UDA |
+| **Negocio** | Facturar más delegando, mejorar el precio/hora, productividad, crecer sin ampliar plantilla | Documentos y web de UDA |
+| **Contratar** | Contratar a alguien indefinidamente frente a contratar por servicios | Estatuto de los Trabajadores (BOE) + documentos de UDA |
+| **Servicios** | Todo lo que UDA hace y lo que implicaría hacerlo con equipo propio | Tabla de presupuestos, listado de documentos y web |
+| **Proyecto** | Datos de Proyectos Básicos y de Ejecución que pocos conocen | CTE y sus DB, LOE, RD 390/2021, RD 1627/1997, RD 105/2008 (BOE) |
 
-Los servicios salen **solo** de la *Tabla de Referencia de Presupuestos 2026*, del *Listado de Documentos a Delegar*
-(transcritos en `fuentes/uda_*.txt`) y de la web. Los precios se presentan siempre como precios de referencia y nunca se
-dice que UDA firma: la firma es del despacho.
+Se admiten conclusiones y consejos razonados, pero **toda cifra sale literal de una fuente**; los precios van siempre
+como precios de referencia y nunca se dice que UDA firma (la firma es del despacho).
 
 ## Formatos de reel
 | Formato | Qué es |
 |---|---|
-| `test_normativa` | Pregunta tipo test, cuenta atrás, solución en bronce y explicación con su fuente |
-| `error_tipico` | Marca la opción trampa y explica por qué engaña |
-| `mito_realidad` | Afirmación, cuenta atrás y sello MITO / REALIDAD |
-| `norma_30s` | 3 ideas clave de una norma + pregunta rápida |
-| `simulacro_3` | 3 preguntas cortas seguidas; "¿cuántas has acertado?" |
-| `caso_despacho` | Escena de despacho ("Te entra un encargo de 12 adosados…") que lleva a la pregunta |
-| `checklist` | 3 claves de proyecto (sin pregunta) |
-| `delegar` | 3 claves de productividad: contratar o delegar |
-| `uda_servicio` | 3 claves de cómo trabaja UDA |
-| `repaso_express` | 4 fichas que se giran; "¿cuántas sabías?" |
+| `claves` | 3 claves (facturar más, precio/hora, qué implica una tarea...) que aparecen al decirlas |
+| `comparativa` | Dos columnas enfrentadas ("Contratar en plantilla" / "Contratar por servicios", "En tu despacho" / "Delegado en UDA") |
+| `dato` | Un dato de proyecto que pocos conocen + por qué le importa al despacho |
+| `mito_realidad` | Una creencia habitual del despacho, cuenta atrás y sello MITO / REALIDAD |
+| `caso_despacho` | Escena ("Te entra un encargo de 80 viviendas y tu equipo ya va a tope…") + 3 claves |
 
-**Series fijas (14:30):** lunes normativa · martes errores de proyecto · miércoles despacho (delegar) · jueves checklist ·
-viernes mitos · sábado repaso · domingo test. Las 8:00 y las 21:30 las elige el piloto automático, que aprende de los
-resultados reales (guardados, compartidos, comentarios, clics, visionado) y además deja descansar los formatos comerciales
-(`uda_servicio` como mucho 1 de cada 6 reels, `delegar` 1 de cada 3) para que la cuenta no parezca un anuncio.
+**Series (12:00):** lunes facturación (claves) · martes contratar o delegar (comparativa) · miércoles datos de proyecto ·
+jueves mitos del despacho · viernes casos de despacho · sábado lo que delegas (comparativa) · domingo productividad.
+Las 8:00 y las 15:00 las elige el piloto automático, que aprende de los resultados reales.
 
-**Carrusel (18:00):** lunes normativa · martes proyecto · miércoles productividad · jueves normativa · viernes servicios ·
-sábado normativa · domingo proyecto. Portada carbón, 3-5 diapositivas con fuente, "¿Te atreves?" con un test verificado y
-cierre con UDA.
+**Carrusel (18:00):** lunes negocio · martes datos de proyecto · miércoles contratar o delegar · jueves servicios ·
+viernes negocio · sábado datos de proyecto · domingo servicios.
+
+**Calidad mínima:** cada pieza tiene una nota de calidad del verificador (≥ 7 para entrar); cada reel necesita **8 o
+más** de la directora de arte y del revisor del vídeo, y cada carrusel 8 o más de su revisión. Si no llega, se prueba
+otro formato o tema; si nada llega, ese hueco no se publica.
 
 **Estilos visuales** (los prueba el piloto): `piedra` (como los documentos), `carbon`, `plano` (ejes y cotas), `ficha`
 (cajetín de plano), `minimal`, `ilustrado` (imagen de arquitectura generada y revisada por IA). Colores de los documentos
-(carbón `#2b2b2b`, piedra `#f3f0ec`/`#d8d2ca`, bronce `#7a6a58`, arena `#c9b9a6`) y su misma tipografía: **TeX Gyre
-Adventor** (geométrica, licencia libre GUST, en `fonts/`). Sin pegatinas ni confeti.
+(carbón `#2b2b2b`, piedra `#f3f0ec`/`#d8d2ca`, bronce `#7a6a58`, arena `#c9b9a6`) y su tipografía: **TeX Gyre Adventor**.
 
-**Voz:** masculina, de colega a colega, con energía (Gemini, voz `Orus` por defecto; elige otra con *Muestras de voz*).
-Cada toma se transcribe: si dice algo que no está en el guion, repite o lee una indicación, se graba otra. Las siglas se
-leen como las dice un arquitecto ("de be ese i", "ce te e", "la loe", "metros cuadrados", "unión de arquitectos punto com").
+**Voz:** masculina, de socio senior, con energía (Gemini, `Orus` por defecto; elige otra con *Muestras de voz*).
 
 ## Cómo se evita publicar un error (lo más importante)
 1. **Banco de piezas** (`generar_banco.py`): cada pieza (test, 3 claves o ficha) se escribe a partir de UN fragmento real
@@ -106,19 +100,19 @@ haber cambiado.
 |---|---|---|
 | `ACTIVO` | (vacía) | `true` enciende todo lo programado |
 | `GEMINI_VOICE` | `Orus` | Voz de Gemini |
-| `LINKEDIN` | `carrusel` | Qué va a LinkedIn (`carrusel`, `manana`, `mediodia`, `noche`, `false`) |
+| `LINKEDIN` | `carrusel` | Qué va a LinkedIn (`carrusel`, `manana`, `mediodia`, `tarde`, `false`) |
 | `IG_STORY`, `TIKTOK`, `TIKTOK_STORY_BORRADOR` | `true` | Interruptores (o el nombre de un hueco) |
 | `CARRUSEL` | `true` | `false` apaga el carrusel |
 | `LINKEDIN_ORG_URN` | — | Fuerza una página de empresa concreta (`urn:li:organization:…`) |
 | `ZERNIO_MATCH` | `uniondearquitectos` | Nombre que deben tener las cuentas en Zernio |
-| `PUBLISH_MAX_WAIT_MIN` | `0` | Esperar a la hora exacta (gasta minutos) |
+| `PUBLISH_MAX_WAIT_MIN` | `50` | Minutos máximos de espera para publicar a la hora exacta |
 | `ELEVENLABS_VOICE_ID` (+ secreto `ELEVENLABS_API_KEY`) | — | Voz de ElevenLabs (opcional, de pago) |
 
 ## Workflows
 | Workflow | Cuándo | Qué |
 |---|---|---|
-| Reels diarios | 7:30, 13:57, 20:57 | Genera, verifica y publica el reel |
-| Carrusel diario | 18:00 | Carrusel en Instagram, TikTok y LinkedIn |
+| Reels diarios | 7:15, 11:15, 14:15 (publica a las 8:00, 12:00, 15:00) | Genera, verifica y publica el reel |
+| Carrusel diario | 17:25 (publica a las 18:00) | Carrusel en Instagram, TikTok y LinkedIn |
 | Generar banco | Domingos | Piezas nuevas + verificación |
 | Verificar banco | Lunes y jueves | Verifica lo pendiente |
 | Descargar fuentes | Día 1 de cada mes | Refresca BOE y web |

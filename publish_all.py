@@ -3,10 +3,10 @@ a los demás).
 
   Instagram   Reel (portada = fotograma del gancho) + Story propia de 12 s que anuncia el reel
   TikTok      el mismo vídeo + la story al buzón como borrador (opcional)
-  LinkedIn    el reel, solo en el hueco elegido con la variable LINKEDIN y nunca más de una publicación al día
+  LinkedIn    el reel, solo en el hueco elegido con la variable LINKEDIN ("manana", "mediodia", "tarde"; por defecto el
+            carrusel de las 18:00) y nunca más de una publicación al día
 
-Hueco "manana" (8:00): el reel va a TikTok y, en Instagram, el reel completo como story (sin post en el feed, para no
-quitar alcance a los de las 14:30 y las 21:30).
+Huecos: 8:00, 12:00 y 15:00 (los tres reels completos en Instagram y TikTok); el carrusel va a las 18:00.
 Interruptores (Settings > Secrets and variables > Actions > Variables): IG_STORY, TIKTOK, TIKTOK_STORY_BORRADOR:
 "true", "false" o el hueco en el que actúan ("manana" / "mediodia" / "noche"). LINKEDIN: "carrusel" (por defecto: el
 carrusel diario va a LinkedIn), "manana" / "mediodia" / "noche" (ese reel va a LinkedIn) o "false".
@@ -37,7 +37,7 @@ def publish(reel, story, caption, meta, slot=""):
                 urls[path] = Z.upload(path)
             return urls[path]
     light = Z.ig_safe(reel)
-    morning = slot == "manana"
+    morning = False                                    # los tres reels del día van completos a todas las redes
     src = light if (morning or not story) else story
     if os.environ.get("IG_TOKEN"):                    # Instagram directo por la API de Meta (gratis), como en TCAE
         import publish_ig as IG

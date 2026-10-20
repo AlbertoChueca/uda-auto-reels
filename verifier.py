@@ -23,9 +23,10 @@ STOP = set("de la el los las y o a en por para con que del al se su sus es un un
 
 ROLE = """Eres el VERIFICADOR de contenidos de UDA · Unión de Arquitectos, un estudio online que hace de departamento
 técnico externo para arquitectos autónomos y despachos de España (Proyectos Básicos y de Ejecución, en CAD o Revit,
-precio cerrado, la firma es del despacho). Publicamos normativa (CTE y sus DB, LOE, certificación energética, seguridad
-y salud, residuos, Ley de Suelo, Propiedad Horizontal), consejos de proyecto, productividad del despacho y los servicios
-de UDA. Tu trabajo es evitar que publiquemos un error: un arquitecto que proyecta con un dato falso tiene un problema
+precio cerrado, la firma es del despacho). Publicamos para fundadores de despachos y arquitectos autónomos: cómo facturar
+más y mejorar el precio por hora delegando, contratar en plantilla frente a contratar por servicios (Estatuto de los
+Trabajadores), qué hace UDA y qué implicaría hacerlo con equipo propio, y datos de Proyectos Básicos y de Ejecución que
+pocos conocen (CTE, LOE, RD 390/2021, RD 1627/1997, RD 105/2008). Tu trabajo es evitar que publiquemos un error: un arquitecto que proyecta con un dato falso tiene un problema
 real con su proyecto, y nuestra credibilidad desaparece. Eres estricto y preciso, nunca inventas normativa, artículos,
 apartados, cifras ni datos de UDA. Ante la duda, marcas "dudosa"."""
 
@@ -177,6 +178,12 @@ def describe(p, i=None):
                 + f"\nMarcada como correcta: {QB.LETTERS[p['correcta']]}\nExplicación: {p.get('explicacion')}\n")
     elif p["tipo"] == "puntos":
         body = f"Título: {p['titulo']}\n" + "\n".join(f"- {x}" for x in p["puntos"]) + "\n"
+    elif p["tipo"] == "comparativa":
+        body = (f"Comparativa: {p['titulo']} · columnas «{p['col_a']}» frente a «{p['col_b']}»\n"
+                + "\n".join(f"- {f['aspecto']}: {f['a']} | {f['b']}" for f in p["filas"]) + "\n")
+    elif p["tipo"] in ("dato", "mito"):
+        body = (f"Afirmación: {p['afirmacion']}\n" + (f"Veredicto: {p['veredicto']}\n" if p["tipo"] == "mito" else "")
+                + f"Explicación: {p['explicacion']}\n")
     else:
         body = f"Pregunta: {p['q']}\nRespuesta: {p['a']}\n"
     citas = [p.get("cita")] + list(p.get("citas_extra") or [])
@@ -203,12 +210,16 @@ Revisa estas {len(ps)} piezas. Para cada una decide:
   generalizaciones ("siempre", "nunca", "todos") que no estén; si es una ficha, la respuesta es correcta y completa.
 - "dudosa": no puedes confirmarlo con el texto dado, es ambigua, el apartado puede haber cambiado (lee las notas de
   vigencia), dos fuentes de UDA dan datos distintos, o simplifica tanto que un arquitecto podría aplicarlo mal.
-- "error": algo es falso o hay más de una respuesta correcta.
+- "error": algo es falso, hay más de una respuesta correcta o el veredicto de un mito no es el que dice la fuente.
+En los bloques negocio y contratar se admiten conclusiones y consejos razonados que se deducen del texto (p. ej. "delegar
+libera horas para proyectar"), pero NUNCA cifras, porcentajes, plazos ni datos que no estén literalmente en la fuente, ni
+asesoramiento laboral concreto. En una comparativa, cada celda tiene que corresponder a su columna según la fuente.
 Además, en piezas de UDA: un precio solo es "ok" si se presenta como precio de referencia u orientativo; nunca puede
 decir o insinuar que UDA firma, visa o asume la responsabilidad del proyecto (la firma es del despacho); nada de
 promesas ni de estadísticas que no estén literalmente en la fuente.
-"calidad": 1-10, cuánto le sirve de verdad a un despacho que proyecta bloques de viviendas y proyectos de envergadura
-(10 = dato que evita un error caro o una incidencia en visado; 5 = correcto pero obvio o de manual; 1 = irrelevante).
+"calidad": 1-10, cuánto le aporta a un FUNDADOR de despacho o arquitecto autónomo que proyecta bloques y obras grandes:
+le ayuda a facturar más, a cobrar mejor su hora, a decidir si delegar o contratar, o le descubre algo exacto y relevante
+de un proyecto (10 = cambia una decisión o evita un error caro; 5 = correcto pero obvio o genérico; 1 = irrelevante).
 "cita": un fragmento COPIADO LITERALMENTE del texto de la fuente (10-40 palabras) que demuestre la pieza (si no lo
 hay, ""); "referencia": norma y artículo/sección/apartado exactos según el texto (p. ej. "CTE, Parte I, art. 11" o
 "Tabla de presupuestos de UDA, apartado 07"); "motivo": una frase en español; "correccion": si es "error", qué es lo correcto.

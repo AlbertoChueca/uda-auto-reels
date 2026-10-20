@@ -21,22 +21,20 @@ EXPLORE = float(os.environ.get("EXPLORE_RATE", "0.15"))
 MIN_AGE_DAYS = 3
 
 DEFAULT_ARMS = {
-    "formato": ["test_normativa", "error_tipico", "mito_realidad", "norma_30s", "simulacro_3", "caso_despacho",
-                "checklist", "delegar", "uda_servicio", "repaso_express"],
+    "formato": ["claves", "comparativa", "dato", "mito_realidad", "caso_despacho"],
     "estilo": ["piedra", "carbon", "plano", "ficha", "minimal", "ilustrado"],
     "hook_style": [
-        "reto: retar directamente ('¿lo tienes claro en tu próximo proyecto?')",
-        "error caro: avisar de un error que en un proyecto real sale caro (solo con datos del material)",
-        "empatía: hablar al arquitecto con más encargos que horas",
-        "curiosidad: abrir con un dato de la norma que pica la curiosidad (solo del material)",
-        "colega: hablar de tú a tú, como un compañero que te avisa antes de visar",
-        "rapidez: 'en 30 segundos' para quien revisa normativa entre reunión y reunión",
+        "facturación: abrir con lo que le cuesta al despacho no delegar (solo con datos del material)",
+        "precio/hora: hablar de dónde se va la hora del arquitecto y dónde se cobra mejor",
+        "socio senior: de tú a tú, como un socio que comparte lo que ha aprendido",
+        "contraste: dos formas de trabajar enfrentadas en una frase",
+        "dato: abrir con el dato exacto de la fuente que más sorprende",
+        "escena: el momento en que entra un encargo grande y el equipo ya va a tope",
     ],
-    "bloque": ["normativa", "proyecto", "mixto"],
+    "bloque": ["negocio", "contratar", "servicios", "proyecto", "mixto"],
     "think_time": ["corto", "normal", "largo"],
 }
-# Para que la cuenta no parezca un anuncio: los formatos de UDA (servicios, delegar) descansan unos reels entre usos.
-COOLDOWN = {"uda_servicio": 6, "delegar": 3}
+COOLDOWN = {}
 THINK_SECONDS = {"corto": 5, "normal": 7, "largo": 9}
 
 

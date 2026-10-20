@@ -10,16 +10,11 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| test_normativa | 0 | - |
-| error_tipico | 0 | - |
+| claves | 0 | - |
+| comparativa | 0 | - |
+| dato | 0 | - |
 | mito_realidad | 0 | - |
-| norma_30s | 0 | - |
-| simulacro_3 | 0 | - |
 | caso_despacho | 0 | - |
-| checklist | 0 | - |
-| delegar | 0 | - |
-| uda_servicio | 0 | - |
-| repaso_express | 0 | - |
 
 ## estilo
 
@@ -36,18 +31,20 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| reto | 0 | - |
-| error caro | 0 | - |
-| empatía | 0 | - |
-| curiosidad | 0 | - |
-| colega | 0 | - |
-| rapidez | 0 | - |
+| facturación | 0 | - |
+| precio/hora | 0 | - |
+| socio senior | 0 | - |
+| contraste | 0 | - |
+| dato | 0 | - |
+| escena | 0 | - |
 
 ## bloque
 
 | option | reels | avg score |
 |---|---|---|
-| normativa | 0 | - |
+| negocio | 0 | - |
+| contratar | 0 | - |
+| servicios | 0 | - |
 | proyecto | 0 | - |
 | mixto | 0 | - |
 

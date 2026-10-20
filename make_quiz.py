@@ -26,7 +26,8 @@ CARD_CENTER = 900         # las tarjetas se centran aquí si caben (zona segura 
 CARD_MAX_BOTTOM = 1385   # deja sitio debajo para 'Comenta…' / retos dentro de la zona segura
 HDR = 74                  # alto de la cabecera de la hoja (estilo examen)
 THINK = {"corto": 5, "normal": 7, "largo": 9}
-BADGE = {"test_normativa": "TEST DE NORMATIVA", "error_tipico": "ERROR TÍPICO EN PROYECTO", "mito_realidad": "MITO O REALIDAD",
+BADGE = {"claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
+         "test_normativa": "TEST DE NORMATIVA", "error_tipico": "ERROR TÍPICO EN PROYECTO", "mito_realidad": "MITO O REALIDAD",
          "norma_30s": "NORMATIVA EN 30 SEGUNDOS", "simulacro_3": "TEST RÁPIDO", "caso_despacho": "CASO DE DESPACHO",
          "checklist": "CHECKLIST DE PROYECTO", "delegar": "CONTRATAR O DELEGAR", "uda_servicio": "ASÍ TRABAJA UDA",
          "repaso_express": "REPASO EXPRÉS"}
@@ -240,6 +241,61 @@ class TextCard:
         return im
 
 
+class CompareCard:
+    """Comparativa a dos columnas (p. ej. «Contratar en plantilla» / «Contratar por servicios»): las filas aparecen al decirlas."""
+
+    def __init__(self, title, col_a, col_b, rows, ref=None):
+        self.title, self.col_a, self.col_b, self.rows, self.ref = title, col_a, col_b, rows, ref
+        for s in (46, 43, 40, 37, 34, 31):
+            self.s = s
+            self.h = self._measure()
+            if CARD_TOP + self.h <= CARD_MAX_BOTTOM:
+                break
+        self._cache = {}
+
+    def _colw(self):
+        return (CARD_W - 2 * PAD - 30) // 2
+
+    def _measure(self):
+        h = PAD + fx.text_block(self.title, F900, 54, CARD_W - 2 * PAD).height + 24 + 44
+        for r in self.rows:
+            ha = fx.text_block(r["a"], F800, self.s, self._colw()).height
+            hb = fx.text_block(r["b"], F900, self.s, self._colw()).height
+            h += 46 + max(ha, hb) + 30
+        return h + (80 if self.ref else 0) + PAD
+
+    def render(self, n_rows=3, hot=None):
+        key = (n_rows, hot)
+        if key in self._cache:
+            return self._cache[key]
+        im = _card_base(self.h); d = ImageDraw.Draw(im)
+        y = PAD
+        t = fx.text_block(self.title, F900, 54, CARD_W - 2 * PAD, T.ink)
+        im.alpha_composite(t, (PAD, y)); y += t.height + 24
+        cw = self._colw(); xb = PAD + cw + 30
+        im.alpha_composite(fx.spaced(self.col_a.upper(), F900, 26, _mix(T.ink, T.faded, 0.45), 0.06), (PAD, y))
+        im.alpha_composite(fx.spaced(self.col_b.upper(), F900, 26, T.label, 0.06), (xb, y))
+        y += 44
+        for k, r in enumerate(self.rows):
+            ha = fx.text_block(r["a"], F800, self.s, cw).height; hb = fx.text_block(r["b"], F900, self.s, cw).height
+            rh = 46 + max(ha, hb) + 30
+            if k < n_rows:
+                d.line([(PAD, y), (CARD_W - PAD, y)], fill=T.faded, width=2)
+                if hot == k:
+                    d.rectangle([xb - 14, y + 8, CARD_W - PAD + 6, y + rh - 8], fill=_mix(T.card_fill if len(T.card_fill) == 3 else T.card_fill[:3], T.ok_col, 0.12))
+                im.alpha_composite(fx.spaced(r["aspecto"].upper(), F900, 24, T.label, 0.05), (PAD, y + 12))
+                im.alpha_composite(fx.text_block(r["a"], F800, self.s, cw, _mix(T.ink, T.faded, 0.35)), (PAD, y + 46))
+                im.alpha_composite(fx.text_block(r["b"], F900, self.s, cw, T.ink), (xb, y + 46))
+            y += rh
+        if self.ref:
+            r_ = fx.pill(self.ref, 26, T.ref_bg, T.ref_fg, padx=20, pady=10, path=F800, radius=T.pill_radius)
+            if r_.width > CARD_W - 2 * PAD:
+                r_ = r_.resize((CARD_W - 2 * PAD, int(r_.height * (CARD_W - 2 * PAD) / r_.width)), Image.LANCZOS)
+            im.alpha_composite(r_, (PAD, int(self.h - PAD - r_.height)))
+        self._cache[key] = im
+        return im
+
+
 def brand_card(style):
     """Tarjeta final, como la cabecera de los documentos de UDA: bloque carbón, logotipo, claim y la web (solo hechos)."""
     h = 860
@@ -320,7 +376,15 @@ def lines_for(fmt, items, S):
         L.append(("st", S["afirmacion"], "intriguing"))
         L.append(("rev", "¡Mito!" if S["veredicto"] == "MITO" else "¡Realidad!", "emphatic, lively"))
         L.append(("ex", S["explicacion"], "assured, explaining"))
+    elif fmt == "dato":
+        L.append(("st", S["afirmacion"], "revealing, confident, slight emphasis"))
+        L.append(("ex", S["explicacion"], "assured, explaining"))
+    elif fmt == "comparativa":
+        for k, r in enumerate(S["filas"]):
+            L.append((f"c{k}", f"{r['aspecto']}. {S['col_a']}: {r['a']}. {S['col_b']}: {r['b']}.", "clear, assured, contrasting"))
     elif fmt in QB.POINTS_ONLY:
+        if fmt == "caso_despacho":
+            L.append(("esc", S["escena"], "storytelling, slight suspense"))
         for k, p in enumerate(S["puntos"]):
             L.append((f"p{k}", p, "clear, assured, explaining"))
     else:
@@ -347,7 +411,7 @@ def _groups(L):
     out = []
     for item in L:
         k = item[0]
-        joins = k[:1] == "o" or k in ("ex", "p1", "p2") or k.startswith("fa") or (k.startswith("r") and k[1:].isdigit())
+        joins = k[:1] == "o" or k in ("ex", "p1", "p2", "c1", "c2") or k.startswith("fa") or (k.startswith("r") and k[1:].isdigit())
         if joins and out:
             out[-1].append(item)
         else:
@@ -378,14 +442,20 @@ def caption_text(fmt, items, S, rng, st=None):
     elif fmt == "mito_realidad":
         body = f"¿Mito o realidad? «{S['afirmacion']}»"
     elif fmt in QB.POINTS_ONLY:
-        body = f"{S['titulo_norma']}\n\n" + "\n".join(f"{k + 1}. {p}" for k, p in enumerate(S["puntos"]))
+        body = (S["escena"] + "\n\n" if fmt == "caso_despacho" else "") + f"{S['titulo_norma']}\n\n" + \
+            "\n".join(f"{k + 1}. {p}" for k, p in enumerate(S["puntos"]))
+    elif fmt == "comparativa":
+        body = f"{S['titulo_norma']}: {S['col_a']} o {S['col_b']}\n\n" + "\n".join(
+            f"▪️ {r['aspecto']} → {S['col_a']}: {r['a']} · {S['col_b']}: {r['b']}" for r in S["filas"])
+    elif fmt == "dato":
+        body = f"{S['afirmacion']}\n\n{S['explicacion']}"
     else:
         body = (S["escena"] + "\n\n" if fmt == "caso_despacho" else "") + P["pregunta"] + "\n" + \
                "\n".join(f"{QB.LETTERS[k]}) {o}" for k, o in enumerate(P["op"]))
     refs = list(dict.fromkeys(ref_label(Q) for Q in items if ref_label(Q).startswith("Fuente")))
     fuente = ("\n\n" + " · ".join(refs)) if refs else ""
     tags = TAGS_FIXED + rng.sample(TAGS_ROT, 3)
-    sol = "" if fmt == "repaso_express" or fmt in QB.POINTS_ONLY else " La solución, al final del vídeo."
+    sol = " La respuesta, al final del vídeo." if fmt == "mito_realidad" else ""
     extra = "".join(f"{x}\n" for x in (S.get("save_caption"), S.get("tag_caption"), S.get("web_caption"),
                                         S.get("follow_caption"), S.get("seo_line")) if x)
     return (f"{S['caption_hook']}\n\n{body}{fuente}\n\n{S['comment_prompt'].rstrip('.!')}.{sol}\n\n"
@@ -477,7 +547,17 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             seg("count", count, q=0, n=count)
             a = t; seg("stamp", max(1.6, D["rev"] + 0.7)); say("rev", a + 0.1)
             a = t; seg("explain", D["ex"] + 1.2); say("ex", a + 0.5)
+        elif fmt == "dato":
+            a = t; seg("statement", D["st"] + 1.4); say("st", a + 0.45)
+            a = t; seg("explain", D["ex"] + 1.4); say("ex", a + 0.5)
+        elif fmt == "comparativa":
+            a = t; tt = a + 0.6; starts = []
+            for k in range(3):
+                starts.append(tt); say(f"c{k}", tt); tt += D[f"c{k}"] + 0.5
+            seg("compare", tt - a + 1.4, starts=starts)
         elif fmt in QB.POINTS_ONLY:                       # sin pregunta: las 3 claves aparecen al decirlas
+            if fmt == "caso_despacho":
+                a = t; seg("scene", D["esc"] + 1.0); say("esc", a + 0.4)
             a = t; tt = a + 0.5; starts = []
             for k in range(3):
                 starts.append(tt); say(f"p{k}", tt); tt += D[f"p{k}"] + 0.45
@@ -521,7 +601,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     for k, at in VO.items():
         put(vo, A[k], at)
     for sg in SEG:
-        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq"):
+        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare"):
             put(sfx, fx.whoosh(), sg["a"] - 0.15, 1.1)
         if sg["kind"] == "count":
             for s_ in range(sg["n"]):
@@ -565,18 +645,29 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     hook_logo = fx.logo(70, T.head_col, T.label if T.name != "carbon" else ARENA)
     hook_logo_img = fx.logo(70, WHITE, ARENA)
     cards = []
-    if fmt != "repaso_express" and fmt not in QB.POINTS_ONLY:
+    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad") and fmt not in QB.POINTS_ONLY:
         cards = [QuestionCard(Q, QB.tema_titulo(Q["tema"]).upper(), f"{i + 1}/3" if fmt == "simulacro_3" else None)
                  for i, Q in enumerate(items)]
-    expl = stmt = pts = scene_card = None
+    expl = stmt = pts = scene_card = cmp_card = None
     fronts, backs = [], []
     if fmt == "repaso_express":
         for i, F in enumerate(items):
             fronts.append(TextCard(f"FICHA {i + 1}/{len(items)}", F["q"], ref_label(F), body_size=62))
             backs.append(TextCard("RESPUESTA", F["a"], ref_label(F), body_size=54, title_color=T.ok_col,
                                   title_fg=T.ok_text if T.ok_mode == "fill" else T.ink))
-    elif fmt in QB.POINTS_ONLY:
-        pts = TextCard(None, None, ref_label(P), big=S["titulo_norma"], bullets=S["puntos"])
+    elif fmt in QB.POINTS_ONLY or fmt in ("dato", "comparativa", "mito_realidad"):
+        if fmt == "mito_realidad":
+            stmt = TextCard("¿MITO O REALIDAD?", S["afirmacion"], None, body_size=70)
+            expl = TextCard("¿POR QUÉ?", S["explicacion"], ref_label(P), body_size=50)
+        if fmt in QB.POINTS_ONLY:
+            pts = TextCard(None, None, ref_label(P), big=S["titulo_norma"], bullets=S["puntos"])
+        if fmt == "caso_despacho" and hook_bg is None:
+            scene_card = TextCard("CASO DE DESPACHO", S["escena"], None, body_size=58)
+        if fmt == "dato":
+            stmt = TextCard("DATO DE PROYECTO", S["afirmacion"], None, body_size=66)
+            expl = TextCard("¿POR QUÉ IMPORTA?", S["explicacion"], ref_label(P), body_size=50)
+        if fmt == "comparativa":
+            cmp_card = CompareCard(S["titulo_norma"], S["col_a"], S["col_b"], S["filas"], ref_label(P))
     else:
         corr = f"{P['letra']}) {P['op'][P['ok']]}"
         if fmt == "error_tipico":
@@ -744,6 +835,11 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             fx.paste_center(fr, shadow(im_), W / 2, y, alpha=p)
             if save_lab is not None and lt > 1.0 and y + img.height / 2 + 80 < fx.SAFE_BOTTOM:
                 fx.paste_center(fr, save_lab, W / 2, y + img.height / 2 + 70, eob((lt - 1.0) / 0.35))
+        elif kind == "compare":
+            nr = sum(1 for s0 in sg["starts"] if tt >= s0 - 0.1)
+            img = cmp_card.render(n_rows=nr, hot=nr - 1 if nr and tt < sg["starts"][nr - 1] + D[f"c{nr - 1}"] + 0.2 else None)
+            im_, y, p = card_at(img, tt, sg["a"])
+            fx.paste_center(fr, shadow(im_), W / 2, y, alpha=p)
         elif kind == "points":
             nb = sum(1 for s0 in sg["starts"] if tt >= s0 - 0.1)
             bl = lit(f"p{max(0, nb - 1)}", tt) if nb else None
@@ -786,6 +882,7 @@ def mock_script(fmt, items):
     import writer
     S = writer.template(fmt, items)
     P = items[0]
+    keep = writer.verified(fmt, P)
     S.update({"trampa": next(L for L in "ABCD" if L != P.get("letra", "A")),
               "trampa_porque": "Parece correcta porque suena a regla general, pero la norma dice otra cosa en este caso.",
               "afirmacion": "Esta es una afirmación de prueba para el formato mito o realidad.", "veredicto": "MITO",
@@ -794,6 +891,7 @@ def mock_script(fmt, items):
               "puntos": list(P["puntos"]) if P.get("puntos") else ["Primer punto clave de prueba del vídeo",
                                                                   "Segundo punto clave algo más largo de prueba",
                                                                   "Tercer punto clave de prueba"]})
+    S.update(keep)
     return S
 
 

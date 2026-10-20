@@ -1,6 +1,8 @@
 """Un hueco de publicación de UDA · Unión de Arquitectos.
 
-    python run_daily.py <manana|mediodia|noche|manual> [--dry-run]
+    python run_daily.py <manana|mediodia|tarde|manual> [--dry-run]
+
+Huecos (hora de España): manana 8:00 · mediodia 12:00 (serie del día) · tarde 15:00. El carrusel va a las 18:00.
 
 Cada ejecución:
  1. lee los resultados reales (Zernio: Instagram, TikTok, LinkedIn) y los agentes reescriben sus cuadernos (1 vez al día);
@@ -57,7 +59,7 @@ def already_published():
 
 def wait_until_slot():
     """El workflow arranca ~30 min antes; si el reel está listo antes de la hora, espera (máx. PUBLISH_MAX_WAIT_MIN)."""
-    target = {"manana": (8, 0), "mediodia": (14, 30), "noche": (21, 30)}.get(slot)
+    target = {"manana": (8, 0), "mediodia": (12, 0), "tarde": (15, 0)}.get(slot)
     if not target:
         return
     try:
@@ -73,7 +75,7 @@ def wait_until_slot():
         pass
 
 
-if slot in ("manana", "mediodia", "noche") and not dry and already_published() and os.environ.get("FORCE") != "true":
+if slot in ("manana", "mediodia", "tarde") and not dry and already_published() and os.environ.get("FORCE") != "true":
     raise SystemExit(f"El hueco {slot} de hoy ya está publicado; no se repite")
 
 status = []
@@ -120,8 +122,7 @@ if HAS_AI:
     except Exception as e:
         status.append(f"estudio omitido: {str(e)[:120]}")
 
-chain = list(dict.fromkeys([arms.get("formato", "test_normativa"), "test_normativa", "error_tipico", "checklist",
-                            "norma_30s"]))
+chain = list(dict.fromkeys([arms.get("formato", "claves"), "claves", "comparativa", "dato", "mito_realidad"]))
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
 if HAS_AI:
@@ -181,7 +182,7 @@ for fmt in chain:
         print(f"[{fmt}] no ha podido salir, pruebo el siguiente formato:\n{traceback.format_exc()[-1500:]}", flush=True)
 
 story_mp4 = None
-if meta and slot != "manana":                      # a las 8:00 la story de Instagram es el propio reel
+if meta:
     try:                                           # story de 12 s que anuncia el reel
         import story
         story_mp4 = story.build(meta["story_base"], out.replace(".mp4", "_story.mp4"), meta["formato"])
@@ -218,7 +219,7 @@ if dry:
     sys.exit(0)
 
 import publish_all
-wait_until_slot()                                  # publica a la hora del hueco (8:00 / 14:30 / 21:30 en España)
+wait_until_slot()                                  # publica a la hora exacta del hueco (8:00 / 12:00 / 15:00 en España)
 results = publish_all.publish(out, story_mp4, caption, meta, slot=slot)
 meta.update(publicado=results)
 print("publicado:", json.dumps(results, ensure_ascii=False), flush=True)

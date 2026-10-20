@@ -1,11 +1,17 @@
 """Banco de piezas de UDA: elegir la(s) pieza(s) de cada reel sin repetir, solo entre las verificadas.
 
 Una "pieza" es una unidad de contenido sacada de una fuente (fuentes/): BOE (CTE, LOE, RD 390/2021, RD 1627/1997,
-RD 105/2008, TRLSRU, LPH) o los documentos y la web de UDA. Tipos:
-  test    pregunta tipo test (4 opciones, una correcta) + explicación
-  puntos  título + 3 ideas clave (checklist de proyecto, productividad del despacho, servicios de UDA)
-  ficha   pregunta corta -> respuesta corta (repaso exprés)
-Bloques: normativa · proyecto (consejos de proyecto) · productividad (escalar el despacho, delegar) · servicios (UDA).
+RD 105/2008, Estatuto de los Trabajadores) o los documentos y la web de UDA. Tipos:
+  puntos       título + 3 claves (facturar más, precio/hora, productividad, qué implica cada tarea...)
+  comparativa  título + dos columnas (p. ej. "Contratar en plantilla" / "Contratar por servicios") + 3 filas
+  dato         un dato de proyecto que pocos conocen + por qué importa
+  mito         afirmación + MITO/REALIDAD + explicación
+  (test / ficha: tipos antiguos, ya no se usan en los reels)
+Bloques (público: fundadores de despachos y arquitectos autónomos que proyectan bloques y obras de envergadura):
+  negocio    facturar más delegando, precio/hora, productividad, capacidad sin plantilla
+  contratar  contratar a alguien indefinidamente frente a contratar por servicios
+  servicios  qué hace UDA y qué implicaría hacerlo con equipo propio
+  proyecto   datos de Proyectos Básicos y de Ejecución que pocos conocen (CTE, LOE...)
 
 Reglas (igual que en TCAE, más estrictas):
 - Toda pieza lleva una CITA LITERAL de su fuente y el código comprueba que esa cita existe de verdad en el texto
@@ -21,25 +27,21 @@ BANK = os.path.join(HERE, "banco", "piezas.json")
 VERIF = os.path.join(HERE, "banco", "verificacion.json")
 USED = os.path.join(HERE, "used.json")
 LETTERS = "ABCD"
-BLOQUES = ("normativa", "proyecto", "productividad", "servicios")
+BLOQUES = ("negocio", "contratar", "servicios", "proyecto")
+OLD_BLOQUE = {"productividad": "negocio"}                         # piezas antiguas que siguen valiendo
 LIMITS = {"normal": (170, 80), "corta": (115, 58)}
 NO_SHUFFLE = re.compile(r"\b(todas|ninguna|ambas|anteriores|las dos|son correctas|son ciertas|a y b|b y c|a y c|a, b|"
                         r"opciones? [abcd]\b|respuestas? [abcd]\b)", re.I)
 
 # formato -> (tipo de pieza, bloques que admite)
 FORMAT_SPEC = {
-    "test_normativa": ("test", ("normativa", "proyecto")),
-    "error_tipico": ("test", ("normativa", "proyecto")),
-    "mito_realidad": ("test", ("normativa", "proyecto", "productividad", "servicios")),
-    "norma_30s": ("test", ("normativa",)),
-    "simulacro_3": ("test", ("normativa", "proyecto")),
-    "caso_despacho": ("test", ("proyecto", "normativa")),
-    "checklist": ("puntos", ("proyecto",)),
-    "delegar": ("puntos", ("productividad",)),
-    "uda_servicio": ("puntos", ("servicios",)),
-    "repaso_express": ("ficha", ("normativa", "proyecto")),
+    "claves": ("puntos", ("negocio", "contratar", "servicios", "proyecto")),
+    "comparativa": ("comparativa", ("contratar", "servicios", "negocio")),
+    "dato": ("dato", ("proyecto", "negocio", "servicios")),
+    "mito_realidad": ("mito", ("negocio", "contratar", "servicios", "proyecto")),
+    "caso_despacho": ("puntos", ("negocio", "servicios", "contratar")),
 }
-POINTS_ONLY = {"checklist", "delegar", "uda_servicio"}            # sin pregunta: hook -> 3 claves -> cierre
+POINTS_ONLY = {"claves", "caso_despacho"}                       # hook -> (escena) -> 3 claves -> cierre
 
 
 def pid(*parts):
@@ -48,9 +50,12 @@ def pid(*parts):
 
 def load():
     try:
-        return json.load(open(BANK))
+        ps = json.load(open(BANK))
     except Exception:
         return []
+    for p in ps:
+        p["bloque"] = OLD_BLOQUE.get(p.get("bloque"), p.get("bloque"))
+    return ps
 
 
 def save(ps):
@@ -102,6 +107,10 @@ def text_of(p):
         return " ".join([p["pregunta"]] + p["opciones"] + [p.get("explicacion", "")])
     if p["tipo"] == "puntos":
         return " ".join([p["titulo"]] + p["puntos"])
+    if p["tipo"] == "comparativa":
+        return " ".join([p["titulo"], p["col_a"], p["col_b"]] + [f"{f['aspecto']} {f['a']} {f['b']}" for f in p["filas"]])
+    if p["tipo"] in ("dato", "mito"):
+        return p["afirmacion"] + " " + p["explicacion"]
     return p["q"] + " " + p["a"]
 
 
@@ -109,6 +118,10 @@ def fits(p, kind="normal"):
     if p["tipo"] != "test":
         if p["tipo"] == "puntos":
             return all(4 <= len(x.split()) <= 18 for x in p["puntos"]) and len(p["titulo"]) <= 60
+        if p["tipo"] == "comparativa":
+            return len(p["filas"]) == 3 and all(len(f["a"].split()) <= 12 and len(f["b"].split()) <= 12 for f in p["filas"])
+        if p["tipo"] in ("dato", "mito"):
+            return 6 <= len(p["afirmacion"].split()) <= 26 and 10 <= len(p["explicacion"].split()) <= 42
         return 10 <= len(p["q"]) <= 110 and 3 <= len(p["a"]) <= 160
     ql, ol = LIMITS[kind]
     return len(p["pregunta"]) <= ql and all(len(o) <= ol for o in p["opciones"])
@@ -131,8 +144,6 @@ def candidates(fmt, bloque=None, seed=0):
     ps = [p for p in load() if p["tipo"] == tipo and p.get("bloque") in bloques and fits(p, kind)]
     if bloque and bloque != "mixto" and bloque in bloques:
         ps = [p for p in ps if p["bloque"] == bloque] or ps
-    if fmt == "error_tipico":                                     # necesita una explicación con contenido
-        ps = [p for p in ps if len(p.get("explicacion", "").split()) >= 8] or ps
     u = used()
     done = {x["id"] for x in u}
     fresh = [p for p in ps if p["id"] not in done] or ps          # banco agotado para este formato: vuelve a empezar
@@ -224,7 +235,7 @@ def stock():
     pub, pend = {b: 0 for b in BLOQUES}, {b: 0 for b in BLOQUES}
     for p in load():
         b = p.get("bloque")
-        if b not in pub:
+        if b not in pub or p["tipo"] in ("test", "ficha"):          # tipos antiguos: ya no se publican
             continue
         if publishable(p, v) and p["id"] not in done:
             pub[b] += 1
