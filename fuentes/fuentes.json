@@ -1,370 +1,370 @@
 {
- "_info": "Fuentes que el generador y el verificador usan como ÚNICA verdad. tipo 'boe': se descarga sola del BOE con el workflow 'Descargar fuentes' ('boe' = id; si el título no contiene las palabras 'clave', se busca por 'buscar'; modo 'consolidado' = texto vigente de la API de legislación consolidada, 'diario' = texto publicado en el BOE del día, 'auto' = primero consolidado y si no, diario). tipo 'uda': documentos de UDA transcritos literalmente (ya en el repositorio). tipo 'web': se descarga de la web de UDA. 'manual': pega el texto en fuentes/<archivo>. 'nota' = advertencia de vigencia que lee el verificador. 'fecha' (AAAAMMDD) = día de publicación en el BOE: si el id falla, se busca en el sumario de ese día.",
- "normas": {
-  "cte": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 314/2006, por el que se aprueba el Código Técnico de la Edificación (Parte I y anejos)",
-   "corto": "CTE",
-   "boe": "BOE-A-2006-5515",
-   "modo": "consolidado",
-   "clave": [
-    "314/2006"
-   ],
-   "archivo": "cte_rd314_2006.txt",
-   "nota": "Texto consolidado vigente de la Parte I del CTE (artículos, exigencias básicas, Anejo I contenido del proyecto, Anejo III terminología)."
-  },
-  "rd732_2019": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 732/2019, por el que se modifica el Código Técnico de la Edificación",
-   "corto": "RD 732/2019 (CTE)",
-   "boe": "BOE-A-2019-18528",
-   "buscar": "Real Decreto 732/2019 Código Técnico de la Edificación",
-   "modo": "auto",
-   "clave": [
-    "732/2019"
-   ],
-   "archivo": "cte_rd732_2019.txt",
-   "nota": "Publica el DB HE completo y modificaciones del DB HS (calidad del aire, radón) y del DB SI. Puede haber sido modificado después (RD 450/2022).",
-   "fecha": "20191227"
-  },
-  "rd450_2022": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 450/2022, por el que se modifica el Código Técnico de la Edificación",
-   "corto": "RD 450/2022 (CTE)",
-   "buscar": "Real Decreto 450/2022 Código Técnico de la Edificación",
-   "modo": "auto",
-   "clave": [
-    "450/2022"
-   ],
-   "archivo": "cte_rd450_2022.txt",
-   "nota": "Modificación del CTE de 2022: prevalece sobre textos anteriores en lo que modifique.",
-   "fecha": "20220615"
-  },
-  "rd173_2010": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 173/2010, por el que se modifica el Código Técnico de la Edificación en materia de accesibilidad y no discriminación (DB SUA)",
-   "corto": "RD 173/2010 (CTE DB SUA)",
-   "boe": "BOE-A-2010-4057",
-   "buscar": "Real Decreto 173/2010 Código Técnico de la Edificación accesibilidad",
-   "modo": "auto",
-   "clave": [
-    "173/2010"
-   ],
-   "archivo": "cte_rd173_2010.txt",
-   "nota": "Texto del DB SUA de 2010. Modificado después por el RD 732/2019: ante la duda sobre un apartado, 'dudosa'.",
-   "fecha": "20100311"
-  },
-  "rd1371_2007": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 1371/2007, por el que se aprueba el documento básico DB-HR Protección frente al ruido del CTE",
-   "corto": "RD 1371/2007 (CTE DB HR)",
-   "boe": "BOE-A-2007-18397",
-   "buscar": "Real Decreto 1371/2007 protección frente al ruido",
-   "modo": "auto",
-   "clave": [
-    "1371/2007"
-   ],
-   "archivo": "cte_rd1371_2007.txt",
-   "nota": "Texto original del DB HR (2007). Modificado después (Orden VIV/984/2009 y otras): ante la duda sobre un apartado, 'dudosa'.",
-   "fecha": "20071023"
-  },
-  "loe": {
-   "tipo": "boe",
-   "titulo": "Ley 38/1999, de 5 de noviembre, de Ordenación de la Edificación (LOE)",
-   "corto": "LOE",
-   "boe": "BOE-A-1999-21567",
-   "modo": "consolidado",
-   "clave": [
-    "38/1999"
-   ],
-   "archivo": "loe_ley38_1999.txt"
-  },
-  "cee": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 390/2021, por el que se aprueba el procedimiento básico para la certificación de la eficiencia energética de los edificios",
-   "corto": "RD 390/2021",
-   "boe": "BOE-A-2021-9176",
-   "buscar": "Real Decreto 390/2021 certificación eficiencia energética edificios",
-   "modo": "auto",
-   "clave": [
-    "390/2021"
-   ],
-   "archivo": "cee_rd390_2021.txt"
-  },
-  "ess": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 1627/1997, disposiciones mínimas de seguridad y de salud en las obras de construcción",
-   "corto": "RD 1627/1997",
-   "boe": "BOE-A-1997-22614",
-   "modo": "auto",
-   "clave": [
-    "1627/1997"
-   ],
-   "archivo": "ess_rd1627_1997.txt"
-  },
-  "rcd": {
-   "tipo": "boe",
-   "titulo": "Real Decreto 105/2008, por el que se regula la producción y gestión de los residuos de construcción y demolición",
-   "corto": "RD 105/2008",
-   "boe": "BOE-A-2008-2486",
-   "modo": "auto",
-   "clave": [
-    "105/2008"
-   ],
-   "archivo": "rcd_rd105_2008.txt"
-  },
-  "suelo": {
-   "tipo": "boe",
-   "titulo": "Real Decreto Legislativo 7/2015, texto refundido de la Ley de Suelo y Rehabilitación Urbana",
-   "corto": "TRLSRU",
-   "boe": "BOE-A-2015-11723",
-   "modo": "consolidado",
-   "clave": [
-    "7/2015"
-   ],
-   "archivo": "suelo_rdleg7_2015.txt"
-  },
-  "lph": {
-   "tipo": "boe",
-   "titulo": "Ley 49/1960, de 21 de julio, sobre propiedad horizontal",
-   "corto": "Ley de Propiedad Horizontal",
-   "boe": "BOE-A-1960-10906",
-   "modo": "consolidado",
-   "clave": [
-    "49/1960"
-   ],
-   "archivo": "lph_ley49_1960.txt"
-  },
-  "uda_tabla": {
-   "tipo": "uda",
-   "titulo": "UDA · Tabla de Referencia de Presupuestos 2026 (documento 01)",
-   "corto": "Tabla de presupuestos de UDA",
-   "archivo": "uda_tabla_presupuestos.txt"
-  },
-  "uda_listado": {
-   "tipo": "uda",
-   "titulo": "UDA · Listado de Documentos a Delegar (documento 02)",
-   "corto": "Listado de documentos de UDA",
-   "archivo": "uda_listado_documentos.txt"
-  },
-  "uda_web": {
-   "tipo": "web",
-   "titulo": "Web de UDA (uniondearquitectos.com)",
-   "corto": "uniondearquitectos.com",
-   "url": "https://uniondearquitectos.com/",
-   "archivo": "uda_web.txt"
-  },
-  "et": {
-   "tipo": "boe",
-   "titulo": "Real Decreto Legislativo 2/2015, texto refundido de la Ley del Estatuto de los Trabajadores",
-   "corto": "Estatuto de los Trabajadores",
-   "boe": "BOE-A-2015-11430",
-   "buscar": "Estatuto de los Trabajadores texto refundido",
-   "modo": "consolidado",
-   "clave": [
-    "2/2015"
-   ],
-   "archivo": "et_rdleg2_2015.txt",
-   "nota": "Texto consolidado vigente. Solo para explicar qué implica contratar a alguien en plantilla (contrato, jornada, vacaciones, extinción); nada de asesoramiento laboral concreto."
-  }
- },
- "temas": {
-  "cte_general": {
-   "titulo": "CTE · Disposiciones generales y exigencias básicas",
-   "corto": "CTE",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "cte"
-   ],
-   "filtro": "Artículo|exigencia|Anejo III|Terminolog"
-  },
-  "cte_proyecto": {
-   "titulo": "CTE · Contenido del proyecto (Anejo I)",
-   "corto": "CTE · Anejo I",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "cte"
-   ],
-   "filtro": "Anejo I\\b|Contenido del proyecto|proyecto b[aá]sico|proyecto de ejecuci|Memoria|Planos|Pliego|Mediciones|Presupuesto"
-  },
-  "cte_si": {
-   "titulo": "CTE · DB SI · Seguridad en caso de incendio",
-   "corto": "CTE · DB SI",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "cte",
-    "rd732_2019",
-    "rd450_2022"
-   ],
-   "filtro": "\\bSI\\b|incendio|evacuaci|sector|resistencia al fuego"
-  },
-  "cte_sua": {
-   "titulo": "CTE · DB SUA · Seguridad de utilización y accesibilidad",
-   "corto": "CTE · DB SUA",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "rd173_2010",
-    "rd732_2019",
-    "cte"
-   ],
-   "filtro": "\\bSUA\\b|accesib|resbaladicidad|ca[ií]das|barrera|escalera|rampa|desnivel"
-  },
-  "cte_he": {
-   "titulo": "CTE · DB HE · Ahorro de energía",
-   "corto": "CTE · DB HE",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "rd732_2019",
-    "rd450_2022",
-    "cte"
-   ],
-   "filtro": "\\bHE\\s?\\d|\\bHE\\b|energ|t[eé]rmic|renovable|aislamiento|transmitancia"
-  },
-  "cte_hs": {
-   "titulo": "CTE · DB HS · Salubridad",
-   "corto": "CTE · DB HS",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "rd732_2019",
-    "cte"
-   ],
-   "filtro": "\\bHS\\b|salubridad|humedad|rad[oó]n|ventilaci|calidad del aire|agua"
-  },
-  "cte_hr": {
-   "titulo": "CTE · DB HR · Protección frente al ruido",
-   "corto": "CTE · DB HR",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "rd1371_2007",
-    "cte"
-   ],
-   "filtro": "\\bHR\\b|ruido|ac[uú]stic|aislamiento"
-  },
-  "cte_se": {
-   "titulo": "CTE · Seguridad estructural (exigencias básicas)",
-   "corto": "CTE · SE",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "cte"
-   ],
-   "filtro": "\\bSE\\b|estructural|resistencia y estabilidad|aptitud al servicio"
-  },
-  "loe": {
-   "titulo": "LOE · Ley de Ordenación de la Edificación",
-   "corto": "LOE",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "loe"
-   ],
-   "filtro": ""
-  },
-  "cee": {
-   "titulo": "Certificación de la eficiencia energética (RD 390/2021)",
-   "corto": "Certificación energética",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "cee"
-   ],
-   "filtro": ""
-  },
-  "ess": {
-   "titulo": "Seguridad y salud en las obras (RD 1627/1997)",
-   "corto": "Seguridad y salud",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "ess"
-   ],
-   "filtro": ""
-  },
-  "rcd": {
-   "titulo": "Residuos de construcción y demolición (RD 105/2008)",
-   "corto": "Residuos (RCD)",
-   "bloques": [
-    "proyecto"
-   ],
-   "normas": [
-    "rcd"
-   ],
-   "filtro": ""
-  },
-  "suelo": {
-   "titulo": "Ley de Suelo y Rehabilitación Urbana (TRLSRU)",
-   "corto": "Ley de Suelo",
-   "bloques": [],
-   "normas": [
-    "suelo"
-   ],
-   "filtro": ""
-  },
-  "lph": {
-   "titulo": "Ley de Propiedad Horizontal",
-   "corto": "Propiedad horizontal",
-   "bloques": [],
-   "normas": [
-    "lph"
-   ],
-   "filtro": "obras|elementos comunes|accesibilidad|acuerdo|junta"
-  },
-  "uda_delegar": {
-   "titulo": "Facturar más y ganar tiempo delegando",
-   "corto": "Negocio",
-   "bloques": [
-    "negocio",
-    "contratar"
-   ],
-   "normas": [
-    "uda_tabla",
-    "uda_web"
-   ],
-   "filtro": ""
-  },
-  "uda_servicios": {
-   "titulo": "Qué hace UDA por tu despacho",
-   "corto": "Servicios UDA",
-   "bloques": [
-    "servicios",
-    "negocio"
-   ],
-   "normas": [
-    "uda_tabla",
-    "uda_listado",
-    "uda_web"
-   ],
-   "filtro": ""
-  },
-  "contratacion": {
-   "titulo": "Contratar en plantilla o contratar por servicios",
-   "corto": "Contratar o delegar",
-   "bloques": [
-    "contratar"
-   ],
-   "normas": [
-    "et",
-    "uda_tabla"
-   ],
-   "filtro": "despido|indemnizaci|vacaciones|periodo de prueba|jornada|preaviso|contrato de trabajo|contrato indefinido|extinci|horas extraordinarias|permisos|empleado|plantilla|delegar"
-  }
- }
+"_info": "Fuentes que el generador y el verificador usan como ÚNICA verdad. tipo 'boe': se descarga sola del BOE con el workflow 'Descargar fuentes' ('boe' = id; si el título no contiene las palabras 'clave', se busca por 'buscar'; modo 'consolidado' = texto vigente de la API de legislación consolidada, 'diario' = texto publicado en el BOE del día, 'auto' = primero consolidado y si no, diario). tipo 'uda': documentos de UDA transcritos literalmente (ya en el repositorio). tipo 'web': se descarga de la web de UDA. 'manual': pega el texto en fuentes/<archivo>. 'nota' = advertencia de vigencia que lee el verificador. 'fecha' (AAAAMMDD) = día de publicación en el BOE: si el id falla, se busca en el sumario de ese día.",
+"normas": {
+"cte": {
+"tipo": "boe",
+"titulo": "Real Decreto 314/2006, por el que se aprueba el Código Técnico de la Edificación (Parte I y anejos)",
+"corto": "CTE",
+"boe": "BOE-A-2006-5515",
+"modo": "consolidado",
+"clave": [
+"314/2006"
+],
+"archivo": "cte_rd314_2006.txt",
+"nota": "Texto consolidado vigente de la Parte I del CTE (artículos, exigencias básicas, Anejo I contenido del proyecto, Anejo III terminología)."
+},
+"rd732_2019": {
+"tipo": "boe",
+"titulo": "Real Decreto 732/2019, por el que se modifica el Código Técnico de la Edificación",
+"corto": "RD 732/2019 (CTE)",
+"boe": "BOE-A-2019-18528",
+"buscar": "Real Decreto 732/2019 Código Técnico de la Edificación",
+"modo": "auto",
+"clave": [
+"732/2019"
+],
+"archivo": "cte_rd732_2019.txt",
+"nota": "Publica el DB HE completo y modificaciones del DB HS (calidad del aire, radón) y del DB SI. Puede haber sido modificado después (RD 450/2022).",
+"fecha": "20191227"
+},
+"rd450_2022": {
+"tipo": "boe",
+"titulo": "Real Decreto 450/2022, por el que se modifica el Código Técnico de la Edificación",
+"corto": "RD 450/2022 (CTE)",
+"buscar": "Real Decreto 450/2022 Código Técnico de la Edificación",
+"modo": "auto",
+"clave": [
+"450/2022"
+],
+"archivo": "cte_rd450_2022.txt",
+"nota": "Modificación del CTE de 2022: prevalece sobre textos anteriores en lo que modifique.",
+"fecha": "20220615"
+},
+"rd173_2010": {
+"tipo": "boe",
+"titulo": "Real Decreto 173/2010, por el que se modifica el Código Técnico de la Edificación en materia de accesibilidad y no discriminación (DB SUA)",
+"corto": "RD 173/2010 (CTE DB SUA)",
+"boe": "BOE-A-2010-4057",
+"buscar": "Real Decreto 173/2010 Código Técnico de la Edificación accesibilidad",
+"modo": "auto",
+"clave": [
+"173/2010"
+],
+"archivo": "cte_rd173_2010.txt",
+"nota": "Texto del DB SUA de 2010. Modificado después por el RD 732/2019: ante la duda sobre un apartado, 'dudosa'.",
+"fecha": "20100311"
+},
+"rd1371_2007": {
+"tipo": "boe",
+"titulo": "Real Decreto 1371/2007, por el que se aprueba el documento básico DB-HR Protección frente al ruido del CTE",
+"corto": "RD 1371/2007 (CTE DB HR)",
+"boe": "BOE-A-2007-18397",
+"buscar": "Real Decreto 1371/2007 protección frente al ruido",
+"modo": "auto",
+"clave": [
+"1371/2007"
+],
+"archivo": "cte_rd1371_2007.txt",
+"nota": "Texto original del DB HR (2007). Modificado después (Orden VIV/984/2009 y otras): ante la duda sobre un apartado, 'dudosa'.",
+"fecha": "20071023"
+},
+"loe": {
+"tipo": "boe",
+"titulo": "Ley 38/1999, de 5 de noviembre, de Ordenación de la Edificación (LOE)",
+"corto": "LOE",
+"boe": "BOE-A-1999-21567",
+"modo": "consolidado",
+"clave": [
+"38/1999"
+],
+"archivo": "loe_ley38_1999.txt"
+},
+"cee": {
+"tipo": "boe",
+"titulo": "Real Decreto 390/2021, por el que se aprueba el procedimiento básico para la certificación de la eficiencia energética de los edificios",
+"corto": "RD 390/2021",
+"boe": "BOE-A-2021-9176",
+"buscar": "Real Decreto 390/2021 certificación eficiencia energética edificios",
+"modo": "auto",
+"clave": [
+"390/2021"
+],
+"archivo": "cee_rd390_2021.txt"
+},
+"ess": {
+"tipo": "boe",
+"titulo": "Real Decreto 1627/1997, disposiciones mínimas de seguridad y de salud en las obras de construcción",
+"corto": "RD 1627/1997",
+"boe": "BOE-A-1997-22614",
+"modo": "auto",
+"clave": [
+"1627/1997"
+],
+"archivo": "ess_rd1627_1997.txt"
+},
+"rcd": {
+"tipo": "boe",
+"titulo": "Real Decreto 105/2008, por el que se regula la producción y gestión de los residuos de construcción y demolición",
+"corto": "RD 105/2008",
+"boe": "BOE-A-2008-2486",
+"modo": "auto",
+"clave": [
+"105/2008"
+],
+"archivo": "rcd_rd105_2008.txt"
+},
+"suelo": {
+"tipo": "boe",
+"titulo": "Real Decreto Legislativo 7/2015, texto refundido de la Ley de Suelo y Rehabilitación Urbana",
+"corto": "TRLSRU",
+"boe": "BOE-A-2015-11723",
+"modo": "consolidado",
+"clave": [
+"7/2015"
+],
+"archivo": "suelo_rdleg7_2015.txt"
+},
+"lph": {
+"tipo": "boe",
+"titulo": "Ley 49/1960, de 21 de julio, sobre propiedad horizontal",
+"corto": "Ley de Propiedad Horizontal",
+"boe": "BOE-A-1960-10906",
+"modo": "consolidado",
+"clave": [
+"49/1960"
+],
+"archivo": "lph_ley49_1960.txt"
+},
+"uda_tabla": {
+"tipo": "uda",
+"titulo": "UDA · Tabla de Referencia de Presupuestos 2026 (documento 01)",
+"corto": "Tabla de presupuestos de UDA",
+"archivo": "uda_tabla_presupuestos.txt"
+},
+"uda_listado": {
+"tipo": "uda",
+"titulo": "UDA · Listado de Documentos a Delegar (documento 02)",
+"corto": "Listado de documentos de UDA",
+"archivo": "uda_listado_documentos.txt"
+},
+"uda_web": {
+"tipo": "web",
+"titulo": "Web de UDA (uniondearquitectos.com)",
+"corto": "uniondearquitectos.com",
+"url": "https://uniondearquitectos.com/",
+"archivo": "uda_web.txt"
+},
+"et": {
+"tipo": "boe",
+"titulo": "Real Decreto Legislativo 2/2015, texto refundido de la Ley del Estatuto de los Trabajadores",
+"corto": "Estatuto de los Trabajadores",
+"boe": "BOE-A-2015-11430",
+"buscar": "Estatuto de los Trabajadores texto refundido",
+"modo": "consolidado",
+"clave": [
+"2/2015"
+],
+"archivo": "et_rdleg2_2015.txt",
+"nota": "Texto consolidado vigente. Solo para explicar qué implica contratar a alguien en plantilla (contrato, jornada, vacaciones, extinción); nada de asesoramiento laboral concreto."
+}
+},
+"temas": {
+"cte_general": {
+"titulo": "CTE · Disposiciones generales y exigencias básicas",
+"corto": "CTE",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"cte"
+],
+"filtro": "Artículo|exigencia|Anejo III|Terminolog"
+},
+"cte_proyecto": {
+"titulo": "CTE · Contenido del proyecto (Anejo I)",
+"corto": "CTE · Anejo I",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"cte"
+],
+"filtro": "Anejo I\\b|Contenido del proyecto|proyecto b[aá]sico|proyecto de ejecuci|Memoria|Planos|Pliego|Mediciones|Presupuesto"
+},
+"cte_si": {
+"titulo": "CTE · DB SI · Seguridad en caso de incendio",
+"corto": "CTE · DB SI",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"cte",
+"rd732_2019",
+"rd450_2022"
+],
+"filtro": "\\bSI\\b|incendio|evacuaci|sector|resistencia al fuego"
+},
+"cte_sua": {
+"titulo": "CTE · DB SUA · Seguridad de utilización y accesibilidad",
+"corto": "CTE · DB SUA",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"rd173_2010",
+"rd732_2019",
+"cte"
+],
+"filtro": "\\bSUA\\b|accesib|resbaladicidad|ca[ií]das|barrera|escalera|rampa|desnivel"
+},
+"cte_he": {
+"titulo": "CTE · DB HE · Ahorro de energía",
+"corto": "CTE · DB HE",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"rd732_2019",
+"rd450_2022",
+"cte"
+],
+"filtro": "\\bHE\\s?\\d|\\bHE\\b|energ|t[eé]rmic|renovable|aislamiento|transmitancia"
+},
+"cte_hs": {
+"titulo": "CTE · DB HS · Salubridad",
+"corto": "CTE · DB HS",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"rd732_2019",
+"cte"
+],
+"filtro": "\\bHS\\b|salubridad|humedad|rad[oó]n|ventilaci|calidad del aire|agua"
+},
+"cte_hr": {
+"titulo": "CTE · DB HR · Protección frente al ruido",
+"corto": "CTE · DB HR",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"rd1371_2007",
+"cte"
+],
+"filtro": "\\bHR\\b|ruido|ac[uú]stic|aislamiento"
+},
+"cte_se": {
+"titulo": "CTE · Seguridad estructural (exigencias básicas)",
+"corto": "CTE · SE",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"cte"
+],
+"filtro": "\\bSE\\b|estructural|resistencia y estabilidad|aptitud al servicio"
+},
+"loe": {
+"titulo": "LOE · Ley de Ordenación de la Edificación",
+"corto": "LOE",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"loe"
+],
+"filtro": ""
+},
+"cee": {
+"titulo": "Certificación de la eficiencia energética (RD 390/2021)",
+"corto": "Certificación energética",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"cee"
+],
+"filtro": ""
+},
+"ess": {
+"titulo": "Seguridad y salud en las obras (RD 1627/1997)",
+"corto": "Seguridad y salud",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"ess"
+],
+"filtro": ""
+},
+"rcd": {
+"titulo": "Residuos de construcción y demolición (RD 105/2008)",
+"corto": "Residuos (RCD)",
+"bloques": [
+"proyecto"
+],
+"normas": [
+"rcd"
+],
+"filtro": ""
+},
+"suelo": {
+"titulo": "Ley de Suelo y Rehabilitación Urbana (TRLSRU)",
+"corto": "Ley de Suelo",
+"bloques": [],
+"normas": [
+"suelo"
+],
+"filtro": ""
+},
+"lph": {
+"titulo": "Ley de Propiedad Horizontal",
+"corto": "Propiedad horizontal",
+"bloques": [],
+"normas": [
+"lph"
+],
+"filtro": "obras|elementos comunes|accesibilidad|acuerdo|junta"
+},
+"uda_delegar": {
+"titulo": "Facturar más y ganar tiempo delegando",
+"corto": "Negocio",
+"bloques": [
+"negocio",
+"contratar"
+],
+"normas": [
+"uda_tabla",
+"uda_web"
+],
+"filtro": ""
+},
+"uda_servicios": {
+"titulo": "Qué hace UDA por tu despacho",
+"corto": "Servicios UDA",
+"bloques": [
+"servicios",
+"negocio"
+],
+"normas": [
+"uda_tabla",
+"uda_listado",
+"uda_web"
+],
+"filtro": ""
+},
+"contratacion": {
+"titulo": "Contratar en plantilla o contratar por servicios",
+"corto": "Contratar o delegar",
+"bloques": [
+"contratar"
+],
+"normas": [
+"et",
+"uda_tabla"
+],
+"filtro": "despido|indemnizaci|vacaciones|periodo de prueba|jornada|preaviso|contrato de trabajo|contrato indefinido|extinci|horas extraordinarias|permisos|empleado|plantilla|delegar"
+}
+}
 }
