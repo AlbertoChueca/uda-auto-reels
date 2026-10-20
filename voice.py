@@ -25,11 +25,13 @@ TTS_PREFERRED = ["gemini-3.8-flash-tts", "gemini-3.8-flash-tts-preview", "gemini
                  "gemini-3.1-flash-tts", "gemini-2.5-flash-preview-tts", "gemini-2.5-pro-preview-tts"]
 # Indicaciones SOLO en inglés y cortas: el modelo no debe confundirlas con el texto en español (si alguna vez las lee,
 # _leak() lo detecta con el reconocimiento de voz y la toma se repite).
-NARRATOR = ("Voice profile: a man from Spain in his forties, peninsular Spanish accent, an experienced architect talking "
-            "to colleagues: confident, direct and energetic, with punch and natural rhythm, varied intonation, emphasis on "
-            "the key words, a hint of a smile when it fits. Professional but never flat, never monotone, not an announcer, "
-            "not a virtual assistant. Everything is pronounced the Spanish way, including acronyms, foreign terms and "
-            "single letters. Say each sentence exactly once: never repeat or restart a line.")
+NARRATOR = ("Voice profile: a man from Madrid, Spain, in his forties, with a clear CASTILIAN (peninsular, European) "
+            "Spanish accent: distinción, so 'z' and 'c' before 'e'/'i' are pronounced like the English 'th' (θ) — "
+            "'precio', 'hacer', 'proyecto de ejecución' — never seseo; crisp final 's'; the intonation of a Spaniard "
+            "from Madrid, NOT Latin American, NOT Mexican, NOT neutral Latin. An experienced architect talking to "
+            "colleagues: confident, direct and energetic, with punch and natural rhythm, emphasis on the key words. "
+            "Never flat, never monotone, not an announcer. Acronyms and single letters pronounced the Spanish (Spain) way. "
+            "Say each sentence exactly once: never repeat or restart a line.")
 ENGINE_USED = None
 LOCK = None          # engine chosen for the current reel: every line of one reel uses the same voice
 
@@ -418,6 +420,9 @@ def _tts_models(key):
     return _models
 
 
+_LANG = ["es-ES"]                    # se quita solo si un modelo no acepta languageCode
+
+
 def _gemini_call(prompt, key):
     last = None
     for model in _tts_models(key):
@@ -427,7 +432,11 @@ def _gemini_call(prompt, key):
                                   timeout=180, json={
                                       "contents": [{"parts": [{"text": prompt}]}],
                                       "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {
+                                          **({"languageCode": _LANG[0]} if _LANG[0] else {}),
                                           "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEMINI_VOICE}}}}})
+                if r.status_code == 400 and "language" in r.text.lower() and _LANG[0]:
+                    print("voice: el modelo no acepta languageCode; sigo solo con la indicación de acento", flush=True)
+                    _LANG[0] = None; continue
                 if r.status_code in (429, 500, 502, 503, 504):
                     last = RuntimeError(f"{model} {r.status_code}"); time.sleep(8 * (attempt + 1)); continue
                 if r.status_code != 200:
@@ -489,7 +498,7 @@ def _gemini_line(text, style, key, pace):
     hint = f"{style}, {pace}" if style else pace
     prompts = [f"{NARRATOR}\nPerformance: {hint}.\nSpeak only the Spanish text after the colon, word for word.\n"
                f"Text: {text}",
-               f"Say naturally in Spanish from Spain, {hint}: {text}",
+               f"Say naturally in Castilian Spanish from Madrid (Spain accent, distinción, no seseo), {hint}: {text}",
                text]
     takes = []
     for pr in prompts + prompts[:2]:                 # hasta 5 tomas antes de rendirse

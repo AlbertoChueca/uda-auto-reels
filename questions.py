@@ -35,6 +35,7 @@ NO_SHUFFLE = re.compile(r"\b(todas|ninguna|ambas|anteriores|las dos|son correcta
 
 # formato -> (tipo de pieza, bloques que admite)
 FORMAT_SPEC = {
+    "grafico": ("cifras", ("negocio", "contratar", "servicios")),
     "claves": ("puntos", ("negocio", "contratar", "servicios", "proyecto")),
     "comparativa": ("comparativa", ("contratar", "servicios", "negocio")),
     "dato": ("dato", ("proyecto", "negocio", "servicios")),
@@ -111,17 +112,21 @@ def text_of(p):
         return " ".join([p["titulo"], p["col_a"], p["col_b"]] + [f"{f['aspecto']} {f['a']} {f['b']}" for f in p["filas"]])
     if p["tipo"] in ("dato", "mito"):
         return p["afirmacion"] + " " + p["explicacion"]
+    if p["tipo"] == "cifras":
+        return " ".join([p["titulo"], p["conclusion"]] + [f"{b['etiqueta']} {b['texto']}" for b in p["barras"]])
     return p["q"] + " " + p["a"]
 
 
 def fits(p, kind="normal"):
     if p["tipo"] != "test":
-        if p["tipo"] == "puntos":
-            return all(4 <= len(x.split()) <= 18 for x in p["puntos"]) and len(p["titulo"]) <= 60
+        if p["tipo"] == "puntos":                         # textos cortos: se entienden en 3 segundos
+            return all(3 <= len(x.split()) <= 10 for x in p["puntos"]) and len(p["titulo"]) <= 50
         if p["tipo"] == "comparativa":
-            return len(p["filas"]) == 3 and all(len(f["a"].split()) <= 12 and len(f["b"].split()) <= 12 for f in p["filas"])
+            return len(p["filas"]) == 3 and all(len(f["a"].split()) <= 6 and len(f["b"].split()) <= 6 for f in p["filas"])
         if p["tipo"] in ("dato", "mito"):
-            return 6 <= len(p["afirmacion"].split()) <= 26 and 10 <= len(p["explicacion"].split()) <= 42
+            return 5 <= len(p["afirmacion"].split()) <= 16 and 8 <= len(p["explicacion"].split()) <= 26
+        if p["tipo"] == "cifras":
+            return 2 <= len(p["barras"]) <= 4
         return 10 <= len(p["q"]) <= 110 and 3 <= len(p["a"]) <= 160
     ql, ol = LIMITS[kind]
     return len(p["pregunta"]) <= ql and all(len(o) <= ol for o in p["opciones"])

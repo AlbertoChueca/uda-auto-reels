@@ -50,14 +50,15 @@ ROLES = {
 NAMES = list(ROLES)
 
 # Serie fija de cada día (0 = lunes). El reel de las 12:00 sigue la serie; los de las 8:00 y las 15:00 los elige el piloto.
-SERIES = {0: ("Lunes de facturación", "claves"), 1: ("Martes de contratar o delegar", "comparativa"),
-          2: ("Miércoles de datos de proyecto", "dato"), 3: ("Jueves de mitos del despacho", "mito_realidad"),
-          4: ("Viernes de casos de despacho", "caso_despacho"), 5: ("Sábado de lo que delegas", "comparativa"),
-          6: ("Domingo de productividad", "claves")}
+SERIES = {0: ("Lunes de cifras", "grafico"), 1: ("Martes de contratar o delegar", "comparativa"),
+          2: ("Miércoles de claves para crecer", "claves"), 3: ("Jueves de mitos del despacho", "mito_realidad"),
+          4: ("Viernes de cifras", "grafico"), 5: ("Sábado de casos de despacho", "caso_despacho"),
+          6: ("Domingo de lo que delegas", "comparativa")}
 
 AUDIENCE = ("Público: fundadores y socios de despachos de arquitectura y arquitectos autónomos de España que proyectan "
             "bloques, promociones y edificios de envergadura; quieren facturar más, cobrar mejor su hora y delegar. "
-            "Contenido premium y elegante, nada de obviedades. Español de España, de colega a colega, profesional y directo, nunca condescendiente; sin "
+            "Contenido premium y elegante, nada de obviedades. ESPAÑOL DE ESPAÑA (peninsular), nunca latinoamericano: tú y vosotros (nunca \"ustedes\" para el público), vocabulario de España (ordenador, móvil, vale, coger, pedir cita, encargo, obra, plantilla, autónomo); nunca \"computadora\", \"celular\", \"agendar\", \"checar\", \"platicar\", \"chamba\", \"tomar un encargo\" por coger. "
+            " Español de España, de colega a colega, profesional y directo, nunca condescendiente; sin "
             "promesas ni estadísticas inventadas; UDA nunca firma (la firma es del despacho).")
 
 
@@ -162,14 +163,15 @@ Reel de hoy: formato {fmt}, estilo visual "{estilo}". {_desc(items)}
 Gancho: "{S.get('screen_hook')}". {('Escena: ' + S['escena']) if S.get('escena') else ''}
 Propón:
 - concepto: el concepto visual del reel en una frase (máx. 14 palabras).
-- imagen_idea: UNA ilustración vertical que acompañe (máx. 45 palabras): mesa de un estudio de arquitectura, planos, maqueta,
-  detalle constructivo, obra, edificio residencial genérico, luz natural... relacionada con el tema (sin texto ni cotas
+- imagen_idea: UNA fotografía vertical editorial que acompañe (máx. 45 palabras): estudio de arquitectura luminoso,
+  socios revisando planos de espaldas, maqueta de un bloque de viviendas, edificio residencial contemporáneo, obra de un
+  bloque con grúa al atardecer, mesa con portátil y planos... relacionada con el tema (negocio, equipo, crecer) (sin texto ni cotas
   legibles, sin edificios famosos, sin logotipos). Que no se parezca a estas recientes: {'; '.join([r for r in recent if r][-10:]) or 'ninguna'}.
 - usar_imagen_gancho: true si la imagen hará el gancho más potente que el fondo de marca.
 Devuelve JSON: {{"concepto": str, "imagen_idea": str, "usar_imagen_gancho": bool}}""", 0.9)
         idea = _w(res.get("imagen_idea"), 6, 60)
         return {"concepto": _w(res.get("concepto"), 3, 16) or "", "imagen_idea": idea,
-                "usar_imagen": bool(res.get("usar_imagen_gancho")) or estilo == "ilustrado" or fmt == "caso_despacho"}
+                "usar_imagen": True}                       # siempre: el gancho con foto se ve más premium
     except Exception as e:
         print("estudio directora omitida:", str(e)[:120], flush=True)
         return {"imagen_idea": None, "usar_imagen": False}

@@ -93,7 +93,7 @@ de departamento técnico externo para despachos de arquitectura. Tu público son
 arquitectos autónomos de España que proyectan bloques, promociones y edificios de envergadura: quieren facturar más,
 cobrar mejor su hora y dedicar su tiempo a proyectar. Haces carruseles para Instagram, TikTok y LinkedIn, PREMIUM y
 elegantes, que un fundador GUARDA y ENVÍA a su socio: claros, rigurosos, con criterio de socio senior, nada de
-obviedades ni tono de teletienda. Escribes en español de España, de colega a colega,
+obviedades ni tono de teletienda. ESPAÑOL DE ESPAÑA (peninsular), nunca latinoamericano: tú y vosotros (nunca "ustedes" para el público), vocabulario de España (ordenador, móvil, vale, coger, pedir cita, encargo, obra, plantilla, autónomo); nunca "computadora", "celular", "agendar", "checar", "platicar", "chamba", "tomar un encargo" por coger. Escribes en español de España, de colega a colega,
 profesional y directo, sin promesas ni estadísticas; UDA nunca firma (la firma es del despacho)."""
 
 SCHEMA = """{

@@ -181,6 +181,9 @@ def describe(p, i=None):
     elif p["tipo"] == "comparativa":
         body = (f"Comparativa: {p['titulo']} · columnas «{p['col_a']}» frente a «{p['col_b']}»\n"
                 + "\n".join(f"- {f['aspecto']}: {f['a']} | {f['b']}" for f in p["filas"]) + "\n")
+    elif p["tipo"] == "cifras":
+        body = (f"Gráfico: {p['titulo']}\n" + "\n".join(f"- barra «{b['etiqueta']}»: {b['texto']} (valor dibujado {b['valor']:g})"
+                                                       for b in p["barras"]) + f"\nConclusión: {p['conclusion']}\n")
     elif p["tipo"] in ("dato", "mito"):
         body = (f"Afirmación: {p['afirmacion']}\n" + (f"Veredicto: {p['veredicto']}\n" if p["tipo"] == "mito" else "")
                 + f"Explicación: {p['explicacion']}\n")
@@ -219,7 +222,9 @@ decir o insinuar que UDA firma, visa o asume la responsabilidad del proyecto (la
 promesas ni de estadísticas que no estén literalmente en la fuente.
 "calidad": 1-10, cuánto le aporta a un FUNDADOR de despacho o arquitecto autónomo que proyecta bloques y obras grandes:
 le ayuda a facturar más, a cobrar mejor su hora, a decidir si delegar o contratar, o le descubre algo exacto y relevante
-de un proyecto (10 = cambia una decisión o evita un error caro; 5 = correcto pero obvio o genérico; 1 = irrelevante).
+de un proyecto, y lo SENCILLO que es de entender en 3 segundos en el móvil (10 = idea clara que cambia una decisión;
+5 = correcto pero obvio, genérico o demasiado técnico; 1 = irrelevante). En un gráfico: las barras tienen que ser
+comparables (misma unidad y mismo concepto) y la conclusión tiene que verse de verdad en esas cifras.
 "cita": un fragmento COPIADO LITERALMENTE del texto de la fuente (10-40 palabras) que demuestre la pieza (si no lo
 hay, ""); "referencia": norma y artículo/sección/apartado exactos según el texto (p. ej. "CTE, Parte I, art. 11" o
 "Tabla de presupuestos de UDA, apartado 07"); "motivo": una frase en español; "correccion": si es "error", qué es lo correcto.

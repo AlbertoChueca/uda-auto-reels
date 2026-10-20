@@ -193,10 +193,10 @@ Mira este reel terminado (3 claves, comparativa a dos columnas, dato de proyecto
 Debe sentirse PREMIUM y elegante, para fundadores de despachos: ni repaso de examen ni anuncio de teletienda. Gancho: {S.get('screen_hook')!r}.
 Primera línea actual de la descripción: {first!r}
 
-Puntúa 1-10: gancho en 1,5 s, claridad, ritmo (ni lento ni atropellado), voz masculina natural en español de España, con energía (no plana), que diga lo
+Puntúa 1-10: gancho en 1,5 s, claridad, ritmo (ni lento ni atropellado), voz masculina natural con ACENTO DE ESPAÑA (peninsular, con distinción z/c; nada de acento latinoamericano), con energía (no plana), que diga lo
 mismo que el texto, palabras sueltas que sobren o siseo/ruido, subtítulos y resaltado sincronizados, la respuesta correcta
 se ve clara, explicación útil, cierre claro, probabilidad de comentar/guardar/compartir.
-"critical" = true SOLO si el reel está claramente roto (mudo, congelado/negro, ilegible, voz equivocada o ininteligible,
+"critical" = true si el acento NO es de España (seseo, entonación latinoamericana) o si el reel está claramente roto (mudo, congelado/negro, ilegible, voz equivocada o ininteligible,
 la respuesta resaltada no coincide con la que dice la voz). Después escribe una PRIMERA línea de descripción mejor (máx. 12
 palabras, máx. 1 emoji, sin datos nuevos) y una invitación a comentar (máx. 12 palabras).
 Devuelve JSON: {{"overall": number, "scores": {{...}}, "critical": bool, "issues": [str], "suggestions": [str],

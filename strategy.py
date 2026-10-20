@@ -21,7 +21,7 @@ EXPLORE = float(os.environ.get("EXPLORE_RATE", "0.15"))
 MIN_AGE_DAYS = 3
 
 DEFAULT_ARMS = {
-    "formato": ["claves", "comparativa", "dato", "mito_realidad", "caso_despacho"],
+    "formato": ["grafico", "comparativa", "claves", "mito_realidad", "caso_despacho", "dato"],
     "estilo": ["piedra", "carbon", "plano", "ficha", "minimal", "ilustrado"],
     "hook_style": [
         "facturación: abrir con lo que le cuesta al despacho no delegar (solo con datos del material)",
@@ -31,7 +31,7 @@ DEFAULT_ARMS = {
         "dato: abrir con el dato exacto de la fuente que más sorprende",
         "escena: el momento en que entra un encargo grande y el equipo ya va a tope",
     ],
-    "bloque": ["negocio", "contratar", "servicios", "proyecto", "mixto"],
+    "bloque": ["negocio", "contratar", "servicios", "mixto"],
     "think_time": ["corto", "normal", "largo"],
 }
 COOLDOWN = {}

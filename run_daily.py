@@ -122,7 +122,7 @@ if HAS_AI:
     except Exception as e:
         status.append(f"estudio omitido: {str(e)[:120]}")
 
-chain = list(dict.fromkeys([arms.get("formato", "claves"), "claves", "comparativa", "dato", "mito_realidad"]))
+chain = list(dict.fromkeys([arms.get("formato", "grafico"), "grafico", "comparativa", "claves", "mito_realidad"]))
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
 if HAS_AI:

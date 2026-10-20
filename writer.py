@@ -9,6 +9,7 @@ import json, os, re
 import questions as QB
 
 FORMATS = {
+    "grafico": "Gráfico: las cifras que lo explican",
     "claves": "3 claves para el despacho",
     "comparativa": "Comparativa: dos formas de hacerlo",
     "dato": "Dato de proyecto que pocos conocen",
@@ -20,10 +21,12 @@ de viviendas, promociones y edificios de envergadura. Profesionales expertos con
 facturar más, cobrar mejor su hora y dedicar su tiempo a proyectar y a sus clientes. OBJETIVO: que vean, con datos
 ciertos y criterio, que delegar la documentación técnica en UDA les hace crecer. TONO: premium, elegante y seguro, de
 colega a colega, como un socio senior que comparte lo que sabe; con gancho y ritmo, nunca vendedor de teletienda, nunca
-condescendiente ni con "¿sabías que...?" de manual. Español de España, tuteo. Nada de promesas ("duplicarás tu
+condescendiente ni con "¿sabías que...?" de manual. Español de España, tuteo. ESPAÑOL DE ESPAÑA (peninsular), nunca latinoamericano: tú y vosotros (nunca "ustedes" para el público), vocabulario de España (ordenador, móvil, vale, coger, pedir cita, encargo, obra, plantilla, autónomo); nunca "computadora", "celular", "agendar", "checar", "platicar", "chamba", "tomar un encargo" por coger.
+Nada de promesas ("duplicarás tu
 facturación"), ni estadísticas inventadas, ni decir o insinuar que UDA firma: la firma es siempre del despacho."""
 
 SCHEMAS = {
+    "grafico": '"intro_line": str (6-14 palabras: la voz plantea la pregunta que responde el gráfico, sin dar las cifras)',
     "claves": '"intro_line": str (6-16 palabras: la voz presenta las 3 claves sin adelantarlas)',
     "comparativa": '"intro_line": str (6-16 palabras: la voz plantea la disyuntiva de la comparativa)',
     "dato": '"intro_line": str (6-16 palabras: la voz prepara el dato sin desvelarlo)',
@@ -71,7 +74,8 @@ MATERIAL (lo ÚNICO que puedes usar como dato; no añadas artículos, apartados,
 HECHOS CIERTOS DE UDA (solo para el cierre y la descripción):
 {verifier.facts()}
 
-Escribe en español de España, frases cortas para decir en voz alta (máx. 16 palabras por frase), números en cifra.
+Escribe en español de España, frases MUY cortas y sencillas para decir en voz alta (máx. 12 palabras por frase), números en cifra.
+Un fundador tiene que entenderlo a la primera: nada de jerga técnica ni normativa en lo que se dice.
 Cada campo es EXACTAMENTE lo que se dice o se lee en pantalla: nunca escribas indicaciones de tono, de voz o de actuación
 (nada de "tono seguro", "como si fueras un arquitecto", "(sonriendo)", "Narrador:"), ni menciones a quién habla.
 Campos:
@@ -207,6 +211,8 @@ def verified(fmt, P):
         return {"titulo_norma": P["titulo"], "puntos": list(P["puntos"])}
     if P["tipo"] == "comparativa":
         return {"titulo_norma": P["titulo"], "col_a": P["col_a"], "col_b": P["col_b"], "filas": [dict(f) for f in P["filas"]]}
+    if P["tipo"] == "cifras":
+        return {"titulo_norma": P["titulo"], "barras": [dict(b) for b in P["barras"]], "conclusion": P["conclusion"]}
     if P["tipo"] in ("dato", "mito"):
         out = {"afirmacion": P["afirmacion"], "explicacion": P["explicacion"]}
         if P["tipo"] == "mito":
@@ -218,7 +224,8 @@ def verified(fmt, P):
 def template(fmt, items):
     """Textos seguros sin IA: frases fijas + el contenido verificado de la pieza."""
     P = items[0]
-    hooks = {"claves": ("3 claves para tu despacho", "Tres claves que cambian cómo funciona un despacho."),
+    hooks = {"grafico": ("Las cifras lo dicen", "Mira lo que dicen las cifras."),
+             "claves": ("3 claves para tu despacho", "Tres claves que cambian cómo funciona un despacho."),
              "comparativa": ("¿Contratar o delegar?", "Dos formas de sacar el trabajo. Compáralas."),
              "dato": ("Pocos lo saben", "Un dato de proyecto que pocos arquitectos tienen presente."),
              "mito_realidad": ("¿Mito o realidad?", "Mito o realidad. Piénsalo antes de que lo diga."),
@@ -228,7 +235,8 @@ def template(fmt, items):
         b = P["col_b"] if P["col_b"][:3].isupper() or P["col_b"].split()[0].isupper() else P["col_b"][0].lower() + P["col_b"][1:]
         sh = f"{P['col_a']} o {b}" if len(f"{P['col_a']} o {b}".split()) <= 6 else sh
     return {"screen_hook": sh, "hook_line": hl, "reveal_line": "Vamos allá.",
-            "intro_line": "Tres claves. Guárdalo para cuando lo necesites.", "cta_line": CTA_DEFAULT,
+            "intro_line": "Mira cómo cambian las cifras." if fmt == "grafico" else "Tres claves. Guárdalo para cuando lo necesites.",
+            "cta_line": CTA_DEFAULT,
             "caption_hook": {"comparativa": "Dos formas de sacar el trabajo adelante 📐", "dato": "Un dato de proyecto que pocos tienen presente 📐",
                              "mito_realidad": "¿Mito o realidad en tu despacho? 📐"}.get(fmt, "Lo que cambia en un despacho que delega 📐"),
             "comment_prompt": {"mito_realidad": "¿Mito o realidad? Te leemos en comentarios",

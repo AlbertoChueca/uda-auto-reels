@@ -26,7 +26,7 @@ CARD_CENTER = 900         # las tarjetas se centran aquí si caben (zona segura 
 CARD_MAX_BOTTOM = 1385   # deja sitio debajo para 'Comenta…' / retos dentro de la zona segura
 HDR = 74                  # alto de la cabecera de la hoja (estilo examen)
 THINK = {"corto": 5, "normal": 7, "largo": 9}
-BADGE = {"claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
+BADGE = {"grafico": "LAS CIFRAS", "claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
          "test_normativa": "TEST DE NORMATIVA", "error_tipico": "ERROR TÍPICO EN PROYECTO", "mito_realidad": "MITO O REALIDAD",
          "norma_30s": "NORMATIVA EN 30 SEGUNDOS", "simulacro_3": "TEST RÁPIDO", "caso_despacho": "CASO DE DESPACHO",
          "checklist": "CHECKLIST DE PROYECTO", "delegar": "CONTRATAR O DELEGAR", "uda_servicio": "ASÍ TRABAJA UDA",
@@ -173,8 +173,9 @@ class TextCard:
     """Tarjeta de explicación / truco / afirmación / puntos clave / ficha, con karaoke del texto hablado."""
 
     def __init__(self, title, body, ref=None, top_line=None, big=None, bullets=None, title_color=None, body_size=54,
-                 title_fg=None):
+                 title_fg=None, icons=False):
         self.title, self.body, self.ref, self.top, self.big, self.bullets = title, body, ref, top_line, big, bullets
+        self.icons = [fx.icon_for(b) for b in (bullets or [])] if icons else None
         self.title_color, self.title_fg = title_color or T.title_bg, title_fg or (T.title_fg if not title_color else WHITE)
         inner = CARD_W - 2 * PAD
         for bs in (body_size, body_size - 4, body_size - 8, body_size - 12, body_size - 16):
@@ -226,9 +227,12 @@ class TextCard:
         for k, bl in enumerate(self.bullets or []):
             if n_bullets is not None and k >= n_bullets:
                 break
-            d.ellipse([PAD, y + 2, PAD + 58, y + 60], fill=T.accent if T.letter != "box" else T.ink)
-            f = fx.font(F900, 34); d.text((PAD + 29 - f.getlength(str(k + 1)) / 2, y + 6), str(k + 1), font=f,
-                                          fill=T.accent_fg if T.letter != "box" else WHITE)
+            if self.icons:
+                im.alpha_composite(fx.icon(self.icons[k], 92, T.ok_col), (PAD - 18, y - 16))
+            else:
+                d.ellipse([PAD, y + 2, PAD + 58, y + 60], fill=T.accent if T.letter != "box" else T.ink)
+                f = fx.font(F900, 34); d.text((PAD + 29 - f.getlength(str(k + 1)) / 2, y + 6), str(k + 1), font=f,
+                                              fill=T.accent_fg if T.letter != "box" else WHITE)
             b = fx.text_block(bl, F800, self.bs, inner - 84, T.ink,
                               lit=(bullet_lit if k == (n_bullets or 0) - 1 else None), dim=T.dim)
             im.alpha_composite(b, (PAD + 84, y + 4)); y += b.height + 26
@@ -241,12 +245,73 @@ class TextCard:
         return im
 
 
+class ChartCard:
+    """Gráfico de barras animado: cada barra crece al decirla; la conclusión aparece al final. Cifras tal cual de la fuente."""
+
+    def __init__(self, title, bars, conclusion, ref=None):
+        self.title, self.bars, self.conclusion, self.ref = title, bars, conclusion, ref
+        self.note = "Precios de referencia" if any("€" in b["texto"] for b in bars) else None
+        self.vmax = max(b["valor"] for b in bars)
+        hi = [i for i, b in enumerate(bars) if "uda" in b["etiqueta"].lower() or "delega" in b["etiqueta"].lower()]
+        self.hi = hi[0] if hi else None
+        self.th = fx.text_block(title, F900, 56, CARD_W - 2 * PAD).height
+        self.ch = fx.text_block(conclusion, F900, 42, CARD_W - 2 * PAD - 84).height
+        self.rows = []
+        for b in bars:
+            v = fx.text_block(b["texto"], F900, 38, 520)
+            self.rows.append(max(fx.text_block(b["etiqueta"], F800, 34, CARD_W - 2 * PAD - v.width - 24).height, v.height))
+        self.h = (PAD + self.th + 36 + sum(r + 8 + 58 + 34 for r in self.rows) + 20 + self.ch + 40 + (60 if self.note else 0)
+                  + (80 if ref else 0) + PAD)
+        self._cache = {}
+
+    def render(self, grow=None, show_conc=0.0, lit=None):
+        """grow: lista con el avance (0-1) de cada barra."""
+        grow = grow or [1.0] * len(self.bars)
+        key = (tuple(round(g, 2) for g in grow), round(show_conc, 1), lit)
+        if key in self._cache:
+            return self._cache[key]
+        im = _card_base(self.h); d = ImageDraw.Draw(im)
+        y = PAD
+        im.alpha_composite(fx.text_block(self.title, F900, 56, CARD_W - 2 * PAD, T.ink), (PAD, y)); y += self.th + 36
+        maxw = CARD_W - 2 * PAD
+        for k, b in enumerate(self.bars):
+            g = eo(grow[k])
+            v = fx.text_block(b["texto"], F900, 38, 520, T.ink)
+            lab = fx.text_block(b["etiqueta"], F800, 34, CARD_W - 2 * PAD - v.width - 24, T.ink if g > 0 else T.faded)
+            im.alpha_composite(lab, (PAD, y))
+            if g > 0.5:                                    # la cifra aparece a la derecha, encima de la barra
+                vv = v.copy(); vv.putalpha(vv.getchannel("A").point(lambda a_: int(a_ * min(1, (g - 0.5) * 2))))
+                im.alpha_composite(vv, (CARD_W - PAD - v.width, y - 2))
+            by = y + self.rows[k] + 8; bw = max(10, maxw * b["valor"] / self.vmax * g)
+            col = T.ok_col if (self.hi == k or (self.hi is None and k == len(self.bars) - 1)) else _mix(T.ink, T.faded, 0.25)
+            d.rounded_rectangle([PAD, by, PAD + maxw, by + 58], 6, fill=_mix(T.faded, T.card_fill[:3] if isinstance(T.card_fill, tuple) else T.card_fill, 0.5))
+            d.rounded_rectangle([PAD, by, PAD + bw, by + 58], 6, fill=col)
+            y = by + 58 + 34
+        y += 20
+        if show_conc > 0:
+            ic = fx.icon("up" if self.hi is None else "check", 72, T.ok_col)
+            im.alpha_composite(ic, (PAD, y + 2))
+            c = fx.text_block(self.conclusion, F900, 42, CARD_W - 2 * PAD - 84, T.ink, lit=lit, dim=T.dim)
+            im.alpha_composite(c, (PAD + 84, y + 4)); y += self.ch + 40
+        else:
+            y += self.ch + 40
+        if self.note:
+            im.alpha_composite(fx.text_block(self.note, F800, 26, 600, _mix(T.ink, T.faded, 0.4)), (PAD, y))
+        if self.ref:
+            r_ = fx.pill(self.ref, 26, T.ref_bg, T.ref_fg, padx=20, pady=10, path=F800, radius=T.pill_radius)
+            if r_.width > CARD_W - 2 * PAD:
+                r_ = r_.resize((CARD_W - 2 * PAD, int(r_.height * (CARD_W - 2 * PAD) / r_.width)), Image.LANCZOS)
+            im.alpha_composite(r_, (PAD, int(self.h - PAD - r_.height)))
+        self._cache[key] = im
+        return im
+
+
 class CompareCard:
     """Comparativa a dos columnas (p. ej. «Contratar en plantilla» / «Contratar por servicios»): las filas aparecen al decirlas."""
 
     def __init__(self, title, col_a, col_b, rows, ref=None):
         self.title, self.col_a, self.col_b, self.rows, self.ref = title, col_a, col_b, rows, ref
-        for s in (46, 43, 40, 37, 34, 31):
+        for s in (54, 50, 46, 42, 38, 34):
             self.s = s
             self.h = self._measure()
             if CARD_TOP + self.h <= CARD_MAX_BOTTOM:
@@ -259,8 +324,8 @@ class CompareCard:
     def _measure(self):
         h = PAD + fx.text_block(self.title, F900, 54, CARD_W - 2 * PAD).height + 24 + 44
         for r in self.rows:
-            ha = fx.text_block(r["a"], F800, self.s, self._colw()).height
-            hb = fx.text_block(r["b"], F900, self.s, self._colw()).height
+            ha = fx.text_block(r["a"], F800, self.s, self._colw() - 52).height
+            hb = fx.text_block(r["b"], F900, self.s, self._colw() - 52).height
             h += 46 + max(ha, hb) + 30
         return h + (80 if self.ref else 0) + PAD
 
@@ -277,15 +342,17 @@ class CompareCard:
         im.alpha_composite(fx.spaced(self.col_b.upper(), F900, 26, T.label, 0.06), (xb, y))
         y += 44
         for k, r in enumerate(self.rows):
-            ha = fx.text_block(r["a"], F800, self.s, cw).height; hb = fx.text_block(r["b"], F900, self.s, cw).height
+            ha = fx.text_block(r["a"], F800, self.s, cw - 52).height; hb = fx.text_block(r["b"], F900, self.s, cw - 52).height
             rh = 46 + max(ha, hb) + 30
             if k < n_rows:
                 d.line([(PAD, y), (CARD_W - PAD, y)], fill=T.faded, width=2)
                 if hot == k:
                     d.rectangle([xb - 14, y + 8, CARD_W - PAD + 6, y + rh - 8], fill=_mix(T.card_fill if len(T.card_fill) == 3 else T.card_fill[:3], T.ok_col, 0.12))
                 im.alpha_composite(fx.spaced(r["aspecto"].upper(), F900, 24, T.label, 0.05), (PAD, y + 12))
-                im.alpha_composite(fx.text_block(r["a"], F800, self.s, cw, _mix(T.ink, T.faded, 0.35)), (PAD, y + 46))
-                im.alpha_composite(fx.text_block(r["b"], F900, self.s, cw, T.ink), (xb, y + 46))
+                im.alpha_composite(fx.icon("cross", 52, T.bad_col), (PAD - 6, y + 46))
+                im.alpha_composite(fx.icon("check", 52, T.ok_col), (xb - 6, y + 46))
+                im.alpha_composite(fx.text_block(r["a"], F800, self.s, cw - 52, _mix(T.ink, T.faded, 0.35)), (PAD + 52, y + 46))
+                im.alpha_composite(fx.text_block(r["b"], F900, self.s, cw - 52, T.ink), (xb + 52, y + 46))
             y += rh
         if self.ref:
             r_ = fx.pill(self.ref, 26, T.ref_bg, T.ref_fg, padx=20, pady=10, path=F800, radius=T.pill_radius)
@@ -376,6 +443,12 @@ def lines_for(fmt, items, S):
         L.append(("st", S["afirmacion"], "intriguing"))
         L.append(("rev", "¡Mito!" if S["veredicto"] == "MITO" else "¡Realidad!", "emphatic, lively"))
         L.append(("ex", S["explicacion"], "assured, explaining"))
+    elif fmt == "grafico":
+        if S.get("intro_line"):
+            L.append(("intro", S["intro_line"], "intriguing, confident"))
+        for k, b in enumerate(S["barras"]):
+            L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
+        L.append(("conc", S["conclusion"], "emphatic, confident conclusion"))
     elif fmt == "dato":
         L.append(("st", S["afirmacion"], "revealing, confident, slight emphasis"))
         L.append(("ex", S["explicacion"], "assured, explaining"))
@@ -411,7 +484,7 @@ def _groups(L):
     out = []
     for item in L:
         k = item[0]
-        joins = k[:1] == "o" or k in ("ex", "p1", "p2", "c1", "c2") or k.startswith("fa") or (k.startswith("r") and k[1:].isdigit())
+        joins = k[:1] == "o" or k in ("ex", "p1", "p2", "c1", "c2", "b1", "b2", "b3", "conc") or k.startswith("fa") or (k.startswith("r") and k[1:].isdigit())
         if joins and out:
             out[-1].append(item)
         else:
@@ -449,6 +522,10 @@ def caption_text(fmt, items, S, rng, st=None):
             f"▪️ {r['aspecto']} → {S['col_a']}: {r['a']} · {S['col_b']}: {r['b']}" for r in S["filas"])
     elif fmt == "dato":
         body = f"{S['afirmacion']}\n\n{S['explicacion']}"
+    elif fmt == "grafico":
+        nota = " (precios de referencia)" if any("€" in b["texto"] for b in S["barras"]) else ""
+        body = f"{S['titulo_norma']}{nota}\n\n" + "\n".join(f"▪️ {b['etiqueta']}: {b['texto']}" for b in S["barras"]) + \
+            f"\n\n→ {S['conclusion']}"
     else:
         body = (S["escena"] + "\n\n" if fmt == "caso_despacho" else "") + P["pregunta"] + "\n" + \
                "\n".join(f"{QB.LETTERS[k]}) {o}" for k, o in enumerate(P["op"]))
@@ -547,6 +624,15 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             seg("count", count, q=0, n=count)
             a = t; seg("stamp", max(1.6, D["rev"] + 0.7)); say("rev", a + 0.1)
             a = t; seg("explain", D["ex"] + 1.2); say("ex", a + 0.5)
+        elif fmt == "grafico":
+            a = t; tt = a + 0.5
+            if "intro" in D:
+                say("intro", tt); tt += D["intro"] + 0.4
+            starts = []
+            for k in range(len(S["barras"])):
+                starts.append(tt); say(f"b{k}", tt); tt += D[f"b{k}"] + 0.45
+            cstart = tt; say("conc", tt); tt += D["conc"]
+            seg("chart", tt - a + 1.8, starts=starts, cstart=cstart)
         elif fmt == "dato":
             a = t; seg("statement", D["st"] + 1.4); say("st", a + 0.45)
             a = t; seg("explain", D["ex"] + 1.4); say("ex", a + 0.5)
@@ -601,7 +687,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     for k, at in VO.items():
         put(vo, A[k], at)
     for sg in SEG:
-        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare"):
+        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare", "chart"):
             put(sfx, fx.whoosh(), sg["a"] - 0.15, 1.1)
         if sg["kind"] == "count":
             for s_ in range(sg["n"]):
@@ -645,22 +731,24 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     hook_logo = fx.logo(70, T.head_col, T.label if T.name != "carbon" else ARENA)
     hook_logo_img = fx.logo(70, WHITE, ARENA)
     cards = []
-    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad") and fmt not in QB.POINTS_ONLY:
+    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico") and fmt not in QB.POINTS_ONLY:
         cards = [QuestionCard(Q, QB.tema_titulo(Q["tema"]).upper(), f"{i + 1}/3" if fmt == "simulacro_3" else None)
                  for i, Q in enumerate(items)]
-    expl = stmt = pts = scene_card = cmp_card = None
+    expl = stmt = pts = scene_card = cmp_card = chart = None
     fronts, backs = [], []
     if fmt == "repaso_express":
         for i, F in enumerate(items):
             fronts.append(TextCard(f"FICHA {i + 1}/{len(items)}", F["q"], ref_label(F), body_size=62))
             backs.append(TextCard("RESPUESTA", F["a"], ref_label(F), body_size=54, title_color=T.ok_col,
                                   title_fg=T.ok_text if T.ok_mode == "fill" else T.ink))
+    elif fmt == "grafico":
+        chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P))
     elif fmt in QB.POINTS_ONLY or fmt in ("dato", "comparativa", "mito_realidad"):
         if fmt == "mito_realidad":
             stmt = TextCard("¿MITO O REALIDAD?", S["afirmacion"], None, body_size=70)
             expl = TextCard("¿POR QUÉ?", S["explicacion"], ref_label(P), body_size=50)
         if fmt in QB.POINTS_ONLY:
-            pts = TextCard(None, None, ref_label(P), big=S["titulo_norma"], bullets=S["puntos"])
+            pts = TextCard(None, None, ref_label(P), big=S["titulo_norma"], bullets=S["puntos"], icons=True, body_size=58)
         if fmt == "caso_despacho" and hook_bg is None:
             scene_card = TextCard("CASO DE DESPACHO", S["escena"], None, body_size=58)
         if fmt == "dato":
@@ -835,6 +923,11 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             fx.paste_center(fr, shadow(im_), W / 2, y, alpha=p)
             if save_lab is not None and lt > 1.0 and y + img.height / 2 + 80 < fx.SAFE_BOTTOM:
                 fx.paste_center(fr, save_lab, W / 2, y + img.height / 2 + 70, eob((lt - 1.0) / 0.35))
+        elif kind == "chart":
+            grow = [clamp((tt - s0) / 0.9) for s0 in sg["starts"]]
+            img = chart.render(grow=grow, show_conc=clamp((tt - sg["cstart"]) / 0.3), lit=lit("conc", tt))
+            im_, y, p = card_at(img, tt, sg["a"])
+            fx.paste_center(fr, shadow(im_), W / 2, y, alpha=p)
         elif kind == "compare":
             nr = sum(1 for s0 in sg["starts"] if tt >= s0 - 0.1)
             img = cmp_card.render(n_rows=nr, hot=nr - 1 if nr and tt < sg["starts"][nr - 1] + D[f"c{nr - 1}"] + 0.2 else None)

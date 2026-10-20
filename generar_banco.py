@@ -20,11 +20,11 @@ import verifier as V
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GEN = os.path.join(HERE, "banco", "generado.json")
-TARGET = {"negocio": 45, "contratar": 30, "servicios": 40, "proyecto": 40}          # reserva deseada (sin usar)
-PIDE = {"negocio": "1 de tipo puntos, 1 de tipo dato y 1 de tipo mito",
-        "contratar": "1 de tipo comparativa (columnas \"Contratar en plantilla\" y \"Contratar por servicios\"), 1 de tipo puntos y 1 de tipo mito",
-        "servicios": "1 de tipo comparativa (columnas \"En tu despacho\" y \"Delegado en UDA\"), 1 de tipo puntos y 1 de tipo dato",
-        "proyecto": "2 de tipo dato y 1 de tipo puntos"}
+TARGET = {"negocio": 45, "contratar": 30, "servicios": 40, "proyecto": 15}          # reserva deseada (sin usar)
+PIDE = {"negocio": "1 de tipo cifras, 1 de tipo puntos y 1 de tipo mito",
+        "contratar": "1 de tipo comparativa (columnas \"En plantilla\" y \"Por servicios\"), 1 de tipo cifras si el texto tiene cifras comparables (si no, otro de tipo puntos) y 1 de tipo mito",
+        "servicios": "1 de tipo comparativa (columnas \"En tu despacho\" y \"Con UDA\"), 1 de tipo cifras y 1 de tipo puntos",
+        "proyecto": "1 de tipo dato y 1 de tipo puntos"}
 GUIA = {
     "negocio": "NEGOCIO DEL DESPACHO: cómo facturar más delegando, cómo mejorar el precio por hora del despacho, cómo ganar "
                "capacidad para aceptar más encargos sin ampliar plantilla, dónde se va el tiempo del arquitecto (revisar, "
@@ -38,20 +38,27 @@ GUIA = {
                  "estructuras con CYPE, mediciones, pliego, estudio de seguridad y salud, gestión de residuos, modelo Revit, "
                  "actuaciones específicas...) y qué implicaría hacerla con equipo propio. Un precio SIEMPRE como \"precio de "
                  "referencia\" (el definitivo es el presupuesto cerrado). La firma corresponde siempre al despacho.",
-    "proyecto": "DATOS DE PROYECTO QUE POCOS CONOCEN: lo que exige la norma que contenga un Proyecto Básico o de Ejecución, "
-                "qué documentos son obligatorios y cuándo, quién responde de qué, qué cambia en edificios grandes o de uso "
-                "residencial colectivo. Un dato sorprendente pero exacto, útil para un despacho que hace bloques.",
+    "proyecto": "DATOS DE PROYECTO QUE POCOS CONOCEN, contados para un fundador (no para un técnico): qué documentos lleva "
+                "obligatoriamente un proyecto y quién responde de qué. Nada de jerga normativa ni números de apartado en el texto.",
 }
+SENCILLO = ("SENCILLEZ ANTE TODO: el público son FUNDADORES de despachos que ven el reel en el móvil. Un concepto por pieza, "
+            "que se entienda en 3 segundos, con palabras de la calle de un empresario (tiempo, dinero, equipo, encargos, "
+            "plazos); nada de jerga técnica ni normativa en el texto (la referencia exacta va aparte, en \"referencia\"). "
+            "Frases muy cortas.")
 AUD = ("Público: fundadores y socios de despachos de arquitectura y arquitectos autónomos de España que proyectan bloques "
        "de viviendas, promociones y edificios de envergadura. Son expertos con más encargos que horas: quieren facturar más, "
        "mejorar su precio por hora y dedicar su tiempo a proyectar y a sus clientes. Nivel PREMIUM y elegante: nada de "
-       "obviedades ni definiciones de manual. Español de España, tuteo, de colega a colega; sin promesas ni estadísticas.")
+       "obviedades ni definiciones de manual. De colega a colega; sin promesas ni estadísticas. "
+       "ESPAÑOL DE ESPAÑA (peninsular), nunca latinoamericano: tú y vosotros (nunca \"ustedes\" para el público), vocabulario de España (ordenador, móvil, vale, coger, pedir cita, encargo, obra, plantilla, autónomo); nunca \"computadora\", \"celular\", \"agendar\", \"checar\", \"platicar\", \"chamba\", \"tomar un encargo\" por coger.")
 SCHEMA = """{"piezas": [
- {"tipo": "puntos", "titulo": str (2-7 palabras, con gancho), "puntos": [str, str, str] (6-15 palabras cada uno), "citas": [str, ...] (1-3 citas literales que respaldan los puntos), "referencia": str},
- {"tipo": "comparativa", "titulo": str (2-7 palabras), "col_a": str (1-4 palabras), "col_b": str (1-4 palabras), "filas": [{"aspecto": str (1-4 palabras), "a": str (2-10 palabras), "b": str (2-10 palabras)}, x3], "citas": [str, ...] (1-3 citas literales), "referencia": str},
- {"tipo": "dato", "afirmacion": str (8-24 palabras: el dato, claro y sorprendente), "explicacion": str (15-38 palabras: por qué le importa a un despacho), "cita": str, "referencia": str},
- {"tipo": "mito", "afirmacion": str (8-22 palabras: una creencia habitual en los despachos), "veredicto": "MITO"|"REALIDAD", "explicacion": str (15-38 palabras: lo que dice de verdad la fuente), "cita": str, "referencia": str}
+ {"tipo": "puntos", "titulo": str (2-6 palabras, con gancho), "puntos": [str, str, str] (3-9 palabras cada uno, muy sencillos), "citas": [str, ...] (1-3 citas literales que respaldan los puntos), "referencia": str},
+ {"tipo": "comparativa", "titulo": str (2-6 palabras), "col_a": str (1-3 palabras), "col_b": str (1-3 palabras), "filas": [{"aspecto": str (1-3 palabras), "a": str (1-4 palabras), "b": str (1-4 palabras)}, x3] (col_b es la buena), "citas": [str, ...] (1-3 citas literales), "referencia": str},
+ {"tipo": "cifras", "titulo": str (3-8 palabras: la idea del gráfico), "barras": [{"etiqueta": str (1-5 palabras), "valor": number (el número para dibujar la barra), "texto": str (la cifra TAL CUAL aparece en el texto, p. ej. "2.955 €" o "40.000–47.000 €/año")}] (2-4 barras comparables en la misma unidad), "conclusion": str (4-10 palabras: lo que se ve en el gráfico), "citas": [str, ...] (1-3 citas literales con esas cifras), "referencia": str},
+ {"tipo": "dato", "afirmacion": str (6-14 palabras: el dato, claro), "explicacion": str (8-22 palabras: por qué le importa a un despacho), "cita": str, "referencia": str},
+ {"tipo": "mito", "afirmacion": str (5-14 palabras: una creencia habitual en los despachos), "veredicto": "MITO"|"REALIDAD", "explicacion": str (8-22 palabras: lo que dice de verdad la fuente), "cita": str, "referencia": str}
 ]}"""
+
+
 def state():
     try:
         return json.load(open(GEN))
@@ -78,10 +85,31 @@ def clean(raw, tema, bloque, key, lab, txt, existing):
     W = lambda s: len(str(s or "").split())
     sp = lambda s: re.sub(r"\s+", " ", str(s or "")).strip()
     p = {"tema": tema, "bloque": bloque, "tipo": t, "norma": key, "fuente": lab, "referencia": sp(raw.get("referencia"))[:90]}
-    if t == "comparativa":
+    if t == "cifras":
+        barras = []
+        for b_ in (raw.get("barras") or [])[:4]:
+            try:
+                barras.append({"etiqueta": sp(b_.get("etiqueta")), "valor": float(b_.get("valor")), "texto": sp(b_.get("texto"))})
+            except Exception:
+                return None, "barra no válida"
+        citas = [sp(x) for x in (raw.get("citas") or [])][:3]
+        if (not 2 <= len(barras) <= 4 or not all(1 <= W(b_["etiqueta"]) <= 6 and b_["valor"] > 0 and b_["texto"] for b_ in barras)
+                or not 2 <= W(raw.get("titulo")) <= 9 or not 3 <= W(raw.get("conclusion")) <= 12 or not citas):
+            return None, "cifras no válidas"
+        for b_ in barras:                                  # el valor dibujado tiene que ser una cifra del propio texto
+            ns = [float(n.replace(".", "").replace(",", ".")) for n in re.findall(r"\d[\d.]*(?:,\d+)?", b_["texto"])]
+            if not any(abs(n - b_["valor"]) <= max(0.01, 0.005 * n) for n in ns):
+                return None, "el valor de una barra no coincide con su cifra"
+        p.update(titulo=sp(raw.get("titulo")), barras=barras, conclusion=sp(raw.get("conclusion")), cita=citas[0],
+                 citas_extra=citas[1:])
+        claims = " ".join([p["titulo"], p["conclusion"]] + [f"{b_['etiqueta']} {b_['texto']}" for b_ in barras])
+        main = claims
+        if "€" in claims and not re.search(r"referencia|orientativ|estimativ", claims, re.I):
+            claims += " (precios de referencia)"               # el gráfico lo indica siempre en pantalla
+    elif t == "comparativa":
         filas = [{"aspecto": sp(f.get("aspecto")), "a": sp(f.get("a")), "b": sp(f.get("b"))} for f in (raw.get("filas") or [])[:3]]
         citas = [sp(x) for x in (raw.get("citas") or [])][:3]
-        if (len(filas) != 3 or not all(1 <= W(f["aspecto"]) <= 5 and 1 <= W(f["a"]) <= 12 and 1 <= W(f["b"]) <= 12 for f in filas)
+        if (len(filas) != 3 or not all(1 <= W(f["aspecto"]) <= 4 and 1 <= W(f["a"]) <= 6 and 1 <= W(f["b"]) <= 6 for f in filas)
                 or not 1 <= W(raw.get("col_a")) <= 5 or not 1 <= W(raw.get("col_b")) <= 5 or not citas):
             return None, "comparativa no válida"
         p.update(titulo=sp(raw.get("titulo")), col_a=sp(raw.get("col_a")), col_b=sp(raw.get("col_b")), filas=filas,
@@ -94,7 +122,7 @@ def clean(raw, tema, bloque, key, lab, txt, existing):
             p["veredicto"] = sp(raw.get("veredicto")).upper()
             if p["veredicto"] not in ("MITO", "REALIDAD"):
                 return None, "veredicto no válido"
-        if not 6 <= W(p["afirmacion"]) <= 26 or not 10 <= W(p["explicacion"]) <= 44:
+        if not 5 <= W(p["afirmacion"]) <= 16 or not 8 <= W(p["explicacion"]) <= 26:
             return None, "longitudes"
         claims = p["explicacion"] + (" " + p["afirmacion"] if t == "dato" or p.get("veredicto") == "REALIDAD" else "")
         main = p["afirmacion"]
@@ -117,7 +145,7 @@ def clean(raw, tema, bloque, key, lab, txt, existing):
     elif t == "puntos":
         pts = [sp(x) for x in (raw.get("puntos") or [])]
         citas = [sp(x) for x in (raw.get("citas") or [])][:3]
-        if len(pts) != 3 or not all(4 <= W(x) <= 18 for x in pts) or not 1 <= W(raw.get("titulo")) <= 8 or not citas:
+        if len(pts) != 3 or not all(3 <= W(x) <= 10 for x in pts) or not 1 <= W(raw.get("titulo")) <= 7 or not citas:
             return None, "puntos no válidos"
         p.update(titulo=sp(raw.get("titulo")), puntos=pts, cita=citas[0], citas_extra=citas[1:])
         claims = " ".join([p["titulo"]] + pts)
@@ -185,6 +213,7 @@ def generate_one(b, tema, chunk, existing):
 para despachos de arquitectura). Preparas piezas para reels y carruseles de Instagram, TikTok y LinkedIn.
 {AUD}
 {GUIA[b]}
+{SENCILLO}
 
 FUENTE: {n.get('titulo')}{(' · nota: ' + n['nota']) if n.get('nota') else ''}
 FRAGMENTO ({lab}):
