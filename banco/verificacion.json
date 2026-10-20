@@ -158,5 +158,2005 @@
 "cita": "Responde también a una nueva exigencia de sostenibilidad de los procesos edificatorios y urbanizadores, en su triple dimensión ambiental, social y económica.",
 "correccion": null,
 "fecha": "2026-10-20"
+},
+"fb1caf1be2": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta B coincide exactamente con la definición de la exigencia básica SI 6 en el CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 11.6",
+"cita": "la estructura portante mantendrá su resistencia al fuego durante el tiempo necesario para que puedan cumplirse las anteriores exigencias básicas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c112efd750": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Las condiciones de UDA establecen claramente que el archivo RVT se entrega con el pago final.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 10",
+"cita": "en Revit, IFC durante el trabajo y RVT con el pago final.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b820cc19dd": {
+"veredicto": "ok",
+"calidad": 1.0,
+"motivo": "La respuesta A refleja exactamente lo que establecía la disposición transitoria sobre la opción entre normativas, aunque es un dato histórico irrelevante hoy.",
+"fuente_ok": true,
+"referencia": "CTE, Disposición transitoria segunda, apartado 3",
+"cita": "Durante cada uno de los referidos períodos transitorios, se podrá optar por aplicar las disposiciones normativas a que los mismos se refieren o las nuevas previsiones que correspondan",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8c0cf472a8": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La exigencia básica SUA 1 incluye explícitamente facilitar la limpieza de acristalamientos exteriores en condiciones de seguridad.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 12.1",
+"cita": "Asimismo, se limitará el riesgo de caídas en huecos, en cambios de nivel y en escaleras y rampas, facilitándose la limpieza de los acristalamientos exteriores en condiciones de seguridad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6073af6990": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La exigencia HE 4 menciona explícitamente las necesidades de ACS y de climatización de piscina cubierta.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Parte I, art. 15.5",
+"cita": "Los edificios satisfarán sus necesidades de ACS y de climatización de piscina cubierta empleando en gran medida energía procedente de fuentes renovables o procesos de cogeneración renovables;",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"802dbcc256": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La ley prohíbe explícitamente que el fondo de reserva sea inferior al mínimo legal en cualquier momento del ejercicio.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, Disposición adicional primera, apartado 2",
+"cita": "La dotación del fondo de reserva no podrá ser inferior, en ningún momento del ejercicio presupuestario, al mínimo legal establecido.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0977c6db55": {
+"veredicto": "dudosa",
+"calidad": 5.0,
+"motivo": "La respuesta está incompleta, ya que omite las verificaciones realizadas por las entidades de control de calidad, que también pueden tenerse en cuenta en la recepción.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 7.3.1",
+"cita": "En la recepción de la obra ejecutada pueden tenerse en cuenta las certificaciones de gestión de calidad que ostenten los agentes que intervienen, así como las verificaciones que, en su caso, realicen las entidades de control de calidad de la edificación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"36757f7f77": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La ley otorga prioridad en las ayudas estatales a los instrumentos destinados a actuar sobre estos ámbitos específicos.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 31.1.b",
+"cita": "aquellos que tengan por finalidad actuar sobre ámbitos urbanos degradados, desfavorecidos y vulnerables o que padezcan problemas de naturaleza análoga que combinen variables económicas, ambientales y sociales.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"736931ecde": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta es correcta y se extrae literalmente de las instrucciones del listado de documentos para actuaciones específicas.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, 07 Actuaciones específicas",
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto. No hace falta marcar los apartados 5 y 6.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f9b247c61c": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta explica correctamente la política de precios de UDA basándose en la afirmación literal del texto sobre el peso en la parte fija.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 06 Industrial y equipamientos",
+"cita": "El peso del precio está en la parte fija: los proyectos grandes no salen perjudicados.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fd2777cc62": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción B refleja exactamente lo indicado en la exigencia básica HS 5 sobre la evacuación de aguas residuales y pluviales.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.5",
+"cita": "los edificios dispondrán de medios adecuados para extraer las aguas residuales generadas en ellos de forma independiente o conjunta con las precipitaciones atmosféricas y con las escorrentías.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b8dfd0579d": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La opción B resume correctamente la explicación de la Exposición de Motivos sobre el significado de la cuota de participación.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, Exposición de Motivos",
+"cita": "expresa, activa y también pasivamente, como módulo para cargas, el valor proporcional del piso y a cuanto él se considera unido, en el conjunto del inmueble",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"16c56a9c0c": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "El tema indicado es DB SI (incendios) pero el contenido es del DB HS (salubridad). Además, la respuesta omite que el objetivo es reducir 'el riesgo' de que ocurra, no evitar el hecho por completo.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.1",
+"cita": "consiste en reducir a límites aceptables el riesgo de que los usuarios, dentro de los edificios y en condiciones normales de utilización, padezcan molestias o enfermedades, así como el riesgo de que los edificios se deterioren",
+"correccion": "Cambiar el tema a DB HS (Salubridad) y añadir 'el riesgo de' en la respuesta, ya que el CTE se basa en la limitación de riesgos.",
+"fecha": "2026-10-20"
+},
+"a1df615a11": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos resumen correctamente el objeto de cada norma UNE citada en el DB SI para el control de humos y calor.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), 3. Instalaciones para control del humo y del calor",
+"cita": "UNE 23585:2017 Seguridad contra incendios. Sistemas de control de humo y calor. Requisitos y métodos de cálculo y diseño para proyectar un sistema de control de temperatura y de evacuación de humos (SCTEH) en caso de incendio estacionario.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e1e483ac86": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los precios y su desglose coinciden exactamente con los ejemplos dados en la tabla de presupuestos y se presentan adecuadamente como referencia.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"cita": "VIVIENDA DE 90 m²: 2.469 €. P. Básico 802 € · P. Ejecución 1.667 €. VIVIENDA DE 150 m²: 2.955 €. P. Básico 970 € · P. Ejecución 1.985 €. VIVIENDA DE 250 m²: 3.765 €. P. Básico 1.250 € · P. Ejecución 2.515 €.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ef0e7501c6": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El precio indicado en la opción A coincide exactamente con el ejemplo de la tabla para una nave de 3.000 m² y se presenta como referencia.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 06 Industrial y equipamientos",
+"cita": "Ejemplos P. Básico + P. Ejecución: nave de 500 m², 5.175 € · nave de 3.000 m², 9.050 €",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"dcd04e4a42": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta resume correctamente las verificaciones que debe realizar el director de la ejecución de la obra según el CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 7.3.1",
+"cita": "verificando su replanteo, los materiales que se utilicen, la correcta ejecución y disposición de los elementos constructivos y de las instalaciones, así como las verificaciones y demás controles a realizar",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ed3f9789f5": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta es una transcripción exacta de lo que indica el CTE para cambios de uso parciales.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 2.6",
+"cita": "Cuando un cambio de uso afecte únicamente a parte de un edificio o de un establecimiento, se cumplirán dichas exigencias en los términos en que se establece en los Documentos Básicos del CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e31e6701e6": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta es correcta y se basa literalmente en la indicación del Anejo I del CTE sobre el contenido mínimo del Proyecto Básico.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, punto 2",
+"cita": "Los marcados con asterisco (*) son los que, al menos, debe contener el Proyecto Básico.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a693569908": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Enumera correctamente los elementos estructurales mencionados en el requisito básico de seguridad estructural de la LOE.",
+"fuente_ok": true,
+"referencia": "LOE, art. 3.1.b.1",
+"cita": "no se produzcan en el edificio, o partes del mismo, daños que tengan su origen o afecten a la cimentación, los soportes, las vigas, los forjados, los muros de carga u otros elementos estructurales",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e34379db9f": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta define exactamente el alcance del presupuesto aproximado según el Anejo I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado V",
+"cita": "Presupuesto aproximado*. Valoración aproximada de la ejecución material de la obra proyectada por capítulos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f811628ea3": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La ley especifica claramente que las aportaciones para reponer el fondo de reserva se efectuarán al inicio del siguiente ejercicio presupuestario.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, disposición adicional primera.2",
+"cita": "Al inicio del siguiente ejercicio presupuestario se efectuarán las aportaciones necesarias para cubrir las cantidades detraídas del fondo de reserva",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a4782c77d2": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Refleja fielmente la política de marca blanca y confidencialidad de UDA descrita en la web.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com",
+"cita": "Mantenemos siempre nuestro anonimato para ti, ya que queremos ser tu apoyo a largo plazo y que te lleves todo el crédito del trabajo hacia tus clientes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"290805e77c": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "La LOE especifica que para obras del grupo b) dirigidas por arquitectos, la titulación habilitante para el director de la ejecución de la obra es la de arquitecto técnico.",
+"fuente_ok": true,
+"referencia": "LOE, art. 13.2.a",
+"cita": "Será ésta, asimismo, la titulación habilitante para las obras del grupo b) que fueran dirigidas por arquitectos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"caa3d67405": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La afirmación es correcta y se extrae literalmente del artículo 31.2 de la ley, aunque es un dato más administrativo que técnico.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 31.2",
+"cita": "Las Administraciones Públicas fomentarán de manera conjunta la actividad económica, la sostenibilidad ambiental y la cohesión social y territorial. A tales efectos, podrán suscribir los convenios interadministrativos de asignación de fondos que correspondan.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3169ea727f": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El CTE especifica claramente en su Anejo I cuándo es obligatorio incluir el mobiliario en las plantas generales, un dato clave para evitar requerimientos en el visado.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado II",
+"cita": "Acotadas, con indicación de escala y de usos, reflejando los elementos fijos y los de mobiliario cuando sea preciso para la comprobación de la funcionalidad de los espacios.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"23f7042184": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta es correcta y refleja fielmente las medidas de seguridad exigidas por el RD 1627/1997 para las vías de circulación en obra.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, apartado 11.b)",
+"cita": "Cuando se utilicen medios de transporte en las vías de circulación, se deberá prever una distancia de seguridad suficiente o medios de protección adecuados para las demás personas que puedan estar presentes en el recinto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0e003699bb": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "El desglose de datos económicos coincide exactamente con lo requerido en el formato del certificado de eficiencia energética según el RD 390/2021.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, apartado 6.ii",
+"cita": "Datos económicos: – Inversión total (€) …………………….. – En el caso de haber recibido cualquier tipo de ayuda de una administración pública, indicar: • denominación del programa de ayuda",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a0678bdf65": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La opción correcta identifica los principios rectores mencionados en el preámbulo del RD 105/2008, útil como contexto para los estudios de gestión de residuos.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, Preámbulo",
+"cita": "la elaboración de una normativa específica para este flujo de residuos, basada en los principios de jerarquía de gestión y de responsabilidad del productor.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d301e46cb8": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Es un recordatorio importante sobre el contenido de la memoria del proyecto: las mejoras sobre los mínimos del CTE también deben justificarse.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 3",
+"cita": "También se justificarán las prestaciones del edificio que mejoren los niveles exigidos en el CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bc80ff9840": {
+"veredicto": "ok",
+"calidad": 2.0,
+"motivo": "La respuesta es correcta según la disposición final segunda, aunque se trata de una cuestión puramente competencial con poca aplicación práctica en el diseño arquitectónico.",
+"fuente_ok": true,
+"referencia": "TRLSRU, disposición final segunda, apartado 3",
+"cita": "sin perjuicio de las competencias exclusivas sobre suelo y urbanismo que tengan atribuidas las Comunidades Autónomas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fdcb01e963": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos resumen perfectamente la utilidad del Anejo E del DB HE, proporcionando una herramienta muy práctica para el predimensionado en fases iniciales del proyecto.",
+"fuente_ok": true,
+"referencia": "CTE, DB HE, Anejo E, apartado 1",
+"cita": "La tabla a-Anejo E aporta valores orientativos de los parámetros característicos de la envolvente térmica que pueden resultar útiles para el predimensionado de soluciones constructivas de edificios de uso residencial privado",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6e9233acc0": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta refleja exactamente lo indicado en el Anejo I del CTE sobre la estructuración de las mediciones.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado IV",
+"cita": "Desarrollo por partidas, agrupadas en capítulos, conteniendo todas las descripciones técnicas necesarias para su especificación y valoración.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"cfad242c0a": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta es idéntica a lo exigido en el apartado 2.1 del Anejo I del CTE para la memoria constructiva.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.1",
+"cita": "Justificación de las características del suelo y parámetros a considerar para el cálculo de la parte del sistema estructural correspondiente a la cimentación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"058043b8e6": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El Anejo I especifica claramente que la referencia a los proyectos parciales y su contenido debe hacerse en la memoria del proyecto.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, punto 3",
+"cita": "en la memoria del proyecto se hará referencia a éstos y a su contenido, y se integrarán en el proyecto por el proyectista, bajo su coordinación",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2f5e2d10e7": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta cita literalmente la disposición derogatoria única del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Disposición derogatoria única, punto 2",
+"cita": "Asimismo, quedan derogadas cuantas disposiciones de igual o inferior rango se opongan a lo establecido en este Real Decreto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4fd16985bb": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta recoge exactamente los tres objetivos mencionados en el artículo 31.1.c del TRLSRU para optar a ayudas.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 31.1.c",
+"cita": "tengan como objeto actuar en ámbitos de gestión aislada o conjunta, con la finalidad de eliminar la infravivienda, garantizar la accesibilidad universal o mejorar la eficiencia energética de los edificios.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1852bceeb8": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta refleja fielmente los objetivos indicados en el preámbulo del RD 105/2008.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, preámbulo",
+"cita": "establezca los requisitos mínimos de su producción y gestión, con objeto de promover su prevención, reutilización, reciclado, valorización y el adecuado tratamiento de los destinados a eliminación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e2d4a64b22": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta resume perfectamente los requisitos del artículo 6.1.2.a del CTE sobre productos y equipos.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 6.1.2.a",
+"cita": "Las características técnicas mínimas que deben reunir los productos, equipos y sistemas que se incorporen de forma permanente en el edificio proyectado, así como sus condiciones de suministro, las garantías de calidad y el control de recepción que deba realizarse.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"167e11e21a": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La respuesta es exacta a las condiciones de servicio de UDA indicadas en las preguntas frecuentes de su web.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Nuestros honorarios se asocian al trabajo de delineación, cálculo y modelado entregado en tiempo y forma, independientemente de si el promotor consigue financiación o decide continuar con la fase de obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8bc68d6561": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "El tema indicado es 'CTE DB HE', pero la pregunta se refiere a las disposiciones generales de la Parte I del CTE, aplicables a todos los documentos básicos.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 1.4",
+"cita": "Las exigencias básicas deben cumplirse, de la forma que reglamentariamente se establezca, en el proyecto, la construcción, el mantenimiento, la conservación y el uso de los edificios",
+"correccion": "El tema debe ser 'CTE Parte I (Disposiciones generales)', no 'CTE DB HE'.",
+"fecha": "2026-10-20"
+},
+"870a17e184": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta A refleja exactamente la condición de 'condiciones normales de utilización' establecida en el artículo 14.1.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 14.1",
+"cita": "consiste en limitar dentro de los edificios, y en condiciones normales de utilización, el riesgo de molestias o enfermedades que el ruido pueda producir a los usuarios",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5ad49b33fa": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Anejo E especifica claramente que sus valores orientativos son útiles para el predimensionado en edificios de uso residencial privado.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Anejo E, apartado 1",
+"cita": "aporta valores orientativos de los parámetros característicos de la envolvente térmica que pueden resultar útiles para el predimensionado de soluciones constructivas de edificios de uso residencial privado",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a642536c7d": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "El tema clasifica la pieza en 'CTE DB HS · Salubridad', pero el contenido trata sobre instalaciones térmicas y energéticas correspondientes al Anejo I de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.6.2",
+"cita": "Instalaciones térmicas del edificio proyectado y su rendimiento energético, suministro de combustibles, ahorro de energía e incorporación de energía solar térmica o fotovoltaica y otras energías renovables.",
+"correccion": "El tema correcto es 'CTE Parte I (Contenido del proyecto)', no 'CTE DB HS'.",
+"fecha": "2026-10-20"
+},
+"02af5acd69": {
+"veredicto": "ok",
+"calidad": 1.0,
+"motivo": "La respuesta enumera correctamente los tres Documentos Básicos (SI, SU, HE) que tuvieron un régimen transitorio de seis meses según la disposición transitoria tercera.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Disposición transitoria tercera, apartado 1",
+"cita": "Durante los seis meses posteriores a la entrada en vigor de este Real Decreto podrán aplicarse las exigencias básicas desarrolladas en los Documentos Básicos siguientes:",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2e795763f3": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos clave resumen fielmente las exigencias sobre ventilación, limpieza y control de insolación establecidas en la normativa de seguridad y salud.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, Anexo IV, Parte A, apartados 3 y 4",
+"cita": "En caso de que se utilicen instalaciones de aire acondicionado o de ventilación mecánica, éstas deberán funcionar de tal manera que los trabajadores no estén expuestos a corrientes de aire molestas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"45aed5cfb7": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "El artículo 18.2.e asigna explícitamente a la Comisión asesora la función de establecer las condiciones de validación de los procedimientos de cálculo.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, art. 18.2.e",
+"cita": "Establecer los requisitos que deben cumplir los documentos reconocidos para su aprobación, las condiciones para la validación de los procedimientos de cálculo generales y simplificados",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9a4c43bc4e": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "El tema indica 'CTE DB SUA', pero la pregunta y la tabla de referencia corresponden al 'CTE DB HE 3' sobre eficiencia energética de las instalaciones de iluminación.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Sección HE 3, Tabla 3.1-HE3",
+"cita": "El valor de eficiencia energética de la instalación (VEEI) de la instalación de iluminación no superará el valor límite (VEEIlim) establecido en la tabla 3.1-HE3",
+"correccion": "El tema correcto es 'CTE DB HE (Ahorro de energía)', no 'CTE DB SUA'.",
+"fecha": "2026-10-20"
+},
+"b113ac7436": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta se deduce directamente y de forma literal del artículo 7.1.3 de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 7.1.3",
+"cita": "Cuando en el desarrollo de las obras intervengan diversos técnicos para dirigir las obras de proyectos parciales, lo harán bajo la coordinación del director de obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9df8fa164e": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta refleja fielmente las exigencias básicas de suministro de agua establecidas en el CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.4.1",
+"cita": "impidiendo los posibles retornos que puedan contaminar la red, incorporando medios que permitan el ahorro y el control del caudal del agua.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b27fac1b9b": {
+"veredicto": "dudosa",
+"calidad": 5.0,
+"motivo": "Existe contradicción entre las Preguntas Frecuentes (10 y 20 días) y la Tabla de Presupuestos de UDA, donde los plazos para bloques de viviendas son significativamente mayores.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Generalmente, suele ser 10 días un Proyecto Básico y 20 días un Proyecto de Ejecución por nuestra parte.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"87e405f540": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta coincide literalmente con los impactos ambientales mencionados en el preámbulo del RD 105/2008.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, Preámbulo",
+"cita": "la contaminación de suelos y acuíferos en vertederos incontrolados, el deterioro paisajístico y la eliminación de estos residuos sin aprovechamiento de sus recursos valorizables.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f6ff42103f": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El Anejo I del CTE establece explícitamente la obligación de justificar las prestaciones que mejoren los niveles exigidos.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 3",
+"cita": "También se justificarán las prestaciones del edificio que mejoren los niveles exigidos en el CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d1940c9106": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos resumen correctamente las definiciones y el alcance de la adecuación funcional y la accesibilidad según la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 1.3 y 2.4.b",
+"cita": "Los requisitos básicos relativos a la funcionalidad y los aspectos funcionales de los elementos constructivos se regirán por su normativa específica, salvo los vinculados a la accesibilidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"13edbc4659": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta es una transcripción directa de la exigencia del artículo 4.1 de la LOE.",
+"fuente_ok": true,
+"referencia": "LOE, art. 4.1",
+"cita": "El proyecto habrá de justificar técnicamente las soluciones propuestas de acuerdo con las especificaciones requeridas por la normativa técnica aplicable.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d6958f5d93": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La respuesta es correcta y se ajusta literalmente a lo indicado en el apartado de ventilación de la norma de seguridad y salud.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, 3. Ventilación",
+"cita": "En caso de que se utilicen instalaciones de aire acondicionado o de ventilación mecánica, éstas deberán funcionar de tal manera que los trabajadores no estén expuestos a corrientes de aire molestas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"31d5662de7": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta refleja exactamente lo indicado en el CTE para la caracterización de la parte semitransparente de los huecos.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Sección HE 1, apartado 5.1.3",
+"cita": "Los productos para huecos (incluidas las puertas) se caracterizan mediante la transmitancia térmica U (W/m²·K) y el factor solar g┴ para la parte semitransparente del hueco",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b72d26ce34": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La norma UNE 23585:2017 es exactamente la que se describe en el texto de la fuente para el diseño de SCTEH.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), 3. Instalaciones para control del humo y del calor",
+"cita": "UNE 23585:2017 Seguridad contra incendios. Sistemas de control de humo y calor. Requisitos y métodos de cálculo y diseño para proyectar un sistema de control de temperatura y de evacuación de humos (SCTEH) en caso de incendio estacionario.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"aceec1cf7c": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los tres puntos se deducen directamente de las definiciones del Anejo A del DB HE sobre espacios habitables y acondicionados.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Anejo A",
+"cita": "En uso residencial privado, todos los espacios interiores de las viviendas se consideran acondicionados y deben cumplir las condiciones operacionales de acuerdo al Anejo D.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2c45e3074a": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "Los precios coinciden con la tabla para vivienda unifamiliar, se indica que sustituye a la partida ordinaria y se presenta correctamente como precio de referencia.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 03",
+"cita": "Instalaciones en Revit (3D), sustituye a Instalaciones | — | — | 1.500 € | 3,00 €",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b44c522ac9": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta refleja fielmente la explicación de la Exposición de Motivos sobre la división económica en cuotas.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, Exposición de Motivos",
+"cita": "al mismo tiempo que se divide física y jurídicamente en pisos o locales se divide así económicamente en fracciones o cuotas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1a55128fca": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto especifica claramente que el modelado de instalaciones en 3D alcanza un LOD 300-350 e incluye familias y planos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09",
+"cita": "Instalaciones en 3D: todas las instalaciones exigibles modeladas (LOD 300–350) con sus familias y planos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"80ab01318c": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los tres puntos resumen fielmente las condiciones de plazos, soporte y entrega establecidas en la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "Empiezan al recibir toda la documentación. 7 días naturales de soporte tras la entrega para dudas y erratas menores.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5c183ae817": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "El artículo 14.2 menciona explícitamente limitar el ruido reverberante de los recintos entre las exigencias acústicas.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Artículo 14.2",
+"cita": "para reducir la transmisión del ruido aéreo, del ruido de impactos y del ruido y vibraciones de las instalaciones propias del edificio, y para limitar el ruido reverberante de los recintos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"67bdc82d5c": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta coincide exactamente con el texto de la fuente.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), 3. Instalaciones para control del humo y del calor",
+"cita": "UNE-EN 12101-6:2006 Parte 6: Especificaciones para los sistemas de diferencial de presión. Equipos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6e47fdc61a": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "El texto de la norma incluye explícitamente los derivados de pequeñas obras de reforma en la categoría de residuos de construcción y demolición.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, preámbulo",
+"cita": "sin olvidar los derivados de pequeñas obras de reforma de viviendas y locales. Dichos residuos forman la categoría denominada residuos de construcción y demolición.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"602daab38f": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La definición del CTE establece claramente que el proyecto básico es insuficiente para iniciar la construcción.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo III",
+"cita": "Su contenido es suficiente para solicitar, una vez obtenido el preceptivo visado colegial, la licencia municipal u otras autorizaciones administrativas, pero insuficiente para iniciar la construcción.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4f177918a3": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "El texto detalla exactamente esos tres puntos bajo el epígrafe de información general para cada medida implantada.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Disposición derogatoria única",
+"cita": "i. Información general: – Denominación de la medida implantada: ………… – Descripción de la medida: ………………….....…… – Fecha de implantación: ………………….........……",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3fd0bbae2e": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La LOE asigna explícitamente al director de la ejecución de la obra la elaboración y suscripción de las certificaciones parciales y la liquidación final.",
+"fuente_ok": true,
+"referencia": "LOE, art. 13.2.e",
+"cita": "elaborar y suscribir las certificaciones parciales y la liquidación final de las unidades de obra ejecutadas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c31da235a9": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El artículo 4.2 de la LOE prohíbe expresamente la duplicidad en la documentación y en los honorarios.",
+"fuente_ok": true,
+"referencia": "LOE, art. 4.2",
+"cita": "sin que se produzca una duplicidad en la documentación ni en los honorarios a percibir por los autores de los distintos trabajos indicados.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1c60356243": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El CTE exige que las modificaciones autorizadas por el director de obra tengan la previa conformidad del promotor.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 7.1.1",
+"cita": "Las obras de construcción del edificio se llevarán a cabo con sujeción al proyecto y sus modificaciones autorizadas por el director de obra previa conformidad del promotor",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"21a4a04f1d": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "El texto especifica 'sus zonas comunes' (las de garajes, trasteros, etc.), no todas las zonas comunes, ya que las zonas comunes de circulación generales son recintos habitables.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo III",
+"cita": "En esta categoría se incluyen explícitamente como no habitables los garajes, trasteros, las cámaras técnicas y desvanes no acondicionados, y sus zonas comunes.",
+"correccion": "Debe especificar 'y sus zonas comunes' (referido a garajes, trasteros, etc.), ya que generalizar a 'zonas comunes' es falso (las zonas comunes de circulación son recintos habitables).",
+"fecha": "2026-10-20"
+},
+"ae9de326b0": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "El tema de la pieza indica 'DB SI', pero la exigencia SUA 6 pertenece al DB SUA (Seguridad de utilización y accesibilidad).",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 12.6",
+"cita": "se limitará el riesgo de caídas que puedan derivar en ahogamiento en piscinas, depósitos, pozos y similares mediante elementos que restrinjan el acceso.",
+"correccion": "Cambiar el tema a 'CTE · DB SUA · Seguridad de utilización y accesibilidad'.",
+"fecha": "2026-10-20"
+},
+"3609940fe4": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "El tema de la pieza indica 'DB SI', pero la exigencia básica HS 1 corresponde al DB HS (Salubridad).",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.1",
+"cita": "como consecuencia del agua procedente de precipitaciones atmosféricas, de escorrentías, del terreno o de condensaciones, disponiendo medios que impidan su penetración",
+"correccion": "Cambiar el tema a 'CTE · DB HS · Salubridad'.",
+"fecha": "2026-10-20"
+},
+"98706ec214": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "La respuesta es incompleta, ya que omite la obligación de suscribir la liquidación final de las unidades de obra ejecutadas.",
+"fuente_ok": true,
+"referencia": "LOE, art. 13.2.e",
+"cita": "Suscribir el acta de replanteo o de comienzo de obra y el certificado final de obra, así como elaborar y suscribir las certificaciones parciales y la liquidación final de las unidades de obra ejecutadas.",
+"correccion": "Añadir 'y la liquidación final de las unidades de obra ejecutadas' a la respuesta.",
+"fecha": "2026-10-20"
+},
+"51bd6607cb": {
+"veredicto": "dudosa",
+"calidad": 7.0,
+"motivo": "Hay una contradicción en las fuentes de UDA: la web promete el presupuesto en 24 horas, pero el listado de documentos y la tabla indican 24-72 horas.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, ¿Cómo es el proceso?",
+"cita": "Tú decides qué quieres delegar. Te enviaremos un presupuesto cerrado en 24 horas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"7e4fbe4976": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta refleja exactamente los fines que deben cumplir las prescripciones de acabados según el Anejo I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.5",
+"cita": "Se indicarán las características y prescripciones de los acabados de los paramentos a fin de cumplir los requisitos de funcionalidad, seguridad y habitabilidad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3aa8517af4": {
+"veredicto": "error",
+"calidad": 2.0,
+"motivo": "La respuesta añade la palabra 'activamente', la cual no aparece en el texto original de la fuente.",
+"fuente_ok": true,
+"referencia": "Real Decreto 314/2006, Exposición de motivos",
+"cita": "Con los objetivos de mejorar la calidad de la edificación, y de promover la innovación y la sostenibilidad, el Gobierno aprueba el Código Técnico de la Edificación.",
+"correccion": "Eliminar la palabra 'activamente' de la respuesta.",
+"fecha": "2026-10-20"
+},
+"c0d4036a81": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "El tema indica 'Seguridad estructural', pero los puentes térmicos son un concepto relacionado con la envolvente térmica y el ahorro de energía, no con la estructura.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo III",
+"cita": "donde la resistencia térmica normalmente uniforme cambia significativamente debido a: a) Penetraciones completas o parciales en el cerramiento de un edificio, de materiales con diferente conductividad térmica. b) Un cambio en el espesor de la fábrica;",
+"correccion": "Cambiar el tema a 'CTE · DB HE · Ahorro de energía' o 'CTE · Terminología'.",
+"fecha": "2026-10-20"
+},
+"8689e6fd79": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta es correcta y refleja fielmente el alcance opcional indicado en el listado de documentos de UDA.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 07",
+"cita": "Instalación de ascensor en edificio existente · nº de paradas: ____ | Ascensor: incluir estructura del hueco y foso",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bccc55a2ff": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción A refleja exactamente lo indicado en el artículo 4.2 de la LOE sobre la coordinación y no duplicidad de honorarios.",
+"fuente_ok": true,
+"referencia": "LOE, art. 4.2",
+"cita": "se mantendrá entre todos ellos la necesaria coordinación sin que se produzca una duplicidad en la documentación ni en los honorarios a percibir por los autores de los distintos trabajos indicados.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"92ebab8ba1": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El artículo 7.3.1 del CTE asigna explícitamente la función de controlar la ejecución de cada unidad de obra al director de la ejecución de la obra.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 7.3.1",
+"cita": "Durante la construcción, el director de la ejecución de la obra controlará la ejecución de cada unidad de obra verificando su replanteo, los materiales que se utilicen, la correcta ejecución y disposición de los elementos constructivos",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"05deaf1fe2": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta es correcta según el documento de UDA y cumple la regla de presentar el precio como orientativo o de referencia.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 04",
+"cita": "El precio del proyecto completo es el mismo en CAD y en Revit.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8a29d80038": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La norma exime explícitamente del tratamiento previo a los residuos inertes cuando dicho tratamiento sea técnicamente inviable.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 11.1",
+"cita": "Esta disposición no se aplicará a los residuos inertes cuyo tratamiento sea técnicamente inviable ni a los residuos de construcción y demolición cuyo tratamiento no contribuya a los objetivos",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"41a0cc63b8": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta recoge literalmente las funciones exigidas a las instalaciones de protección contra incendios en la exigencia básica SI 4.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 11.4",
+"cita": "el edificio dispondrá de los equipos e instalaciones adecuados para hacer posible la detección, el control y la extinción del incendio, así como la transmisión de la alarma a los ocupantes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6cb6d14f78": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La opción C coincide exactamente con el requisito particular establecido en el RD 1627/1997 para escaleras mecánicas y cintas rodantes.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, apartado 9",
+"cita": "En particular deberán poseer dispositivos de parada de emergencia fácilmente identificables y de fácil acceso.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8252b34e32": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El texto establece explícitamente que los incentivos financieros deben vincularse al ahorro de energía previsto o logrado.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, preámbulo y art. 14",
+"cita": "la vinculación de incentivos financieros para la mejora de la eficiencia energética al ahorro de energía previsto o logrado.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3c02ec5ebf": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La opción A refleja exactamente el porcentaje y los conceptos indicados en la tabla de presupuestos de UDA para conjuntos de unifamiliares.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "y un 3 % de la superficie total por el conjunto (viviendas de extremo, testeros e implantación en la parcela).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bd26cd49bf": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta refleja literalmente el texto modificado por el RD 450/2022 para la exigencia básica HE 5.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 15.6",
+"cita": "Los edificios dispondrán de sistemas de generación de energía eléctrica procedente de fuentes renovables para uso propio o suministro a la red.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e2d86f3302": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La opción correcta recoge exactamente las dos alternativas que la LOE ofrece al asegurador para satisfacer la cobertura.",
+"fuente_ok": true,
+"referencia": "LOE, art. 19.6",
+"cita": "El asegurador podrá optar por el pago de la indemnización en metálico que corresponda a la valoración de los daños o por la reparación de los mismos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2aec33dd42": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "El contenido de la ficha es correcto, pero está clasificada erróneamente bajo el tema DB SI (Seguridad en caso de incendio) cuando la exigencia HS 1 pertenece a Salubridad.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.1",
+"cita": "disponiendo medios que impidan su penetración o, en su caso permitan su evacuación sin producción de daños.",
+"correccion": "Cambiar el tema de la pieza a CTE DB HS (Salubridad).",
+"fecha": "2026-10-20"
+},
+"95a3c6ee41": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "Añade la expresión 'como mínimo' que no está en el texto original (que usa 'etc.'). Además, el tema indicado es DB HR, pero el contenido pertenece a la Parte I (Anejo I).",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.3",
+"cita": "descripción de su comportamiento frente a las acciones a las que está sometido (peso propio, viento, sismo, etc.)",
+"correccion": "Eliminar 'como mínimo' y cambiar el tema a CTE Parte I (Contenido del proyecto).",
+"fecha": "2026-10-20"
+},
+"99b4792125": {
+"veredicto": "dudosa",
+"calidad": 9.0,
+"motivo": "Omite la frase 'de la forma que reglamentariamente se establezca', simplificando en exceso la norma. Esto puede llevar a un arquitecto a aplicar exigencias de obra nueva a edificios existentes sin considerar las flexibilidades permitidas.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 1.4",
+"cita": "Las exigencias básicas deben cumplirse, de la forma que reglamentariamente se establezca, en el proyecto, la construcción, el mantenimiento, la conservación y el uso",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bb1f677304": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "El tema indicado es DB SUA, pero el VEEI y la tabla referenciada pertenecen al DB HE 3. Además, parafrasea 'salas especiales asimilables' en lugar del texto exacto.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE DB-HE 3), tabla 3.1-HE3, nota 1",
+"cita": "otras salas que por su actividad puedan considerarse como salas especiales.",
+"correccion": "Cambiar el tema a CTE DB HE 3 (Ahorro de energía) y ajustar la redacción a 'otras salas que por su actividad puedan considerarse como salas especiales'.",
+"fecha": "2026-10-20"
+},
+"8f8314791e": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La fuente indica explícitamente que la disposición final primera fue declarada inconstitucional y nula por el Tribunal Constitucional, lo cual es vital para saber quién puede firmar un IEE.",
+"fuente_ok": true,
+"referencia": "TRLSRU, disposición final primera",
+"cita": "Téngase en cuenta que se declara inconstitucional y nula, por Sentencia del TC 143/2017, de 14 de diciembre.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"01745f2261": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "La respuesta refleja con exactitud la consecuencia legal y la responsabilidad personal establecida en la LOE por no suscribir las garantías obligatorias.",
+"fuente_ok": true,
+"referencia": "LOE, art. 19.7",
+"cita": "El incumplimiento de las anteriores normas sobre garantías de suscripción obligatoria implicará, en todo caso, la obligación de responder personalmente al obligado a suscribir las garantías.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e3bebf13cd": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos reflejan fielmente las ventajas de delegar en UDA tal como se describen en la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 01 ¿Contratar a alguien o delegar en UDA?",
+"cita": "Supervisar y corregir | Tu tiempo se va en revisar planos en lugar de proyectar. | Documentación revisada internamente. Tú solo validas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b3de9cd006": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "El primer punto presenta el precio como un valor absoluto, incumpliendo la directriz de UDA de que todo precio debe presentarse explícitamente como precio de referencia u orientativo.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 06 Industrial y equipamientos",
+"cita": "Ejemplos P. Básico + P. Ejecución: 800 m², 10.020 € · 2.000 m², 12.300 € · 5.000 m², 18.000 €.",
+"correccion": "Añadir que 10.020 € es un precio de referencia u orientativo, al igual que en los otros puntos.",
+"fecha": "2026-10-20"
+},
+"fab74d4e38": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción A refleja exactamente lo que indica la fuente sobre la entrega de archivos, incluyendo editables y PDFs.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com · ¿Cómo es el proceso?",
+"cita": "Recibirás los editables, PDFs y todo lo utilizado en el pedido. Es 100% tuyo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f0ef390393": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "Los puntos listados no son acciones que deba realizar el arquitecto para validar cálculos, sino funciones que corresponden a la Comisión asesora para la certificación de eficiencia energética.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, art. 18.2",
+"cita": "Establecer los requisitos que deben cumplir los documentos reconocidos para su aprobación, las condiciones para la validación de los procedimientos de cálculo generales y simplificados",
+"correccion": "Indicar que estas son las funciones de la Comisión asesora para la certificación de eficiencia energética, no obligaciones del proyectista.",
+"fecha": "2026-10-20"
+},
+"7d7c81bb46": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta coincide exactamente con la definición de memorias gráficas en el Anejo I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado II",
+"cita": "Memorias gráficas. Indicación de soluciones concretas y elementos singulares: carpintería, cerrajería, etc.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0e29ebc01d": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La tabla de precios de referencia indica explícitamente que el coste es de 382 € por vivienda para ese caso concreto.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · Precios de referencia de un vistazo",
+"cita": "Bloque de 32 viviendas, 2 tipologías | 12.234 € | 382 € por vivienda",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0d1e0e0944": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción A recoge las especificaciones mínimas explícitas que exige el Anejo I para el sistema de compartimentación.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.4",
+"cita": "Definición de los elementos de compartimentación con especificación de su comportamiento ante el fuego y su aislamiento acústico y otras características que sean exigibles, en su caso.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1ace81b3cb": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta resume fielmente lo establecido en el Anejo I sobre la justificación del cumplimiento del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 3",
+"cita": "Justificación de las prestaciones del edificio por requisitos básicos y en relación con las exigencias básicas del CTE. La justificación se realizará para las soluciones adoptadas conforme a lo indicado en el CTE. También se justificarán las prestaciones del edificio que mejoren los niveles exigidos en el CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2631b33e87": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La opción A refleja literalmente lo indicado en la disposición final primera del RD 1371/2007.",
+"fuente_ok": true,
+"referencia": "RD 1371/2007, Disposición final primera",
+"cita": "Las exigencias desarrolladas en el Documento Básico «DB-HR Protección frente al ruido» del CTE se aplicarán sin perjuicio de la obligatoriedad del cumplimiento de la normativa de prevención de riesgos laborales",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a99313a682": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El artículo 1.3 de la Parte I del CTE especifica que los aspectos funcionales se rigen por su normativa específica salvo los vinculados a la accesibilidad.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 1.3",
+"cita": "Los requisitos básicos relativos a la funcionalidad y los aspectos funcionales de los elementos constructivos se regirán por su normativa específica, salvo los vinculados a la accesibilidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bff313fb36": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Las condiciones de UDA establecen claramente que se incluyen 2 revisiones por fase en bloques de 30 viviendas o más.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 10",
+"cita": "1 revisión por fase (2 en bloques de 30 viviendas o más) para corregir errores menores.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3698fa6063": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La tabla 3.1.1.a-HE1 define explícitamente los elementos que componen el hueco para el cálculo de su transmitancia.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Sección HE 1, Tabla 3.1.1.a-HE1",
+"cita": "Huecos (conjunto de marco, vidrio y, en su caso, cajón de persiana)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d12334ead9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Anejo I del CTE indica que los proyectos parciales deben integrarse como documentos diferenciados bajo la coordinación del proyectista.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 3",
+"cita": "se integrarán en el proyecto por el proyectista, bajo su coordinación, como documentos diferenciados de tal forma que no se produzca duplicidad de los mismos",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3d250c5eb1": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La disposición adicional primera de la Ley de Propiedad Horizontal establece que estas cantidades se computan como parte integrante del fondo.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, Disposición adicional primera, apartado 2",
+"cita": "Las cantidades detraídas del fondo durante el ejercicio presupuestario para atender los gastos de las obras o actuaciones incluidas en el artículo 10 se computarán como parte integrante del mismo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0c6c641dc5": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La definición de resistencia al fuego en el Anejo III del CTE incluye exactamente estas tres capacidades.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo III",
+"cita": "capacidad de un elemento de construcción para mantener durante un período de tiempo determinado la función portante que le sea exigible, así como la integridad y el aislamiento térmico",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"08869e58ba": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "La constitución de la fianza es una obligación del productor de residuos para obtener la licencia, no un documento o exigencia que deba incluirse dentro del Proyecto Básico.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 4.1.d y 4.2",
+"cita": "En el caso de obras de edificación, cuando se presente un proyecto básico para la obtención de la licencia urbanística, dicho proyecto contendrá, al menos, los documentos referidos",
+"correccion": "Eliminar el punto sobre la fianza, ya que es una obligación del promotor (productor de residuos) y no forma parte del contenido del Proyecto Básico.",
+"fecha": "2026-10-20"
+},
+"64a24b2e51": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "La pregunta trata sobre la exigencia básica SUA 5, pero la pieza está clasificada erróneamente bajo el tema DB SI (Seguridad en caso de incendio).",
+"fuente_ok": true,
+"referencia": "CTE, Artículo 12, apartado 12.5",
+"cita": "se limitará el riesgo causado por situaciones con alta ocupación facilitando la circulación de las personas y la sectorización con elementos de protección y contención en previsión del riesgo de aplastamiento.",
+"correccion": "Cambiar el tema a 'CTE · DB SUA · Seguridad de utilización y accesibilidad'.",
+"fecha": "2026-10-20"
+},
+"3f55d410fb": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción A describe correctamente la finalidad de la fianza según el artículo 4.1.d del RD 105/2008.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, Artículo 4.1.d",
+"cita": "la fianza o garantía financiera equivalente que asegure el cumplimiento de los requisitos establecidos en dicha licencia en relación con los residuos de construcción y demolición de la obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"de0ff9b839": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta resume correctamente la definición de proyecto dada en el artículo 4.1 de la LOE.",
+"fuente_ok": true,
+"referencia": "LOE, Artículo 4.1",
+"cita": "El proyecto es el conjunto de documentos mediante los cuales se definen y determinan las exigencias técnicas de las obras contempladas en el artículo 2.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d6340db19f": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La LOE asigna explícitamente al director de la ejecución de la obra la obligación de ordenar ensayos y pruebas.",
+"fuente_ok": true,
+"referencia": "LOE, Artículo 13.2.b",
+"cita": "Verificar la recepción en obra de los productos de construcción, ordenando la realización de ensayos y pruebas precisas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d8908a7016": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La opción A recoge literalmente los parámetros indicados en la exigencia básica SUA 7.",
+"fuente_ok": true,
+"referencia": "CTE, Artículo 12, apartado 12.7",
+"cita": "se limitará el riesgo causado por vehículos en movimiento atendiendo a los tipos de pavimentos y la señalización y protección de las zonas de circulación rodada y de las personas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"df09223429": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan fielmente las condiciones establecidas en la tabla de presupuestos para modelos aportados por el cliente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07",
+"cita": "No se cobra el modelado. Si el modelo es aprovechable (niveles, familias y estructura correctos), el resto de partidas mantiene su descuento; si no, se presupuesta como si partiéramos de PDF.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c5c8a451fd": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta enumera exactamente los conceptos que cubre el 3% según la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "un 3 % de la superficie total por el conjunto (viviendas de extremo, testeros e implantación en la parcela).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"95e91a02ee": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción A describe correctamente la estructura de pagos en cuatro momentos detallada en las condiciones de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"cita": "En P. Básico + P. Ejecución se paga en cuatro momentos (60 % y 40 % del P. Básico, luego 60 % y 40 % del P. Ejecución)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"49a817e841": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "Afirmar que la parte variable se calcula exclusivamente por metro cuadrado construido es falso, ya que en bloques de viviendas las plantas repetidas no se cobran por m² completo, sino que suman un pequeño porcentaje.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"cita": "en bloques y conjuntos de viviendas no cobramos dos veces el mismo trabajo: la vivienda tipo se cobra completa y las repetidas solo suman un pequeño porcentaje.",
+"correccion": "La parte variable se calcula por metro cuadrado construido, pero en bloques de viviendas las plantas repetidas solo suman un pequeño porcentaje.",
+"fecha": "2026-10-20"
+},
+"628d1cf8cb": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La opción A refleja exactamente el orden de prioridad establecido en el artículo 1 del RD 105/2008.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 1",
+"cita": "con el fin de fomentar, por este orden, su prevención, reutilización, reciclado y otras formas de valorización",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"eb7602ce4b": {
+"veredicto": "ok",
+"calidad": 2.0,
+"motivo": "La opción A es la única correcta según la disposición transitoria tercera del CTE, que especifica la obligatoriedad de la exigencia HE 1.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, disposición transitoria tercera, apartado 1.c",
+"cita": "La exigencia básica de limitación de la demanda HE 1 se aplicará obligatoriamente cuando no se haya optado por aplicar la disposición citada en el apartado 1.a)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"90ec8d56fc": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción C es correcta y se corresponde literalmente con la definición de la exigencia básica SI 1 en la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 11.1",
+"cita": "se limitará el riesgo de propagación del incendio por el interior del edificio, tanto al mismo edificio como a otros edificios colindantes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3154408b58": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta recoge exactamente las dos duplicidades que menciona el Anejo I del CTE al integrar proyectos parciales.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 3",
+"cita": "de tal forma que no se produzca duplicidad de los mismos, ni en los honorarios a percibir por los autores de los distintos trabajos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9d569b8e4f": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "El tema indica que la pieza pertenece al DB SUA (Seguridad de utilización y accesibilidad), pero el contenido y los valores límite de VEEI corresponden al DB HE 3 (Ahorro de energía).",
+"fuente_ok": true,
+"referencia": "CTE, DB HE 3, apartado 3.1",
+"cita": "El valor de eficiencia energética de la instalación (VEEI) de la instalación de iluminación no superará el valor límite (VEEIlim) establecido en la tabla 3.1-HE3",
+"correccion": "El tema debe ser CTE DB HE (Ahorro de energía), no DB SUA.",
+"fecha": "2026-10-20"
+},
+"4ca89dc5fb": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La respuesta refleja fielmente el preámbulo del RD 390/2021 sobre el papel de la certificación energética en la «Oleada de renovación».",
+"fuente_ok": true,
+"referencia": "RD 390/2021, preámbulo",
+"cita": "El Pacto Verde Europeo prevé como actuación clave la «Oleada de renovación» en el sector de la construcción, donde la certificación energética de los edificios adquiere un papel relevante.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"69f86cce74": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta es correcta y se corresponde literalmente con lo exigido en el artículo 7.5 del RD 1627/1997.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, art. 7.5",
+"cita": "el plan de seguridad y salud estará en la obra a disposición permanente de la dirección facultativa.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a502c770a4": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los tres puntos están respaldados literalmente por la información de la web sobre el servicio de marca blanca y las garantías de UDA.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com",
+"cita": "te pediremos tu libro de estilo, grosores de plumilla (CTB), familias de Revit y cajetines. Nuestro objetivo es que el proyecto parezca, a todos los efectos, desarrollado internamente",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fe055b7a67": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El artículo 1.3 de la Parte I del CTE especifica claramente esta excepción respecto a la funcionalidad de los elementos constructivos.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 1.3",
+"cita": "Los requisitos básicos relativos a la funcionalidad y los aspectos funcionales de los elementos constructivos se regirán por su normativa específica, salvo los vinculados a la accesibilidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0d0eab6b2f": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El Anejo I del CTE indica explícitamente que las limitaciones de uso deben abarcar el edificio en su conjunto, sus dependencias y sus instalaciones.",
+"fuente_ok": true,
+"referencia": "CTE, Anejo I, apartado 1.4",
+"cita": "Se establecerán las limitaciones de uso del edificio en su conjunto y de cada una de sus dependencias e instalaciones.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4be43a373b": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El RD 1627/1997 exige expresamente dispositivos para evitar la entrada de personal no autorizado en las zonas de acceso limitado de la obra.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, apartado 11.d",
+"cita": "Si en la obra hubiera zonas de acceso limitado, dichas zonas deberán estar equipadas con dispositivos que eviten que los trabajadores no autorizados puedan penetrar en ellas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fc2f9d4ba5": {
+"veredicto": "ok",
+"calidad": 1.0,
+"motivo": "Aunque es correcto según el texto, se trata de una disposición transitoria de 2006 totalmente obsoleta e irrelevante para la redacción de proyectos actuales.",
+"fuente_ok": true,
+"referencia": "CTE, Disposición transitoria tercera, apartado 2.g",
+"cita": "La exigencia básica de suministro de agua HS 4 se aplicará obligatoriamente cuando no se haya optado por aplicar la disposición citada en el apartado 2.d)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fde68ab28c": {
+"veredicto": "ok",
+"calidad": 2.0,
+"motivo": "Es correcto, pero es una obligación administrativa de las Comunidades Autónomas que no aporta valor práctico al arquitecto que redacta un proyecto.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Disposición adicional quinta",
+"cita": "facilitará anualmente una estadística de los certificados registrados y de las inspecciones realizadas y sus resultados, dentro de su ámbito territorial, al Ministerio para la Transición Ecológica",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"975cb6c140": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Aclara de forma rotunda y literal que la responsabilidad civil, la autoría y el visado recaen exclusivamente en el arquitecto titular del despacho.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com",
+"cita": "Nosotros operamos como una consultoría técnica externa. El arquitecto titular de tu despacho es quien diseña, visa, asume la autoría y la responsabilidad civil del proyecto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"356d1681af": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La tabla de presupuestos especifica claramente que se incluyen 2 revisiones por fase para bloques de 30 viviendas o más.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "1 revisión por fase (2 en bloques de 30 viviendas o más) y una primera compatibilización con estructuras e instalaciones.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"228db99d6e": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "El tema indica erróneamente DB HS (Salubridad) cuando el contenido pertenece al DB HE 1 (Ahorro de energía). Además, los puntos omiten un dato obligatorio: la longitud del puente térmico.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Sección HE 1, apartado 4",
+"cita": "La caracterización de los puentes térmicos lineales incluirá: a) su tipo, descripción y localización; b) la transmitancia térmica lineal, obtenida en relación con los cerramientos contiguos; c) su longitud; d) el sistema dimensional utilizado",
+"correccion": "Cambiar el tema a DB HE (Ahorro de energía) e incluir un punto que exija especificar la longitud del puente térmico.",
+"fecha": "2026-10-20"
+},
+"71a3a70dec": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los datos reflejan fielmente la tabla de precios de referencia de UDA, indicando correctamente que son precios orientativos y que el coste por vivienda se reduce a mayor escala.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, Precios de referencia de un vistazo",
+"cita": "P. Básico + P. Ejecución completos, en CAD o en Revit (mismo precio). Precios estimativos: tras analizar tu proyecto, te enviamos un presupuesto cerrado en 24–72 horas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"27584a34d7": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta B es la única correcta según la disposición adicional quinta del RD 390/2021, que establece un plazo máximo de tres meses para la remisión del extracto en XML.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Disposición adicional quinta",
+"cita": "remitirá un extracto de la información recogida en el informe de evaluación energética del edificio en formato electrónico (XML) a la Dirección General de Política Energética y Minas [...] en el plazo máximo de tres meses",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"7c714faf79": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El artículo 2.6 de la Parte I del CTE especifica literalmente que, en cambios de uso parciales, las exigencias se cumplirán en los términos establecidos en los Documentos Básicos.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 2.6",
+"cita": "Cuando un cambio de uso afecte únicamente a parte de un edificio o de un establecimiento, se cumplirán dichas exigencias en los términos en que se establece en los Documentos Básicos del CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5395800ded": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El artículo 8.1 del RD 1627/1997 detalla que el proyectista debe considerar estos principios al tomar decisiones constructivas, técnicas y de organización, y al estimar la duración de los trabajos.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, art. 8.1",
+"cita": "deberán ser tomados en consideración por el proyectista en las fases de concepción, estudio y elaboración del proyecto de obra y en particular: a) Al tomar las decisiones constructivas, técnicas y de organización [...] b) Al estimar la duración",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3ff69e995c": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La Exposición de Motivos de la Ley 49/1960 explica claramente que al piso o local se unen inseparablemente el inmueble, sus pertenencias y servicios de uso compartido.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, Exposición de Motivos",
+"cita": "A tal fin, a este objeto de la relación, constituido por el piso o local, se incorpora el propio inmueble, sus pertenencias y servicios.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c784758fc2": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El artículo 31.1.c del TRLSRU establece explícitamente que estas actuaciones tienen prioridad en las ayudas estatales vigentes.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 31.1.c",
+"cita": "Aquellas otras actuaciones que, con independencia de lo dispuesto en la letra anterior, tengan como objeto actuar en ámbitos de gestión aislada o conjunta, con la finalidad de eliminar la infravivienda, garantizar la accesibilidad universal o mejorar la eficiencia energética",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e6a839bcd7": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta refleja exactamente las condiciones de pago establecidas en el Listado de documentos de UDA, apartado 10.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 10",
+"cita": "Pagos por fases. Cada fase se paga por separado: 60 % al iniciarla y 40 % justo antes de su entrega.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5b123ccd05": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta es correcta y se deduce literalmente del texto de la norma para las puertas que cierran solas.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, apartado 7.c",
+"cita": "Las puertas y los portones que se cierren solos deberán ser transparentes o tener paneles transparentes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d5ad54e5f2": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta refleja exactamente la condición establecida en el artículo 11.2 para la exención en poblaciones aisladas.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 11.2",
+"cita": "siempre que el vertedero se destine a la eliminación de residuos generados únicamente en esa población aislada.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d4ff8115ee": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La opción B es la única correcta según las condiciones de exención que detalla el artículo 11.2.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 11.2",
+"cita": "La legislación de las comunidades autónomas podrá eximir de la aplicación del apartado anterior a los vertederos de residuos no peligrosos o inertes de construcción o demolición en poblaciones aisladas",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2ba09d52a8": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La respuesta es correcta y se extrae literalmente del preámbulo del RD 390/2021, aunque es un dato más histórico que técnico.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Preámbulo",
+"cita": "refundiendo el Real Decreto 47/2007, de 19 de enero, con la incorporación del Procedimiento básico para la certificación de eficiencia energética de edificios existentes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e08a2efb06": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción A es correcta y se corresponde literalmente con el límite de franquicia establecido en el artículo 19.8 de la LOE.",
+"fuente_ok": true,
+"referencia": "LOE, art. 19.8",
+"cita": "En el caso de que en el contrato de seguro a que se refieren los apartado 1.b) y 1.c) de este artículo se establezca una franquicia, ésta no podrá exceder del 1 por 100 del capital asegurado de cada unidad registral.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"43bffb4c9c": {
+"veredicto": "ok",
+"calidad": 2.0,
+"motivo": "La respuesta es correcta y refleja el texto de la exposición de motivos del CTE, aunque es una afirmación genérica.",
+"fuente_ok": true,
+"referencia": "CTE, Exposición de motivos",
+"cita": "A través de esta normativa se da satisfacción a ciertos requisitos básicos de la edificación relacionados con la seguridad y el bienestar de las personas",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1f1da1b2dd": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La respuesta define correctamente el alcance y grado de definición exigido para el proyecto de ejecución según el Anejo III del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo III",
+"cita": "con la determinación completa de detalles y especificaciones de todos los materiales, elementos, sistemas constructivos y equipos, definiendo la obra en su totalidad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"daa4c47551": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La opción B es correcta según el Anejo I del CTE, que exige prever la demanda energética máxima para verano e invierno en la memoria.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.3",
+"cita": "la demanda energética máxima prevista del edificio para condiciones de verano e invierno",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4276c342d9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta coincide exactamente con las condiciones de entrega de UDA establecidas en la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07 CAD o Revit (BIM)",
+"cita": "PDF e IFC durante el trabajo para que revises. El archivo RVT editable, con el pago final de cada fase.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d709e909cc": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Los puntos reflejan fielmente las exclusiones del servicio estándar de UDA, dejando clara la responsabilidad del despacho.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09 Qué incluye cada partida",
+"cita": "No incluye: conceptualización y diseño, renders e infografías (opciones adicionales bajo presupuesto), certificaciones externas (LEED, BREEAM…), ensayos, topografía y geotecnia, firma, visado y tramitación, dirección de obra ni coordinación de seguridad y salud en obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"27296a5ef0": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos describen exactamente lo que incluye el paquete de actuaciones específicas según el listado de documentos.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 07 Actuaciones específicas",
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"344f0abb72": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos explican correctamente el método de cálculo para conjuntos de viviendas unifamiliares según la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04 Pareados / Adosados / Conjunto de unifamiliares",
+"cita": "Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"eaf83c7e52": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La respuesta identifica correctamente a la Comisión asesora como el órgano encargado de proponer la inclusión de documentos reconocidos.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, art. 18.2.f",
+"cita": "Evaluar y proponer a la Secretaria de Estado de Energía la inclusión en el Registro general de documentos reconocidos de aquellos que cumplan con los requisitos establecidos para su aprobación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"910957f5c6": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción A es la única correcta según el artículo 11.1, que establece la prohibición general de depósito sin tratamiento previo.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 11.1",
+"cita": "Se prohíbe el depósito en vertedero de residuos de construcción y demolición que no hayan sido sometidos a alguna operación de tratamiento previo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ecdbeb0bfd": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta indica exactamente la ubicación requerida para las vías de vehículos respecto a zonas peatonales y accesos.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, 11. Vías de circulación y zonas peligrosas, apartado c)",
+"cita": "Las vías de circulación destinadas a los vehículos deberán estar situadas a una distancia suficiente de las puertas, portones, pasos de peatones, corredores y escaleras.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3029fbbb0e": {
+"veredicto": "ok",
+"calidad": 2.0,
+"motivo": "La opción A es correcta y se basa literalmente en la disposición final segunda, apartado 5 del TRLSRU.",
+"fuente_ok": true,
+"referencia": "TRLSRU, disposición final segunda, apartado 5",
+"cita": "atribuye al Estado la competencia sobre regulación de las condiciones de obtención, expedición y homologación de títulos académicos y profesionales.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"905aa02a3c": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan fielmente el alcance documental del Proyecto de Ejecución detallado en la tabla de presupuestos de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09",
+"cita": "Sección y detalles constructivos 1:20 · Acabados y superficies · Carpinterías.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1613e37344": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta es correcta y se basa literalmente en el artículo 34.1.c de la Ley de Suelo.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 34.1.c",
+"cita": "La fijación del precio a pagar al propietario en la venta o sustitución forzosas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"36145746fd": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos recogen correctamente el orden de prioridad y los objetivos de gestión de residuos establecidos en el objeto del Real Decreto.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 1",
+"cita": "con el fin de fomentar, por este orden, su prevención, reutilización, reciclado y otras formas de valorización, asegurando que los destinados a operaciones de eliminación reciban un tratamiento adecuado, y contribuir a un desarrollo sostenible",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9bf26ff7f4": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta es exacta y se corresponde literalmente con la prohibición de franquicias para las garantías del apartado 1.a) según el artículo 19.8.",
+"fuente_ok": true,
+"referencia": "LOE, art. 19.8",
+"cita": "Para las garantías a que se refiere el apartado 1.a) de este artículo no serán admisibles cláusulas por las cuales se introduzcan franquicias o limitación alguna en la responsabilidad del asegurador frente al asegurado.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2adb9c733d": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos describen correctamente el proceso de presupuesto, pago, entrega y medición según las condiciones de trabajo de UDA, dejando claro que la firma es del despacho.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"cita": "En 24–72 horas te enviamos un presupuesto cerrado. Solo se presupuesta y se hace lo marcado.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3a26739f59": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "El enunciado es erróneo, ya que limitar la extensión del fuego es uno de los tres objetivos del requisito de seguridad en caso de incendio, no el fin general de los tres objetivos.",
+"fuente_ok": true,
+"referencia": "LOE, art. 3.1.b.2",
+"cita": "Seguridad en caso de incendio, de tal forma que los ocupantes puedan desalojar el edificio en condiciones seguras, se pueda limitar la extensión del incendio dentro del propio edificio y de los colindantes y se permita la actuación de los equipos de extinción y rescate.",
+"correccion": "El enunciado debe preguntar: '¿Qué tres objetivos deben garantizarse según el requisito básico de seguridad en caso de incendio?'.",
+"fecha": "2026-10-20"
+},
+"2e1b11791e": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La respuesta es correcta y refleja la excepción explícita del CTE para el uso industrial, que se rige por su propio reglamento de seguridad contra incendios.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 11.3",
+"cita": "excepto en el caso de los edificios, establecimientos y zonas de uso industrial a los que les sea de aplicación el «Reglamento de seguridad contra incendios en los establecimientos industriales», en los cuales las exigencias básicas se cumplen mediante dicha aplicación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"cbc0289850": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta es correcta, ya que el artículo 34.1.a establece explícitamente que las valoraciones de la Ley de Suelo rigen en estas operaciones en defecto de acuerdo entre los afectados.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 34.1.a",
+"cita": "La verificación de las operaciones de reparto de beneficios y cargas [...] en las que la valoración determine el contenido patrimonial de facultades o deberes propios del derecho de propiedad, en defecto de acuerdo entre todos los sujetos afectados.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d676604178": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta refleja exactamente lo exigido en el artículo 4.2 del RD 105/2008 para la documentación de proyectos básicos.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 4.2",
+"cita": "cuando se presente un proyecto básico para la obtención de la licencia urbanística, dicho proyecto contendrá, al menos, los documentos referidos en los números 1.º, 2.º, 3.º, 4.º y 7.º de la letra a) y en la letra b)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"209162226e": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La opción A es la única correcta y se extrae literalmente del artículo 7.3.1 de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 7.3.1",
+"cita": "En la recepción de la obra ejecutada pueden tenerse en cuenta las certificaciones de gestión de calidad que ostenten los agentes que intervienen, así como las verificaciones que, en su caso, realicen las entidades de control de calidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"18860b15f1": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La opción A describe con exactitud el contenido de la partida de memoria del Proyecto Básico según la tabla de servicios de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09",
+"cita": "Memoria descriptiva, constructiva y estructural preliminar · CTE seguridad en caso de incendio · Normativa de aplicación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9422168209": {
+"veredicto": "dudosa",
+"calidad": 1.0,
+"motivo": "El enunciado es ambiguo porque no especifica a qué disposición transitoria se refiere, y además trata sobre un plazo histórico ya caducado que no aporta valor a proyectos actuales.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Disposición transitoria segunda, apartado 2",
+"cita": "Durante los doce meses posteriores a la entrada en vigor de este Real Decreto podrán continuar aplicándose las siguientes disposiciones:",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"daf081b0e0": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción B refleja fielmente la política de precios de UDA para viviendas repetidas, tal como se indica en el apartado 02 de su tabla.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"cita": "Y en bloques y conjuntos de viviendas no cobramos dos veces el mismo trabajo: la vivienda tipo se cobra completa y las repetidas solo suman un pequeño porcentaje.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1c55886ee1": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta define correctamente el objetivo de los medios de evacuación según la exigencia básica SI 3 del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 11.3",
+"cita": "el edificio dispondrá de los medios de evacuación adecuados para facilitar que los ocupantes puedan abandonarlo o alcanzar un lugar seguro dentro del mismo en condiciones de seguridad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"72aaef5545": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta es exacta y completa según lo requerido en el apartado 1.4 del Anejo I de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Anejo I, apartado 1.4",
+"cita": "Se establecerán las limitaciones de uso del edificio en su conjunto y de cada una de sus dependencias e instalaciones.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"177457e3ce": {
+"veredicto": "dudosa",
+"calidad": 7.0,
+"motivo": "Aunque la pregunta y la respuesta son correctas según el Anejo I del CTE, el tema está erróneamente etiquetado como 'DB HR · Protección frente al ruido', lo cual es incongruente con el contenido estructural.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Anejo I, apartado 2.2",
+"cita": "Se establecerán los datos y las hipótesis de partida, el programa de necesidades, las bases de cálculo y procedimientos o métodos empleados para todo el sistema estructural, así como las características de los materiales que intervienen.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b517621e36": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La definición coincide exactamente con la modificación introducida en el artículo 2.4.b de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 2.4.b",
+"cita": "La adecuación funcional, entendiendo como tal la realización de las obras que proporcionen al edificio mejores condiciones respecto de los requisitos básicos a los que se refiere este CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fe70061e16": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El texto especifica claramente que la exigencia SUA 8 limita el riesgo de electrocución y de incendio.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 12.8",
+"cita": "se limitará el riesgo de electrocución y de incendio causado por la acción del rayo, mediante instalaciones adecuadas de protección contra el rayo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f0e964646c": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "El artículo 1 del RD 105/2008 establece explícitamente que se debe asegurar un tratamiento adecuado para los residuos destinados a eliminación.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 1",
+"cita": "asegurando que los destinados a operaciones de eliminación reciban un tratamiento adecuado, y contribuir a un desarrollo sostenible de la actividad de construcción.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d9a6bc0e61": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El artículo 7.2.1 del CTE exige expresamente que el certificado de garantía del fabricante esté firmado por persona física.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 7.2.1",
+"cita": "Esta documentación comprenderá, al menos, los siguientes documentos: a) Los documentos de origen, hoja de suministro y etiquetado. b) El certificado de garantía del fabricante, firmado por persona física;",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"627bd7d245": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El artículo 2.6 de la Parte I del CTE establece claramente que en todo cambio de uso característico se deben cumplir las exigencias básicas.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 2.6",
+"cita": "En todo cambio de uso característico de un edificio existente se deberán cumplir las exigencias básicas del CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9e43dfa1ab": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Anejo I del CTE especifica que los planos de cimentación deben incluir su relación con el entorno inmediato y el conjunto de la obra.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Anejo I, II",
+"cita": "En los relativos a la cimentación se incluirá, además, su relación con el entorno inmediato y el conjunto de la obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6166b250c8": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La modificación del RD 450/2022 establece textualmente esta exigencia para los edificios en el artículo 15.6.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 15.6",
+"cita": "Los edificios dispondrán de sistemas de generación de energía eléctrica procedente de fuentes renovables para uso propio o suministro a la red.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b6c562be55": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos resumen fielmente las obligaciones del proyectista establecidas en los apartados 1 y 2 del artículo 8 del RD 1627/1997.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, art. 8.1 y 8.2",
+"cita": "Al tomar las decisiones constructivas, técnicas y de organización con el fin de planificar los distintos trabajos o fases de trabajo que se desarrollarán simultánea o sucesivamente.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"dd3df41536": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta enumera correctamente los tres tipos de transmisiones acústicas que deben reducirse según el artículo 14.2 del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 14.2",
+"cita": "adecuadas para reducir la transmisión del ruido aéreo, del ruido de impactos y del ruido y vibraciones de las instalaciones propias del edificio",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ac7171e11b": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos reflejan fielmente las exigencias del CTE sobre la definición de las unidades de obra y las medidas de compatibilidad.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 6.1.2.b",
+"cita": "Se precisarán las medidas a adoptar durante la ejecución de las obras y en el uso y mantenimiento del edificio, para asegurar la compatibilidad entre los diferentes productos, elementos y sistemas constructivos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3731049d0f": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "Los puntos resumen correctamente los requisitos básicos relativos a la funcionalidad establecidos en la LOE.",
+"fuente_ok": true,
+"referencia": "LOE, art. 3.1.a",
+"cita": "la disposición y las dimensiones de los espacios y la dotación de las instalaciones faciliten la adecuada realización de las funciones previstas en el edificio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"55c880e79b": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos describen con exactitud las opciones de entorno de trabajo y punto de partida en Revit ofrecidas por UDA.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 04",
+"cita": "Instalaciones en Revit (3D): todas las instalaciones exigibles modeladas | Tengo plantilla o biblioteca de familias propia y quiero que la uséis Plan de Ejecución BIM (BEP) | Aporto mi propio modelo Revit",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fc18d57385": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La opción A es la única correcta y transcribe literalmente la exigencia sobre temperatura e insolación del RD 1627/1997.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, apartado 4. Temperatura",
+"cita": "Las ventanas, los vanos de iluminación cenitales y los tabiques acristalados deberán permitir evitar una insolación excesiva, teniendo en cuenta el tipo de trabajo y uso del local.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"294d5e347a": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La opción A enumera exactamente los cuatro aspectos requeridos por el Anejo I del CTE para los subsistemas de instalaciones.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.6",
+"cita": "Se indicarán los datos de partida, los objetivos a cumplir, las prestaciones y las bases de cálculo para cada uno de los subsistemas siguientes:",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"7a4e107508": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos describen fielmente el flujo de trabajo de 3 pasos indicado en las preguntas frecuentes de UDA.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Nuestro proceso está diseñado para que no pierdas tiempo. Consta de 3 pasos: Llamada de Claridad y Briefing: Analizamos tus necesidades, nos envías tus archivos base (CAD, referencias) y tus plantillas de estudio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0eef8b6be4": {
+"veredicto": "error",
+"calidad": 4.0,
+"motivo": "El texto indica que la eficiencia energética que se evalúa en función del rendimiento de las instalaciones es la del edificio, no la de la envolvente. Además, el tema está mal clasificado como DB HR (ruido).",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.3",
+"cita": "la demanda energética máxima prevista del edificio para condiciones de verano e invierno y su eficiencia energética en función del rendimiento energético de las instalaciones",
+"correccion": "La pregunta debe referirse a la eficiencia energética del edificio, no de la envolvente. El tema debe ser CTE Parte I o DB HE, no DB HR.",
+"fecha": "2026-10-20"
+},
+"f94815ced8": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "La opción A refleja exactamente lo indicado en el artículo 6.7 y el preámbulo del RD 390/2021 sobre la recopilación de datos.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, art. 6.7",
+"cita": "Las bases de datos en las que se registran los certificados de eficiencia energética deben permitir la recopilación de datos sobre consumo de energía medido o calculado",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c19840fee3": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta coincide literalmente con la exigencia básica SUA 8 establecida en la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 12.8",
+"cita": "se limitará el riesgo de electrocución y de incendio causado por la acción del rayo, mediante instalaciones adecuadas de protección contra el rayo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e99a61056c": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La respuesta es una transcripción literal del artículo 2.6 de la Parte I del CTE sobre cambios de uso.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 2.6",
+"cita": "En todo cambio de uso característico de un edificio existente se deberán cumplir las exigencias básicas del CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1271e99dfa": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos reflejan fielmente los datos de costes y las afirmaciones sobre la gestión del tiempo indicados en la tabla de presupuestos de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 01",
+"cita": "UN ARQUITECTO EN PLANTILLA: 40.000–47.000 €/año. Salario, Seguridad Social, licencias, puesto, selección y formación. Haya proyectos o no.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ce756217f6": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El precio se presenta correctamente como referencia y el alcance documental coincide exactamente con el texto de la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 03",
+"cita": "REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5b5efa2b99": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta recoge literalmente la exigencia del RD 1627/1997 para la señalización de puertas transparentes.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, apartado 7.b",
+"cita": "Las puertas transparentes deberán tener una señalización a la altura de la vista.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3da9f2f782": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La opción A es la transcripción exacta del contenido requerido para el apartado de sustentación del edificio según el Anejo I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.1",
+"cita": "Justificación de las características del suelo y parámetros a considerar para el cálculo de la parte del sistema estructural correspondiente a la cimentación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"223d19db72": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La opción B refleja exactamente la exigencia básica HS 4 del CTE Parte I respecto a la prevención de gérmenes patógenos.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.4.2",
+"cita": "Los equipos de producción de agua caliente dotados de sistemas de acumulación y los puntos terminales de utilización tendrán unas características tales que eviten el desarrollo de gérmenes patógenos.",
+"correccion": null,
+"fecha": "2026-10-20"
 }
 }
