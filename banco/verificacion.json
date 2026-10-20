@@ -3608,5 +3608,1315 @@
 "cita": "Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto.",
 "correccion": null,
 "fecha": "2026-10-20"
+},
+"4715a62339": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La comparativa refleja fielmente las opciones de delegación descritas en el listado de documentos de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"cita": "La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c786f4da75": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Los precios y superficies coinciden exactamente con los ejemplos de referencia de la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"cita": "VIVIENDA DE 90 m²: 2.469 €. P. Básico 802 € · P. Ejecución 1.667 €. VIVIENDA DE 150 m²: 2.955 €. P. Básico 970 € · P. Ejecución 1.985 €. VIVIENDA DE 250 m²: 3.765 €.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e77fcbf47d": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los costes base para locales hasta 150 m² según el tipo de actividad coinciden literalmente con la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 08 Actuaciones específicas",
+"cita": "Licencia de actividad sin obra | 750 € hasta 150 m² + 2,50 €/m² [...] Adecuación de local: actividad clasificada (hostelería, gimnasio, clínica…) | 2.800 € hasta 150 m² + 8 €/m²",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"170c4d8c9e": {
+"veredicto": "error",
+"calidad": 2.0,
+"motivo": "La fuente aportada (Estatuto de los Trabajadores) no menciona en ningún momento las condiciones de la contratación por servicios (contrato mercantil, pago por entrega).",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 9.1 y 9.2",
+"cita": "Si resultase nula solo una parte del contrato de trabajo, este permanecerá válido en lo restante, y se entenderá completado con los preceptos jurídicos adecuados conforme a lo dispuesto en el artículo 3.1.",
+"correccion": "No se puede incluir la columna 'Por servicios' con datos sobre contratos mercantiles o pagos por entrega, ya que no aparecen en el texto legal aportado.",
+"fecha": "2026-10-20"
+},
+"b335355db3": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto legal confirma que debe constar expresamente en el recibo si el trabajador usó o no la opción de estar acompañado por un representante.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, Sección 4.ª",
+"cita": "haciéndose constar en el mismo el hecho de su firma en presencia de un representante legal de los trabajadores, o bien que el trabajador no ha hecho uso de esta posibilidad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"83e1c43a5f": {
+"veredicto": "error",
+"calidad": 4.0,
+"motivo": "El texto no menciona un 'modelo de declaración responsable' ni 'compromisos de custodia legal'; los anexos diferidos a 2026 tratan sobre contenidos de cursos y certificados.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Disposición final octava",
+"cita": "Téngase en cuenta que este anexo, añadido por el art. único.10 del Real Decreto 659/2025, de 22 de julio, Ref. BOE-A-2025-15230, entra en vigor el 23 de julio de 2026",
+"correccion": "La entrada en vigor en 2026 afecta a los anexos sobre contenidos de cursos de certificación y al artículo sobre titulaciones extranjeras, no a un modelo de declaración responsable.",
+"fecha": "2026-10-20"
+},
+"7148304c4a": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El gráfico refleja correctamente la política de revisiones de UDA según el tamaño de la promoción.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 10",
+"cita": "1 revisión por fase (2 en bloques de 30 viviendas o más) para corregir errores menores.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2f19d80b57": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El precio, la superficie y el alcance (Básico completo y Ejecución sin estructuras) coinciden exactamente con el ejemplo de la tabla.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"cita": "REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f8900868b7": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La fuente confirma explícitamente que UDA trabaja como marca blanca y mantiene el anonimato para que el despacho conserve la autoría y el crédito frente al cliente.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Sección 'Ellos hablan por nosotros'",
+"cita": "Mantenemos siempre nuestro anonimato para ti, ya que queremos ser tu apoyo a largo plazo y que te lleves todo el crédito del trabajo hacia tus clientes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"98c5eaee6c": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "El Estatuto de los Trabajadores exige el registro diario y su conservación por cuatro años para contratos a tiempo parcial, presumiendo jornada completa si se incumple, obligaciones que no existen al contratar servicios externos.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.4.c",
+"cita": "A estos efectos, la jornada de los trabajadores a tiempo parcial se registrará día a día y se totalizará mensualmente || El empresario deberá conservar los resúmenes mensuales de los registros de jornada durante un periodo mínimo de cuatro años. || En caso de incumplimiento de las referidas obligaciones de registro, el contrato se presumirá celebrado a jornada completa, salvo prueba en contrario que acredite el carác",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"91f190abb3": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos enumeran exactamente las actuaciones específicas sobre locales que UDA ofrece según el listado de documentos a delegar.",
+"fuente_ok": true,
+"referencia": "Listado de Documentos a Delegar, 07 Actuaciones específicas",
+"cita": "Cambio de uso a vivienda (local u oficina) | Adecuación de local: actividad inocua (comercio, oficina) Adecuación de local: actividad clasificada (hostelería, gimnasio, clínica…) | Licencia de actividad sin obra",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5a82eb00b3": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El texto indica claramente que cualquier trabajo no marcado inicialmente se valora previamente con el cliente, garantizando el control sobre los costes.",
+"fuente_ok": true,
+"referencia": "UDA · Documento 02 Listado de documentos a delegar",
+"cita": "Si más adelante necesitas algo más, lo valoramos contigo antes de hacerlo: tú decides siempre sobre plazos y costes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"878c8942e1": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Las cifras coinciden exactamente con los ejemplos de precios de referencia para instalaciones en 3D dados en la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"cita": "Ejemplos · Vivienda de 150 m²: Plan de Ejecución BIM 415 € · Instalaciones en 3D 1.950 €. Bloque de 32 viviendas: Plan de Ejecución BIM 900 € · Instalaciones en 3D 6.500 €.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1fce4ea004": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El Estatuto de los Trabajadores establece un máximo de seis meses de prueba, nulidad si ya hubo contrato previo y plenos derechos durante la misma, frente a la flexibilidad total de un servicio externo.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 14.2",
+"cita": "Durante el periodo de prueba, la persona trabajadora tendrá los derechos y obligaciones correspondientes al puesto de trabajo que desempeñe como si fuera de plantilla, excepto los derivados de la resolución de la relación laboral, que podrá producirse a instancia de cualquiera de las partes durante su transcurso.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4124767c83": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "La tabla de presupuestos de UDA especifica claramente que el precio de los proyectos completos es el mismo independientemente de si se desarrollan en CAD o en Revit.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, Precios de referencia de un vistazo",
+"cita": "P. Básico + P. Ejecución completos, en CAD o en Revit (mismo precio).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d6a806c1be": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El texto detalla exactamente las tres partes que componen el presupuesto de un bloque de viviendas, aplicando economías de escala a las unidades repetidas y al edificio.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 05 Bloques de viviendas",
+"cita": "Se presupuestan tres piezas: las viviendas tipo completas, las viviendas repetidas con un pequeño porcentaje y el edificio (fachadas, núcleos, cubiertas, zonas comunes y garaje) con un 6 % de la superficie total.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d04b95ca61": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto confirma que el FOGASA exige el reembolso subrogándose en los derechos de los trabajadores, por lo que la empresa no queda liberada.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 33.4",
+"cita": "Para el reembolso de las cantidades satisfechas, el Fondo de Garantía Salarial se subrogará obligatoriamente en los derechos y acciones de los trabajadores",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0908086979": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "Omite que los convenios colectivos pueden establecer un preaviso inferior a tres días y un límite de horas complementarias distinto al 30 %.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.5",
+"cita": "El trabajador deberá conocer el día y la hora de realización de las horas complementarias pactadas con un preaviso mínimo de tres días, salvo que el convenio establezca un plazo de preaviso inferior.",
+"correccion": "El preaviso mínimo es de tres días y el límite es el 30 %, pero ambos pueden ser modificados por convenio colectivo.",
+"fecha": "2026-10-20"
+},
+"5c603da8ed": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "La comparativa clasifica erróneamente 'Revisas PDF e IFC' y 'Archivo RVT editable' en columnas opuestas, cuando ambas son parte del servicio de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07",
+"cita": "Si tienes plantilla o biblioteca de familias propia, trabajamos con ella para que el modelo encaje con tu despacho.",
+"correccion": "Tanto la revisión en PDF e IFC durante el trabajo como la entrega del archivo RVT editable al final corresponden al servicio con UDA.",
+"fecha": "2026-10-20"
+},
+"ef52d1186d": {
+"veredicto": "dudosa",
+"calidad": 5.0,
+"motivo": "El texto proporcionado no incluye el apartado 06 sobre Industrial y equipamientos, por lo que no se puede verificar la afirmación específica para ese tipo de proyectos.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 06",
+"cita": "Solo en Revit (opcional) | P. Básico · fijo | P. Básico · por m² | P. Ejecución · fijo | P. Ejecución · por m²",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0838848c85": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "El texto especifica que el 40 % restante se paga 'antes de entregar' cada fase, no 'al entregar'.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "60 % al iniciar y 40 % antes de entregar cada fase. Entrega: PDF + DWG, o IFC + RVT con el pago final. Las familias van dentro del modelo; nuestra biblioteca y plantillas siguen siendo de UDA.",
+"correccion": "El pago es del 60 % al iniciar y el 40 % antes de entregar cada fase.",
+"fecha": "2026-10-20"
+},
+"4f26e6855c": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "Generaliza que se incluyen dos revisiones, cuando el texto especifica que esto es solo para bloques de 30 viviendas o más.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 05",
+"cita": "El trabajo de un bloque está en diseñar unas pocas viviendas tipo y el edificio que las contiene; después se repiten planta a planta.",
+"correccion": "UDA incluye 2 revisiones por fase solo en bloques de 30 viviendas o más (1 revisión en el resto).",
+"fecha": "2026-10-20"
+},
+"25b02b9f2c": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "El texto menciona explícitamente el derecho a emitir informe previo sobre 'reducciones de jornada', pero no incluye la modificación general de las mismas.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 64.5",
+"cita": "El comité de empresa tendrá derecho a emitir informe, con carácter previo a la ejecución por parte del empresario de las decisiones adoptadas por este, sobre las siguientes cuestiones: a) Las reestructuraciones de plantilla y ceses",
+"correccion": "Las decisiones bajo informe previo incluyen las reducciones de jornada, no su modificación.",
+"fecha": "2026-10-20"
+},
+"02429ae18f": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "La fuente no menciona en ningún momento la contratación por servicios ni sus condiciones, por lo que esa columna inventa datos no presentes en el texto.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, Sección 4.ª",
+"cita": "El trabajador podrá solicitar la presencia de un representante legal de los trabajadores en el momento de proceder a la firma del recibo del finiquito, haciéndose constar en el mismo el hecho de su firma",
+"correccion": "La comparativa debe limitarse a los datos de contratación en plantilla que aparecen en la fuente, o utilizar una fuente adicional para los servicios.",
+"fecha": "2026-10-20"
+},
+"ccd916fab7": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos enumeran exactamente los tipos de proyectos mencionados en las preguntas frecuentes de la web.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Nuestro equipo tiene capacidad para abarcar desde viviendas unifamiliares y plurifamiliares hasta proyectos dotacionales, naves industriales, reformas completas y preparación de planimetría para concursos públicos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b9ebeac16c": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La fuente confirma que el pago se divide en cuatro momentos, desmintiendo que se deba pagar todo por adelantado.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"cita": "En P. Básico + P. Ejecución se paga en cuatro momentos (60 % y 40 % del P. Básico, luego 60 % y 40 % del P. Ejecución): nunca pagas todo de golpe y validas cada entrega.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bcdbeabf07": {
+"veredicto": "error",
+"calidad": 1.0,
+"motivo": "La pieza proporciona asesoramiento laboral concreto sobre el cálculo de indemnizaciones, lo cual está explícitamente prohibido en las instrucciones.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, disposición adicional decimonovena.1",
+"cita": "el salario a tener en cuenta a efectos del cálculo de las indemnizaciones previstas en esta ley será el que hubiera correspondido a la persona trabajadora sin considerar la reducción de jornada efectuada",
+"correccion": "Eliminar el asesoramiento laboral concreto sobre el cálculo de indemnizaciones en jornada reducida.",
+"fecha": "2026-10-20"
+},
+"d5eaa4781a": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La comparativa refleja fielmente las condiciones de UDA para viviendas unifamiliares y reformas, indicando el precio como referencia.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"cita": "El trabajo con el que más autónomos y pequeños despachos confían en nosotros, con el mismo cuidado que un proyecto grande. || REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"aea99bb784": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Muestra claramente las ventajas de delegar el Proyecto Básico en UDA, respaldado por el texto del listado de documentos.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"cita": "La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad. || Quiero el Proyecto Básico completo (si lo marcas, no hace falta marcar cada documento)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e17dd8efbd": {
+"veredicto": "error",
+"calidad": 1.0,
+"motivo": "Los precios de UDA deben presentarse siempre como precios de referencia u orientativos, no como cifras absolutas definitivas.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 06 Industrial y equipamientos",
+"cita": "Ejemplos P. Básico + P. Ejecución: 800 m², 10.020 € · 2.000 m², 12.300 € · 5.000 m², 18.000 €.",
+"correccion": "Añadir explícitamente que los precios mostrados son de referencia u orientativos.",
+"fecha": "2026-10-20"
+},
+"2936346bd4": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El gráfico refleja exactamente la estructura de pagos por fase indicada en las condiciones de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, 10 Qué incluye y condiciones",
+"cita": "Cada fase se paga por separado: 60 % al iniciarla y 40 % justo antes de su entrega.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d4045191a5": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los plazos mínimo y máximo para recibir el presupuesto coinciden literalmente con lo prometido en el documento.",
+"fuente_ok": true,
+"referencia": "Documento 02 de UDA, encabezado",
+"cita": "Marca lo que quieres delegar y en 24–72 horas tendrás tu presupuesto cerrado.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ac3cdea351": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La afirmación es correcta y está respaldada literalmente por el Estatuto de los Trabajadores.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 14.1",
+"cita": "Será nulo el pacto que establezca un periodo de prueba cuando el trabajador haya ya desempeñado las mismas funciones con anterioridad en la empresa, bajo cualquier modalidad de contratación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b4d00add9f": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los tres puntos resumen fielmente las condiciones del contrato a tiempo parcial según el artículo 12.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.1 y 12.2",
+"cita": "A efectos de lo dispuesto en el párrafo anterior, se entenderá por «trabajador a tiempo completo comparable» a un trabajador a tiempo completo de la misma empresa y centro de trabajo, con el mismo tipo de contrato",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f66f0d3dfd": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Todas las tipologías mencionadas aparecen explícitamente en la tabla de presupuestos de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, Precios de referencia de un vistazo",
+"cita": "EXPERIENCIA: +80 proyectos. Viviendas, bloques, naves, locales y equipamientos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"681e8c6e99": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Las cifras coinciden exactamente con la tabla de precios de referencia y demuestran claramente la economía de escala.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 5",
+"cita": "Bloque de 32 viviendas, 2 tipologías | 12.234 € | 382 € por vivienda · Apartado 5 Bloque de 80 viviendas, 4 tipologías | 21.030 € | 263 € por vivienda · Apartado 5",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"700a4cc95e": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La web de UDA especifica claramente que el tiempo es limitado y solo aceptan proyectos si pueden cumplir los plazos.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, PASO A PASO",
+"cita": "*Nuestro tiempo es limitado y sólo aceptamos proyectos si vemos que podemos tenerlos listos para la fecha indicada.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fe6468aa2f": {
+"veredicto": "error",
+"calidad": 4.0,
+"motivo": "La fuente no afirma que en el despacho se trabaje 'documento a documento', y de hecho UDA permite delegar tanto el proyecto completo como documentos sueltos.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"cita": "Quiero el Proyecto Básico completo (si lo marcas, no hace falta marcar cada documento)",
+"correccion": "UDA permite delegar el Proyecto Básico completo o elegir documento a documento, por lo que no es una diferencia frente a hacerlo en el despacho.",
+"fecha": "2026-10-20"
+},
+"580a3ed732": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La comparativa refleja fielmente los derechos de suspensión de contrato según el Estatuto, frente a la continuidad y flexibilidad que ofrece UDA.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, disp. transitoria duodécima, letras c y d",
+"cita": "el otro progenitor tendrá derecho a suspender su contrato de trabajo por la totalidad de 16 semanas, sin que le sea aplicable ninguna limitación del régimen transitorio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2312f27952": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El texto indica explícitamente que en las actuaciones específicas el despacho sigue presupuestando, firmando y tramitando.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"cita": "Precios para el despacho: tú presupuestas, firmas y tramitas; nuestro precio te deja margen.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d022286451": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "Los precios se presentan como valores absolutos ('Coste técnico') sin especificar que son precios de referencia o estimativos, lo cual incumple las directrices de comunicación de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 06 Industrial y equipamientos",
+"cita": "Ejemplos P. Básico + P. Ejecución: nave de 500 m², 5.175 € · nave de 3.000 m², 9.050 € · nave de 5.000 m², 12.150 € · centro logístico de 12.000 m², 23.000 €.",
+"correccion": "Añadir explícitamente en el gráfico o en el texto que los importes mostrados son precios de referencia o estimativos.",
+"fecha": "2026-10-20"
+},
+"e463924df6": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La comparativa refleja fielmente los derechos de información y consulta del comité de empresa según el Estatuto de los Trabajadores frente a la privacidad y autonomía de un contrato mercantil.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 64.4 y 64.5",
+"cita": "Conocer el balance, la cuenta de resultados, la memoria y, en el caso de que la empresa revista la forma de sociedad por acciones o participaciones, los demás documentos que se den a conocer a los socios",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b5df971375": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos resumen de forma exacta y directa las características del servicio de modelado de instalaciones en Revit 3D que ofrece UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"cita": "Todas las instalaciones exigibles en 3D (PCI, climatización, ventilación, fontanería, saneamiento, electricidad y telecomunicaciones, tierras, alumbrado exterior, fotovoltaica y gas): modelado LOD 300–350, familias y planos, a partir de tus criterios o cálculos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"93b9ad111a": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La comparativa extrae conclusiones válidas y directas de las FAQ de UDA sobre las ventajas económicas y operativas de externalizar frente a contratar en plantilla.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas Frecuentes",
+"cita": "Al externalizar, eliminas el pago de seguros sociales, vacaciones, bajas y licencias de software. Solo pagas por la producción real cuando tienes un pico de trabajo, escalando la capacidad técnica",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bc73e9bfbe": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "Los tres pasos descritos coinciden literalmente con las instrucciones del Documento 02 de UDA para solicitar un presupuesto.",
+"fuente_ok": true,
+"referencia": "Documento 02 de UDA, pasos 1 a 3",
+"cita": "PASO 1 Cuéntanos tu proyecto Datos, tipo de proyecto, superficies y entorno de trabajo (apartados 1 a 4). | PASO 2 Marca lo que delegas Haz clic en la casilla de cada documento que quieras que hagamos (apartados 5 a 8).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9ae0b43113": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Desmiente un miedo común de los arquitectos al externalizar, confirmando con la fuente que UDA actúa como marca blanca y el despacho conserva la autoría y la firma.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, encabezado y apartado 10",
+"cita": "Tu equipo técnico de arquitectura, sin plantilla. Proyectos Básicos y de Ejecución para despachos · 100 % online · Precio cerrado · Tu firma al final",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e083aad94d": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan con exactitud las garantías legales que protegen al trabajador frente a cambios unilaterales de jornada completa a parcial.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.4.e",
+"cita": "La conversión de un trabajo a tiempo completo en un trabajo parcial y viceversa tendrá siempre carácter voluntario para el trabajador y no se podrá imponer de forma unilateral",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0e0c94bd30": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Aclara perfectamente la diferencia entre vivienda tipo y variante según los criterios de presupuestación de UDA, lo cual es clave para calcular el coste de un bloque.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 05 Bloques de viviendas",
+"cita": "Vivienda tipo: distribución propia; si la cocina o los baños cambian de sitio, es una tipo nueva. Variante: cambios menores (un tabique, un hueco, la terraza, acabados o versión adaptada).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"590d506757": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La fuente confirma que solo se cobra la vivienda tipo completa y las repetidas suman un pequeño porcentaje más un 3 % por el conjunto.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b66bfd8fd3": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen exactamente la propuesta de valor de UDA según la cabecera de la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, cabecera",
+"cita": "Tu equipo técnico de arquitectura, sin plantilla. Proyectos Básicos y de Ejecución para despachos · 100 % online · Precio cerrado · Tu firma al final",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a9706fe27c": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La tabla refleja fielmente que UDA entrega la documentación completa y deja margen, mientras que el despacho sigue presupuestando y tramitando.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 08",
+"cita": "Precios para el despacho: tú presupuestas, firmas y tramitas; nuestro precio te deja margen. Actuación (documentación completa: estado actual y reformado, normativa, memoria, mediciones)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"87f1badd99": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos reflejan exactamente las instrucciones del documento sobre qué hacer en caso de duda al marcar las casillas.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, cabecera",
+"cita": "¿Dudas sobre qué marcar? Marca lo que creas y explícalo en Observaciones: lo revisamos contigo al preparar el presupuesto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6f6e5519b4": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los tres puntos describen con precisión el nivel de detalle y el contenido de las familias según el apartado de Revit.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07",
+"cita": "Modelo del P. Básico | LOD 200: volumetría, muros, forjados, cubiertas, huecos y distribución, con los tipos de muros, suelos y cubiertas y sus capas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6bf2bb56bb": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen perfectamente los tres pasos del flujo de trabajo descritos en las preguntas frecuentes.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Analizamos tus necesidades, nos envías tus archivos base (CAD, referencias) y tus plantillas de estudio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"769943cb38": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La fuente confirma que se puede encargar básico y ejecución, que la reforma se presupuesta sin estructuras y que el precio depende de la superficie.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 03",
+"cita": "VIVIENDA DE 250 m²: 3.765 €. P. Básico 1.250 € · P. Ejecución 2.515 €. REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"025c8c4bf9": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos reflejan exactamente la regla de cálculo para adosados y conjuntos de unifamiliares.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b44ec704fe": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos reflejan exactamente las opciones adicionales listadas en el documento de UDA.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA · 08 Opciones adicionales",
+"cita": "Conceptualización de la idea y diseño del proyecto | Renders / infografías 3D · nº de vistas: ____ Familias Revit a medida o singulares",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"69829321c5": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "Los puntos resumen correctamente las condiciones de suspensión por adopción indicadas en el Estatuto de los Trabajadores.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores · Disposición transitoria duodécima",
+"cita": "el otro progenitor tendrá derecho a suspender su contrato de trabajo por la totalidad de 16 semanas",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fd59595791": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "Se añaden los adjetivos 'exhaustivo' y 'continua' que no están en el texto original y exageran el alcance del servicio.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 09 Qué incluye cada partida",
+"cita": "Estudio de la documentación y la normativa, coordinación con tu despacho, control de calidad interno y revisiones incluidas.",
+"correccion": "Eliminar 'exhaustivo' y 'continua', dejando 'Estudio de la normativa aplicable' y 'Coordinación con tu equipo'.",
+"fecha": "2026-10-20"
+},
+"6a05ec06a0": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La fuente afirma literalmente que con un empleado el tiempo se va en revisar planos en lugar de proyectar.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 01 ¿Contratar a alguien o delegar en UDA?",
+"cita": "Tu tiempo se va en revisar planos en lugar de proyectar.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6b572ddc85": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La ley especifica que la indemnización se calcula con el salario que correspondería sin la reducción de jornada, dentro del plazo legal.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores · Disposición adicional decimonovena.1",
+"cita": "el salario a tener en cuenta a efectos del cálculo de las indemnizaciones previstas en esta ley será el que hubiera correspondido a la persona trabajadora sin considerar la reducción de jornada efectuada",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d88141035e": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Los datos coinciden exactamente con la columna de 1 tipología de la tabla de precios orientativos, y demuestran la conclusión extraída del texto.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 05 Bloques de viviendas",
+"cita": "Cuanto más grande el bloque, menos cuesta cada vivienda. El trabajo de un bloque está en diseñar unas pocas viviendas tipo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b826fd7bad": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos enumeran exactamente los elementos que UDA solicita para trabajar como marca blanca del despacho.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com · Preguntas frecuentes",
+"cita": "Actuamos como tu «marca blanca». Para ello, te pediremos tu libro de estilo, grosores de plumilla (CTB), familias de Revit y cajetines.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"61a8d1e326": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen fielmente las condiciones de servicio de UDA indicadas en la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPU",
+"cita": "PRESUPUESTO EN 24–72 h: Precio cerrado. Sin sorpresas. Pagas por fases y validas cada entrega.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f29b9b15e6": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "La explicación confunde los límites de la indemnización por despido con los límites del salario pendiente.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 33.1",
+"cita": "abonará a los trabajadores el importe de los salarios pendientes de pago [...] con un máximo de ciento veinte días.",
+"correccion": "El Fondo abona los salarios pendientes con un límite máximo de 120 días, no de 20 días por año (que es el límite para indemnizaciones).",
+"fecha": "2026-10-20"
+},
+"4eea3c48ef": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "Asigna 'Marcar cada documento' a la columna 'En tu despacho', cuando en realidad es una opción del propio formulario de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, 06 Proyecto de Ejecución",
+"cita": "Quiero el Proyecto de Ejecución completo (si lo marcas, no hace falta marcar cada documento)",
+"correccion": "La opción 'Marcar cada documento' es una forma de hacer el encargo a UDA, no una característica del trabajo 'En tu despacho'.",
+"fecha": "2026-10-20"
+},
+"5d8ae728dc": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La comparativa refleja fielmente las ventajas de delegar frente a asumir costes fijos, basándose en el texto de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"cita": "Precios para el despacho: tú presupuestas, firmas y tramitas; nuestro precio te deja margen.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0d6d8b9f2b": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto confirma que la jornada parcial en estos casos requiere acuerdo previo, no puede imponerse unilateralmente.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, disposición transitoria duodécima, letra d",
+"cita": "podrán disfrutarse en régimen de jornada completa o a tiempo parcial, previo acuerdo entre los empresarios y los trabajadores afectados",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"274056eb9f": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "Las barras del gráfico suman 770 €, por lo que la conclusión de 1.190 € no se ve reflejada en los datos mostrados.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"cita": "Total | 550 € | 2,80 € | 1.190 € | 5,30 €",
+"correccion": "El gráfico debe incluir todas las partidas con coste fijo (Gestión, Memoria, Mediciones) para sumar 1.190 €, o la conclusión debe ajustarse a 770 €.",
+"fecha": "2026-10-20"
+},
+"9fcd070a38": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "El gráfico ilustra perfectamente el ejemplo de la fuente, demostrando de forma visual el ahorro en metros presupuestados.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 04",
+"cita": "Ejemplo: 12 adosados iguales de 235 m² (2.820 m²) | Se presupuesta La vivienda tipo | 235 m² Viviendas 2ª a 10ª al 10 % · 11ª y 12ª al 8 % | 250 m²",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f99e717783": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La norma establece claramente que el trabajador tiene derecho a la remuneración por el trabajo prestado aunque el contrato sea nulo.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 9.2",
+"cita": "En caso de que el contrato resultase nulo, el trabajador podrá exigir, por el trabajo que ya hubiese prestado, la remuneración consiguiente",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6a6209b0ed": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Resume correctamente las tipologías de proyectos que UDA acepta según su formulario de encargo.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 02 Tipo de proyecto",
+"cita": "Vivienda unifamiliar | Reforma de vivienda Pareados / Adosados / Conjunto de unifamiliares | Bloque de viviendas Industrial y logístico | Equipamiento y servicios",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9a919bcaad": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los plazos orientativos para el Proyecto de Ejecución coinciden exactamente con los rangos indicados en la tabla de la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "Plazos orientativos (días naturales) | P. Básico | P. Ejecución Vivienda unifamiliar y reforma | 15–20 | 20–35 Pareados, adosados y conjuntos | 15–30 | 30–45",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"34be6b8aa2": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los precios base para las actuaciones específicas coinciden con la tabla y se presentan correctamente como precios de referencia que dejan margen.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 08",
+"cita": "Rehabilitación de fachada (reparación, SATE, carpinterías) | 1.500 € hasta 300 m² + 3 €/m² Rehabilitación de cubierta | 1.200 € hasta 200 m² + 3 €/m²",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bb77aaecff": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los topes máximos del periodo de prueba sin convenio coinciden exactamente con los plazos establecidos en el Estatuto de los Trabajadores.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 14.1",
+"cita": "En defecto de pacto en convenio, la duración del periodo de prueba no podrá exceder de seis meses para los técnicos titulados, ni de dos meses para los demás trabajadores.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"150400fddb": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "En contratos a tiempo parcial no existen las 'horas extra', sino 'horas complementarias'. Además, omite que el convenio puede fijar un preaviso inferior a 3 días.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.5",
+"cita": "El empresario solo podrá exigir la realización de horas complementarias cuando así lo hubiera pactado expresamente con el trabajador.",
+"correccion": "El término legal es 'horas complementarias', no extra, y el preaviso de 3 días puede ser menor si lo establece el convenio colectivo.",
+"fecha": "2026-10-20"
+},
+"e1a7b82a67": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La comparativa refleja fielmente las ventajas de delegar el Proyecto Básico en UDA según el listado de documentos.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 05",
+"cita": "La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f4cc453e0a": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Aclara perfectamente el reparto de responsabilidades, dejando claro que la firma, visado y dirección de obra son del despacho.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "La firma corresponde al despacho, así como la responsabilidad final, el visado, la tramitación, la dirección de obra y la coordinación de seguridad y salud.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ea4f6e8d5b": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen correctamente las exclusiones del servicio de UDA indicadas en las condiciones.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 10",
+"cita": "Ensayos in situ, topografía y geotecnia, y certificaciones externas (LEED, BREEAM…).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"06dd1f91a5": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Explica de forma exacta el método de UDA para presupuestar conjuntos de viviendas, lo cual es muy útil para el despacho.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 %",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2879e79a11": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos reflejan con exactitud los documentos que componen la memoria del Proyecto Básico según el listado de UDA.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA · 05 Proyecto Básico",
+"cita": "Memoria descriptiva, constructiva y estructural preliminar Cumplimiento del CTE: seguridad en caso de incendio (DB-SI) Normativa de aplicación y justificación urbanística",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d45f3d2b37": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Resume fielmente las ventajas operativas de delegar frente a los problemas habituales de tener personal en plantilla.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 01 ¿Contratar a alguien o delegar en UDA?",
+"cita": "Equipo con experiencia, adaptado a ti desde el primer día.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"af38872c67": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Explica de forma clara y exacta el método de UDA para presupuestar bloques de viviendas, lo cual supone un gran ahorro para el despacho.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 05 Bloques de viviendas",
+"cita": "Se presupuestan tres piezas: las viviendas tipo completas, las viviendas repetidas con un pequeño porcentaje y el edificio (fachadas, núcleos, cubiertas, zonas comunes y garaje) con un 6 % de la superficie total.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"60c3b606b9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El gráfico refleja correctamente la horquilla de costes anuales reales de un arquitecto en plantilla indicada en la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 01 ¿Contratar a alguien o delegar en UDA?",
+"cita": "UN ARQUITECTO EN PLANTILLA: 40.000–47.000 €/año. Salario, Seguridad Social, licencias, puesto, selección y formación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"02b117650a": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Desmiente un miedo común de los despachos confirmando que UDA trabaja con presupuestos cerrados, eliminando sorpresas.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com · Preguntas frecuentes",
+"cita": "Trabajamos siempre con presupuestos cerrados según la tipología y metros cuadrados. De esta forma, asumes un coste fijo, eliminando sorpresas o desviaciones presupuestarias para tu estudio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"dcc4597316": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Enumera correctamente los documentos técnicos complementarios que se incluyen en la partida de mediciones y anejos del Proyecto de Ejecución.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA · 06 Proyecto de Ejecución",
+"cita": "Mediciones y anejos | Mediciones y presupuesto Pliego de condiciones Estudio de seguridad y salud Estudio de gestión de residuos Plan de control de calidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"76c2399203": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Muestra con precisión las opciones de personalización y alcance disponibles al elegir trabajar en entorno BIM (Revit).",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA · 04 Entorno de trabajo y punto de partida",
+"cita": "Instalaciones en Revit (3D): todas las instalaciones exigibles modeladas | Tengo plantilla o biblioteca de familias propia y quiero que la uséis Plan de Ejecución BIM (BEP) | Aporto mi propio modelo Revit",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c490aa3dd9": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "La comparativa de costes para un bloque de 80 viviendas es exacta y demuestra visualmente el ahorro económico de delegar frente a asumir el proyecto con plantilla.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA · 01 ¿Contratar a alguien o delegar en UDA?",
+"cita": "BLOQUE DE 80 VIVIENDAS, 4 TIPOLOGÍAS: 21.030 €. Con plantilla: 10–12 meses de trabajo y más de 35.000 € de coste real.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"23ea74bbf0": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La afirmación es falsa (mito) y la explicación refleja fielmente el derecho del comité a emitir informe previo según el Estatuto.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 64.5",
+"cita": "El comité de empresa tendrá derecho a emitir informe, con carácter previo a la ejecución por parte del empresario de las decisiones adoptadas por este, sobre las siguientes cuestiones: [...] f) La implantación y revisión de sistemas de organización y control del trabajo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"78a4a8bb77": {
+"veredicto": "error",
+"calidad": 4.0,
+"motivo": "El texto original no especifica que la aportación se realice 'en cada nómina', añadiendo un dato que no está en la fuente.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 33.4 y 33.5",
+"cita": "El Fondo de Garantía Salarial se financiará con las aportaciones efectuadas por todos los empresarios a que se refiere el artículo 1.2 de esta ley, tanto si son públicos como privados.",
+"correccion": "Eliminar 'en cada nómina', ya que el texto solo menciona 'aportaciones efectuadas por todos los empresarios'.",
+"fecha": "2026-10-20"
+},
+"83814bd53d": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los tres puntos resumen a la perfección y sin añadir datos extra cómo se clasifican las viviendas para el presupuesto.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 03",
+"cita": "Cada distribución distinta. Si la cocina o los baños cambian de sitio, es una vivienda tipo nueva.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8f27876db0": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "Se añade el adjetivo 'continua' a la coordinación, una generalización que no aparece en el texto original.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 05",
+"cita": "La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad.",
+"correccion": "Debe decir 'Coordinación con tu despacho' o 'contigo', sin añadir la palabra 'continua'.",
+"fecha": "2026-10-20"
+},
+"84112a6e1e": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Desmiente un mito común de forma clara y directa con la información exacta de la fuente.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 06",
+"cita": "Para hacer el Proyecto de Ejecución es necesario el Proyecto Básico, nuestro o de tu despacho.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1a9c380ee3": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "Los precios se presentan como 'Costes técnicos cerrados' en la conclusión, incumpliendo la regla de que siempre deben mostrarse como orientativos o de referencia.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartados 03 y 08",
+"cita": "Vivienda unifamiliar de 150 m² | 2.955 € | Apartado 3 Reforma integral de vivienda de 80 m² (sin estructuras) | 1.950 € | Apartado 3",
+"correccion": "Los precios deben presentarse explícitamente como 'precios de referencia' o 'precios orientativos', tal como indica la fuente.",
+"fecha": "2026-10-20"
+},
+"557cfa3491": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos extraen fielmente las opciones de externalización parcial mencionadas en las preguntas frecuentes.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Si tu equipo domina el diseño arquitectónico pero la estructura y el cumplimiento de las instalaciones suponen un cuello de botella, puedes externalizar exclusivamente el modelado en CYPE y la redacción de las memorias CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"36058437d7": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Aclara perfectamente cómo se presupuestan los conjuntos de viviendas repetidas, basándose literalmente en la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"20689a7b99": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los plazos coinciden exactamente con la tabla de plazos orientativos para Proyecto de Ejecución.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "Vivienda unifamiliar y reforma | 15–20 | 20–35 Pareados, adosados y conjuntos | 15–30 | 30–45 Bloque de hasta 30 viviendas | 20–35 | 40–55 Bloque de más de 30 viviendas | 35–50 | 55–85",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ce47566101": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos reflejan fielmente las opciones de punto de partida que ofrece UDA en su listado de documentos.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 04",
+"cita": "UDA hace también el Proyecto Básico | Mi despacho aporta el P. Básico en editable (DWG / RVT) Mi despacho aporta el P. Básico solo en PDF / bocetos | Rehabilitación: aporto levantamiento del estado actual",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"20b38676b7": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La comparativa extrae correctamente las características del contrato a tiempo parcial según el Estatuto de los Trabajadores y las contrapone lógicamente a la contratación por servicios.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.1 y 12.2",
+"cita": "El contrato a tiempo parcial podrá concertarse por tiempo indefinido o por duración determinada en los supuestos en los que legalmente se permita la utilización de esta modalidad de contratación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"65de7bc46e": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "La afirmación omite que el convenio colectivo puede disponer otra cosa, por lo que no es una prohibición absoluta de la ley.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.4.b",
+"cita": "solo será posible efectuar una única interrupción en dicha jornada diaria, salvo que se disponga otra cosa mediante convenio colectivo.",
+"correccion": "La ley permite una única interrupción en la jornada diaria a tiempo parcial, salvo que el convenio colectivo disponga otra cosa.",
+"fecha": "2026-10-20"
+},
+"9e23762082": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "La información de partida es una condición previa independiente, no la función del despacho en la compatibilización del proyecto.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "Revisiones y compatibilización | 1 revisión por fase (2 en bloques de 30 viviendas o más) y una primera compatibilización con estructuras e instalaciones.",
+"correccion": "En la fila de compatibilización, la celda del despacho no debe ser 'Información de partida', ya que son conceptos distintos en la fuente.",
+"fecha": "2026-10-20"
+},
+"e8733b2282": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "Se omite que el permiso de veinte horas anuales solo aplica a trabajadores con al menos un año de antigüedad en la empresa.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 23.3",
+"cita": "Los trabajadores con al menos un año de antigüedad en la empresa tienen derecho a un permiso retribuido de veinte horas anuales",
+"correccion": "El permiso retribuido de veinte horas anuales exige tener al menos un año de antigüedad en la empresa.",
+"fecha": "2026-10-20"
+},
+"32f61ece11": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen fielmente las características y opciones del servicio para viviendas unifamiliares y reformas según la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 03",
+"cita": "El trabajo con el que más autónomos y pequeños despachos confían en nosotros, con el mismo cuidado que un proyecto grande.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8f785f1d4d": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "La explicación refleja exactamente los costes asociados a un arquitecto en plantilla detallados en el documento de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 01",
+"cita": "UN ARQUITECTO EN PLANTILLA: 40.000–47.000 €/año. Salario, Seguridad Social, licencias, puesto, selección y formación.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"78ee318210": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La fuente confirma literalmente que, tras la auditoría, se entregan los archivos nativos y PDFs, siendo 100% propiedad del estudio.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Nuestro Project Manager audita el trabajo internamente y, tras validar que cumple los estándares, te entregamos los archivos nativos y PDFs. Son 100% tuyos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"35be561795": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La comparativa deduce correctamente las implicaciones legales de tener personal en plantilla (aportaciones al FOGASA y subrogación de deudas) frente a la externalización por servicios.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 33.4 y 33.5",
+"cita": "El Fondo de Garantía Salarial se financiará con las aportaciones efectuadas por todos los empresarios [...] el Fondo de Garantía Salarial se subrogará obligatoriamente en los derechos y acciones de los trabajadores",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3b6087f32e": {
+"veredicto": "dudosa",
+"calidad": 5.0,
+"motivo": "La expresión 'Definición del proyecto' no aparece en el texto como entregable del despacho; la fuente especifica que el despacho aporta 'criterios o cálculos', por lo que la celda no se corresponde literalmente con la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07 CAD o Revit (BIM)",
+"cita": "Todas las instalaciones exigibles en 3D (PCI, climatización, ventilación, fontanería, saneamiento, electricidad y telecomunicaciones, tierras, alumbrado exterior, fotovoltaica y gas): modelado LOD 300–350, familias y planos, a partir de tus criterios o cálculos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ca040c9fb3": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La fuente indica explícitamente que el servicio es modular y pone como ejemplo externalizar solo el cálculo en CYPE y las memorias CTE.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Nuestro servicio es completamente modular. Si tu equipo domina el diseño arquitectónico pero la estructura y el cumplimiento de las instalaciones suponen un cuello de botella, puedes externalizar exclusivamente el modelado en CYPE y la redacción de las memorias CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0f68a0e2d1": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Las cifras del gráfico coinciden exactamente con los precios indicados en la tabla de presupuestos para un bloque de 32 viviendas en CAD y Revit, demostrando que el precio es el mismo.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07 CAD o Revit (BIM)",
+"cita": "BLOQUE DE 32 VIVIENDAS · COMPLETO: CAD 12.234 € · Revit 12.261 €. Mismo precio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ffa6fbf5b4": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen con precisión las condiciones del permiso por fuerza mayor establecidas en el Estatuto de los Trabajadores, incluyendo los motivos, la urgencia y la retribución de hasta cuatro días.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 37.9",
+"cita": "La persona trabajadora tendrá derecho a ausentarse del trabajo por causa de fuerza mayor cuando sea necesario por motivos familiares urgentes relacionados con familiares o personas convivientes, en caso de enfermedad o accidente que hagan indispensable su presencia inmediata.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fc02804e0f": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El texto confirma literalmente que el peso del precio recae en la parte fija, evitando que los proyectos grandes salgan perjudicados.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 06 Industrial y equipamientos",
+"cita": "El peso del precio está en la parte fija: los proyectos grandes no salen perjudicados.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0a76446356": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos reflejan fielmente los inconvenientes y costes ocultos de tener un empleado en plantilla mencionados en la tabla comparativa de la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 01 ¿Contratar a alguien o delegar en UDA?",
+"cita": "Un empleado no cuesta solo su sueldo: cuesta encontrarlo, formarlo, supervisarlo y pagarlo también cuando no hay proyectos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e2b61bca11": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los porcentajes de pago y los hitos coinciden exactamente con la tabla de presupuestos, y la conclusión refleja fielmente el texto de la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"cita": "En P. Básico + P. Ejecución se paga en cuatro momentos (60 % y 40 % del P. Básico, luego 60 % y 40 % del P. Ejecución): nunca pagas todo de golpe y validas cada entrega.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9ddb30cc5f": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los precios de referencia para las tres superficies de vivienda unifamiliar son exactos y se presentan correctamente como costes orientativos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 03",
+"cita": "VIVIENDA DE 90 m²: 2.469 €. P. Básico 802 € · P. Ejecución 1.667 €. VIVIENDA DE 150 m²: 2.955 €. P. Básico 970 € · P. Ejecución 1.985 €.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d14517662e": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Todos los puntos sobre formatos de entrega, días de soporte y compatibilización inicial están respaldados literalmente por las condiciones del servicio.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "Entrega: PDF + DWG, o IFC + RVT con el pago final. Las familias van dentro del modelo; nuestra biblioteca y plantillas siguen siendo de UDA.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d6865d8c0d": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los tres puntos resumen a la perfección los beneficios de eficiencia, flexibilidad y enfoque mencionados en la web para escalar el despacho.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, sección HAZ QUE TU DESPACHO CREZCA SIN LÍMITES",
+"cita": "Eficiencia: Delega más, mejora tu precio/hora, llega a más cliente y escala tu estudio. Flexibilidad: Elimina costes fijos; contrata solo por proyectos. Enfoque: Tú gestionas, nosotros te hacemos toda la parte técnica.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3442c127a7": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos resumen de forma precisa y correcta los apartados 1, 2 y 3 del artículo 9 del Estatuto de los Trabajadores sobre la validez del contrato.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 9",
+"cita": "Si resultase nula solo una parte del contrato de trabajo, este permanecerá válido en lo restante, y se entenderá completado con los preceptos jurídicos adecuados conforme a lo dispuesto en el artículo 3.1.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e0b54e4c1c": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La pieza refleja fielmente los derechos del trabajador al firmar el finiquito según la Sección 4.ª del Estatuto de los Trabajadores.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, Sección 4.ª",
+"cita": "El trabajador podrá solicitar la presencia de un representante legal de los trabajadores en el momento de proceder a la firma del recibo del finiquito, haciéndose constar en el mismo el hecho de su firma",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"392416603a": {
+"veredicto": "dudosa",
+"calidad": 6.0,
+"motivo": "Aunque la columna 'Delegado en UDA' es correcta, el texto fuente no contiene una comparativa explícita con una columna 'En tu despacho', por lo que esa parte ha sido deducida y no cumple la regla de comparativas.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 06",
+"cita": "Estructuras | Cálculo y planos de estructura mediante CYPE Memoria | Memoria constructiva y estructural Cumplimiento completo del CTE (SE, SI, SUA, HS, HR, HE)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"070245d846": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos extraen conclusiones directas y razonadas de los testimonios reales de clientes sobre cómo UDA les ayuda a gestionar picos de trabajo.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, sección ELLOS HABLAN POR NOSOTROS",
+"cita": "Somos un despacho pequeño, como una familia. Se me hacía duro contratar a alguien para 3 meses y tener que despedirle. UDA me ayuda mucho en el día a día",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"07c2c1a0ce": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos enumerados se corresponden directamente con los documentos delegables en la partida de mediciones y anejos del Proyecto de Ejecución.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, 06 Proyecto de Ejecución",
+"cita": "Mediciones y anejos | Mediciones y presupuesto Pliego de condiciones Estudio de seguridad y salud Estudio de gestión de residuos Plan de control de calidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d07be4aced": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El texto legal confirma que la readmisión obliga al pago de los salarios de tramitación, desmintiendo el mito de que el despacho se ahorra esas mensualidades.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 56.2",
+"cita": "En caso de que se opte por la readmisión, el trabajador tendrá derecho a los salarios de tramitación. Estos equivaldrán a una cantidad igual a la suma de los salarios dejados de percibir",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"53647dbbd2": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan fielmente el proceso de presupuesto cerrado, el pago inicial del 60 % y la revisión conjunta previa al pago final del 40 %.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"cita": "En 24–72 horas te enviamos un presupuesto cerrado. Solo se presupuesta y se hace lo marcado.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d96ac9c892": {
+"veredicto": "error",
+"calidad": 2.0,
+"motivo": "El gráfico compara una fase (Proyecto Básico) con un servicio opcional (Instalaciones 3D), lo cual incumple la regla de comparar el mismo concepto para deducir una conclusión sobre las fases contratadas.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07",
+"cita": "Situación y emplazamiento · Plantas, alzados y secciones (1:100–1:200) · Planta de acabados, superficies y cotas. En Revit, el modelo LOD 200 con sus familias.",
+"correccion": "Para comparar la definición técnica según la fase, las barras deben ser Proyecto Básico (LOD 200) frente a Proyecto de Ejecución (LOD 300).",
+"fecha": "2026-10-20"
+},
+"41daa29b38": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La comparativa refleja exactamente las condiciones de UDA: lo marcado se hace, lo no marcado lo asume el despacho, y los extras se valoran conjuntamente.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, Documento 02",
+"cita": "Solo presupuestamos y hacemos lo que marques. Lo que no esté marcado se entiende que lo realiza tu despacho. Si más adelante necesitas algo más, lo valoramos contigo antes de hacerlo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3092cde0fe": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto especifica literalmente que la memoria del Proyecto de Ejecución incluye el CTE completo con todos esos documentos y el certificado de eficiencia energética.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09",
+"cita": "P. Ejecución · Memoria | Memoria constructiva y estructural · CTE completo (SE, SI, SUA, HS, HR, HE) · Certificado de eficiencia energética (justificativo).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"368740ade7": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El texto indica explícitamente que el servicio no incluye firma, visado, tramitación ni dirección de obra, confirmando que la afirmación es un mito.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09",
+"cita": "No incluye: conceptualización y diseño, renders e infografías (opciones adicionales bajo presupuesto), certificaciones externas (LEED, BREEAM…), ensayos, topografía y geotecnia, firma, visado y tramitación, dirección de obra ni coordinación de seguridad y salud en obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"05f74dfc17": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto aclara literalmente que las viviendas idénticas o en espejo no hace falta indicarlas, desmintiendo que deban computarse como un tipo nuevo.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 03",
+"cita": "Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5699ae62b2": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Los datos del gráfico y la conclusión coinciden exactamente con el ejemplo del apartado 04 de la tabla de presupuestos, demostrando claramente el ahorro al delegar viviendas repetidas.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "Ejemplo: 12 adosados iguales de 235 m² (2.820 m²) | Se presupuesta La vivienda tipo | 235 m² Viviendas 2ª a 10ª al 10 % · 11ª y 12ª al 8 % | 250 m²",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"dd0c424a60": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los tres puntos resumen fielmente las condiciones que establece la disposición para calcular la indemnización en casos de jornada reducida, sin añadir datos externos.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, disposición adicional decimonovena.1",
+"cita": "el salario a tener en cuenta a efectos del cálculo de las indemnizaciones previstas en esta ley será el que hubiera correspondido a la persona trabajadora sin considerar la reducción de jornada efectuada, siempre y cuando no hubiera transcurrido el plazo máximo legalmente establecido",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"115f53ddbc": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto confirma que siempre existe una jornada de referencia para definir el tiempo parcial: si no hay un trabajador comparable, se aplica el convenio o la jornada máxima legal.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 12.1",
+"cita": "Si en la empresa no hubiera ningún trabajador comparable a tiempo completo, se considerará la jornada a tiempo completo prevista en el convenio colectivo de aplicación o, en su defecto, la jornada máxima legal.",
+"correccion": null,
+"fecha": "2026-10-20"
 }
 }
