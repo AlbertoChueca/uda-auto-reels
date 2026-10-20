@@ -1,0 +1,100 @@
+# Real Decreto 1371/2007, de 19 de octubre, por el que se aprueba el documento básico «DB-HR Protección frente al ruido» del Código Técnico de la Edificación y se modifica el Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el Código Técnico de la Edificación. · BOE-A-2007-18400 · diario · descargado 2026-10-20
+
+Texto
+TEXTO ORIGINAL
+La contaminación acústica que soportan los ciudadanos en los edificios que utilizan es uno de los principales obstáculos para poder disfrutar tanto de una vivienda digna y adecuada como del derecho a un ambiente adecuado. El ruido es además fuente de molestias y enfermedades de los ciudadanos, por lo que las Administraciones Públicas deben establecer los mecanismos adecuados para facilitar el uso de los edificios y que éste se produzca libre de contaminación acústica.
+Con los objetivos de mejorar la calidad de la edificación y de promover la innovación y la sostenibilidad, el Gobierno aprobó, mediante el Real Decreto 314/2006, de 17 de marzo, el Código Técnico de la Edificación, en adelante CTE. Se trata del instrumento normativo que regula las exigencias básicas de calidad de los edificios y sus instalaciones permitiendo dar satisfacción a los requisitos básicos de la edificación relacionados con la seguridad y el bienestar.
+Estos requisitos básicos de la edificación fueron establecidos en la Ley 38/1999, de 5 de noviembre, de Ordenación de la Edificación, con el fin de garantizar la seguridad de las personas, el bienestar de la sociedad, y la protección del medio ambiente. En esta Ley 38/1999, en su disposición final segunda, se autoriza al Gobierno para que, mediante real decreto, apruebe un CTE en el que se establezcan las exigencias básicas que deben cumplirse en los edificios, en relación con los requisitos básicos relativos a la seguridad y a la habitabilidad, enumerados en los apartados 1b) y 1c) del artículo 3, entre los cuales se incluye el relativo a la protección contra el ruido.
+En el CTE ya aprobado, en su artículo 14, se detallan las exigencias básicas de protección frente al ruido. No obstante, se indica que hasta que se apruebe el Documento Básico «DB-HR Protección frente al Ruido», en adelante DB-HR, en el que se especificarán parámetros objetivos y sistemas de verificación cuyo cumplimiento asegura la satisfacción de las exigencias básicas y la superación de los niveles mínimos de calidad propios del requisito básico de protección frente al ruido, se aplicará la vigente Norma Básica de la Edificación «NBE CA-88 Condiciones acústicas en los edificios».
+Por otra parte, en el artículo 8 de la Ley 37/2003, de 17 de noviembre, del Ruido, mediante la que se realizó la transposición parcial al derecho interno la Directiva 2002/49/CE del Parlamento Europeo y del Consejo, de 25 de junio de 2002, sobre evaluación y gestión del ruido ambiental, se especificó que el Gobierno, mediante reglamento, debería fijar «objetivos de calidad acústica» aplicables al espacio interior habitable de las edificaciones destinadas a vivienda, usos residenciales, hospitalarios, educativos o culturales, y además en su disposición adicional cuarta, se indicó igualmente que el CTE deberá incluir un sistema de verificación acústica de las edificaciones.
+Además, el Real Decreto 1513/2005, de 16 de diciembre, por el que se desarrolla la Ley 37/2003, de 17 de noviembre, del Ruido, en lo referente a la evaluación y gestión del ruido ambiental, regula determinadas actuaciones como son la elaboración de mapas estratégicos de ruido para determinar la exposición de la población al ruido ambiental, así como, poner a disposición de la población la información sobre ruido ambiental de que dispongan las autoridades competentes en relación con el cartografiado acústico. Igualmente desarrolla las previsiones legales relativas a los índices de ruido que deben considerarse y que se detallan en su anexo I.
+Es evidente que el desarrollo reglamentario de la Ley del Ruido tiene implicaciones sobre el CTE, dado que se establecen los citados 'objetivos de calidad acústica', a través de los correspondientes valores de los índices de inmisión de ruido y de vibraciones. Las exigencias de ese desarrollo reglamentario, tanto para ruido exterior, como los objetivos de calidad acústica exigidos al espacio interior de los edificios, deben estar en coordinación con las exigencias de aislamiento de fachadas previstas en el DB-HR del CTE. En definitiva se trata de que los «objetivos de calidad acústica» de una Ley, desarrollados en su reglamento, se puedan presumir alcanzados con las «exigencias de aislamiento» de la otra Ley, desarrollados reglamentariamente en el CTE, de una forma armonizada.
+Además, y sin perjuicio de la inmediata entrada en vigor de este real decreto, y de la consiguiente aplicación del DB-HR, dada su complejidad, se ha considerado necesario establecer, de un lado, un régimen transitorio que permita la aplicación temporal de la norma básica de la edificación NBE CA-88, vigente hasta el momento y que es objeto de derogación en este real decreto, y de otro lado, un régimen transitorio para la aplicación futura de las exigencias básicas desarrolladas en esta parte del CTE que se aprueba. A tal efecto, se prevé en las disposiciones transitorias segunda y tercera la existencia de un periodo transitorio de 12 meses, aplicable en relación con la norma que se detalla.
+De igual modo, en la disposición final primera, se establece el carácter básico de la norma que no supone incertidumbre jurídica por oposición a la normativa básica de las Comunidades Autónomas ya que el Tribunal Constitucional admite excepcionalmente el establecimiento de las bases mediante normas reglamentarias cuyo contenido tenga un carácter marcadamente técnico como es este caso.
+Por otra parte, tras la aprobación y publicación en el Boletín Oficial del Estado del Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el CTE, se ha detectado, en el proceso de su aplicación a situaciones reales, la necesidad de realizar determinadas modificaciones en el mismo con el fin de hacer más clara y precisa su aplicación. Es oportuno, pues, aprobar estas modificaciones aprovechando la disposición aprobatoria del DB-HR.
+Resultan igualmente necesarias las derogaciones del Real Decreto 1909/1981, de 24 de julio, el Real Decreto 2115/1982, de 12 de agosto, y la Orden de 29 de septiembre de 1988, todas ellas relativas a la Norma Básica de la Edificación NBE-CA sobre condiciones acústicas en los edificios, así como la Orden de 31 de mayo de 1985, de la Presidencia de Gobierno, por la que se aprueba el Pliego General de condiciones para la recepción de yesos y escayolas en las obras de construcción, RY-85, la Orden de 27 de julio de 1988, del Ministerio de Relaciones con las Cortes y de la Secretaría del Gobierno, por la que se aprueba el pliego de condiciones para la recepción de ladrillos cerámicos en las obras de construcción RL-88, y la Orden de 4 de julio de 1990, del Ministerio de Obras públicas y Urbanismo, por la que se aprueba el pliego de prescripciones técnicas generales para la recepción de bloques de hormigón en las obras de construcción, RB-90, que resultan incompatibles con las disposiciones de desarrollo del Real Decreto 1630/1992, de 29 de diciembre, del Ministerio de Relaciones con las Cortes y de la Secretaría del Gobierno, por el que se dictan disposiciones para la libre circulación de productos de construcción, en aplicación de la Directiva 89/106/CEE, modificado por el Real Decreto 1328/1995, de 28 de julio, relativas al obligatorio Marcado CE, para dichos productos.
+En relación con ello, la disposición derogatoria única detalla la normativa básica de la edificación que se deroga.
+En la tramitación de este real decreto se han cumplido los trámites establecidos en la Ley 50/1997, de 27 de noviembre, del Gobierno, dándose audiencia a las asociaciones profesionales y a los sectores afectados, en el Real Decreto 1337/1999, de 31 de julio, por el que se regula la remisión de información en materia de normas y reglamentaciones técnicas y de las reglas relativas a los servicios de la sociedad de la información, en aplicación de la Directiva 98/34/CE del Consejo, de 28 de marzo, por la que se establece un procedimiento de información en materia de las normas y reglamentaciones técnicas, y se ha oído a las Comunidades Autónomas,
+El Consejo para la Sostenibilidad, Innovación y Calidad de la Edificación, y la Conferencia Sectorial de Vivienda, han informado favorablemente este real decreto.
+En su virtud, a propuesta de la Ministra de Vivienda, de acuerdo con el Consejo de Estado y previa deliberación del Consejo de Ministros en su reunión del día 19 de octubre de 2007
+D I S P O N G O :
+Artículo único. Aprobación del Documento Básico «DB-HR Protección frente al Ruido» del CTE.
+Se aprueba el Documento Básico «DB-HR Protección frente al Ruido» del CTE, cuyo texto se incluye como Anexo.
+Disposición transitoria primera. Edificaciones a las que no se aplicará el Documento Básico «DB-HR Protección frente al ruido» del CTE.
+El Documento Básico «DB-HR Protección frente al ruido» del CTE no será de aplicación a las obras de nueva construcción y a las obras en los edificios existentes que tengan solicitada la licencia municipal de obras a la entrada en vigor de este real decreto.
+Disposición transitoria segunda. Régimen de aplicación de la normativa anterior al Documento Básico «DB-HR Protección frente al ruido» del CTE.
+Durante los 12 meses posteriores a la entrada en vigor de este real decreto, podrá continuar aplicándose el Real Decreto 1909/1981, de 24 de julio, por el que se aprueba la norma básica de la edificación NBE CA-81 sobre condiciones acústicas en los edificios, modificada por el Real Decreto 2115/1982, de 12 de agosto, pasando a llamarse NBE CA-82, y revisada por Orden de 29 de septiembre de 1988, pasando a denominarse NBE CA-88, sin perjuicio de su derogación expresa en la disposición derogatoria única de este real decreto.
+Durante dicho periodo transitorio, se podrá optar por aplicar la anterior norma básica o podrán aplicarse las exigencias básicas desarrolladas en el Documento Básico «DB-HR Protección frente al ruido» del CTE que se aprueba.
+Disposición transitoria tercera. Régimen de aplicación del Documento Básico «DB-HR Protección frente al ruido» del CTE.
+Durante los 12 meses posteriores a la entrada en vigor de este real decreto podrán aplicarse las exigencias básicas desarrolladas en el Documento Básico «DB-HR Protección frente al ruido» del CTE, sin perjuicio de lo previsto en la disposición final tercera de este real decreto sobre su entrada en vigor.
+Una vez finalizado este periodo transitorio, será obligatoria la aplicación de las exigencias básicas desarrolladas en el Documento Básico «DB-HR Protección frente al ruido» del CTE que se aprueba.
+Disposición transitoria cuarta. Comienzo de la obras.
+Todas las obras a cuyos proyectos se les conceda licencia municipal de obras al amparo de las disposiciones transitorias anteriores deberán comenzar en el plazo máximo de tres meses, contado desde la fecha de concesión de la misma. En caso contrario, los proyectos deberán adaptarse a las nuevas exigencias relativas a la protección frente al ruido que se aprueban.
+Disposición derogatoria única. Derogación normativa.
+Quedarán derogadas, a partir de la entrada en vigor de este real decreto, las siguientes disposiciones:
+El Real Decreto 1909/1981, de 24 de julio, por el que se aprueba la norma básica de la edificación NBE CA-81 sobre condiciones acústicas en los edificios, el Real Decreto 2115/1982, de 12 de agosto, por el que se modifica, pasando a llamarse NBE CA-82, y la Orden de 29 de septiembre de 1988, por la que se revisa, pasando a denominarse NBE CA-88.
+La Orden de 31 de mayo de 1985, de la Presidencia de Gobierno, por la que se aprueba el Pliego General de condiciones para la recepción de yesos y escayolas en las obras de construcción, RY-85.
+La Orden de 27 de julio de 1988, del Ministerio de Relaciones con las Cortes y de la Secretaría del Gobierno, por la que se aprueba el pliego de condiciones para la recepción de ladrillos cerámicos en las obras de construcción RL-88.
+La Orden 4 de julio de 1990, del Ministerio de Obras públicas y Urbanismo, por la que se aprueba el pliego de prescripciones técnicas generales para la recepción de bloques de hormigón en las obras de construcción, RB-90.
+Asimismo, quedan derogadas cuantas disposiciones de igual o inferior rango se opongan a lo establecido en este real decreto.
+Disposición final primera. Normativa de Prevención de Riesgos Laborales.
+Las exigencias desarrolladas en el Documento Básico «DB-HR Protección frente al ruido» del CTE se aplicarán sin perjuicio de la obligatoriedad del cumplimiento de la normativa de prevención de riesgos laborales que resulte aplicable.
+Disposición final segunda. Modificación del Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el CTE.
+El CTE, aprobado mediante el Real Decreto 314/2006, de 17 de marzo, se modifica en lo siguiente.
+Aquí aparecen varias imágenes en el original. Consulte el documento PDF de esta disposición.
+Análisis
+ANÁLISIS
+Rango: Real Decreto
+Fecha de disposición: 19/10/2007
+Fecha de publicación: 23/10/2007
+Fecha de entrada en vigor: 24/10/2007
+Referencias posteriores
+Criterio de ordenación:
+por contenido
+por fecha
+SE MODIFICA:
+por Orden VIV/984/2009, de 15 de abril (Ref.
+BOE-A-2009-6743
+las disposiciones transitorias 2 y 3, por Real Decreto 1675/2008, de 17 de octubre (Ref.
+BOE-A-2008-16789
+CORRECCIÓN de errores en BOE num. 304 de 20 de diciembre de 2007 (Ref.
+BOE-A-2007-21920
+Referencias anteriores
+DEROGA:
+en la forma indicada Orden de 29 de septiembre de 1988 (Ref.
+BOE-A-1988-23328
+Orden de 31 de mayo de 1985 (Ref.
+BOE-A-1985-10568
+en la forma indicada Real Decreto 2115/1982, de 12 de agosto (Ref.
+BOE-A-1982-22233
+en la forma indicada Real Decreto 1909/1981, de 24 de julio (Ref.
+BOE-A-1981-19978
+Orden de 27 de julio de 1988 (Ref.
+BOE-A-1988-19100
+Orden de 4 de julio de 1990 (Ref.
+BOE-A-1990-16323
+MODIFICA el Real Decreto 314/2006, de 17 de marzo (Ref.
+BOE-A-2006-5515
+CITA Real Decreto 1513/2005, de 16 de diciembre (Ref.
+BOE-A-2005-20792
+Materias
+Código Técnico de la Edificación
+Edificaciones
+Materiales de construcción
+Normas Básicas de la Edificación
+Obras
+Políticas de medio ambiente
+Reglamentaciones técnicas
+Ruidos
+subir
+Contactar
+Sobre la sede electrónica
+Mapa
+Aviso legal
+Accesibilidad
+Protección de datos
+Sistema Interno de Información
+Tutoriales
+Empleo en la AEBOE
+Agencia Estatal Boletín Oficial del Estado
+Avda. de Manoteras, 54 - 28050 Madrid

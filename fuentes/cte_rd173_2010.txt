@@ -1,0 +1,164 @@
+# Real Decreto 173/2010, de 19 de febrero, por el que se modifica el Código Técnico de la Edificación, aprobado por el Real Decreto 314/2006, de 17 de marzo, en materia de accesibilidad y no discriminación de las personas con discapacidad. · BOE-A-2010-4056 · diario · descargado 2026-10-20
+
+Texto
+TEXTO ORIGINAL
+La Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, no discriminación y accesibilidad universal de las personas con discapacidad estableció, en su artículo 10 y en su disposición final novena, que el Gobierno regularía, sin perjuicio de las competencias atribuidas a las comunidades autónomas y a las corporaciones locales, unas condiciones básicas de accesibilidad y no discriminación que garanticen unos mismos niveles de igualdad de oportunidades a todos los ciudadanos con discapacidad, en los distintos ámbitos de aplicación de la ley, entre los que figuran los edificios.
+En cumplimiento de lo anterior, el Real Decreto 505/2007, de 20 de abril, por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones, aprobó, al amparo de lo previsto en el artículo 149.1.1.ª de la Constitución, que atribuye al Estado la competencia exclusiva para regular las condiciones básicas que garanticen la igualdad de todos los españoles en el ejercicio de los derechos, el mandato para la incorporación y desarrollo, en el Código Técnico de la Edificación (CTE) aprobado por el Real Decreto 314/2006, de 17 de marzo, de las condiciones de accesibilidad y no discriminación de las personas con discapacidad para el acceso y la utilización de los edificios.
+A pesar del indudable avance que en materia de accesibilidad ha supuesto el gran desarrollo normativo llevado a cabo por las comunidades autónomas en los últimos años, cabe subrayar que el Real Decreto 505/2007 constataba en su exposición de motivos que «… transcurridos más de 20 años desde la promulgación de esta Ley [Ley 13/1982, de 7 de abril, de integración social de los minusválidos], la existencia de diferentes leyes y reglamentos de ámbito autonómico sin un referente unificador, se ha traducido en una multitud de diferentes criterios que ponen en cuestión la igualdad y la no discriminación, entre las personas con discapacidad de diferentes comunidades autónomas».
+Por ello, el desarrollo de las condiciones de accesibilidad en el Código Técnico de la Edificación, se ha realizado con el grado de detalle y de especificación técnica que requieren, tanto la obligada armonización con el enfoque global del Código Técnico de la Edificación, como la necesidad de establecer el referente unificador efectivo, a cuya ausencia durante estos últimos años el Real Decreto 505/2007 atribuyó las desigualdades y discriminaciones que, a pesar de la indiscutible mejora global experimentada, presenta el actual panorama normativo de las condiciones de accesibilidad de las personas con discapacidad en los edificios en el ámbito autonómico.
+La estrecha relación existente entre las nuevas exigencias de accesibilidad y el requisito básico ya presente en el Código Técnico de la Edificación «Seguridad de utilización (SU)», muchas de cuyas condiciones afectan, al igual que las de accesibilidad, a los elementos de circulación de los edificios, ha hecho aconsejable unir ambos requisitos básicos en uno solo, el cual pasa a denominarse «Seguridad de Utilización y Accesibilidad (SUA)» así como, consecuentemente, desarrollar dichas condiciones en un mismo documento básico, el cual se pasa a denominar «DB-SUA Seguridad de Utilización y Accesibilidad».
+Como excepción a lo anterior, las condiciones de evacuación de las personas con discapacidad en caso de incendio, se incorporan al requisito básico «Seguridad en caso de incendio» (SI) y a su Documento Básico (DB SI), los cuales no precisan cambiar su denominación.
+La aprobación de este real decreto hace aconsejable la derogación del Real Decreto 556/1989, de 19 de mayo, por el que se arbitran medidas mínimas sobre accesibilidad en los edificios, así como de la Orden del Ministerio de Obras Públicas y Urbanismo de 3 de marzo de 1980, sobre características de los accesos, aparatos elevadores y condiciones interiores de las viviendas para minusválidos proyectadas en inmuebles de protección oficial, dado que las condiciones que establecen ambas disposiciones quedan ampliamente superadas por las que ahora se aprueban.
+Igualmente se hace necesario modificar las disposiciones finales del Real Decreto 505/2007, de 20 de abril, por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones, con el fin de acompasarlas al calendario de entrada en vigor de las disposiciones que nacen de ese decreto, como es el caso de la presente.
+En la tramitación de este real decreto se han cumplido los trámites establecidos en el Real Decreto 1337/1999, de 31 de julio, por el que se regula la remisión de información en materia de normas y reglamentaciones técnicas y de las reglas relativas a los servicios de la sociedad de la información, en aplicación de la Directiva 98/34/CE del Consejo, de 28 de marzo, por la que se establece un procedimiento de información en materia de las normas y reglamentaciones técnicas, y se ha oído a las comunidades autónomas, a través de la Comisión del Código Técnico de la Edificación.
+El Consejo Nacional de Discapacidad ha participado por medio de informes o consultas en el proceso de elaboración de este real decreto, dando cumplimiento así a lo establecido en el artículo 24 de la Ley 50/1997, de 27 de noviembre, del Gobierno y en el artículo 15.3 de la Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, no discriminación y accesibilidad universal de las personas con discapacidad. Asimismo, el proyecto ha sido sometido a audiencia de las entidades que representan a los ciudadanos afectados por el mismo y cuyos fines guardan relación con su objeto.
+El presente real decreto incorpora, con carácter de normativa básica estatal, al Código Técnico de la Edificación, las condiciones de accesibilidad y no discriminación de las personas con discapacidad para el acceso y la utilización de los edificios, considerando que este proyecto resulta ser el instrumento idóneo para regular tales requisitos, dado su carácter marcadamente técnico, por lo que precisan, atendiendo a su contenido, ser regulados mediante norma reglamentaria.
+Este real decreto tiene carácter básico y se dicta al amparo de las competencias que se atribuyen al Estado en los artículos 149.1.16.ª, 23.ª y 25.ª de la Constitución Española, en materia de bases y coordinación general de la sanidad, protección del medio ambiente y bases del régimen minero y energético, respectivamente.
+En su virtud, a propuesta de la Ministra de Vivienda, de acuerdo con el Consejo de Estado y previa deliberación del Consejo de Ministros en su reunión del día 19 de febrero de 2010,
+DISPONGO:
+Artículo único. Modificación del Código Técnico de la Edificación.
+El Código Técnico de la Edificación (CTE), aprobado mediante el Real Decreto 314/2006, de 17 de marzo, se modifica como sigue:
+Su Parte I se modifica del modo siguiente:
+Uno. En el Índice, Capítulo 3, el título del artículo 12 se sustituye por: «Exigencias básicas de seguridad de utilización y accesibilidad (SUA)».
+En los títulos de los apartados 12.1 a 12.8, las referencias «SU» se sustituyen por «SUA» y al final se añade el siguiente apartado: «12.9 Exigencia básica SUA 9: Accesibilidad».
+Dos. El artículo 1 se modifica del modo siguiente:
+En el apartado 2, la referencia «seguridad de utilización» se sustituye por «seguridad de utilización y accesibilidad».
+El apartado 3 queda redactado del siguiente tenor:
+«Los requisitos básicos relativos a la funcionalidad y los aspectos funcionales de los elementos constructivos se regirán por su normativa específica, salvo los vinculados a la accesibilidad de personas con movilidad o comunicación reducidas, que se desarrollan en el CTE.»
+Tres. El apartado 4, letra b) del artículo 2, queda redactado de la siguiente forma:
+«La adecuación funcional, entendiendo como tal la realización de las obras que proporcionen al edificio mejores condiciones respecto de los requisitos básicos a los que se refiere este CTE.»
+Cuatro. Se añade un segundo párrafo al apartado 1 del artículo 9, con la siguiente redacción:
+«Igualmente, se desarrolla en este código el requisito básico de funcionalidad, mencionado en el apartado 1.a) del artículo 3 de la Ley 38/1999, de 5 de noviembre, de Ordenación de la Edificación, relativo a la accesibilidad de las personas con movilidad y comunicación reducidas, con sujeción a lo dispuesto en la Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, no discriminación y accesibilidad universal de las personas con discapacidad, y en el Real Decreto 505/2007, de 20 de abril, por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones.»
+Cinco. El artículo 12 se modifica en lo siguiente:
+Su Título se sustituye por el siguiente:
+«Exigencias básicas de seguridad de utilización y accesibilidad (SUA).»
+El apartado 1 queda redactado de la siguiente forma:
+«El objetivo del requisito básico «Seguridad de utilización y accesibilidad» consiste en reducir a límites aceptables el riesgo de que los usuarios sufran daños inmediatos en el uso previsto de los edificios, como consecuencia de las características de su proyecto, construcción, uso y mantenimiento, así como en facilitar el acceso y la utilización no discriminatoria, independiente y segura de los mismos a las personas con discapacidad.»
+En el apartado 3, la referencia: «DB-SU Seguridad de Utilización» se sustituye por: «DB-SUA Seguridad de utilización y accesibilidad» y la referencia: «… propios del requisito básico de seguridad de utilización», se sustituye por: «… propios del requisito básico de seguridad de utilización y accesibilidad».
+En los títulos de los apartados 12.1 a 12.8, las referencias «SU» se sustituyen por «SUA».
+Se añade un nuevo apartado 12.9, redactado de la siguiente forma:
+«12.9 Exigencia básica SUA 9. Accesibilidad: Se facilitará el acceso y la utilización no discriminatoria, independiente y segura de los edificios a las personas con discapacidad.»
+Seis. En el Anejo I Contenido del proyecto, apartado 3, en la primera columna del cuadro, el punto: «3.3 Seguridad de utilización», se sustituye por: «3.3 Seguridad de utilización y accesibilidad».
+Su Parte II se modifica del modo siguiente:
+En el Documento Básico «DB SI Seguridad en caso de incendio» se introducen las siguientes modificaciones:
+Uno. En la Introducción, apartado III, después del segundo párrafo se añade el siguiente, mediante punto y aparte: «En edificios que deban tener un plan de emergencia conforme a la reglamentación vigente, este preverá procedimientos para la evacuación de las personas con discapacidad en situaciones de emergencia».
+Dos. En el Índice, Sección SI 3 Evacuación de ocupantes, se añade el siguiente nuevo artículo: «9 Evacuación de personas con discapacidad en caso de incendio».
+Tres. La Sección SI 3 se modifica en lo siguiente:
+En el apartado 4, número 4.2, tabla 4.1, nota (9), la referencia «DB SU 1-4.2.2», se sustituye por: «DB SUA 1-4.2.2».
+En el apartado 6 se introducen las siguientes modificaciones:
+En el número 2, las referencias: «UNE-EN 179:2008» y «UNE-EN 1125:2008» se sustituyen por «UNE-EN 179:2009» y «UNE-EN 1125:2009», respectivamente.
+En el número 4, la referencia: «… en el sentido de la evacuación, incluso en el caso…», se sustituye por: «… en el sentido de la evacuación, ante una emergencia o incluso en el caso…» y la referencia: «140 N» se sustituye por: «220 N».
+El número 5 queda redactado de la siguiente forma:
+«Las puertas peatonales automáticas dispondrán de un sistema que en caso de fallo en el suministro eléctrico o en caso de señal de emergencia, cumplirá las siguientes condiciones, excepto en posición de cerrado seguro:
+a) Que, cuando se trate de una puerta corredera o plegable, abra y mantenga la puerta abierta o bien permita su apertura abatible en el sentido de la evacuación mediante simple empuje con una fuerza total que no exceda de 220 N. La opción de apertura abatible no se admite cuando la puerta esté situada en un itinerario accesible según DB SUA.
+b) Que, cuando se trate de una puerta abatible o giro-batiente (oscilo-batiente), abra y mantenga la puerta abierta o bien permita su abatimiento en el sentido de la evacuación mediante simple empuje con una fuerza total que no exceda de 150 N. Cuando la puerta esté situada en un itinerario accesible según DB SUA, dicha fuerza no excederá de 25 N, en general, y de 65 N cuando sea resistente al fuego.
+La fuerza de apertura abatible se considera aplicada de forma estática en el borde de la hoja, perpendicularmente a la misma y a una altura de 1000 ±10 mm,
+Las puertas peatonales automáticas se someterán obligatoriamente a las condiciones de mantenimiento conforme a la norma UNE-EN 12635:2002+A1:2009.»
+En el número 1 del apartado 7 se añaden las letras g) y h) siguientes:
+«g) Los itinerarios accesibles (ver definición en el Anejo A del DB SUA) para personas con discapacidad que conduzcan a una zona de refugio, a un sector de incendio alternativo previsto para la evacuación de personas con discapacidad, o a una salida del edificio accesible se señalizarán mediante las señales establecidas en los párrafos anteriores a), b), c) y d) acompañadas del SIA (Símbolo Internacional de Accesibilidad para la movilidad). Cuando dichos itinerarios accesibles conduzcan a una zona de refugio o a un sector de incendio alternativo previsto para la evacuación de personas con discapacidad, irán además acompañadas del rótulo “ZONA DE REFUGIO”.
+h) La superficie de las zonas de refugio se señalizará mediante diferente color en el pavimento y el rótulo “ZONA DE REFUGIO” acompañado del SIA colocado en una pared adyacente a la zona.»
+Se añade un apartado 9 con la siguiente redacción:
+«9. Evacuación de personas con discapacidad en caso de incendio.
+1. En los edificios de uso Residencial Vivienda con altura de evacuación superior a 28 m, de uso Residencial Público, Administrativo o Docente con altura de evacuación superior a 14 m, de uso Comercial o Pública Concurrencia con altura de evacuación superior a 10 m o en plantas de uso Aparcamiento cuya superficie exceda de 1.500 m2, toda planta que no sea zona de ocupación nula y que no disponga de alguna salida del edificio accesible dispondrá de posibilidad de paso a un sector de incendio alternativo mediante una salida de planta accesible o bien de una zona de refugio apta para el número de plazas que se indica a continuación:
+– Una para usuario de silla de ruedas por cada 100 ocupantes o fracción, conforme a SI 3-2;
+– Excepto en uso Residencial Vivienda, una para persona con otro tipo de movilidad reducida por cada 33 ocupantes o fracción, conforme a SI 3-2.
+En terminales de transporte podrán utilizarse bases estadísticas propias para estimar el número de plazas reservadas a personas con discapacidad.
+2. Toda planta que disponga de zonas de refugio o de una salida de planta accesible de paso a un sector alternativo contará con algún itinerario accesible entre todo origen de evacuación situado en una zona accesible y aquéllas.
+3. Toda planta de salida del edificio dispondrá de algún itinerario accesible desde todo origen de evacuación situado en una zona accesible hasta alguna salida del edificio accesible.
+4. En plantas de salida del edificio podrán habilitarse salidas de emergencia accesibles para personas con discapacidad diferentes de los accesos principales del edificio.»
+Cuatro. Se modifica la tabla 1.1 del apartado 1 de la Sección SI 4 en los siguientes términos:
+En el grupo correspondiente a «En general», la entrada «Ascensor de emergencia» se modifica por: «Ascensor de emergencia» y, en esa fila, la referencia: «35 m» se sustituye por: «28 m».
+En el grupo correspondiente a «Hospitalario», la entrada «Ascensor de emergencia» se modifica por: «Ascensor de emergencia».
+En toda la tabla se suprimen todas las llamadas a la nota (3) así como la propia nota al pie de la tabla.
+Las llamadas a las notas (4) a (10) y sus textos al pie de la tabla se renumeran como (3) a (9).
+La nota (7) renumerada como (6) queda redactada de la siguiente forma:
+«El sistema de alarma transmitirá señales visuales además de acústicas. Las señales visuales serán perceptibles incluso en el interior de viviendas accesibles para personas con discapacidad auditiva (ver definición en el Anejo SUA A del DB SUA).»
+Cinco. El Anejo SI A Terminología se modifica de la forma siguiente:
+A continuación del apartado correspondiente a «Aparcamiento abierto» se incorpora el siguiente apartado:
+«Ascensor de emergencia.
+Sus características serán las siguientes:
+– En cada planta, tendrá acceso desde el recinto de una escalera protegida o desde el vestíbulo de independencia de una escalera especialmente protegida a través de una puerta E 30. Si el acceso se produce desde el recinto de una escalera especialmente protegida, no será necesario disponer dicha puerta E 30.
+– Tendrá como mínimo una capacidad de carga de 630 kg, unas dimensiones de cabina de 1,10 m x 1,40 m, una anchura de paso de 1,00 m y una velocidad tal que permita realizar todo su recorrido en menos de 60 s.
+– En uso Hospitalario, las dimensiones de la planta de la cabina serán 1,20 m x 2,10 m, como mínimo.
+– Será accesible según lo establecido en el DB SUA y estará próximo, en cada planta, a una zona de refugio, cuando esta exista.
+– En la planta de acceso al edificio se dispondrá un pulsador junto a los mandos del ascensor, bajo una tapa de vidrio, con la inscripción “USO EXCLUSIVO BOMBEROS”. La activación del pulsador debe provocar el envío del ascensor a la planta de acceso y permitir su maniobra exclusivamente desde la cabina.
+– En caso de fallo del abastecimiento normal, la alimentación eléctrica al ascensor pasará a realizarse de forma automática desde una fuente propia de energía que disponga de una autonomía de 1 h como mínimo.
+– El número necesario de ascensores de emergencia se determinará en función de la previsión de ocupantes en la totalidad del edificio, a razón de un ascensor de emergencia accesible por cada mil ocupantes o fracción.»
+En el apartado correspondiente a «Salida de planta», número 2, primer párrafo, la referencia: «… o a la caja de una escalera especialmente protegida desde su vestíbulo de independencia», se sustituye por: «… o al vestíbulo de independencia de una escalera especialmente protegida».
+En el apartado correspondiente a «Vestíbulo de independencia», se añade al final un nuevo guión con el siguiente texto:
+«Los vestíbulos de independencia situados en un itinerario accesible (ver definición en el Anejo A del DB SUA) deben poder contener un círculo de diámetro Ø 1,20 m libre de obstáculos y del barrido de las puertas. Cuando el vestíbulo contenga una zona de refugio, dicho círculo tendrá un diámetro Ø 1,50 m y podrá invadir una de las plazas reservadas para usuarios de silla de ruedas. Los mecanismos de apertura de las puertas de dichos vestíbulos estarán a una distancia de 0,30 m, como mínimo, del encuentro en rincón más próximo de la pared que contiene la puerta.»
+Se incorpora un último apartado:
+«Zona de refugio.
+Zona con superficie suficiente para el número de plazas que sean exigibles, de dimensiones 1,2 x 0,8 m para usuarios de sillas de ruedas o de 0,8 x 0,6 m para personas con otro tipo de movilidad reducida.
+Las zonas de refugio deben situarse, sin invadir la anchura libre de paso, en los rellanos de escaleras protegidas o especialmente protegidas, en los vestíbulos de independencia de escaleras especialmente protegidas, o en un pasillo protegido.
+Junto a la zona de refugio debe poder trazarse un círculo Ø 1,50 m libre de obstáculos y del barrido de puertas, pudiendo éste invadir una de las superficies asignadas.
+En edificios de uso diferente al Uso Residencial Vivienda que dispongan de un puesto de control permanente durante su horario de actividad, la zona de refugio contará con un intercomunicador visual y auditivo con dicho puesto.»
+El Documento Básico «DB SU Seguridad de utilización», cambia su título por el siguiente: «DB SUA Seguridad de utilización y accesibilidad» y su texto se sustituye por el que se incluye como Anejo a este real decreto.
+Disposición transitoria primera. Edificaciones a las que no será de aplicación lo previsto en este real decreto.
+Las modificaciones del Código Técnico de la Edificación aprobadas por este real decreto no serán de aplicación a las obras de nueva construcción y a las de ampliación, modificación, reforma o rehabilitación de edificios existentes que tengan solicitada la licencia municipal de obras a la entrada en vigor de este real decreto.
+Dichas obras deberán comenzar dentro del plazo máximo de eficacia de dicha licencia, conforme a su normativa reguladora, y, en su defecto, en el plazo de nueve meses contado desde la fecha de otorgamiento de la referida licencia. En caso contrario, los proyectos deberán adaptarse a las nuevas exigencias del Código Técnico de la Edificación que se aprueban mediante este real decreto.
+Disposición transitoria segunda. Edificaciones a las que será de aplicación potestativa lo previsto en este real decreto.
+Las modificaciones del Código Técnico de la Edificación aprobadas por este real decreto serán de aplicación potestativa a las obras de nueva construcción y a las de ampliación, modificación, reforma o rehabilitación de edificios existentes para las que se solicite licencia municipal de obras en el plazo de seis meses desde la entrada en vigor del presente real decreto.
+Dichas obras deberán comenzar dentro del plazo máximo de eficacia de dicha licencia, conforme a su normativa reguladora, y, en su defecto, en el plazo de nueve meses contado desde la fecha de otorgamiento de la referida licencia. En caso contrario, los proyectos deberán adaptarse a las nuevas exigencias del Código Técnico de la Edificación que se aprueban mediante este real decreto.
+Disposición transitoria tercera. Edificaciones a las que será de aplicación obligatoria lo previsto en este real decreto.
+Las modificaciones del Código Técnico de la Edificación aprobadas por este real decreto serán de aplicación obligatoria a las obras de nueva construcción y a las de ampliación, modificación, reforma o rehabilitación de edificios existentes para las que se solicite licencia municipal de obras una vez transcurrido el plazo de seis meses desde la entrada en vigor del presente real decreto.
+Disposición derogatoria única. Derogación normativa.
+A partir de la entrada en vigor de este real decreto quedan derogadas las siguientes disposiciones:
+La Orden del Ministerio de Obras Públicas y Urbanismo de 3 de marzo de 1980, sobre características de los accesos, aparatos elevadores y condiciones interiores de las viviendas para minusválidos proyectadas en inmuebles de protección oficial.
+El Real Decreto 556/1989, de 19 de mayo, por el que se arbitran medidas mínimas sobre accesibilidad en los edificios.
+Asimismo, quedan derogadas cuantas disposiciones de igual o inferior rango se opongan a lo establecido en este real decreto.
+Disposición final primera. Modificación del Real Decreto 505/2007, de 20 de abril, por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones.
+El Real Decreto 505/2007, de 20 de abril, por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones, se modifica en lo siguiente:
+Uno. Su disposición final tercera queda redactada del modo siguiente:
+«Disposición final tercera. Incorporación de las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los edificios al Código Técnico de la Edificación.
+Las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los edificios que se aprueban en virtud del presente real decreto, se incorporarán con el carácter de exigencias básicas de accesibilidad universal y no discriminación a la Parte I del Código Técnico de la Edificación, aprobado por el Real Decreto 314/2006, de 17 de marzo. Asimismo, se incorporará a la Parte II del CTE un documento básico relativo al cumplimiento de dichas exigencias básicas.»
+Dos. Su disposición final cuarta queda redactada del modo siguiente:
+«Disposición final cuarta. Documento técnico de las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los espacios públicos urbanizados.
+Las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los espacios públicos urbanizados que se aprueban en virtud del presente real decreto, se desarrollarán en un documento técnico que se aprobará por Orden del Ministerio de Vivienda.»
+Tres. Su disposición final quinta se modifica en lo siguiente:
+Su párrafo primero se suprime y se incorporan los tres párrafos siguientes:
+«Las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los edificios que se aprueban en virtud del presente real decreto y que serán incorporadas al Código Técnico de la Edificación en cumplimiento de la disposición final tercera, serán obligatorias, para los edificios nuevos, así como para las obras de ampliación, modificación, reforma o rehabilitación que se realicen en los edificios existentes, en el plazo que disponga el real decreto mediante el que sean incorporadas al Código Técnico de la Edificación.
+Las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los espacios públicos urbanizados que se aprueban en virtud del presente real decreto y que serán desarrolladas en un documento técnico que se aprobará por Orden del Ministerio de Vivienda, serán obligatorias, para los espacios públicos urbanizados nuevos, en el plazo que disponga la citada orden.
+Las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los edificios y de los espacios públicos urbanizados que se aprueban en virtud del presente real decreto serán obligatorias, a partir del día 1 de enero de 2019, para los edificios y para los espacios públicos urbanizados existentes que sean susceptibles de ajustes razonables.»
+Disposición final segunda. Entrada en vigor.
+Este real decreto entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial de Estado».
+Dado en Madrid, el 19 de febrero de 2010.
+JUAN CARLOS R.
+La Ministra de Vivienda,
+BEATRIZ CORREDOR SIERRA
+Análisis
+ANÁLISIS
+Rango: Real Decreto
+Fecha de disposición: 19/02/2010
+Fecha de publicación: 11/03/2010
+Fecha de entrada en vigor: 12/03/2010
+Referencias anteriores
+DEROGA:
+Real Decreto 556/1989, de 19 de mayo (Ref.
+BOE-A-1989-11632
+Orden de 3 de marzo de 1980 (Ref.
+BOE-A-1980-5937
+MODIFICA:
+Disposiciones finales 3 a 5 del Real Decreto 505/2007, de 20 de abril (Ref.
+BOE-A-2007-9607
+arts. 1, 2, 9, 12, de la Parte I, las secciones SI. 3, SI. 4, el anejo SI. A y AÑADE el art. 9 de la Parte II del Real Decreto 314/2006, de 17 de marzo. (Ref.
+BOE-A-2006-5515
+Materias
+Barreras arquitectónicas
+Código Técnico de la Edificación
+Discapacidad
+Edificaciones
+Reglamentaciones técnicas
+Viviendas
+subir
+Contactar
+Sobre la sede electrónica
+Mapa
+Aviso legal
+Accesibilidad
+Protección de datos
+Sistema Interno de Información
+Tutoriales
+Empleo en la AEBOE
+Agencia Estatal Boletín Oficial del Estado
+Avda. de Manoteras, 54 - 28050 Madrid
