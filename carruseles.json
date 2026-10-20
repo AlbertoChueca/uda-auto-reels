@@ -1,0 +1,22 @@
+[
+{
+"fecha": "2026-10-20",
+"bloque": "negocio",
+"tema": "uda_delegar",
+"subtema": "Tarifas técnicas en naves y logística",
+"titulo": "Coste técnico en naves y logística",
+"fragmentos": [
+"06 Industrial y equipamientos"
+],
+"quiz_id": null,
+"imagenes": 6,
+"nota": 8.4,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18041039750735533",
+"tiktok_carrusel": "6ad7f02e7a5e0336585390c2",
+"linkedin_documento": "6ad7f0387a5e033658539101"
+},
+"dry_run": false
+}
+]

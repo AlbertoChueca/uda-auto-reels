@@ -1,0 +1,11 @@
+Carrusel 2026-10-20 22:47 UTC
+carrusel: verificado (Facturar más sin costes fijos)
+carrusel: revisión 7.2/10 ["Incoherencia en los datos comerciales: la diapositiva 04 promete 'Presupuesto cerrado en 24h', mientras que la diapositiva final indica '24–72 H'.", "Uso de jerga de coaching empresarial ('Área de genialidad' en lámina 02) que resta seriedad técnica frente a un perfil de arquitecto sénior o fundador.", "Falta de ortografía en la portada: 'FACTURAR MAS' sin tilde en el antetítulo."]
+carrusel: verificado (Tarifas técnicas en naves y logística)
+carrusel: reintento uda_delegar 8.4/10 ["Falta tilde en la portada en la categoría superior: 'FACTURAR MAS' debe ser 'FACTURAR MÁS'.", "Los bloques dorados de 'CLAVE' en las diapositivas 01 a 04 aportan poco valor y caen en obviedades descriptivas (ej. 'A mayor superficie construida, menor resulta la repercusión...'); ese espacio ganaría si destacase el margen comercial que le queda al despacho o el tiempo neto ahorrado.", 'El recurso de subrayado segmentado bajo cifras y conceptos puntuales resulta visualmente errático y ensucia la pulcritud tipográfica de las tarjetas.']
+carrusel: Facturar más y ganar tiempo delegando · Tarifas técnicas en naves y logística · 6 imágenes
+Instagram carrusel: https://www.instagram.com/p/Deu8eAtFDvM/
+Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
+Zernio tiktok carrusel: creado 6ad7f02e7a5e0336585390c2
+Zernio linkedin documento: creado 6ad7f0387a5e033658539101
+publicación: {"instagram_carrusel": "ig:18041039750735533", "tiktok_carrusel": "6ad7f02e7a5e0336585390c2", "linkedin_documento": "6ad7f0387a5e033658539101"}
