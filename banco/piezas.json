@@ -2546,5 +2546,1577 @@
 "id": "3154408b58",
 "fuente_ok": true,
 "fecha": "2026-10-20"
+},
+{
+"tema": "cte_hr",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "cte",
+"fuente": "ANEJO III (cont.)",
+"referencia": "CTE Parte I, Anejo III",
+"titulo": "Definición del uso y recintos",
+"puntos": [
+"Refleja documentalmente el uso previsto caracterizando las actividades a desarrollar y el tipo de usuario.",
+"Clasifica como no habitables los garajes, trasteros, cámaras técnicas, desvanes no acondicionados y zonas comunes.",
+"Identifica como solución alternativa cualquier propuesta que difiera total o parcialmente de los DB."
+],
+"cita": "uso específico para el que se proyecta y realiza un edificio y que se debe reflejar documentalmente. El uso previsto se caracteriza por las actividades que se han de desarrollar en el edificio y por el tipo de usuario.",
+"citas_extra": [
+"cualquier solución que difiera total o parcialmente de las establecidas en los DB."
+],
+"id": "21a4a04f1d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_hr",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "cte",
+"fuente": "ANEJO III (cont.)",
+"referencia": "CTE Parte I, Anejo III",
+"q": "¿Qué capacidades evalúa la resistencia al fuego de un elemento constructivo?",
+"a": "Mide su capacidad para mantener la función portante exigible, la integridad y el aislamiento térmico según el ensayo normalizado.",
+"cita": "capacidad de un elemento de construcción para mantener durante un período de tiempo determinado la función portante que le sea exigible, así como la integridad y el aislamiento térmico en los términos especificados en el ensayo normalizado correspondiente.",
+"id": "0c6c641dc5",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 10 Condiciones y plazos",
+"pregunta": "¿Cuántas revisiones por fase incluye el servicio técnico en proyectos de bloques de 30 viviendas o más?",
+"opciones": [
+"1 revisión por fase",
+"2 revisiones por fase",
+"3 revisiones por fase",
+"Revisiones ilimitadas durante 7 días naturales"
+],
+"correcta": 1,
+"explicacion": "En bloques de 30 viviendas o más se incluyen 2 revisiones por fase, además de una primera compatibilización con estructuras e instalaciones.",
+"cita": "1 revisión por fase (2 en bloques de 30 viviendas o más) y una primera compatibilización con estructuras e instalaciones.",
+"id": "356d1681af",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 10 Condiciones y plazos",
+"titulo": "Condiciones de entrega y soporte",
+"puntos": [
+"Los plazos de entrega arrancan exclusivamente al recibir toda la documentación de partida completa.",
+"El soporte técnico posterior abarca siete días naturales para resolver dudas y erratas menores.",
+"La entrega final de archivos IFC o RVT se realiza con el pago final."
+],
+"cita": "Empiezan al recibir toda la documentación. 7 días naturales de soporte tras la entrega para dudas y erratas menores.",
+"citas_extra": [
+"60 % al iniciar y 40 % antes de entregar cada fase. Entrega: PDF + DWG, o IFC + RVT con el pago final."
+],
+"id": "80ab01318c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 04",
+"pregunta": "¿Qué porcentaje de la superficie total se presupuesta por el conjunto en proyectos de adosados o pareados?",
+"opciones": [
+"Un 3 % por testeros, extremos e implantación",
+"Un 5 % adicional sobre la vivienda tipo",
+"Un 8 % a partir de la undécima unidad",
+"Un 10 % fijo por cada medianera y testero"
+],
+"correcta": 0,
+"explicacion": "En adosados y conjuntos se presupuesta un 3 % de la superficie total para cubrir las viviendas de extremo, los testeros y la implantación en la parcela.",
+"cita": "y un 3 % de la superficie total por el conjunto (viviendas de extremo, testeros e implantación en la parcela).",
+"id": "3c02ec5ebf",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 04",
+"titulo": "Presupuesto de adosados y pareados",
+"puntos": [
+"La vivienda tipo se presupuesta completa con los precios de la vivienda unifamiliar.",
+"Cada vivienda repetida computa únicamente con el porcentaje fijado en la tabla correspondiente.",
+"Se añade un tres por ciento de la superficie total por el conjunto."
+],
+"cita": "Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"citas_extra": [],
+"id": "344f0abb72",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 04",
+"q": "¿Qué conceptos abarca el 3 % de superficie presupuestado por el conjunto en adosados?",
+"a": "Cubre las viviendas de extremo, los testeros y los trabajos de implantación en la parcela.",
+"cita": "un 3 % de la superficie total por el conjunto (viviendas de extremo, testeros e implantación en la parcela).",
+"id": "c5c8a451fd",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "rcd",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rcd",
+"fuente": "Artículo 4. Obligaciones del productor de residuos de construcción y demolición. (cont.)",
+"referencia": "RD 105/2008, art. 4.1.d",
+"pregunta": "En obras con licencia urbanística, ¿qué finalidad tiene constituir la fianza o garantía financiera sobre RCD?",
+"opciones": [
+"Asegurar los requisitos fijados en la licencia relativos a los RCD.",
+"Costear las tasas de vertido municipales previas al inicio de obra.",
+"Cubrir posibles sanciones administrativas impuestas al contratista.",
+"Subvencionar la planta de reciclaje autonómica asignada a la obra."
+],
+"correcta": 0,
+"explicacion": "La fianza o garantía financiera equivalente tiene por objeto asegurar el cumplimiento de los requisitos fijados en la propia licencia en relación con los residuos de la obra.",
+"cita": "la fianza o garantía financiera equivalente que asegure el cumplimiento de los requisitos establecidos en dicha licencia en relación con los residuos de construcción y demolición de la obra.",
+"id": "3f55d410fb",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "rcd",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rcd",
+"fuente": "Artículo 4. Obligaciones del productor de residuos de construcción y demolición. (cont.)",
+"referencia": "RD 105/2008, art. 4",
+"titulo": "Exigencias de RCD en Proyecto Básico",
+"puntos": [
+"Incluye en el proyecto básico los documentos 1.º, 2.º, 3.º, 4.º y 7.º de la letra a).",
+"Añade al proyecto básico para licencia la documentación requerida en la letra b).",
+"Constituye la fianza fijada por la normativa autonómica para cumplir los requisitos de licencia."
+],
+"cita": "En el caso de obras de edificación, cuando se presente un proyecto básico para la obtención de la licencia urbanística, dicho proyecto contendrá, al menos, los documentos referidos en los números 1.º, 2.º, 3.º, 4.º y 7.º de la letra a) y en la letra b) del apartado 1.",
+"citas_extra": [
+"constituir, cuando proceda, en los términos previstos en la legislación de las comunidades autónomas, la fianza o garantía financiera equivalente que asegure el cumplimiento de los requisitos establecidos en dicha licencia"
+],
+"id": "08869e58ba",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "rcd",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "rcd",
+"fuente": "Artículo 4. Obligaciones del productor de residuos de construcción y demolición. (cont.)",
+"referencia": "RD 105/2008, art. 4.2",
+"q": "¿Qué documentación de RCD exige como mínimo el proyecto básico para licencia?",
+"a": "Al menos los documentos previstos en los números 1.º, 2.º, 3.º, 4.º y 7.º de la letra a) y en la letra b) del apartado 1.",
+"cita": "cuando se presente un proyecto básico para la obtención de la licencia urbanística, dicho proyecto contendrá, al menos, los documentos referidos en los números 1.º, 2.º, 3.º, 4.º y 7.º de la letra a) y en la letra b)",
+"id": "d676604178",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"pregunta": "¿Cuáles son los plazos habituales de entrega técnica para un Proyecto Básico y uno de Ejecución?",
+"opciones": [
+"10 días para Básico y 20 días para Ejecución",
+"15 días para Básico y 30 días para Ejecución",
+"5 días para Básico y 15 días para Ejecución",
+"20 días para Básico y 40 días para Ejecución"
+],
+"correcta": 0,
+"explicacion": "Los plazos se estudian previamente con la documentación base fijándose de forma inamovible, siendo generalmente 10 días para Proyecto Básico y 20 días para Proyecto de Ejecución.",
+"cita": "Generalmente, suele ser 10 días un Proyecto Básico y 20 días un Proyecto de Ejecución por nuestra parte.",
+"id": "b27fac1b9b",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"titulo": "Flujo de trabajo técnico externo",
+"puntos": [
+"Llamada inicial analizando necesidades y recopilando plantillas base del despacho.",
+"Presupuesto cerrado por metros cuadrados y fechas de entrega inamovibles.",
+"Auditoría interna por Project Manager y entrega de archivos nativos 100% tuyos."
+],
+"cita": "Nuestro proceso está diseñado para que no pierdas tiempo. Consta de 3 pasos: Llamada de Claridad y Briefing: Analizamos tus necesidades, nos envías tus archivos base (CAD, referencias) y tus plantillas de estudio.",
+"citas_extra": [
+"Presupuesto y Asignación: Te enviamos un presupuesto cerrado con fechas de entrega inamovibles. Al aceptar, el Project Manager asigna el trabajo al equipo técnico."
+],
+"id": "7a4e107508",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "ess",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "ess",
+"fuente": "Artículo 7. Plan de seguridad y salud en el trabajo. · 5. Asimismo, el plan de seguridad y salud estará en la ",
+"referencia": "RD 1627/1997, art. 8.1",
+"pregunta": "¿En qué decisiones debe el proyectista considerar en particular los principios generales de prevención?",
+"opciones": [
+"Al decidir sistemas técnicos y estimar la duración de los trabajos.",
+"Únicamente durante la redacción del pliego de condiciones generales.",
+"Exclusivamente al elaborar el presupuesto y las mediciones de la obra.",
+"Al visar el plan de seguridad presentado por el contratista de obra."
+],
+"correcta": 0,
+"explicacion": "El proyectista debe integrarlos al tomar decisiones constructivas, técnicas y de organización para planificar fases simultáneas o sucesivas de trabajo, así como al calcular la duración requerida para su ejecución.",
+"cita": "los principios generales de prevención en materia de seguridad y de salud previstos en su ar tículo 15 deberán ser tomados en consideración por el proyectista en las fases de concepción, estudio y elaboración del proyecto de obra",
+"id": "5395800ded",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "ess",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "ess",
+"fuente": "Artículo 7. Plan de seguridad y salud en el trabajo. · 5. Asimismo, el plan de seguridad y salud estará en la ",
+"referencia": "RD 1627/1997, art. 8.1 y 8.2",
+"titulo": "Principios preventivos en proyecto",
+"puntos": [
+"Aplica los principios preventivos al tomar decisiones constructivas, técnicas y organizativas.",
+"Estima la duración requerida para ejecutar las distintas fases simultáneas o sucesivas.",
+"Ten en cuenta el estudio de seguridad y salud durante la concepción."
+],
+"cita": "Al tomar las decisiones constructivas, técnicas y de organización con el fin de planificar los distintos trabajos o fases de trabajo que se desarrollarán simultánea o sucesivamente.",
+"citas_extra": [
+"Asimismo, se tendrán en cuenta, cada vez que sea necesario, cualquier estudio de seguridad y salud o estudio básico, así como las previsiones e informaciones útiles"
+],
+"id": "b6c562be55",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "ess",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "ess",
+"fuente": "Artículo 7. Plan de seguridad y salud en el trabajo. · 5. Asimismo, el plan de seguridad y salud estará en la ",
+"referencia": "RD 1627/1997, art. 7.5",
+"q": "¿Dónde debe encontrarse el plan de seguridad y salud durante la ejecución de las obras?",
+"a": "Debe estar obligatoriamente en la obra, a disposición permanente de la dirección facultativa.",
+"cita": "el plan de seguridad y salud estará en la obra a disposición permanente de la dirección facultativa.",
+"id": "69f86cce74",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_listado",
+"fuente": "07 Actuaciones específicas",
+"referencia": "Listado de documentos de UDA, 07 Actuaciones específicas",
+"pregunta": "¿Qué apartados se omiten al encargar actuaciones específicas con UDA?",
+"opciones": [
+"No hace falta marcar los apartados 5 y 6",
+"No hace falta marcar el estado reformado",
+"Deben excluirse las mediciones y el presupuesto",
+"Deben omitirse los apartados de justificación normativa"
+],
+"correcta": 0,
+"explicacion": "El paquete de actuaciones específicas ya incluye la documentación técnica completa, por lo que no es necesario marcar los apartados 5 y 6.",
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto. No hace falta marcar los apartados 5 y 6.",
+"id": "736931ecde",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "07 Actuaciones específicas",
+"referencia": "Listado de documentos de UDA, 07 Actuaciones específicas",
+"titulo": "Paquete de actuaciones específicas",
+"puntos": [
+"El encargo se realiza a precio cerrado por paquete para la actuación.",
+"Incluye estado actual y reformado junto con justificación normativa completa.",
+"Incorpora también la redacción de memoria, mediciones y presupuesto del proyecto."
+],
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto.",
+"citas_extra": [],
+"id": "27296a5ef0",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_listado",
+"fuente": "07 Actuaciones específicas",
+"referencia": "Listado de documentos de UDA, 07 Actuaciones específicas",
+"q": "¿Qué alcance estructural puede incluir la instalación de un ascensor en edificio existente?",
+"a": "Puede incluir tanto la estructura del hueco como la del foso del ascensor.",
+"cita": "Instalación de ascensor en edificio existente · nº de paradas: ____ | Ascensor: incluir estructura del hueco y foso",
+"id": "8689e6fd79",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_sua",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rd732_2019",
+"fuente": "Sección HE 3 Condiciones de las instalaciones de iluminación · 3. Cuantificación de la exigencia",
+"referencia": "RD 732/2019 (CTE DB-HE 3), apartado 3.1",
+"pregunta": "¿Qué VEEI límite fija el CTE para locales con un nivel de iluminación superior a 600 lux?",
+"opciones": [
+"2,5",
+"3,0",
+"3,5",
+"4,0"
+],
+"correcta": 0,
+"explicacion": "Para locales con un nivel de iluminación superior a 600 lux, la tabla 3.1-HE3 establece un VEEI límite de 2,5, el valor más exigente de toda la clasificación.",
+"cita": "El valor de eficiencia energética de la instalación (VEEI) de la instalación de iluminación no superará el valor límite (VEEIlim) establecido en la tabla 3.1-HE3",
+"id": "9a4c43bc4e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_sua",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rd732_2019",
+"fuente": "Sección HE 3 Condiciones de las instalaciones de iluminación · 3. Cuantificación de la exigencia",
+"referencia": "RD 732/2019 (CTE DB-HE 3), apartado 3.1",
+"titulo": "Valores límite de VEEI en HE 3",
+"puntos": [
+"Comprueba que el VEEI de la instalación no supere el valor límite reglamentario.",
+"Aplica un VEEI límite de 4,0 en aparcamientos, almacenes, archivos y salas técnicas.",
+"Limita el VEEI a 2,5 en locales con nivel de iluminación superior a 600lux."
+],
+"cita": "El valor de eficiencia energética de la instalación (VEEI) de la instalación de iluminación no superará el valor límite (VEEIlim) establecido en la tabla 3.1-HE3:",
+"citas_extra": [],
+"id": "9d569b8e4f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_sua",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "rd732_2019",
+"fuente": "Sección HE 3 Condiciones de las instalaciones de iluminación · 3. Cuantificación de la exigencia",
+"referencia": "RD 732/2019 (CTE DB-HE 3), tabla 3.1-HE3, nota 1",
+"q": "¿Qué recintos sanitarios se excluyen del VEEI fijado para salas de diagnóstico?",
+"a": "Quirófanos, salas de operación, UCI, dentista, descontaminación, autopsias, mortuorios y salas especiales asimilables por su actividad.",
+"cita": "Sin embargo, quedan excluidos locales como las salas de operación, quirófanos, unidades de cuidados intensivos, dentista, salas de descontaminación, salas de autopsias y mortuorios y otras salas que por su actividad puedan considerarse como salas especiales.",
+"id": "bb1f677304",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, Apartado 5",
+"pregunta": "¿Cuál es el precio de referencia por vivienda para el P. Básico y P. Ejecución de un bloque de 32 viviendas y 2 tipologías?",
+"opciones": [
+"382 € por vivienda",
+"263 € por vivienda",
+"530 € por vivienda",
+"415 € por vivienda"
+],
+"correcta": 0,
+"explicacion": "El precio de referencia para un bloque de 32 viviendas con 2 tipologías es de 12.234 €, lo que corresponde exactamente a 382 € por vivienda para los proyectos completos.",
+"cita": "Bloque de 32 viviendas, 2 tipologías | 12.234 € | 382 € por vivienda · Apartado 5",
+"id": "0e29ebc01d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, Precios de referencia de un vistazo",
+"titulo": "Delegación técnica en residencial colectivo",
+"puntos": [
+"Proyectos completos de Básico y Ejecución mantienen idéntico precio en CAD o Revit.",
+"Bloque de 32 viviendas y 2 tipologías parte de 382 € por vivienda.",
+"Bloque de 80 viviendas y 4 tipologías reduce la referencia a 263 €/vivienda."
+],
+"cita": "P. Básico + P. Ejecución completos, en CAD o en Revit (mismo precio). Precios estimativos: tras analizar tu proyecto, te enviamos un presupuesto cerrado en 24–72 horas.",
+"citas_extra": [],
+"id": "71a3a70dec",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com",
+"pregunta": "¿Quién asume la autoría, el visado y la responsabilidad civil al externalizar con UDA?",
+"opciones": [
+"UDA asume la responsabilidad civil mediante póliza propia.",
+"El arquitecto titular del despacho que contrata la consultoría.",
+"Se comparte de forma solidaria entre UDA y el proyectista.",
+"Queda delegada en el Project Manager que valida la entrega."
+],
+"correcta": 1,
+"explicacion": "UDA opera como consultoría técnica externa; el arquitecto titular del despacho es quien diseña, visa y asume la autoría y responsabilidad civil con la documentación técnica entregada.",
+"cita": "Nosotros operamos como una consultoría técnica externa. El arquitecto titular de tu despacho es quien diseña, visa, asume la autoría y la responsabilidad civil del proyecto.",
+"id": "975cb6c140",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com",
+"titulo": "Integración técnica en marca blanca",
+"puntos": [
+"Empleo de tu libro de estilo, grosores CTB, familias Revit y cajetines.",
+"Doble check normativo del Código Técnico por parte del Project Manager.",
+"Garantía de siete días tras la entrega para subsanaciones sin coste adicional."
+],
+"cita": "te pediremos tu libro de estilo, grosores de plumilla (CTB), familias de Revit y cajetines. Nuestro objetivo es que el proyecto parezca, a todos los efectos, desarrollado internamente por tu equipo.",
+"citas_extra": [
+"incluimos un periodo de garantía de 7 días tras la entrega para «Subsanaciones» sin coste adicional. Esto cubre cualquier posible despiste gráfico, errata o pequeño ajuste necesario"
+],
+"id": "a502c770a4",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com",
+"q": "¿Se cobran los honorarios si el promotor no llega a edificar?",
+"a": "Sí; los honorarios corresponden a la documentación técnica entregada, al margen de si el promotor obtiene financiación o ejecuta la obra.",
+"cita": "Nuestros honorarios se asocian al trabajo de delineación, cálculo y modelado entregado en tiempo y forma, independientemente de si el promotor consigue financiación o decide continuar con la fase de obra.",
+"id": "167e11e21a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_he",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rd732_2019",
+"fuente": "ANEJO E",
+"referencia": "RD 732/2019, Anejo E, punto 1",
+"pregunta": "¿Para qué tipo de edificios son útiles los valores orientativos de transmitancia del Anejo E?",
+"opciones": [
+"Edificios de uso residencial privado.",
+"Edificios de cualquier uso terciario o industrial.",
+"Exclusivamente edificios de uso dotacional o docente.",
+"Edificios de uso comercial y administrativa pública."
+],
+"correcta": 0,
+"explicacion": "El Anejo E establece expresamente que estos parámetros aportan valores útiles para el predimensionado de soluciones constructivas de edificios de uso residencial privado.",
+"cita": "La tabla a-Anejo E aporta valores orientativos de los parámetros característicos de la envolvente térmica que pueden resultar útiles para el predimensionado de soluciones constructivas de edificios de uso residencial privado",
+"id": "5ad49b33fa",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_he",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rd732_2019",
+"fuente": "ANEJO E",
+"referencia": "RD 732/2019, Anejo E, punto 1",
+"titulo": "Predimensionado térmico en residencial privado",
+"puntos": [
+"Utiliza estos valores orientativos de transmitancia para el predimensionado de soluciones constructivas.",
+"Aplica estos parámetros característicos específicamente en edificios de uso residencial privado.",
+"Verifica el cumplimiento de las condiciones para el coeficiente global de transmisión."
+],
+"cita": "La tabla a-Anejo E aporta valores orientativos de los parámetros característicos de la envolvente térmica que pueden resultar útiles para el predimensionado de soluciones constructivas de edificios de uso residencial privado",
+"citas_extra": [],
+"id": "fdcb01e963",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_he",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "rd732_2019",
+"fuente": "ANEJO E",
+"referencia": "RD 732/2019, Anejo E, tabla a-Anejo E",
+"q": "¿Qué elementos componen el hueco para calcular su transmitancia térmica UH?",
+"a": "El conjunto integrado por el marco, el vidrio y, en su caso, el cajón de persiana.",
+"cita": "Huecos (conjunto de marco, vidrio y, en su caso, cajón de persiana), UH",
+"id": "3698fa6063",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 01 ¿Contratar a alguien o delegar en UDA?",
+"titulo": "Arquitecto en plantilla frente a delegar",
+"puntos": [
+"Un arquitecto contratado genera un gasto fijo anual de 40.000 a 47.000 euros.",
+"Supervisar a un empleado consume tu tiempo en revisar planos en lugar de proyectar.",
+"Delegar aporta documentación revisada internamente donde tú únicamente te encargas de validar."
+],
+"cita": "UN ARQUITECTO EN PLANTILLA: 40.000–47.000 €/año. Salario, Seguridad Social, licencias, puesto, selección y formación. Haya proyectos o no.",
+"citas_extra": [
+"Tu tiempo se va en revisar planos en lugar de proyectar. | Documentación revisada internamente. Tú solo validas."
+],
+"id": "1271e99dfa",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cee",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "cee",
+"fuente": "CAPÍTULO IV",
+"referencia": "RD 390/2021, art. 18.2.e",
+"pregunta": "¿Quién fija las condiciones de validación de los procedimientos de cálculo para la certificación energética?",
+"opciones": [
+"La Comisión asesora de certificación de eficiencia energética",
+"El órgano competente en energía de cada comunidad autónoma",
+"La Comisión Europea mediante directivas de obligado cumplimiento",
+"El Ministerio de Transportes de forma exclusiva e independiente"
+],
+"correcta": 0,
+"explicacion": "Corresponde a la Comisión asesora fijar los requisitos de los documentos reconocidos y las condiciones de validación de los procedimientos de cálculo generales y simplificados.",
+"cita": "Establecer los requisitos que deben cumplir los documentos reconocidos para su aprobación, las condiciones para la validación de los procedimientos de cálculo generales y simplificados, y el mecanismo a seguir para su reconocimiento conjunto",
+"id": "45aed5cfb7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cee",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "cee",
+"fuente": "CAPÍTULO IV",
+"referencia": "RD 390/2021, art. 18.2",
+"titulo": "Validación de cálculos y herramientas",
+"puntos": [
+"Comprueba las condiciones de validación de los procedimientos de cálculo generales o simplificados aplicados.",
+"Comprueba la inclusión en el Registro general de los documentos reconocidos que utilices.",
+"Justifica el cálculo según los criterios y medidas de interpretación práctica vigentes."
+],
+"cita": "Establecer los requisitos que deben cumplir los documentos reconocidos para su aprobación, las condiciones para la validación de los procedimientos de cálculo generales y simplificados",
+"citas_extra": [
+"Evaluar y proponer a la Secretaria de Estado de Energía la inclusión en el Registro general de documentos reconocidos de aquellos que cumplan con los requisitos establecidos para su aprobación."
+],
+"id": "f0ef390393",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cee",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "cee",
+"fuente": "CAPÍTULO IV",
+"referencia": "RD 390/2021, art. 18.2.f",
+"q": "¿Quién propone la inclusión en el Registro general de documentos reconocidos?",
+"a": "La Comisión asesora para la certificación, que eleva la propuesta a la Secretaría de Estado de Energía tras evaluar su cumplimiento.",
+"cita": "Evaluar y proponer a la Secretaria de Estado de Energía la inclusión en el Registro general de documentos reconocidos de aquellos que cumplan con los requisitos establecidos para su aprobación.",
+"id": "eaf83c7e52",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM)",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 07 CAD o Revit (BIM)",
+"pregunta": "¿Cuándo se entrega el archivo editable RVT al externalizar el modelado de un proyecto en Revit?",
+"opciones": [
+"Con el pago final de cada fase del proyecto.",
+"Desde la primera entrega intermedia junto a los IFC.",
+"Únicamente al liquidar el Proyecto de Ejecución.",
+"Al abonar un suplemento adicional de exportación nativa."
+],
+"correcta": 0,
+"explicacion": "Durante el desarrollo se facilitan formatos PDF e IFC para revisión técnica, entregándose el archivo RVT editable en el momento en que se efectúa el pago final de cada fase.",
+"cita": "PDF e IFC durante el trabajo para que revises. El archivo RVT editable, con el pago final de cada fase.",
+"id": "4276c342d9",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM)",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 07 CAD o Revit (BIM)",
+"titulo": "Aportar modelo Revit propio",
+"puntos": [
+"El modelado no se cobra si aportas tu propio archivo.",
+"Mantiene los descuentos si niveles, familias y estructura son aprovechables.",
+"Se presupuesta partiendo de PDF si el modelo carece de corrección técnica."
+],
+"cita": "No se cobra el modelado. Si el modelo es aprovechable (niveles, familias y estructura correctos), el resto de partidas mantiene su descuento; si no, se presupuesta como si partiéramos de PDF.",
+"citas_extra": [],
+"id": "df09223429",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_listado",
+"fuente": "04 Entorno de trabajo y punto de partida *",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 04",
+"pregunta": "Al contratar el proyecto en Revit arquitectura, ¿en qué momento se entrega el archivo editable RVT?",
+"opciones": [
+"Desde la primera entrega parcial de la fase de proyecto",
+"Junto con el abono del pago final",
+"Tras la aprobación formal del Plan de Ejecución BIM",
+"Únicamente al finalizar la fase de liquidación de obra"
+],
+"correcta": 1,
+"explicacion": "Al encargar Revit arquitectura a UDA, el formato de entrega incluye IFC y PDF, reservándose el archivo nativo RVT para cuando se realiza el pago final.",
+"cita": "Revit arquitectura · modelo con sus familias · entrega IFC + PDF, y RVT con el pago final",
+"id": "c112efd750",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "04 Entorno de trabajo y punto de partida *",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 04",
+"titulo": "Opciones de trabajo en Revit",
+"puntos": [
+"Modelado completo en 3D de todas las instalaciones exigibles del proyecto.",
+"Uso opcional de la plantilla o biblioteca de familias propia del despacho.",
+"Incorporación de Plan de Ejecución BIM o partida con modelo Revit propio."
+],
+"cita": "Si trabajas en Revit Instalaciones en Revit (3D): todas las instalaciones exigibles modeladas | Tengo plantilla o biblioteca de familias propia y quiero que la uséis Plan de Ejecución BIM (BEP) | Aporto mi propio modelo Revit",
+"citas_extra": [],
+"id": "55c880e79b",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_listado",
+"fuente": "04 Entorno de trabajo y punto de partida *",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 04",
+"q": "¿Varía el precio del proyecto completo si se encarga en Revit en vez de CAD?",
+"a": "No; el precio de referencia para el proyecto completo se mantiene exactamente igual tanto en CAD como en Revit.",
+"cita": "El precio del proyecto completo es el mismo en CAD y en Revit.",
+"id": "05deaf1fe2",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "loe",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "loe",
+"fuente": "CAPÍTULO II",
+"referencia": "LOE, art. 3.1.b.2",
+"pregunta": "¿Qué tres objetivos deben garantizarse para limitar la extensión del fuego según el requisito de seguridad en caso de incendio?",
+"opciones": [
+"Desalojo seguro, limitación de extensión y actuación de rescate",
+"Resistencia estructural, estanqueidad interior y evacuación",
+"Evacuación de ocupantes, compartimentación estanca y extinción",
+"Control de humos, estabilidad portante y protección de colindantes"
+],
+"correcta": 0,
+"explicacion": "La LOE exige que los ocupantes puedan desalojar en condiciones seguras, se limite la propagación interior y a colindantes y se permita actuar a los equipos de rescate.",
+"cita": "Seguridad en caso de incendio, de tal forma que los ocupantes puedan desalojar el edificio en condiciones seguras, se pueda limitar la extensión del incendio dentro del propio edificio y de los colindantes y se permita la actuación",
+"id": "3a26739f59",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "loe",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "loe",
+"fuente": "CAPÍTULO II",
+"referencia": "LOE, art. 3.1.a",
+"titulo": "Cumplimiento de requisitos básicos proyectuales",
+"puntos": [
+"Dimensiona espacios e instalaciones para facilitar las funciones previstas en el edificio.",
+"Garantiza el acceso y circulación de personas con movilidad y comunicación reducidas.",
+"Integra instalaciones apropiadas para entrega de envíos por los servicios postales."
+],
+"cita": "Utilización, de tal forma que la disposición y las dimensiones de los espacios y la dotación de las instalaciones faciliten la adecuada realización de las funciones previstas en el edificio.",
+"citas_extra": [
+"Accesibilidad, de tal forma que se permita a las personas con movilidad y comunicación reducidas el acceso y la circulación por el edificio en los términos previstos en su normativa específica.",
+"Facilitación para el acceso de los servicios postales, mediante la dotación de las instalaciones apropiadas para la entrega de los envíos postales, según lo dispuesto en su normativa específica."
+],
+"id": "3731049d0f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "loe",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "loe",
+"fuente": "CAPÍTULO II",
+"referencia": "LOE, art. 3.1.b.1",
+"q": "¿Qué elementos estructurales no deben sufrir daños que comprometan la resistencia del edificio?",
+"a": "La cimentación, los soportes, las vigas, los forjados, los muros de carga u otros elementos estructurales del edificio.",
+"cita": "no se produzcan en el edificio, o partes del mismo, daños que tengan su origen o afecten a la cimentación, los soportes, las vigas, los forjados, los muros de carga u otros elementos estructurales",
+"id": "a693569908",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_hs",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rd732_2019",
+"fuente": "Sección HE 1 Condiciones para el control de la demanda energética · 4. La caracterización de los puentes térmi",
+"referencia": "RD 732/2019 (DB HE 1), punto 5.1.3",
+"pregunta": "¿Qué propiedades caracterizan a los marcos de los huecos en la envolvente térmica?",
+"opciones": [
+"Por la transmitancia térmica U y la absortividad α.",
+"Por la transmitancia térmica lineal Ψ y el factor solar g┴.",
+"Por la conductividad térmica λ y la resistencia al vapor μ.",
+"Por la permeabilidad al aire y el calor específico cp."
+],
+"correcta": 0,
+"explicacion": "Los marcos de los huecos se definen mediante su transmitancia térmica U y su absortividad α, mientras que la transmitancia térmica lineal Ψ corresponde a los espaciadores.",
+"cita": "por la transmitancia térmica U (W/m2·K) y la absortividad α para los marcos de huecos (incluidas puertas); y por la transmitancia térmica lineal Ψ (W/mK) para los espaciadores.",
+"id": "a3bf95c8e3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_hs",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rd732_2019",
+"fuente": "Sección HE 1 Condiciones para el control de la demanda energética · 4. La caracterización de los puentes térmi",
+"referencia": "RD 732/2019 (DB HE 1), punto 4",
+"titulo": "Caracterización de puentes térmicos lineales",
+"puntos": [
+"Incluye el tipo, la descripción y la localización de cada puente térmico lineal.",
+"Justifica la transmitancia térmica lineal obtenida en relación con los cerramientos contiguos.",
+"Especifica el sistema dimensional utilizado si no empleas dimensiones interiores o genera dudas."
+],
+"cita": "La caracterización de los puentes térmicos lineales incluirá: a) su tipo, descripción y localización; b) la transmitancia térmica lineal, obtenida en relación con los cerramientos contiguos; c) su longitud; d) el sistema dimensional utilizado",
+"citas_extra": [],
+"id": "228db99d6e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_hs",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "rd732_2019",
+"fuente": "Sección HE 1 Condiciones para el control de la demanda energética · 4. La caracterización de los puentes térmi",
+"referencia": "RD 732/2019 (DB HE 1), punto 5.1.3",
+"q": "¿Cómo se caracteriza reglamentariamente la parte semitransparente de los huecos?",
+"a": "Mediante su transmitancia térmica U (W/m²·K) y su factor solar g┴.",
+"cita": "Los productos para huecos (incluidas las puertas) se caracterizan mediante la transmitancia térmica U (W/m²·K) y el factor solar g┴ para la parte semitransparente del hueco",
+"id": "31d5662de7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "09 Qué incluye cada partida",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 09",
+"pregunta": "¿Qué justificación reglamentaria del CTE se incluye en la partida de memoria del Proyecto Básico?",
+"opciones": [
+"CTE seguridad en caso de incendio y normativa de aplicación.",
+"CTE completo abarcando SE, SI, SUA, HS, HR y HE.",
+"Documentos básicos de seguridad de utilización (SUA) y habitabilidad.",
+"Certificado de eficiencia energética justificativo y cálculo CYPE."
+],
+"correcta": 0,
+"explicacion": "La memoria del Proyecto Básico integra únicamente la memoria descriptiva, constructiva y estructural preliminar, normativa aplicable y CTE seguridad en caso de incendio. El CTE completo y el certificado energético corresponden al Proyecto de Ejecución.",
+"cita": "Memoria descriptiva, constructiva y estructural preliminar · CTE seguridad en caso de incendio · Normativa de aplicación.",
+"id": "18860b15f1",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "09 Qué incluye cada partida",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 09",
+"titulo": "Límites de la delegación técnica",
+"puntos": [
+"Conceptualización, diseño, renders e infografías quedan fuera del alcance estándar presupuestado.",
+"Firma, visado colegial y tramitación oficial corresponden en exclusiva a tu despacho.",
+"Dirección facultativa, coordinación de seguridad, ensayos, topografía y geotecnia están excluidos."
+],
+"cita": "No incluye: conceptualización y diseño, renders e infografías (opciones adicionales bajo presupuesto), certificaciones externas (LEED, BREEAM…), ensayos, topografía y geotecnia, firma, visado y tramitación, dirección de obra ni coordinación de seguridad y salud en obra.",
+"citas_extra": [],
+"id": "d709e909cc",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_web",
+"fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
+"referencia": "uniondearquitectos.com, ¿Cómo es el proceso?",
+"pregunta": "¿Qué archivos y documentación entrega UDA al completar el trabajo?",
+"opciones": [
+"Los editables, PDFs y todo lo utilizado en el encargo contratado.",
+"Solo copias en PDF y memorias finales sin acceso a editables.",
+"Archivos en PDF y visualizadores BIM, reteniendo los editables.",
+"Planimetría en formato cerrado editable únicamente bajo petición."
+],
+"correcta": 0,
+"explicacion": "UDA te entrega tanto los editables como los PDFs y la totalidad de los archivos utilizados en el pedido para que el trabajo sea 100% tuyo.",
+"cita": "Recibirás los editables, PDFs y todo lo utilizado en el pedido. Es 100% tuyo. Trabajamos por fases para asegurarnos de que el trabajo sale de forma adecuada",
+"id": "fab74d4e38",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
+"referencia": "uniondearquitectos.com, ¿Cómo es el proceso?",
+"titulo": "Fases de trabajo con UDA",
+"puntos": [
+"Recepción de presupuesto cerrado en 24 horas tras elegir qué delegar.",
+"Aportación de ejemplos de referencia y estilo del despacho para iniciar.",
+"Entrega por fases de editables, PDFs y todo el material utilizado."
+],
+"cita": "Tú decides qué quieres delegar. Te enviaremos un presupuesto cerrado en 24 horas. Información para iniciar Te pediremos ejemplos de referencia, tu estilo, así como todo lo necesario para iniciar.",
+"citas_extra": [],
+"id": "51bd6607cb",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_web",
+"fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
+"referencia": "uniondearquitectos.com, Soporte para despachos",
+"q": "¿Cómo gestiona UDA la visibilidad y el crédito frente al cliente final?",
+"a": "UDA mantiene estricto anonimato en todo el proceso para que te lleves todo el crédito del trabajo ante tus clientes.",
+"cita": "Mantenemos siempre nuestro anonimato para ti, ya que queremos ser tu apoyo a largo plazo y que te lleves todo el crédito del trabajo hacia tus clientes.",
+"id": "a4782c77d2",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_si",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rd732_2019",
+"fuente": "3. Instalaciones para control del humo y del calor:",
+"referencia": "RD 732/2019, 3. Instalaciones para control del humo y del calor",
+"pregunta": "¿Qué norma contiene los requisitos y métodos de cálculo y diseño para proyectar un SCTEH en caso de incendio estacionario?",
+"opciones": [
+"UNE 23585:2017",
+"UNE 23584:2008",
+"UNE-EN 12101-6:2006",
+"UNE-EN 12101-3:2016"
+],
+"correcta": 0,
+"explicacion": "La norma UNE 23585:2017 establece los requisitos y métodos de cálculo y diseño para proyectar un sistema de control de temperatura y de evacuación de humos (SCTEH) en caso de incendio estacionario.",
+"cita": "*UNE 23585:2017 Seguridad contra incendios. Sistemas de control de humo y calor. Requisitos y métodos de cálculo y diseño para proyectar un sistema de control de temperatura y de evacuación de humos (SCTEH) en caso de incendio estacionario.",
+"id": "b72d26ce34",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_si",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rd732_2019",
+"fuente": "3. Instalaciones para control del humo y del calor:",
+"referencia": "RD 732/2019, 3. Instalaciones para control del humo y del calor",
+"titulo": "Normas para proyectar SCTEH",
+"puntos": [
+"Justifica el cálculo y diseño del SCTEH para incendio estacionario mediante UNE 23585:2017.",
+"Incluye los requisitos de instalación en obra y puesta en marcha según UNE 23584:2008.",
+"Comprueba las especificaciones de los sistemas de diferencial de presión conforme a UNE-EN 12101-6:2006."
+],
+"cita": "*UNE 23585:2017 Seguridad contra incendios. Sistemas de control de humo y calor. Requisitos y métodos de cálculo y diseño para proyectar un sistema de control de temperatura y de evacuación de humos (SCTEH) en caso de incendio estacionario.",
+"citas_extra": [
+"*UNE 23584:2008 Seguridad contra incendios. Sistemas de control de temperatura y evacuación de humos (SCTEH). Requisitos para la instalación en obra, puesta en marcha y mantenimiento periódico de los SCTEH."
+],
+"id": "a1df615a11",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_si",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "rd732_2019",
+"fuente": "3. Instalaciones para control del humo y del calor:",
+"referencia": "RD 732/2019, 3. Instalaciones para control del humo y del calor",
+"q": "¿Qué norma contiene las especificaciones para los sistemas de diferencial de presión?",
+"a": "La norma UNE-EN 12101-6:2006 recoge las especificaciones para los equipos de sistemas de diferencial de presión.",
+"cita": "*UNE-EN 12101-6:2006 Parte 6: Especificaciones para los sistemas de diferencial de presión. Equipos.",
+"id": "67bdc82d5c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "02 Cómo trabajamos y cómo presupuestamos",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 02",
+"pregunta": "¿Cómo se tarifican las viviendas repetidas en bloques y conjuntos residenciales al delegar el desarrollo técnico?",
+"opciones": [
+"Se facturan al 50 % de la parte proporcional por m².",
+"Solo suman un pequeño porcentaje respecto a la tipo completa.",
+"No tienen coste adicional si comparten la misma estructura.",
+"Se tarifican aplicando un recargo por gestión de bloque."
+],
+"correcta": 1,
+"explicacion": "En bloques y conjuntos de viviendas la vivienda tipo se abona íntegra, mientras que las unidades repetidas solo añaden un pequeño porcentaje, evitando cobrar dos veces el mismo trabajo.",
+"cita": "Y en bloques y conjuntos de viviendas no cobramos dos veces el mismo trabajo: la vivienda tipo se cobra completa y las repetidas solo suman un pequeño porcentaje.",
+"id": "daf081b0e0",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "02 Cómo trabajamos y cómo presupuestamos",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 02",
+"titulo": "Formación del precio por partida",
+"puntos": [
+"Una parte fija cubre el estudio de tu documentación, normativa y criterios iniciales.",
+"La parte variable se calcula exclusivamente por metro cuadrado construido del proyecto.",
+"Las superficies de jardines, parcela o exteriores sin edificar no se computan."
+],
+"cita": "Cada partida (planimetría, construcción, instalaciones, estructuras, memoria y mediciones) tiene una parte fija, que cubre arrancar la tarea (estudiar tu documentación, la normativa y tus criterios), y una parte por m² construido, que crece con el tamaño.",
+"citas_extra": [
+"Los m² son construidos: no cuentan jardines, parcela ni exteriores sin edificar."
+],
+"id": "49a817e841",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_proyecto",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "cte",
+"fuente": "Artículo 6. Condiciones del proyecto.",
+"referencia": "CTE, Parte I, art. 6.1.3.b",
+"pregunta": "¿Puede el proyecto de ejecución rebajar las prestaciones declaradas previamente en el proyecto básico?",
+"opciones": [
+"No, en ningún caso pueden rebajarse las prestaciones declaradas.",
+"Sí, siempre que se compense con mejoras en otras exigencias básicas.",
+"Sí, si se justifica en la memoria que se cumple el mínimo del CTE.",
+"Únicamente si la licencia concedida autoriza cambios sustanciales."
+],
+"correcta": 0,
+"explicacion": "El proyecto de ejecución debe definir la obra sin rebajar bajo ningún concepto las prestaciones declaradas en el básico, ni alterar las condiciones bajo las que se otorgó la licencia salvo en aspectos legalizables.",
+"cita": "sin que en él puedan rebajarse las prestaciones declaradas en el básico, ni alterarse los usos y condiciones bajo las que, en su caso, se otorgaron la licencia municipal de obras",
+"id": "4a3ced2eef",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_proyecto",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "cte",
+"fuente": "Artículo 6. Condiciones del proyecto.",
+"referencia": "CTE, Parte I, art. 6.1.2.b",
+"titulo": "Definición de unidades de obra",
+"puntos": [
+"Especifica las condiciones de ejecución y los controles de conformidad de cada unidad proyectada.",
+"Precisa las medidas en obra para asegurar la compatibilidad entre distintos sistemas constructivos.",
+"Incluye medidas de uso y mantenimiento que garanticen la compatibilidad entre los elementos instalados."
+],
+"cita": "Se precisarán las medidas a adoptar durante la ejecución de las obras y en el uso y mantenimiento del edificio, para asegurar la compatibilidad entre los diferentes productos, elementos y sistemas constructivos.",
+"citas_extra": [],
+"id": "ac7171e11b",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_proyecto",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "cte",
+"fuente": "Artículo 6. Condiciones del proyecto.",
+"referencia": "CTE, Parte I, art. 6.1.2.a",
+"q": "¿Qué información técnica mínima exige el proyecto sobre productos y equipos permanentes?",
+"a": "Sus características técnicas mínimas, las condiciones de suministro, las garantías de calidad y el control de recepción preceptivo.",
+"cita": "Las características técnicas mínimas que deben reunir los productos, equipos y sistemas que se incorporen de forma permanente en el edificio proyectado, así como sus condiciones de suministro, las garantías de calidad y el control de recepción que deba realizarse.",
+"id": "e2d4a64b22",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 06",
+"pregunta": "¿Cuál es el precio de referencia conjunto (P. Básico + P. Ejecución) para una nave de 3.000 m²?",
+"opciones": [
+"9.050 €",
+"5.175 €",
+"12.150 €",
+"23.000 €"
+],
+"correcta": 0,
+"explicacion": "Para una nave industrial y logística de 3.000 m², el precio de referencia conjunto de Proyecto Básico y Proyecto de Ejecución en UDA es de 9.050 €.",
+"cita": "Ejemplos P. Básico + P. Ejecución: nave de 500 m², 5.175 € · nave de 3.000 m², 9.050 € · nave de 5.000 m², 12.150 € · centro logístico de 12.000 m², 23.000 €.",
+"id": "ef0e7501c6",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 06",
+"titulo": "Referencias en equipamientos y servicios",
+"puntos": [
+"Proyecto Básico y Ejecución completo para un edificio de 800 m²: 10.020 €.",
+"Edificio de equipamientos o servicios de 2.000 m²: precio de referencia de 12.300 €.",
+"Gran equipamiento o edificio de servicios de 5.000 m²: referencia de 18.000 €."
+],
+"cita": "Ejemplos P. Básico + P. Ejecución: 800 m², 10.020 € · 2.000 m², 12.300 € · 5.000 m², 18.000 €.",
+"citas_extra": [],
+"id": "b3de9cd006",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 06",
+"q": "¿Cómo evita UDA perjudicar económicamente a los proyectos grandes?",
+"a": "Concentrando el peso del precio en la parte fija en lugar de cargar excesivamente el coste por metro cuadrado.",
+"cita": "El peso del precio está en la parte fija: los proyectos grandes no salen perjudicados.",
+"id": "f9b247c61c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_hr",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rd1371_2007",
+"fuente": "Disposición final primera. Normativa de Prevención de Riesgos Laborales.",
+"referencia": "RD 1371/2007, disposición final primera",
+"pregunta": "¿Cómo interactúa la aplicación del DB-HR con la normativa de prevención de riesgos laborales?",
+"opciones": [
+"Se aplica sin perjuicio de la obligatoriedad de la normativa laboral.",
+"El DB-HR prevalece sobre la normativa laboral en caso de discrepancia.",
+"Exime del cumplimiento de la legislación de prevención en recintos.",
+"Solo aplica a obras residenciales excluyendo los centros de trabajo."
+],
+"correcta": 0,
+"explicacion": "El cumplimiento de las exigencias del DB-HR se realiza siempre sin perjuicio de la obligatoriedad de cumplir la normativa de prevención de riesgos laborales que sea aplicable.",
+"cita": "Las exigencias desarrolladas en el Documento Básico «DB-HR Protección frente al ruido» del CTE se aplicarán sin perjuicio de la obligatoriedad del cumplimiento de la normativa de prevención de riesgos laborales que resulte aplicable.",
+"id": "2631b33e87",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, documento 01",
+"titulo": "Gestión operativa frente a contratación",
+"puntos": [
+"Documentación revisada internamente por el equipo técnico para que tú únicamente tengas que validar.",
+"Plazos comprometidos garantizados con un equipo que crece si la envergadura del proyecto lo exige.",
+"Ausencia de impacto por bajas o rotación al haber siempre profesionales disponibles en tu proyecto."
+],
+"cita": "Supervisar y corregir | Tu tiempo se va en revisar planos en lugar de proyectar. | Documentación revisada internamente. Tú solo validas.",
+"citas_extra": [
+"Plazos | Dependen de una sola persona. | Plazos comprometidos; el equipo crece si el proyecto lo pide."
+],
+"id": "e3bebf13cd",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "rcd",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rcd",
+"fuente": "Artículo 1. Objeto.",
+"referencia": "RD 105/2008, art. 1",
+"pregunta": "¿Cuál es el orden prioritario que establece la norma para la gestión de los RCD?",
+"opciones": [
+"Prevención, reutilización, reciclado y otras formas de valorización",
+"Reutilización, reciclado, valorización energética y eliminación",
+"Prevención, reciclado, reutilización y valorización en obra",
+"Minimización, separación en origen, reciclado y depósito controlado"
+],
+"correcta": 0,
+"explicacion": "La norma fija expresamente este orden de prelación: primero prevención, seguida de reutilización, reciclado y valorización, garantizando además un tratamiento adecuado a los residuos destinados a eliminación.",
+"cita": "con el fin de fomentar, por este orden, su prevención, reutilización, reciclado y otras formas de valorización, asegurando que los destinados a operaciones de eliminación reciban un tratamiento adecuado",
+"id": "628d1cf8cb",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "rcd",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rcd",
+"fuente": "Artículo 1. Objeto.",
+"referencia": "RD 105/2008, art. 1",
+"titulo": "Prioridades en gestión de RCD",
+"puntos": [
+"Plantea medidas de prevención antes de proponer la reutilización o reciclado de RCD.",
+"Justifica el tratamiento adecuado previsto para los residuos destinados a operaciones de eliminación.",
+"Alinea la gestión de residuos con el desarrollo sostenible de la actividad constructiva."
+],
+"cita": "con el fin de fomentar, por este orden, su prevención, reutilización, reciclado y otras formas de valorización, asegurando que los destinados a operaciones de eliminación reciban un tratamiento adecuado, y contribuir a un desarrollo sostenible de la actividad de construcción.",
+"citas_extra": [],
+"id": "36145746fd",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "rcd",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "rcd",
+"fuente": "Artículo 1. Objeto.",
+"referencia": "RD 105/2008, art. 1",
+"q": "¿Qué condición exige la normativa para los RCD destinados a eliminación?",
+"a": "Es obligatorio asegurar que todos los residuos destinados a operaciones de eliminación reciban un tratamiento adecuado.",
+"cita": "asegurando que los destinados a operaciones de eliminación reciban un tratamiento adecuado, y contribuir a un desarrollo sostenible de la actividad de construcción.",
+"id": "f0e964646c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026",
+"titulo": "Modelo de delegación técnica externa",
+"puntos": [
+"Desarrollo completo de Proyectos Básicos y de Ejecución manteniendo siempre tu firma al final.",
+"Abono por fases con validación de cada entrega técnica antes del siguiente paso.",
+"Obtención de presupuesto cerrado en 24 a 72 horas adjuntando el Listado de Documentos."
+],
+"cita": "Proyectos Básicos y de Ejecución para despachos · 100 % online · Precio cerrado · Tu firma al final",
+"citas_extra": [
+"PRESUPUESTO EN 24–72 h: Precio cerrado. Sin sorpresas. Pagas por fases y validas cada entrega.",
+"adjunta el Listado de Documentos con lo que quieres delegar y en 24–72 horas tendrás tu presupuesto cerrado."
+],
+"id": "268b36c277",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_listado",
+"fuente": "08 Opciones adicionales",
+"referencia": "Listado de documentos de UDA, apartado 10",
+"pregunta": "¿Cuántas revisiones por fase se incluyen para subsanar errores menores en bloques de 30 o más viviendas?",
+"opciones": [
+"1 revisión por fase",
+"2 revisiones por fase",
+"3 revisiones por fase",
+"Revisiones ilimitadas durante los primeros 7 días"
+],
+"correcta": 1,
+"explicacion": "El estándar de UDA contempla 1 revisión por fase para corregir errores menores, pero en bloques de 30 viviendas o más se amplía a 2 revisiones por fase.",
+"cita": "1 revisión por fase (2 en bloques de 30 viviendas o más) para corregir errores menores.",
+"id": "bff313fb36",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_listado",
+"fuente": "08 Opciones adicionales",
+"referencia": "Listado de documentos de UDA, apartado 10",
+"q": "¿Cómo se estructuran los pagos dentro de cada fase de proyecto delegada?",
+"a": "Cada fase se abona por separado: un 60 % al iniciarla y el 40 % restante justo antes de su entrega.",
+"cita": "Cada fase se paga por separado: 60 % al iniciarla y 40 % justo antes de su entrega.",
+"id": "e6a839bcd7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "ess",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "ess",
+"fuente": "Disposición final tercera. Entrada en vigor. · 3. Ventilación:",
+"referencia": "RD 1627/1997, 4. Temperatura",
+"pregunta": "¿Qué exigencia deben cumplir las ventanas, vanos cenitales y tabiques acristalados en los locales?",
+"opciones": [
+"Deberán permitir evitar una insolación excesiva según trabajo y uso.",
+"Deberán garantizar una ventilación natural cruzada y permanente.",
+"Deberán incorporar obligatoriamente vidrios dobles con cámara.",
+"Deberán disponer de persianas automáticas para control de radiación."
+],
+"correcta": 0,
+"explicacion": "Deben permitir evitar una insolación excesiva, teniendo en cuenta el tipo de trabajo que se realiza y el uso específico previsto para el local.",
+"cita": "Las ventanas, los vanos de iluminación cenitales y los tabiques acristalados deberán permitir evitar una insolación excesiva, teniendo en cuenta el tipo de trabajo y uso del local.",
+"id": "fc18d57385",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "ess",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "ess",
+"fuente": "Disposición final tercera. Entrada en vigor. · 3. Ventilación:",
+"referencia": "RD 1627/1997, 3. Ventilación y 4. Temperatura",
+"titulo": "Climatización e insolación en locales",
+"puntos": [
+"Comprueba que la ventilación mecánica o aire acondicionado no genere corrientes de aire molestas.",
+"Justifica la eliminación rápida de depósitos de suciedad que contaminen el aire respirable.",
+"Incluye medidas en acristalamientos y vanos cenitales para evitar una insolación excesiva."
+],
+"cita": "En caso de que se utilicen instalaciones de aire acondicionado o de ventilación mecánica, éstas deberán funcionar de tal manera que los trabajadores no estén expuestos a corrientes de aire molestas.",
+"citas_extra": [
+"Las ventanas, los vanos de iluminación cenitales y los tabiques acristalados deberán permitir evitar una insolación excesiva, teniendo en cuenta el tipo de trabajo y uso del local."
+],
+"id": "2e795763f3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "ess",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "ess",
+"fuente": "Disposición final tercera. Entrada en vigor. · 3. Ventilación:",
+"referencia": "RD 1627/1997, 3. Ventilación",
+"q": "¿Cómo deben funcionar las instalaciones de aire acondicionado o ventilación mecánica en obra?",
+"a": "Deberán funcionar de tal manera que los trabajadores no se encuentren expuestos a corrientes de aire molestas.",
+"cita": "En caso de que se utilicen instalaciones de aire acondicionado o de ventilación mecánica, éstas deberán funcionar de tal manera que los trabajadores no estén expuestos a corrientes de aire molestas.",
+"id": "d6958f5d93",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "09 Qué incluye cada partida",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 09",
+"pregunta": "¿Qué nivel de desarrollo incluye el modelado opcional de instalaciones 3D en Revit?",
+"opciones": [
+"LOD 100–200 con familias básicas.",
+"LOD 200 con sus familias de sistema.",
+"LOD 300–350 con sus familias y planos.",
+"LOD 400 con despiece de taller."
+],
+"correcta": 2,
+"explicacion": "En Revit, la partida opcional modela en 3D todas las instalaciones exigibles con nivel LOD 300–350, incluyendo sus familias y planos correspondientes.",
+"cita": "Plan de Ejecución BIM · Instalaciones en 3D: todas las instalaciones exigibles modeladas (LOD 300–350) con sus familias y planos.",
+"id": "1a55128fca",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "09 Qué incluye cada partida",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 09",
+"titulo": "Alcance documental en Proyecto de Ejecución",
+"puntos": [
+"Sección y detalles constructivos 1:20, acabados, superficies y carpinterías.",
+"Memoria constructiva y estructural con CTE completo y certificado de eficiencia energética.",
+"Mediciones, pliego de condiciones, seguridad y salud, residuos y control de calidad."
+],
+"cita": "Sección y detalles constructivos 1:20 · Acabados y superficies · Carpinterías.",
+"citas_extra": [
+"Memoria constructiva y estructural · CTE completo (SE, SI, SUA, HS, HR, HE) · Certificado de eficiencia energética (justificativo).",
+"Mediciones y presupuesto · Pliego de condiciones · Estudio de seguridad y salud · Gestión de residuos · Control de calidad."
+],
+"id": "905aa02a3c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_sua",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rd173_2010",
+"fuente": " (cont.)",
+"referencia": "RD 173/2010, art. único.Dos (CTE Parte I, art. 1.3)",
+"pregunta": "¿Qué aspectos de la funcionalidad de los elementos constructivos se desarrollan dentro del CTE?",
+"opciones": [
+"Los ligados a accesibilidad de movilidad o comunicación reducidas.",
+"Todos los requisitos funcionales mínimos de habitabilidad interior.",
+"Los relativos a evacuación y compartimentación de incendios.",
+"La totalidad de parámetros dimensionales y de dotación del inmueble."
+],
+"correcta": 0,
+"explicacion": "El CTE únicamente desarrolla los aspectos funcionales ligados a la accesibilidad de personas con movilidad o comunicación reducidas; el resto de la funcionalidad se rige por su normativa específica.",
+"cita": "Los requisitos básicos relativos a la funcionalidad y los aspectos funcionales de los elementos constructivos se regirán por su normativa específica, salvo los vinculados a la accesibilidad de personas con movilidad o comunicación reducidas, que se desarrollan en el CTE.",
+"id": "fe055b7a67",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_sua",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rd173_2010",
+"fuente": " (cont.)",
+"referencia": "RD 173/2010, art. único.Dos y Tres (CTE Parte I, arts. 1.3 y 2.4.b)",
+"titulo": "Adecuación funcional y accesibilidad",
+"puntos": [
+"Justifica las obras de adecuación funcional para mejorar requisitos básicos del CTE.",
+"Desarrolla en proyecto la funcionalidad ligada a movilidad o comunicación reducidas.",
+"Remite a normativa específica los restantes aspectos funcionales de elementos constructivos."
+],
+"cita": "La adecuación funcional, entendiendo como tal la realización de las obras que proporcionen al edificio mejores condiciones respecto de los requisitos básicos a los que se refiere este CTE.",
+"citas_extra": [
+"Los requisitos básicos relativos a la funcionalidad y los aspectos funcionales de los elementos constructivos se regirán por su normativa específica, salvo los vinculados a la accesibilidad de personas con movilidad o comunicación reducidas, que se desarrollan en el CTE."
+],
+"id": "d1940c9106",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_sua",
+"bloque": "proyecto",
+"tipo": "ficha",
+"norma": "rd173_2010",
+"fuente": " (cont.)",
+"referencia": "RD 173/2010, art. único.Tres (CTE Parte I, art. 2.4.b)",
+"q": "¿Cómo define el CTE las obras de adecuación funcional del edificio?",
+"a": "Como la realización de obras que proporcionen al edificio mejores condiciones respecto de los requisitos básicos a los que se refiere el CTE.",
+"cita": "La adecuación funcional, entendiendo como tal la realización de las obras que proporcionen al edificio mejores condiciones respecto de los requisitos básicos a los que se refiere este CTE.",
+"id": "b517621e36",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 03 Vivienda unifamiliar y reforma",
+"pregunta": "¿Cómo se presupuesta la partida opcional de instalaciones en Revit (3D) en fase de ejecución para vivienda unifamiliar?",
+"opciones": [
+"1.500 € de fijo y 3,00 €/m², sustituyendo a Instalaciones.",
+"170 € de fijo y 1,50 €/m², sumándose a Instalaciones.",
+"400 € de fijo y 0,10 €/m², sustituyendo a Instalaciones.",
+"1.190 € de fijo y 5,30 €/m², como partida complementaria."
+],
+"correcta": 0,
+"explicacion": "La partida opcional de Instalaciones en Revit (3D) para Proyecto de Ejecución tiene un precio de referencia de 1.500 € de base fija y 3,00 € por m², sustituyendo a la partida ordinaria de Instalaciones.",
+"cita": "Instalaciones en Revit (3D), sustituye a Instalaciones | — | — | 1.500 € | 3,00 €",
+"id": "2c45e3074a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 03 Vivienda unifamiliar y reforma",
+"titulo": "Precios de referencia en unifamiliar",
+"puntos": [
+"Vivienda de 90 m²: 2.469 € en total, repartidos en básico y ejecución.",
+"Vivienda de 150 m²: 2.955 € en total, con 1.985 € para ejecución.",
+"Vivienda de 250 m²: 3.765 € en total, con 1.250 € para básico."
+],
+"cita": "VIVIENDA DE 90 m²: 2.469 €. P. Básico 802 € · P. Ejecución 1.667 €. VIVIENDA DE 150 m²: 2.955 €. P. Básico 970 € · P. Ejecución 1.985 €.",
+"citas_extra": [],
+"id": "e1e483ac86",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "ficha",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 03 Vivienda unifamiliar y reforma",
+"q": "¿Cuál es el precio de referencia para una reforma de 80 m² y qué alcance documental tiene?",
+"a": "El precio de referencia es de 1.950 € e incluye Proyecto Básico y Proyecto de Ejecución sin estructuras.",
+"cita": "REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras.",
+"id": "ce756217f6",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "test",
+"norma": "uda_tabla",
+"fuente": "02 Cómo trabajamos y cómo presupuestamos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 02",
+"pregunta": "¿Cómo se estructuran los pagos al delegar conjuntamente el Proyecto Básico y el Proyecto de Ejecución?",
+"opciones": [
+"En cuatro momentos: 60 % y 40 % en Básico, y 60 % y 40 % en Ejecución.",
+"En dos entregas: 60 % al iniciar el Básico y 40 % al cerrar Ejecución.",
+"Un 50 % inicial de arranque y dos abonos del 25 % por fase completada.",
+"Un 30 % al solicitar presupuesto y el 70 % restante con los editables."
+],
+"correcta": 0,
+"explicacion": "El abono se reparte en cuatro momentos diferenciados (60 % y 40 % por cada fase individual), evitando pagos globales y permitiendo validar formalmente cada una de las entregas.",
+"cita": "En P. Básico + P. Ejecución se paga en cuatro momentos (60 % y 40 % del P. Básico, luego 60 % y 40 % del P. Ejecución): nunca pagas todo de golpe y validas cada entrega.",
+"id": "95e91a02ee",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "productividad",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "02 Cómo trabajamos y cómo presupuestamos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 02",
+"titulo": "Cómputo y contratación técnica externa",
+"puntos": [
+"Presupuesto cerrado enviado en 24 a 72 horas ciñéndose solo a partidas marcadas.",
+"Revisión conjunta y abono del 40 % final previo a recibir los editables.",
+"Cómputo estricto de m² construidos, excluyendo parcela, jardines y exteriores sin edificar."
+],
+"cita": "En 24–72 horas te enviamos un presupuesto cerrado. Solo se presupuesta y se hace lo marcado.",
+"citas_extra": [
+"Revisamos contigo y abonas el 40 % antes de recibir los definitivos y editables. Tú firmas y entregas: la firma corresponde al despacho.",
+"Los m² son construidos: no cuentan jardines, parcela ni exteriores sin edificar."
+],
+"id": "2adb9c733d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_he",
+"bloque": "proyecto",
+"tipo": "test",
+"norma": "rd732_2019",
+"fuente": "ANEJO A (cont.)",
+"referencia": "RD 732/2019 (CTE DB-HE), Anejo A",
+"pregunta": "¿Qué consideración tienen los espacios interiores de las viviendas en residencial privado?",
+"opciones": [
+"Todos sus espacios interiores se consideran acondicionados.",
+"Solo los recintos con sistemas activos de climatización instalados.",
+"Se consideran no acondicionados si carecen de calefacción de diseño.",
+"Pueden considerarse no habitables si no cuentan con ventilación."
+],
+"correcta": 0,
+"explicacion": "En residencial privado, todos los recintos interiores de las viviendas se consideran acondicionados y deben satisfacer obligatoriamente las condiciones operacionales del Anejo D.",
+"cita": "En uso residencial privado, todos los espacios interiores de las viviendas se consideran acondicionados y deben cumplir las condiciones operacionales de acuerdo al Anejo D.",
+"id": "1126451bbc",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "cte_he",
+"bloque": "proyecto",
+"tipo": "puntos",
+"norma": "rd732_2019",
+"fuente": "ANEJO A (cont.)",
+"referencia": "RD 732/2019 (CTE DB-HE), Anejo A",
+"titulo": "Zonificación térmica en residencial colectivo",
+"puntos": [
+"Considera acondicionados todos los espacios interiores de las viviendas según el Anejo D.",
+"Valora simplificar el cálculo asignando condición de acondicionado a pasillos y escaleras comunes.",
+"Agrupa recintos contiguos con idéntico uso y condiciones térmicas en espacios habitables equivalentes."
+],
+"cita": "En uso residencial privado, todos los espacios interiores de las viviendas se consideran acondicionados y deben cumplir las condiciones operacionales de acuerdo al Anejo D.",
+"citas_extra": [
+"A efectos de cálculo, de forma simplificada, pueden considerarse igualmente acondicionados otros espacios habitables, como pasillos, escaleras y otras zonas comunes."
+],
+"id": "aceec1cf7c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
 }
 ]
