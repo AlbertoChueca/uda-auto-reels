@@ -20,10 +20,11 @@ FORMATS = {
     "uda_servicio": "Así trabaja UDA",
     "repaso_express": "Repaso exprés con 4 fichas",
 }
-AUDIENCE = """PÚBLICO: arquitectos autónomos y despachos pequeños de España (2-4 personas, muchos de 45-55 años): ambiciosos,
-detallistas, con más encargos que horas, que quieren facturar más sin vivir pegados al ordenador; también arquitectos
-jóvenes que redactan proyectos. Registro: de colega a colega, profesional y directo, con gancho y ritmo, nunca plano ni
-condescendiente ("¿sabías que...?" de manual no). Español de España, tuteo. Nada de promesas ("duplicarás tu
+AUDIENCE = """PÚBLICO: despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos). Profesionales
+expertos, exigentes y con más encargos que horas: no les cuentes obviedades ni definiciones de manual; háblales de lo que
+importa en un proyecto grande (uso residencial colectivo, aparcamientos, zonas comunes, sectorización, evacuación,
+plazos y responsabilidades). Nivel PREMIUM: preciso, útil y con criterio de arquitecto senior. Registro: de colega a
+colega, directo, con gancho y ritmo, nunca plano ni condescendiente ("¿sabías que...?" de manual no). Español de España, tuteo. Nada de promesas ("duplicarás tu
 facturación"), ni estadísticas inventadas ("el 80 % de los despachos..."), ni decir o insinuar que UDA firma: la firma es
 siempre del despacho."""
 

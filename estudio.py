@@ -55,8 +55,7 @@ SERIES = {0: ("Lunes de normativa", "norma_30s"), 1: ("Martes de errores de proy
           4: ("Viernes de mitos", "mito_realidad"), 5: ("Sábado de repaso", "repaso_express"),
           6: ("Domingo de test", "simulacro_3")}
 
-AUDIENCE = ("Público: arquitectos autónomos y despachos pequeños de España (2-4 personas), ambiciosos y detallistas, con más "
-            "encargos que horas. Español de España, de colega a colega, profesional y directo, nunca condescendiente; sin "
+AUDIENCE = ("Público: despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos); expertos y exigentes: contenido premium, nada de obviedades. Español de España, de colega a colega, profesional y directo, nunca condescendiente; sin "
             "promesas ni estadísticas inventadas; UDA nunca firma (la firma es del despacho).")
 
 

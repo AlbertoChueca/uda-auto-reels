@@ -41,8 +41,10 @@ SCHEMA = """{"piezas": [
  {"tipo": "puntos", "titulo": str (2-7 palabras), "puntos": [str, str, str] (6-15 palabras cada uno), "citas": [str, ...] (1-3 citas literales que respaldan los puntos), "referencia": str},
  {"tipo": "ficha", "q": str (pregunta corta, máx. 100 caracteres), "a": str (respuesta corta y completa, máx. 140 caracteres), "cita": str, "referencia": str}
 ]}"""
-AUD = ("Público: arquitectos autónomos y despachos pequeños de España (2-4 personas) que redactan Proyectos Básicos y de "
-       "Ejecución. Español de España, tuteo, registro profesional y directo; nada de promesas ni de estadísticas.")
+AUD = ("Público: despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos). Son expertos: nivel PREMIUM, nada de obviedades ni "
+       "definiciones de diccionario; prioriza lo que pesa en bloques y proyectos grandes (uso residencial colectivo, "
+       "aparcamientos, zonas comunes, sectorización, evacuación, accesibilidad, ahorro de energía, agentes y responsabilidades)."
+       "  Español de España, tuteo, registro profesional y directo; nada de promesas ni de estadísticas.")
 
 
 def state():

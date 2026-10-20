@@ -13,12 +13,12 @@ import base64, datetime, io, json, os, re, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__))
 REVIEW_LOG = os.path.join(HERE, "review_log.jsonl")
 PERF = os.path.join(HERE, "performance.json")
-MIN_SCORE = float(os.environ.get("REVIEW_MIN_SCORE", "4"))
+MIN_SCORE = float(os.environ.get("REVIEW_MIN_SCORE", "8"))       # nivel premium: por debajo de 8 no se publica
 
 PRODUCER = """Eres productora sénior de vídeos cortos profesionales (Reels, TikTok, LinkedIn) para UDA · Unión de Arquitectos,
 un estudio online que hace de departamento técnico externo para arquitectos autónomos y despachos de España (Proyectos
-Básicos y de Ejecución, CAD o Revit, precio cerrado, la firma es del despacho). Público: arquitectos de despachos pequeños,
-exigentes y con poco tiempo. Objetivos, por orden: rigor (nada falso), claridad inmediata, que los 2 primeros segundos
+Básicos y de Ejecución, CAD o Revit, precio cerrado, la firma es del despacho). Público: despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos):
+expertos, exigentes y con poco tiempo. El nivel tiene que ser PREMIUM: un 8 o más en tu escala es el mínimo para publicar. Objetivos, por orden: rigor (nada falso), claridad inmediata, que los 2 primeros segundos
 frenen el scroll, que comenten, GUARDEN el reel para su próximo proyecto, lo envíen a un socio y visiten
 uniondearquitectos.com. Tono de colega a colega, profesional, directo y con gancho; estética editorial y sobria; sin
 promesas ni estadísticas inventadas."""
@@ -175,7 +175,7 @@ Devuelve JSON: {{"overall": number, "scores": {{...}}, "issues": [str], "changes
                     "changes": {k: v for k, v in new.items() if style.get(k) != v}, "why": res.get("why")})
     print(f"director de arte: {overall}/10" + (f" - {'; '.join((res.get('issues') or [])[:3])}" if res.get("issues") else ""), flush=True)
     # volver a renderizar cuesta varios minutos de GitHub: solo si el diseño flojea de verdad
-    if new == style or overall >= float(os.environ.get("ART_RERENDER_BELOW", "7.5")):
+    if new == style or overall >= float(os.environ.get("ART_RERENDER_BELOW", "8")):
         return None, {"overall": overall}
     return new, {"overall": overall}
 
@@ -210,8 +210,8 @@ Devuelve JSON: {{"overall": number, "scores": {{...}}, "critical": bool, "issues
     _log("video", {"hook": S.get("screen_hook"), "overall": overall, "scores": res.get("scores"), "critical": res.get("critical"),
                    "issues": res.get("issues"), "suggestions": res.get("suggestions")})
     print(f"revisor: reel {overall}/10" + (f" - {'; '.join(res.get('issues', [])[:3])}" if res.get("issues") else ""), flush=True)
-    if res.get("critical") and overall < MIN_SCORE:
-        raise RejectReel(f"el revisor rechaza el reel ({overall}/10): {'; '.join(res.get('issues', [])[:3])}")
+    if res.get("critical") or overall < MIN_SCORE:
+        raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
     new_first = (res.get("caption_first_line") or "").strip()
     prompt = (res.get("comment_prompt") or "").strip()
     cap = caption

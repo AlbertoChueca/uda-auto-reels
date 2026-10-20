@@ -120,8 +120,8 @@ if HAS_AI:
     except Exception as e:
         status.append(f"estudio omitido: {str(e)[:120]}")
 
-chain = list(dict.fromkeys([arms.get("formato", "test_normativa"), "test_normativa", "checklist", "simulacro_3",
-                            "repaso_express"]))
+chain = list(dict.fromkeys([arms.get("formato", "test_normativa"), "test_normativa", "error_tipico", "checklist",
+                            "norma_30s"]))
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
 if HAS_AI:
@@ -161,7 +161,12 @@ for fmt in chain:
                 meta = make_quiz.build(fmt, items, S, seed, out, arms, style, keep_voice=True, image=image,
                                        estilo=arms.get("estilo"))                  # voz en caché: no se regraba
                 caption = open(out.replace(".mp4", ".txt")).read()
+                _, art = reviewer.art_direct(out, S, style, meta["timeline"], meta["duration"])   # nueva nota
+            if art and float(art.get("overall") or 0) < reviewer.MIN_SCORE:
+                raise reviewer.RejectReel(f"diseño {art.get('overall')}/10 (mínimo {reviewer.MIN_SCORE:g})")
             caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+            if not review.get("overall"):
+                raise reviewer.RejectReel("el revisor de vídeo no ha podido puntuar el reel: sin nota no se publica")
             caption = agents.growth_caption(caption, S, review)
             open(out.replace(".mp4", ".txt"), "w").write(caption)
         meta.update(review_score=review.get("overall"), design_score=art.get("overall"), guion=src,

@@ -89,7 +89,7 @@ def quiz_question(tema, seed):
 
 # ------------------------------------------------------------------ 2. guion (IA) y verificación
 ROLE = """Eres el EDITOR de los carruseles de UDA · Unión de Arquitectos (uniondearquitectos.com), un estudio online que hace
-de departamento técnico externo para arquitectos autónomos y despachos de España. Haces carruseles para Instagram,
+de departamento técnico externo para despachos y arquitectos autónomos de España que proyectan bloques de viviendas, promociones, conjuntos residenciales y edificios de envergadura (equipamientos, naves, rehabilitaciones de edificios completos). Nivel PREMIUM, nada de obviedades. Haces carruseles para Instagram,
 TikTok y LinkedIn que un arquitecto GUARDA para consultarlos al redactar su próximo proyecto y ENVÍA a su socio:
 claros, ordenados, rigurosos y con un diseño editorial sobrio. Escribes en español de España, de colega a colega,
 profesional y directo, sin promesas ni estadísticas; UDA nunca firma (la firma es del despacho)."""
@@ -470,6 +470,28 @@ def slide_cta(P, n, total, seed):
     return im
 
 
+MIN_SCORE = float(os.environ.get("REVIEW_MIN_SCORE", "8"))
+
+
+def review(paths, c, tema):
+    """Directora de arte + editora: puntúa el carrusel terminado (imágenes reales). Devuelve (nota, problemas)."""
+    import base64, io, gemini
+    parts = [{"text": f"""Eres directora de arte y editora jefa de una revista de arquitectura. Revisas un carrusel de UDA ·
+Unión de Arquitectos (tema: {QB.tema_titulo(tema)} · {c['subtema']}) para Instagram y LinkedIn. Público: despachos y
+arquitectos que proyectan bloques de viviendas y proyectos de envergadura: expertos y exigentes.
+Puntúa 1-10: valor técnico real para ese público (nada de obviedades), claridad y jerarquía, legibilidad en el móvil,
+acabado editorial y coherencia de marca (carbón, piedra, bronce), y probabilidad de que lo guarden o lo envíen a un socio.
+Un 8 es el mínimo para publicar. Devuelve JSON: {{"overall": number, "problemas": [str]}}"""}]
+    for p in paths:
+        im = Image.open(p).convert("RGB"); im.thumbnail((540, 675)); b = io.BytesIO(); im.save(b, "JPEG", quality=80)
+        parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(b.getvalue()).decode()}})
+    try:
+        r = gemini.ask(parts, 0.3)
+        return float(r.get("overall") or 0), r.get("problemas") or []
+    except Exception as e:
+        return 0.0, [f"revisor no disponible: {str(e)[:120]}"]
+
+
 def render(c, P, bloque, tema, out_dir, seed):
     os.makedirs(out_dir, exist_ok=True)
     total = 1 + len(c["diapositivas"]) + (1 if P else 0) + 1
@@ -560,6 +582,27 @@ def main():
         raise SystemExit("hoy no hay carrusel verificado (mejor no publicar que publicar un error)")
     P = quiz_question(tema, seed)
     paths, pdf = render(c, P, bloque, tema, out_dir, seed)
+    score = None
+    if not MOCK:                                           # nivel premium: por debajo de 8 no se publica
+        score, probs = review(paths, c, tema)
+        print(f"carrusel: revisión {score}/10 {probs[:3]}", flush=True)
+        if score < MIN_SCORE:
+            for attempt in range(2):
+                tema2 = pick_tema(bloque, f"{seed}-r{attempt}", tried) or tema
+                tried.append(tema2)
+                try:
+                    sel2, c2 = content_for(tema2, bloque, f"{seed}-r{attempt}")
+                except Exception as e:
+                    print("carrusel: reintento sin contenido:", str(e)[:150], flush=True); continue
+                P2 = quiz_question(tema2, seed)
+                paths2, pdf2 = render(c2, P2, bloque, tema2, out_dir, seed)
+                s2, probs = review(paths2, c2, tema2)
+                print(f"carrusel: reintento {tema2} {s2}/10 {probs[:3]}", flush=True)
+                if s2 >= MIN_SCORE:
+                    tema, sel, c, P, paths, pdf, score = tema2, sel2, c2, P2, paths2, pdf2, s2
+                    break
+            if score < MIN_SCORE:
+                raise SystemExit(f"hoy no hay carrusel con nota suficiente ({score}/10, mínimo {MIN_SCORE:g})")
     cap = caption(c, P)
     open(os.path.join(out_dir, "descripcion.txt"), "w").write(cap)
     print(f"carrusel: {QB.tema_titulo(tema)} · {c['subtema']} · {len(paths)} imágenes", flush=True)
@@ -567,7 +610,8 @@ def main():
     print("publicación:", json.dumps(res, ensure_ascii=False), flush=True)
     ok = any(isinstance(v, str) and not v.startswith("error") for v in res.values())
     entry = {"fecha": str(today), "bloque": bloque, "tema": tema, "subtema": c["subtema"], "titulo": " ".join(c["titulo_lineas"]),
-             "fragmentos": [lab for _, lab, _ in sel], "quiz_id": P and P["id"], "imagenes": len(paths), "publicado": ok,
+             "fragmentos": [lab for _, lab, _ in sel], "quiz_id": P and P["id"], "imagenes": len(paths), "nota": score,
+             "publicado": ok,
              "destinos": res, "dry_run": dry}
     if not dry:                                            # las pruebas no cuentan como tema usado
         L = log(); L.append(entry); json.dump(L, open(LOG, "w"), ensure_ascii=False, indent=0)

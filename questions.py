@@ -114,10 +114,14 @@ def fits(p, kind="normal"):
     return len(p["pregunta"]) <= ql and all(len(o) <= ol for o in p["opciones"])
 
 
+MIN_CALIDAD = float(os.environ.get("MIN_CALIDAD", "7"))      # nivel premium: utilidad para un despacho que hace bloques
+
+
 def publishable(p, v=None):
     v = verif() if v is None else v
     r = v.get(p["id"])
-    return bool(r and r.get("veredicto") == "ok" and r.get("fuente_ok") and p.get("fuente_ok"))
+    return bool(r and r.get("veredicto") == "ok" and r.get("fuente_ok") and p.get("fuente_ok")
+                and float(r.get("calidad") or 0) >= MIN_CALIDAD)
 
 
 def candidates(fmt, bloque=None, seed=0):

@@ -39,7 +39,7 @@ concurrency:
 jobs:
   reel:
     runs-on: ubuntu-24.04
-    timeout-minutes: 45     # tope: si algo se atasca no se come los minutos del mes
+    timeout-minutes: 90     # varios formatos si alguno no llega al 8
     steps:
       - name: Elegir hueco
         id: slot

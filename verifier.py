@@ -207,13 +207,15 @@ Revisa estas {len(ps)} piezas. Para cada una decide:
 Además, en piezas de UDA: un precio solo es "ok" si se presenta como precio de referencia u orientativo; nunca puede
 decir o insinuar que UDA firma, visa o asume la responsabilidad del proyecto (la firma es del despacho); nada de
 promesas ni de estadísticas que no estén literalmente en la fuente.
+"calidad": 1-10, cuánto le sirve de verdad a un despacho que proyecta bloques de viviendas y proyectos de envergadura
+(10 = dato que evita un error caro o una incidencia en visado; 5 = correcto pero obvio o de manual; 1 = irrelevante).
 "cita": un fragmento COPIADO LITERALMENTE del texto de la fuente (10-40 palabras) que demuestre la pieza (si no lo
 hay, ""); "referencia": norma y artículo/sección/apartado exactos según el texto (p. ej. "CTE, Parte I, art. 11" o
 "Tabla de presupuestos de UDA, apartado 07"); "motivo": una frase en español; "correccion": si es "error", qué es lo correcto.
 
 {chr(10).join(blocks)}
-Devuelve JSON: {{"resultados": [{{"id": str, "veredicto": "ok"|"dudosa"|"error", "motivo": str, "referencia": str,
-"cita": str, "correccion": str}}]}}""", 0.1, careful=True)
+Devuelve JSON: {{"resultados": [{{"id": str, "veredicto": "ok"|"dudosa"|"error", "calidad": number, "motivo": str,
+"referencia": str, "cita": str, "correccion": str}}]}}""", 0.1, careful=True)
     lst = res.get("resultados") or res.get("results") or (res if isinstance(res, list) else [])
     lst = [r for r in lst if isinstance(r, dict)]
     got = {str(r.get("id")).strip(): r for r in lst}
@@ -231,7 +233,11 @@ Devuelve JSON: {{"resultados": [{{"id": str, "veredicto": "ok"|"dudosa"|"error",
         if not (cita and quote_in(cita, texts)):
             cita = p.get("cita", "") if fuente_ok else ""
         ref = (r.get("referencia") or p.get("referencia") or "").strip()
-        out[p["id"]] = {"veredicto": ver, "motivo": (r.get("motivo") or "")[:300], "fuente_ok": fuente_ok,
+        try:
+            cal = round(min(10.0, max(0.0, float(r.get("calidad")))), 1)
+        except Exception:
+            cal = 0.0
+        out[p["id"]] = {"veredicto": ver, "calidad": cal, "motivo": (r.get("motivo") or "")[:300], "fuente_ok": fuente_ok,
                         "referencia": ref[:90] if fuente_ok else "", "cita": cita[:420] if fuente_ok else "",
                         "correccion": (r.get("correccion") or "")[:200] if ver == "error" else None,
                         "fecha": str(datetime.date.today())}
@@ -316,7 +322,8 @@ def report():
 def run(n=80):
     v = QB.verif()
     import random
-    pend = [p for p in QB.load() if p["id"] not in v and p.get("fuente_ok")]
+    pend = [p for p in QB.load() if p.get("fuente_ok") and (p["id"] not in v or (v[p["id"]].get("veredicto") == "ok"
+                                                                               and "calidad" not in v[p["id"]]))]
     random.Random(str(datetime.date.today())).shuffle(pend)          # mezcla temas y bloques en cada tanda
     for k in range(0, min(n, len(pend)), 8):
         try:
