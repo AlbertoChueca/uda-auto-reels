@@ -2158,5 +2158,1455 @@
 "cita": "Los equipos de producción de agua caliente dotados de sistemas de acumulación y los puntos terminales de utilización tendrán unas características tales que eviten el desarrollo de gérmenes patógenos.",
 "correccion": null,
 "fecha": "2026-10-20"
+},
+"b1269f9dc5": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El texto confirma explícitamente que los Documentos Reconocidos son documentos técnicos sin carácter reglamentario, a diferencia de los Documentos Básicos.",
+"fuente_ok": true,
+"referencia": "CTE, art. 4.1",
+"cita": "definidos como documentos técnicos, sin carácter reglamentario, que cuenten con el reconocimiento del Ministerio de Vivienda que mantendrá un registro público de los mismos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e781ec8ae7": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan exactamente la metodología de UDA para presupuestar bloques de viviendas descrita en la fuente.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 05",
+"cita": "Se presupuestan tres piezas: las viviendas tipo completas, las viviendas repetidas con un pequeño porcentaje y el edificio (fachadas, núcleos, cubiertas, zonas comunes y garaje) con un 6 % de la superficie total.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"539b41bded": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El texto desmiente el mito al explicar que la parte fija cubre el trabajo técnico inicial de estudiar la documentación, normativa y criterios del despacho.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 02",
+"cita": "Cada partida (planimetría, construcción, instalaciones, estructuras, memoria y mediciones) tiene una parte fija, que cubre arrancar la tarea (estudiar tu documentación, la normativa y tus criterios)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d983457972": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La norma establece explícitamente que las particiones interiores deben limitar la transferencia de calor entre unidades de uso y con las zonas comunes.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), art. 15.2",
+"cita": "Así mismo, las características de las particiones interiores limitarán la transferencia de calor entre unidades de uso, y entre las unidades de uso y las zonas comunes del edificio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0a86eb1c1a": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La disposición adicional única c) obliga al empresario a modificar el plan de seguridad y salud ante la ausencia o insuficiencia de medidas preventivas.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, disp. adic. única, c)",
+"cita": "deberán poner tales circunstancias en conocimiento del empresario, que procederá de manera inmediata a la adopción de las medidas necesarias para corregir las deficiencias y a la modificación del plan de seguridad y salud",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"26de92ff9f": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "Afirmar que tienen 'exactamente el mismo precio' es falso, ya que la propia fuente indica que existen diferencias de hasta un 2 % por redondeos.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07",
+"cita": "Diferencias de hasta un 2 % por redondeos; el presupuesto cerrado fija el importe exacto.",
+"correccion": "El precio es equivalente, pero no exactamente el mismo, ya que puede haber diferencias de hasta un 2 % por redondeos (ej. 2.955 € en CAD frente a 2.935 € en Revit para 150 m²).",
+"fecha": "2026-10-20"
+},
+"1694c81a4c": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los tres puntos resumen fielmente los criterios de aplicación de normativas y ensayos descritos en la introducción del DB-SUA modificada por el RD 732/2019.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), DB-SUA, Introducción, apartado III",
+"cita": "Cuando se cita una disposición reglamentaria en este DB debe entenderse que se hace referencia a la versión vigente en el momento en el que se aplica el mismo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"88e07cec65": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta define exactamente la función del DB-HR tal como se establece en el artículo 14.3 de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, art. 14.3",
+"cita": "El Documento Básico «DB HR Protección frente al Ruido» especifica parámetros objetivos y sistemas de verificación cuyo cumplimiento asegura la satisfacción de las exigencias básicas",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"11e4d25cd9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan fielmente la estructura de precios de UDA, donde cada partida suma un coste fijo inicial y un coste variable proporcional a los metros cuadrados.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 02",
+"cita": "Cada partida (planimetría, construcción, instalaciones, estructuras, memoria y mediciones) tiene una parte fija, que cubre arrancar la tarea (estudiar tu documentación, la normativa y tus criterios), y una parte por m² construido, que crece con el tamaño.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3f0c35b21a": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos enumeran con exactitud los objetivos del control del proyecto tal como los define el artículo 6.2.1 del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 6.2.1",
+"cita": "El control del proyecto tiene por objeto verificar el cumplimiento del CTE y demás normativa aplicable y comprobar su grado de definición, la calidad del mismo y todos los aspectos que puedan tener incidencia en la calidad final",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f5766e398f": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La comparativa ilustra perfectamente el ahorro en el presupuesto de UDA para conjuntos de viviendas, utilizando los datos exactos del ejemplo de la fuente.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 04",
+"cita": "Diseñamos la vivienda una vez; las repetidas apenas suman. Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"641a9eaa7f": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El CTE establece explícitamente que la dirección facultativa tiene la potestad de ordenar ensayos de recepción de productos, independientemente de la reglamentación o el proyecto.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 7.2.3.1",
+"cita": "puede ser necesario, en determinados casos, realizar ensayos y pruebas sobre algunos productos, según lo establecido en la reglamentación vigente, o bien según lo especificado en el proyecto u ordenados por la dirección facultativa.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fac126b0e8": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La comparativa refleja literalmente las condiciones de UDA para el cálculo de superficies, destacando qué elementos no suman coste al presupuesto.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 03",
+"cita": "Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b8fe1df302": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos resumen correctamente los límites legales de jornada, descansos entre jornadas y pausas obligatorias según el Estatuto de los Trabajadores.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 34.3 y 34.4",
+"cita": "El número de horas ordinarias de trabajo efectivo no podrá ser superior a nueve diarias [...] Siempre que la duración de la jornada diaria continuada exceda de seis horas, deberá establecerse un periodo de descanso",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"60231cccea": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Desmiente un error crítico aclarando que la responsabilidad civil, la firma y el visado siempre recaen en el despacho, ya que UDA actúa solo como soporte técnico.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 10",
+"cita": "La firma corresponde al despacho, así como la responsabilidad final, el visado, la tramitación, la dirección de obra y la coordinación de seguridad y salud. UDA es soporte técnico online en marca blanca.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1c4b068ba6": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Contrasta correctamente los derechos de reducción de jornada y ausencias por cuidado de menores o familiares del Estatuto de los Trabajadores con la estabilidad de plazos al externalizar.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 37.5 y 37.6",
+"cita": "Quien por razones de guarda legal tenga a su cuidado directo algún menor de doce años o una persona con discapacidad que no desempeñe actividad retribuida tendrá derecho a una reducción de la jornada de trabajo diaria",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d81b1fc1ea": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El texto de UDA indica explícitamente que se puede marcar una estimación y aclararlo en observaciones para revisarlo conjuntamente.",
+"fuente_ok": true,
+"referencia": "UDA · Documento 02, Listado de documentos a delegar",
+"cita": "¿Dudas sobre qué marcar? Marca lo que creas y explícalo en Observaciones: lo revisamos contigo al preparar el presupuesto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"98fbe128d4": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El artículo 15.3 del CTE establece literalmente que la aplicación del RITE debe quedar definida en el proyecto del edificio.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 15.3",
+"cita": "Esta exigencia se desarrolla actualmente en el vigente Reglamento de Instalaciones Térmicas en los Edificios (RITE), y su aplicación quedará definida en el proyecto del edificio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"32714730fa": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La tabla de presupuestos de UDA especifica exactamente este recargo del 50 % en la planimetría del P. Básico para estos casos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"cita": "P. Ejecución sobre un P. Básico ajeno sin editables, o estado actual de un edificio a rehabilitar: +50 % de la Planimetría del P. Básico.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d5e6fa0ead": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El CTE exige literalmente que las particiones interiores limiten la transferencia de calor entre unidades de uso y zonas comunes.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 15.2",
+"cita": "Así mismo, las características de las particiones interiores limitarán la transferencia de calor entre unidades de uso, y entre las unidades de uso y las zonas comunes del edificio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fec1e58cb9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen fielmente las exigencias documentales, la intervención de la Inspección y la obligación de negociar de buena fe según el artículo 51.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 51",
+"cita": "recabará, con carácter preceptivo, informe de la Inspección de Trabajo y Seguridad Social [...] Durante el periodo de consultas, las partes deberán negociar de buena fe, con vistas a la consecución de un acuerdo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b081e565b7": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El texto indica claramente que el presupuesto cerrado se entrega en un plazo de 24 a 72 horas tras marcar lo que se desea delegar.",
+"fuente_ok": true,
+"referencia": "UDA · Documento 02 Listado de documentos a delegar",
+"cita": "Marca lo que quieres delegar y en 24–72 horas tendrás tu presupuesto cerrado.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"df7e7f8a2e": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan exactamente los criterios de UDA para clasificar las viviendas y calcular el presupuesto en bloques.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 05",
+"cita": "Vivienda tipo: distribución propia; si la cocina o los baños cambian de sitio, es una tipo nueva. Variante: cambios menores [...] Se cuentan primero las tipo, luego las variantes y por último las idénticas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"21acab896f": {
+"veredicto": "dudosa",
+"calidad": 5.0,
+"motivo": "El texto proporcionado detalla esta modificación para el DB-SI y el DB-HE, pero no menciona explícitamente que se aplique al DB-SUA.",
+"fuente_ok": true,
+"referencia": "RD 732/2019",
+"cita": "Las normas recogidas en este DB podrán ser sustituidas por otras de las utilizadas en cualquiera de los otros Estados miembros de la Unión Europea, o que sean parte del Acuerdo sobre el Espacio Económico Europeo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"35859ea01c": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto del RD 105/2008 excluye explícitamente de su ámbito de aplicación a las tierras y piedras no contaminadas si se acredita fehacientemente su reutilización.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 3.1.a",
+"cita": "Las tierras y piedras no contaminadas por sustancias peligrosas reutilizadas en la misma obra, en una obra distinta o en una actividad de restauración, acondicionamiento o relleno, siempre y cuando pueda acreditarse de forma fehaciente su destino a reutilización.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"08e246f219": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos reflejan exactamente las exclusiones listadas en la tabla de presupuestos de UDA para el modelado de instalaciones en 3D.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07",
+"cita": "Las instalaciones en 3D no incluyen cálculo ni dimensionado de ingeniería, justificación reglamentaria (RITE, REBT, ICT…), boletines ni otras instalaciones no listadas (domótica, seguridad…).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e541a522b7": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El Estatuto de los Trabajadores detalla la intervención del FOGASA, los topes indemnizatorios y el requisito de figurar en la lista de acreedores para empleados en plantilla, condiciones que lógicamente no aplican a contratos mercantiles por servicios.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 33.3",
+"cita": "El Fondo se personará en el expediente como responsable legal subsidiario del pago de los citados créditos, pudiendo instar lo que a su derecho convenga y sin perjuicio de que, una vez realizado, continúe como acreedor en el expediente.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8901f29882": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos describen fielmente el alcance y las exclusiones del servicio de instalaciones en Revit según la tabla de presupuestos de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 07 CAD o Revit (BIM)",
+"cita": "modelado LOD 300–350, familias y planos, a partir de tus criterios o cálculos. || Las instalaciones en 3D no incluyen cálculo ni dimensionado de ingeniería, justificación reglamentaria (RITE, REBT, ICT…), boletines ni otras instalaciones no listadas (domótica, seguridad…).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"7c58d0e9da": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Estatuto de los Trabajadores establece el derecho a 20 horas anuales de formación a cargo de la empresa que computan como tiempo de trabajo efectivo para empleados en plantilla, lo cual contrasta con la externalización de servicios.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 23.1.d",
+"cita": "A la formación necesaria para su adaptación a las modificaciones operadas en el puesto de trabajo. La misma correrá a cargo de la empresa || El tiempo destinado a la formación se considerará en todo caso tiempo de trabajo efectivo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9a5653484d": {
+"veredicto": "error",
+"calidad": 1.0,
+"motivo": "La explicación afirma que se incorporan 'sin necesidad de calcularlas', lo cual es falso, ya que UDA exige partir de los criterios o cálculos del arquitecto y no incluye el cálculo de ingeniería.",
+"fuente_ok": true,
+"referencia": "Listado de Documentos a Delegar, 06 Proyecto de Ejecución",
+"cita": "Si has marcado Instalaciones en Revit (3D) en el apartado 4, se incluyen todas las instalaciones exigibles: también protección contra incendios, red de tierras, alumbrado exterior y fotovoltaica.",
+"correccion": "Las instalaciones en Revit 3D incluyen estas redes, pero siempre a partir de los criterios o cálculos aportados por el despacho, ya que UDA no realiza el cálculo ni dimensionado de ingeniería.",
+"fecha": "2026-10-20"
+},
+"6f69bc5e97": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El CTE especifica claramente que debe usarse la versión indicada de la norma UNE, incluso si hay versiones posteriores, con la excepción de las normas armonizadas europeas.",
+"fuente_ok": true,
+"referencia": "RD 732/2019, DB-SUA, Introducción, apartado III",
+"cita": "Cuando se cita una norma UNE, UNE-EN o UNE-EN ISO debe entenderse que se hace referencia a la versión que se indica, aun cuando exista una versión posterior",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e3919e6c89": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Estatuto de los Trabajadores exige comunicación a la autoridad laboral y un periodo de consultas (máximo 7 días para menos de 50 empleados) sin importar el tamaño de la empresa.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 47.3",
+"cita": "El procedimiento, que será aplicable cualquiera que sea el número de personas trabajadoras de la empresa y el número de personas afectadas por la reducción o por la suspensión, se iniciará mediante comunicación a la autoridad laboral competente",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f0f88d2453": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto confirma literalmente que los descuentos solo se mantienen si el modelo aportado es aprovechable en niveles, familias y estructura.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"cita": "Si el modelo es aprovechable (niveles, familias y estructura correctos), el resto de partidas mantiene su descuento; si no, se presupuesta como si partiéramos de PDF.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9c17b1becf": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La LOE establece explícitamente que el asegurador debe indemnizar al primer requerimiento y no puede oponer excepciones correspondientes al tomador.",
+"fuente_ok": true,
+"referencia": "LOE, art. 19.3.b y 19.3.c",
+"cita": "El asegurador asume el compromiso de indemnizar al asegurado al primer requerimiento.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a3bf95c8e3": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "La pregunta y la respuesta corresponden al DB HE (Ahorro de Energía), no al DB HS (Salubridad) como indica el tema de la pieza.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Sección HE 1, apartado 5.1.3",
+"cita": "por la transmitancia térmica U (W/m2·K) y la absortividad α para los marcos de huecos (incluidas puertas); y por la transmitancia térmica lineal Ψ (W/mK) para los espaciadores.",
+"correccion": "El tema debe ser CTE DB HE (Ahorro de Energía), no DB HS.",
+"fecha": "2026-10-20"
+},
+"a49796b945": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El RD 1371/2007 deroga expresamente la Orden que aprueba el pliego RL-88, por lo que no debe incluirse en proyectos actuales.",
+"fuente_ok": true,
+"referencia": "RD 1371/2007, Disposición derogatoria única",
+"cita": "Quedarán derogadas, a partir de la entrada en vigor de este real decreto, las siguientes disposiciones: [...] el pliego de condiciones para la recepción de ladrillos cerámicos en las obras de construcción RL-88.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a529923712": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen fielmente el método de cálculo de UDA para conjuntos de unifamiliares según la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 04 Pareados / Adosados / Conjunto",
+"cita": "se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"64784c565d": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Estatuto establece la reducción de jornada por cuidado de menor de 12 años como un derecho del trabajador, sin contemplar excepciones por picos de trabajo o entregas urgentes de la empresa.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 37.6",
+"cita": "Quien por razones de guarda legal tenga a su cuidado directo algún menor de doce años [...] tendrá derecho a una reducción de la jornada de trabajo diaria, con la disminución proporcional del salario",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1f972bff35": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El CTE especifica explícitamente que el control del proyecto no tiene que abarcar todas las exigencias, pudiendo referirse solo a algunas de ellas.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 6.2.1",
+"cita": "Este control puede referirse a todas o algunas de las exigencias básicas relativas a uno o varios de los requisitos básicos mencionados en el artículo 1.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0c8072e5ed": {
+"veredicto": "dudosa",
+"calidad": 5.0,
+"motivo": "El modelo de declaración responsable entra en vigor el 23 de julio de 2026, por lo que presentarlo como un requisito actual sin advertir de su vigencia diferida puede confundir al arquitecto. Además, las opciones del formulario son casillas marcables, no necesariamente requisitos acumulativos.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Disposición final octava, modelo de declaración responsable",
+"cita": "un mínimo de 40 horas, o 4 créditos ECTS, de los contenidos del módulo 2 del curso de conocimientos básicos, específicos y administrativos de certificación de la eficiencia energética de edificios",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"bb4f41dffa": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "La afirmación generaliza al hablar de 'proyectos de 30 viviendas o más', cuando el texto especifica que las dos revisiones aplican únicamente a 'bloques de 30 viviendas o más' (excluyendo, por ejemplo, conjuntos de unifamiliares).",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 10",
+"cita": "1 revisión por fase (2 en bloques de 30 viviendas o más) para corregir errores menores.",
+"correccion": "Los bloques de 30 viviendas o más incluyen dos revisiones por fase para corregir errores menores.",
+"fecha": "2026-10-20"
+},
+"49361aefa5": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La afirmación es correcta y refleja fielmente las condiciones en las que el DB-HE 4 es de aplicación para edificios existentes al reformar la generación térmica.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Sección HE 4, apartado 1.1.b",
+"cita": "edificios existentes con una demanda de agua caliente sanitaria (ACS) superior a 100 l/d, calculada de acuerdo al Anejo F, en los que se reforme íntegramente, bien el edificio en sí, o bien la instalación de generación térmica",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3f37dc802a": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "El veredicto de mito es correcto, ya que el formulario de UDA permite seleccionar el proyecto completo con una sola casilla sin necesidad de marcar cada documento.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 06",
+"cita": "Quiero el Proyecto de Ejecución completo (si lo marcas, no hace falta marcar cada documento)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"31071f0282": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen con exactitud el esquema de pagos por fases (60% al inicio, 40% a la entrega) y su distribución en cuatro momentos para Básico y Ejecución.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 10",
+"cita": "Pagos por fases. Cada fase se paga por separado: 60 % al iniciarla y 40 % justo antes de su entrega. En P. Básico + P. Ejecución, el pago queda en cuatro momentos",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c1c40d7996": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta sintetiza correctamente que el CTE desarrolla los requisitos de seguridad y habitabilidad de la LOE, dejando la funcionalidad a normativas específicas salvo en accesibilidad.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 1.1 y 1.3",
+"cita": "es el marco normativo por el que se regulan las exigencias básicas de calidad que deben cumplir los edificios, incluidas sus instalaciones, para satisfacer los requisitos básicos de seguridad y habitabilidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"23d74db217": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La comparativa refleja fielmente el alcance del servicio de instalaciones en 3D de UDA (modelado LOD 300-350) y lo que queda excluido (cálculo y justificación).",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07",
+"cita": "modelado LOD 300–350, familias y planos, a partir de tus criterios o cálculos. Sustituye a Instalaciones.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2cbb3bc5d6": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Extrae correctamente los límites de jornada y descansos del Estatuto de los Trabajadores para empleados, contrastándolos de forma razonada con la flexibilidad de contratar por servicios.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 34.3 y 34.4",
+"cita": "Entre el final de una jornada y el comienzo de la siguiente mediarán, como mínimo, doce horas. El número de horas ordinarias de trabajo efectivo no podrá ser superior a nueve diarias",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6a2be37516": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos describen con exactitud el alcance de los modelos LOD 200 y LOD 300, así como la preparación de las familias para mediciones, tal como indica la fuente.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07",
+"cita": "Modelo del P. Básico | LOD 200: volumetría, muros, forjados, cubiertas, huecos y distribución, con los tipos de muros, suelos y cubiertas y sus capas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fa342e7b6c": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La afirmación desmiente correctamente el mito, confirmando que los honorarios de UDA se basan en el trabajo entregado y no dependen de la ejecución final de la obra.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Nuestros honorarios se asocian al trabajo de delineación, cálculo y modelado entregado en tiempo y forma, independientemente de si el promotor consigue financiación o decide continuar con la fase de obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5f4fc98c98": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos reflejan con exactitud las reglas de cómputo de superficies establecidas en el listado de documentos de UDA, vitales para solicitar un presupuesto correcto.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, 03 Superficies y viviendas",
+"cita": "Incluye garaje, trasteros, zonas comunes y locales. No cuentan jardines, parcela ni exteriores sin edificar.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ad294ef9da": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El dato es exacto y refleja fielmente los requisitos de horas o créditos ECTS exigidos en la declaración responsable para acreditar el módulo 2 mediante plan de estudios.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Disposición final octava, 2. Modelo de declaración responsable",
+"cita": "un mínimo de 40 horas, o 4 créditos ECTS, de los contenidos del módulo 2 del curso de conocimientos básicos, específicos y administrativos de certificación de la eficiencia energética de edificios",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5eb1534b1c": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Desmiente el mito con precisión, aportando las cifras exactas del coste real de un arquitecto en plantilla según la tabla de UDA, lo cual es clave para la toma de decisiones del fundador.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 01",
+"cita": "Un empleado no cuesta solo su sueldo: cuesta encontrarlo, formarlo, supervisarlo y pagarlo también cuando no hay proyectos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8c3c3888af": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Aclara un temor común al confirmar que el precio base del proyecto completo es idéntico tanto si se desarrolla en CAD como en Revit.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, Precios de referencia de un vistazo",
+"cita": "P. Básico + P. Ejecución completos, en CAD o en Revit (mismo precio). Precios estimativos: tras analizar tu proyecto, te enviamos un presupuesto cerrado en 24–72 horas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"a40a331d8d": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "Explica de forma clara y exacta cómo se presupuestan los adosados en UDA, demostrando que no se cobra la superficie total repetida, lo que supone un gran ahorro para el despacho.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04 Pareados / Adosados / Conjunto",
+"cita": "Diseñamos la vivienda una vez; las repetidas apenas suman. Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d57643ef95": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Resume perfectamente los tres beneficios principales de externalizar con UDA tal y como se exponen en la web, sin alterar el mensaje original.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, sección Haz que tu despacho crezca sin límites",
+"cita": "Delega más, mejora tu precio/hora, llega a más cliente y escala tu estudio. 🗸 Flexibilidad: Elimina costes fijos; contrata solo por proyectos. 🗸 Enfoque: Tú gestionas, nosotros te hacemos toda la parte técnica.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6c2f5b96ed": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Desmiente el mito sobre la pérdida de autoría o confidencialidad, confirmando que UDA opera como marca blanca anónima, un aspecto fundamental para la confianza del arquitecto.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, sección Haz que tu estudio escale más",
+"cita": "Mantenemos siempre nuestro anonimato para ti, ya que queremos ser tu apoyo a largo plazo y que te lleves todo el crédito del trabajo hacia tus clientes.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4be96d2920": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La comparativa refleja fielmente cómo se divide el trabajo y el presupuesto en bloques de viviendas según la tabla de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 05 Bloques de viviendas",
+"cita": "Estructuras se calcula sobre toda la superficie construida del edificio, porque la cimentación, los sótanos y el cálculo dependen del edificio entero.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1d20946cc3": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen correctamente las opciones de externalización parcial, el uso de plantillas propias y el control de calidad normativo.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Si tu equipo domina el diseño arquitectónico pero la estructura y el cumplimiento de las instalaciones suponen un cuello de botella, puedes externalizar exclusivamente el modelado en CYPE y la redacción de las memorias CTE.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5850a8b152": {
+"veredicto": "error",
+"calidad": 2.0,
+"motivo": "Se atribuyen los requisitos de un despido colectivo (memoria, informe de Inspección, periodo de consultas) al hecho general de tener a alguien en plantilla, lo cual es falso para la contratación ordinaria.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 51",
+"cita": "La comunicación a los representantes legales de los trabajadores y a la autoridad laboral deberá ir acompañada de una memoria explicativa de las causas del despido colectivo",
+"correccion": "Aclarar que estos requisitos aplican específicamente a los despidos colectivos o expedientes de regulación de empleo, no a la contratación ordinaria en plantilla.",
+"fecha": "2026-10-20"
+},
+"0c4ec5489e": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos recogen literalmente las exigencias de la envolvente térmica establecidas en el artículo 15.2 del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 15.2",
+"cita": "Las características de los elementos de la envolvente térmica en función de su zona climática serán tales que eviten las descompensaciones en la calidad térmica de los diferentes espacios habitables.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d4f2e1cb8b": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La fuente indica explícitamente que las viviendas unifamiliares y reformas se tratan con el mismo cuidado que un proyecto grande.",
+"fuente_ok": true,
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 03 Vivienda unifamiliar y reforma",
+"cita": "El trabajo con el que más autónomos y pequeños despachos confían en nosotros, con el mismo cuidado que un proyecto grande.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6fac6eab41": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los tres puntos describen exactamente las tres piezas que componen el presupuesto de un bloque de viviendas según la tabla de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 05 Bloques de viviendas",
+"cita": "Se presupuestan tres piezas: las viviendas tipo completas, las viviendas repetidas con un pequeño porcentaje y el edificio (fachadas, núcleos, cubiertas, zonas comunes y garaje) con un 6 % de la superficie total.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c8a037860b": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los datos aportados coinciden exactamente con el ejemplo de la tabla para un bloque de 32 viviendas y se presentan correctamente como precios de referencia.",
+"fuente_ok": true,
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"cita": "Bloque de 32 viviendas: Plan de Ejecución BIM 900 € · Instalaciones en 3D 6.500 €.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8c744d1cc5": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los puntos enumeran correctamente las tareas que quedan excluidas del servicio de UDA y son responsabilidad exclusiva del despacho.",
+"fuente_ok": true,
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 09 Qué incluye cada partida",
+"cita": "No incluye: conceptualización y diseño, renders e infografías (opciones adicionales bajo presupuesto), certificaciones externas (LEED, BREEAM…), ensayos, topografía y geotecnia, firma, visado y tramitación, dirección de obra ni coordinación de seguridad y salud en obra.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"052cdab568": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los tres puntos reflejan fielmente los pasos del flujo de trabajo descritos en las preguntas frecuentes de UDA.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Nuestro Project Manager audita el trabajo internamente y, tras validar que cumple los estándares, te entregamos los archivos nativos y PDFs. Son 100% tuyos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"c64b49dc00": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Estatuto establece claramente que la formación de adaptación corre a cargo de la empresa y computa como tiempo de trabajo efectivo.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 23.1.d",
+"cita": "La misma correrá a cargo de la empresa, sin perjuicio de la posibilidad de obtener a tal efecto los créditos destinados a la formación. El tiempo destinado a la formación se considerará en todo caso tiempo de trabajo efectivo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b7737fb201": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La disposición derogatoria única del RD 1371/2007 deroga expresamente la Orden que aprobaba el pliego RB-90.",
+"fuente_ok": true,
+"referencia": "RD 1371/2007, disposición derogatoria única",
+"cita": "La Orden 4 de julio de 1990, del Ministerio de Obras públicas y Urbanismo, por la que se aprueba el pliego de prescripciones técnicas generales para la recepción de bloques de hormigón en las obras de construcción, RB-90.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6e32a8303b": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La comparativa refleja correctamente las opciones de punto de partida y entorno de trabajo disponibles en el listado de documentos de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, sección 04",
+"cita": "Tengo plantilla o biblioteca de familias propia y quiero que la uséis Plan de Ejecución BIM (BEP) | Aporto mi propio modelo Revit",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4f4dcc384d": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El Estatuto exige comunicación a la autoridad laboral y periodo de consultas para reducir jornada o suspender contratos, trámites inexistentes al externalizar.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 47.1 y 47.3",
+"cita": "se iniciará mediante comunicación a la autoridad laboral competente y la apertura simultánea de un periodo de consultas con la representación legal de las personas trabajadoras",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6b47638412": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los tres puntos resumen con exactitud los derechos de reducción de jornada y ausencias estipulados en los apartados 5 y 6 del artículo 37.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 37.5 y 37.6",
+"cita": "Tendrá el mismo derecho quien precise encargarse del cuidado directo de un familiar hasta el segundo grado de consanguinidad o afinidad que, por razones de edad, accidente o enfermedad, no pueda valerse por sí mismo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"dc15374cf1": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La afirmación refleja literalmente las condiciones de entrega de los archivos al trabajar en entorno Revit con UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, sección 04",
+"cita": "Revit arquitectura · modelo con sus familias · entrega IFC + PDF, y RVT con el pago final",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3aec27a1c4": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Los datos coinciden exactamente con el ejemplo de la tabla de presupuestos, presentándose correctamente como un precio de referencia.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 04",
+"cita": "Superficie que se presupuesta → P. Básico 2.146 € + P. Ejecución 4.211 € = 6.357 € (530 € por vivienda) | 570 m²",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ec406bca1e": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La afirmación refleja fielmente las condiciones del servicio de UDA indicadas en el documento de solicitud.",
+"fuente_ok": true,
+"referencia": "UDA · Documento 02, Listado de documentos a delegar",
+"cita": "Solo presupuestamos y hacemos lo que marques. Lo que no esté marcado se entiende que lo realiza tu despacho.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"7a6aca45c0": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El artículo 4.1 del CTE establece explícitamente que los Documentos Reconocidos deben contar con el reconocimiento del Ministerio, que mantendrá un registro público.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 4.1",
+"cita": "se crean los Documentos Reconocidos del CTE, definidos como documentos técnicos, sin carácter reglamentario, que cuenten con el reconocimiento del Ministerio de Vivienda que mantendrá un registro público de los mismos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"87e6f3c44b": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La fuente confirma literalmente el periodo de garantía de 7 días para subsanaciones sin coste adicional.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Sí, incluimos un periodo de garantía de 7 días tras la entrega para «Subsanaciones» sin coste adicional.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e9e4565200": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "Los precios de UDA deben presentarse siempre como precios de referencia u orientativos, no como costes fijos absolutos.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07",
+"cita": "Bloque de 32 viviendas: Plan de Ejecución BIM 900 € · Instalaciones en 3D 6.500 €.",
+"correccion": "Modelar las instalaciones 3D de un bloque de 32 viviendas tiene un coste de referencia de 6.500 euros y 900 euros de Plan de Ejecución BIM.",
+"fecha": "2026-10-20"
+},
+"a42c16ce10": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "El tema indica erróneamente DB HS (Salubridad) cuando la exigencia HE 4 pertenece al DB HE (Ahorro de energía).",
+"fuente_ok": true,
+"referencia": "CTE DB HE, Sección HE 4, apartado 1.1.d",
+"cita": "climatizaciones de: piscinas cubiertas nuevas, piscinas cubiertas existentes en las que se renueve la instalación de generación térmica o piscinas descubiertas existentes que pasen a ser cubiertas.",
+"correccion": "El tema debe ser CTE · DB HE · Ahorro de energía.",
+"fecha": "2026-10-20"
+},
+"09f3fd6c65": {
+"veredicto": "error",
+"calidad": 2.0,
+"motivo": "El tema indica DB HS (Salubridad), pero la NBE EA-95 trata sobre estructuras de acero y pertenece a las disposiciones transitorias de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Disposición transitoria segunda, apartado 2.c",
+"cita": "NBE EA-95 «Estructuras de acero en edificación» aplicado conjuntamente con el Real Decreto 1370/1988, de 11 de noviembre, de modificación parcial de la Norma MV-1962",
+"correccion": "El tema debe ser CTE · Disposiciones generales o CTE · Parte I.",
+"fecha": "2026-10-20"
+},
+"3261949d1e": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta refleja exactamente las dos opciones que da el artículo 15.5 del CTE para el suministro de energía renovable.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 15.5",
+"cita": "bien generada en el propio edificio o bien a través de la conexión a un sistema urbano de calefacción.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"057f20ea72": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "El tema indica Seguridad estructural, pero el contenido del proyecto y sus presupuestos pertenecen al Anejo I de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Anejo I, apartado V",
+"cita": "Presupuesto detallado. Cuadro de precios agrupado por capítulos. Resumen por capítulos, con expresión del valor final de ejecución y contrata. Incluirá el presupuesto del control de calidad.",
+"correccion": "El tema debe ser CTE · Contenido del proyecto (Anejo I).",
+"fecha": "2026-10-20"
+},
+"a45b75f605": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "Añade información que no está en la fuente ('estructurado para la contratación de la obra').",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, 06 Proyecto de Ejecución",
+"cita": "Mediciones y anejos | Mediciones y presupuesto Pliego de condiciones Estudio de seguridad y salud Estudio de gestión de residuos Plan de control de calidad",
+"correccion": "Eliminar 'estructurado para la contratación de la obra', ya que el texto original solo indica 'Mediciones y presupuesto'.",
+"fecha": "2026-10-20"
+},
+"1126451bbc": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La opción A refleja literalmente lo indicado en el Anejo A del DB HE para uso residencial privado.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Anejo A",
+"cita": "En uso residencial privado, todos los espacios interiores de las viviendas se consideran acondicionados y deben cumplir las condiciones operacionales de acuerdo al Anejo D.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"05550d3cce": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El precio se presenta correctamente como referencia y los datos coinciden exactamente con la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 08 Actuaciones específicas",
+"cita": "Adecuación de local: actividad clasificada (hostelería, gimnasio, clínica…) | 2.800 € hasta 150 m² + 8 €/m²",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"dd2f8702b6": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los tres pliegos mencionados aparecen explícitamente en la disposición derogatoria única del RD 1371/2007.",
+"fuente_ok": true,
+"referencia": "RD 1371/2007 (CTE DB HR), Disposición derogatoria única",
+"cita": "La Orden de 31 de mayo de 1985, de la Presidencia de Gobierno, por la que se aprueba el Pliego General de condiciones para la recepción de yesos y escayolas en las obras de construcción, RY-85.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5f47e69ada": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La afirmación se deduce directamente de la indicación de que es necesario el Proyecto Básico para hacer el de Ejecución.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, 06 Proyecto de Ejecución",
+"cita": "Para hacer el Proyecto de Ejecución es necesario el Proyecto Básico, nuestro o de tu despacho.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"64922e9173": {
+"veredicto": "error",
+"calidad": 5.0,
+"motivo": "La fuente proporcionada (Estatuto de los Trabajadores) no contiene información sobre la contratación por servicios para rellenar esa columna de la comparativa.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 11.4",
+"cita": "Las situaciones de incapacidad temporal, nacimiento, adopción, guarda con fines de adopción, acogimiento, riesgo durante el embarazo, riesgo durante la lactancia, violencia de género, interrumpirán el cómputo de la duración del contrato.",
+"correccion": "Eliminar la columna de 'Contratar por servicios' o utilizar una fuente de UDA que contenga esa información, ya que el Estatuto de los Trabajadores solo regula la contratación laboral.",
+"fecha": "2026-10-20"
+},
+"dce7f3918b": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Las celdas corresponden fielmente a las columnas de la comparativa original de la fuente de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, 01 ¿Contratar a alguien o delegar en UDA?",
+"cita": "Plazos | Dependen de una sola persona. | Plazos comprometidos; el equipo crece si el proyecto lo pide. [...] Meses sin trabajo y despidos | Nóminas igualmente, y después indemnización y papeleo. | Coste cero. Sin permanencia.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"305686fc5e": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "El veredicto de mito es correcto, ya que el Estatuto prohíbe expresamente nuevas externalizaciones durante un ERTE salvo excepciones muy concretas.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 47.7.d",
+"cita": "Dentro del periodo de aplicación del expediente no podrán realizarse horas extraordinarias, establecerse nuevas externalizaciones de actividad ni concertarse nuevas contrataciones laborales.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0555d6cbc8": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto del CTE indica literalmente que la exigencia HE 2 se desarrolla en el RITE y su aplicación se define en el proyecto.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), art. 15.3",
+"cita": "Esta exigencia se desarrolla actualmente en el vigente Reglamento de Instalaciones Térmicas en los Edificios (RITE), y su aplicación quedará definida en el proyecto del edificio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"54a0c306c0": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "Los puntos resumen fielmente la definición, finalidad y requisito de registro de los Documentos Reconocidos según el artículo 4.1.",
+"fuente_ok": true,
+"referencia": "CTE, art. 4.1",
+"cita": "Como complemento de los Documentos Básicos, de carácter reglamentario, incluidos en el CTE y con el fin de lograr una mayor eficacia en su aplicación, se crean los Documentos Reconocidos",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"802a04a44e": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El Estatuto detalla exactamente estas causas económicas (dos trimestres), técnicas, organizativas y productivas para la suspensión de contratos.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 47.2",
+"cita": "se entenderá que la disminución es persistente si durante dos trimestres consecutivos el nivel de ingresos ordinarios o ventas de cada trimestre es inferior al registrado en el mismo trimestre",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"013c57ffc4": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La tabla de UDA especifica literalmente que la superficie de locales, oficinas o garaje público solo se indica si supera una cuarta parte del edificio.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, apartado 03",
+"cita": "Superficie de locales, oficinas o garaje público | m² | Solo si superan una cuarta parte del edificio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"dac2dd4a6b": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Las limitaciones de reducción de jornada, comunicaciones obligatorias y prohibición de nuevas contrataciones o externalizaciones están recogidas expresamente en el Estatuto para trabajadores en plantilla.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 47.7",
+"cita": "La reducción de jornada podrá ser de entre un diez y un setenta por ciento y computarse sobre la base de la jornada diaria, semanal, mensual o anual.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d036b14d4a": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El artículo 3.1 enumera exactamente estas tres excepciones al ámbito de aplicación del real decreto sobre residuos de construcción y demolición.",
+"fuente_ok": true,
+"referencia": "RD 105/2008, art. 3.1",
+"cita": "Las tierras y piedras no contaminadas por sustancias peligrosas reutilizadas en la misma obra, en una obra distinta o en una actividad de restauración, acondicionamiento o relleno",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"7575f49d47": {
+"veredicto": "dudosa",
+"calidad": 2.0,
+"motivo": "El texto proporcionado no incluye la Parte C del anexo IV, por lo que no se puede verificar la afirmación específica sobre los puestos en el exterior de los locales.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, Parte C, Observación preliminar",
+"cita": "las obligaciones previstas en la presente parte del anexo se aplicarán siempre que lo exijan las características de la obra o de la actividad, las circunstancias o cualquier riesgo.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"30deda5b0b": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La disposición adicional tercera establece explícitamente que la regulación del contrato fijo de obra y su indemnización por cese se remiten a la negociación colectiva.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, disposición adicional tercera",
+"cita": "se entiende sin perjuicio de lo que se establece o pueda establecerse sobre la regulación del contrato fijo de obra, incluida su indemnización por cese, en la negociación colectiva",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"54949549cd": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El veredicto es correcto y la explicación refleja fielmente los límites de jornada y descanso establecidos en el Estatuto de los Trabajadores.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 34.3",
+"cita": "Entre el final de una jornada y el comienzo de la siguiente mediarán, como mínimo, doce horas. El número de horas ordinarias de trabajo efectivo no podrá ser superior a nueve diarias",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1941077978": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Desmiente correctamente el mito basándose en los criterios exactos de UDA para diferenciar entre vivienda tipo y variante.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 05",
+"cita": "Vivienda tipo: distribución propia; si la cocina o los baños cambian de sitio, es una tipo nueva. Variante: cambios menores (un tabique, un hueco, la terraza, acabados o versión adaptada).",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0e93d0ad20": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Aclara perfectamente el alcance del modelado de instalaciones en Revit, evitando malentendidos sobre cálculos y justificaciones.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07",
+"cita": "Las instalaciones en 3D no incluyen cálculo ni dimensionado de ingeniería, justificación reglamentaria (RITE, REBT, ICT…), boletines ni otras instalaciones no listadas",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"456b0a85e6": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "Resume de forma exacta y directa los tres pasos indicados en el documento para solicitar un presupuesto.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, Pasos 1 a 3",
+"cita": "PASO 1 Cuéntanos tu proyecto Datos, tipo de proyecto, superficies y entorno de trabajo (apartados 1 a 4). | PASO 2 Marca lo que delegas",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8c8acffe8d": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Explica con precisión cómo se presupuestan los conjuntos de unifamiliares según la tabla de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"cita": "Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6c70184af8": {
+"veredicto": "ok",
+"calidad": 4.0,
+"motivo": "Los puntos reflejan fielmente lo dispuesto en la disposición adicional tercera sobre la negociación colectiva y el contrato fijo de obra.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, disposición adicional tercera",
+"cita": "se entiende sin perjuicio de lo que se establece o pueda establecerse sobre la regulación del contrato fijo de obra, incluida su indemnización por cese, en la negociación colectiva",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"317559d1b9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Sintetiza correctamente las obligaciones y funciones de los recursos preventivos en obra según el Real Decreto.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, disposición adicional única",
+"cita": "El plan de seguridad y salud determinará la forma de llevar a cabo la presencia de los recursos preventivos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3e38d5c1fb": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Detalla con exactitud los porcentajes de reducción de cada partida al trabajar en Revit, tal como indica la fuente.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07",
+"cita": "Mediciones y presupuestos | −60 % | Las cantidades salen directamente de las familias del modelo. Construcción | −60 % | Secciones, carpinterías y acabados se extraen del modelo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1a9fbd5456": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La afirmación desmiente correctamente el mito, ya que la tabla de UDA especifica que el peso del precio recae en la parte fija, beneficiando a los proyectos de gran superficie.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 06",
+"cita": "El peso del precio está en la parte fija: los proyectos grandes no salen perjudicados.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2ff1314f84": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos resumen fielmente el alcance del modelado de instalaciones en Revit según la tabla de presupuestos de UDA, incluyendo las redes exigibles, el uso de criterios aportados y la tarificación.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07",
+"cita": "Todas las instalaciones exigibles en 3D (PCI, climatización, ventilación, fontanería, saneamiento, electricidad y telecomunicaciones, tierras, alumbrado exterior, fotovoltaica y gas): modelado LOD 300–350, familias y planos, a partir de tus criterios o cálculos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"efb6e2aaa9": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Desmiente el mito con precisión, ya que la fuente indica explícitamente que la estructura se calcula sobre toda la superficie construida del edificio, a diferencia del resto de partidas.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 05",
+"cita": "Estructuras se calcula sobre toda la superficie construida del edificio, porque la cimentación, los sótanos y el cálculo dependen del edificio entero.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"18c3887146": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Aclara correctamente el procedimiento para delegar actuaciones específicas, confirmando que al ser un paquete cerrado no es necesario marcar los apartados 5 y 6.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 07",
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto. No hace falta marcar los apartados 5 y 6.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6b80d3e323": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La afirmación refleja exactamente lo dispuesto en el CTE sobre el papel de los Documentos Básicos en el establecimiento de los aspectos técnicos y formales sujetos a control.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 6.2.2",
+"cita": "Los DB establecen, en su caso, los aspectos técnicos y formales del proyecto que deban ser objeto de control para la aplicación de los procedimientos necesarios para el cumplimiento de las exigencias básicas.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1d9bb4432f": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos describen de forma exacta y completa el contenido del paquete de actuaciones específicas según el listado de documentos de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 07",
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto. No hace falta marcar los apartados 5 y 6.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"affbecd368": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El dato es correcto y se deduce directamente de la fuente, explicando el contenido íntegro que abarca el precio cerrado de las actuaciones específicas.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 07",
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto. No hace falta marcar los apartados 5 y 6.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d4e02f6c2f": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos recogen fielmente las condiciones de diseño establecidas en la exigencia básica HE 1 para el control de la demanda energética.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), art. 15.2",
+"cita": "Las características de los elementos de la envolvente térmica en función de su zona climática, serán tales que eviten las descompensaciones en la calidad térmica de los diferentes espacios habitables.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"f88b25ac77": {
+"veredicto": "dudosa",
+"calidad": 6.0,
+"motivo": "La expresión 'despedir a parte de tu equipo' es ambigua y no siempre constituye un despido colectivo; aplicar las exigencias del artículo 51 a cualquier despido parcial puede llevar a un arquitecto a un error legal.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 51",
+"cita": "La comunicación a los representantes legales de los trabajadores y a la autoridad laboral deberá ir acompañada de una memoria explicativa de las causas del despido colectivo",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4a3ced2eef": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La respuesta correcta es la A, ya que el CTE prohíbe explícitamente rebajar las prestaciones declaradas en el proyecto básico al redactar el de ejecución.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 6.1.3.b",
+"cita": "El proyecto de ejecución desarrollará el proyecto básico y definirá la obra en su totalidad sin que en él puedan rebajarse las prestaciones declaradas en el básico",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"940acdb7ea": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos reflejan con exactitud los documentos y el alcance incluidos en la partida de Proyecto Básico según el listado de servicios de UDA.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09",
+"cita": "Memoria descriptiva, constructiva y estructural preliminar · CTE seguridad en caso de incendio · Normativa de aplicación. P. Básico · Mediciones | Mediciones y presupuesto estimado.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"1db88de49b": {
+"veredicto": "error",
+"calidad": 6.0,
+"motivo": "Afirmar que no supone un sobrecoste es falso, ya que la tabla de precios indica explícitamente que la partida de Gestión y análisis tiene un coste fijo y un coste por metro cuadrado.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 03",
+"cita": "Gestión y análisis (siempre incluida) | 200 € | 0,50 € | 200 € | 0,50 €",
+"correccion": "La gestión y análisis técnico está siempre incluida en el servicio, pero tiene un coste asociado en el presupuesto (fijo y por m²).",
+"fecha": "2026-10-20"
+},
+"b37ca43321": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los tres puntos resumen fielmente las condiciones obligatorias que deben reunir los seguros de caución según la Ley de Ordenación de la Edificación.",
+"fuente_ok": true,
+"referencia": "LOE, art. 19.3",
+"cita": "El asegurador asume el compromiso de indemnizar al asegurado al primer requerimiento. c) El asegurador no podrá oponer al asegurado las excepciones que puedan corresponderle contra el tomador del seguro.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"88992cf8b7": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "Desmiente correctamente el mito basándose en la política de UDA de trabajar con presupuestos cerrados, lo que evita desviaciones económicas.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"cita": "Trabajamos siempre con presupuestos cerrados según la tipología y metros cuadrados. De esta forma, asumes un coste fijo, eliminando sorpresas o desviaciones presupuestarias para tu estudio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"e3ee9c69bc": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El Estatuto de los Trabajadores establece claramente que las situaciones de incapacidad temporal y nacimiento interrumpen el cómputo de la duración del contrato formativo.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 11.4",
+"cita": "Las situaciones de incapacidad temporal, nacimiento, adopción, guarda con fines de adopción, acogimiento, riesgo durante el embarazo, riesgo durante la lactancia, violencia de género, interrumpirán el cómputo de la duración del contrato.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"7e69b342b9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos recogen de forma precisa las obligaciones formales, las causas de interrupción y las consecuencias del incumplimiento del contrato formativo según la normativa laboral.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 11.4",
+"cita": "Los contratos formativos celebrados en fraude de ley o aquellos respecto de los cuales la empresa incumpla sus obligaciones formativas se entenderán concertados como contratos indefinidos de carácter ordinario.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d237a3e997": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los documentos listados coinciden exactamente con los indicados en la fuente para el Proyecto Básico.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"cita": "Memoria descriptiva, constructiva y estructural preliminar Cumplimiento del CTE: seguridad en caso de incendio (DB-SI) Normativa de aplicación y justificación urbanística Mediciones y presupuesto estimado",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"18dfa111d9": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Las reglas de presupuestación para casos especiales se deducen directamente de las condiciones de la tabla de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de presupuestos, 10 Condiciones y plazos",
+"cita": "P. Ejecución sobre un P. Básico ajeno sin editables, o estado actual de un edificio a rehabilitar: +50 % de la Planimetría del P. Básico.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"123588340f": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La documentación incluida en el paquete de actuaciones específicas coincide con lo ofertado en la fuente.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de documentos, 07 Actuaciones específicas",
+"cita": "Precio cerrado por paquete, con la documentación completa: estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3e21eb1742": {
+"veredicto": "error",
+"calidad": 1.0,
+"motivo": "El tema indica 'DB HE Ahorro de energía', pero la pregunta trata sobre el DB SE (Seguridad Estructural). Además, se refiere a un régimen transitorio de 2006 ya caducado.",
+"fuente_ok": true,
+"referencia": "CTE, Disposición transitoria tercera, apartado 2",
+"cita": "«DB SE-C Cimientos» aplicado conjuntamente con los «DB SE Seguridad Estructural» y «DB SE-AE Acciones en la Edificación».",
+"correccion": "Cambiar el tema a 'DB SE Seguridad Estructural' o sustituir la pregunta por una vigente del DB HE.",
+"fecha": "2026-10-20"
+},
+"39cb00cc1a": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "Los criterios para el control de recepción mediante ensayos están respaldados literalmente por el articulado del CTE.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 7.2.3.2",
+"cita": "sobre el muestreo del producto, los ensayos a realizar, los criterios de aceptación y rechazo y las acciones a adoptar.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"20da31522b": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los anejos y documentos listados para el Proyecto de Ejecución se corresponden con los servicios que ofrece UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de documentos, 06 Proyecto de Ejecución",
+"cita": "Memoria constructiva y estructural Cumplimiento completo del CTE (SE, SI, SUA, HS, HR, HE) [...] Mediciones y presupuesto Pliego de condiciones Estudio de seguridad y salud Estudio de gestión de residuos Plan de control de calidad",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5fd6becc08": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La afirmación refleja fielmente que la gestión, análisis y control de calidad están siempre incluidos al delegar el Proyecto Básico.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de documentos, 05 Proyecto Básico",
+"cita": "La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"8215fa5b9e": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El texto confirma que UDA limita la aceptación de proyectos para poder garantizar el cumplimiento estricto de los plazos de entrega.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com, sección Paso a paso",
+"cita": "Nuestro tiempo es limitado y sólo aceptamos proyectos si vemos que podemos tenerlos listos para la fecha indicada.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5d314bc9ef": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos reflejan exactamente las tres opciones de punto de partida indicadas en el listado de documentos de UDA.",
+"fuente_ok": true,
+"referencia": "UDA · Listado de Documentos a Delegar, sección 04",
+"cita": "UDA hace también el Proyecto Básico | Mi despacho aporta el P. Básico en editable (DWG / RVT) Mi despacho aporta el P. Básico solo en PDF / bocetos",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4048d321f3": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El CTE establece que el control de recepción mediante ensayos debe incluir los criterios de rechazo y las acciones a adoptar, y el Anejo I exige incluirlo en el Pliego de condiciones del proyecto.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, art. 7.2.3.2 y Anejo I, III",
+"cita": "este control se efectuará de acuerdo con los criterios establecidos en el proyecto o indicados por la dirección facultativa sobre el muestreo del producto, los ensayos a realizar, los criterios de aceptación y rechazo y las acciones a adoptar.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"94c25725fe": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La comparativa refleja fielmente el alcance documental y el modelo de negocio de las actuaciones específicas delegadas en UDA según la tabla de presupuestos.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"cita": "Precios para el despacho: tú presupuestas, firmas y tramitas; nuestro precio te deja margen. Actuación (documentación completa: estado actual y reformado, normativa, memoria, mediciones)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6643f288ab": {
+"veredicto": "error",
+"calidad": 8.0,
+"motivo": "El HE 4 pertenece al DB HE (Ahorro de Energía), no al DB HS. Además, la afirmación es falsa al usar 'solo', ya que una ampliación también aplica el HE 4 si forma parte de una reforma íntegra.",
+"fuente_ok": true,
+"referencia": "RD 732/2019 (CTE), Sección HE 4, apdo. 1.1",
+"cita": "ampliaciones o intervenciones, no cubiertas en el punto anterior, en edificios existentes con una demanda inicial de ACS superior a 5.000 l/día, que supongan un incremento superior al 50% de la demanda inicial;",
+"correccion": "El HE 4 es de Ahorro de Energía. Las ampliaciones también aplican el HE 4 si forman parte de una reforma íntegra del edificio o de la instalación térmica con demanda superior a 100 l/día.",
+"fecha": "2026-10-20"
+},
+"8e615bee5d": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El Anejo III del CTE define explícitamente las cocinas, baños, aseos, pasillos y distribuidores como recintos habitables en edificios de cualquier uso.",
+"fuente_ok": true,
+"referencia": "CTE Parte I, Anejo III",
+"cita": "e) Cocinas, baños, aseos, pasillos y distribuidores, en edificios de cualquier uso.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"b53d72711a": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "Los puntos resumen correctamente las obligaciones del juez y los límites de indemnización y salario diario que asume el FOGASA en procedimientos concursales.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 33.3",
+"cita": "Las indemnizaciones a abonar a cargo del Fondo, con independencia de lo que se pueda pactar en el proceso concursal, se calcularán sobre la base de veinte días por año de servicio, con el límite máximo de una anualidad,",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3b968f3759": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La tabla de presupuestos de UDA especifica claramente que solo se contabilizan los metros cuadrados construidos, excluyendo jardines, parcelas y exteriores sin edificar.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 02",
+"cita": "Los m² son construidos: no cuentan jardines, parcela ni exteriores sin edificar.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"268b36c277": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "Los puntos describen con exactitud el modelo de trabajo de UDA, incluyendo la firma del despacho, el pago por fases y el plazo para recibir un presupuesto cerrado.",
+"fuente_ok": true,
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 02",
+"cita": "Proyectos Básicos y de Ejecución para despachos · 100 % online · Precio cerrado · Tu firma al final [...] PRESUPUESTO EN 24–72 h: Precio cerrado. Sin sorpresas. Pagas por fases y validas cada entrega.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5ea83f157a": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La afirmación refleja fielmente la prohibición de rescindir el seguro de mutuo acuerdo una vez que las coberturas han tomado efecto, tal como indica la LOE.",
+"fuente_ok": true,
+"referencia": "LOE, art. 19.4",
+"cita": "Una vez tomen efecto las coberturas del seguro, no podrá rescindirse ni resolverse el contrato de mutuo acuerdo antes del transcurso del plazo de duración previsto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"fcab8a9853": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "El porcentaje de tiempo ganado coincide exactamente con el dato estadístico publicado literalmente en la web de UDA.",
+"fuente_ok": true,
+"referencia": "uniondearquitectos.com",
+"cita": "Los estudios que externalizan ganan hasta un 67% más de tiempo para actividades de valor.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"ad2f0c5fef": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La comparativa refleja fielmente las condiciones de trabajo en Revit con UDA, incluyendo el uso de plantillas propias, el aprovechamiento de modelos previos y los formatos de entrega.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 07",
+"cita": "Si tienes plantilla o biblioteca de familias propia, trabajamos con ella para que el modelo encaje con tu despacho.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4f8eadcc19": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta correcta se extrae literalmente de la disposición final primera del CTE, que establece su carácter básico y competencia estatal.",
+"fuente_ok": true,
+"referencia": "CTE, Disposición final primera",
+"cita": "Este Real Decreto tiene carácter básico y se dicta al amparo de las competencias que se atribuyen al Estado en los artículos 149.1.16.ª, 23.ª y 25.ª de la Constitución Española",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"594191229e": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "Los puntos resumen correctamente las prohibiciones de horas extra, contrataciones y externalizaciones durante un ERTE, incluyendo la excepción por falta de capacitación.",
+"fuente_ok": true,
+"referencia": "Estatuto de los Trabajadores, art. 47.7.d",
+"cita": "Dentro del periodo de aplicación del expediente no podrán realizarse horas extraordinarias, establecerse nuevas externalizaciones de actividad ni concertarse nuevas contrataciones laborales.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3f7c4eec97": {
+"veredicto": "ok",
+"calidad": 9.0,
+"motivo": "La afirmación es exacta según la disposición adicional única, que obliga a que el plan de seguridad y salud defina la forma de presencia de los recursos preventivos.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, disp. adic. única, a)",
+"cita": "El plan de seguridad y salud determinará la forma de llevar a cabo la presencia de los recursos preventivos.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"9704ea311e": {
+"veredicto": "error",
+"calidad": 7.0,
+"motivo": "La fuente indica que se entregan 'Planos de carpinterías' o 'Carpinterías', no 'Definición técnica de carpinterías'.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 09 / Listado de documentos de UDA, apartado 06",
+"cita": "P. Ejecución · Construcción | Sección y detalles constructivos 1:20 · Acabados y superficies · Carpinterías.",
+"correccion": "En la columna de UDA para carpinterías debe figurar 'Planos de carpinterías' o 'Carpinterías', tal como indica la fuente.",
+"fecha": "2026-10-20"
+},
+"5e90c43b6a": {
+"veredicto": "ok",
+"calidad": 10.0,
+"motivo": "El precio se presenta correctamente como un valor de referencia y coincide exactamente con el ejemplo de la tabla de presupuestos para 80 viviendas con 4 tipologías.",
+"fuente_ok": true,
+"referencia": "Tabla de presupuestos de UDA, apartado 05",
+"cita": "Supuesto: 140 m² construidos por vivienda (con su garaje y zonas comunes) y el resto de viviendas idénticas a las tipo. Ejemplo: 80 viviendas con 4 tipologías salen a 263 € por vivienda.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4949e1f657": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La afirmación refleja exactamente las instrucciones del listado de documentos de UDA para calcular el presupuesto, aclarando cómo se contabilizan las viviendas repetidas.",
+"fuente_ok": true,
+"referencia": "Listado de documentos de UDA, 03 Superficies y viviendas",
+"cita": "Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto.",
+"correccion": null,
+"fecha": "2026-10-20"
 }
 }
