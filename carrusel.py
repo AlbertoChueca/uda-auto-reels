@@ -487,10 +487,13 @@ def review(paths, c, tema):
     """Directora de arte + editora: puntúa el carrusel terminado (imágenes reales). Devuelve (nota, problemas)."""
     import base64, io, gemini
     parts = [{"text": f"""Eres directora de arte y editora jefa de una revista de arquitectura. Revisas un carrusel de UDA ·
-Unión de Arquitectos (tema: {QB.tema_titulo(tema)} · {c['subtema']}) para Instagram y LinkedIn. Público: despachos y
-arquitectos que proyectan bloques de viviendas y proyectos de envergadura: expertos y exigentes.
-Puntúa 1-10: valor técnico real para ese público (nada de obviedades), claridad y jerarquía, legibilidad en el móvil,
-acabado editorial y coherencia de marca (carbón, piedra, bronce), y probabilidad de que lo guarden o lo envíen a un socio.
+Unión de Arquitectos (tema: {QB.tema_titulo(tema)} · {c['subtema']}) para Instagram y LinkedIn. Público: fundadores de
+despachos y arquitectos autónomos que hacen bloques de viviendas y proyectos de envergadura; buscan facturar más y ganar
+tiempo, y leen en el móvil entre obra y obra.
+Puntúa 1-10: utilidad real para ese fundador (ideas claras y sencillas, sin jerga innecesaria; nada de obviedades vacías),
+claridad y jerarquía, legibilidad en el móvil, acabado premium y elegante, coherencia de marca (identidad negro y oro:
+fondo negro, filetes y acentos dorados, texto crema) y probabilidad de que lo guarden o lo envíen a un socio. El diseño
+oscuro es intencionado: no lo penalices.
 Un 8 es el mínimo para publicar. Devuelve JSON: {{"overall": number, "problemas": [str]}}"""}]
     for p in paths:
         im = Image.open(p).convert("RGB"); im.thumbnail((540, 675)); b = io.BytesIO(); im.save(b, "JPEG", quality=80)
@@ -649,5 +652,27 @@ def main():
         raise SystemExit("el carrusel no se pudo publicar en ningún sitio")
 
 
+class _Tee:
+    """Copia la salida a carrusel_estado.txt (se guarda en el repositorio: así se ve por qué no se publicó)."""
+    def __init__(self, a, b):
+        self.a, self.b = a, b
+
+    def write(self, s):
+        self.a.write(s); self.b.write(s); return len(s)
+
+    def flush(self):
+        self.a.flush(); self.b.flush()
+
+
 if __name__ == "__main__":
-    main()
+    _f = open(os.path.join(HERE, "carrusel_estado.txt"), "w")
+    _f.write(f"Carrusel {datetime.datetime.utcnow():%Y-%m-%d %H:%M} UTC\n")
+    sys.stdout = _Tee(sys.stdout, _f)
+    try:
+        main()
+    except SystemExit as e:
+        print("NO PUBLICADO:", e); raise
+    except Exception as e:
+        import traceback; traceback.print_exc(file=sys.stdout); raise
+    finally:
+        _f.close()

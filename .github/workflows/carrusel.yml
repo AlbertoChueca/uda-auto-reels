@@ -79,4 +79,4 @@ jobs:
           if-no-files-found: ignore
       - name: Recordar los temas publicados
         if: always() && steps.gate.outputs.go == 'yes'
-        run: python sincronizar.py "Carrusel $(date +%F)" carruseles.json
+        run: python sincronizar.py "Carrusel $(date +%F)" carruseles.json carrusel_estado.txt
