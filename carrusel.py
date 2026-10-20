@@ -1,6 +1,6 @@
 """Carrusel diario de UDA (Instagram + TikTok modo foto + LinkedIn como documento PDF): 5-8 diapositivas editoriales con
-la estética de los documentos de UDA (carbón, piedra, bronce, TeX Gyre Adventor). Nada de pegatinas: tipografía, filetes
-bronce y trazado técnico dibujado en código.
+la identidad premium de UDA (negro y oro, TeX Gyre Adventor). Nada de pegatinas: tipografía, filetes de oro
+y trazado técnico dibujado en código.
 
 Qué es: un tema concreto (una sección del DB SI, el contenido del proyecto según el CTE, qué cuesta contratar frente a
 delegar, qué incluye un Proyecto de Ejecución delegado...) explicado en diapositivas, un "¿Te atreves?" con una pieza
@@ -23,7 +23,15 @@ from PIL import Image, ImageDraw, ImageFilter
 import fx
 import marca
 import questions as QB
-from fx import CARBON, CARBON_D, PIEDRA, PIEDRA_D, BRONCE, ARENA, GRIS, WHITE, TERRACOTA, F_BOLD, F_REG
+from fx import CARBON_D, TERRACOTA, F_BOLD, F_REG, NEGRO, NEGRO_C, ORO, CREMA
+# identidad premium negro y oro: los nombres de la paleta se mantienen por legibilidad del código
+CARBON = CREMA                    # tinta principal (sobre negro)
+WHITE = CREMA                     # texto sobre bandas oscuras
+BRONCE = ARENA = ORO              # acentos
+GRIS = (150, 144, 132)            # texto secundario
+PIEDRA = (30, 29, 26)             # cajas sobre el fondo
+PIEDRA_D = (40, 38, 34)
+CARD = NEGRO_C                    # tarjetas (con filete de oro)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LOG = os.path.join(HERE, "carruseles.json")
@@ -33,7 +41,7 @@ MOCK = os.environ.get("QUIZ_MOCK") == "1"
 PLAN = {0: "negocio", 1: "proyecto", 2: "contratar", 3: "servicios", 4: "negocio", 5: "proyecto", 6: "servicios"}
 ETIQUETA = {"negocio": "FACTURAR MÁS EN TU DESPACHO", "contratar": "CONTRATAR O DELEGAR", "servicios": "LO QUE PUEDES DELEGAR",
             "proyecto": "DATOS DE PROYECTO"}
-INK2 = (70, 66, 62)                                       # texto de lectura (más contraste que el gris de los documentos)
+INK2 = (205, 198, 186)                                      # texto de lectura (más contraste que el gris de los documentos)
 
 
 def F(path, size):
@@ -253,9 +261,9 @@ def mock_content(tema, bloque, sel):
 
 # ------------------------------------------------------------------ 3. dibujo
 def background(seed, dark=False):
-    im = Image.new("RGB", (W, H), CARBON if dark else PIEDRA); d = ImageDraw.Draw(im, "RGBA")   # RGB: el alfa se mezcla
-    line = (255, 255, 255, 9) if dark else (43, 43, 43, 11)
-    strong = (255, 255, 255, 18) if dark else (43, 43, 43, 22)
+    im = Image.new("RGB", (W, H), NEGRO); d = ImageDraw.Draw(im, "RGBA")   # RGB: el alfa se mezcla
+    line = ORO + (9,)
+    strong = ORO + (17,)
     for k, y in enumerate(range(0, H, 36)):
         d.line([(0, y), (W, y)], fill=strong if k % 5 == 0 else line, width=1)
     for k, x in enumerate(range(0, W, 36)):
@@ -349,7 +357,7 @@ def label(txt, col=BRONCE, size=28):
 def slide_cover(c, bloque, tema, total, seed):
     im = background(seed); d = ImageDraw.Draw(im)
     top = 760
-    d.rectangle([0, 0, W, top], fill=CARBON)
+    d.rectangle([0, 0, W, top], fill=NEGRO_C); d.rectangle([0, top - 4, W, top], fill=ORO)
     lg = fx.logo(44, WHITE, ARENA, align="left"); im.alpha_composite(lg, (M, 54))
     f = F(F_REG, 28); t = f"01 / {total:02d}"
     d.text((W - M - f.getlength(t), 66), t, font=f, fill=ARENA)
@@ -369,7 +377,7 @@ def slide_cover(c, bloque, tema, total, seed):
     rich(c["subtitulo"], 38, W - 2 * M - 40, color=ARENA, hi=WHITE, draw_on=im, xy=(M, y + 50))
     orn = ornament(560, 380, BRONCE, seed)
     im.alpha_composite(orn, (W - M - orn.width + 20, top + 60))
-    sw = fx.pill("DESLIZA  →", 34, CARBON, WHITE, padx=30, pady=14, radius=4)
+    sw = fx.pill("DESLIZA  →", 34, ORO, NEGRO, padx=30, pady=14, radius=4)
     im.alpha_composite(sw, (M, top + 120))
     ref = c.get("referencia")
     if ref:
@@ -397,15 +405,15 @@ def slide_content(s, n, total, seed, ref):
     d.text((M, y - 6), num, font=F(F_BOLD, ts * 1.15), fill=BRONCE)
     rich(s["titulo"], ts, W - 2 * M - 150, color=CARBON, path=F_BOLD, draw_on=im, xy=(M + 150, y + 6)); y += max(th, ts * 1.2) + 40
     for it, ch in zip(s["items"], cards):
-        d.rectangle([M, y, W - M, y + ch], fill=WHITE)
+        d.rectangle([M, y, W - M, y + ch], fill=CARD)
         d.rectangle([M, y, W - M, y + 6], fill=BRONCE)
         ht = rich(it["termino"], term, W - 2 * M - 70, color=CARBON, path=F_BOLD, draw_on=im, xy=(M + 35, y + 30 * scale))
         rich(it["texto"], body, W - 2 * M - 70, draw_on=im, xy=(M + 35, y + 30 * scale + ht + 6))
         y += ch + 24
     if s["clave"]:
-        d.rectangle([M, y, W - M, y + kh], fill=CARBON)
-        im.alpha_composite(label("CLAVE", ARENA, 24), (M + 35, int(y + 30 * scale)))
-        rich(s["clave"], body, W - 2 * M - 80, color=WHITE, hi=WHITE, path=F_BOLD, draw_on=im, xy=(M + 35, y + 30 * scale + 44))
+        d.rectangle([M, y, W - M, y + kh], fill=ORO)
+        im.alpha_composite(label("CLAVE", NEGRO, 24), (M + 35, int(y + 30 * scale)))
+        rich(s["clave"], body, W - 2 * M - 80, color=NEGRO, hi=NEGRO, path=F_BOLD, draw_on=im, xy=(M + 35, y + 30 * scale + 44))
     footer(im, ("Fuente: " + ref) if ref else None)
     return im
 
@@ -421,7 +429,7 @@ def slide_quiz(P, n, total, seed):
             break
     y = 180
     d.text((M, y), "¿Te atreves?", font=F(F_BOLD, 86), fill=CARBON); y += 120
-    d.rectangle([M, y, W - M, y + qh + 60], fill=WHITE); d.rectangle([M, y, W - M, y + 6], fill=BRONCE)
+    d.rectangle([M, y, W - M, y + qh + 60], fill=CARD); d.rectangle([M, y, W - M, y + 6], fill=BRONCE)
     rich(P["pregunta"], qs, W - 2 * M - 70, color=CARBON, path=F_BOLD, draw_on=im, xy=(M + 35, y + 30)); y += qh + 90
     for k, (o, h_) in enumerate(zip(P["op"], ohs)):
         oh = rich(o, os_, W - 2 * M - 160)
@@ -431,7 +439,7 @@ def slide_quiz(P, n, total, seed):
         f = F(F_BOLD, 36 * min(1, sc + 0.1)); L = QB.LETTERS[k]; bb = f.getbbox(L)
         d.text((M + 30 + r - (bb[0] + bb[2]) / 2, y + h_ / 2 - (bb[1] + bb[3]) / 2), L, font=f, fill=WHITE)
         rich(o, os_, W - 2 * M - 160, color=CARBON, draw_on=im, xy=(M + 120, y + (h_ - oh) / 2 + 2)); y += h_ + 16
-    p = fx.pill("LA SOLUCIÓN, EN LA ÚLTIMA IMAGEN  →", 30, CARBON, WHITE, padx=28, pady=14, radius=4)
+    p = fx.pill("LA SOLUCIÓN, EN LA ÚLTIMA IMAGEN  →", 30, ORO, NEGRO, padx=28, pady=14, radius=4)
     im.alpha_composite(p, (M, int(min(H - p.height - 90, y + 16))))
     footer(im)
     return im
@@ -464,9 +472,9 @@ def slide_cta(P, n, total, seed):
         x = (W - wtot) / 2
         d.text((x, y), a + " ", font=f1, fill=WHITE); d.text((x + f1.getlength(a + " "), y), b, font=f2, fill=ARENA); y += 52
     y += 14
-    p1 = fx.pill("PRESUPUESTO CERRADO EN 24–72 H", 30, BRONCE, WHITE, padx=28, pady=12, radius=4)
+    p1 = fx.pill("PRESUPUESTO CERRADO EN 24–72 H", 30, ORO, NEGRO, padx=28, pady=12, radius=4)
     im.alpha_composite(p1, ((W - p1.width) // 2, int(y))); y += p1.height + 20
-    p2 = fx.pill(marca.WEB, 50, PIEDRA, CARBON, padx=38, pady=16, radius=4)
+    p2 = fx.pill(marca.WEB, 50, CREMA, NEGRO, padx=38, pady=16, radius=4)
     im.alpha_composite(p2, ((W - p2.width) // 2, int(min(y, H - p2.height - 90))))
     footer(im, dark=True)
     return im

@@ -17,7 +17,7 @@ on:
       estilo:
         description: "Estilo visual (auto = lo elige el piloto automático)"
         type: choice
-        options: [auto, piedra, carbon, plano, ficha, minimal, ilustrado]
+        options: [auto, negro, piedra, carbon, plano, ficha, minimal, ilustrado]
         default: auto
       dry_run:
         description: "Solo generar el vídeo (no publicar)"

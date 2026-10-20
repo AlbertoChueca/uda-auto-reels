@@ -23,6 +23,7 @@ F900, F800 = F_BOLD, F_REG              # titulares / textos (nombres heredados 
 # ---- marca UDA (colores medidos en los documentos de UDA)
 CARBON = (43, 43, 43); CARBON_D = (30, 30, 30); PIEDRA = (243, 240, 236); PIEDRA_D = (216, 210, 202)
 BRONCE = (122, 106, 88); ARENA = (201, 185, 166); GRIS = (107, 107, 107); WHITE = (255, 255, 255)
+NEGRO = (12, 12, 12); NEGRO_C = (24, 23, 21); ORO = (200, 164, 93); ORO_D = (150, 120, 64); CREMA = (242, 236, 224)
 TERRACOTA = (156, 74, 58)              # solo para marcar la opción trampa (sobrio, no rojo chillón)
 INK, PAPER, MUTED, OK = CARBON, WHITE, GRIS, BRONCE
 BORDER = (226, 220, 212)

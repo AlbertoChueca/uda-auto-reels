@@ -30,7 +30,7 @@ ROLES = {
     "directora_creativa": "DIRECTORA CREATIVA. Decides el concepto visual de cada reel y la idea de la ilustración, para que "
                           "la cuenta se vea editorial, sobria y premium (como un buen estudio de arquitectura), sin repetir ideas.",
     "ilustradora": "ILUSTRADORA. Conviertes la idea en una imagen original vertical de calidad editorial, con la paleta de UDA "
-                   "(carbón, piedra, bronce).",
+                   "premium de UDA: negro profundo con luz cálida dorada.",
     "revisora_visual": "REVISORA VISUAL. Revisas cada imagen como lo haría una arquitecta exigente y una directora de arte: sin "
                        "texto, construcción y planos creíbles, sin edificios famosos reconocibles, nada sensible.",
     "narradora_casos": "NARRADORA DE CASOS. Conviertes una pieza de normativa en una escena breve y realista de despacho (un "
@@ -178,7 +178,9 @@ Devuelve JSON: {{"concepto": str, "imagen_idea": str, "usar_imagen_gancho": bool
 
 
 # ------------------------------------------------------------------ 2 + 3. ilustradora y revisora visual
-ART = {"ilustrado": "fotografía de arquitectura editorial, luz natural lateral suave, tonos cálidos piedra y carbón con acentos bronce",
+ART = {"negro": "fotografía de arquitectura premium en clave baja: fondo casi negro, luz cálida dorada rasante, hormigón, piedra "
+                "y detalles de latón, elegante y sobria, como una revista de arquitectura de lujo",
+       "ilustrado": "fotografía de arquitectura editorial, luz natural lateral suave, tonos cálidos piedra y carbón con acentos bronce",
        "carbon": "fotografía de arquitectura en clave baja, sombras profundas y luz cálida puntual, tonos carbón y bronce",
        "plano": "ilustración técnica de línea fina sobre papel color piedra, estilo croquis de arquitecto",
        "ficha": "fotografía cenital sobria de una mesa de trabajo de arquitecto, papel, escalímetro y planos sin texto legible",
@@ -193,7 +195,7 @@ RULES = ("Imagen vertical 9:16. NADA de texto, letras, números, cotas legibles,
 
 def ilustradora(idea, estilo, seed=0):
     import gemini
-    prompt = f"{ART.get(estilo, ART['piedra'])}. Escena: {idea}. {RULES}"
+    prompt = f"{ART.get(estilo, ART['negro'])}. Escena: {idea}. {RULES}"
     return gemini.image(prompt), prompt
 
 

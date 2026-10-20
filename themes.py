@@ -6,15 +6,16 @@ documentos de UDA (carbón, piedra, bronce, arena; TeX Gyre Adventor). El piloto
   plano     fondo piedra oscura con ejes y líneas de cota de un plano, tarjetas de esquinas vivas
   ficha     hoja técnica con cajetín (como un plano de proyecto): casillas que se marcan a mano en bronce
   minimal   editorial: fondo claro, tipografía grande en carbón y un único acento bronce
+  negro     premium: fondo negro, tarjetas grafito con filete dorado, cifras y acentos en oro (por defecto)
   ilustrado imagen original de arquitectura generada por la ilustradora (IA) de fondo, con tarjetas encima
 """
 import math
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
-from fx import W, H, CARBON, CARBON_D, PIEDRA, PIEDRA_D, BRONCE, ARENA, GRIS, WHITE, TERRACOTA, BORDER
+from fx import W, H, CARBON, CARBON_D, PIEDRA, PIEDRA_D, BRONCE, ARENA, GRIS, WHITE, TERRACOTA, BORDER, NEGRO, NEGRO_C, ORO, ORO_D, CREMA
 
-STYLES = ["piedra", "carbon", "plano", "ficha", "minimal", "ilustrado"]
+STYLES = ["negro", "piedra", "carbon", "plano", "ficha", "minimal", "ilustrado"]
 
 
 def _mix(a, b, k):
@@ -128,6 +129,10 @@ class Theme:
         self.pill_radius = 4
         self.top_rule = BRONCE                # filete bronce sobre las tarjetas (como en los documentos)
         self.music_bpm = 84
+        # tarjeta final de marca y detalles que antes iban fijos
+        self.brand_bg, self.brand_rule, self.brand_ink, self.brand_sub = CARBON, BRONCE, WHITE, ARENA
+        self.brand_pill, self.brand_pill_fg, self.brand_web, self.brand_web_fg = BRONCE, WHITE, PIEDRA, CARBON
+        self.mito_col, self.real_col, self.img_hot, self.warn_col = TERRACOTA, BRONCE, ARENA, TERRACOTA
         self.__dict__.update(kw)
 
     def background(self, seed, image=None):
@@ -140,12 +145,27 @@ class Theme:
             return GradientBG(PIEDRA, (236, 232, 226), "ficha", line=(122, 106, 88, 18), seed=seed)
         if n == "minimal":
             return GradientBG((250, 249, 247), PIEDRA, "rules", line=(43, 43, 43, 14), seed=seed)
+        if n == "negro":
+            return GradientBG((22, 21, 19), (6, 6, 6), "rules", line=ORO + (16,), blobs=(ORO,), blob_alpha=12, seed=seed)
         if n == "ilustrado" and image is not None:
             return ImageBG(image)
         return GradientBG(PIEDRA, (236, 232, 226), "grid", line=(43, 43, 43, 11), blobs=(WHITE, ARENA), blob_alpha=34, seed=seed)
 
 
 def get(name):
+    if name == "negro":
+        G = (34, 33, 30)
+        return Theme("negro", card_fill=NEGRO_C, card_outline=(70, 60, 40), card_radius=6, shadow=False,
+                     ink=CREMA, dim=(105, 100, 92), label=ORO, accent=ORO, accent_fg=NEGRO,
+                     row_fill=G, row_active=(52, 46, 34), row_outline=ORO, ok_col=ORO, ok_text=NEGRO,
+                     bad_col=(120, 116, 110), bad_fill=G, faded=(72, 69, 64), title_bg=ORO, title_fg=NEGRO,
+                     badge_bg=ORO, badge_fg=NEGRO, chip_bg=(255, 255, 255, 18), chip_fg=ORO,
+                     head_col=CREMA, head_hot=ORO, sub_band=(8, 8, 8, 200), sub_ink=CREMA, sub_dim=(120, 114, 104),
+                     ring_bg=(14, 14, 14, 240), ring_col=ORO, ring_fg=CREMA, pill_bg=ORO, pill_fg=NEGRO, big_col=ORO,
+                     ref_bg=G, ref_fg=ORO, web_bg=(255, 255, 255, 14), web_fg=ORO, top_rule=ORO, pill_radius=3,
+                     brand_bg=NEGRO, brand_rule=ORO, brand_ink=CREMA, brand_sub=ORO, brand_pill=ORO, brand_pill_fg=NEGRO,
+                     brand_web=CREMA, brand_web_fg=NEGRO, mito_col=(110, 106, 100), real_col=ORO, img_hot=ORO,
+                     warn_col=ORO_D, music_bpm=82)
     if name == "carbon":
         return Theme("carbon", card_fill=PIEDRA, card_outline=None, label=BRONCE, row_fill=WHITE, row_active=PIEDRA_D,
                      badge_bg=BRONCE, badge_fg=WHITE, chip_bg=(255, 255, 255, 30), chip_fg=ARENA,

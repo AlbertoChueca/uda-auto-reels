@@ -36,7 +36,8 @@ DEFAULT_STYLE = {"caption_scale": 1.0, "screen_hook": "", "follow_line": "Sígue
 TAGS_FIXED = ["#arquitectura", "#arquitectos"]
 TAGS_ROT = ["#CTE", "#normativa", "#proyectodeejecucion", "#despachodearquitectura", "#arquitecturaespaña", "#BIM", "#Revit",
             "#arquitectostecnicos", "#edificacion"]
-T = themes.get("piedra")
+T = themes.get("negro")
+NEGRO_ = fx.NEGRO
 
 
 def ctop(h):
@@ -367,24 +368,24 @@ def brand_card(style):
     """Tarjeta final, como la cabecera de los documentos de UDA: bloque carbón, logotipo, claim y la web (solo hechos)."""
     h = 860
     im = Image.new("RGBA", (CARD_W, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    d.rounded_rectangle([0, 0, CARD_W - 1, h - 1], 12, fill=CARBON)
-    d.rectangle([6, 0, CARD_W - 7, 8], fill=BRONCE)
-    lg = fx.logo(104, WHITE, ARENA)
+    d.rounded_rectangle([0, 0, CARD_W - 1, h - 1], 12, fill=T.brand_bg, outline=T.card_outline if T.name == "negro" else None, width=2)
+    d.rectangle([6, 0, CARD_W - 7, 8], fill=T.brand_rule)
+    lg = fx.logo(104, T.brand_ink, T.brand_sub)
     im.alpha_composite(lg, ((CARD_W - lg.width) // 2, 64))
     y = 64 + lg.height + 44
-    cl = fx.text_block(M.CLAIM, F900, 50, 800, WHITE, align="center")
+    cl = fx.text_block(M.CLAIM, F900, 50, 800, T.brand_ink, align="center")
     im.alpha_composite(cl, ((CARD_W - cl.width) // 2, y)); y += cl.height + 18
-    sub = fx.text_block("Proyectos Básicos y de Ejecución · Precio cerrado · Tu firma al final", F800, 30, 780, ARENA,
+    sub = fx.text_block("Proyectos Básicos y de Ejecución · Precio cerrado · Tu firma al final", F800, 30, 780, T.brand_sub,
                         align="center")
     im.alpha_composite(sub, ((CARD_W - sub.width) // 2, y)); y += sub.height + 34
-    p1 = fx.pill("PRESUPUESTO CERRADO EN 24–72 H", 32, BRONCE, WHITE, padx=30, pady=13, radius=4)
+    p1 = fx.pill("PRESUPUESTO CERRADO EN 24–72 H", 32, T.brand_pill, T.brand_pill_fg, padx=30, pady=13, radius=4)
     im.alpha_composite(p1, ((CARD_W - p1.width) // 2, y)); y += p1.height + 26
-    p2 = fx.pill(M.WEB, 54, PIEDRA, CARBON, padx=40, pady=16, radius=4)
+    p2 = fx.pill(M.WEB, 54, T.brand_web, T.brand_web_fg, padx=40, pady=16, radius=4)
     im.alpha_composite(p2, ((CARD_W - p2.width) // 2, y)); y += p2.height + 24
-    p3 = fx.text_block("Link en la bio", F900, 34, 600, WHITE, align="center")
+    p3 = fx.text_block("Link en la bio", F900, 34, 600, T.brand_ink, align="center")
     im.alpha_composite(p3, ((CARD_W - p3.width) // 2, y)); y += p3.height + 8
     if style.get("follow_line") and y < h - 60:
-        p4 = fx.text_block(style["follow_line"], F800, 30, 820, ARENA, align="center")
+        p4 = fx.text_block(style["follow_line"], F800, 30, 820, T.brand_sub, align="center")
         im.alpha_composite(p4, ((CARD_W - p4.width) // 2, min(y, h - p4.height - 30)))
     return im
 
@@ -404,7 +405,7 @@ def badge(fmt, extra=None, series=None):
 def ring(remain, frac, size=170):
     im = Image.new("RGBA", (size, size), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.ellipse([6, 6, size - 6, size - 6], fill=T.ring_bg)
-    col = TERRACOTA if remain <= 3 else T.ring_col
+    col = T.warn_col if remain <= 3 else T.ring_col
     d.arc([14, 14, size - 14, size - 14], -90, -90 + 360 * frac, fill=col, width=16)
     f = fx.font(F900, 78); t = str(remain)
     d.text((size / 2 - f.getlength(t) / 2, size / 2 - 52), t, font=f, fill=T.ring_fg if T.name != "minimal" else WHITE)
@@ -545,9 +546,9 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     global T
     import voice
     arms = arms or {}
-    estilo = estilo or arms.get("estilo") or "piedra"
+    estilo = estilo or arms.get("estilo") or "negro"
     if estilo == "ilustrado" and image is None:
-        estilo = "carbon"                                # sin imagen: el estilo más parecido
+        estilo = "negro"                                 # sin imagen: el estilo más parecido
     T = themes.get(estilo)
     st = {**DEFAULT_STYLE, **(style or {})}
     if st.get("screen_hook"):
@@ -724,12 +725,12 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     web_dark = fx.pill(M.WEB, 28, (0, 0, 0, 110), WHITE, padx=22, pady=8, path=F800, radius=T.pill_radius)
     on_img = hook_bg is not None
     hook_img = fx.headline(S["screen_hook"], 116, 920, 3,
-                           color=WHITE if on_img else T.head_col, hot=ARENA if on_img else T.head_hot,
+                           color=WHITE if on_img else T.head_col, hot=T.img_hot if on_img else T.head_hot,
                            hot_words=("trampa", "mito", "realidad", "3", "30", "error", "caso", "delegar", "contratar",
                                       "entregar", "normativa", "cte", "loe", "despacho", "proyecto"),
                            stroke=0, shadow=on_img)
     hook_logo = fx.logo(70, T.head_col, T.label if T.name != "carbon" else ARENA)
-    hook_logo_img = fx.logo(70, WHITE, ARENA)
+    hook_logo_img = fx.logo(70, WHITE, T.img_hot)
     cards = []
     if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico") and fmt not in QB.POINTS_ONLY:
         cards = [QuestionCard(Q, QB.tema_titulo(Q["tema"]).upper(), f"{i + 1}/3" if fmt == "simulacro_3" else None)
@@ -771,7 +772,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         if fmt == "caso_despacho" and hook_bg is None:
             scene_card = TextCard("CASO DE DESPACHO", S["escena"], None, body_size=58)
     brand = fx.shadowed(brand_card(st), alpha=70)
-    stamp_img = fx.pill(S.get("veredicto", "MITO"), 116, TERRACOTA if S.get("veredicto") == "MITO" else BRONCE, WHITE,
+    stamp_img = fx.pill(S.get("veredicto", "MITO"), 116, T.mito_col if S.get("veredicto") == "MITO" else T.real_col, WHITE if T.name != "negro" or S.get("veredicto") == "MITO" else NEGRO_,
                         padx=60, pady=26, outline=WHITE, radius=6) if fmt == "mito_realidad" else None
     n_items = len(items)
     score_img = fx.headline("¿Cuántas sabías?" if fmt == "repaso_express" else "¿Cuántas has acertado?", 104, 900, 3,
@@ -865,7 +866,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 img = scene_card.render(lit=lit("esc", tt)); im_, y, p = card_at(img, tt, sg["a"])
                 fx.paste_center(fr, shadow(im_), W / 2, y, alpha=p)
             else:
-                fx.paste_center(fr, fx.pill("CASO DE DESPACHO", 38, ARENA, CARBON, padx=30, pady=12, radius=4), W / 2, 1060, eob(lt / 0.3))
+                fx.paste_center(fr, fx.pill("CASO DE DESPACHO", 38, T.img_hot, CARBON, padx=30, pady=12, radius=4), W / 2, 1060, eob(lt / 0.3))
                 s_ = sub_img("esc", tt, 52, dark=True)
                 if s_ is not None: fx.paste_center(fr, s_, W / 2, 1260)
         elif kind in ("fq", "fa"):
@@ -946,7 +947,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         elif kind == "cta":
             fx.paste_center(fr, brand, W / 2, 330 + brand.height / 2 - 66, eob(lt / 0.4), min(1, lt / 0.2))
             if st.get("share_line") and lt > 1.2:
-                fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, BRONCE, WHITE, padx=26, pady=12, radius=4), W / 2, 1225,
+                fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1225,
                                 eob((lt - 1.2) / 0.35))
             s_ = sub_img("cta", tt, 44)
             if s_ is not None: fx.paste_center(fr, s_, W / 2, 1395)

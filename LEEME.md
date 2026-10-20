@@ -48,9 +48,7 @@ viernes negocio · sábado datos de proyecto · domingo servicios.
 más** de la directora de arte y del revisor del vídeo, y cada carrusel 8 o más de su revisión. Si no llega, se prueba
 otro formato o tema; si nada llega, ese hueco no se publica.
 
-**Estilos visuales** (los prueba el piloto): `piedra` (como los documentos), `carbon`, `plano` (ejes y cotas), `ficha`
-(cajetín de plano), `minimal`, `ilustrado` (imagen de arquitectura generada y revisada por IA). Colores de los documentos
-(carbón `#2b2b2b`, piedra `#f3f0ec`/`#d8d2ca`, bronce `#7a6a58`, arena `#c9b9a6`) y su tipografía: **TeX Gyre Adventor**.
+**Estilo visual**: `negro` (identidad premium: fondo negro, tarjetas grafito con filete de oro `#c8a45d`, texto crema `#f2ece0`, fotos de arquitectura en clave baja con luz dorada). Es el único que usa el piloto; los antiguos (`piedra`, `carbon`, `plano`, `ficha`, `minimal`, `ilustrado`) siguen disponibles a mano. El carrusel usa la misma paleta. Tipografía: **TeX Gyre Adventor**.
 
 **Voz:** masculina, de socio senior, con energía (Gemini, `Orus` por defecto; elige otra con *Muestras de voz*).
 

@@ -149,7 +149,7 @@ for fmt in chain:
         if HAS_AI and src == "ia":
             import agents, estudio
             style.update({k: v for k, v in agents.growth_lines(S, fmt).items() if not S.get(k)})
-            image, dinfo = estudio.imagen_para(fmt, items, arms.get("estilo", "piedra"), S, out[:-4])
+            image, dinfo = estudio.imagen_para(fmt, items, arms.get("estilo", "negro"), S, out[:-4])
         meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"))
         caption = open(out.replace(".mp4", ".txt")).read()
         review, art = {}, {}

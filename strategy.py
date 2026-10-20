@@ -22,7 +22,7 @@ MIN_AGE_DAYS = 3
 
 DEFAULT_ARMS = {
     "formato": ["grafico", "comparativa", "claves", "mito_realidad", "caso_despacho", "dato"],
-    "estilo": ["piedra", "carbon", "plano", "ficha", "minimal", "ilustrado"],
+    "estilo": ["negro"],                                  # identidad premium negro y oro (los demás estilos siguen en themes.py)
     "hook_style": [
         "facturación: abrir con lo que le cuesta al despacho no delegar (solo con datos del material)",
         "precio/hora: hablar de dónde se va la hora del arquitecto y dónde se cobra mejor",
