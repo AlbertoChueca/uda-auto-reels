@@ -55,7 +55,7 @@ otro formato o tema; si nada llega, ese hueco no se publica.
 **Voz:** masculina, de socio senior, con energía (Gemini, `Orus` por defecto; elige otra con *Muestras de voz*).
 
 ## Cómo se evita publicar un error (lo más importante)
-1. **Banco de piezas** (`generar_banco.py`): cada pieza (test, 3 claves o ficha) se escribe a partir de UN fragmento real
+1. **Banco de piezas** (`generar_banco.py`): cada pieza (3 claves, comparativa, dato o mito) se escribe a partir de UN fragmento real
    de su fuente y trae su **cita literal**; el código comprueba que la cita está de verdad en el texto, que toda cifra
    está en la fuente, que un precio va como precio de referencia y que nunca dice que UDA firma. Lo que no pasa, se tira.
 2. **Verificador** (`verifier.py`, otro modelo más estricto): revisa cada pieza contra el texto del BOE o de UDA. Solo las
