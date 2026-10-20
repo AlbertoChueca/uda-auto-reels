@@ -1,22 +1,22 @@
 {
 "2026-10-20_manual": {
 "slot": "manual",
-"formato": "comparativa",
-"estilo": "carbon",
+"formato": "dato",
+"estilo": "plano",
 "series": null,
 "imagen": false,
 "voice_speed": 1.06,
 "music": "normal",
 "temas": [
-"uda_servicios"
+"uda_delegar"
 ],
-"hook": "Pedir presupuesto sin perder tiempo",
+"hook": "Aceptar encargos vs. garantizar entregas",
 "guion": "ia",
-"review_score": 8.3,
+"review_score": 8.6,
 "arms": {
-"formato": "comparativa",
-"estilo": "carbon",
-"hook_style": "socio senior: de tú a tú, como un socio que comparte lo que ha aprendido",
+"formato": "dato",
+"estilo": "plano",
+"hook_style": "contraste: dos formas de trabajar enfrentadas en una frase",
 "bloque": "mixto",
 "think_time": "corto"
 },
