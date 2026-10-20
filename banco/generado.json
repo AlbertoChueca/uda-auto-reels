@@ -250,13 +250,13 @@
 "tema": "uda_delegar",
 "fuente": "10 Condiciones y plazos",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "5d53f6ea8b24": {
 "tema": "uda_servicios",
 "fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 3
 },
 "83a8aa806c71": {
 "tema": "rcd",
@@ -268,7 +268,7 @@
 "tema": "uda_delegar",
 "fuente": " (cont.)",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "979fc5988bf5": {
 "tema": "ess",
@@ -280,7 +280,7 @@
 "tema": "uda_servicios",
 "fuente": "07 Actuaciones específicas",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "173e059f2c7c": {
 "tema": "cte_sua",
@@ -292,13 +292,13 @@
 "tema": "uda_delegar",
 "fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 3
 },
 "a8f17a852249": {
-"tema": "uda_servicios",
+"tema": "uda_delegar",
 "fuente": " (cont.)",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "0e0de861c2e6": {
 "tema": "cte_he",
@@ -310,7 +310,7 @@
 "tema": "uda_delegar",
 "fuente": "01 ¿Contratar a alguien o delegar en UDA?",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 3
 },
 "fef639385ce4": {
 "tema": "cee",
@@ -322,13 +322,13 @@
 "tema": "uda_delegar",
 "fuente": "07 CAD o Revit (BIM)",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 3
 },
 "4d20a9c6681f": {
 "tema": "uda_servicios",
 "fuente": "04 Entorno de trabajo y punto de partida *",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "2d18b6bab0df": {
 "tema": "loe",
@@ -343,16 +343,16 @@
 "veces": 1
 },
 "8bdfd2af269e": {
-"tema": "uda_delegar",
+"tema": "uda_servicios",
 "fuente": "09 Qué incluye cada partida",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 3
 },
 "723c0d8353d5": {
-"tema": "uda_servicios",
+"tema": "uda_delegar",
 "fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "9ad804fe81fb": {
 "tema": "cte_si",
@@ -361,16 +361,16 @@
 "veces": 1
 },
 "0ce98c2c0e80": {
-"tema": "uda_delegar",
+"tema": "uda_servicios",
 "fuente": "08 Actuaciones específicas",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "ea6d89b88fc1": {
 "tema": "uda_delegar",
 "fuente": "02 Cómo trabajamos y cómo presupuestamos",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 3
 },
 "5c60379eecb7": {
 "tema": "cte_proyecto",
@@ -379,10 +379,10 @@
 "veces": 1
 },
 "4bd70a989431": {
-"tema": "uda_servicios",
+"tema": "uda_delegar",
 "fuente": "06 Industrial y equipamientos",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "21aad5fea41d": {
 "tema": "cte_hr",
@@ -400,7 +400,7 @@
 "tema": "uda_servicios",
 "fuente": "08 Opciones adicionales",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "b277d8fa7835": {
 "tema": "ess",
@@ -418,37 +418,230 @@
 "tema": "uda_servicios",
 "fuente": " (cont.)",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "2c024a9f7f94": {
-"tema": "uda_servicios",
+"tema": "uda_delegar",
 "fuente": "03 Vivienda unifamiliar y reforma",
 "fecha": "2026-10-20",
-"veces": 1
+"veces": 2
 },
 "e7697ccabd09": {
 "tema": "cte_he",
 "fuente": "ANEJO A (cont.)",
 "fecha": "2026-10-20",
 "veces": 1
+},
+"f8625d0c6749": {
+"tema": "contratacion",
+"fuente": "Artículo 51. Despido colectivo. · 2. En tales casos, el trabajador tendrá derech",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"af57f1116f0b": {
+"tema": "uda_delegar",
+"fuente": "07 CAD o Revit (BIM) (cont.)",
+"fecha": "2026-10-20",
+"veces": 3
+},
+"7dd2c5cc2fa3": {
+"tema": "uda_delegar",
+"fuente": "05 Bloques de viviendas",
+"fecha": "2026-10-20",
+"veces": 3
+},
+"f35185faec58": {
+"tema": "cte_se",
+"fuente": "Artículo 7. Condiciones en la ejecución de las obras. · 7.2.3 Control de recepci",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"a9ba1b63ece9": {
+"tema": "contratacion",
+"fuente": "Disposición adicional tercera. Negociación colectiva y contrato fijo de obra.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"ce87936a5248": {
+"tema": "uda_servicios",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele",
+"fecha": "2026-10-20",
+"veces": 2
+},
+"aca0091e0cee": {
+"tema": "uda_servicios",
+"fuente": "03 Superficies y viviendas",
+"fecha": "2026-10-20",
+"veces": 2
+},
+"8f57e8ab88ec": {
+"tema": "cte_general",
+"fuente": "Artículo 15. Exigencias básicas de ahorro de energía (HE).",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"5d981e2b33fa": {
+"tema": "contratacion",
+"fuente": "Artículo 34. Jornada. · 3. Entre el final de una jornada y el comienzo de la sig",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"8a4a5db73222": {
+"tema": "uda_servicios",
+"fuente": "05 Proyecto Básico",
+"fecha": "2026-10-20",
+"veces": 2
+},
+"1183da8d0db8": {
+"tema": "cee",
+"fuente": "Disposición adicional sexta. Uso de lenguaje no sexista.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"58e79b365869": {
+"tema": "loe",
+"fuente": "Artículo 19. Garantías por daños materiales ocasionados por vicios y d · 3. Los ",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"d2cff54f2b34": {
+"tema": "uda_servicios",
+"fuente": "06 Proyecto de Ejecución",
+"fecha": "2026-10-20",
+"veces": 2
+},
+"c0fbf8c15cb9": {
+"tema": "contratacion",
+"fuente": "Artículo 11. Contrato formativo. · 4. Son normas comunes del contrato formativo ",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"4d98d94296de": {
+"tema": "uda_servicios",
+"fuente": "01 Datos del despacho y del proyecto",
+"fecha": "2026-10-20",
+"veces": 2
+},
+"647ac2377655": {
+"tema": "cte_hs",
+"fuente": "Sección HE 4 Contribución mínima de energía renovable para cubrir la demanda de ",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"958d9782fc3b": {
+"tema": "contratacion",
+"fuente": "Artículo 46. Excedencias. · 6. La situación de excedencia podrá extenderse a otr",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"bcaadb7142dc": {
+"tema": "cte_si",
+"fuente": " (cont.)",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"69e366e05131": {
+"tema": "cte_proyecto",
+"fuente": "Artículo 6. Condiciones del proyecto. · 4. En el anejo I se relacionan los conte",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"dc4f6747e3b7": {
+"tema": "cte_hr",
+"fuente": "Disposición derogatoria única. Derogación normativa.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"61d6323c760f": {
+"tema": "contratacion",
+"fuente": "Artículo 33. El Fondo de Garantía Salarial. (cont.)",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"b3dd9e3ce21b": {
+"tema": "rcd",
+"fuente": "Artículo 3. Ámbito de aplicación.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"266b24e4f50b": {
+"tema": "contratacion",
+"fuente": "Disposición transitoria décima. Régimen aplicable a expedientes de regulación de",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"a15a1550ab6e": {
+"tema": "ess",
+"fuente": "Disposición adicional única. Presencia de recursos preventivos en obras de const",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"eed6ee35b7d0": {
+"tema": "contratacion",
+"fuente": "Artículo 47. Reducción de jornada o suspensión del contrato por causas · 6. La s",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"f94279081d5d": {
+"tema": "cte_sua",
+"fuente": "6. Otras materias:",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"147e210e5759": {
+"tema": "contratacion",
+"fuente": "Artículo 37. Descanso semanal, fiestas y permisos. (cont.)",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"4012c463a1cb": {
+"tema": "cte_he",
+"fuente": "Artículo 15. Exigencias básicas de ahorro de energía (HE)",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"69ac5ca90e83": {
+"tema": "cte_se",
+"fuente": "Disposición transitoria segunda. Régimen de aplicación de la normativa · 1. Dura",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"a5d90816cb80": {
+"tema": "cte_general",
+"fuente": "Artículo 4. Documentos Reconocidos y Registro General del CTE.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"1ae1580747fc": {
+"tema": "contratacion",
+"fuente": "Artículo 23. Promoción y formación profesional en el trabajo.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"985e850cae75": {
+"tema": "cee",
+"fuente": "Disposición final octava. Entrada en vigor. · 2. Modelo de declaración responsab",
+"fecha": "2026-10-20",
+"veces": 1
 }
 },
 "temas": {
-"uda_delegar": "2026-10-20 18:55:04.246760",
-"rcd": "2026-10-20 18:52:51.188853",
+"uda_servicios": "2026-10-20 20:26:38.726590",
+"rcd": "2026-10-20 20:17:56.287958",
+"cte_general": "2026-10-20 20:24:18.337487",
+"ess": "2026-10-20 20:19:36.312849",
+"cte_se": "2026-10-20 20:24:05.550110",
+"cte_proyecto": "2026-10-20 20:14:00.719753",
+"uda_delegar": "2026-10-20 20:25:44.774160",
 "lph": "2026-10-20 18:37:01.304045",
-"cte_se": "2026-10-20 18:38:54.821438",
-"cte_he": "2026-10-20 18:55:23.595064",
-"cte_hs": "2026-10-20 18:49:14.852647",
-"cte_hr": "2026-10-20 18:52:08.608261",
-"cee": "2026-10-20 18:48:18.672914",
-"uda_servicios": "2026-10-20 18:54:48.218684",
-"ess": "2026-10-20 18:53:42.164722",
-"cte_general": "2026-10-20 18:39:19.424850",
+"cte_he": "2026-10-20 20:22:37.820393",
 "suelo": "2026-10-20 18:41:28.712540",
-"loe": "2026-10-20 18:48:57.203229",
-"cte_proyecto": "2026-10-20 18:51:14.530185",
-"cte_sua": "2026-10-20 18:54:21.617864",
-"cte_si": "2026-10-20 18:50:24.503404"
+"loe": "2026-10-20 20:10:51.781847",
+"cte_si": "2026-10-20 20:13:47.227042",
+"contratacion": "2026-10-20 20:24:58.985827",
+"cte_hs": "2026-10-20 20:12:24.196838",
+"cee": "2026-10-20 20:26:02.337591",
+"cte_sua": "2026-10-20 20:21:05.351398",
+"cte_hr": "2026-10-20 20:15:18.854121"
 }
 }
