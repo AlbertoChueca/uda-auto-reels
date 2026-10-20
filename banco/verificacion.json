@@ -1,1 +1,162 @@
-{}
+{
+"2c9cdcf4d0": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La opción A refleja literalmente el contenido del apartado 2.7 del Anejo I del CTE sobre el equipamiento.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado 2.7",
+"cita": "Definición de baños, cocinas y lavaderos, equipamiento industrial, etc.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6aa64fd742": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El artículo 34.1.b establece explícitamente que el régimen de valoraciones se aplica a cualquier expropiación sin importar su finalidad o legislación.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 34.1.b",
+"cita": "La fijación del justiprecio en la expropiación, cualquiera que sea la finalidad de ésta y la legislación que la motive.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"2132538214": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La opción A coincide exactamente con el texto del Anejo I sobre las prescripciones en el edificio terminado.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado III",
+"cita": "Se indicarán las verificaciones y pruebas de servicio que deban realizarse para comprobar las prestaciones finales del edificio.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"0d698cb94f": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "El texto especifica claramente que el desglose del ahorro anual de energía final es en energía eléctrica, térmica y transporte.",
+"fuente_ok": true,
+"referencia": "RD 390/2021, Disposición derogatoria única",
+"cita": "Ahorro anual de energía final (kWh/año): …………… Con el siguiente desglose: – energía eléctrica (kWh/año), ……………………… – energía térmica (kWh/año), ……………………… – transporte (kWh/año)",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4891e5edf0": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta es una copia literal de la exigencia básica SUA 9 establecida en el artículo 12.9 de la Parte I del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 12.9",
+"cita": "Se facilitará el acceso y la utilización no discriminatoria, independiente y segura de los edificios a las personas con discapacidad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"aaee600b95": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La exposición de motivos establece la inseparabilidad de los derechos privativos y comunes, incluso para su disposición.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, Exposición de Motivos",
+"cita": "unos y otros derechos, aunque distintos en su alcance, se reputan inseparablemente unidos, unidad que también mantienen respecto de la facultad de disposición.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"d131e7c6de": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "El texto indica explícitamente que la disposición sobre cualificaciones fue anulada por la citada sentencia del TC.",
+"fuente_ok": true,
+"referencia": "TRLSRU, Disposición final primera",
+"cita": "Se declara inconstitucional y nula, por Sentencia del TC 143/2017, de 14 de diciembre.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"067c290cb0": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta refleja fielmente la exigencia básica HS 5 del artículo 13.5 del CTE.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.5",
+"cita": "los edificios dispondrán de medios adecuados para extraer las aguas residuales generadas en ellos de forma independiente o conjunta con las precipitaciones atmosféricas y con las escorrentías.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"135f6d8660": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta es correcta y se extrae literalmente del Anejo I de la Parte I del CTE, siendo un dato fundamental para la redacción de proyectos de rehabilitación.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, Anejo I, apartado II",
+"cita": "En caso de obras de rehabilitación se incluirán planos del edificio antes de la intervención.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"4717d42394": {
+"veredicto": "ok",
+"calidad": 6.0,
+"motivo": "La respuesta refleja fielmente los criterios establecidos en el RD 1627/1997 para el cálculo de las dimensiones de las vías de circulación en obras.",
+"fuente_ok": true,
+"referencia": "RD 1627/1997, 11. Vías de circulación y zonas peligrosas, b)",
+"cita": "se calcularán de acuerdo con el número de personas que puedan utilizarlas y con el tipo de actividad.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"6aa8001090": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La afirmación es correcta según la Exposición de motivos del RD 314/2006, aunque es un concepto teórico que no afecta directamente al diseño o cálculo de un proyecto.",
+"fuente_ok": true,
+"referencia": "Real Decreto 314/2006, Exposición de motivos",
+"cita": "Se trata de un instrumento normativo que fija las exigencias básicas de calidad de los edificios y sus instalaciones.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"196e491bfd": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La respuesta es correcta según la Ley de Propiedad Horizontal, aunque es un dato más relevante para la administración de fincas que para la redacción de proyectos arquitectónicos.",
+"fuente_ok": true,
+"referencia": "Ley de Propiedad Horizontal, Disposición adicional primera, apartado 2",
+"cita": "Las cantidades detraídas del fondo durante el ejercicio presupuestario para atender los gastos de las obras o actuaciones incluidas en el artículo 10 se computarán como parte integrante del mismo a efectos del cálculo de su cuantía mínima.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3c2f6474f7": {
+"veredicto": "ok",
+"calidad": 5.0,
+"motivo": "La respuesta enumera correctamente los elementos sujetos al régimen de valoraciones según el artículo 34.1 de la Ley de Suelo.",
+"fuente_ok": true,
+"referencia": "TRLSRU, art. 34.1",
+"cita": "Las valoraciones del suelo, las instalaciones, construcciones y edificaciones, y los derechos constituidos sobre o en relación con ellos, se rigen por lo dispuesto en esta Ley",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"06f7133ca7": {
+"veredicto": "ok",
+"calidad": 8.0,
+"motivo": "La respuesta es correcta y define los objetivos funcionales que deben cumplir los espacios de reserva de residuos en el diseño del edificio según el DB HS 2.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 13.2",
+"cita": "de tal manera que se facilite la adecuada separación en origen de dichos residuos, la recogida selectiva de los mismos y su posterior gestión.",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"3746d319e0": {
+"veredicto": "ok",
+"calidad": 7.0,
+"motivo": "La respuesta describe correctamente el flujo de la documentación de suministros en obra, un dato clave para la Dirección de Ejecución y el control de calidad.",
+"fuente_ok": true,
+"referencia": "CTE, Parte I, art. 7.2.1",
+"cita": "Los suministradores entregarán al constructor, quien los facilitará al director de ejecución de la obra, los documentos de identificación del producto",
+"correccion": null,
+"fecha": "2026-10-20"
+},
+"5f13131d25": {
+"veredicto": "ok",
+"calidad": 3.0,
+"motivo": "La respuesta es correcta y se basa en la Exposición de motivos del CTE, aunque se trata de una declaración de intenciones sin aplicación técnica directa en el proyecto.",
+"fuente_ok": true,
+"referencia": "Real Decreto 314/2006, Exposición de motivos",
+"cita": "Responde también a una nueva exigencia de sostenibilidad de los procesos edificatorios y urbanizadores, en su triple dimensión ambiental, social y económica.",
+"correccion": null,
+"fecha": "2026-10-20"
+}
+}
