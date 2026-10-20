@@ -1,27 +1,27 @@
 {
 "2026-10-20_manual": {
 "slot": "manual",
-"formato": "claves",
-"estilo": "piedra",
+"formato": "comparativa",
+"estilo": "carbon",
 "series": null,
-"imagen": true,
+"imagen": false,
 "voice_speed": 1.06,
 "music": "normal",
 "temas": [
-"contratacion"
+"uda_servicios"
 ],
-"hook": "El coste de ajustar plantilla",
+"hook": "Pedir presupuesto sin perder tiempo",
 "guion": "ia",
 "review_score": 8.3,
 "arms": {
-"formato": "claves",
-"estilo": "piedra",
-"hook_style": "facturación: abrir con lo que le cuesta al despacho no delegar (solo con datos del material)",
-"bloque": "contratar",
-"think_time": "largo"
+"formato": "comparativa",
+"estilo": "carbon",
+"hook_style": "socio senior: de tú a tú, como un socio que comparte lo que ha aprendido",
+"bloque": "mixto",
+"think_time": "corto"
 },
 "date": "2026-10-20",
-"views": 4,
+"views": 0,
 "reach": 0,
 "likes": 0,
 "comments": 0,
@@ -29,7 +29,7 @@
 "saved": 0,
 "por_red": {
 "instagram_reel": {
-"views": 4,
+"views": 0,
 "reach": 0,
 "likes": 0,
 "comments": 0,
