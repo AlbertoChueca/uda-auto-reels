@@ -2,27 +2,41 @@
 "2026-10-20_manual": {
 "slot": "manual",
 "formato": "comparativa",
-"estilo": "minimal",
+"estilo": "negro",
 "series": null,
 "imagen": false,
-"voice_speed": 1.06,
+"voice_speed": 1.05,
 "music": "normal",
 "temas": [
-"uda_servicios"
+"contratacion"
 ],
-"hook": "Cobrar mejor tu hora",
+"hook": "47.000 euros fijos al año",
 "guion": "ia",
-"review_score": 8.7,
+"review_score": 9.0,
 "arms": {
 "formato": "comparativa",
-"estilo": "minimal",
-"hook_style": "precio/hora: hablar de dónde se va la hora del arquitecto y dónde se cobra mejor",
-"bloque": "mixto",
+"estilo": "negro",
+"hook_style": "facturación: abrir con lo que le cuesta al despacho no delegar (solo con datos del material)",
+"bloque": "negocio",
 "think_time": "corto"
 },
 "date": "2026-10-20",
+"views": 0,
+"reach": 0,
+"likes": 0,
+"comments": 0,
+"shares": 0,
+"saved": 0,
 "por_red": {
-"instagram_reel": {}
+"instagram_reel": {
+"views": 0,
+"reach": 0,
+"likes": 0,
+"comments": 0,
+"shares": 0,
+"ig_reels_avg_watch_time": 0,
+"saved": 0
+}
 }
 },
 "2026-10-20_carrusel": {
@@ -41,23 +55,47 @@
 "review_score": null,
 "arms": null,
 "date": "2026-10-20",
-"views": 2,
-"reach": 0,
+"views": 5,
+"reach": 2,
 "likes": 0,
 "comments": 0,
 "shares": 0,
 "follows": 0,
 "saved": 0,
+"impressions": 10,
+"clicks": 0,
+"profile_visits": 0,
 "por_red": {
 "instagram_carrusel": {
-"views": 2,
-"reach": 0,
+"views": 5,
+"reach": 1,
 "likes": 0,
 "comments": 0,
 "shares": 0,
 "profile_visits": 0,
 "follows": 0,
 "saved": 0
+},
+"linkedin_documento": {
+"impressions": 10,
+"reach": 1,
+"likes": 0,
+"comments": 0,
+"shares": 0,
+"saved": 0,
+"clicks": 0,
+"views": 0,
+"follows": 0,
+"reposts": 0,
+"igReelsVideoViewTotalTime": 0,
+"igReelsAvgWatchTime": 0,
+"reelsSkipRate": 0,
+"completionRate": 0,
+"profile_visits": 0,
+"websiteClicks": 0,
+"replays": 0,
+"engagementRate": 0,
+"ig_reels_avg_watch_time": 0
 }
 }
 }
