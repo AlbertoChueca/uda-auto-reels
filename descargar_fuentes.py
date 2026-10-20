@@ -21,6 +21,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DIR = os.path.join(HERE, "fuentes")
 API = "https://www.boe.es/datosabiertos/api/legislacion-consolidada"
 DIARIO = "https://www.boe.es/diario_boe/xml.php"
+DIARIO_TXT = "https://www.boe.es/diario_boe/txt.php"
+SUMARIO = "https://www.boe.es/datosabiertos/api/boe/sumario"
 HDR = {"Accept": "application/xml", "User-Agent": "uda-reels/1.0 (+https://uniondearquitectos.com)"}
 
 
@@ -68,6 +70,12 @@ def texto_consolidado(boe_id):
     return "\n".join(parts)
 
 
+def diario_titulo(boe_id):
+    root = ET.fromstring(_get(DIARIO, params={"id": boe_id}).content)
+    t = root.find(".//metadatos/titulo")
+    return (_clean(t.text) if t is not None else ""), root
+
+
 def diario(boe_id):
     """(título, texto) del documento tal y como se publicó en el BOE (XML del diario)."""
     root = ET.fromstring(_get(DIARIO, params={"id": boe_id}).content)
@@ -84,7 +92,41 @@ def diario(boe_id):
             elif id(el) not in in_table and el.tag in ("p", "h1", "h2", "h3", "h4", "h5", "li") \
                     and "".join(el.itertext()).strip():
                 parts.append(_clean("".join(el.itertext())))
-    return (_clean(t.text) if t is not None else ""), "\n".join(parts)
+    title = _clean(t.text) if t is not None else ""
+    if len("\n".join(parts)) < 2000 and tx is not None:          # estructura distinta: todo el texto del bloque
+        parts = [l for l in (_clean(x) for x in "\n".join(tx.itertext()).split("\n")) if l]
+    if len("\n".join(parts)) < 2000:                             # último recurso: la versión HTML del documento
+        try:
+            p = _Text(); p.feed(_get(DIARIO_TXT, params={"id": boe_id}, headers={"User-Agent": HDR["User-Agent"]}).text)
+            parts = [l for l in (_clean(html.unescape(x)) for x in "".join(p.out).split("\n")) if len(l) > 2]
+            i = next((k for k, l in enumerate(parts) if l.startswith(("TEXTO", "Texto")) or "texto original" in l.lower()), 0)
+            parts = parts[i:]
+        except Exception as e:
+            print("  txt.php no disponible:", str(e)[:100])
+    print(f"  diario {boe_id}: raíz <{root.tag}>, hijos {[c.tag for c in root][:6]}, {len(chr(10).join(parts))} caracteres", flush=True)
+    return title, "\n".join(parts)
+
+
+def sumario(fecha, clave):
+    """Ids del BOE de un día (AAAAMMDD) cuyo título contiene todas las claves."""
+    try:
+        root = ET.fromstring(_get(f"{SUMARIO}/{fecha}").content)
+        out = []
+        for it in root.iter("item"):
+            i, t = it.find("identificador"), it.find("titulo")
+            if i is not None and t is not None and all(c.lower() in (t.text or "").lower() for c in clave):
+                out.append(i.text.strip())
+        return out
+    except Exception as e:
+        print("  sumario no disponible:", str(e)[:120]); return []
+
+
+def vecinos(bid, k=8):
+    m = re.match(r"(BOE-A-\d{4}-)(\d+)$", bid or "")
+    if not m:
+        return []
+    n = int(m.group(2))
+    return [f"{m.group(1)}{n + d}" for d in sorted(range(-k, k + 1), key=abs) if d]
 
 
 def boe(n):
@@ -114,8 +156,21 @@ def boe(n):
                     errores.append(f"{bid} diario: título '{t[:60]}' / {len(txt)} caracteres")
                 except Exception as e:
                     errores.append(f"{bid} diario: {str(e)[:80]}")
-        if attempt == 0 and n.get("buscar"):
-            cands = [i for i, _ in buscar(n["buscar"]) if i not in cands]
+        if attempt == 0:
+            nuevos = sumario(n["fecha"], n.get("clave", [])) if n.get("fecha") else []
+            if n.get("buscar"):
+                nuevos += [i for i, _ in buscar(n["buscar"])]
+            if not nuevos and n.get("boe"):                               # id cercano al que teníamos
+                for v in vecinos(n["boe"]):
+                    try:
+                        t, _ = diario_titulo(v)
+                    except Exception:
+                        continue
+                    if all(c.lower() in t.lower() for c in n.get("clave", [])):
+                        nuevos = [v]; break
+            cands = [i for i in dict.fromkeys(nuevos) if i not in cands]
+            if not cands:
+                break
         else:
             break
     raise RuntimeError("; ".join(errores)[-400:] or "no encontrada")
