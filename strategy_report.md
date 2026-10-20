@@ -10,22 +10,18 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| claves | 0 | - |
+| grafico | 0 | - |
 | comparativa | 0 | - |
-| dato | 0 | - |
+| claves | 0 | - |
 | mito_realidad | 0 | - |
 | caso_despacho | 0 | - |
+| dato | 0 | - |
 
 ## estilo
 
 | option | reels | avg score |
 |---|---|---|
-| piedra | 0 | - |
-| carbon | 0 | - |
-| plano | 0 | - |
-| ficha | 0 | - |
-| minimal | 0 | - |
-| ilustrado | 0 | - |
+| negro | 0 | - |
 
 ## hook_style
 
@@ -45,7 +41,6 @@ Still collecting data: options are being tested evenly for now.
 | negocio | 0 | - |
 | contratar | 0 | - |
 | servicios | 0 | - |
-| proyecto | 0 | - |
 | mixto | 0 | - |
 
 ## think_time

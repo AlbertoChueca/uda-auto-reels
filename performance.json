@@ -1,42 +1,28 @@
 {
 "2026-10-20_manual": {
 "slot": "manual",
-"formato": "dato",
-"estilo": "plano",
+"formato": "comparativa",
+"estilo": "minimal",
 "series": null,
 "imagen": false,
 "voice_speed": 1.06,
 "music": "normal",
 "temas": [
-"uda_delegar"
+"uda_servicios"
 ],
-"hook": "Aceptar encargos vs. garantizar entregas",
+"hook": "Cobrar mejor tu hora",
 "guion": "ia",
-"review_score": 8.6,
+"review_score": 8.7,
 "arms": {
-"formato": "dato",
-"estilo": "plano",
-"hook_style": "contraste: dos formas de trabajar enfrentadas en una frase",
+"formato": "comparativa",
+"estilo": "minimal",
+"hook_style": "precio/hora: hablar de dónde se va la hora del arquitecto y dónde se cobra mejor",
 "bloque": "mixto",
 "think_time": "corto"
 },
 "date": "2026-10-20",
-"views": 0,
-"reach": 0,
-"likes": 0,
-"comments": 0,
-"shares": 0,
-"saved": 0,
 "por_red": {
-"instagram_reel": {
-"views": 0,
-"reach": 0,
-"likes": 0,
-"comments": 0,
-"shares": 0,
-"ig_reels_avg_watch_time": 0,
-"saved": 0
-}
+"instagram_reel": {}
 }
 }
 }
