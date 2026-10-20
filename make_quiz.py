@@ -480,6 +480,11 @@ def lines_for(fmt, items, S):
     return L
 
 
+# Una sola dirección de voz para TODO el reel: si cada frase lleva su propia indicación (enérgica, cálida...), el modelo
+# cambia de timbre entre tomas y el revisor lo detecta como dos voces distintas.
+ONE_VOICE = "confident, warm and assured, same timbre, pitch and energy as every other line of this reel"
+
+
 def _groups(L):
     """Bloques que se dicen seguidos (pregunta + opciones, solución + explicación, ficha + respuesta, 3 claves...)."""
     out = []
@@ -565,7 +570,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         try:
             clips = []
             for grp in _groups(L):                  # cada bloque se graba de una sola toma: entonación más natural
-                clips += voice.say_many([t for _, t, _ in grp], speed=speed, styles=[s for _, _, s in grp],
+                clips += voice.say_many([t for _, t, _ in grp], speed=speed, styles=[ONE_VOICE] * len(grp),
                                         one_take=len(grp) > 1)
             break
         except voice.VoiceError as e:
@@ -585,7 +590,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 tries += 1
                 print(f"voz: '{k}' {why}; la grabo otra vez sola (intento {tries})", flush=True)
                 try:
-                    A[k] = voice.say_many([t], speed=speed, styles=[s_], one_take=False, force=True)[0]
+                    A[k] = voice.say_many([t], speed=speed, styles=[ONE_VOICE], one_take=False, force=True)[0]
                 except voice.VoiceError:
                     raise
                 except Exception as e:
@@ -949,8 +954,11 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             if st.get("share_line") and lt > 1.2:
                 fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1225,
                                 eob((lt - 1.2) / 0.35))
-            s_ = sub_img("cta", tt, 44)
-            if s_ is not None: fx.paste_center(fr, s_, W / 2, 1395)
+            top_, sz = 1262, 44                    # el subtítulo nunca entra en los 420 px inferiores (interfaz de la red)
+            s_ = sub_img("cta", tt, sz)
+            while s_ is not None and s_.height > fx.SAFE_BOTTOM - 10 - top_ and sz > 30:
+                sz -= 3; s_ = sub_img("cta", tt, sz)
+            if s_ is not None: fx.paste_center(fr, s_, W / 2, top_ + s_.height / 2)
         if fi in caps and len(slides) < 12:
             name, path = caps[fi]
             fr.convert("RGB").save(path); slides.append(path)

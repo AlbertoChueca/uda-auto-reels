@@ -234,6 +234,9 @@ def template(fmt, items):
     if fmt == "comparativa" and P.get("col_a"):
         b = P["col_b"] if P["col_b"][:3].isupper() or P["col_b"].split()[0].isupper() else P["col_b"][0].lower() + P["col_b"][1:]
         sh = f"{P['col_a']} o {b}" if len(f"{P['col_a']} o {b}".split()) <= 6 else sh
+    if fmt == "grafico" and P.get("titulo") and 2 <= len(P["titulo"].split()) <= 7:
+        sh = P["titulo"]                                  # el gancho dice qué enseña el gráfico, no "las cifras lo dicen"
+        hl = P["titulo"].rstrip(".") + ". Mira las cifras."
     return {"screen_hook": sh, "hook_line": hl, "reveal_line": "Vamos allá.",
             "intro_line": "Mira cómo cambian las cifras." if fmt == "grafico" else "Tres claves. Guárdalo para cuando lo necesites.",
             "cta_line": CTA_DEFAULT,
