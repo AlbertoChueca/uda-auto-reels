@@ -127,10 +127,12 @@ def clean(raw, tema, bloque, key, lab, txt, existing):
     return p, "ok"
 
 
-def choose(st, rng):
-    """(bloque, tema, (norma, etiqueta, texto)) con más necesidad."""
+def choose(st, rng, extra=None):
+    """(bloque, tema, (norma, etiqueta, texto)) con más necesidad. extra = piezas ya creadas en esta ejecución."""
     pub, pend = QB.stock()
-    need = sorted(QB.BLOQUES, key=lambda b: (pub[b] + pend[b]) / TARGET[b])
+    extra = extra or {}
+    only = [b for b in os.environ.get("BLOQUES", "").split(",") if b in QB.BLOQUES] or list(QB.BLOQUES)
+    need = sorted(only, key=lambda b: (pub[b] + pend[b] + extra.get(b, 0)) / TARGET[b])
     temas = QB.cfg()["temas"]
     for b in need:
         cands = [t for t, d in temas.items() if b in d["bloques"]]
@@ -187,7 +189,10 @@ def run(calls=14, seed=None):
     ids = {p["id"] for p in bank}
     added, rejected = [], {}
     for k in range(calls):
-        ch = choose(st, rng)
+        hechas = {}
+        for p in added:
+            hechas[p["bloque"]] = hechas.get(p["bloque"], 0) + 1
+        ch = choose(st, rng, hechas)
         if not ch:
             print("generador: no quedan fragmentos nuevos en ninguna fuente", flush=True); break
         b, tema, chunk = ch

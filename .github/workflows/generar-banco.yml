@@ -13,6 +13,9 @@ on:
       verificar:
         description: "Cuántas piezas pendientes verificar después"
         default: "120"
+      bloques:
+        description: "Solo estos bloques (vacío = todos según la reserva): normativa,proyecto,productividad,servicios"
+        default: ""
 
 permissions:
   contents: write
@@ -35,6 +38,7 @@ jobs:
       - name: Generar piezas
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BLOQUES: ${{ inputs.bloques || '' }}
         run: python generar_banco.py ${{ inputs.llamadas || '16' }}
       - name: Guardar piezas nuevas
         if: always()
