@@ -26,8 +26,8 @@ def on(name, default="true"):
 def publish(reel, story, caption, meta, slot=""):
     """Devuelve {destino: id de la publicación en Zernio o 'error: ...'}."""
     SLOT[0] = slot
-    if not os.environ.get("ZERNIO_API_KEY"):
-        return {"zernio": "error: falta el secreto ZERNIO_API_KEY"}
+    if not os.environ.get("ZERNIO_API_KEY") and not os.environ.get("IG_TOKEN"):
+        return {"zernio": "error: faltan los secretos ZERNIO_API_KEY e IG_TOKEN"}
     import publish_zernio as Z
     urls, lock, jobs, res = {}, threading.Lock(), {}, {}
 
@@ -38,11 +38,23 @@ def publish(reel, story, caption, meta, slot=""):
             return urls[path]
     light = Z.ig_safe(reel)
     morning = slot == "manana"
-    if not morning:
-        jobs["instagram_reel"] = lambda: Z.instagram_reel(url(light), caption, meta.get("thumb_ms"))
-    if on("IG_STORY") or morning:
-        src = light if (morning or not story) else story
-        jobs["instagram_story"] = lambda: Z.instagram_story(url(Z.story_safe(src)))
+    src = light if (morning or not story) else story
+    if os.environ.get("IG_TOKEN"):                    # Instagram directo por la API de Meta (gratis), como en TCAE
+        import publish_ig as IG
+
+        def ig_reel():
+            m = IG.publish_reel(light, caption, thumb_ms=meta.get("thumb_ms"))
+            meta["permalink"] = m.get("permalink")
+            return f"ig:{m['id']}"
+        if not morning:
+            jobs["instagram_reel"] = ig_reel
+        if on("IG_STORY") or morning:
+            jobs["instagram_story"] = lambda: f"ig:{IG.publish_story(Z.story_safe(src)).get('id')}"
+    else:                                             # o por Zernio, si la cuenta está conectada allí
+        if not morning:
+            jobs["instagram_reel"] = lambda: Z.instagram_reel(url(light), caption, meta.get("thumb_ms"))
+        if on("IG_STORY") or morning:
+            jobs["instagram_story"] = lambda: Z.instagram_story(url(Z.story_safe(src)))
     if on("TIKTOK"):
         jobs["tiktok_video"] = lambda: Z.tiktok_video(url(light), caption, meta.get("thumb_ms"))
     if on("TIKTOK_STORY_BORRADOR") and story and not morning:

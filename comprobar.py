@@ -24,6 +24,8 @@ if os.environ.get("ZERNIO_API_KEY"):
         import publish_zernio as Z
         acc, seen = Z.accounts(verbose=True)
         for p, label in (("instagram", "Instagram"), ("tiktok", "TikTok"), ("linkedin", "LinkedIn")):
+            if p == "instagram" and os.environ.get("IG_TOKEN"):
+                continue                                   # Instagram va directo por la API de Meta (abajo)
             other = ", ".join(seen.get(p, [])) or "ninguna"
             ok(f"{label} (Zernio)", p in acc, "conectada (@uniondearquitectos)" if p in acc else
                f"no hay cuenta de UDA (conectadas en Zernio: {other}); conéctala o fija {Z.PLATFORMS[p]}", p == "instagram")
@@ -31,6 +33,15 @@ if os.environ.get("ZERNIO_API_KEY"):
         ok("Zernio", False, f"error: {str(e)[:150]}", True)
 else:
     ok("Zernio", False, "falta el secreto ZERNIO_API_KEY: no se publica nada", True)
+
+# ---- Instagram directo (API de Meta, gratis)
+if os.environ.get("IG_TOKEN"):
+    try:
+        from publish_ig import whoami
+        me = whoami(os.environ["IG_TOKEN"])
+        ok("Instagram (API de Meta)", True, f"@{me['username']} · publica directo, sin Zernio")
+    except Exception as e:
+        ok("Instagram (API de Meta)", False, f"token no válido: {str(e)[:160]}", True)
 
 # ---- Gemini
 if os.environ.get("GEMINI_API_KEY"):

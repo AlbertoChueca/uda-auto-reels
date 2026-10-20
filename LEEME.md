@@ -75,8 +75,12 @@ leen como las dice un arquitecto ("de be ese i", "ce te e", "la loe", "metros cu
 ## Puesta en marcha (una vez)
 1. **Settings → Secrets and variables → Actions → Secrets**:
    - `GEMINI_API_KEY` (obligatorio: generador, verificador, guion, voz).
-   - `ZERNIO_API_KEY`: en Zernio conecta **Instagram, TikTok y LinkedIn de @uniondearquitectos** (en LinkedIn, la página
-     de empresa). Por seguridad solo se publica en cuentas cuyo nombre contiene "uniondearquitectos" (o "Unión de
+   - `IG_TOKEN`: Instagram va **directo por la API de Meta** (gratis, como en TCAE): token de **página** de Facebook
+     (empieza por `EAA`) de la página vinculada a @uniondearquitectos, con `instagram_basic`, `instagram_content_publish`,
+     `pages_show_list`, `pages_read_engagement` e `instagram_manage_insights`, generado desde un token de usuario de larga
+     duración (no caduca). El código comprueba que es de @uniondearquitectos antes de publicar.
+   - `ZERNIO_API_KEY`: en Zernio conecta **TikTok y LinkedIn de @uniondearquitectos** (en LinkedIn, la página de
+     empresa); son las 2 cuentas del plan gratuito. Zernio también aloja las imágenes del carrusel. Por seguridad solo se publica en cuentas cuyo nombre contiene "uniondearquitectos" (o "Unión de
      Arquitectos"): aunque el mismo Zernio tenga conectada @apruebatcae, nunca se publica allí. Si alguna se llama de otra
      forma, pon su id en las variables `ZERNIO_IG_ACCOUNT`, `ZERNIO_TT_ACCOUNT` o `ZERNIO_LI_ACCOUNT`.
 2. **Actions → Descargar fuentes → Run workflow.** Mira `fuentes/estado.md` (ver la nota sobre el CTE más abajo).

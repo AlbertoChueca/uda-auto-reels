@@ -529,14 +529,18 @@ def publish(paths, pdf, cap, c):
     import publish_zernio as Z
     res = {}
     if not os.environ.get("ZERNIO_API_KEY"):
-        return {"zernio": "error: falta el secreto ZERNIO_API_KEY"}
+        return {"zernio": "error: falta el secreto ZERNIO_API_KEY (se usa para alojar las imágenes)"}
     try:
         urls = [Z.upload(p) for p in paths]
     except Exception as e:
         return {"error": f"no se pudieron subir las imágenes: {str(e)[:200]}"}
     title = " ".join(c["titulo_lineas"])
     try:
-        res["instagram_carrusel"] = Z.instagram_carousel(urls, cap)
+        if os.environ.get("IG_TOKEN"):                    # Instagram directo por la API de Meta (gratis)
+            import publish_ig as IG
+            res["instagram_carrusel"] = f"ig:{IG.publish_image_carousel(urls, cap)['id']}"
+        else:
+            res["instagram_carrusel"] = Z.instagram_carousel(urls, cap)
     except Exception as e:
         res["instagram_carrusel"] = f"error: {str(e)[:300]}"
     if os.environ.get("TIKTOK", "true").lower() != "false":

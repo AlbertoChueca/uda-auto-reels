@@ -36,8 +36,8 @@ def _entries():
 
 
 def update(days=120):
-    if not os.environ.get("ZERNIO_API_KEY"):
-        return "insights: sin ZERNIO_API_KEY"
+    if not os.environ.get("ZERNIO_API_KEY") and not os.environ.get("IG_TOKEN"):
+        return "insights: sin ZERNIO_API_KEY ni IG_TOKEN"
     import publish_zernio as Z
     perf = json.load(open(PERF)) if os.path.exists(PERF) else {}
     today = datetime.date.today(); n_ok = n_wait = n_err = 0
@@ -52,10 +52,19 @@ def update(days=120):
         for dest, pid in (e.get("publicado") or {}).items():
             if any(s in dest for s in SKIP) or str(pid).startswith("error") or pid in ("ok", "None", None):
                 continue
-            try:
-                a = Z.analytics(pid)
-            except Exception as err:
-                n_err += 1; print("insights:", dest, str(err)[:120], flush=True); continue
+            if str(pid).startswith("ig:"):                # publicado directo en Instagram: métricas de la API de Meta
+                try:
+                    import publish_ig as IG
+                    m = IG.media_insights(str(pid)[3:])
+                    m["saves"] = m.pop("saved", None)
+                    a = {"analytics": {k: v for k, v in m.items() if v is not None}}
+                except Exception as err:
+                    n_err += 1; print("insights IG:", str(err)[:120], flush=True); continue
+            else:
+                try:
+                    a = Z.analytics(pid)
+                except Exception as err:
+                    n_err += 1; print("insights:", dest, str(err)[:120], flush=True); continue
             if not a:
                 n_wait += 1; continue
             m = dict(a.get("analytics") or {})
