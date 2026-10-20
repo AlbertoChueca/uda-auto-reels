@@ -247,16 +247,16 @@
 "veces": 1
 },
 "c4d415577ce5": {
-"tema": "uda_delegar",
+"tema": "uda_servicios",
 "fuente": "10 Condiciones y plazos",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "5d53f6ea8b24": {
 "tema": "uda_servicios",
 "fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 5
 },
 "83a8aa806c71": {
 "tema": "rcd",
@@ -268,7 +268,7 @@
 "tema": "uda_delegar",
 "fuente": " (cont.)",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "979fc5988bf5": {
 "tema": "ess",
@@ -280,7 +280,7 @@
 "tema": "uda_servicios",
 "fuente": "07 Actuaciones específicas",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 3
 },
 "173e059f2c7c": {
 "tema": "cte_sua",
@@ -292,13 +292,13 @@
 "tema": "uda_delegar",
 "fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 5
 },
 "a8f17a852249": {
 "tema": "uda_delegar",
 "fuente": " (cont.)",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "0e0de861c2e6": {
 "tema": "cte_he",
@@ -310,7 +310,7 @@
 "tema": "uda_delegar",
 "fuente": "01 ¿Contratar a alguien o delegar en UDA?",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 5
 },
 "fef639385ce4": {
 "tema": "cee",
@@ -319,16 +319,16 @@
 "veces": 1
 },
 "aa12ca84f054": {
-"tema": "uda_delegar",
+"tema": "uda_servicios",
 "fuente": "07 CAD o Revit (BIM)",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 4
 },
 "4d20a9c6681f": {
 "tema": "uda_servicios",
 "fuente": "04 Entorno de trabajo y punto de partida *",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "2d18b6bab0df": {
 "tema": "loe",
@@ -343,16 +343,16 @@
 "veces": 1
 },
 "8bdfd2af269e": {
-"tema": "uda_servicios",
+"tema": "uda_delegar",
 "fuente": "09 Qué incluye cada partida",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 4
 },
 "723c0d8353d5": {
 "tema": "uda_delegar",
 "fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "9ad804fe81fb": {
 "tema": "cte_si",
@@ -364,13 +364,13 @@
 "tema": "uda_servicios",
 "fuente": "08 Actuaciones específicas",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "ea6d89b88fc1": {
 "tema": "uda_delegar",
 "fuente": "02 Cómo trabajamos y cómo presupuestamos",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 4
 },
 "5c60379eecb7": {
 "tema": "cte_proyecto",
@@ -382,7 +382,7 @@
 "tema": "uda_delegar",
 "fuente": "06 Industrial y equipamientos",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "21aad5fea41d": {
 "tema": "cte_hr",
@@ -400,7 +400,7 @@
 "tema": "uda_servicios",
 "fuente": "08 Opciones adicionales",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "b277d8fa7835": {
 "tema": "ess",
@@ -415,16 +415,16 @@
 "veces": 1
 },
 "54a77558abc5": {
-"tema": "uda_servicios",
+"tema": "uda_delegar",
 "fuente": " (cont.)",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 3
 },
 "2c024a9f7f94": {
-"tema": "uda_delegar",
+"tema": "uda_servicios",
 "fuente": "03 Vivienda unifamiliar y reforma",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 5
 },
 "e7697ccabd09": {
 "tema": "cte_he",
@@ -439,16 +439,16 @@
 "veces": 1
 },
 "af57f1116f0b": {
-"tema": "uda_delegar",
+"tema": "uda_servicios",
 "fuente": "07 CAD o Revit (BIM) (cont.)",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 4
 },
 "7dd2c5cc2fa3": {
 "tema": "uda_delegar",
 "fuente": "05 Bloques de viviendas",
 "fecha": "2026-10-20",
-"veces": 3
+"veces": 5
 },
 "f35185faec58": {
 "tema": "cte_se",
@@ -466,13 +466,13 @@
 "tema": "uda_servicios",
 "fuente": "UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "aca0091e0cee": {
 "tema": "uda_servicios",
 "fuente": "03 Superficies y viviendas",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "8f57e8ab88ec": {
 "tema": "cte_general",
@@ -490,7 +490,7 @@
 "tema": "uda_servicios",
 "fuente": "05 Proyecto Básico",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "1183da8d0db8": {
 "tema": "cee",
@@ -508,7 +508,7 @@
 "tema": "uda_servicios",
 "fuente": "06 Proyecto de Ejecución",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "c0fbf8c15cb9": {
 "tema": "contratacion",
@@ -520,7 +520,7 @@
 "tema": "uda_servicios",
 "fuente": "01 Datos del despacho y del proyecto",
 "fecha": "2026-10-20",
-"veces": 2
+"veces": 4
 },
 "647ac2377655": {
 "tema": "cte_hs",
@@ -623,25 +623,97 @@
 "fuente": "Disposición final octava. Entrada en vigor. · 2. Modelo de declaración responsab",
 "fecha": "2026-10-20",
 "veces": 1
+},
+"0055269711c2": {
+"tema": "contratacion",
+"fuente": "Artículo 56. Despido improcedente.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"b67cf7618013": {
+"tema": "contratacion",
+"fuente": "Disposición adicional decimonovena. Cálculo de indemnizaciones en determinados s",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"8fc42aa7ae46": {
+"tema": "contratacion",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"02c671fe0c8f": {
+"tema": "contratacion",
+"fuente": "Artículo 37. Descanso semanal, fiestas y permisos. (cont.)",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"38b67e5b7a96": {
+"tema": "contratacion",
+"fuente": "Disposición transitoria duodécima. Salarios de tramitación. (cont.)",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"ec6a1aa700ed": {
+"tema": "contratacion",
+"fuente": "CAPÍTULO II",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"3032498f6ab1": {
+"tema": "contratacion",
+"fuente": "Artículo 9. Validez del contrato.",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"040585af411e": {
+"tema": "contratacion",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo. · 4. El contrato a ",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"b98b5ca64edd": {
+"tema": "contratacion",
+"fuente": "Sección 4.ª Extinción del contrato (cont.)",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"3e263420cc75": {
+"tema": "contratacion",
+"fuente": "Artículo 33. El Fondo de Garantía Salarial. · 4. El Fondo asumirá las obligacion",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"87a5fc1002bf": {
+"tema": "contratacion",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo. · 4. El contrato a ",
+"fecha": "2026-10-20",
+"veces": 1
+},
+"e2fd71078a0e": {
+"tema": "contratacion",
+"fuente": "Artículo 64. Derechos de información y consulta y competencias. · 4. El comité d",
+"fecha": "2026-10-20",
+"veces": 1
 }
 },
 "temas": {
-"uda_servicios": "2026-10-20 20:26:38.726590",
-"rcd": "2026-10-20 20:17:56.287958",
+"cte_hr": "2026-10-20 20:15:18.854121",
 "cte_general": "2026-10-20 20:24:18.337487",
-"ess": "2026-10-20 20:19:36.312849",
-"cte_se": "2026-10-20 20:24:05.550110",
-"cte_proyecto": "2026-10-20 20:14:00.719753",
-"uda_delegar": "2026-10-20 20:25:44.774160",
-"lph": "2026-10-20 18:37:01.304045",
-"cte_he": "2026-10-20 20:22:37.820393",
 "suelo": "2026-10-20 18:41:28.712540",
-"loe": "2026-10-20 20:10:51.781847",
-"cte_si": "2026-10-20 20:13:47.227042",
-"contratacion": "2026-10-20 20:24:58.985827",
+"lph": "2026-10-20 18:37:01.304045",
+"uda_servicios": "2026-10-20 22:13:29.135550",
 "cte_hs": "2026-10-20 20:12:24.196838",
 "cee": "2026-10-20 20:26:02.337591",
+"contratacion": "2026-10-20 22:12:55.146049",
+"rcd": "2026-10-20 20:17:56.287958",
+"uda_delegar": "2026-10-20 22:13:13.402019",
 "cte_sua": "2026-10-20 20:21:05.351398",
-"cte_hr": "2026-10-20 20:15:18.854121"
+"cte_he": "2026-10-20 20:22:37.820393",
+"cte_se": "2026-10-20 20:24:05.550110",
+"ess": "2026-10-20 20:19:36.312849",
+"loe": "2026-10-20 20:10:51.781847",
+"cte_proyecto": "2026-10-20 20:14:00.719753",
+"cte_si": "2026-10-20 20:13:47.227042"
 }
 }

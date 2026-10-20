@@ -6790,5 +6790,3096 @@
 "id": "3092cde0fe",
 "fuente_ok": true,
 "fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"titulo": "Vivienda unifamiliar delegada",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Atención técnica",
+"a": "Falta de tiempo",
+"b": "Mismo cuidado"
+},
+{
+"aspecto": "Gestión y análisis",
+"a": "Horas de trabajo",
+"b": "Siempre incluida"
+},
+{
+"aspecto": "Reforma 80 m²",
+"a": "Redacción propia",
+"b": "1.950 € referencia"
+}
+],
+"cita": "El trabajo con el que más autónomos y pequeños despachos confían en nosotros, con el mismo cuidado que un proyecto grande.",
+"citas_extra": [
+"REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras."
+],
+"id": "d5eaa4781a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"titulo": "Presupuestos de referencia en unifamiliar",
+"barras": [
+{
+"etiqueta": "Vivienda de 90 m²",
+"valor": 2469.0,
+"texto": "2.469 €"
+},
+{
+"etiqueta": "Vivienda de 150 m²",
+"valor": 2955.0,
+"texto": "2.955 €"
+},
+{
+"etiqueta": "Vivienda de 250 m²",
+"valor": 3765.0,
+"texto": "3.765 €"
+}
+],
+"conclusion": "Precios de referencia para proyectos completos de unifamiliar.",
+"cita": "VIVIENDA DE 90 m²: 2.469 €. P. Básico 802 € · P. Ejecución 1.667 €. VIVIENDA DE 150 m²: 2.955 €. P. Básico 970 € · P. Ejecución 1.985 €. VIVIENDA DE 250 m²: 3.765 €.",
+"citas_extra": [],
+"id": "c786f4da75",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"titulo": "Encargos unifamiliares y reformas",
+"puntos": [
+"Mismo cuidado que un proyecto grande",
+"Gestión y análisis técnico siempre incluida",
+"Instalaciones opcionales modeladas en Revit"
+],
+"cita": "El trabajo con el que más autónomos y pequeños despachos confían en nosotros, con el mismo cuidado que un proyecto grande.",
+"citas_extra": [
+"Instalaciones en Revit (3D), sustituye a Instalaciones | — | — | 1.500 € | 3,00 €"
+],
+"id": "32f61ece11",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 56. Despido improcedente.",
+"referencia": "Estatuto de los Trabajadores, art. 56.2",
+"afirmacion": "Si readmites a un empleado improcedente te ahorras pagarle mensualidades.",
+"explicacion": "Readmitir obliga a pagar todos los salarios dejados de percibir desde el despido hasta la sentencia judicial.",
+"cita": "En caso de que se opte por la readmisión, el trabajador tendrá derecho a los salarios de tramitación. Estos equivaldrán a una cantidad igual a la suma de los salarios dejados de percibir",
+"veredicto": "MITO",
+"id": "d07be4aced",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "08 Actuaciones específicas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"titulo": "Actuaciones específicas en el despacho",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Tu función",
+"a": "Cubrir toda la producción",
+"b": "Presupuestas, firmas y tramitas"
+},
+{
+"aspecto": "Documentos",
+"a": "Redactarlos desde cero",
+"b": "Documentación completa entregada"
+},
+{
+"aspecto": "Rentabilidad",
+"a": "Asumir sueldos fijos",
+"b": "Precio que deja margen"
+}
+],
+"cita": "Precios para el despacho: tú presupuestas, firmas y tramitas; nuestro precio te deja margen.",
+"citas_extra": [
+"Actuación (documentación completa: estado actual y reformado, normativa, memoria, mediciones)"
+],
+"id": "5d8ae728dc",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "contratar",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "08 Actuaciones específicas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"titulo": "Coste base según actividad del local",
+"barras": [
+{
+"etiqueta": "Licencia sin obra",
+"valor": 750.0,
+"texto": "750 € hasta 150 m²"
+},
+{
+"etiqueta": "Actividad inocua",
+"valor": 1400.0,
+"texto": "1.400 € hasta 150 m²"
+},
+{
+"etiqueta": "Actividad clasificada",
+"valor": 2800.0,
+"texto": "2.800 € hasta 150 m²"
+}
+],
+"conclusion": "El coste base varía con la complejidad del local",
+"cita": "Licencia de actividad sin obra | 750 € hasta 150 m² + 2,50 €/m²",
+"citas_extra": [
+"Adecuación de local: actividad clasificada (hostelería, gimnasio, clínica…) | 2.800 € hasta 150 m² + 8 €/m²"
+],
+"id": "e77fcbf47d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "08 Actuaciones específicas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"afirmacion": "Externalizar una actuación específica te aparta de tramitar y firmar el encargo",
+"explicacion": "En actuaciones específicas tú sigues presupuestando, firmando y tramitando con tu cliente; el soporte técnico externo te asegura margen comercial.",
+"cita": "Precios para el despacho: tú presupuestas, firmas y tramitas; nuestro precio te deja margen.",
+"veredicto": "MITO",
+"id": "2312f27952",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "03 Superficies y viviendas",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 03 Superficies y viviendas",
+"titulo": "Cálculo de viviendas a presupuestar",
+"puntos": [
+"Distribución distinta: es vivienda tipo nueva",
+"Cambios menores: computan solo como variante",
+"Idénticas o en espejo: no se indican"
+],
+"cita": "Cada distribución distinta. Si la cocina o los baños cambian de sitio, es una vivienda tipo nueva.",
+"citas_extra": [
+"Misma vivienda con cambios menores: un tabique, un hueco, la terraza o su versión adaptada.",
+"Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto."
+],
+"id": "83814bd53d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "04 Entorno de trabajo y punto de partida *",
+"referencia": "UDA · Listado de Documentos a Delegar, 04 Entorno de trabajo y punto de partida",
+"titulo": "Opciones de trabajo en Revit",
+"puntos": [
+"Todas las instalaciones exigibles modeladas en 3D",
+"Uso de tu propia plantilla o biblioteca",
+"Plan de Ejecución BIM o modelo propio"
+],
+"cita": "Instalaciones en Revit (3D): todas las instalaciones exigibles modeladas | Tengo plantilla o biblioteca de familias propia y quiero que la uséis Plan de Ejecución BIM (BEP) | Aporto mi propio modelo Revit",
+"citas_extra": [],
+"id": "76c2399203",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "05 Proyecto Básico",
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"titulo": "Memoria técnica de Básico",
+"puntos": [
+"Memoria descriptiva y constructiva preliminar",
+"Estructural preliminar y justificación urbanística",
+"Seguridad en caso de incendio DB-SI"
+],
+"cita": "Memoria descriptiva, constructiva y estructural preliminar Cumplimiento del CTE: seguridad en caso de incendio (DB-SI) Normativa de aplicación y justificación urbanística",
+"citas_extra": [],
+"id": "2879e79a11",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_listado",
+"fuente": "05 Proyecto Básico",
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"titulo": "Encargo de Proyecto Básico",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Alcance",
+"a": "Documento a documento",
+"b": "Proyecto Básico completo"
+},
+{
+"aspecto": "Planimetría",
+"a": "Delineación propia",
+"b": "Modelado Revit o DWG"
+},
+{
+"aspecto": "Memoria",
+"a": "Redacción interna",
+"b": "Memoria preliminar y DB-SI"
+}
+],
+"cita": "Quiero el Proyecto Básico completo (si lo marcas, no hace falta marcar cada documento)",
+"citas_extra": [],
+"id": "fe6468aa2f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Disposición adicional decimonovena. Cálculo de indemnizaciones en determinados supuestos d",
+"referencia": "Estatuto de los Trabajadores, disposición adicional decimonovena.1",
+"titulo": "Indemnización y jornada reducida",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Base de cálculo",
+"a": "Salario sin reducción",
+"b": "Precio cerrado pactado"
+},
+{
+"aspecto": "Horas no trabajadas",
+"a": "Computan para indemnizar",
+"b": "Sin coste imprevisto"
+},
+{
+"aspecto": "Coste de extinción",
+"a": "Equivalente a completa",
+"b": "Cero indemnizaciones laborales"
+}
+],
+"cita": "el salario a tener en cuenta a efectos del cálculo de las indemnizaciones previstas en esta ley será el que hubiera correspondido a la persona trabajadora sin considerar la reducción de jornada efectuada",
+"citas_extra": [],
+"id": "bcdbeabf07",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Disposición adicional decimonovena. Cálculo de indemnizaciones en determinados supuestos d",
+"referencia": "Estatuto de los Trabajadores, disposición adicional decimonovena.1",
+"titulo": "Cálculo de indemnizaciones protegidas",
+"puntos": [
+"Base sobre salario completo",
+"Ignora la reducción efectuada",
+"Aplica dentro del plazo"
+],
+"cita": "el salario a tener en cuenta a efectos del cálculo de las indemnizaciones previstas en esta ley será el que hubiera correspondido a la persona trabajadora sin considerar la reducción de jornada efectuada",
+"citas_extra": [],
+"id": "dd0c424a60",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Disposición adicional decimonovena. Cálculo de indemnizaciones en determinados supuestos d",
+"referencia": "Estatuto de los Trabajadores, disposición adicional decimonovena.1",
+"afirmacion": "La indemnización por despido se calcula con el sueldo reducido actual del empleado",
+"explicacion": "Debe calcularse sobre el salario íntegro que correspondería sin aplicar la reducción de jornada dentro del plazo legal.",
+"cita": "el salario a tener en cuenta a efectos del cálculo de las indemnizaciones previstas en esta ley será el que hubiera correspondido a la persona trabajadora sin considerar la reducción de jornada efectuada",
+"veredicto": "MITO",
+"id": "6b572ddc85",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"titulo": "Plazos habituales de entrega técnica",
+"barras": [
+{
+"etiqueta": "Proyecto Básico",
+"valor": 10.0,
+"texto": "10 días"
+},
+{
+"etiqueta": "Proyecto de Ejecución",
+"valor": 20.0,
+"texto": "20 días"
+}
+],
+"conclusion": "Tiempos cerrados para absorber picos de trabajo",
+"cita": "Generalmente, suele ser 10 días un Proyecto Básico y 20 días un Proyecto de Ejecución por nuestra parte.",
+"citas_extra": [],
+"id": "452ed3fea6",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"titulo": "Encargos que puedes delegar",
+"puntos": [
+"Viviendas unifamiliares y promociones plurifamiliares",
+"Edificios dotacionales y naves industriales",
+"Reformas completas y concursos públicos"
+],
+"cita": "Nuestro equipo tiene capacidad para abarcar desde viviendas unifamiliares y plurifamiliares hasta proyectos dotacionales, naves industriales, reformas completas y preparación de planimetría para concursos públicos.",
+"citas_extra": [],
+"id": "ccd916fab7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"afirmacion": "Externalizar la producción técnica te deja sin los archivos nativos",
+"explicacion": "Una vez auditada y validada la entrega, recibes los archivos nativos y PDFs con propiedad total para tu estudio.",
+"cita": "Nuestro Project Manager audita el trabajo internamente y, tras validar que cumple los estándares, te entregamos los archivos nativos y PDFs. Son 100% tuyos.",
+"veredicto": "MITO",
+"id": "78ee318210",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "Tabla de presupuestos de UDA, sección 10",
+"titulo": "Reparto de responsabilidades técnicas",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Firma y visado",
+"a": "Firma del despacho",
+"b": "Soporte marca blanca"
+},
+{
+"aspecto": "Dirección de obra",
+"a": "Dirección y coordinación",
+"b": "Soporte técnico online"
+},
+{
+"aspecto": "Tramitación técnica",
+"a": "Responsabilidad final propia",
+"b": "Soporte técnico online"
+}
+],
+"cita": "La firma corresponde al despacho, así como la responsabilidad final, el visado, la tramitación, la dirección de obra y la coordinación de seguridad y salud. UDA es soporte técnico online en marca blanca.",
+"citas_extra": [],
+"id": "f4cc453e0a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "Tabla de presupuestos de UDA, sección 10",
+"titulo": "Plazos orientativos de Proyecto de Ejecución",
+"barras": [
+{
+"etiqueta": "Unifamiliar y reforma",
+"valor": 35.0,
+"texto": "20–35 días"
+},
+{
+"etiqueta": "Pareados y adosados",
+"valor": 45.0,
+"texto": "30–45 días"
+},
+{
+"etiqueta": "Bloque hasta 30 viviendas",
+"valor": 55.0,
+"texto": "40–55 días"
+},
+{
+"etiqueta": "Bloque más 30 viviendas",
+"valor": 85.0,
+"texto": "55–85 días"
+}
+],
+"conclusion": "Plazos de ejecución según tipología y envergadura",
+"cita": "Vivienda unifamiliar y reforma | 15–20 | 20–35 Pareados, adosados y conjuntos | 15–30 | 30–45 Bloque de hasta 30 viviendas | 20–35 | 40–55 Bloque de más de 30 viviendas | 35–50 | 55–85",
+"citas_extra": [],
+"id": "20689a7b99",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "Tabla de presupuestos de UDA, sección 10",
+"titulo": "Garantías de entrega y soporte",
+"puntos": [
+"Entrega en formatos PDF, DWG, IFC o RVT",
+"Siete días de soporte para dudas y erratas",
+"Compatibilización inicial con estructuras e instalaciones"
+],
+"cita": "Entrega: PDF + DWG, o IFC + RVT con el pago final. Las familias van dentro del modelo; nuestra biblioteca y plantillas siguen siendo de UDA.",
+"citas_extra": [
+"Plazos y soporte | Empiezan al recibir toda la documentación. 7 días naturales de soporte tras la entrega para dudas y erratas menores.",
+"1 revisión por fase (2 en bloques de 30 viviendas o más) y una primera compatibilización con estructuras e instalaciones."
+],
+"id": "d14517662e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
+"referencia": "uniondearquitectos.com, Sección 'Haz que tu despacho crezca sin límites'",
+"titulo": "Tres palancas para tu despacho",
+"puntos": [
+"Elimina costes fijos contratando solo por proyectos",
+"Mejora tu precio por hora delegando la técnica",
+"Céntrate en proyectar y gestionar tus clientes"
+],
+"cita": "UDA es un estudio online de arquitectos que ofrece soporte a despachos como el tuyo, para liberarte de trabajo, delegando en nosotros de forma centralizada todo lo que necesites y así centrarte en tu área de genialidad.",
+"citas_extra": [
+"¿Quieres enfocarte solo en tu área de genialidad mientras nosotros realizamos toda parte técnica? 🗸 Eficiencia: Delega más, mejora tu precio/hora, llega a más cliente y escala tu estudio."
+],
+"id": "d6865d8c0d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_web",
+"fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
+"referencia": "uniondearquitectos.com, Sección 'Ellos hablan por nosotros'",
+"afirmacion": "Externalizar la producción técnica compromete tu autoría frente al cliente",
+"explicacion": "La colaboración técnica es confidencial bajo marca blanca: mantienes el anonimato total y te llevas todo el crédito ante tus clientes.",
+"cita": "Mantenemos siempre nuestro anonimato para ti, ya que queremos ser tu apoyo a largo plazo y que te lleves todo el crédito del trabajo hacia tus clientes.",
+"veredicto": "MITO",
+"id": "f8900868b7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo.",
+"referencia": "Estatuto de los Trabajadores, art. 12.2",
+"titulo": "Media jornada frente a servicios",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Medida del trabajo",
+"a": "Horas fijas pactadas",
+"b": "Por entregable cerrado"
+},
+{
+"aspecto": "Referencia temporal",
+"a": "Convenio o jornada máxima",
+"b": "Plazo del encargo"
+},
+{
+"aspecto": "Duración contractual",
+"a": "Indefinido o determinado",
+"b": "Sin ataduras laborales"
+}
+],
+"cita": "El contrato a tiempo parcial podrá concertarse por tiempo indefinido o por duración determinada en los supuestos en los que legalmente se permita la utilización de esta modalidad de contratación.",
+"citas_extra": [],
+"id": "20b38676b7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo.",
+"referencia": "Estatuto de los Trabajadores, art. 12.1",
+"titulo": "Reglas de la media jornada",
+"puntos": [
+"Horas inferiores al empleado comparable",
+"Referencia fijada por convenio colectivo",
+"Modalidad indefinida o duración determinada"
+],
+"cita": "A efectos de lo dispuesto en el párrafo anterior, se entenderá por «trabajador a tiempo completo comparable» a un trabajador a tiempo completo de la misma empresa y centro de trabajo, con el mismo tipo de contrato",
+"citas_extra": [],
+"id": "b4d00add9f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo.",
+"referencia": "Estatuto de los Trabajadores, art. 12.1",
+"afirmacion": "Puedes fijar una jornada parcial sin tener otra de referencia.",
+"explicacion": "Si no tienes plantilla completa similar, la referencia obligatoria es la jornada de tu convenio colectivo o el límite legal.",
+"cita": "Si en la empresa no hubiera ningún trabajador comparable a tiempo completo, se considerará la jornada a tiempo completo prevista en el convenio colectivo de aplicación o, en su defecto, la jornada máxima legal.",
+"veredicto": "MITO",
+"id": "115f53ddbc",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_listado",
+"fuente": "07 Actuaciones específicas",
+"referencia": "Listado de Documentos a Delegar, 07 Actuaciones específicas",
+"titulo": "Instalación de ascensor y accesibilidad",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Hueco y foso",
+"a": "Cálculo técnico propio",
+"b": "Estructura del hueco incluida"
+},
+{
+"aspecto": "Ubicación",
+"a": "Patio resuelto internamente",
+"b": "Ascensor exterior o patio"
+},
+{
+"aspecto": "Accesibilidad",
+"a": "Delineas portal y rampa",
+"b": "Rampa, salvaescaleras y portal"
+}
+],
+"cita": "Instalación de ascensor en edificio existente · nº de paradas: ____ | Ascensor: incluir estructura del hueco y foso Ascensor exterior o en patio | Mejora de accesibilidad (rampa, salvaescaleras, portal)",
+"citas_extra": [],
+"id": "c279d5821a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "07 Actuaciones específicas",
+"referencia": "Listado de Documentos a Delegar, 07 Actuaciones específicas",
+"titulo": "Licencias y adecuaciones de local",
+"puntos": [
+"Cambio de uso a vivienda",
+"Adecuación de local para comercio u oficina",
+"Actividades clasificadas como hostelería o gimnasio"
+],
+"cita": "Cambio de uso a vivienda (local u oficina) | Adecuación de local: actividad inocua (comercio, oficina) Adecuación de local: actividad clasificada (hostelería, gimnasio, clínica…) | Licencia de actividad sin obra",
+"citas_extra": [],
+"id": "91f190abb3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 06 Industrial y equipamientos",
+"titulo": "Coste técnico de naves y logística",
+"barras": [
+{
+"etiqueta": "Nave de 500 m²",
+"valor": 5175.0,
+"texto": "5.175 €"
+},
+{
+"etiqueta": "Nave de 3.000 m²",
+"valor": 9050.0,
+"texto": "9.050 €"
+},
+{
+"etiqueta": "Nave de 5.000 m²",
+"valor": 12150.0,
+"texto": "12.150 €"
+},
+{
+"etiqueta": "Centro logístico 12.000 m²",
+"valor": 23000.0,
+"texto": "23.000 €"
+}
+],
+"conclusion": "El peso fijo favorece a los proyectos más grandes.",
+"cita": "Ejemplos P. Básico + P. Ejecución: nave de 500 m², 5.175 € · nave de 3.000 m², 9.050 € · nave de 5.000 m², 12.150 € · centro logístico de 12.000 m², 23.000 €.",
+"citas_extra": [],
+"id": "d022286451",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 06 Industrial y equipamientos",
+"afirmacion": "Externalizar proyectos de gran superficie sale proporcionalmente más caro.",
+"explicacion": "El coste principal recae en la parte fija, permitiendo que los encargos de mayor envergadura no salgan perjudicados.",
+"cita": "El peso del precio está en la parte fija: los proyectos grandes no salen perjudicados.",
+"veredicto": "MITO",
+"id": "fc02804e0f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_listado",
+"fuente": "08 Opciones adicionales",
+"referencia": "UDA · Listado de Documentos a Delegar, 10 Qué incluye y condiciones",
+"titulo": "Estructura de pagos por fase",
+"barras": [
+{
+"etiqueta": "Al iniciar fase",
+"valor": 60.0,
+"texto": "60 %"
+},
+{
+"etiqueta": "Antes de la entrega",
+"valor": 40.0,
+"texto": "40 %"
+}
+],
+"conclusion": "Cada fase se abona por separado en dos plazos",
+"cita": "Cada fase se paga por separado: 60 % al iniciarla y 40 % justo antes de su entrega.",
+"citas_extra": [],
+"id": "2936346bd4",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "08 Opciones adicionales",
+"referencia": "UDA · Listado de Documentos a Delegar, 10 Qué incluye y condiciones",
+"titulo": "Límites técnicos no incluidos",
+"puntos": [
+"Ensayos, topografía y geotecnia quedan fuera",
+"Sin tramitación de certificaciones ambientales externas",
+"Modificaciones ajenas valoradas siempre como extra"
+],
+"cita": "Ensayos in situ, topografía y geotecnia, y certificaciones externas (LEED, BREEAM…).",
+"citas_extra": [
+"Rehacer planos por cambios ajenos a nuestro trabajo: se valoran antes como extra."
+],
+"id": "ea4f6e8d5b",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "06 Proyecto de Ejecución",
+"referencia": "Listado de Documentos a Delegar, apartado 06 Proyecto de Ejecución",
+"titulo": "Anejos técnicos a delegar",
+"puntos": [
+"Mediciones y presupuesto completo.",
+"Pliego de condiciones del proyecto.",
+"Seguridad, residuos y control de calidad."
+],
+"cita": "Mediciones y anejos | Mediciones y presupuesto Pliego de condiciones Estudio de seguridad y salud Estudio de gestión de residuos Plan de control de calidad",
+"citas_extra": [],
+"id": "dcc4597316",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_listado",
+"fuente": "06 Proyecto de Ejecución",
+"referencia": "Listado de Documentos a Delegar, apartado 06 Proyecto de Ejecución",
+"afirmacion": "Para delegar la Ejecución debes haber contratado antes el Básico",
+"explicacion": "Puedes encargar el Proyecto de Ejecución aportando el Proyecto Básico redactado directamente por tu propio despacho.",
+"cita": "Para hacer el Proyecto de Ejecución es necesario el Proyecto Básico, nuestro o de tu despacho.",
+"veredicto": "MITO",
+"id": "84112a6e1e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Artículo 37. Descanso semanal, fiestas y permisos. (cont.)",
+"referencia": "Estatuto de los Trabajadores, art. 37.9",
+"titulo": "Urgencias familiares del equipo",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Ausencias urgentes",
+"a": "Cuatro días retribuidos",
+"b": "No afectan entregables"
+},
+{
+"aspecto": "Coste económico",
+"a": "Asumes el salario",
+"b": "Precio cerrado pactado"
+},
+{
+"aspecto": "Entrega de proyecto",
+"a": "Riesgo de retrasos",
+"b": "Plazos siempre asegurados"
+}
+],
+"cita": "Las personas trabajadoras tendrán derecho a que sean retribuidas las horas de ausencia por las causas previstas en el presente apartado equivalentes a cuatro días al año, conforme a lo establecido en convenio colectivo",
+"citas_extra": [],
+"id": "720adc0da4",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Artículo 37. Descanso semanal, fiestas y permisos. (cont.)",
+"referencia": "Estatuto de los Trabajadores, art. 37.9",
+"titulo": "Permiso por fuerza mayor",
+"puntos": [
+"Cubre urgencias de familiares o convivientes.",
+"Exige presencia indispensable e inmediata.",
+"Cobran hasta cuatro días al año."
+],
+"cita": "La persona trabajadora tendrá derecho a ausentarse del trabajo por causa de fuerza mayor cuando sea necesario por motivos familiares urgentes relacionados con familiares o personas convivientes, en caso de enfermedad o accidente que hagan indispensable su presencia inmediata.",
+"citas_extra": [],
+"id": "ffa6fbf5b4",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 37. Descanso semanal, fiestas y permisos. (cont.)",
+"referencia": "Estatuto de los Trabajadores, art. 37.9",
+"afirmacion": "Puedes descontar del sueldo las horas por urgencias familiares.",
+"explicacion": "El Estatuto obliga a retribuir las ausencias por fuerza mayor familiar hasta el equivalente a cuatro días al año.",
+"cita": "Las personas trabajadoras tendrán derecho a que sean retribuidas las horas de ausencia por las causas previstas en el presente apartado equivalentes a cuatro días al año",
+"veredicto": "MITO",
+"id": "4d0ed15b17",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas Frecuentes",
+"titulo": "Delineante propio o soporte externo",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Estructura de costes",
+"a": "Coste fijo mensual",
+"b": "Coste variable"
+},
+{
+"aspecto": "Cargas de personal",
+"a": "Seguros, bajas y vacaciones",
+"b": "Solo producción real"
+},
+{
+"aspecto": "Picos de trabajo",
+"a": "Capacidad técnica rígida",
+"b": "Escalado instantáneo"
+}
+],
+"cita": "Al externalizar, eliminas el pago de seguros sociales, vacaciones, bajas y licencias de software. Solo pagas por la producción real cuando tienes un pico de trabajo, escalando la capacidad técnica de tu estudio de forma instantánea",
+"citas_extra": [],
+"id": "93b9ad111a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas Frecuentes",
+"titulo": "Externalización técnica por fases",
+"puntos": [
+"Externaliza solo cálculos o memorias",
+"Evita cuellos de botella técnicos",
+"Modela estructuras en CYPE"
+],
+"cita": "Si tu equipo domina el diseño arquitectónico pero la estructura y el cumplimiento de las instalaciones suponen un cuello de botella, puedes externalizar exclusivamente el modelado en CYPE y la redacción de las memorias CTE.",
+"citas_extra": [],
+"id": "557cfa3491",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "02 Cómo trabajamos y cómo presupuestamos",
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"titulo": "Hitos de pago de cada fase",
+"barras": [
+{
+"etiqueta": "Inicio de la fase",
+"valor": 60.0,
+"texto": "60 %"
+},
+{
+"etiqueta": "Entrega tras revisión conjunta",
+"valor": 40.0,
+"texto": "40 %"
+}
+],
+"conclusion": "Nunca pagas de golpe y validas cada entrega",
+"cita": "En P. Básico + P. Ejecución se paga en cuatro momentos (60 % y 40 % del P. Básico, luego 60 % y 40 % del P. Ejecución): nunca pagas todo de golpe y validas cada entrega.",
+"citas_extra": [],
+"id": "e2b61bca11",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "02 Cómo trabajamos y cómo presupuestamos",
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"titulo": "Cómo delegar fases de proyecto",
+"puntos": [
+"Presupuesto cerrado en 24 a 72 horas",
+"Abono del sesenta por ciento al arrancar",
+"Revisión conjunta previa a recibir los editables"
+],
+"cita": "En 24–72 horas te enviamos un presupuesto cerrado. Solo se presupuesta y se hace lo marcado.",
+"citas_extra": [
+"Revisamos contigo y abonas el 40 % antes de recibir los definitivos y editables. Tú firmas y entregas: la firma corresponde al despacho."
+],
+"id": "53647dbbd2",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "02 Cómo trabajamos y cómo presupuestamos",
+"referencia": "Tabla de presupuestos de UDA, apartado 02",
+"afirmacion": "Externalizar proyectos completos exige pagar todo el trabajo técnico por adelantado",
+"explicacion": "Se abona en cuatro momentos según avanzas: pagas el sesenta por ciento al arrancar y el resto al validar cada entrega.",
+"cita": "En P. Básico + P. Ejecución se paga en cuatro momentos (60 % y 40 % del P. Básico, luego 60 % y 40 % del P. Ejecución): nunca pagas todo de golpe y validas cada entrega.",
+"veredicto": "MITO",
+"id": "b9ebeac16c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"titulo": "Costes fijos por partida en Ejecución",
+"barras": [
+{
+"etiqueta": "Estructuras",
+"valor": 350.0,
+"texto": "350 €"
+},
+{
+"etiqueta": "Construcción",
+"valor": 250.0,
+"texto": "250 €"
+},
+{
+"etiqueta": "Instalaciones",
+"valor": 170.0,
+"texto": "170 €"
+}
+],
+"conclusion": "Base fija total de 1.190 € en Ejecución.",
+"cita": "Construcción | — | — | 250 € | 0,70 € Instalaciones | — | — | 170 € | 1,50 € Estructuras | — | — | 350 € | 1,10 €",
+"citas_extra": [
+"Total | 550 € | 2,80 € | 1.190 € | 5,30 €"
+],
+"id": "274056eb9f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, 03 Vivienda unifamiliar y reforma",
+"titulo": "Alcance en reforma de 80 m²",
+"puntos": [
+"Presupuesto de referencia de 1.950 €",
+"Incluye Proyecto Básico completo",
+"Proyecto de Ejecución sin estructuras"
+],
+"cita": "REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras.",
+"citas_extra": [],
+"id": "2f19d80b57",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 04",
+"titulo": "Metros computados en doce adosados",
+"barras": [
+{
+"etiqueta": "Superficie total construida",
+"valor": 2820.0,
+"texto": "2.820 m²"
+},
+{
+"etiqueta": "Superficie que se presupuesta",
+"valor": 570.0,
+"texto": "570 m²"
+}
+],
+"conclusion": "Las viviendas repetidas reducen drásticamente los metros presupuestados",
+"cita": "Ejemplo: 12 adosados iguales de 235 m² (2.820 m²) | Se presupuesta La vivienda tipo | 235 m² Viviendas 2ª a 10ª al 10 % · 11ª y 12ª al 8 % | 250 m²",
+"citas_extra": [],
+"id": "9fcd070a38",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 04",
+"titulo": "Cómo presupuestar adosados y pareados",
+"puntos": [
+"Cómputo íntegro de la vivienda tipo",
+"Porcentaje reducido en cada unidad repetida",
+"Tres por ciento total para el conjunto"
+],
+"cita": "Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"citas_extra": [],
+"id": "06dd1f91a5",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 04",
+"afirmacion": "En adosados se presupuesta la superficie total multiplicando cada vivienda",
+"explicacion": "Se presupuesta la vivienda tipo completa, las repetidas según un porcentaje reducido y un 3 % por el conjunto.",
+"cita": "Diseñamos la vivienda una vez; las repetidas apenas suman. Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5",
+"veredicto": "MITO",
+"id": "36058437d7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Disposición transitoria duodécima. Salarios de tramitación. (cont.)",
+"referencia": "Estatuto de los Trabajadores, disposición transitoria duodécima, letras c y d",
+"titulo": "Bajas parentales en el estudio",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Duración de baja",
+"a": "Hasta 16 semanas",
+"b": "Entregas sin parón"
+},
+{
+"aspecto": "Organización temporal",
+"a": "Elección del empleado",
+"b": "Calendario del encargo"
+},
+{
+"aspecto": "Tiempo parcial",
+"a": "Requiere pactar acuerdo",
+"b": "Facturación por proyecto"
+}
+],
+"cita": "el otro progenitor tendrá derecho a suspender su contrato de trabajo por la totalidad de 16 semanas, sin que le sea aplicable ninguna limitación del régimen transitorio.",
+"citas_extra": [
+"el periodo de suspensión se distribuirá a opción de los interesados, que podrán disfrutarlo de forma simultánea o sucesiva, dentro de los límites de disfrute compartido"
+],
+"id": "580a3ed732",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Disposición transitoria duodécima. Salarios de tramitación. (cont.)",
+"referencia": "Estatuto de los Trabajadores, disposición transitoria duodécima, letras c y d",
+"titulo": "Suspensión por adopción o acogimiento",
+"puntos": [
+"Hasta 16 semanas de suspensión total.",
+"Disfrute simultáneo o sucesivo entre progenitores.",
+"Paso a tiempo parcial bajo acuerdo."
+],
+"cita": "el otro progenitor tendrá derecho a suspender su contrato de trabajo por la totalidad de 16 semanas, sin que le sea aplicable ninguna limitación del régimen transitorio.",
+"citas_extra": [
+"Los periodos a los que se refieren dichos apartados podrán disfrutarse en régimen de jornada completa o a tiempo parcial, previo acuerdo entre los empresarios y los trabajadores afectados"
+],
+"id": "69829321c5",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Disposición transitoria duodécima. Salarios de tramitación. (cont.)",
+"referencia": "Estatuto de los Trabajadores, disposición transitoria duodécima, letra d",
+"afirmacion": "Puedes imponer jornada parcial al empleado tras una adopción.",
+"explicacion": "El disfrute de la suspensión a tiempo parcial requiere un acuerdo voluntario previo entre la empresa y el trabajador.",
+"cita": "Los periodos a los que se refieren dichos apartados podrán disfrutarse en régimen de jornada completa o a tiempo parcial, previo acuerdo entre los empresarios y los trabajadores afectados",
+"veredicto": "MITO",
+"id": "0d6d8b9f2b",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "05 Bloques de viviendas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 05 Bloques de viviendas",
+"titulo": "Las tres piezas presupuestadas",
+"puntos": [
+"Las viviendas tipo completas",
+"Viviendas repetidas a porcentaje",
+"El edificio al seis por ciento"
+],
+"cita": "Se presupuestan tres piezas: las viviendas tipo completas, las viviendas repetidas con un pequeño porcentaje y el edificio (fachadas, núcleos, cubiertas, zonas comunes y garaje) con un 6 % de la superficie total.",
+"citas_extra": [],
+"id": "af38872c67",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "05 Bloques de viviendas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 05 Bloques de viviendas",
+"titulo": "Desarrollo de bloques",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Dedicación",
+"a": "Repetir planta a planta",
+"b": "Diseñar viviendas tipo"
+},
+{
+"aspecto": "Zonas comunes",
+"a": "Computar toda la superficie",
+"b": "Solo el 6 %"
+},
+{
+"aspecto": "Revisiones",
+"a": "Asumir cambios imprevistos",
+"b": "Dos revisiones incluidas"
+}
+],
+"cita": "El trabajo de un bloque está en diseñar unas pocas viviendas tipo y el edificio que las contiene; después se repiten planta a planta.",
+"citas_extra": [
+"En bloques de 30 viviendas o más incluimos 2 revisiones por fase."
+],
+"id": "4f26e6855c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "05 Bloques de viviendas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 05 Bloques de viviendas",
+"titulo": "Coste orientativo según viviendas",
+"barras": [
+{
+"etiqueta": "12 viviendas",
+"valor": 6652.0,
+"texto": "6.652 €"
+},
+{
+"etiqueta": "24 viviendas",
+"valor": 8934.0,
+"texto": "8.934 €"
+},
+{
+"etiqueta": "40 viviendas",
+"valor": 11860.0,
+"texto": "11.860 €"
+},
+{
+"etiqueta": "80 viviendas",
+"valor": 18440.0,
+"texto": "18.440 €"
+}
+],
+"conclusion": "A mayor volumen menor coste por vivienda",
+"cita": "Cuanto más grande el bloque, menos cuesta cada vivienda. El trabajo de un bloque está en diseñar unas pocas viviendas tipo y el edificio que las contiene; después se repiten planta a planta.",
+"citas_extra": [],
+"id": "d88141035e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 06 Industrial y equipamientos",
+"titulo": "Coste técnico cerrado en equipamientos",
+"puntos": [
+"Básico: 3.000 euros fijos y 0,80 por metro",
+"Ejecución: 5.500 euros fijos y 1,10 por metro",
+"El peso del precio está en la parte fija"
+],
+"cita": "El peso del precio está en la parte fija: los proyectos grandes no salen perjudicados.",
+"citas_extra": [],
+"id": "83cc9f8c78",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 06 Industrial y equipamientos",
+"titulo": "Coste técnico de proyectos de equipamientos",
+"barras": [
+{
+"etiqueta": "Equipamiento de 800 m²",
+"valor": 10020.0,
+"texto": "10.020 €"
+},
+{
+"etiqueta": "Equipamiento de 2.000 m²",
+"valor": 12300.0,
+"texto": "12.300 €"
+},
+{
+"etiqueta": "Equipamiento de 5.000 m²",
+"valor": 18000.0,
+"texto": "18.000 €"
+}
+],
+"conclusion": "El coste por metro baja al ampliar la superficie",
+"cita": "Ejemplos P. Básico + P. Ejecución: 800 m², 10.020 € · 2.000 m², 12.300 € · 5.000 m², 18.000 €.",
+"citas_extra": [],
+"id": "e17dd8efbd",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "06 Industrial y equipamientos",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 06 Industrial y equipamientos",
+"afirmacion": "Externalizar instalaciones en Revit es obligatorio al proyectar equipamientos",
+"explicacion": "El Plan de Ejecución BIM y las instalaciones en Revit son partidas opcionales que sustituyen a las estándar.",
+"cita": "Solo en Revit (opcional) | P. Básico · fijo | P. Básico · por m² | P. Ejecución · fijo | P. Ejecución · por m²",
+"veredicto": "MITO",
+"id": "ef52d1186d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele",
+"referencia": "Documento 02 de UDA, pasos 1 a 3",
+"titulo": "Tres pasos para delegar",
+"puntos": [
+"Cuéntanos los datos del proyecto",
+"Marca cada documento que delegas",
+"Envíalo directamente desde la web"
+],
+"cita": "PASO 1 Cuéntanos tu proyecto Datos, tipo de proyecto, superficies y entorno de trabajo (apartados 1 a 4). | PASO 2 Marca lo que delegas Haz clic en la casilla de cada documento que quieras que hagamos (apartados 5 a 8).",
+"citas_extra": [],
+"id": "bc73e9bfbe",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_listado",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele",
+"referencia": "Documento 02 de UDA, condiciones generales",
+"titulo": "Control de lo delegado",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Lo no marcado",
+"a": "Lo realiza tu despacho",
+"b": "No se presupuesta"
+},
+{
+"aspecto": "Lo marcado",
+"a": "No lo realizas",
+"b": "Presupuestamos y hacemos"
+},
+{
+"aspecto": "Nuevos extras",
+"a": "Tú decides plazos",
+"b": "Se valora contigo"
+}
+],
+"cita": "Solo presupuestamos y hacemos lo que marques. Lo que no esté marcado se entiende que lo realiza tu despacho. Si más adelante necesitas algo más, lo valoramos contigo antes de hacerlo: tú decides siempre sobre plazos y costes.",
+"citas_extra": [],
+"id": "41daa29b38",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_listado",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele",
+"referencia": "Documento 02 de UDA, encabezado",
+"titulo": "Plazo para recibir presupuesto cerrado",
+"barras": [
+{
+"etiqueta": "Plazo mínimo",
+"valor": 24.0,
+"texto": "24 horas"
+},
+{
+"etiqueta": "Plazo máximo",
+"valor": 72.0,
+"texto": "72 horas"
+}
+],
+"conclusion": "Presupuesto cerrado entre 24 y 72 horas",
+"cita": "Marca lo que quieres delegar y en 24–72 horas tendrás tu presupuesto cerrado.",
+"citas_extra": [],
+"id": "d4045191a5",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "CAPÍTULO II",
+"referencia": "Estatuto de los Trabajadores, art. 14.2",
+"titulo": "Evaluar al equipo técnico",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Experiencia previa",
+"a": "Prueba nula si repite",
+"b": "Libre por proyecto"
+},
+{
+"aspecto": "Derechos iniciales",
+"a": "Derechos plenos de plantilla",
+"b": "Solo entregables pactados"
+},
+{
+"aspecto": "Tope de prueba",
+"a": "Máximo seis meses",
+"b": "Sin ataduras laborales"
+}
+],
+"cita": "Durante el periodo de prueba, la persona trabajadora tendrá los derechos y obligaciones correspondientes al puesto de trabajo que desempeñe como si fuera de plantilla, excepto los derivados de la resolución de la relación laboral, que podrá producirse a instancia de cualquiera de las partes durante su transcurso.",
+"citas_extra": [],
+"id": "1fce4ea004",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "cifras",
+"norma": "et",
+"fuente": "CAPÍTULO II",
+"referencia": "Estatuto de los Trabajadores, art. 14.1",
+"titulo": "Meses máximos de prueba sin convenio",
+"barras": [
+{
+"etiqueta": "Técnicos titulados",
+"valor": 6.0,
+"texto": "6 meses"
+},
+{
+"etiqueta": "Empresas de menos de 25",
+"valor": 3.0,
+"texto": "3 meses"
+},
+{
+"etiqueta": "Demás trabajadores",
+"valor": 2.0,
+"texto": "2 meses"
+},
+{
+"etiqueta": "Contratos hasta seis meses",
+"valor": 1.0,
+"texto": "1 mes"
+}
+],
+"conclusion": "La ley marca topes estrictos para evaluar personal.",
+"cita": "En defecto de pacto en convenio, la duración del periodo de prueba no podrá exceder de seis meses para los técnicos titulados, ni de dos meses para los demás trabajadores. En las empresas de menos de veinticinco trabajadores el periodo de prueba no podrá exceder de tres meses para los trabajadores que no sean técnicos titulados.",
+"citas_extra": [],
+"id": "bb77aaecff",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "CAPÍTULO II",
+"referencia": "Estatuto de los Trabajadores, art. 14.1",
+"afirmacion": "Puedes poner a prueba a un técnico que ya estuvo contratado.",
+"explicacion": "El periodo de prueba es nulo si el profesional ya realizó esas mismas funciones en tu despacho anteriormente.",
+"cita": "Será nulo el pacto que establezca un periodo de prueba cuando el trabajador haya ya desempeñado las mismas funciones con anterioridad en la empresa, bajo cualquier modalidad de contratación.",
+"veredicto": "MITO",
+"id": "ac3cdea351",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "Tabla de Referencia de Presupuestos 2026, doc. 01",
+"titulo": "Coste técnico de 80 viviendas",
+"barras": [
+{
+"etiqueta": "Coste real con plantilla",
+"valor": 35000.0,
+"texto": "más de 35.000 €"
+},
+{
+"etiqueta": "Coste con UDA",
+"valor": 21030.0,
+"texto": "21.030 €"
+}
+],
+"conclusion": "Delegar el bloque reduce el coste real frente a plantilla",
+"cita": "BLOQUE DE 80 VIVIENDAS, 4 TIPOLOGÍAS: 21.030 €. Con plantilla: 10–12 meses de trabajo y más de 35.000 € de coste real.",
+"citas_extra": [],
+"id": "c490aa3dd9",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "Tabla de Referencia de Presupuestos 2026, doc. 01",
+"titulo": "Costes ocultos de contratar arquitectos",
+"puntos": [
+"Semanas de entrevistas y meses formándolo",
+"Tu tiempo revisando planos sin proyectar",
+"Nóminas fijas aunque no haya encargos"
+],
+"cita": "Un empleado no cuesta solo su sueldo: cuesta encontrarlo, formarlo, supervisarlo y pagarlo también cuando no hay proyectos.",
+"citas_extra": [],
+"id": "0a76446356",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "Tabla de Referencia de Presupuestos 2026, doc. 01",
+"afirmacion": "Un empleado en plantilla solo cuesta su sueldo",
+"explicacion": "Un arquitecto en plantilla supone entre 40.000 y 47.000 euros anuales sumando Seguridad Social, puesto, licencias, selección y formación.",
+"cita": "UN ARQUITECTO EN PLANTILLA: 40.000–47.000 €/año. Salario, Seguridad Social, licencias, puesto, selección y formación. Haya proyectos o no.",
+"veredicto": "MITO",
+"id": "8f785f1d4d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "08 Actuaciones específicas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"titulo": "Actuaciones específicas delegadas",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Documentación",
+"a": "Redactas memoria y mediciones",
+"b": "Documentación completa entregada"
+},
+{
+"aspecto": "Gestión",
+"a": "Tú presupuestas y tramitas",
+"b": "Tú presupuestas y tramitas"
+},
+{
+"aspecto": "Margen",
+"a": "Consumo de horas técnicas",
+"b": "Nuestro precio deja margen"
+}
+],
+"cita": "Precios para el despacho: tú presupuestas, firmas y tramitas; nuestro precio te deja margen.",
+"citas_extra": [],
+"id": "a9706fe27c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "08 Actuaciones específicas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"titulo": "Precios base de rehabilitación y obra",
+"barras": [
+{
+"etiqueta": "Rehabilitación de fachada",
+"valor": 1500.0,
+"texto": "1.500 €"
+},
+{
+"etiqueta": "Rehabilitación de cubierta",
+"valor": 1200.0,
+"texto": "1.200 €"
+},
+{
+"etiqueta": "Demolición",
+"valor": 800.0,
+"texto": "800 €"
+},
+{
+"etiqueta": "Legalización o planos",
+"valor": 750.0,
+"texto": "750 €"
+}
+],
+"conclusion": "Precios de referencia que dejan margen al despacho",
+"cita": "Rehabilitación de fachada (reparación, SATE, carpinterías) | 1.500 € hasta 300 m² + 3 €/m² Rehabilitación de cubierta | 1.200 € hasta 200 m² + 3 €/m²",
+"citas_extra": [],
+"id": "34be6b8aa2",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "08 Actuaciones específicas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 08 Actuaciones específicas",
+"titulo": "Documentación en actuaciones específicas",
+"puntos": [
+"Estado actual y estado reformado completos",
+"Justificación íntegra de la normativa aplicable",
+"Memoria completa y mediciones detalladas"
+],
+"cita": "Actuación (documentación completa: estado actual y reformado, normativa, memoria, mediciones) | Precio",
+"citas_extra": [],
+"id": "fc9a5b0313",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, cabecera",
+"titulo": "Externalizar tu equipo técnico",
+"puntos": [
+"Proyectos básicos y de ejecución completos.",
+"Mismo precio en CAD o en Revit.",
+"Presupuesto cerrado sin sorpresas ni plantilla."
+],
+"cita": "Tu equipo técnico de arquitectura, sin plantilla. Proyectos Básicos y de Ejecución para despachos · 100 % online · Precio cerrado · Tu firma al final",
+"citas_extra": [],
+"id": "b66bfd8fd3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 5",
+"titulo": "Coste técnico por vivienda plurifamiliar delegada",
+"barras": [
+{
+"etiqueta": "Bloque de 32 viviendas",
+"valor": 382.0,
+"texto": "382 € por vivienda"
+},
+{
+"etiqueta": "Bloque de 80 viviendas",
+"valor": 263.0,
+"texto": "263 € por vivienda"
+}
+],
+"conclusion": "La repetición abarata el coste técnico por vivienda.",
+"cita": "Bloque de 32 viviendas, 2 tipologías | 12.234 € | 382 € por vivienda · Apartado 5 Bloque de 80 viviendas, 4 tipologías | 21.030 € | 263 € por vivienda · Apartado 5",
+"citas_extra": [],
+"id": "681e8c6e99",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, Precios de referencia de un vistazo",
+"afirmacion": "Proyectar en Revit sale más caro que en CAD.",
+"explicacion": "El soporte técnico para Proyectos Básicos y de Ejecución tiene exactamente el mismo precio cerrado en CAD o en Revit.",
+"cita": "P. Básico + P. Ejecución completos, en CAD o en Revit (mismo precio).",
+"veredicto": "MITO",
+"id": "4124767c83",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Artículo 9. Validez del contrato.",
+"referencia": "Estatuto de los Trabajadores, art. 9.1 y 9.2",
+"titulo": "Validez del contrato técnico",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Cláusula nula",
+"a": "El resto sigue válido",
+"b": "Contrato mercantil cerrado"
+},
+{
+"aspecto": "Contrato nulo",
+"a": "Exige salario válido",
+"b": "Pago por entrega"
+},
+{
+"aspecto": "Ajuste retributivo",
+"a": "Decide la jurisdicción social",
+"b": "Tarifa cerrada acordada"
+}
+],
+"cita": "Si resultase nula solo una parte del contrato de trabajo, este permanecerá válido en lo restante, y se entenderá completado con los preceptos jurídicos adecuados conforme a lo dispuesto en el artículo 3.1.",
+"citas_extra": [
+"En caso de que el contrato resultase nulo, el trabajador podrá exigir, por el trabajo que ya hubiese prestado, la remuneración consiguiente a un contrato válido."
+],
+"id": "170c4d8c9e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Artículo 9. Validez del contrato.",
+"referencia": "Estatuto de los Trabajadores, art. 9.1 y 9.3",
+"titulo": "Errores al redactar contratos",
+"puntos": [
+"Una cláusula nula no anula el contrato",
+"Si es nulo, debes pagar sueldo válido",
+"Discriminación salarial exige igualar el sueldo"
+],
+"cita": "Si resultase nula solo una parte del contrato de trabajo, este permanecerá válido en lo restante, y se entenderá completado con los preceptos jurídicos adecuados conforme a lo dispuesto en el artículo 3.1.",
+"citas_extra": [
+"En caso de nulidad por discriminación salarial por razón de sexo, el trabajador tendrá derecho a la retribución correspondiente al trabajo igual o de igual valor."
+],
+"id": "3442c127a7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 9. Validez del contrato.",
+"referencia": "Estatuto de los Trabajadores, art. 9.2",
+"afirmacion": "Si el contrato laboral resulta nulo, te ahorras pagar el sueldo.",
+"explicacion": "El trabajador puede exigir por el trabajo realizado la remuneración correspondiente a un contrato válido, aunque este se anule.",
+"cita": "En caso de que el contrato resultase nulo, el trabajador podrá exigir, por el trabajo que ya hubiese prestado, la remuneración consiguiente a un contrato válido.",
+"veredicto": "MITO",
+"id": "f99e717783",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM)",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"titulo": "Alcance del modelo en Revit",
+"puntos": [
+"LOD 200 en Básico completo",
+"LOD 300 en Ejecución definido",
+"Familias estándar preparadas para medir"
+],
+"cita": "Modelo del P. Básico | LOD 200: volumetría, muros, forjados, cubiertas, huecos y distribución, con los tipos de muros, suelos y cubiertas y sus capas.",
+"citas_extra": [
+"Familias | Incluidas: todas las familias estándar que necesita el proyecto, con materiales y códigos de partida para exportar las mediciones (Presto / BC3)."
+],
+"id": "6f6e5519b4",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM)",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"titulo": "Modelado BIM para tu estudio",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Tu biblioteca",
+"a": "Plantilla propia existente",
+"b": "Trabajamos con ella"
+},
+{
+"aspecto": "Aportas modelo",
+"a": "Modelo aprovechable entregado",
+"b": "No cobra modelado"
+},
+{
+"aspecto": "Entrega final",
+"a": "Revisas PDF e IFC",
+"b": "Archivo RVT editable"
+}
+],
+"cita": "Si tienes plantilla o biblioteca de familias propia, trabajamos con ella para que el modelo encaje con tu despacho.",
+"citas_extra": [
+"Si aportas tu modelo | No se cobra el modelado. Si el modelo es aprovechable (niveles, familias y estructura correctos), el resto de partidas mantiene su descuento"
+],
+"id": "5c603da8ed",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM)",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"titulo": "Coste de bloque completo: CAD frente a Revit",
+"barras": [
+{
+"etiqueta": "Bloque 32 viv. CAD",
+"valor": 12234.0,
+"texto": "12.234 €"
+},
+{
+"etiqueta": "Bloque 32 viv. Revit",
+"valor": 12261.0,
+"texto": "12.261 €"
+}
+],
+"conclusion": "Mismo precio en CAD o en Revit",
+"cita": "BLOQUE DE 32 VIVIENDAS · COMPLETO: CAD 12.234 € · Revit 12.261 €. Mismo precio.",
+"citas_extra": [
+"Mismo precio en CAD o en Revit. Cambia dónde está el trabajo, no lo que pagas."
+],
+"id": "0f68a0e2d1",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
+"referencia": "uniondearquitectos.com, Ellos hablan por nosotros",
+"titulo": "Picos de trabajo sin contratar",
+"puntos": [
+"Evitas contratar por meses y despedir",
+"Absorbes varios proyectos a la vez",
+"Cumples plazos de entrega sin estrés"
+],
+"cita": "Somos un despacho pequeño, como una familia. Se me hacía duro contratar a alguien para 3 meses y tener que despedirle. UDA me ayuda mucho en el día a día y estoy contento con ellos.",
+"citas_extra": [
+"Varias veces se me juntan varios proyectos de golpe y esos días duermo poco y mal. Desde que trabajo con UDA eso cambió y lo gestiono mejor y sin problemas."
+],
+"id": "070245d846",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_web",
+"fuente": "UnionDeArquitectos | ORG - UDA - Unión de Arquitectos",
+"referencia": "uniondearquitectos.com, Paso a paso",
+"afirmacion": "Un soporte técnico externo acepta encargos de forma ilimitada",
+"explicacion": "Solo se aceptan proyectos si existe capacidad técnica real para tenerlos listos en la fecha fijada.",
+"cita": "*Nuestro tiempo es limitado y sólo aceptamos proyectos si vemos que podemos tenerlos listos para la fecha indicada. Asegúrate de reservar la reunión y así ayudarte a escalar tu negocio.",
+"veredicto": "MITO",
+"id": "700a4cc95e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele",
+"referencia": "UDA · Documento 02 Listado de documentos a delegar",
+"titulo": "¿Dudas al delegar documentación técnica?",
+"puntos": [
+"Marca según tu criterio inicial",
+"Añade tus dudas en Observaciones",
+"Se revisa conjuntamente el presupuesto"
+],
+"cita": "¿Dudas sobre qué marcar? Marca lo que creas y explícalo en Observaciones: lo revisamos contigo al preparar el presupuesto.",
+"citas_extra": [],
+"id": "87f1badd99",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_listado",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele",
+"referencia": "UDA · Documento 02 Listado de documentos a delegar",
+"afirmacion": "Al externalizar partes del proyecto pierdes el control sobre los costes imprevistos",
+"explicacion": "Cualquier necesidad adicional se valora contigo antes de intervenir; tú conservas siempre el mando sobre plazos e inversión.",
+"cita": "Si más adelante necesitas algo más, lo valoramos contigo antes de hacerlo: tú decides siempre sobre plazos y costes.",
+"veredicto": "MITO",
+"id": "5a82eb00b3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo. · 4. El contrato a tiempo parcial se regirá por l",
+"referencia": "Estatuto de los Trabajadores, art. 12.5.d",
+"titulo": "Urgencias en contratos a parcial",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Aviso previo",
+"a": "Mínimo tres días",
+"b": "Plazo cerrado acordado"
+},
+{
+"aspecto": "Límite horas",
+"a": "Máximo treinta por ciento",
+"b": "Todo el encargo"
+},
+{
+"aspecto": "Disponibilidad",
+"a": "Renunciable por el trabajador",
+"b": "Garantizada por contrato"
+}
+],
+"cita": "El trabajador deberá conocer el día y la hora de realización de las horas complementarias pactadas con un preaviso mínimo de tres días, salvo que el convenio establezca un plazo de preaviso inferior.",
+"citas_extra": [],
+"id": "0908086979",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo. · 4. El contrato a tiempo parcial se regirá por l",
+"referencia": "Estatuto de los Trabajadores, art. 12.5.a",
+"afirmacion": "Puedes exigir horas extra a tu arquitecto a tiempo parcial ante una entrega imprevista.",
+"explicacion": "Solo son obligatorias si firmasteis un pacto por escrito y le avisas con un mínimo de tres días de antelación.",
+"cita": "El empresario solo podrá exigir la realización de horas complementarias cuando así lo hubiera pactado expresamente con el trabajador. El pacto sobre horas complementarias podrá acordarse en el momento de la celebración del contrato",
+"veredicto": "MITO",
+"id": "150400fddb",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "01 Datos del despacho y del proyecto",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 02 Tipo de proyecto",
+"titulo": "Proyectos que puedes delegar",
+"puntos": [
+"Vivienda unifamiliar o reforma",
+"Bloque residencial y pareados",
+"Industrial, logístico y equipamientos"
+],
+"cita": "Vivienda unifamiliar | Reforma de vivienda Pareados / Adosados / Conjunto de unifamiliares | Bloque de viviendas Industrial y logístico | Equipamiento y servicios",
+"citas_extra": [],
+"id": "6a6209b0ed",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM) (cont.)",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"titulo": "Instalaciones completas en Revit 3D",
+"puntos": [
+"Modelado LOD 300–350 con familias y planos",
+"A partir de tus criterios o cálculos",
+"Todas las instalaciones exigibles en 3D"
+],
+"cita": "Todas las instalaciones exigibles en 3D (PCI, climatización, ventilación, fontanería, saneamiento, electricidad y telecomunicaciones, tierras, alumbrado exterior, fotovoltaica y gas): modelado LOD 300–350, familias y planos, a partir de tus criterios o cálculos.",
+"citas_extra": [],
+"id": "b5df971375",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM) (cont.)",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"titulo": "Instalaciones en Revit 3D",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Criterio técnico",
+"a": "Tus criterios o cálculos",
+"b": "Modelado LOD 300–350"
+},
+{
+"aspecto": "Entregables",
+"a": "Definición del proyecto",
+"b": "Familias y planos 3D"
+},
+{
+"aspecto": "Ingeniería",
+"a": "RITE, REBT y boletines",
+"b": "Sin cálculo ni dimensionado"
+}
+],
+"cita": "Todas las instalaciones exigibles en 3D (PCI, climatización, ventilación, fontanería, saneamiento, electricidad y telecomunicaciones, tierras, alumbrado exterior, fotovoltaica y gas): modelado LOD 300–350, familias y planos, a partir de tus criterios o cálculos.",
+"citas_extra": [
+"Las instalaciones en 3D no incluyen cálculo ni dimensionado de ingeniería, justificación reglamentaria (RITE, REBT, ICT…), boletines ni otras instalaciones no listadas (domótica, seguridad…)."
+],
+"id": "3b6087f32e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "07 CAD o Revit (BIM) (cont.)",
+"referencia": "Tabla de Referencia de Presupuestos 2026, apartado 07 CAD o Revit (BIM)",
+"titulo": "Coste de referencia en instalaciones 3D",
+"barras": [
+{
+"etiqueta": "Vivienda de 150 m²",
+"valor": 1950.0,
+"texto": "1.950 €"
+},
+{
+"etiqueta": "Bloque de 32 viviendas",
+"valor": 6500.0,
+"texto": "6.500 €"
+}
+],
+"conclusion": "Precios de referencia según la escala del edificio",
+"cita": "Ejemplos · Vivienda de 150 m²: Plan de Ejecución BIM 415 € · Instalaciones en 3D 1.950 €. Bloque de 32 viviendas: Plan de Ejecución BIM 900 € · Instalaciones en 3D 6.500 €.",
+"citas_extra": [],
+"id": "878c8942e1",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"titulo": "Tres pasos para externalizar proyectos",
+"puntos": [
+"Briefing inicial con plantillas de tu despacho",
+"Presupuesto cerrado con entrega inamovible",
+"Auditoría interna previa a la entrega final"
+],
+"cita": "Analizamos tus necesidades, nos envías tus archivos base (CAD, referencias) y tus plantillas de estudio.",
+"citas_extra": [
+"Te enviamos un presupuesto cerrado con fechas de entrega inamovibles. Al aceptar, el Project Manager asigna el trabajo al equipo técnico.",
+"Nuestro Project Manager audita el trabajo internamente y, tras validar que cumple los estándares, te entregamos los archivos nativos y PDFs."
+],
+"id": "6bf2bb56bb",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"afirmacion": "Externalizar la producción técnica provoca desviaciones presupuestarias en el despacho",
+"explicacion": "Se trabaja con presupuestos cerrados según tipología y metros cuadrados, fijando un coste exacto que elimina sorpresas económicas para tu estudio.",
+"cita": "Trabajamos siempre con presupuestos cerrados según la tipología y metros cuadrados. De esta forma, asumes un coste fijo, eliminando sorpresas o desviaciones presupuestarias para tu estudio.",
+"veredicto": "MITO",
+"id": "02b117650a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Sección 4.ª Extinción del contrato (cont.)",
+"referencia": "Estatuto de los Trabajadores, Sección 4.ª",
+"titulo": "Finiquito frente a cierre",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Fin de relación",
+"a": "Trámite de finiquito",
+"b": "Factura final directa"
+},
+{
+"aspecto": "Firma formal",
+"a": "Opción a representante",
+"b": "Acuerdo entre profesionales"
+},
+{
+"aspecto": "En el recibo",
+"a": "Constancia de presencia",
+"b": "Sin trámites laborales"
+}
+],
+"cita": "El trabajador podrá solicitar la presencia de un representante legal de los trabajadores en el momento de proceder a la firma del recibo del finiquito, haciéndose constar en el mismo el hecho de su firma",
+"citas_extra": [],
+"id": "02429ae18f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Sección 4.ª Extinción del contrato (cont.)",
+"referencia": "Estatuto de los Trabajadores, Sección 4.ª",
+"titulo": "Firma del finiquito técnico",
+"puntos": [
+"El empleado puede exigir representación legal.",
+"Debe constar su uso o renuncia.",
+"Si lo impides, quedará anotado."
+],
+"cita": "El trabajador podrá solicitar la presencia de un representante legal de los trabajadores en el momento de proceder a la firma del recibo del finiquito, haciéndose constar en el mismo el hecho de su firma",
+"citas_extra": [
+"Si el empresario impidiese la presencia del representante en el momento de la firma, el trabajador podrá hacerlo constar en el propio recibo, a los efectos oportunos."
+],
+"id": "e0b54e4c1c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Sección 4.ª Extinción del contrato (cont.)",
+"referencia": "Estatuto de los Trabajadores, Sección 4.ª",
+"afirmacion": "Puedes firmar el finiquito a solas sin dejar constancia legal",
+"explicacion": "El documento debe reflejar por ley si intervino un representante laboral o si el trabajador decidió no utilizar esa opción.",
+"cita": "haciéndose constar en el mismo el hecho de su firma en presencia de un representante legal de los trabajadores, o bien que el trabajador no ha hecho uso de esta posibilidad.",
+"veredicto": "MITO",
+"id": "b335355db3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "03 Superficies y viviendas",
+"referencia": "Listado de Documentos a Delegar de UDA, apartado 03",
+"titulo": "Clasificar viviendas de un bloque",
+"puntos": [
+"Vivienda tipo con distribución distinta",
+"Variante con pequeños cambios puntuales",
+"Viviendas en espejo no se indican"
+],
+"cita": "Nº de viviendas tipo | Cada distribución distinta. Si la cocina o los baños cambian de sitio, es una vivienda tipo nueva.",
+"citas_extra": [
+"Nº de variantes | Misma vivienda con cambios menores: un tabique, un hueco, la terraza o su versión adaptada.",
+"Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto."
+],
+"id": "2aaa72e5e6",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_listado",
+"fuente": "03 Superficies y viviendas",
+"referencia": "Listado de Documentos a Delegar de UDA, apartado 03",
+"afirmacion": "Las viviendas en espejo deben computarse como tipo nuevo",
+"explicacion": "No hace falta indicarlas para presupuestar el encargo: las viviendas idénticas o simétricas computan directamente dentro del resto.",
+"cita": "Las viviendas idénticas o en espejo no hace falta indicarlas: son el resto.",
+"veredicto": "MITO",
+"id": "05f74dfc17",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"titulo": "Reparto de funciones del proyecto",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Firma y visado",
+"a": "Responsabilidad del despacho",
+"b": "Marca blanca"
+},
+{
+"aspecto": "Dirección de obra",
+"a": "Tramitación y coordinación",
+"b": "Soporte técnico online"
+},
+{
+"aspecto": "Compatibilización",
+"a": "Información de partida",
+"b": "Estructuras e instalaciones"
+}
+],
+"cita": "La firma corresponde al despacho, así como la responsabilidad final, el visado, la tramitación, la dirección de obra y la coordinación de seguridad y salud. UDA es soporte técnico online en marca blanca.",
+"citas_extra": [],
+"id": "9e23762082",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"titulo": "Plazos orientativos en Proyecto de Ejecución",
+"barras": [
+{
+"etiqueta": "Vivienda unifamiliar",
+"valor": 35.0,
+"texto": "20–35 días"
+},
+{
+"etiqueta": "Pareados y adosados",
+"valor": 45.0,
+"texto": "30–45 días"
+},
+{
+"etiqueta": "Bloque hasta 30 viv.",
+"valor": 55.0,
+"texto": "40–55 días"
+},
+{
+"etiqueta": "Bloque más de 30 viv.",
+"valor": 85.0,
+"texto": "55–85 días"
+}
+],
+"conclusion": "Plazos orientativos de ejecución según escala del edificio",
+"cita": "Plazos orientativos (días naturales) | P. Básico | P. Ejecución Vivienda unifamiliar y reforma | 15–20 | 20–35 Pareados, adosados y conjuntos | 15–30 | 30–45 Bloque de hasta 30 viviendas | 20–35 | 40–55",
+"citas_extra": [],
+"id": "9a919bcaad",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "10 Condiciones y plazos",
+"referencia": "Tabla de presupuestos de UDA, apartado 10",
+"titulo": "Condiciones de pago y entrega",
+"puntos": [
+"60 % al iniciar y 40 % al entregar",
+"Entrega en PDF y DWG o IFC y RVT",
+"Siete días de soporte para dudas y erratas"
+],
+"cita": "60 % al iniciar y 40 % antes de entregar cada fase. Entrega: PDF + DWG, o IFC + RVT con el pago final. Las familias van dentro del modelo; nuestra biblioteca y plantillas siguen siendo de UDA.",
+"citas_extra": [
+"Empiezan al recibir toda la documentación. 7 días naturales de soporte tras la entrega para dudas y erratas menores."
+],
+"id": "0838848c85",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "09 Qué incluye cada partida",
+"referencia": "Tabla de Referencia de Presupuestos 2026 de UDA, apartado 09",
+"titulo": "Nivel de desarrollo BIM por fase",
+"barras": [
+{
+"etiqueta": "Proyecto básico",
+"valor": 200.0,
+"texto": "LOD 200"
+},
+{
+"etiqueta": "Instalaciones 3D opcionales",
+"valor": 350.0,
+"texto": "LOD 300–350"
+}
+],
+"conclusion": "Mayor definición técnica según la fase contratada",
+"cita": "Situación y emplazamiento · Plantas, alzados y secciones (1:100–1:200) · Planta de acabados, superficies y cotas. En Revit, el modelo LOD 200 con sus familias.",
+"citas_extra": [
+"Plan de Ejecución BIM · Instalaciones en 3D: todas las instalaciones exigibles modeladas (LOD 300–350) con sus familias y planos."
+],
+"id": "d96ac9c892",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "09 Qué incluye cada partida",
+"referencia": "Tabla de Referencia de Presupuestos 2026 de UDA, apartado 09",
+"titulo": "Control técnico en cada encargo",
+"puntos": [
+"Estudio exhaustivo de normativa aplicable",
+"Coordinación continua con tu equipo",
+"Control interno de calidad y revisiones"
+],
+"cita": "Estudio de la documentación y la normativa, coordinación con tu despacho, control de calidad interno y revisiones incluidas.",
+"citas_extra": [],
+"id": "fd59595791",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "09 Qué incluye cada partida",
+"referencia": "Tabla de Referencia de Presupuestos 2026 de UDA, apartado 09",
+"afirmacion": "Externalizar la producción técnica incluye la tramitación y la dirección de obra",
+"explicacion": "El soporte técnico desarrolla la documentación del proyecto, pero el visado, los trámites y el control de obra permanecen en tu despacho.",
+"cita": "No incluye: conceptualización y diseño, renders e infografías (opciones adicionales bajo presupuesto), certificaciones externas (LEED, BREEAM…), ensayos, topografía y geotecnia, firma, visado y tramitación, dirección de obra ni coordinación de seguridad y salud en obra.",
+"veredicto": "MITO",
+"id": "368740ade7",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Artículo 33. El Fondo de Garantía Salarial. · 4. El Fondo asumirá las obligaciones especificadas en los aparta",
+"referencia": "Estatuto de los Trabajadores, art. 33.4 y 33.5",
+"titulo": "Cargas de nómina en arquitectura",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Aportación al Fondo",
+"a": "Cotización patronal obligatoria",
+"b": "Cero cuotas"
+},
+{
+"aspecto": "Reembolso salarial",
+"a": "Subrogación contra el despacho",
+"b": "Sin deuda laboral"
+},
+{
+"aspecto": "Base del coste",
+"a": "Salario fijado legalmente",
+"b": "Factura por entrega"
+}
+],
+"cita": "El Fondo de Garantía Salarial se financiará con las aportaciones efectuadas por todos los empresarios a que se refiere el artículo 1.2 de esta ley, tanto si son públicos como privados.",
+"citas_extra": [
+"Para el reembolso de las cantidades satisfechas, el Fondo de Garantía Salarial se subrogará obligatoriamente en los derechos y acciones de los trabajadores, conservando el carácter de créditos privilegiados que les confiere el artículo 32 de esta ley."
+],
+"id": "35be561795",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Artículo 33. El Fondo de Garantía Salarial. · 4. El Fondo asumirá las obligaciones especificadas en los aparta",
+"referencia": "Estatuto de los Trabajadores, art. 33.4 y 33.5",
+"titulo": "Cotizaciones obligatorias de tu equipo",
+"puntos": [
+"Aportación obligatoria en cada nómina",
+"El Gobierno fija el porcentaje aplicable",
+"El Fondo reclama luego las deudas"
+],
+"cita": "El Fondo de Garantía Salarial se financiará con las aportaciones efectuadas por todos los empresarios a que se refiere el artículo 1.2 de esta ley, tanto si son públicos como privados.",
+"citas_extra": [
+"El tipo de cotización se fijará por el Gobierno sobre los salarios que sirvan de base para el cálculo de la cotización para atender las contingencias derivadas de accidentes de trabajo, enfermedad profesional y desempleo",
+"Para el reembolso de las cantidades satisfechas, el Fondo de Garantía Salarial se subrogará obligatoriamente en los derechos y acciones de los trabajadores"
+],
+"id": "78a4a8bb77",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 33. El Fondo de Garantía Salarial. · 4. El Fondo asumirá las obligaciones especificadas en los aparta",
+"referencia": "Estatuto de los Trabajadores, art. 33.4",
+"afirmacion": "Si el Fondo paga atrasos a un empleado tu estudio queda liberado",
+"explicacion": "El organismo se subroga de forma obligatoria en las acciones del trabajador y mantiene el crédito privilegiado para exigir el reembolso al titular.",
+"cita": "Para el reembolso de las cantidades satisfechas, el Fondo de Garantía Salarial se subrogará obligatoriamente en los derechos y acciones de los trabajadores, conservando el carácter de créditos privilegiados que les confiere el artículo 32 de esta ley.",
+"veredicto": "MITO",
+"id": "d04b95ca61",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "05 Proyecto Básico",
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"titulo": "Gestión en Proyecto Básico",
+"puntos": [
+"Estudio de tu documentación y normativa",
+"Coordinación continua con tu despacho",
+"Control de calidad siempre incluido"
+],
+"cita": "La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad.",
+"citas_extra": [],
+"id": "8f27876db0",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_listado",
+"fuente": "05 Proyecto Básico",
+"referencia": "UDA · Listado de Documentos a Delegar, 05 Proyecto Básico",
+"titulo": "Proyecto Básico delegado",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Gestión y análisis",
+"a": "Dedicación interna propia",
+"b": "Va siempre incluida"
+},
+{
+"aspecto": "Encargo documental",
+"a": "Marcar cada documento",
+"b": "Proyecto Básico completo"
+},
+{
+"aspecto": "Control de calidad",
+"a": "Revisión por tu cuenta",
+"b": "Coordinación y control incluidos"
+}
+],
+"cita": "La Gestión y análisis va siempre incluida: estudio de tu documentación y la normativa, coordinación contigo y control de calidad.",
+"citas_extra": [
+"Quiero el Proyecto Básico completo (si lo marcas, no hace falta marcar cada documento)"
+],
+"id": "aea99bb784",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 01",
+"titulo": "Coste anual de contratar un arquitecto",
+"barras": [
+{
+"etiqueta": "Coste mínimo en plantilla",
+"valor": 40000.0,
+"texto": "40.000 €/año"
+},
+{
+"etiqueta": "Coste máximo en plantilla",
+"valor": 47000.0,
+"texto": "47.000 €/año"
+}
+],
+"conclusion": "Mantener un arquitecto cuesta hasta 47.000 euros anuales.",
+"cita": "UN ARQUITECTO EN PLANTILLA: 40.000–47.000 €/año. Salario, Seguridad Social, licencias, puesto, selección y formación. Haya proyectos o no.",
+"citas_extra": [],
+"id": "60c3b606b9",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 01",
+"titulo": "Ventajas de delegar la producción técnica",
+"puntos": [
+"Equipo con experiencia adaptado desde el primer día",
+"Plazos comprometidos ampliando el equipo según proyecto",
+"Entregas aseguradas sin incidencias por bajas o vacaciones"
+],
+"cita": "Equipo con experiencia, adaptado a ti desde el primer día.",
+"citas_extra": [
+"Plazos comprometidos; el equipo crece si el proyecto lo pide."
+],
+"id": "d45f3d2b37",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "01 ¿Contratar a alguien o delegar en UDA?",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartado 01",
+"afirmacion": "Contratar un arquitecto te libera para proyectar",
+"explicacion": "Con un empleado tu tiempo se consume revisando y corrigiendo planos en lugar de proyectar o atender clientes.",
+"cita": "Tu tiempo se va en revisar planos en lugar de proyectar.",
+"veredicto": "MITO",
+"id": "6a05ec06a0",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_listado",
+"fuente": "06 Proyecto de Ejecución",
+"referencia": "UDA · Listado de Documentos a Delegar, 06 Proyecto de Ejecución",
+"titulo": "Proyecto de Ejecución completo",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Proyecto Básico",
+"a": "Aportado por tu despacho",
+"b": "Nuestro o del despacho"
+},
+{
+"aspecto": "Encargo técnico",
+"a": "Marcar cada documento",
+"b": "Proyecto de Ejecución completo"
+},
+{
+"aspecto": "Estructuras",
+"a": "Cálculo propio en despacho",
+"b": "Cálculo y planos CYPE"
+}
+],
+"cita": "Para hacer el Proyecto de Ejecución es necesario el Proyecto Básico, nuestro o de tu despacho. Quiero el Proyecto de Ejecución completo (si lo marcas, no hace falta marcar cada documento)",
+"citas_extra": [],
+"id": "4eea3c48ef",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "06 Proyecto de Ejecución",
+"referencia": "UDA · Listado de Documentos a Delegar, 06 Proyecto de Ejecución",
+"titulo": "Anejos de Ejecución delegables",
+"puntos": [
+"Mediciones y presupuesto de obra",
+"Pliego de condiciones técnicas",
+"Estudios de seguridad y residuos"
+],
+"cita": "Mediciones y anejos | Mediciones y presupuesto Pliego de condiciones Estudio de seguridad y salud Estudio de gestión de residuos Plan de control de calidad",
+"citas_extra": [],
+"id": "07c2c1a0ce",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, apartados 3 y 8",
+"titulo": "Coste técnico de proyectos individuales",
+"barras": [
+{
+"etiqueta": "Reforma integral 80 m²",
+"valor": 1950.0,
+"texto": "1.950 €"
+},
+{
+"etiqueta": "Instalación de ascensor",
+"valor": 2000.0,
+"texto": "2.000 €"
+},
+{
+"etiqueta": "Unifamiliar 150 m²",
+"valor": 2955.0,
+"texto": "2.955 €"
+}
+],
+"conclusion": "Costes técnicos cerrados para liberar horas de despacho.",
+"cita": "Vivienda unifamiliar de 150 m² | 2.955 € | Apartado 3 Reforma integral de vivienda de 80 m² (sin estructuras) | 1.950 € | Apartado 3",
+"citas_extra": [
+"Equipamiento de 2.000 m² | 12.300 € | Apartado 6 Instalación de ascensor (4 paradas) | 2.000 € | Apartado 8"
+],
+"id": "1a9c380ee3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, sección Experiencia",
+"titulo": "Tipologías de proyectos para delegar",
+"puntos": [
+"Viviendas unifamiliares, bloques residenciales y adosados.",
+"Naves industriales, locales comerciales y equipamientos.",
+"Reformas integrales e instalaciones de ascensores."
+],
+"cita": "EXPERIENCIA: +80 proyectos. Viviendas, bloques, naves, locales y equipamientos.",
+"citas_extra": [],
+"id": "f66f0d3dfd",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "UDA · UNIÓN DE ARQUITECTOS · TABLA DE REFERENCIA DE PRESUPUESTOS 2026",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, encabezado",
+"afirmacion": "Delegar el desarrollo técnico compromete la firma de tu despacho",
+"explicacion": "El despacho mantiene el control total del encargo frente al cliente, conservando su firma al final del proyecto.",
+"cita": "Tu equipo técnico de arquitectura, sin plantilla. Proyectos Básicos y de Ejecución para despachos · 100 % online · Precio cerrado · Tu firma al final",
+"veredicto": "MITO",
+"id": "9ae0b43113",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo. · 4. El contrato a tiempo parcial se regirá por l",
+"referencia": "Estatuto de los Trabajadores, art. 12.4.c",
+"titulo": "Control horario a tiempo parcial",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Control de jornada",
+"a": "Registro día a día",
+"b": "Sin control horario"
+},
+{
+"aspecto": "Archivo de firmas",
+"a": "Cuatro años mínimo",
+"b": "Innecesario"
+},
+{
+"aspecto": "Fallo de registro",
+"a": "Presunción jornada completa",
+"b": "Cero riesgo laboral"
+}
+],
+"cita": "A estos efectos, la jornada de los trabajadores a tiempo parcial se registrará día a día y se totalizará mensualmente",
+"citas_extra": [
+"El empresario deberá conservar los resúmenes mensuales de los registros de jornada durante un periodo mínimo de cuatro años.",
+"En caso de incumplimiento de las referidas obligaciones de registro, el contrato se presumirá celebrado a jornada completa, salvo prueba en contrario que acredite el carácter parcial de los servicios."
+],
+"id": "98c5eaee6c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo. · 4. El contrato a tiempo parcial se regirá por l",
+"referencia": "Estatuto de los Trabajadores, art. 12.4.e",
+"titulo": "Pasar de completa a parcial",
+"puntos": [
+"Siempre voluntario para el profesional contratado",
+"Prohibido imponerlo de forma unilateral",
+"Rechazar el cambio no permite sancionarle"
+],
+"cita": "La conversión de un trabajo a tiempo completo en un trabajo parcial y viceversa tendrá siempre carácter voluntario para el trabajador y no se podrá imponer de forma unilateral",
+"citas_extra": [
+"El trabajador no podrá ser despedido ni sufrir ningún otro tipo de sanción o efecto perjudicial por el hecho de rechazar esta conversión"
+],
+"id": "e083aad94d",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 12. Contrato a tiempo parcial y contrato de relevo. · 4. El contrato a tiempo parcial se regirá por l",
+"referencia": "Estatuto de los Trabajadores, art. 12.4.b",
+"afirmacion": "Puedes partir la jornada a tiempo parcial en varios turnos al día.",
+"explicacion": "Si trabaja a tiempo parcial de forma partida, la ley únicamente autoriza hacer una sola interrupción en su jornada.",
+"cita": "solo será posible efectuar una única interrupción en dicha jornada diaria, salvo que se disponga otra cosa mediante convenio colectivo.",
+"veredicto": "MITO",
+"id": "65de7bc46e",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "04 Entorno de trabajo y punto de partida *",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 04",
+"titulo": "Puntos de partida del encargo",
+"puntos": [
+"UDA hace también el Proyecto Básico",
+"Aportas tu Básico en editable o PDF",
+"En rehabilitación aportas levantamiento actual"
+],
+"cita": "UDA hace también el Proyecto Básico | Mi despacho aporta el P. Básico en editable (DWG / RVT) Mi despacho aporta el P. Básico solo en PDF / bocetos | Rehabilitación: aporto levantamiento del estado actual",
+"citas_extra": [],
+"id": "ce47566101",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_listado",
+"fuente": "08 Opciones adicionales",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 08",
+"titulo": "Opciones adicionales para delegar",
+"puntos": [
+"Conceptualización de idea y diseño",
+"Renders e infografías 3D",
+"Familias Revit singulares a medida"
+],
+"cita": "Conceptualización de la idea y diseño del proyecto | Renders / infografías 3D · nº de vistas: ____ Familias Revit a medida o singulares | Otros documentos:",
+"citas_extra": [],
+"id": "b44ec704fe",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_listado",
+"fuente": "08 Opciones adicionales",
+"referencia": "UDA · Listado de Documentos a Delegar, apartado 10",
+"titulo": "Revisiones por fase para corregir errores",
+"barras": [
+{
+"etiqueta": "Edificio ordinario",
+"valor": 1.0,
+"texto": "1 revisión"
+},
+{
+"etiqueta": "Bloque desde 30 viviendas",
+"valor": 2.0,
+"texto": "2 revisiones"
+}
+],
+"conclusion": "Doble revisión incluida en promociones de treinta o más viviendas.",
+"cita": "1 revisión por fase (2 en bloques de 30 viviendas o más) para corregir errores menores.",
+"citas_extra": [],
+"id": "7148304c4a",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"titulo": "Entrega con tu propia marca",
+"puntos": [
+"Libro de estilo de tu despacho",
+"Vuestras plumillas CTB y cajetines habituales",
+"Familias de Revit de vuestro equipo"
+],
+"cita": "Actuamos como tu «marca blanca». Para ello, te pediremos tu libro de estilo, grosores de plumilla (CTB), familias de Revit y cajetines. Nuestro objetivo es que el proyecto parezca, a todos los efectos, desarrollado internamente por tu equipo.",
+"citas_extra": [],
+"id": "b826fd7bad",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_web",
+"fuente": " (cont.)",
+"referencia": "uniondearquitectos.com, Preguntas frecuentes",
+"afirmacion": "Externalizar la producción técnica obliga a delegar el proyecto completo",
+"explicacion": "El soporte técnico es modular: puedes externalizar solo el cuello de botella, como el cálculo en CYPE o memorias CTE.",
+"cita": "Nuestro servicio es completamente modular. Si tu equipo domina el diseño arquitectónico pero la estructura y el cumplimiento de las instalaciones suponen un cuello de botella, puedes externalizar exclusivamente el modelado en CYPE y la redacción de las memorias CTE.",
+"veredicto": "MITO",
+"id": "ca040c9fb3",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "comparativa",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, sección 03",
+"titulo": "Unifamiliar con apoyo técnico",
+"col_a": "En tu despacho",
+"col_b": "Con UDA",
+"filas": [
+{
+"aspecto": "Atención técnica",
+"a": "Carga de trabajo",
+"b": "Mismo cuidado grande"
+},
+{
+"aspecto": "Gestión previa",
+"a": "Dedicación interna",
+"b": "Siempre incluida"
+},
+{
+"aspecto": "Instalaciones",
+"a": "Redacción habitual",
+"b": "Revit 3D opcional"
+}
+],
+"cita": "El trabajo con el que más autónomos y pequeños despachos confían en nosotros, con el mismo cuidado que un proyecto grande.",
+"citas_extra": [],
+"id": "f1597f1cc9",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, sección 03",
+"titulo": "Precios de referencia en unifamiliar",
+"barras": [
+{
+"etiqueta": "Vivienda de 90 m²",
+"valor": 2469.0,
+"texto": "2.469 €"
+},
+{
+"etiqueta": "Vivienda de 150 m²",
+"valor": 2955.0,
+"texto": "2.955 €"
+},
+{
+"etiqueta": "Vivienda de 250 m²",
+"valor": 3765.0,
+"texto": "3.765 €"
+}
+],
+"conclusion": "Coste de referencia completo según superficie construida",
+"cita": "VIVIENDA DE 90 m²: 2.469 €. P. Básico 802 € · P. Ejecución 1.667 €. VIVIENDA DE 150 m²: 2.955 €. P. Básico 970 € · P. Ejecución 1.985 €. VIVIENDA DE 250 m²: 3.765 €.",
+"citas_extra": [],
+"id": "9ddb30cc5f",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "servicios",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "03 Vivienda unifamiliar y reforma",
+"referencia": "Tabla de presupuestos de UDA, sección 03",
+"titulo": "Encargos de unifamiliar y reforma",
+"puntos": [
+"Vivienda completa con básico y ejecución",
+"Reforma delegable con o sin estructuras",
+"Precio de referencia según superficie construida"
+],
+"cita": "VIVIENDA DE 250 m²: 3.765 €. P. Básico 1.250 € · P. Ejecución 2.515 €. REFORMA DE 80 m²: 1.950 €. P. Básico + P. Ejecución sin estructuras.",
+"citas_extra": [],
+"id": "769943cb38",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "comparativa",
+"norma": "et",
+"fuente": "Artículo 64. Derechos de información y consulta y competencias. · 4. El comité de empresa, con la periodicidad",
+"referencia": "Estatuto de los Trabajadores, art. 64.4 y 64.5",
+"titulo": "Cuentas y control del estudio",
+"col_a": "En plantilla",
+"col_b": "Por servicios",
+"filas": [
+{
+"aspecto": "Tus cuentas",
+"a": "Acceso a balances",
+"b": "Totalmente confidenciales"
+},
+{
+"aspecto": "Nuevos contratos",
+"a": "Dar copia básica",
+"b": "Acuerdo directo privado"
+},
+{
+"aspecto": "Organizar trabajo",
+"a": "Consulta e informe",
+"b": "Plena autonomía propia"
+}
+],
+"cita": "Conocer el balance, la cuenta de resultados, la memoria y, en el caso de que la empresa revista la forma de sociedad por acciones o participaciones, los demás documentos que se den a conocer a los socios",
+"citas_extra": [
+"Asimismo, el comité de empresa tendrá derecho a recibir la copia básica de los contratos así como la notificación de las prórrogas y de las denuncias correspondientes a los mismos",
+"La implantación y revisión de sistemas de organización y control del trabajo, estudios de tiempos, establecimiento de sistemas de primas e incentivos y valoración de puestos de trabajo."
+],
+"id": "e463924df6",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "puntos",
+"norma": "et",
+"fuente": "Artículo 64. Derechos de información y consulta y competencias. · 4. El comité de empresa, con la periodicidad",
+"referencia": "Estatuto de los Trabajadores, art. 64.5",
+"titulo": "Decisiones bajo consulta previa",
+"puntos": [
+"Reestructurar plantilla y ceses",
+"Modificar o reducir jornadas",
+"Cambiar sistemas de trabajo"
+],
+"cita": "El comité de empresa tendrá derecho a emitir informe, con carácter previo a la ejecución por parte del empresario de las decisiones adoptadas por este, sobre las siguientes cuestiones: a) Las reestructuraciones de plantilla y ceses",
+"citas_extra": [
+"b) Las reducciones de jornada.",
+"f) La implantación y revisión de sistemas de organización y control del trabajo, estudios de tiempos, establecimiento de sistemas de primas e incentivos y valoración de puestos de trabajo."
+],
+"id": "25b02b9f2c",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "contratacion",
+"bloque": "contratar",
+"tipo": "mito",
+"norma": "et",
+"fuente": "Artículo 64. Derechos de información y consulta y competencias. · 4. El comité de empresa, con la periodicidad",
+"referencia": "Estatuto de los Trabajadores, art. 64.5",
+"afirmacion": "Puedes cambiar la organización del trabajo en el estudio sin pedir informes a nadie.",
+"explicacion": "La representación tiene derecho a emitir informe antes de implantar o revisar sistemas de organización, control y estudios de tiempos.",
+"cita": "El comité de empresa tendrá derecho a emitir informe, con carácter previo a la ejecución por parte del empresario de las decisiones adoptadas por este, sobre las siguientes cuestiones: ... f) La implantación y revisión de sistemas de organización y control del trabajo",
+"veredicto": "MITO",
+"id": "23ea74bbf0",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "05 Bloques de viviendas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 05 Bloques de viviendas",
+"titulo": "Cómo presupuestar un bloque",
+"puntos": [
+"Las viviendas tipo completas proyectadas",
+"Viviendas repetidas con un porcentaje menor",
+"El edificio con el 6 % de superficie"
+],
+"cita": "Se presupuestan tres piezas: las viviendas tipo completas, las viviendas repetidas con un pequeño porcentaje y el edificio (fachadas, núcleos, cubiertas, zonas comunes y garaje) con un 6 % de la superficie total.",
+"citas_extra": [],
+"id": "d6a806c1be",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_delegar",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "05 Bloques de viviendas",
+"referencia": "UDA · Tabla de Referencia de Presupuestos 2026, 05 Bloques de viviendas",
+"afirmacion": "Modificar un tabique o terraza crea una tipología nueva",
+"explicacion": "Son variantes con porcentaje menor; solo es tipología nueva si cocina o baños cambian de sitio.",
+"cita": "Vivienda tipo: distribución propia; si la cocina o los baños cambian de sitio, es una tipo nueva. Variante: cambios menores (un tabique, un hueco, la terraza, acabados o versión adaptada).",
+"veredicto": "MITO",
+"id": "0e0c94bd30",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "puntos",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"titulo": "Cómo se presupuestan los adosados",
+"puntos": [
+"La vivienda tipo completa",
+"Viviendas repetidas por porcentaje reducido",
+"Tres por ciento por el conjunto"
+],
+"cita": "Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5, y un 3 % de la superficie total por el conjunto",
+"citas_extra": [],
+"id": "025c8c4bf9",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "cifras",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"titulo": "Superficie presupuestada en doce adosados",
+"barras": [
+{
+"etiqueta": "Superficie total construida",
+"valor": 2820.0,
+"texto": "2.820 m²"
+},
+{
+"etiqueta": "Superficie que se presupuesta",
+"valor": 570.0,
+"texto": "570 m²"
+}
+],
+"conclusion": "Solo presupuestas 570 m² de los 2.820 m² construidos",
+"cita": "Ejemplo: 12 adosados iguales de 235 m² (2.820 m²) | Se presupuesta La vivienda tipo | 235 m² Viviendas 2ª a 10ª al 10 % · 11ª y 12ª al 8 % | 250 m²",
+"citas_extra": [],
+"id": "5699ae62b2",
+"fuente_ok": true,
+"fecha": "2026-10-20"
+},
+{
+"tema": "uda_servicios",
+"bloque": "negocio",
+"tipo": "mito",
+"norma": "uda_tabla",
+"fuente": "04 Pareados / Adosados / Conjunto de unifamiliares",
+"referencia": "Tabla de presupuestos de UDA, apartado 04",
+"afirmacion": "En una hilera de adosados pagas cada vivienda completa",
+"explicacion": "Se presupuesta la vivienda tipo completa, cada repetición entra por un pequeño porcentaje y el conjunto suma solo un 3 %.",
+"cita": "Diseñamos la vivienda una vez; las repetidas apenas suman. Mismos precios que la vivienda unifamiliar, pero se presupuesta: la vivienda tipo completa, cada vivienda repetida con el porcentaje de la tabla del apartado 5",
+"veredicto": "MITO",
+"id": "590d506757",
+"fuente_ok": true,
+"fecha": "2026-10-20"
 }
 ]
