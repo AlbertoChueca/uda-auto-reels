@@ -166,6 +166,9 @@ def candidates(fmt, bloque=None, seed=0):
     tipo, bloques = FORMAT_SPEC[fmt]
     kind = "corta" if fmt == "simulacro_3" else "normal"
     ps = [p for p in load() if p["tipo"] == tipo and p.get("bloque") in bloques and fits(p, kind)]
+    var = os.environ.get("IG_VARIANTE")
+    if fmt == "infografia" and var:                       # el tipo de reel que toca hoy en este hueco (casos.SEMANA)
+        ps = [p for p in ps if (p.get("infografia") or {}).get("variante") == var] or ps
     if bloque and bloque != "mixto" and bloque in bloques:
         ps = [p for p in ps if p["bloque"] == bloque] or ps
     u = used()

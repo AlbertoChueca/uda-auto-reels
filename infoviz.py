@@ -7,7 +7,7 @@ Cada escena es una función scene_xxx(T, data, lt, ...) -> imagen RGBA de W×H (
   towers    cuánto cuesta delegar: tres edificios dorados (parcial, P. Ejecución, Básico + Ejecución) que crecen
   versus    contratar (gris) frente a delegar (oro), con las cifras contando
   donut     anillo que se llena: «hasta un 67 % más de tiempo» (web de UDA)
-  timeline  del primer contacto a tu firma: reunión, presupuesto cerrado en 24–72 h, entrega, tu firma
+  timeline  del primer contacto a tu firma: reunión, presupuesto cerrado en 24 h, entrega, tu firma
   quote     testimonio literal de un estudio (web de UDA) sobre la foto
 
 Todas las cifras llegan ya calculadas o citadas (casos.py / web): aquí solo se dibujan.
@@ -313,3 +313,56 @@ def scene_cargas(T, d, lt, starts):
         pill = fx.pill(d.get("uda", "Con UDA, nada de eso"), 54, T.label, fx.NEGRO, padx=40, pady=22, radius=6)
         _paste(c, pill, W / 2, y0 + 2 * th + gap + 50 + (1 - p) * 30, clamp(p))
     return c
+
+
+def render(T, sc, d, lt, sg):
+    """Escena sc con sus datos d en el instante lt (sg: segmento del plan, con starts / bstart / cstart)."""
+    starts = list(sg.get("starts") or [0.3 + 0.5 * k for k in range(8)])
+    if sc == "stack":
+        return scene_stack(T, d, lt)
+    if sc == "towers":
+        return scene_towers(T, d, lt, starts, sg.get("cstart", starts[-1]))
+    if sc == "versus":
+        return scene_versus(T, d, lt, sg.get("bstart", 1.5))
+    if sc == "cargas":
+        return scene_cargas(T, d, lt, starts)
+    if sc == "delegable":
+        return scene_delegable(T, d, lt, sg.get("bstart", 1.5))
+    if sc == "donut":
+        return scene_donut(T, d, lt)
+    if sc == "timeline":
+        return scene_timeline(T, d, lt, starts + [99] * 4)
+    return scene_quote(T, dict(d, dur=sg.get("b", 7) - sg.get("a", 0)), lt)
+
+
+def cover(T, ig, photo=None):
+    """Portada del reel (la miniatura del perfil): foto + titular grande + la infografía principal ya completa.
+    Todo lo importante cabe en el recorte 3:4 de la cuadrícula del perfil (y = 240-1680)."""
+    from themes import ImageBG
+    base = ImageBG(photo, dark=0.55, blur=6).frame(0) if photo is not None else T.background(1).frame(0)
+    base = base.convert("RGBA")
+    shade = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(shade)
+    for yy in range(0, H, 6):
+        sd.rectangle([0, yy, W, yy + 6], fill=(0, 0, 0, int(90 + 110 * abs(yy / H - 0.45))))
+    base.alpha_composite(shade)
+    tag = fx.pill(ig["badge"], 34, T.label, fx.NEGRO, padx=26, pady=12, radius=4)
+    _paste(base, tag, W / 2, 290)
+    hl = fx.headline(ig["screen_hook"], 112, 960, 3, color=(242, 236, 224), hot=T.label,
+                     hot_words=tuple(w.strip("¿?¡!.,") for w in ig["screen_hook"].split() if any(ch.isdigit() for ch in w))
+                     + ("delegar", "Delegar", "contratar", "horas", "delega", "estudios"), stroke=0, shadow=True)
+    _paste(base, hl, W / 2, 380)
+    y0 = 380 + hl.height + 30
+    prefer = {"caso": "towers", "contratar": "versus", "delegable": "delegable", "tiempo": "donut", "proceso": "timeline",
+              "testimonio": "quote"}.get(ig.get("variante"))           # cada tipo de reel, su propia portada
+    main = prefer if prefer in ig["orden"] else next((x for x in ("towers", "versus", "donut", "cargas", "delegable",
+                                                                    "timeline", "stack", "quote") if x in ig["orden"]), None)
+    if main:
+        sg = {"starts": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "cstart": 1.0, "bstart": 0.4, "a": 0, "b": 7}
+        ov = render(T, main, ig["datos"][main], 30.0, sg)
+        crop = ov.crop((0, TOP + 70, W, 1490))                     # sin la etiqueta pequeña: el titular manda
+        k = min(0.9, (1560 - y0) / crop.height)
+        crop = crop.resize((int(W * k), int(crop.height * k)), Image.LANCZOS)
+        base.alpha_composite(crop, (int((W - crop.width) / 2), int(y0)))
+    lg = fx.logo(56, (242, 236, 224), T.label)
+    _paste(base, lg, W / 2, 1585)
+    return base.convert("RGB")

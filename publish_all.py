@@ -43,7 +43,19 @@ def publish(reel, story, caption, meta, slot=""):
         import publish_ig as IG
 
         def ig_reel():
-            m = IG.publish_reel(light, caption, thumb_ms=meta.get("thumb_ms"))
+            cu = None
+            if meta.get("cover"):
+                try:
+                    cu = url(meta["cover"])
+                except Exception as e:
+                    print("portada sin subir:", str(e)[:150], flush=True)
+            try:
+                m = IG.publish_reel(light, caption, thumb_ms=meta.get("thumb_ms"), cover_url=cu)
+            except Exception as e:
+                if not cu:
+                    raise
+                print("Instagram no acepta la portada; uso el fotograma del gancho:", str(e)[:150], flush=True)
+                m = IG.publish_reel(light, caption, thumb_ms=meta.get("thumb_ms"))
             meta["permalink"] = m.get("permalink")
             return f"ig:{m['id']}"
         if not morning:

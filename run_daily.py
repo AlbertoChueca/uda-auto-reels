@@ -104,6 +104,10 @@ try:
     fixed = {"formato": override} if override in strategy.DEFAULT_ARMS["formato"] else {}
     if not fixed:                                             # contenido principal: infografías de cuánto cuesta delegar
         fixed["formato"] = "infografia"
+    if not os.environ.get("IG_VARIANTE"):                     # tipo de reel según el día y la hora (nunca todos iguales)
+        import casos
+        os.environ["IG_VARIANTE"] = casos.variante_de(today, slot)
+    print("tipo de reel de hoy:", os.environ["IG_VARIANTE"], flush=True)
     if slot == "mediodia" and not fixed:
         import estudio
         series_info = estudio.series_today(today)

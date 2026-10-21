@@ -113,7 +113,12 @@ def _desc(items):
         return f"Fichas de {tema}: " + " | ".join(f"{f['q']} -> {f['a']}" for f in items)
     if P["tipo"] == "puntos":
         return f"Tema: {tema}. {P['titulo']}: " + " | ".join(P["puntos"])
-    return f"Tema: {tema}. Pregunta: {P['pregunta']} Respuesta correcta: {P['op'][P['ok']]}"
+    if P["tipo"] == "caso":
+        return (f"Tema: {tema}. Caso: {P.get('escena', '')} Tipología: {P.get('tipologia')} de {P.get('m2')} m². "
+                f"Mensaje: delegar en UDA sale mucho más barato que contratar y libera al estudio.")
+    if P.get("pregunta") and P.get("op"):
+        return f"Tema: {tema}. Pregunta: {P['pregunta']} Respuesta correcta: {P['op'][P['ok']]}"
+    return f"Tema: {tema}. " + " ".join(str(P.get(k, "")) for k in ("titulo", "afirmacion", "explicacion") if P.get(k))
 
 
 # ------------------------------------------------------------------ 7. series (sin IA: siempre cierto)

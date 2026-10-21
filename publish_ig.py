@@ -95,14 +95,16 @@ def _container_upload_wait(uid, token, video_path, fields, label, tries=3):
     raise last
 
 
-def publish_reel(video_path, caption, token=None, location_id=None, thumb_ms=None):
+def publish_reel(video_path, caption, token=None, location_id=None, thumb_ms=None, cover_url=None):
     token = token or os.environ["IG_TOKEN"]
     me = whoami(token)
     uid = me["user_id"]
     print(f"Publishing as @{me['username']}", flush=True)
     video_path = ig_safe(video_path)
     fields = {"media_type": "REELS", "caption": caption, "share_to_feed": "true"}
-    if thumb_ms:                                   # portada: el fotograma del gancho
+    if cover_url:                                  # portada propia (infografía + titular): la miniatura del perfil
+        fields["cover_url"] = cover_url
+    elif thumb_ms:                                 # si no, el fotograma del gancho
         fields["thumb_offset"] = str(int(thumb_ms))
     if location_id:
         fields["location_id"] = str(location_id)

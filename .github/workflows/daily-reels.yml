@@ -19,6 +19,11 @@ on:
         type: choice
         options: [auto, negro, piedra, carbon, plano, ficha, minimal, ilustrado]
         default: auto
+      variante:
+        description: "Tipo de infografía (auto = el que toca según el día)"
+        type: choice
+        options: [auto, caso, contratar, delegable, tiempo, proceso, testimonio]
+        default: auto
       dry_run:
         description: "Solo generar el vídeo (no publicar)"
         type: boolean
@@ -101,6 +106,7 @@ jobs:
           GEMINI_VOICE: ${{ vars.GEMINI_VOICE || 'Orus' }}
           FORMAT_OVERRIDE: ${{ github.event_name == 'workflow_dispatch' && inputs.formato || 'auto' }}
           STYLE_OVERRIDE: ${{ github.event_name == 'workflow_dispatch' && inputs.estilo || 'auto' }}
+          IG_VARIANTE: ${{ github.event_name == 'workflow_dispatch' && inputs.variante != 'auto' && inputs.variante || '' }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
           IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
           IG_STORY: ${{ vars.IG_STORY || 'true' }}

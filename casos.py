@@ -134,61 +134,85 @@ TESTIMONIOS = [
     "Varias veces se me juntan varios proyectos de golpe y esos días duermo poco y mal. Desde que trabajo con UDA eso "
     "cambió y lo gestiono mejor y sin problemas.",
 ]
-EXTRAS = ("delegable", "quote", "timeline", "donut")
 
 
-def infografia(p, k):
+# Tipos de reel de infografía (rotan a lo largo de la semana; ninguno es una tabla)
+#   nombre: (etiqueta, gancho en pantalla, gancho hablado, escenas)
+VARIANTES = {
+    "caso": ("CUÁNTO CUESTA DELEGAR", None, None, ["towers", "versus", "cargas"]),
+    "contratar": ("CONTRATAR O DELEGAR", "¿Contratar o delegar?",
+                  "¿Contratas a alguien o delegas el proyecto? Haz números.", ["versus", "cargas", "quote"]),
+    "delegable": ("QUÉ PUEDES DELEGAR", "¿Qué puedes delegar?",
+                  "¿Qué parte de un proyecto puedes delegar sin perder el control?", ["delegable", "towers", "timeline"]),
+    "tiempo": ("MÁS TIEMPO PARA TU ESTUDIO", "¿Te faltan horas?",
+               "¿Te faltan horas para proyectar y atender a tus clientes?", ["stack", "donut", "towers"]),
+    "proceso": ("CÓMO TRABAJAMOS", "Así se delega un proyecto", "Así se delega un proyecto, paso a paso.",
+                ["timeline", "delegable", "versus"]),
+    "testimonio": ("LO QUE DICEN LOS ESTUDIOS", "Lo que cambia al delegar",
+                   "Esto es lo que cambia cuando un estudio delega.", ["quote", "cargas", "versus"]),
+}
+# orden semanal: (lunes..domingo) x (8:00, 12:00, 15:00) -> nunca dos días iguales
+SEMANA = [["caso", "tiempo", "contratar"], ["delegable", "caso", "testimonio"], ["contratar", "proceso", "caso"],
+          ["tiempo", "caso", "delegable"], ["caso", "testimonio", "proceso"], ["contratar", "caso", "tiempo"],
+          ["testimonio", "delegable", "caso"]]
+
+
+def variante_de(fecha, slot):
+    return SEMANA[fecha.weekday()][{"manana": 0, "mediodia": 1, "tarde": 2}.get(slot, 0)]
+
+
+def infografia(p, var, k=0):
     """Guion de la infografía animada (escenas de infoviz.py) a partir de un caso calculado."""
     b = p["barras"]; tipo = p["tipologia"]
     corto = {"unifamiliar": "Unifamiliar", "industrial": "Nave", "equipamiento": "Equipamiento"}[tipo]
+    mm = f"{p['m2']:,}".replace(",", ".")
     torres = [dict(b[0], etiqueta="Estructuras e instalaciones"), dict(b[1], etiqueta="P. Ejecución completo"),
               dict(b[2], etiqueta="Básico + Ejecución")]
-    extra = EXTRAS[k % len(EXTRAS)]
-    ig = {"nuevo": f"{corto} · {p['m2']:,} m²".replace(",", "."),
-          "torres": {"titulo": f"{corto} de {p['m2']:,} m² · cuánto cuesta delegar".replace(",", "."), "barras": torres, "conclusion": "Tú eliges cuánto delegas"},
-          "torres_voz": [f"Solo estructuras e instalaciones: {b[0]['texto']}.", f"El proyecto de ejecución completo: {b[1]['texto']}.",
-                         f"Básico y ejecución: {b[2]['texto']}."],
-          # contratar = el coste anual de la tabla (40.000–47.000 €/año, haya proyectos o no): delegar SIEMPRE sale muy por debajo
-          "versus": {"titulo": "Contratar o delegar", "a_tit": "Un arquitecto en plantilla", "a_num": "40.000–47.000 €",
-                     "a_txt": "al año, haya proyectos o no", "b_tit": "Delegar este proyecto", "b_num": b[2]["texto"],
-                     "b_txt": "Básico + Ejecución, una sola vez"},
-          "versus_voz": ["Un empleado: de 40.000 a 47.000 € al año, haya proyectos o no.",
-                         f"Delegar este proyecto: {b[2]['texto']}, una sola vez."],
-          # lo que no sale en la nómina (tabla, apartado 01, y testimonio de la web)
-          "cargas": {"titulo": "Y no es solo dinero", "items": [
-              ("doc", "Hay que formarle", "meses enseñándole tus plantillas"),
-              ("calendar", "Bajas y vacaciones", "siempre llegan antes de una entrega"),
-              ("euro", "Nómina sin trabajo", "le pagas aunque no haya proyectos"),
-              ("team", "Despedir duele", "también emocionalmente")],
-              "uda": "Con UDA, nada de eso"},
-          "cargas_voz": ["Y no es solo dinero.", "Hay que formarle.", "Puede coger una baja.",
-                         "Le pagas aunque no haya trabajo.", "Y despedir duele.", "Con UDA, nada de eso."],
-          "extra": extra,
-          # qué se puede delegar y qué no (Tabla, apartado 09: qué incluye cada partida / no incluye)
-          "delegable": {"titulo": "Qué delegas y qué sigue siendo tuyo",
-                        "si": ["Planos en CAD o Revit", "Estructuras con CYPE", "Instalaciones", "Memorias", "Mediciones y presupuesto"],
-                        "no": ["El diseño", "La firma y el visado", "La dirección de obra"]},
-          "delegable_voz": ["Delegas planos, estructuras, instalaciones, memorias y mediciones.",
-                            "Lo tuyo: el diseño, la firma y la obra."]}
-    if extra == "delegable":
-        ig["extra_voz"] = list(ig["delegable_voz"])
-    elif extra == "donut":
-        ig["donut"] = {"pct": 67, "prefijo": "hasta un", "texto": "más de tiempo para actividades de valor",
-                       "titulo": "Lo que ganan los estudios que externalizan", "fuente": "uniondearquitectos.com"}
-        ig["extra_voz"] = ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."]
-    elif extra == "timeline":
-        ig["timeline"] = {"titulo": "Así funciona", "pasos": [
+    t = TESTIMONIOS[1 + k % 2]                             # los que encajan con una voz masculina
+    datos = {
+        "stack": {"titulo": "Tu estudio hoy", "nuevo": f"{corto} · {mm} m²"},
+        "towers": {"titulo": f"{corto} de {mm} m² · cuánto cuesta delegar", "barras": torres,
+                   "conclusion": "Tú eliges cuánto delegas"},
+        # contratar = coste anual de la tabla (40.000–47.000 €/año, haya proyectos o no): delegar SIEMPRE sale muy por debajo
+        "versus": {"titulo": "Contratar o delegar", "a_tit": "Un arquitecto en plantilla", "a_num": "40.000–47.000 €",
+                   "a_txt": "al año, haya proyectos o no", "b_tit": f"Delegar {corto.lower()} de {mm} m²", "b_num": b[2]["texto"],
+                   "b_txt": "Básico + Ejecución, una sola vez"},
+        # lo que no sale en la nómina (tabla, apartado 01, y testimonio de la web)
+        "cargas": {"titulo": "Y no es solo dinero", "items": [
+            ("doc", "Hay que formarle", "meses enseñándole tus plantillas"),
+            ("calendar", "Bajas y vacaciones", "siempre llegan antes de una entrega"),
+            ("euro", "Nómina sin trabajo", "le pagas aunque no haya proyectos"),
+            ("team", "Despedir duele", "también emocionalmente")], "uda": "Con UDA, nada de eso"},
+        # qué se puede delegar y qué no (tabla, apartado 09)
+        "delegable": {"titulo": "Qué delegas y qué sigue siendo tuyo",
+                      "si": ["Planos en CAD o Revit", "Estructuras con CYPE", "Instalaciones", "Memorias", "Mediciones y presupuesto"],
+                      "no": ["El diseño", "La firma y el visado", "La dirección de obra"]},
+        "donut": {"pct": 67, "prefijo": "hasta un", "texto": "más de tiempo para actividades de valor",
+                  "titulo": "Lo que ganan los estudios que externalizan", "fuente": "uniondearquitectos.com"},
+        "timeline": {"titulo": "Así funciona", "pasos": [
             ("calendar", "Reunión", "nos cuentas qué necesitas"),
-            ("euro", "Presupuesto cerrado", "en 24 horas: puedes repercutirlo a tu cliente"),
+            ("euro", "Presupuesto cerrado", "en 24 h: puedes repercutirlo a tu cliente"),
             ("plan", "Entrega por fases", f"P. Ejecución en {PLAZO_PE[tipo]}"),
-            ("shield", "Tú firmas", "el trabajo es 100 % tuyo")]}
-        ig["extra_voz"] = ["Una reunión.", "Presupuesto cerrado en 24 horas.",
-                           f"Proyecto de ejecución en {PLAZO_PE[tipo].replace('–', ' a ')}.", "Y tú firmas."]
-    else:
-        t = TESTIMONIOS[1 + k % 2]                         # los que encajan con una voz masculina
-        ig["quote"] = {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Lo que dicen los estudios"}
-        ig["extra_voz"] = ["Lo dice un estudio que ya delega."]
-    return ig
+            ("shield", "Tú firmas", "el trabajo es 100 % tuyo")]},
+        "quote": {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Lo que dicen los estudios"},
+    }
+    voz = {
+        "stack": ["Tu equipo ya tiene tres encargos en marcha. Y entra otro."],
+        "towers": [f"Solo estructuras e instalaciones: {b[0]['texto']}.", f"El proyecto de ejecución completo: {b[1]['texto']}.",
+                   f"Básico y ejecución: {b[2]['texto']}.", "Tú eliges cuánto delegas."],
+        "versus": ["Un empleado: de 40.000 a 47.000 € al año, haya proyectos o no.",
+                   f"Delegar este proyecto: {b[2]['texto']}, una sola vez."],
+        "cargas": ["Y no es solo dinero.", "Hay que formarle.", "Puede coger una baja.",
+                   "Le pagas aunque no haya trabajo.", "Y despedir duele.", "Con UDA, nada de eso."],
+        "delegable": ["Delegas planos, estructuras, instalaciones, memorias y mediciones.", "Lo tuyo: el diseño, la firma y la obra."],
+        "donut": ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."],
+        "timeline": ["Una reunión.", "Presupuesto cerrado en 24 horas.",
+                     f"Proyecto de ejecución en {PLAZO_PE[tipo].replace('–', ' a ')}.", "Y tú firmas."],
+        "quote": ["Lo dice un estudio que ya delega."],
+    }
+    badge, sh, hl, orden = VARIANTES[var]
+    return {"variante": var, "badge": badge, "screen_hook": sh or p["screen_hook"], "hook_line": hl or p["escena"],
+            "orden": orden, "datos": {k_: datos[k_] for k_ in orden}, "voz": {k_: voz[k_] for k_ in orden}}
 
 
 def generate():
@@ -197,9 +221,11 @@ def generate():
         return []
     out = []
     for i, (t, m) in enumerate(CASOS):
-        for v in range(3):                                  # 3 versiones: otra escena y otra infografía final
+        for v, var in enumerate(VARIANTES):                 # cada caso, en los 6 tipos de reel
             p = caso(t, m, i + v)
-            p["infografia"] = infografia(p, i + v)
+            p["id"] = hashlib.sha1(f"{p['id']}|{var}".encode()).hexdigest()[:10]
+            p["infografia"] = infografia(p, var, i + v)
+            p["screen_hook"], p["escena"] = p["infografia"]["screen_hook"], p["infografia"]["hook_line"]
             out.append(p)
     return out
 
