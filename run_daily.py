@@ -148,7 +148,7 @@ for fmt in chain:
         style = dict(make_quiz.DEFAULT_STYLE)
         style.update({k: S[k] for k in STYLE_KEYS if S.get(k)})
         image, dinfo = None, {}
-        if HAS_AI and src == "ia":
+        if HAS_AI and src in ("ia", "calculado"):
             import agents, estudio
             style.update({k: v for k, v in agents.growth_lines(S, fmt).items() if not S.get(k)})
             image, dinfo = estudio.imagen_para(fmt, items, arms.get("estilo", "negro"), S, out[:-4])
@@ -182,6 +182,11 @@ for fmt in chain:
         meta = None
         errors.append(f"{fmt}: {str(e)[:300]}")
         print(f"[{fmt}] no ha podido salir, pruebo el siguiente formato:\n{traceback.format_exc()[-1500:]}", flush=True)
+        try:                                       # se guarda en el repositorio: así se ve por qué no salió un formato
+            with open("errores_reels.log", "a") as f_:
+                f_.write(f"{now:%Y-%m-%d %H:%M} {slot} [{fmt}] {traceback.format_exc()[-1200:]}\n")
+        except Exception:
+            pass
 
 story_mp4 = None
 if meta:

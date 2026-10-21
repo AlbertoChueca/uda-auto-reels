@@ -96,7 +96,7 @@ def caso(tipo, m2, k=0):
     mes = "un mes" if n == 1 else f"{n} meses"
     barras = [{"etiqueta": lab, "valor": par, "texto": eur(par)},
               {"etiqueta": "Delegar el P. Ejecución completo", "valor": pe, "texto": eur(pe)},
-              {"etiqueta": "Delegar P. Básico + P. Ejecución", "valor": total, "texto": eur(total)},
+              {"etiqueta": "Delegar el Básico y el de Ejecución", "valor": total, "texto": eur(total)},
               {"etiqueta": f"{mes[0].upper() + mes[1:]} de un arquitecto en plantilla", "valor": hi,
                "texto": f"{eur(lo)[:-2]}–{eur(hi)}"}]
     sh, hl = ESCENAS[k % len(ESCENAS)]
