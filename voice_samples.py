@@ -9,7 +9,7 @@ VOICES = ["Orus", "Puck", "Charon", "Fenrir", "Sadachbia", "Algieba", "Iapetus",
 TEXTS = ["¿Te sabes esta pregunta de normativa? Ojo, que tiene trampa.",
          "Según el DB SI del CTE, la evacuación de ocupantes se justifica en el proyecto.",
          "La correcta es la B. Y en un proyecto real, este error sale caro.",
-         "Y si vas justo de equipo, delega el proyecto: presupuesto cerrado en 24–72 horas en uniondearquitectos.com."]
+         "Y si vas justo de equipo, delega el proyecto: presupuesto cerrado en 24 horas en uniondearquitectos.com."]
 STYLES = ["punchy, confident challenge", "clear, assured, explaining", "confident, a hint of a smile", "warm, persuasive"]
 os.makedirs("out/voices", exist_ok=True)
 

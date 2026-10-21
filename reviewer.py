@@ -85,7 +85,8 @@ Puntúa 1-10 el gancho (2 primeros segundos), la claridad y la invitación a com
 campos, sin añadir ningún dato nuevo del temario: screen_hook (2-6 palabras, sin emojis), hook_line (5-14 palabras,
 hablado, no repite el screen_hook), caption_hook (máx. 12 palabras, máx. 1 emoji), comment_prompt (máx. 12 palabras),
 cta_line (10-22 palabras, debe nombrar uniondearquitectos.com y solo hechos ciertos de UDA: delegar el proyecto,
-presupuesto cerrado en 24–72 horas, tu firma al final). Español de España, de colega a colega, sin promesas.
+presupuesto cerrado en 24 horas que puede repercutir a su cliente, equipo de confianza, aumentar la facturación; y SIEMPRE
+termina invitando a agendar una reunión para conocernos y crecer juntos). Español de España, de colega a colega, sin promesas.
 Devuelve JSON: {{"overall": number, "changes": [str], "screen_hook": str, "hook_line": str, "caption_hook": str,
 "comment_prompt": str, "cta_line": str}}"""}], 0.7)
         import writer

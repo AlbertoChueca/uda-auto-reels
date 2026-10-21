@@ -135,7 +135,7 @@ HECHOS CIERTOS DE UDA (solo para la descripción): {verifier.facts()}
 Elige UN subtema concreto de la fuente que funcione muy bien como carrusel (qué exige, qué documentos lleva, diferencias
 que se confunden, pasos, condiciones...). {("Evita estos subtemas ya publicados: " + "; ".join(avoid)) if avoid else ""}
 Reglas: cada frase debe poder comprobarse en la fuente; nada de "siempre/nunca/todos" si la fuente no lo dice; precios
-de UDA siempre como precio de referencia; el plazo del presupuesto es SIEMPRE "24–72 horas" (nunca "24 h" a secas);
+de UDA siempre como precio de referencia; el presupuesto cerrado se envía en 24 horas;
 lenguaje claro para el fundador de un despacho, sin jerga de coaching ("zona de genialidad", "mindset"...); la "clave" de
 cada lámina aporta algo concreto (margen, horas o riesgo que se evita), nunca repite la tarjeta; español de España;
 sin emojis dentro de las diapositivas; escribe SOLO lo que se lee.
@@ -472,7 +472,11 @@ def slide_cta(P, n, total, seed):
         x = (W - wtot) / 2
         d.text((x, y), a + " ", font=f1, fill=WHITE); d.text((x + f1.getlength(a + " "), y), b, font=f2, fill=ARENA); y += 52
     y += 14
-    p1 = fx.pill("PRESUPUESTO CERRADO EN 24–72 H", 30, ORO, NEGRO, padx=28, pady=12, radius=4)
+    for v_ in marca.VENTAJAS_CIERRE:
+        lv = fx.text_block("✓  " + v_, F_REG, 32, W - 2 * M, CREMA, align="center")
+        im.alpha_composite(lv, ((W - lv.width) // 2, int(y))); y += 46
+    y += 10
+    p1 = fx.pill(marca.CTA.upper(), 28, ORO, NEGRO, padx=26, pady=12, radius=4)
     im.alpha_composite(p1, ((W - p1.width) // 2, int(y))); y += p1.height + 20
     p2 = fx.pill(marca.WEB, 50, CREMA, NEGRO, padx=38, pady=16, radius=4)
     im.alpha_composite(p2, ((W - p2.width) // 2, int(min(y, H - p2.height - 90))))

@@ -134,7 +134,7 @@ TESTIMONIOS = [
     "Varias veces se me juntan varios proyectos de golpe y esos días duermo poco y mal. Desde que trabajo con UDA eso "
     "cambió y lo gestiono mejor y sin problemas.",
 ]
-EXTRAS = ("donut", "timeline", "quote")
+EXTRAS = ("delegable", "quote", "timeline", "donut")
 
 
 def infografia(p, k):
@@ -148,34 +148,46 @@ def infografia(p, k):
           "torres": {"titulo": f"{corto} de {p['m2']:,} m² · cuánto cuesta delegar".replace(",", "."), "barras": torres, "conclusion": "Tú eliges cuánto delegas"},
           "torres_voz": [f"Solo estructuras e instalaciones: {b[0]['texto']}.", f"El proyecto de ejecución completo: {b[1]['texto']}.",
                          f"Básico y ejecución: {b[2]['texto']}."],
-          "versus": {"titulo": "Contratar o delegar", "a_tit": b[3]["etiqueta"], "a_num": b[3]["texto"],
-                     "a_txt": "haya proyectos o no", "b_tit": "Delegar en UDA", "b_num": b[2]["texto"],
+          # contratar = el coste anual de la tabla (40.000–47.000 €/año, haya proyectos o no): delegar SIEMPRE sale muy por debajo
+          "versus": {"titulo": "Contratar o delegar", "a_tit": "Un arquitecto en plantilla", "a_num": "40.000–47.000 €",
+                     "a_txt": "al año, haya proyectos o no", "b_tit": "Delegar este proyecto", "b_num": b[2]["texto"],
                      "b_txt": "Básico + Ejecución, una sola vez"},
-          "versus_voz": [f"{b[3]['etiqueta']}: entre {b[3]['texto'].split('–')[0]} y {b[3]['texto'].split('–')[1]}, haya proyectos o no.",
-                         f"Delegar el básico y el de ejecución: {b[2]['texto']}. Una sola vez."],
+          "versus_voz": ["Un empleado: de 40.000 a 47.000 € al año, haya proyectos o no.",
+                         f"Delegar este proyecto: {b[2]['texto']}, una sola vez."],
+          # lo que no sale en la nómina (tabla, apartado 01, y testimonio de la web)
+          "cargas": {"titulo": "Y no es solo dinero", "items": [
+              ("doc", "Hay que formarle", "meses enseñándole tus plantillas"),
+              ("calendar", "Bajas y vacaciones", "siempre llegan antes de una entrega"),
+              ("euro", "Nómina sin trabajo", "le pagas aunque no haya proyectos"),
+              ("team", "Despedir duele", "también emocionalmente")],
+              "uda": "Con UDA, nada de eso"},
+          "cargas_voz": ["Y no es solo dinero.", "Hay que formarle.", "Puede coger una baja.",
+                         "Le pagas aunque no haya trabajo.", "Y despedir duele.", "Con UDA, nada de eso."],
           "extra": extra,
           # qué se puede delegar y qué no (Tabla, apartado 09: qué incluye cada partida / no incluye)
           "delegable": {"titulo": "Qué delegas y qué sigue siendo tuyo",
                         "si": ["Planos en CAD o Revit", "Estructuras con CYPE", "Instalaciones", "Memorias", "Mediciones y presupuesto"],
                         "no": ["El diseño", "La firma y el visado", "La dirección de obra"]},
           "delegable_voz": ["Delegas planos, estructuras, instalaciones, memorias y mediciones.",
-                            "El diseño, la firma y la dirección de obra siguen siendo tuyos."]}
-    if extra == "donut":
+                            "Lo tuyo: el diseño, la firma y la obra."]}
+    if extra == "delegable":
+        ig["extra_voz"] = list(ig["delegable_voz"])
+    elif extra == "donut":
         ig["donut"] = {"pct": 67, "prefijo": "hasta un", "texto": "más de tiempo para actividades de valor",
                        "titulo": "Lo que ganan los estudios que externalizan", "fuente": "uniondearquitectos.com"}
         ig["extra_voz"] = ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."]
     elif extra == "timeline":
         ig["timeline"] = {"titulo": "Así funciona", "pasos": [
             ("calendar", "Reunión", "nos cuentas qué necesitas"),
-            ("euro", "Presupuesto cerrado", "en 24–72 horas"),
+            ("euro", "Presupuesto cerrado", "en 24 horas: puedes repercutirlo a tu cliente"),
             ("plan", "Entrega por fases", f"P. Ejecución en {PLAZO_PE[tipo]}"),
             ("shield", "Tú firmas", "el trabajo es 100 % tuyo")]}
-        ig["extra_voz"] = ["Una reunión.", "Presupuesto cerrado en 24 a 72 horas.",
+        ig["extra_voz"] = ["Una reunión.", "Presupuesto cerrado en 24 horas.",
                            f"Proyecto de ejecución en {PLAZO_PE[tipo].replace('–', ' a ')}.", "Y tú firmas."]
     else:
         t = TESTIMONIOS[1 + k % 2]                         # los que encajan con una voz masculina
         ig["quote"] = {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Lo que dicen los estudios"}
-        ig["extra_voz"] = ["Lo dice un estudio que ya delega: " + t]
+        ig["extra_voz"] = ["Lo dice un estudio que ya delega."]
     return ig
 
 

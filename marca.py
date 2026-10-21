@@ -11,10 +11,15 @@ HANDLE = os.environ.get("IG_HANDLE", "@uniondearquitectos")
 NOMBRE = "UDA · Unión de Arquitectos"
 CLAIM = "Tu equipo técnico de arquitectura, sin plantilla."                           # cabecera de la tabla
 SUBCLAIM = "Proyectos Básicos y de Ejecución para despachos · 100 % online · Precio cerrado · Tu firma al final"
-PRESUPUESTO = "Presupuesto cerrado en 24–72 horas"                                   # "Solicita tu presupuesto..."
+PRESUPUESTO = "Presupuesto cerrado en 24 horas"                                      # web: "presupuesto cerrado en 24 horas"
+CTA = "Agenda una reunión para conocernos y crecer juntos"
+VENTAJAS_CIERRE = ("Presupuesto cerrado en 24 h", "Precio cerrado: puedes repercutirlo a tu cliente",
+                   "Aumenta la facturación de tu estudio")
 CTA_WEB = f"Solicita tu presupuesto en {WEB}"
-CTA_CAPTION = ("¿Vas justo de equipo? En UDA hacemos tus Proyectos Básicos y de Ejecución, en CAD o en Revit, con precio "
-               "cerrado y tu firma al final. Presupuesto cerrado en 24–72 horas en uniondearquitectos.com (link en la bio).")
+CTA_CAPTION = ("¿Vas justo de equipo? En UDA seremos tu equipo técnico de confianza: Proyectos Básicos y de Ejecución con "
+               "presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, y tu firma al final. Aumenta la "
+               "facturación de tu estudio sin ampliar plantilla.\n\n👉 Agenda una reunión para conocernos y crecer juntos en "
+               "uniondearquitectos.com (link en la bio).")
 
 
 def handle_plain():

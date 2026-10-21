@@ -371,20 +371,24 @@ class CompareCard:
 
 def brand_card(style):
     """Tarjeta final, como la cabecera de los documentos de UDA: bloque carbón, logotipo, claim y la web (solo hechos)."""
-    h = 860
+    h = 960
     im = Image.new("RGBA", (CARD_W, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle([0, 0, CARD_W - 1, h - 1], 12, fill=T.brand_bg, outline=T.card_outline if T.name == "negro" else None, width=2)
     d.rectangle([6, 0, CARD_W - 7, 8], fill=T.brand_rule)
     lg = fx.logo(104, T.brand_ink, T.brand_sub)
     im.alpha_composite(lg, ((CARD_W - lg.width) // 2, 64))
     y = 64 + lg.height + 44
-    cl = fx.text_block(M.CLAIM, F900, 50, 800, T.brand_ink, align="center")
-    im.alpha_composite(cl, ((CARD_W - cl.width) // 2, y)); y += cl.height + 18
-    sub = fx.text_block("Proyectos Básicos y de Ejecución · Precio cerrado · Tu firma al final", F800, 30, 780, T.brand_sub,
-                        align="center")
-    im.alpha_composite(sub, ((CARD_W - sub.width) // 2, y)); y += sub.height + 34
-    p1 = fx.pill("PRESUPUESTO CERRADO EN 24–72 H", 32, T.brand_pill, T.brand_pill_fg, padx=30, pady=13, radius=4)
-    im.alpha_composite(p1, ((CARD_W - p1.width) // 2, y)); y += p1.height + 26
+    cl = fx.text_block("Seremos tu equipo técnico de confianza", F900, 50, 800, T.brand_ink, align="center")
+    im.alpha_composite(cl, ((CARD_W - cl.width) // 2, y)); y += cl.height + 26
+    for v_ in M.VENTAJAS_CIERRE:                           # presupuesto en 24 h · repercutible al cliente · más facturación
+        ic = fx.icon("check", 40, T.brand_sub); tx = fx.text_block(v_, F800, 31, 820, T.brand_ink)
+        tw_ = ic.width + 16 + int(fx.font(F800, 31).getlength(v_)); x_ = (CARD_W - tw_) // 2
+        im.alpha_composite(ic, (x_, y + 2)); im.alpha_composite(tx, (x_ + ic.width + 16, y)); y += 52
+    y += 18
+    p1 = fx.pill("AGENDA UNA REUNIÓN", 38, T.brand_pill, T.brand_pill_fg, padx=34, pady=15, radius=4)
+    im.alpha_composite(p1, ((CARD_W - p1.width) // 2, y)); y += p1.height + 10
+    p1b = fx.text_block("para conocernos y crecer juntos", F800, 32, 700, T.brand_sub, align="center")
+    im.alpha_composite(p1b, ((CARD_W - p1b.width) // 2, y)); y += p1b.height + 16
     p2 = fx.pill(M.WEB, 54, T.brand_web, T.brand_web_fg, padx=40, pady=16, radius=4)
     im.alpha_composite(p2, ((CARD_W - p2.width) // 2, y)); y += p2.height + 24
     p3 = fx.text_block("Link en la bio", F900, 34, 600, T.brand_ink, align="center")
@@ -460,8 +464,9 @@ def lines_for(fmt, items, S):
         for k, t_ in enumerate(G["torres_voz"]):
             L.append((f"t{k}", t_, ""))
         L.append(("tc", "Tú eliges cuánto delegas.", ""))
-        L.append(("da", G["delegable_voz"][0], "")); L.append(("db", G["delegable_voz"][1], ""))
         L.append(("va", G["versus_voz"][0], "")); L.append(("vb", G["versus_voz"][1], ""))
+        for k, t_ in enumerate(G["cargas_voz"]):
+            L.append((f"g{k}", t_, ""))
         for k, t_ in enumerate(G["extra_voz"]):
             L.append((f"x{k}", t_, ""))
     elif fmt == "caso_coste":
@@ -689,14 +694,16 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 starts.append(tt - a); say(f"t{k}", tt); tt += D[f"t{k}"] + 0.35
             cst = tt - a; say("tc", tt); tt += D["tc"]
             seg("ig_towers", tt - a + 1.2, starts=starts, cstart=cst)
-            a = t; say("da", a + 0.5); dst = 0.5 + D["da"] + 0.4; say("db", a + dst)
-            seg("ig_delegable", dst + D["db"] + 1.2, bstart=dst)
             a = t; say("va", a + 0.5); bst = 0.5 + D["va"] + 0.4; say("vb", a + bst)
             seg("ig_versus", bst + D["vb"] + 1.3, bstart=bst)
+            a = t; tt = a + 0.4; starts = []
+            for k in range(len(G["cargas_voz"])):
+                starts.append(tt - a); say(f"g{k}", tt); tt += D[f"g{k}"] + 0.3
+            seg("ig_cargas", tt - a + 1.0, starts=starts)
             a = t; tt = a + 0.5; starts = []
             for k in range(len(G["extra_voz"])):
                 starts.append(tt - a); say(f"x{k}", tt); tt += D[f"x{k}"] + 0.35
-            seg("ig_" + G["extra"], tt - a + 1.2, starts=starts)
+            seg("ig_" + G["extra"], max(tt - a + 1.2, 6.5 if G["extra"] == "quote" else 0), starts=starts, bstart=starts[-1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
             for k in range(len(S["barras"])):
@@ -1019,6 +1026,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 ov = IV.scene_stack(T, {"nuevo": G["nuevo"], "titulo": "Tu estudio hoy"}, lt)
             elif kind == "ig_towers":
                 ov = IV.scene_towers(T, G["torres"], lt, sg["starts"], sg["cstart"])
+            elif kind == "ig_cargas":
+                ov = IV.scene_cargas(T, G["cargas"], lt, sg["starts"])
             elif kind == "ig_delegable":
                 ov = IV.scene_delegable(T, G["delegable"], lt, sg["bstart"])
             elif kind == "ig_versus":
@@ -1053,7 +1062,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         elif kind == "cta":
             fx.paste_center(fr, brand, W / 2, 330 + brand.height / 2 - 66, eob(lt / 0.4), min(1, lt / 0.2))
             if st.get("share_line") and lt > 1.2:
-                fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1225,
+                fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1345,
                                 eob((lt - 1.2) / 0.35))
             # sin subtítulo en el cierre: la tarjeta ya dice lo mismo (menos texto a la vez, nada en la zona de la interfaz)
         if fi in caps and len(slides) < 12:

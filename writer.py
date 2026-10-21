@@ -202,7 +202,8 @@ def _short_expl(text, max_words=40):
     return res if len(res.split()) <= max_words + 12 else None
 
 
-CTA_DEFAULT = "Si quieres crecer sin ampliar plantilla, delega el proyecto: presupuesto cerrado en 24–72 horas en uniondearquitectos.com."
+CTA_DEFAULT = ("Seremos tu equipo de confianza, con presupuestos cerrados en 24 horas que puedes repercutir a tu cliente. "
+               "Agenda una reunión en uniondearquitectos.com para conocernos y crecer juntos.")
 
 
 def verified(fmt, P):

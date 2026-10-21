@@ -108,7 +108,7 @@ def scene_towers(T, d, lt, starts, cstart):
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
     y = _label(T, d["titulo"], TOP + 20, c, clamp(lt / 0.3))
     bars = d["barras"]; n = len(bars)
-    base = 1290; hmax = base - y - 210
+    base = 1290; hmax = base - y - 250
     vmax = max(b["valor"] for b in bars)
     bw = 210; gap = (W - 120 - n * bw) / max(1, n - 1)
     dr.line([(60, base), (W - 60, base)], fill=tuple(T.label[:3]) + (180,), width=3)
@@ -134,7 +134,7 @@ def scene_towers(T, d, lt, starts, cstart):
         pill = fx.pill(d["conclusion"], 36, T.label, fx.NEGRO, padx=30, pady=16, radius=6)
         if pill.width > W - 80:
             pill = pill.resize((W - 80, int(pill.height * (W - 80) / pill.width)), Image.LANCZOS)
-        _paste(c, pill, W / 2, 1400 - pill.height / 2 + (1 - p) * 30, clamp(p))
+        _paste(c, pill, W / 2, y - 6 + (1 - p) * 20, clamp(p))
     return c
 
 
@@ -164,7 +164,7 @@ def scene_versus(T, d, lt, b_start):
         num = d["b_num" if gold else "a_num"]
         pn = clamp((lt - st - 0.3) / 1.0)
         shown = num if pn >= 1 else _count_text(num, pn)
-        nm = _txt(shown, 84 if len(num) < 10 else 52, cw - 110, T.ink)
+        nm = _txt(shown, 84 if len(num) < 10 else 44, cw - 100, T.ink)
         _paste(c, nm, x + cw / 2, top + 380)
         sub = _txt(d["b_txt" if gold else "a_txt"], 40, cw - 70, T.ink if gold else (150, 146, 138), bold=False)
         _paste(c, sub, x + cw / 2, top + 560, clamp((lt - st - 0.6) / 0.4))
@@ -280,4 +280,36 @@ def scene_delegable(T, d, lt, b_start):
             yy = y2 + 110 + 82 * k
             c.alpha_composite(fx.icon("shield", 56, (200, 194, 182)), (x0 + 40, int(yy)))
             _paste(c, _txt(it, 44, 760, (200, 194, 182), align="left"), x0 + 120 + 380 + (1 - q) * 30, yy + 4, q)
+    return c
+
+
+def scene_cargas(T, d, lt, starts):
+    """Lo que no sale en la nómina: 4 losas grises que aparecen una a una y, al final, el sello dorado «Con UDA, nada de eso».
+    starts: [titular, formar, baja, nómina, despido, uda]"""
+    c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
+    y = _label(T, d.get("titulo", "Y no es solo dinero"), TOP + 20, c, clamp(lt / 0.3))
+    tw, th, gap = 470, 380, 24
+    x0 = (W - 2 * tw - gap) / 2; y0 = y + 20
+    grey = (190, 184, 172)
+    done = lt >= starts[-1] if len(starts) > 5 else False
+    for k, (ic, tit, det) in enumerate(d["items"]):
+        st = starts[k + 1] if len(starts) > k + 1 else 0.3 + 0.4 * k
+        p = eob(clamp((lt - st) / 0.4))
+        if p <= 0:
+            continue
+        col, row = k % 2, k // 2
+        bx, by = x0 + col * (tw + gap), y0 + row * (th + gap) + (1 - p) * 50
+        dr.rounded_rectangle([bx, by, bx + tw, by + th], 10, fill=(26, 25, 23, 238), outline=(78, 74, 68), width=2)
+        c.alpha_composite(fx.icon(ic, 110, grey), (int(bx + 40), int(by + 40)))
+        ti = _txt(tit, 46, tw - 80, (236, 230, 218), align="left")
+        c.alpha_composite(ti, (int(bx + 40), int(by + 166)))
+        c.alpha_composite(_txt(det, 34, tw - 80, (150, 144, 132), bold=False, align="left"),
+                          (int(bx + 40), int(by + 166 + ti.height + 4)))
+        if done:                                              # tachado dorado: con UDA desaparece
+            q = eo(clamp((lt - starts[-1] - 0.1 * k) / 0.35))
+            dr.line([(bx + 30, by + th / 2), (bx + 30 + (tw - 60) * q, by + th / 2)], fill=T.label, width=7)
+    if done:
+        p = eob(clamp((lt - starts[-1]) / 0.4))
+        pill = fx.pill(d.get("uda", "Con UDA, nada de eso"), 54, T.label, fx.NEGRO, padx=40, pady=22, radius=6)
+        _paste(c, pill, W / 2, y0 + 2 * th + gap + 50 + (1 - p) * 30, clamp(p))
     return c
