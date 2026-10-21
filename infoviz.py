@@ -125,7 +125,7 @@ def scene_towers(T, d, lt, starts, cstart):
                 for wx in range(int(x + 22), int(x + bw - 30), 40):
                     dr.rectangle([wx, wy, wx + 20, wy + 16], fill=(20, 18, 14, 150))
             dr.rectangle([x - 6, top - 10, x + bw + 6, top], fill=_mix(col, (255, 255, 255), 0.25))
-            v = _txt(_num(b["valor"], p) + " €", 64, 320, T.ink)
+            v = _txt(b["texto"], 64, 320, T.ink)                      # cifra fija (sin contar: no parpadea)
             _paste(c, v, x + bw / 2, top - 92, clamp(p * 2))
             lab = _txt(b["etiqueta"], 38, bw + 60, T.ink if hot else (160, 154, 142), bold=hot)
             _paste(c, lab, x + bw / 2, base + 18, clamp(p * 2))
@@ -163,9 +163,9 @@ def scene_versus(T, d, lt, b_start):
         _paste(c, tit, x + cw / 2, top + 230)
         num = d["b_num" if gold else "a_num"]
         pn = clamp((lt - st - 0.3) / 1.0)
-        shown = num if pn >= 1 else _count_text(num, pn)
+        shown = num
         nm = _txt(shown, 84 if len(num) < 10 else 44, cw - 100, T.ink)
-        _paste(c, nm, x + cw / 2, top + 380)
+        _paste(c, nm, x + cw / 2, top + 380 + (1 - eo(pn)) * 20, clamp(pn * 1.5))
         sub = _txt(d["b_txt" if gold else "a_txt"], 40, cw - 70, T.ink if gold else (150, 146, 138), bold=False)
         _paste(c, sub, x + cw / 2, top + 560, clamp((lt - st - 0.6) / 0.4))
         mark = fx.icon("check" if gold else "cross", 90, T.label if gold else (130, 126, 120))
@@ -200,8 +200,8 @@ def scene_donut(T, d, lt):
     dr.arc([cx - R, cy - R, cx + R, cy + R], -90, -90 + 360 * d["pct"] / 100 * p, fill=T.label, width=48)
     pre = _txt(d.get("prefijo", ""), 46, 400, (160, 154, 142), bold=False)
     _paste(c, pre, cx, cy - 150)
-    big = _txt(f"{round(d['pct'] * p)} %", 150, 600, T.ink)
-    _paste(c, big, cx, cy - 95)
+    big = _txt(f"{d['pct']} %", 150, 600, T.ink)
+    _paste(c, big, cx, cy - 95, clamp(p * 1.4))
     t = _txt(d["texto"], 56, 900, T.ink)
     _paste(c, t, cx, cy + R + 70, clamp((lt - 1.2) / 0.5))
     if d.get("fuente"):

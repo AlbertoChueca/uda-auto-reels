@@ -686,7 +686,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 a = t; tt = a + 0.5; starts = []
                 for k in range(len(G["voz"][sc])):
                     starts.append(tt - a); say(f"{sc}{k}", tt); tt += D[f"{sc}{k}"] + (0.3 if sc == "cargas" else 0.4)
-                dur = max(tt - a + 1.2, 9.0 if sc == "quote" else 0, 4.0 if sc == "donut" else 0)
+                dur = max(tt - a + 1.2, 0, 4.0 if sc == "donut" else 0)
                 seg("ig_" + sc, dur, starts=starts, cstart=starts[-1], bstart=starts[1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
