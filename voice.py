@@ -562,9 +562,10 @@ def _split_takes(a, texts):
 
 
 def _gemini_many(texts, styles, key, one_take, pace):
-    if one_take and len(texts) > 1:
+    for attempt in range(2 if one_take and len(texts) > 1 else 0):   # una sola toma = un solo timbre (2 intentos)
         try:
-            cues = "; ".join(f"{i + 1}: {st}" for i, st in enumerate(styles) if st)
+            cues = ("all paragraphs -> " + styles[0]) if styles and len(set(styles)) == 1 and styles[0] else \
+                "; ".join(f"{i + 1}: {st}" for i, st in enumerate(styles) if st)
             script = "\n\n".join(texts)
             prompt = (f"{NARRATOR}\nPerformance: one continuous take, {pace}, a short breath pause between paragraphs"
                       + (f"; mood per paragraph -> {cues}" if cues else "") + ".\n"
@@ -579,7 +580,7 @@ def _gemini_many(texts, styles, key, one_take, pace):
         except Exception as e:
             if "unreachable" in str(e) or "no Gemini TTS" in str(e):
                 raise
-            print("voice: one-take narration failed, recording line by line:", str(e)[:200], flush=True)
+            print(f"voice: one-take narration failed (intento {attempt + 1}):", str(e)[:200], flush=True)
     from concurrent.futures import ThreadPoolExecutor        # 3 lines recorded at the same time
     with ThreadPoolExecutor(3) as ex:
         return list(ex.map(lambda ts: _gemini_line(ts[0], ts[1], key, pace), zip(texts, styles)))

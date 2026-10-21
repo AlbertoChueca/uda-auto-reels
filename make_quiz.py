@@ -587,7 +587,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     for attempt in range(3):
         try:
             clips = []
-            for grp in _groups(L):                  # cada bloque se graba de una sola toma: entonación más natural
+            for grp in [L]:                         # todo el reel en UNA toma: mismo timbre de principio a fin
                 clips += voice.say_many([t for _, t, _ in grp], speed=speed, styles=[ONE_VOICE] * len(grp),
                                         one_take=len(grp) > 1)
             break
@@ -754,6 +754,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     hook_bg = themes.ImageBG(image, dark=0.25, blur=0) if image is not None else None
     corto = QB.tema_corto(P.get("tema"))
     extra = corto if len(corto) <= 26 and fmt not in ("simulacro_3", "delegar", "uda_servicio", "caso_coste") else None
+    if extra and extra.lower() in (BADGE.get(fmt, "").lower(), str(st.get("series") or "").lower()):
+        extra = None                                      # nunca la misma etiqueta dos veces
     bdg = badge(fmt, extra, st.get("series"))
     # la web siempre visible arriba, en pequeño (si el reel se descarga y se reenvía, se sabe de dónde viene)
     web_img = fx.pill(M.WEB, 28, T.web_bg, T.web_fg, padx=22, pady=8, path=F800, radius=T.pill_radius)
@@ -781,7 +783,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P))
     elif fmt == "caso_coste":                          # barras de UDA en oro, la del empleado en gris
         chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P),
-                          hi_set=[k for k, b in enumerate(S["barras"]) if b["etiqueta"].startswith("Delegar")])
+                          hi_set=[k for k, b in enumerate(S["barras"]) if "empleado" not in b["etiqueta"] and "plantilla" not in b["etiqueta"]])
         pts = TextCard(None, None, None, big=S["puntos_titulo"], bullets=S["puntos"], icons=True, body_size=58)
     elif fmt in QB.POINTS_ONLY or fmt in ("dato", "comparativa", "mito_realidad"):
         if fmt == "mito_realidad":

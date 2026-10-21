@@ -89,15 +89,16 @@ def _meses(total):
 def caso(tipo, m2, k=0):
     pb, pe = fase(tipo, "pb", m2), fase(tipo, "pe", m2)
     parts, lab = PARCIAL[tipo]
+    lab = "Solo estructuras e instalaciones"
     par = fase(tipo, "pe", m2, parts)
     total = pb + pe
     n = _meses(total)
     lo, hi = round(PLANTILLA_ANO[0] / 12 * n), round(PLANTILLA_ANO[1] / 12 * n)
     mes = "un mes" if n == 1 else f"{n} meses"
     barras = [{"etiqueta": lab, "valor": par, "texto": eur(par)},
-              {"etiqueta": "Delegar el P. Ejecución completo", "valor": pe, "texto": eur(pe)},
-              {"etiqueta": "Delegar el Básico y el de Ejecución", "valor": total, "texto": eur(total)},
-              {"etiqueta": f"{mes[0].upper() + mes[1:]} de un arquitecto en plantilla", "valor": hi,
+              {"etiqueta": "Proyecto de Ejecución completo", "valor": pe, "texto": eur(pe)},
+              {"etiqueta": "Básico y Ejecución", "valor": total, "texto": eur(total)},
+              {"etiqueta": f"{mes[0].upper() + mes[1:]} de un empleado", "valor": hi,
                "texto": f"{eur(lo)[:-2]}–{eur(hi)}"}]
     sh, hl = ESCENAS[k % len(ESCENAS)]
     n_, c_, d_, pr = G[tipo]; nm = NOMBRE[tipo]
@@ -114,7 +115,7 @@ def caso(tipo, m2, k=0):
         "referencia": f"{TABLA} · uniondearquitectos.com",
         "screen_hook": sh.format(**fmt),
         "escena": hl.format(**fmt),
-        "titulo": f"{nm[0].upper() + nm[1:]} de {m2:,} m²: lo que cuesta delegar".replace(",", "."),
+        "titulo": f"Delegar {n_.split(' ', 1)[1]} de {m2:,} m²".replace(",", "."),
         "barras": barras,
         "conclusion": f"El proyecto completo, por menos de {mes} de un arquitecto en plantilla.",
         "puntos_titulo": "Y una vez delegado",
