@@ -116,8 +116,7 @@ def caso(tipo, m2, k=0):
         "escena": hl.format(**fmt),
         "titulo": f"{nm[0].upper() + nm[1:]} de {m2:,} m²: lo que cuesta delegar".replace(",", "."),
         "barras": barras,
-        "conclusion": (f"Delegas el Básico y el de Ejecución por menos de lo que cuesta {mes} de un arquitecto en "
-                       f"plantilla, y sin nóminas cuando no hay proyectos."),
+        "conclusion": f"El proyecto completo, por menos de {mes} de un arquitecto en plantilla.",
         "puntos_titulo": "Y una vez delegado",
         "puntos": [x[0] for x in v],
         "citas": [f"{TABLA}: partidas fijo + €/m² (apartados 03 y 06)",

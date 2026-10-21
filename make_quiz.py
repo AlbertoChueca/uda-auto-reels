@@ -494,7 +494,8 @@ def lines_for(fmt, items, S):
 
 # Una sola dirección de voz para TODO el reel: si cada frase lleva su propia indicación (enérgica, cálida...), el modelo
 # cambia de timbre entre tomas y el revisor lo detecta como dos voces distintas.
-ONE_VOICE = "confident, warm and assured, same timbre, pitch and energy as every other line of this reel"
+ONE_VOICE = ("conversational and close, like a founder telling a colleague over coffee; lively, varied intonation, "
+             "relaxed natural pace, never corporate or announcer-like; same timbre and energy as every other line of this reel")
 
 
 def _groups(L):
@@ -629,7 +630,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         def say(k, at):
             VO[k] = at
 
-        seg("hook", max(2.6, D["hook"] + 0.6)); say("hook", 0.25)
+        seg("hook", max(2.8, D["hook"] + 0.95)); say("hook", 0.25)        # aire tras el gancho: sin cortes bruscos
         if fmt == "repaso_express":
             pause = max(1.2, min(2.5, count / 3))
             for i in range(len(items)):
@@ -643,8 +644,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 a = t; seg("reveal", max(1.6, D[f"r{i}"] + 0.6), q=i); say(f"r{i}", a + 0.15)
             a = t; seg("score", D["fin"] + 1.2); say("fin", a + 0.3)
         elif fmt == "mito_realidad":
-            a = t; seg("statement", D["st"] + 1.0); say("st", a + 0.45)
-            seg("count", count, q=0, n=count)
+            a = t; seg("statement", D["st"] + 2.0); say("st", a + 0.45)     # sin cuenta atrás: no es un test
             a = t; seg("stamp", max(1.6, D["rev"] + 0.7)); say("rev", a + 0.1)
             a = t; seg("explain", D["ex"] + 1.2); say("ex", a + 0.5)
         elif fmt == "grafico":
@@ -659,7 +659,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
             for k in range(len(S["barras"])):
-                starts.append(tt); say(f"b{k}", tt); tt += D[f"b{k}"] + 0.4
+                starts.append(tt); say(f"b{k}", tt); tt += D[f"b{k}"] + 0.3
             cstart = tt; say("conc", tt); tt += D["conc"]
             seg("chart", tt - a + 1.3, starts=starts, cstart=cstart)
             a = t; tt = a + 0.4; say("pt", tt); tt += D["pt"] + 0.25; starts = []
@@ -713,6 +713,9 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     n = int(SR * (total + 0.5)); vo = np.zeros(n, np.float32); sfx = np.zeros(n, np.float32)
 
     def put(buf, a, at, g=1.0):
+        a = a.copy(); f_ = min(len(a), int(SR * 0.06))                 # micro-fundido al final de cada toma (sin clics)
+        if f_:
+            a[-f_:] *= np.linspace(1, 0, f_, dtype=np.float32)
         i = int(at * SR)
         if i >= n: return
         if i < 0: a = a[-i:]; i = 0
@@ -843,7 +846,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
 
     def card_at(img, tt, a, enter=0.35):
         p = eo((tt - a) / enter)
-        return img, ctop(img.height) + img.height / 2 + (1 - p) * 140, p
+        drift = -22 * clamp((tt - a - enter) / 9.0)                    # deriva lenta: la tarjeta nunca está quieta
+        return img, ctop(img.height) + img.height / 2 + (1 - p) * 140 + drift, p
 
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                              "-r", str(FPS), "-i", "-", "-i", wav, "-shortest"] + fx.enc_args(out), stdin=subprocess.PIPE)
@@ -985,11 +989,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             if st.get("share_line") and lt > 1.2:
                 fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1225,
                                 eob((lt - 1.2) / 0.35))
-            top_, sz = 1262, 44                    # el subtítulo nunca entra en los 420 px inferiores (interfaz de la red)
-            s_ = sub_img("cta", tt, sz)
-            while s_ is not None and s_.height > fx.SAFE_BOTTOM - 10 - top_ and sz > 30:
-                sz -= 3; s_ = sub_img("cta", tt, sz)
-            if s_ is not None: fx.paste_center(fr, s_, W / 2, top_ + s_.height / 2)
+            # sin subtítulo en el cierre: la tarjeta ya dice lo mismo (menos texto a la vez, nada en la zona de la interfaz)
         if fi in caps and len(slides) < 12:
             name, path = caps[fi]
             fr.convert("RGB").save(path); slides.append(path)
