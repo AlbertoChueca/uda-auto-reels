@@ -10,10 +10,8 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| caso_coste | 0 | - |
-| comparativa | 0 | - |
+| infografia | 0 | - |
 | mito_realidad | 0 | - |
-| grafico | 0 | - |
 | dato | 0 | - |
 
 ## estilo
