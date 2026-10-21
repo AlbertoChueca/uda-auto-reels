@@ -105,6 +105,39 @@ ok("Publicaciones (7 días)", bool(stats) and all(b == 0 for _, b in stats.value
 ok("LinkedIn (máx. 1 al día)", all(n <= 1 for n in li_days.values()),
    f"{sum(li_days.values())} publicaciones en {len(li_days)} días" if li_days else "sin publicaciones esta semana")
 
+# ---- estado REAL en TikTok y LinkedIn de las últimas publicaciones (Zernio: creado ≠ publicado)
+det = []
+if os.environ.get("ZERNIO_API_KEY"):
+    import requests, publish_zernio as Z
+    ids = []
+    try:
+        for line in open("log.jsonl"):
+            e = json.loads(line)
+            for k, v in (e.get("publicado") or {}).items():
+                if not str(v).startswith(("ig:", "error")) and v not in ("ok", None):
+                    ids.append((e.get("date"), k, v))
+    except Exception:
+        pass
+    try:
+        for e in json.load(open("carruseles.json")):
+            for k, v in (e.get("destinos") or {}).items():
+                if not str(v).startswith(("ig:", "error")) and v not in ("ok", None):
+                    ids.append((e.get("fecha"), "carrusel_" + k, v))
+    except Exception:
+        pass
+    for d, k, pid in ids[-12:]:
+        try:
+            r = requests.get(f"{Z.API}/posts/{pid}", headers=Z._h(), timeout=60)
+            j = r.json(); p = j.get("post") or j
+            pl = [(x.get("platform"), x.get("status"), (x.get("errorMessage") or x.get("error") or "")[:160],
+                   x.get("platformPostUrl") or "") for x in p.get("platforms") or []]
+            det.append(f"| {d} · {k} | {p.get('status')} · " + " · ".join(f"{a}: {b} {c} {u}".strip() for a, b, c, u in pl) + " |")
+        except Exception as e:
+            det.append(f"| {d} · {k} | no se pudo consultar: {str(e)[:100]} |")
+if det:
+    rows.append("| **Publicaciones en Zernio (estado real)** | |")
+    rows.extend(det)
+
 txt = f"# Estado ({datetime.date.today()})\n\n| comprobación | detalle |\n|---|---|\n" + "\n".join(rows) + "\n"
 open("estado.md", "w").write(txt); print(txt)
 if os.environ.get("GITHUB_STEP_SUMMARY"):
