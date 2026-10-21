@@ -1,11 +1,9 @@
-Carrusel 2026-10-20 22:47 UTC
-carrusel: verificado (Facturar más sin costes fijos)
-carrusel: revisión 7.2/10 ["Incoherencia en los datos comerciales: la diapositiva 04 promete 'Presupuesto cerrado en 24h', mientras que la diapositiva final indica '24–72 H'.", "Uso de jerga de coaching empresarial ('Área de genialidad' en lámina 02) que resta seriedad técnica frente a un perfil de arquitecto sénior o fundador.", "Falta de ortografía en la portada: 'FACTURAR MAS' sin tilde en el antetítulo."]
-carrusel: verificado (Tarifas técnicas en naves y logística)
-carrusel: reintento uda_delegar 8.4/10 ["Falta tilde en la portada en la categoría superior: 'FACTURAR MAS' debe ser 'FACTURAR MÁS'.", "Los bloques dorados de 'CLAVE' en las diapositivas 01 a 04 aportan poco valor y caen en obviedades descriptivas (ej. 'A mayor superficie construida, menor resulta la repercusión...'); ese espacio ganaría si destacase el margen comercial que le queda al despacho o el tiempo neto ahorrado.", 'El recurso de subrayado segmentado bajo cifras y conceptos puntuales resulta visualmente errático y ensucia la pulcritud tipográfica de las tarjetas.']
-carrusel: Facturar más y ganar tiempo delegando · Tarifas técnicas en naves y logística · 6 imágenes
-Instagram carrusel: https://www.instagram.com/p/Deu8eAtFDvM/
-Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
-Zernio tiktok carrusel: creado 6ad7f02e7a5e0336585390c2
-Zernio linkedin documento: creado 6ad7f0387a5e033658539101
-publicación: {"instagram_carrusel": "ig:18041039750735533", "tiktok_carrusel": "6ad7f02e7a5e0336585390c2", "linkedin_documento": "6ad7f0387a5e033658539101"}
+Carrusel 2026-10-21 17:21 UTC
+carrusel: verificado (Plantilla frente a servicios por encargo)
+carrusel: revisión 6.8/10 ["Error tipográfico evidente en la portada (01/05): repetición accidental en el antetítulo ('CONTRATAR O DELEGAR · CONTRATAR O DELEGAR').", 'La diapositiva de cierre (05/05) sufre de saturación y jerarquía rota: compiten dos botones masivos apilados y el bloque blanco sólido con la URL desentona con el tratamiento premium negro y oro.', 'El contenido se percibe más como un folleto comercial directo de venta de servicios que como una pieza editorial de alto valor estratégico para un fundador consolidado de proyectos residenciales.']
+carrusel: el verificador pide cambios: [{"frase": "Presupuesto en 24 horas / Recibes una propuesta económica con precio cerrado en un día", "motivo": "Los hechos ciertos de UDA especifican que el presupuesto cerrado se recibe en un plazo de 24 a 72 horas. Prometerlo estrictamente 'en 24 horas' o 'en un día' contradice este dato real y puede generar falsas expectativas, aunque el texto de la web lo utilice como reclamo."}, {"frase": "as
+carrusel: guion no válido (menos de 3 diapositivas válidas (o citas que no están en la fuente))
+carrusel: reintento sin contenido: no hay carrusel verificado para Facturar más y ganar tiempo delegando
+carrusel: el verificador pide cambios: [{"frase": "Recibes una propuesta con precio cerrado en 24 horas para repercutir el coste directamente al encargo.", "motivo": "La fuente confirma el presupuesto cerrado en 24 horas, pero no menciona ni sugiere que el objetivo sea 'repercutir el coste directamente al encargo'."}, {"frase": "Delegar el desarrollo técnico centralizado mejora tu precio por hora y la rentabilidad neta de cada proyecto
+carrusel: reintento sin contenido: 'list' object has no attribute 'get'
+NO PUBLICADO: hoy no hay carrusel con nota suficiente (6.8/10, mínimo 8)
