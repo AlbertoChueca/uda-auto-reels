@@ -60,6 +60,12 @@ def already_published():
 def wait_until_slot():
     """El workflow arranca ~30 min antes; si el reel está listo antes de la hora, espera (máx. PUBLISH_MAX_WAIT_MIN)."""
     target = {"manana": (8, 0), "mediodia": (12, 0), "tarde": (15, 0)}.get(slot)
+    if os.environ.get("PUBLISH_AT_MANUAL"):                      # lanzado a mano con hora: "20:30"
+        try:
+            target = tuple(int(x) for x in os.environ["PUBLISH_AT_MANUAL"].split(":")[:2])
+            os.environ["PUBLISH_MAX_WAIT_MIN"] = "80"
+        except Exception:
+            pass
     if not target:
         return
     try:

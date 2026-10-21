@@ -28,6 +28,9 @@ on:
         type: choice
         options: [auto, caso, contratar, delegable, tiempo, proceso, testimonio]
         default: auto
+      publicar_a:
+        description: "Hora de publicación (HH:MM, hora de España). Vacío = en cuanto esté listo"
+        default: ""
       dry_run:
         description: "Solo generar el vídeo (no publicar)"
         type: boolean
@@ -123,6 +126,7 @@ jobs:
           TIKTOK_STORY_BORRADOR: ${{ vars.TIKTOK_STORY_BORRADOR || 'false' }}
           LINKEDIN: ${{ vars.LINKEDIN || 'carrusel' }}
           PUBLISH_MAX_WAIT_MIN: ${{ vars.PUBLISH_MAX_WAIT_MIN || '50' }}
+          PUBLISH_AT_MANUAL: ${{ github.event_name == 'workflow_dispatch' && inputs.publicar_a || '' }}
         run: python run_daily.py ${{ steps.slot.outputs.slot }}
 
       - name: Guardar el vídeo para revisarlo
