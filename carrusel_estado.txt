@@ -1,14 +1,2 @@
-Carrusel 2026-10-21 17:28 UTC
-carrusel: verificado (Contratar o delegar por proyecto)
-carrusel: revisión 7.2/10 ["Error de copia en la portada (01/06): el antetítulo repite de forma redundante 'CONTRATAR O DELEGAR · CONTRATAR O DELEGAR'.", 'El plano esquemático de la portada resulta excesivamente simple y genérico; para un target que proyecta bloques de viviendas y obras de envergadura, le resta empaque técnico y aspiracional.', "La caja inferior 'CLAVE' en las diapositivas intermedias resulta en su mayoría redundante, pues parafrasea lo expuesto en las tarjetas superiores sin aportar métricas, reglas de decisión ni un insight financiero de mayor profundidad."]
-carrusel: el verificador pide cambios: [{"frase": "UDA, Metodología de soporte técnico externo y contratación por proyectos", "motivo": "Referencia inventada. La fuente y los hechos ciertos no mencionan ningún documento, artículo o apartado oficial con ese título."}, {"frase": "Ajustar la estructura técnica a cada encargo protege la tesorería de tu despacho frente a caídas de facturación.", "motivo": "Promesa de resultados y generaliza
-carrusel: guion no válido (menos de 3 diapositivas válidas (o citas que no están en la fuente))
-carrusel: reintento sin contenido: no hay carrusel verificado para Facturar más y ganar tiempo delegando
-carrusel: verificado (Plantilla o delegar por proyectos)
-carrusel: reintento contratacion 8.1/10 ["Redundancia en el antetítulo de la portada: 'CONTRATAR O DELEGAR · CONTRATAR O DELEGAR' aparece repetido sin justificación compositiva.", "Inconsistencia editorial de cifras en la diapositiva 03: se escribe 'veinticuatro horas' en letras en el cuerpo y '24 horas' en cifras en la caja de Clave.", "Jerarquía visual saturada en la diapositiva 05 de cierre: el botón dorado ('AGENDA UNA REUNIÓN...') y el bloque inferior beige de la URL compiten directamente entre sí y diluyen el impacto del CTA."]
-carrusel: Contratar en plantilla o contratar por servicios · Plantilla o delegar por proyectos · 5 imágenes
-Instagram carrusel: https://www.instagram.com/p/Dew82-bF5kG/
-Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
-Zernio tiktok carrusel: creado 6ad8f71d7290d1ed6a21ede4
-Zernio linkedin documento: creado 6ad8f7286f3d4af577a74e5a
-publicación: {"instagram_carrusel": "ig:18010282664778526", "tiktok_carrusel": "6ad8f71d7290d1ed6a21ede4", "linkedin_documento": "6ad8f7286f3d4af577a74e5a"}
+Carrusel 2026-10-21 19:26 UTC
+ya se publicó el carrusel de hoy
