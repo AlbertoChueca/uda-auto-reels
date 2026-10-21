@@ -232,6 +232,11 @@ def _issues(heard, text):
         out.append(f"dice {ins} letras de más")
     if len(Hd) > len(S) * 1.25 + 1:
         out.append(f"{len(Hd)} palabras para un texto de {len(S)}")
+    # palabras mal pronunciadas (p. ej. «dimaro» por «dinero»): una palabra del guion que no se oye ni parecida
+    hs = set(Hd)
+    mal = [w for w in S if len(w) >= 5 and w.isalpha() and w not in hs and not difflib.get_close_matches(w, list(hs), 1, 0.8)]
+    if mal:
+        out.append(f"pronuncia mal '{mal[0]}'")
     return out
 
 

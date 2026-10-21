@@ -198,7 +198,7 @@ Puntúa 1-10: gancho en 1,5 s, claridad, ritmo (ni lento ni atropellado), voz ma
 mismo que el texto, palabras sueltas que sobren o siseo/ruido, subtítulos y resaltado sincronizados, la respuesta correcta
 se ve clara, explicación útil, cierre claro, probabilidad de comentar/guardar/compartir.
 "critical" = true si el acento NO es de España (seseo, entonación latinoamericana) o si el reel está claramente roto (mudo, congelado/negro, ilegible, voz equivocada o ininteligible,
-la respuesta resaltada no coincide con la que dice la voz). Después escribe una PRIMERA línea de descripción mejor (máx. 12
+una palabra mal pronunciada o inventada —escucha palabra a palabra: p. ej. «dimaro» en vez de «dinero»—, la respuesta resaltada no coincide con la que dice la voz). Después escribe una PRIMERA línea de descripción mejor (máx. 12
 palabras, máx. 1 emoji, sin datos nuevos) y una invitación a comentar (máx. 12 palabras).
 Devuelve JSON: {{"overall": number, "scores": {{...}}, "critical": bool, "issues": [str], "suggestions": [str],
 "caption_first_line": str, "comment_prompt": str}}"""},
