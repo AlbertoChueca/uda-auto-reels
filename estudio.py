@@ -51,7 +51,7 @@ NAMES = list(ROLES)
 
 # Serie fija de cada día (0 = lunes). El reel de las 12:00 sigue la serie; los de las 8:00 y las 15:00 los elige el piloto.
 SERIES = {0: ("Lunes de cifras", "grafico"), 1: ("Martes de contratar o delegar", "comparativa"),
-          2: ("Miércoles de claves para crecer", "claves"), 3: ("Jueves de mitos del despacho", "mito_realidad"),
+          2: ("Miércoles de datos de proyecto", "dato"), 3: ("Jueves de mitos del despacho", "mito_realidad"),
           4: ("Viernes de cifras", "grafico"), 5: ("Sábado de casos de despacho", "caso_despacho"),
           6: ("Domingo de lo que delegas", "comparativa")}
 
