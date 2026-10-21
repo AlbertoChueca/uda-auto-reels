@@ -86,3 +86,19 @@ reviewer.RejectReel: el revisor rechaza el reel (6.6/10, mínimo 8): Cierre con 
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Parpadeo en las cifras numéricas antes de fijar el valor definitivo.; El bloque de testimonio ralentiza ligeramente el dinamismo editorial central.
 
+2026-10-21 17:42 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 175, in <module>
+    meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/make_quiz.py", line 627, in build
+    raise RuntimeError("la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre")
+RuntimeError: la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre
+
+2026-10-21 17:42 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 175, in <module>
+    meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/make_quiz.py", line 627, in build
+    raise RuntimeError("la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre")
+RuntimeError: la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre
+

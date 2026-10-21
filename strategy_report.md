@@ -11,8 +11,6 @@ Still collecting data: options are being tested evenly for now.
 | option | reels | avg score |
 |---|---|---|
 | infografia | 0 | - |
-| mito_realidad | 0 | - |
-| dato | 0 | - |
 
 ## estilo
 
