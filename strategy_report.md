@@ -1,6 +1,6 @@
 # Piloto automático UDA - qué está funcionando
 
-_Updated 2026-10-20 · 0 reels with results (3+ days old) · average score 0.00_
+_Updated 2026-10-21 · 0 reels with results (3+ days old) · average score 0.00_
 
 
 Still collecting data: options are being tested evenly for now.

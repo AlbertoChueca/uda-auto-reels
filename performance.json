@@ -1,22 +1,22 @@
 {
 "2026-10-20_manual": {
 "slot": "manual",
-"formato": "comparativa",
+"formato": "mito_realidad",
 "estilo": "negro",
 "series": null,
 "imagen": false,
-"voice_speed": 1.06,
+"voice_speed": 1.05,
 "music": "normal",
 "temas": [
-"contratacion"
+"uda_servicios"
 ],
-"hook": "El riesgo de la media jornada",
+"hook": "Horas caras dibujando adosados",
 "guion": "ia",
-"review_score": 8.9,
+"review_score": 8.8,
 "arms": {
-"formato": "comparativa",
+"formato": "mito_realidad",
 "estilo": "negro",
-"hook_style": "socio senior: de tú a tú, como un socio que comparte lo que ha aprendido",
+"hook_style": "precio/hora: hablar de dónde se va la hora del arquitecto y dónde se cobra mejor",
 "bloque": "negocio",
 "think_time": "corto"
 },
