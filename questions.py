@@ -38,10 +38,11 @@ FORMAT_SPEC = {
     "grafico": ("cifras", ("negocio", "contratar", "servicios")),
     "claves": ("puntos", ("negocio", "contratar", "servicios", "proyecto")),
     "comparativa": ("comparativa", ("contratar", "servicios", "negocio")),
-    "dato": ("dato", ("proyecto", "negocio", "servicios")),
+    "dato": ("dato", ("negocio", "servicios", "contratar")),
     "mito_realidad": ("mito", ("negocio", "contratar", "servicios", "proyecto")),
     "caso_despacho": ("puntos", ("negocio", "servicios", "contratar")),
-    "caso_coste": ("caso", ("servicios",)),          # contenido principal: cuánto cuesta delegar (casos.py, cifras calculadas)
+    "caso_coste": ("caso", ("servicios",)),
+    "infografia": ("caso", ("servicios",)),            # el mismo caso, contado con infografías animadas (infoviz.py)          # contenido principal: cuánto cuesta delegar (casos.py, cifras calculadas)
 }
 POINTS_ONLY = {"claves", "caso_despacho"}                       # hook -> (escena) -> 3 claves -> cierre
 
@@ -152,8 +153,8 @@ TABLA_SOLO = {"uda_delegar", "uda_servicios"}
 def publishable(p, v=None):
     if p.get("tipo") == "caso":
         return bool(p.get("calculado") and p.get("fuente_ok"))
-    if p.get("tema") in TABLA_SOLO and p.get("norma") == "uda_tabla":
-        return False
+    if p.get("norma") == "uda_tabla" or p.get("bloque") == "proyecto" or p.get("tema") not in cfg()["temas"]:
+        return False                                  # sin BOE/CTE y sin tablas de precios: la tabla solo sirve para los casos
     v = verif() if v is None else v
     r = v.get(p["id"])
     return bool(r and r.get("veredicto") == "ok" and r.get("fuente_ok") and p.get("fuente_ok")

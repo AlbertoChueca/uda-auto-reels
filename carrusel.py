@@ -38,7 +38,7 @@ LOG = os.path.join(HERE, "carruseles.json")
 W, H = 1080, 1350                                        # 4:5, el formato vertical de carrusel de Instagram
 M = 84                                                   # margen
 MOCK = os.environ.get("QUIZ_MOCK") == "1"
-PLAN = {0: "negocio", 1: "proyecto", 2: "contratar", 3: "servicios", 4: "negocio", 5: "proyecto", 6: "servicios"}
+PLAN = {0: "negocio", 1: "servicios", 2: "contratar", 3: "negocio", 4: "servicios", 5: "contratar", 6: "negocio"}   # sin BOE ni CTE
 ETIQUETA = {"negocio": "FACTURAR MÁS EN TU DESPACHO", "contratar": "CONTRATAR O DELEGAR", "servicios": "LO QUE PUEDES DELEGAR",
             "proyecto": "DATOS DE PROYECTO"}
 INK2 = (205, 198, 186)                                      # texto de lectura (más contraste que el gris de los documentos)

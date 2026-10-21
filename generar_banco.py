@@ -20,10 +20,10 @@ import verifier as V
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GEN = os.path.join(HERE, "banco", "generado.json")
-TARGET = {"negocio": 45, "contratar": 30, "servicios": 40, "proyecto": 15}          # reserva deseada (sin usar)
-PIDE = {"negocio": "1 de tipo cifras, 1 de tipo puntos y 1 de tipo mito",
-        "contratar": "1 de tipo comparativa (columnas \"En plantilla\" y \"Por servicios\"), 1 de tipo cifras si el texto tiene cifras comparables (si no, otro de tipo puntos) y 1 de tipo mito",
-        "servicios": "1 de tipo comparativa (columnas \"En tu despacho\" y \"Con UDA\"), 1 de tipo cifras y 1 de tipo puntos",
+TARGET = {"negocio": 50, "contratar": 30, "servicios": 30, "proyecto": 0}           # sin BOE ni CTE: solo negocio y UDA          # reserva deseada (sin usar)
+PIDE = {"negocio": "2 de tipo mito y 1 de tipo dato",
+        "contratar": "2 de tipo mito y 1 de tipo dato",
+        "servicios": "1 de tipo mito y 2 de tipo dato",
         "proyecto": "1 de tipo dato y 1 de tipo puntos"}
 GUIA = {
     "negocio": "TIPS PARA HACER CRECER EL DESPACHO: cómo facturar más delegando, cómo mejorar el precio por hora, cómo tener "

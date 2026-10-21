@@ -102,6 +102,8 @@ style_override = os.environ.get("STYLE_OVERRIDE", "auto")
 try:
     import strategy
     fixed = {"formato": override} if override in strategy.DEFAULT_ARMS["formato"] else {}
+    if not fixed:                                             # contenido principal: infografías de cuánto cuesta delegar
+        fixed["formato"] = "infografia"
     if slot == "mediodia" and not fixed:
         import estudio
         series_info = estudio.series_today(today)
@@ -124,7 +126,7 @@ if HAS_AI:
     except Exception as e:
         status.append(f"estudio omitido: {str(e)[:120]}")
 
-chain = list(dict.fromkeys([arms.get("formato", "grafico"), "comparativa", "mito_realidad", "grafico", "dato"]))
+chain = list(dict.fromkeys([arms.get("formato", "infografia"), "infografia", "mito_realidad", "dato"]))
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
 if HAS_AI:

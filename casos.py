@@ -77,8 +77,8 @@ VENTAJAS = [
 PARCIAL = {"unifamiliar": (("estructuras", "instalaciones"), "Delegar solo estructuras e instalaciones"),
            "industrial": (("estructuras", "instalaciones"), "Delegar solo estructuras e instalaciones"),
            "equipamiento": (("estructuras", "instalaciones"), "Delegar solo estructuras e instalaciones")}
-CASOS = [("unifamiliar", m) for m in (120, 150, 180, 200, 220, 250, 300)] + \
-        [("industrial", m) for m in (800, 1500, 3000)] + [("equipamiento", m) for m in (1200, 2000)]
+CASOS = [("unifamiliar", m) for m in (100, 120, 140, 150, 160, 180, 200, 220, 240, 250, 280, 300)] + \
+        [("industrial", m) for m in (600, 800, 1200, 1500, 2000, 3000)] + [("equipamiento", m) for m in (800, 1200, 1500, 2000)]
 
 
 def _meses(total):
@@ -125,11 +125,71 @@ def caso(tipo, m2, k=0):
     }
 
 
+# Testimonios LITERALES de uniondearquitectos.com (los casos de éxito reales que tenemos; nada inventado)
+TESTIMONIOS = [
+    "Estaba agobiada con tanto trabajo y cumplieron tanto con la calidad como con la fecha de entrega que les propuse. "
+    "Fue un acierto confiar en UDA. Lo recomiendo.",
+    "Somos un despacho pequeño, como una familia. Se me hacía duro contratar a alguien para 3 meses y tener que "
+    "despedirle. UDA me ayuda mucho en el día a día y estoy contento con ellos.",
+    "Varias veces se me juntan varios proyectos de golpe y esos días duermo poco y mal. Desde que trabajo con UDA eso "
+    "cambió y lo gestiono mejor y sin problemas.",
+]
+EXTRAS = ("donut", "timeline", "quote")
+
+
+def infografia(p, k):
+    """Guion de la infografía animada (escenas de infoviz.py) a partir de un caso calculado."""
+    b = p["barras"]; tipo = p["tipologia"]
+    corto = {"unifamiliar": "Unifamiliar", "industrial": "Nave", "equipamiento": "Equipamiento"}[tipo]
+    torres = [dict(b[0], etiqueta="Estructuras e instalaciones"), dict(b[1], etiqueta="P. Ejecución completo"),
+              dict(b[2], etiqueta="Básico + Ejecución")]
+    extra = EXTRAS[k % len(EXTRAS)]
+    ig = {"nuevo": f"{corto} · {p['m2']:,} m²".replace(",", "."),
+          "torres": {"titulo": f"{corto} de {p['m2']:,} m² · cuánto cuesta delegar".replace(",", "."), "barras": torres, "conclusion": "Tú eliges cuánto delegas"},
+          "torres_voz": [f"Solo estructuras e instalaciones: {b[0]['texto']}.", f"El proyecto de ejecución completo: {b[1]['texto']}.",
+                         f"Básico y ejecución: {b[2]['texto']}."],
+          "versus": {"titulo": "Contratar o delegar", "a_tit": b[3]["etiqueta"], "a_num": b[3]["texto"],
+                     "a_txt": "haya proyectos o no", "b_tit": "Delegar en UDA", "b_num": b[2]["texto"],
+                     "b_txt": "Básico + Ejecución, una sola vez"},
+          "versus_voz": [f"{b[3]['etiqueta']}: entre {b[3]['texto'].split('–')[0]} y {b[3]['texto'].split('–')[1]}, haya proyectos o no.",
+                         f"Delegar el básico y el de ejecución: {b[2]['texto']}. Una sola vez."],
+          "extra": extra,
+          # qué se puede delegar y qué no (Tabla, apartado 09: qué incluye cada partida / no incluye)
+          "delegable": {"titulo": "Qué delegas y qué sigue siendo tuyo",
+                        "si": ["Planos en CAD o Revit", "Estructuras con CYPE", "Instalaciones", "Memorias", "Mediciones y presupuesto"],
+                        "no": ["El diseño", "La firma y el visado", "La dirección de obra"]},
+          "delegable_voz": ["Delegas planos, estructuras, instalaciones, memorias y mediciones.",
+                            "El diseño, la firma y la dirección de obra siguen siendo tuyos."]}
+    if extra == "donut":
+        ig["donut"] = {"pct": 67, "prefijo": "hasta un", "texto": "más de tiempo para actividades de valor",
+                       "titulo": "Lo que ganan los estudios que externalizan", "fuente": "uniondearquitectos.com"}
+        ig["extra_voz"] = ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."]
+    elif extra == "timeline":
+        ig["timeline"] = {"titulo": "Así funciona", "pasos": [
+            ("calendar", "Reunión", "nos cuentas qué necesitas"),
+            ("euro", "Presupuesto cerrado", "en 24–72 horas"),
+            ("plan", "Entrega por fases", f"P. Ejecución en {PLAZO_PE[tipo]}"),
+            ("shield", "Tú firmas", "el trabajo es 100 % tuyo")]}
+        ig["extra_voz"] = ["Una reunión.", "Presupuesto cerrado en 24 a 72 horas.",
+                           f"Proyecto de ejecución en {PLAZO_PE[tipo].replace('–', ' a ')}.", "Y tú firmas."]
+    else:
+        t = TESTIMONIOS[1 + k % 2]                         # los que encajan con una voz masculina
+        ig["quote"] = {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Lo que dicen los estudios"}
+        ig["extra_voz"] = ["Lo dice un estudio que ya delega: " + t]
+    return ig
+
+
 def generate():
     if not _selftest():
         print("casos: las fórmulas no reproducen los ejemplos de la tabla; no se generan casos", flush=True)
         return []
-    return [caso(t, m, k) for i, (t, m) in enumerate(CASOS) for k in (i % len(ESCENAS),)]
+    out = []
+    for i, (t, m) in enumerate(CASOS):
+        for v in range(3):                                  # 3 versiones: otra escena y otra infografía final
+            p = caso(t, m, i + v)
+            p["infografia"] = infografia(p, i + v)
+            out.append(p)
+    return out
 
 
 if __name__ == "__main__":

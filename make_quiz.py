@@ -26,7 +26,7 @@ CARD_CENTER = 900         # las tarjetas se centran aquí si caben (zona segura 
 CARD_MAX_BOTTOM = 1385   # deja sitio debajo para 'Comenta…' / retos dentro de la zona segura
 HDR = 74                  # alto de la cabecera de la hoja (estilo examen)
 THINK = {"corto": 5, "normal": 7, "largo": 9}
-BADGE = {"caso_coste": "CUÁNTO CUESTA DELEGAR", "grafico": "LAS CIFRAS", "claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
+BADGE = {"caso_coste": "CUÁNTO CUESTA DELEGAR", "infografia": "CUÁNTO CUESTA DELEGAR", "grafico": "LAS CIFRAS", "claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
          "test_normativa": "TEST DE NORMATIVA", "error_tipico": "ERROR TÍPICO EN PROYECTO", "mito_realidad": "MITO O REALIDAD",
          "norma_30s": "NORMATIVA EN 30 SEGUNDOS", "simulacro_3": "TEST RÁPIDO", "caso_despacho": "CASO DE DESPACHO",
          "checklist": "CHECKLIST DE PROYECTO", "delegar": "CONTRATAR O DELEGAR", "uda_servicio": "ASÍ TRABAJA UDA",
@@ -455,6 +455,15 @@ def lines_for(fmt, items, S):
         for k, b in enumerate(S["barras"]):
             L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
         L.append(("conc", S["conclusion"], "emphatic, confident conclusion"))
+    elif fmt == "infografia":
+        G = S["infografia"]
+        for k, t_ in enumerate(G["torres_voz"]):
+            L.append((f"t{k}", t_, ""))
+        L.append(("tc", "Tú eliges cuánto delegas.", ""))
+        L.append(("da", G["delegable_voz"][0], "")); L.append(("db", G["delegable_voz"][1], ""))
+        L.append(("va", G["versus_voz"][0], "")); L.append(("vb", G["versus_voz"][1], ""))
+        for k, t_ in enumerate(G["extra_voz"]):
+            L.append((f"x{k}", t_, ""))
     elif fmt == "caso_coste":
         for k, b in enumerate(S["barras"]):
             L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
@@ -543,7 +552,7 @@ def caption_text(fmt, items, S, rng, st=None):
             f"▪️ {r['aspecto']} → {S['col_a']}: {r['a']} · {S['col_b']}: {r['b']}" for r in S["filas"])
     elif fmt == "dato":
         body = f"{S['afirmacion']}\n\n{S['explicacion']}"
-    elif fmt == "caso_coste":
+    elif fmt in ("caso_coste", "infografia"):
         body = (f"{S['titulo_norma']} (precios de referencia):\n\n" + "\n".join(f"▪️ {b['etiqueta']}: {b['texto']}" for b in S["barras"])
                 + f"\n\n→ {S['conclusion']}\n\n{S['puntos_titulo']}:\n" + "\n".join(f"✔️ {p}" for p in S["puntos"]))
     elif fmt == "grafico":
@@ -673,6 +682,21 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 starts.append(tt); say(f"b{k}", tt); tt += D[f"b{k}"] + 0.45
             cstart = tt; say("conc", tt); tt += D["conc"]
             seg("chart", tt - a + 1.8, starts=starts, cstart=cstart)
+        elif fmt == "infografia":
+            G = S["infografia"]
+            a = t; tt = a + 0.5; starts = []
+            for k in range(3):
+                starts.append(tt - a); say(f"t{k}", tt); tt += D[f"t{k}"] + 0.35
+            cst = tt - a; say("tc", tt); tt += D["tc"]
+            seg("ig_towers", tt - a + 1.2, starts=starts, cstart=cst)
+            a = t; say("da", a + 0.5); dst = 0.5 + D["da"] + 0.4; say("db", a + dst)
+            seg("ig_delegable", dst + D["db"] + 1.2, bstart=dst)
+            a = t; say("va", a + 0.5); bst = 0.5 + D["va"] + 0.4; say("vb", a + bst)
+            seg("ig_versus", bst + D["vb"] + 1.3, bstart=bst)
+            a = t; tt = a + 0.5; starts = []
+            for k in range(len(G["extra_voz"])):
+                starts.append(tt - a); say(f"x{k}", tt); tt += D[f"x{k}"] + 0.35
+            seg("ig_" + G["extra"], tt - a + 1.2, starts=starts)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
             for k in range(len(S["barras"])):
@@ -740,7 +764,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     for k, at in VO.items():
         put(vo, A[k], at)
     for sg in SEG:
-        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare", "chart"):
+        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare", "chart") or sg["kind"].startswith("ig_"):
             put(sfx, fx.whoosh(), sg["a"] - 0.15, 1.1)
         if sg["kind"] == "count":
             for s_ in range(sg["n"]):
@@ -769,6 +793,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     # ---- elementos visuales
     bg = T.background(rng.randint(0, 999), image)
     hook_bg = themes.ImageBG(image, dark=0.25, blur=0) if image is not None else None
+    ig_bg = themes.ImageBG(image, dark=0.80, blur=16) if image is not None else None      # fondo de las infografías
     corto = QB.tema_corto(P.get("tema"))
     extra = corto if len(corto) <= 26 and fmt not in ("simulacro_3", "delegar", "uda_servicio", "caso_coste") else None
     if extra and extra.lower() in (BADGE.get(fmt, "").lower(), str(st.get("series") or "").lower()):
@@ -786,7 +811,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     hook_logo = fx.logo(70, T.head_col, T.label if T.name != "carbon" else ARENA)
     hook_logo_img = fx.logo(70, WHITE, T.img_hot)
     cards = []
-    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico", "caso_coste") and fmt not in QB.POINTS_ONLY:
+    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico", "caso_coste", "infografia") and fmt not in QB.POINTS_ONLY:
         cards = [QuestionCard(Q, QB.tema_titulo(Q["tema"]).upper(), f"{i + 1}/3" if fmt == "simulacro_3" else None)
                  for i, Q in enumerate(items)]
     expl = stmt = pts = scene_card = cmp_card = chart = None
@@ -798,6 +823,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                                   title_fg=T.ok_text if T.ok_mode == "fill" else T.ink))
     elif fmt == "grafico":
         chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P))
+    elif fmt == "infografia":
+        pass                                           # escenas a pantalla completa (infoviz.py), sin tarjetas
     elif fmt == "caso_coste":                          # barras de UDA en oro, la del empleado en gris
         chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P),
                           hi_set=[k for k, b in enumerate(S["barras"]) if "empleado" not in b["etiqueta"] and "plantilla" not in b["etiqueta"]])
@@ -908,6 +935,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 a_ = int(200 * max(0, (yy - H * 0.35) / (H * 0.65)) ** 1.3 + 90 * max(0, 1 - yy / 420))
                 gd.rectangle([0, yy, W, yy + 8], fill=(0, 0, 0, min(220, a_)))
             fr.alpha_composite(grad)
+        elif kind.startswith("ig_") and ig_bg is not None:
+            fr = ig_bg.frame(tt)
         else:
             fr = bg.frame(tt)
         if kind != "cta":
@@ -983,6 +1012,24 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             fx.paste_center(fr, shadow(im_), W / 2, y, alpha=p)
             if save_lab is not None and lt > 1.0 and y + img.height / 2 + 80 < fx.SAFE_BOTTOM:
                 fx.paste_center(fr, save_lab, W / 2, y + img.height / 2 + 70, eob((lt - 1.0) / 0.35))
+        elif kind.startswith("ig_"):
+            import infoviz as IV
+            G = S["infografia"]
+            if kind == "ig_stack":
+                ov = IV.scene_stack(T, {"nuevo": G["nuevo"], "titulo": "Tu estudio hoy"}, lt)
+            elif kind == "ig_towers":
+                ov = IV.scene_towers(T, G["torres"], lt, sg["starts"], sg["cstart"])
+            elif kind == "ig_delegable":
+                ov = IV.scene_delegable(T, G["delegable"], lt, sg["bstart"])
+            elif kind == "ig_versus":
+                ov = IV.scene_versus(T, G["versus"], lt, sg["bstart"])
+            elif kind == "ig_donut":
+                ov = IV.scene_donut(T, G["donut"], lt)
+            elif kind == "ig_timeline":
+                ov = IV.scene_timeline(T, G["timeline"], lt, sg["starts"] + [99] * 4)
+            else:
+                ov = IV.scene_quote(T, dict(G["quote"], dur=sg["b"] - sg["a"]), lt)
+            fr.alpha_composite(ov)
         elif kind == "chart":
             grow = [clamp((tt - s0) / 0.9) for s0 in sg["starts"]]
             img = chart.render(grow=grow, show_conc=clamp((tt - sg["cstart"]) / 0.3), lit=lit("conc", tt))
