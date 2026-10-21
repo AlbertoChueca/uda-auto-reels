@@ -64,5 +64,11 @@
 "tema": "cte_se",
 "fecha": "2026-10-21",
 "formato": "dato"
+},
+{
+"id": "20b38676b7",
+"tema": "contratacion",
+"fecha": "2026-10-21",
+"formato": "comparativa"
 }
 ]

@@ -30,3 +30,11 @@ reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Contraste t
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): La locución presenta saltos de timbre artificiales entre frases.; El gancho inicial resulta algo frío y técnico para retener al inicio.; El tono general se asemeja a una ficha legal más que a gestión de estudio.
 
+2026-10-21 13:50 manual [caso_coste] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 170, in <module>
+    caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 215, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Frase duplicada en audio entre 0:34 y 0:38 con dos voces distintas.; Cambios de tono o locutor durante la locución que restan continuidad editorial.
+
