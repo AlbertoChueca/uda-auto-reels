@@ -601,6 +601,23 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     # Si una falla, se graba otra vez sola (hasta 4 tomas nuevas, cada una con sus propios reintentos); si no sale
     # limpia, el reel no se publica con ese fallo y se pasa al siguiente formato.
     if voice.LOCK != "mock":
+        # si alguna frase de la toma única sale mal cortada, se repite la TOMA ENTERA (hasta 2 veces): regrabar una frase
+        # suelta cambia el timbre y, si el corte invadió la frase vecina, duplica palabras con dos voces distintas
+        for retake in range(2):
+            bad = [k for k, t, _ in L if voice.problem(A[k], t)]
+            if not bad:
+                break
+            print(f"voz: frases con fallo en la toma única {bad}; repito la toma entera ({retake + 1}/2)", flush=True)
+            try:
+                clips = voice.say_many([t for _, t, _ in L], speed=speed, styles=[ONE_VOICE] * len(L), one_take=True, force=True)
+                A = {k: c for (k, _, _), c in zip(L, clips)}
+            except voice.VoiceError:
+                raise
+            except Exception as e:
+                print("voz: nueva toma entera fallida:", str(e)[:150], flush=True)
+        else:
+            if any(voice.problem(A[k], t) for k, t, _ in L):
+                raise RuntimeError("la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre")
         for k, t, s_ in L:
             why = voice.problem(A[k], t)
             tries = 0
