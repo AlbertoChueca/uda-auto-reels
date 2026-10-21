@@ -70,3 +70,11 @@ reviewer.RejectReel: el revisor rechaza el reel (6.4/10, mínimo 8): Ritmo visua
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Doble locución inicial con tono inconsistente antes del cambio de voz.; El gancho inicial resulta algo estático y corporativo.; Bajo incentivo explícito a debatir en comentarios.
 
+2026-10-21 15:58 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 176, in <module>
+    caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 216, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.6/10, mínimo 8): Cierre con exceso de texto estático que diluye la llamada a la acción.; El bloque de testimonio pasa demasiado rápido para una lectura cómoda.; Ligera discrepancia visual entre el ritmo de locución y el desglose de costes.
+
