@@ -18,5 +18,25 @@
 "linkedin_documento": "6ad7f0387a5e033658539101"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-10-21",
+"bloque": "contratar",
+"tema": "contratacion",
+"subtema": "Plantilla o delegar por proyectos",
+"titulo": "Plantilla o delegar por encargo",
+"fragmentos": [
+"UnionDeArquitectos | ORG - UDA - Unión de Arquitectos"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.1,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18010282664778526",
+"tiktok_carrusel": "6ad8f71d7290d1ed6a21ede4",
+"linkedin_documento": "6ad8f7286f3d4af577a74e5a"
+},
+"dry_run": false
 }
 ]
