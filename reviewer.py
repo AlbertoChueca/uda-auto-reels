@@ -131,7 +131,7 @@ def art_direct(path, S, style, timeline, total):
         times = []
         for i, (k, a) in enumerate(timeline):
             b = timeline[i + 1][1] if i + 1 < len(timeline) else total
-            if k in ("hook", "question", "statement", "reveal", "explain", "points", "cta"):
+            if k in ("hook", "question", "statement", "reveal", "explain", "points", "cta") or k.startswith("ig_"):
                 times.append(a + (b - a) * 0.7)
         fr = _frames(path, times[:8])
         import agents

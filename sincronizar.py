@@ -10,7 +10,7 @@ registros...) antes de subirlo, con reintentos.
 import json, os, shutil, subprocess, sys, tempfile, time
 
 MERGE_DICT = {"banco/verificacion.json", "performance.json"}
-MERGE_LINES = {"log.jsonl", "review_log.jsonl", "image_log.jsonl", "errores_reels.log"}
+MERGE_LINES = {"log.jsonl", "review_log.jsonl", "image_log.jsonl", "errores_reels.log", "tiempos.log"}
 
 
 def sh(*a, check=True):

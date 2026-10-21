@@ -15,7 +15,7 @@ Cada ejecución:
 Si un formato no puede salir (sin piezas verificadas, guion rechazado, Gemini caído...), prueba el siguiente formato
 de la cadena, así que siempre sale algo correcto o no sale nada (nunca algo sin verificar).
 """
-import datetime, json, os, sys, traceback
+import datetime, json, os, sys, time, traceback
 
 import questions as QB
 
@@ -31,6 +31,20 @@ HAS_AI = bool(os.environ.get("GEMINI_API_KEY"))
 def log(entry):
     with open("log.jsonl", "a") as f:
         f.write(json.dumps({"date": str(today), "slot": slot, **entry}, ensure_ascii=False) + "\n")
+
+
+T_START = time.time()
+
+
+def tiempo(paso, t0):
+    """Cuánto tarda cada paso (tiempos.log, en el repositorio): para saber dónde se va el tiempo."""
+    msg = f"{datetime.datetime.utcnow():%Y-%m-%d %H:%M} {slot} {paso}: {time.time() - t0:.0f} s"
+    print("⏱", msg, flush=True)
+    try:
+        with open("tiempos.log", "a") as f:
+            f.write(msg + "\n")
+    except Exception:
+        pass
 
 
 def recent_hooks(n=14):
@@ -92,7 +106,8 @@ if not HAS_AI:                                     # sin Gemini no hay verificad
         open(os.environ["GITHUB_STEP_SUMMARY"], "a").write(f"## ❌ {msg}\n")
     if not (os.environ.get("QUIZ_MOCK") == "1" and QB.verif()):
         raise SystemExit(msg)
-if HAS_AI:
+LEARN = slot == "manana" or os.environ.get("LEARN") == "true"     # aprendizaje diario: una vez al día, no en cada reel
+if HAS_AI and LEARN:
     for name, fn in (("insights", lambda: __import__("insights").update()),
                      ("agentes", lambda: __import__("agents").daily_learning())):
         try:
@@ -129,7 +144,7 @@ try:
     print("experimento:", {k: strategy.short(v) for k, v in arms.items()}, "|", strat_msg, flush=True)
 except Exception as e:
     strat_msg = f"estrategia omitida: {str(e)[:150]}"; print(strat_msg, flush=True)
-if HAS_AI:
+if HAS_AI and LEARN:
     try:
         import estudio
         m = estudio.daily_learning(); print(m, flush=True); status.append(m)
@@ -172,16 +187,48 @@ for fmt in chain:
         style = dict(make_quiz.DEFAULT_STYLE)
         style.update({k: S[k] for k in STYLE_KEYS if S.get(k)})
         image, dinfo = None, {}
+        pre_voice = False
         if HAS_AI and src in ("ia", "calculado"):
-            import agents, estudio
-            style.update({k: v for k, v in agents.growth_lines(S, fmt).items() if not S.get(k)})
-            image, dinfo = estudio.imagen_para(fmt, items, arms.get("estilo", "negro"), S, out[:-4])
-        meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"))
+            import agents, estudio, voice
+            from concurrent.futures import ThreadPoolExecutor
+            t_ = time.time()
+            with ThreadPoolExecutor(3) as ex:              # foto, voz y textos de cierre A LA VEZ (antes, uno tras otro)
+                f_img = ex.submit(estudio.imagen_para, fmt, items, arms.get("estilo", "negro"), S, out[:-4])
+                f_gl = ex.submit(agents.growth_lines, S, fmt)
+                if fmt == "infografia":
+                    voice.reset()
+                    L_ = make_quiz.lines_for(fmt, items, S)
+                    f_vo = ex.submit(voice.say_many, [t for _, t, _ in L_], float(style.get("voice_speed") or 1.0),
+                                     [make_quiz.ONE_VOICE] * len(L_), True)
+                else:
+                    f_vo = None
+                image, dinfo = f_img.result()
+                style.update({k: v for k, v in f_gl.result().items() if not S.get(k)})
+                if f_vo is not None:
+                    try:
+                        f_vo.result(); pre_voice = True
+                    except Exception as e:
+                        print("voz anticipada fallida; se graba en el render:", str(e)[:150], flush=True)
+            tiempo("foto + voz + textos", t_)
+        t_ = time.time()
+        meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"),
+                               keep_voice=pre_voice)
+        tiempo("render", t_)
         caption = open(out.replace(".mp4", ".txt")).read()
         review, art = {}, {}
         if HAS_AI:
             import reviewer, agents
-            new_style, art = reviewer.art_direct(out, S, style, meta["timeline"], meta["duration"])
+            from concurrent.futures import ThreadPoolExecutor
+            t_ = time.time()
+            with ThreadPoolExecutor(2) as ex:              # diseño y vídeo se revisan a la vez
+                f_art = ex.submit(reviewer.art_direct, out, S, style, meta["timeline"], meta["duration"])
+                f_rev = ex.submit(reviewer.review_video, out, S, caption)
+                new_style, art = f_art.result()
+                try:
+                    rev_first = ("ok", f_rev.result())
+                except Exception as e:
+                    rev_first = ("err", e)
+            tiempo("revisiones", t_)
             if new_style:
                 print("director de arte: vuelvo a renderizar con", {k: v for k, v in new_style.items() if style.get(k) != v}, flush=True)
                 style = new_style
@@ -191,7 +238,12 @@ for fmt in chain:
                 _, art = reviewer.art_direct(out, S, style, meta["timeline"], meta["duration"])   # nueva nota
             if art and float(art.get("overall") or 0) < reviewer.MIN_SCORE:
                 raise reviewer.RejectReel(f"diseño {art.get('overall')}/10 (mínimo {reviewer.MIN_SCORE:g})")
-            caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+            if new_style:                                  # se volvió a renderizar: hay que revisar el vídeo nuevo
+                caption, review = reviewer.review_video(out, S, caption)          # RejectReel -> siguiente formato
+            elif rev_first[0] == "err":
+                raise rev_first[1]
+            else:
+                caption, review = rev_first[1]
             if not review.get("overall"):
                 raise reviewer.RejectReel("el revisor de vídeo no ha podido puntuar el reel: sin nota no se publica")
             caption = agents.growth_caption(caption, S, review)
@@ -251,7 +303,9 @@ if dry:
 
 import publish_all
 wait_until_slot()                                  # publica a la hora exacta del hueco (8:00 / 12:00 / 15:00 en España)
+_tp = time.time()
 results = publish_all.publish(out, story_mp4, caption, meta, slot=slot)
+tiempo("publicar", _tp); tiempo("TOTAL", T_START)
 meta.update(publicado=results)
 print("publicado:", json.dumps(results, ensure_ascii=False), flush=True)
 if any(not str(v).startswith("error") for v in results.values()):

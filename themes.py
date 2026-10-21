@@ -73,6 +73,14 @@ class GradientBG:
         return self._cache[k]
 
     def frame(self, t):
+        q = round(t * 8) / 8                         # el fondo se mueve muy despacio: basta con recalcularlo 8 veces/s
+        if getattr(self, "_last", (None,))[0] == q:
+            return self._last[1].copy()
+        im = self._frame(q)
+        self._last = (q, im)
+        return im.copy()
+
+    def _frame(self, t):
         im = self.base.copy()
         for x, y, r, ph, col, a in self.blobs:
             b = self._blob(r, col, a)
@@ -95,6 +103,14 @@ class ImageBG:
         self.soft = Image.blend(soft, Image.new("RGB", soft.size, CARBON_D), dark)
 
     def frame(self, t, sharp=False):
+        q = (round(t * 8) / 8, sharp)                # Ken Burns lentísimo: 8 cálculos por segundo son suficientes
+        if getattr(self, "_last", (None,))[0] == q:
+            return self._last[1].copy()
+        im = self._frame(q[0], sharp)
+        self._last = (q, im)
+        return im.copy()
+
+    def _frame(self, t, sharp=False):
         src = self.sharp if sharp else self.soft
         z = 1.0 + 0.05 * (0.5 - 0.5 * math.cos(min(t, 60) / 60 * math.pi))
         vw, vh = src.width / 1.12 / z, src.height / 1.12 / z
