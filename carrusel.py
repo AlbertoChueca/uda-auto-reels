@@ -216,10 +216,13 @@ TEXTOS DEL CARRUSEL:
 Comprueba frase a frase: ¿todo lo que afirman está respaldado por la fuente (y cada item por su cita)? Es un problema
 cualquier dato, cifra, apartado, excepción o generalización que no esté en la fuente, asociar una definición al término
 equivocado, una referencia que no corresponde, un precio que no se presenta como precio de referencia, decir que UDA
-firma, prometer resultados o un tono condescendiente.
+firma, prometer resultados o un tono condescendiente. Las afirmaciones que coinciden con los HECHOS CIERTOS DE UDA son
+válidas aunque la fuente no las diga (p. ej. presupuesto cerrado en 24 horas, repercutir el coste al cliente).
 Devuelve JSON: {{"ok": bool, "problemas": [{{"frase": str, "motivo": str}}]}}""", 0.1, careful=True)
     except Exception as e:
         return False, [{"frase": "-", "motivo": f"verificador no disponible: {str(e)[:150]}"}]
+    if isinstance(res, list):                              # a veces el modelo devuelve solo la lista de problemas
+        res = res[0] if len(res) == 1 and isinstance(res[0], dict) and "ok" in res[0] else {"ok": not res, "problemas": res}
     probs = res.get("problemas") or []
     return bool(res.get("ok")) and not probs, probs
 
