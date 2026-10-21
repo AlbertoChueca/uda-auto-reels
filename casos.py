@@ -168,7 +168,7 @@ def infografia(p, var, k=0):
     mm = f"{p['m2']:,}".replace(",", ".")
     torres = [dict(b[0], etiqueta="Estructuras e instalaciones"), dict(b[1], etiqueta="P. Ejecución completo"),
               dict(b[2], etiqueta="Básico + Ejecución")]
-    t = TESTIMONIOS[1 + k % 2]                             # los que encajan con una voz masculina
+    t = TESTIMONIOS[2] if k % 2 else TESTIMONIOS[1]                             # los que encajan con una voz masculina
     datos = {
         "stack": {"titulo": "Tu estudio hoy", "nuevo": f"{corto} · {mm} m²"},
         "towers": {"titulo": f"{corto} de {mm} m² · cuánto cuesta delegar", "barras": torres,
@@ -194,7 +194,7 @@ def infografia(p, var, k=0):
             ("euro", "Presupuesto cerrado", "en 24 h: puedes repercutirlo a tu cliente"),
             ("plan", "Entrega por fases", f"P. Ejecución en {PLAZO_PE[tipo]}"),
             ("shield", "Tú firmas", "el trabajo es 100 % tuyo")]},
-        "quote": {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Lo que dicen los estudios"},
+        "quote": {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Un estudio que ya delega"},
     }
     voz = {
         "stack": ["Tu equipo ya tiene tres encargos en marcha. Y entra otro."],
@@ -208,7 +208,7 @@ def infografia(p, var, k=0):
         "donut": ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."],
         "timeline": ["Una reunión.", "Presupuesto cerrado en 24 horas.",
                      f"Proyecto de ejecución en {PLAZO_PE[tipo].replace('–', ' a ')}.", "Y tú firmas."],
-        "quote": ["Lo dice un estudio que ya delega."],
+        "quote": [t],                                     # la voz lee el testimonio: se lee a su ritmo, sin prisas
     }
     badge, sh, hl, orden = VARIANTES[var]
     return {"variante": var, "badge": badge, "screen_hook": sh or p["screen_hook"], "hook_line": hl or p["escena"],

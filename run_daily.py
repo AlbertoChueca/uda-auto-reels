@@ -130,7 +130,12 @@ if HAS_AI:
     except Exception as e:
         status.append(f"estudio omitido: {str(e)[:120]}")
 
-chain = list(dict.fromkeys([arms.get("formato", "infografia"), "infografia", "mito_realidad", "dato"]))
+chain = list(dict.fromkeys([arms.get("formato", "infografia"), "infografia"]))
+if chain[0] == "infografia":                       # si una infografía no pasa el 8, se prueban otros tipos de infografía
+    import casos as _c
+    _v0 = os.environ.get("IG_VARIANTE")
+    chain += [f"infografia:{v}" for v in _c.VARIANTES if v != _v0][:2]
+chain += ["mito_realidad", "dato"]
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
 if HAS_AI:
@@ -140,6 +145,9 @@ STYLE_KEYS = ("follow_line", "share_line", "save_line", "reto_line", "series", "
 
 meta, items, S, errors, src, image = None, None, None, [], None, None
 for fmt in chain:
+    if fmt.startswith("infografia:"):
+        os.environ["IG_VARIANTE"] = fmt.split(":", 1)[1]; fmt = "infografia"
+        print("pruebo otro tipo de infografía:", os.environ["IG_VARIANTE"], flush=True)
     try:
         if fmt == "repaso_express":
             items = QB.pick_fichas(seed=f"{seed}-{fmt}", verify=verify_fn)

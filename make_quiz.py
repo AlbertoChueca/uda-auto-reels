@@ -369,9 +369,11 @@ class CompareCard:
         return im
 
 
-def brand_card(style):
+def brand_card(style, h=None):
     """Tarjeta final, como la cabecera de los documentos de UDA: bloque carbón, logotipo, claim y la web (solo hechos)."""
-    h = 960
+    if h is None:                                          # 1ª pasada: mide; 2ª: dibuja la tarjeta a su altura justa
+        probe = brand_card(style, 1400)
+        return brand_card(style, probe.info.get("used", 1400))
     im = Image.new("RGBA", (CARD_W, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle([0, 0, CARD_W - 1, h - 1], 12, fill=T.brand_bg, outline=T.card_outline if T.name == "negro" else None, width=2)
     d.rectangle([6, 0, CARD_W - 7, 8], fill=T.brand_rule)
@@ -381,9 +383,9 @@ def brand_card(style):
     cl = fx.text_block("Seremos tu equipo técnico de confianza", F900, 50, 800, T.brand_ink, align="center")
     im.alpha_composite(cl, ((CARD_W - cl.width) // 2, y)); y += cl.height + 26
     for v_ in M.VENTAJAS_CIERRE:                           # presupuesto en 24 h · repercutible al cliente · más facturación
-        ic = fx.icon("check", 40, T.brand_sub); tx = fx.text_block(v_, F800, 31, 820, T.brand_ink)
-        tw_ = ic.width + 16 + int(fx.font(F800, 31).getlength(v_)); x_ = (CARD_W - tw_) // 2
-        im.alpha_composite(ic, (x_, y + 2)); im.alpha_composite(tx, (x_ + ic.width + 16, y)); y += 52
+        ic = fx.icon("check", 44, T.brand_sub); tx = fx.text_block(v_, F800, 38, 820, T.brand_ink)
+        tw_ = 44 + 16 + max(int(fx.font(F800, 38).getlength(x)) for x in M.VENTAJAS_CIERRE); x_ = (CARD_W - tw_) // 2
+        im.alpha_composite(ic, (x_, y + 4)); im.alpha_composite(tx, (x_ + ic.width + 16, y)); y += 60
     y += 18
     p1 = fx.pill("AGENDA UNA REUNIÓN", 38, T.brand_pill, T.brand_pill_fg, padx=34, pady=15, radius=4)
     im.alpha_composite(p1, ((CARD_W - p1.width) // 2, y)); y += p1.height + 10
@@ -391,11 +393,7 @@ def brand_card(style):
     im.alpha_composite(p1b, ((CARD_W - p1b.width) // 2, y)); y += p1b.height + 16
     p2 = fx.pill(M.WEB, 54, T.brand_web, T.brand_web_fg, padx=40, pady=16, radius=4)
     im.alpha_composite(p2, ((CARD_W - p2.width) // 2, y)); y += p2.height + 24
-    p3 = fx.text_block("Link en la bio", F900, 34, 600, T.brand_ink, align="center")
-    im.alpha_composite(p3, ((CARD_W - p3.width) // 2, y)); y += p3.height + 8
-    if style.get("follow_line") and y < h - 60:
-        p4 = fx.text_block(style["follow_line"], F800, 30, 820, T.brand_sub, align="center")
-        im.alpha_composite(p4, ((CARD_W - p4.width) // 2, min(y, h - p4.height - 30)))
+    im.info["used"] = y + 50                               # cierre limpio: sin textos de relleno
     return im
 
 
@@ -688,7 +686,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 a = t; tt = a + 0.5; starts = []
                 for k in range(len(G["voz"][sc])):
                     starts.append(tt - a); say(f"{sc}{k}", tt); tt += D[f"{sc}{k}"] + (0.3 if sc == "cargas" else 0.4)
-                dur = max(tt - a + 1.2, 7.0 if sc == "quote" else 0, 4.0 if sc == "donut" else 0)
+                dur = max(tt - a + 1.2, 9.0 if sc == "quote" else 0, 4.0 if sc == "donut" else 0)
                 seg("ig_" + sc, dur, starts=starts, cstart=starts[-1], bstart=starts[1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
@@ -1031,7 +1029,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             if s_ is not None: fx.paste_center(fr, s_, W / 2, 1260)
         elif kind == "cta":
             fx.paste_center(fr, brand, W / 2, 330 + brand.height / 2 - 66, eob(lt / 0.4), min(1, lt / 0.2))
-            if st.get("share_line") and lt > 1.2:
+            if st.get("share_line") and lt > 1.2 and fmt != "infografia":
                 fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1345,
                                 eob((lt - 1.2) / 0.35))
             # sin subtítulo en el cierre: la tarjeta ya dice lo mismo (menos texto a la vez, nada en la zona de la interfaz)
