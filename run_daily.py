@@ -135,7 +135,7 @@ if chain[0] == "infografia":                       # si una infografía no pasa 
     import casos as _c
     _v0 = os.environ.get("IG_VARIANTE")
     chain += [f"infografia:{v}" for v in _c.VARIANTES if v != _v0][:2]
-chain += ["mito_realidad", "dato"]
+# sin formatos de texto de reserva: si ninguna infografía llega al 8, hoy no sale reel (mejor nada que algo confuso)
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
 if HAS_AI:

@@ -136,7 +136,9 @@ Elige UN subtema concreto de la fuente que funcione muy bien como carrusel (qué
 que se confunden, pasos, condiciones...). {("Evita estos subtemas ya publicados: " + "; ".join(avoid)) if avoid else ""}
 Reglas: cada frase debe poder comprobarse en la fuente; nada de "siempre/nunca/todos" si la fuente no lo dice; precios
 de UDA siempre como precio de referencia; el presupuesto cerrado se envía en 24 horas;
-lenguaje claro para el fundador de un despacho, sin jerga de coaching ("zona de genialidad", "mindset"...); la "clave" de
+SOLO ventajas claras para el fundador que delega en UDA (más tiempo, más facturación, sin costes fijos, sin formar ni
+despedir, presupuesto cerrado en 24 h que puede repercutir a su cliente, marca blanca); NUNCA condiciones de pago, cláusulas
+ni nada que suene a letra pequeña o a riesgo para el despacho; lenguaje claro para el fundador de un despacho, sin jerga de coaching ("zona de genialidad", "mindset"...); la "clave" de
 cada lámina aporta algo concreto (margen, horas o riesgo que se evita), nunca repite la tarjeta; español de España;
 sin emojis dentro de las diapositivas; escribe SOLO lo que se lee.
 {("CORRIGE estos problemas que encontró el verificador en tu versión anterior: " + json.dumps(notes, ensure_ascii=False)) if notes else ""}
