@@ -240,17 +240,21 @@ def _issues(heard, text):
     return out
 
 
-def problem(a, text):
+def problem(a, text, soft_ok=False):
     """Motivo por el que una toma no vale, o None si está bien. Un fallo se confirma con una segunda transcripción más
     cuidadosa (así un error del reconocedor no tira una toma buena)."""
     heard = _asr(a)
     if heard is None:
         return None
     iss = _issues(heard, text)
+    if soft_ok:                                    # «pronuncia mal» es orientativo: el reconocedor también se equivoca
+        iss = [i for i in iss if not i.startswith("pronuncia mal")]
     if not iss:
         return None
     second = _asr(a, careful=True)
     iss2 = _issues(second, text) if second is not None else iss
+    if soft_ok:
+        iss2 = [i for i in iss2 if not i.startswith("pronuncia mal")]
     if not iss2:
         print(f"voice: falso aviso del reconocedor ({iss[0]}) en {text[:40]!r}; la toma es buena", flush=True)
         return None

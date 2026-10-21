@@ -611,7 +611,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         # si alguna frase de la toma única sale mal cortada, se repite la TOMA ENTERA (hasta 2 veces): regrabar una frase
         # suelta cambia el timbre y, si el corte invadió la frase vecina, duplica palabras con dos voces distintas
         for retake in range(2):
-            bad = [k for k, t, _ in L if voice.problem(A[k], t)]
+            bad = [k for k, t, _ in L if voice.problem(A[k], t, soft_ok=retake > 0)]   # 2ª vuelta: solo fallos claros
             if not bad:
                 break
             print(f"voz: frases con fallo en la toma única {bad}; repito la toma entera ({retake + 1}/2)", flush=True)
@@ -623,10 +623,10 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             except Exception as e:
                 print("voz: nueva toma entera fallida:", str(e)[:150], flush=True)
         else:
-            if any(voice.problem(A[k], t) for k, t, _ in L):
+            if any(voice.problem(A[k], t, soft_ok=True) for k, t, _ in L):
                 raise RuntimeError("la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre")
         for k, t, s_ in L:
-            why = voice.problem(A[k], t)
+            why = voice.problem(A[k], t, soft_ok=True)
             tries = 0
             while why and tries < 4:
                 tries += 1
@@ -637,7 +637,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                     raise
                 except Exception as e:
                     print("voz: nueva toma fallida:", str(e)[:150], flush=True); continue
-                why = voice.problem(A[k], t)
+                why = voice.problem(A[k], t, soft_ok=True)
             if why:
                 raise RuntimeError(f"la voz no graba bien '{t[:40]}' ({why})")
     D = {k: len(a) / SR for k, a in A.items()}

@@ -46,7 +46,7 @@ concurrency:
 jobs:
   reel:
     runs-on: ubuntu-24.04
-    timeout-minutes: 90     # varios formatos si alguno no llega al 8
+    timeout-minutes: 120    # varios formatos si alguno no llega al 8 (+ espera a la hora de publicar)
     steps:
       - name: Elegir hueco
         id: slot

@@ -150,7 +150,11 @@ if HAS_AI:
 STYLE_KEYS = ("follow_line", "share_line", "save_line", "reto_line", "series", "voice_speed", "music")
 
 meta, items, S, errors, src, image = None, None, None, [], None, None
+_t0 = __import__("time").time()
 for fmt in chain:
+    if meta is None and errors and __import__("time").time() - _t0 > 55 * 60:
+        print("tiempo agotado: no pruebo más tipos (evita que GitHub corte el trabajo a medias)", flush=True)
+        break
     if fmt.startswith("infografia:"):
         os.environ["IG_VARIANTE"] = fmt.split(":", 1)[1]; fmt = "infografia"
         print("pruebo otro tipo de infografía:", os.environ["IG_VARIANTE"], flush=True)
