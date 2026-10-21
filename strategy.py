@@ -21,7 +21,7 @@ EXPLORE = float(os.environ.get("EXPLORE_RATE", "0.15"))
 MIN_AGE_DAYS = 3
 
 DEFAULT_ARMS = {
-    "formato": ["grafico", "comparativa", "mito_realidad", "caso_despacho", "dato"],   # "claves" (lista estática) fuera: no pasa el 8
+    "formato": ["caso_coste", "comparativa", "mito_realidad", "grafico", "dato"],   # "claves" (lista estática) fuera: no pasa el 8
     "estilo": ["negro"],                                  # identidad premium negro y oro (los demás estilos siguen en themes.py)
     "hook_style": [
         "facturación: abrir con lo que le cuesta al despacho no delegar (solo con datos del material)",

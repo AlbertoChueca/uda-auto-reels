@@ -26,7 +26,7 @@ CARD_CENTER = 900         # las tarjetas se centran aquí si caben (zona segura 
 CARD_MAX_BOTTOM = 1385   # deja sitio debajo para 'Comenta…' / retos dentro de la zona segura
 HDR = 74                  # alto de la cabecera de la hoja (estilo examen)
 THINK = {"corto": 5, "normal": 7, "largo": 9}
-BADGE = {"grafico": "LAS CIFRAS", "claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
+BADGE = {"caso_coste": "CUÁNTO CUESTA DELEGAR", "grafico": "LAS CIFRAS", "claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
          "test_normativa": "TEST DE NORMATIVA", "error_tipico": "ERROR TÍPICO EN PROYECTO", "mito_realidad": "MITO O REALIDAD",
          "norma_30s": "NORMATIVA EN 30 SEGUNDOS", "simulacro_3": "TEST RÁPIDO", "caso_despacho": "CASO DE DESPACHO",
          "checklist": "CHECKLIST DE PROYECTO", "delegar": "CONTRATAR O DELEGAR", "uda_servicio": "ASÍ TRABAJA UDA",
@@ -249,17 +249,21 @@ class TextCard:
 class ChartCard:
     """Gráfico de barras animado: cada barra crece al decirla; la conclusión aparece al final. Cifras tal cual de la fuente."""
 
-    def __init__(self, title, bars, conclusion, ref=None):
+    def __init__(self, title, bars, conclusion, ref=None, hi_set=None):
         self.title, self.bars, self.conclusion, self.ref = title, bars, conclusion, ref
         self.note = "Precios de referencia" if any("€" in b["texto"] for b in bars) else None
         self.vmax = max(b["valor"] for b in bars)
         hi = [i for i, b in enumerate(bars) if "uda" in b["etiqueta"].lower() or "delega" in b["etiqueta"].lower()]
         self.hi = hi[0] if hi else None
+        if hi_set is not None:
+            self.hi = None; self.hiset = set(hi_set)
+        else:
+            self.hiset = None
         self.th = fx.text_block(title, F900, 56, CARD_W - 2 * PAD).height
         self.ch = fx.text_block(conclusion, F900, 42, CARD_W - 2 * PAD - 84).height
         self.rows = []
         for b in bars:
-            v = fx.text_block(b["texto"], F900, 38, 520)
+            v = fx.text_block(b["texto"], F900, 38, fx.font(F900, 38).getlength(b["texto"]) + 4)
             self.rows.append(max(fx.text_block(b["etiqueta"], F800, 34, CARD_W - 2 * PAD - v.width - 24).height, v.height))
         self.h = (PAD + self.th + 36 + sum(r + 8 + 58 + 34 for r in self.rows) + 20 + self.ch + 40 + (60 if self.note else 0)
                   + (80 if ref else 0) + PAD)
@@ -277,20 +281,21 @@ class ChartCard:
         maxw = CARD_W - 2 * PAD
         for k, b in enumerate(self.bars):
             g = eo(grow[k])
-            v = fx.text_block(b["texto"], F900, 38, 520, T.ink)
+            v = fx.text_block(b["texto"], F900, 38, fx.font(F900, 38).getlength(b["texto"]) + 4, T.ink)
             lab = fx.text_block(b["etiqueta"], F800, 34, CARD_W - 2 * PAD - v.width - 24, T.ink if g > 0 else T.faded)
             im.alpha_composite(lab, (PAD, y))
             if g > 0.5:                                    # la cifra aparece a la derecha, encima de la barra
                 vv = v.copy(); vv.putalpha(vv.getchannel("A").point(lambda a_: int(a_ * min(1, (g - 0.5) * 2))))
                 im.alpha_composite(vv, (CARD_W - PAD - v.width, y - 2))
             by = y + self.rows[k] + 8; bw = max(10, maxw * b["valor"] / self.vmax * g)
-            col = T.ok_col if (self.hi == k or (self.hi is None and k == len(self.bars) - 1)) else _mix(T.ink, T.faded, 0.25)
+            on = (k in self.hiset) if self.hiset is not None else (self.hi == k or (self.hi is None and k == len(self.bars) - 1))
+            col = T.ok_col if on else _mix(T.ink, T.faded, 0.25)
             d.rounded_rectangle([PAD, by, PAD + maxw, by + 58], 6, fill=_mix(T.faded, T.card_fill[:3] if isinstance(T.card_fill, tuple) else T.card_fill, 0.5))
             d.rounded_rectangle([PAD, by, PAD + bw, by + 58], 6, fill=col)
             y = by + 58 + 34
         y += 20
         if show_conc > 0:
-            ic = fx.icon("up" if self.hi is None else "check", 72, T.ok_col)
+            ic = fx.icon("up" if (self.hi is None and self.hiset is None) else "check", 72, T.ok_col)
             im.alpha_composite(ic, (PAD, y + 2))
             c = fx.text_block(self.conclusion, F900, 42, CARD_W - 2 * PAD - 84, T.ink, lit=lit, dim=T.dim)
             im.alpha_composite(c, (PAD + 84, y + 4)); y += self.ch + 40
@@ -450,6 +455,13 @@ def lines_for(fmt, items, S):
         for k, b in enumerate(S["barras"]):
             L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
         L.append(("conc", S["conclusion"], "emphatic, confident conclusion"))
+    elif fmt == "caso_coste":
+        for k, b in enumerate(S["barras"]):
+            L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
+        L.append(("conc", S["conclusion"], "emphatic, confident conclusion"))
+        L.append(("pt", S["puntos_titulo"] + ".", "assured"))
+        for k, p in enumerate(S["puntos"]):
+            L.append((f"p{k}", p, "clear, assured, explaining"))
     elif fmt == "dato":
         L.append(("st", S["afirmacion"], "revealing, confident, slight emphasis"))
         L.append(("ex", S["explicacion"], "assured, explaining"))
@@ -500,6 +512,8 @@ def _groups(L):
 
 def ref_label(P):
     """Fuente que se muestra en pantalla: la referencia verificada (norma y artículo, o documento de UDA y apartado)."""
+    if P.get("tipo") == "caso":
+        return "Fuente: " + P["referencia"]
     r = QB.verif().get(P["id"], {})
     ref = r.get("referencia") if r.get("fuente_ok") else ""
     if ref:
@@ -528,6 +542,9 @@ def caption_text(fmt, items, S, rng, st=None):
             f"▪️ {r['aspecto']} → {S['col_a']}: {r['a']} · {S['col_b']}: {r['b']}" for r in S["filas"])
     elif fmt == "dato":
         body = f"{S['afirmacion']}\n\n{S['explicacion']}"
+    elif fmt == "caso_coste":
+        body = (f"{S['titulo_norma']} (precios de referencia):\n\n" + "\n".join(f"▪️ {b['etiqueta']}: {b['texto']}" for b in S["barras"])
+                + f"\n\n→ {S['conclusion']}\n\n{S['puntos_titulo']}:\n" + "\n".join(f"✔️ {p}" for p in S["puntos"]))
     elif fmt == "grafico":
         nota = " (precios de referencia)" if any("€" in b["texto"] for b in S["barras"]) else ""
         body = f"{S['titulo_norma']}{nota}\n\n" + "\n".join(f"▪️ {b['etiqueta']}: {b['texto']}" for b in S["barras"]) + \
@@ -639,6 +656,16 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 starts.append(tt); say(f"b{k}", tt); tt += D[f"b{k}"] + 0.45
             cstart = tt; say("conc", tt); tt += D["conc"]
             seg("chart", tt - a + 1.8, starts=starts, cstart=cstart)
+        elif fmt == "caso_coste":
+            a = t; tt = a + 0.5; starts = []
+            for k in range(len(S["barras"])):
+                starts.append(tt); say(f"b{k}", tt); tt += D[f"b{k}"] + 0.4
+            cstart = tt; say("conc", tt); tt += D["conc"]
+            seg("chart", tt - a + 1.3, starts=starts, cstart=cstart)
+            a = t; tt = a + 0.4; say("pt", tt); tt += D["pt"] + 0.25; starts = []
+            for k in range(len(S["puntos"])):
+                starts.append(tt); say(f"p{k}", tt); tt += D[f"p{k}"] + 0.4
+            seg("points", tt - a + 1.2, starts=starts)
         elif fmt == "dato":
             a = t; seg("statement", D["st"] + 1.4); say("st", a + 0.45)
             a = t; seg("explain", D["ex"] + 1.4); say("ex", a + 0.5)
@@ -723,7 +750,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     bg = T.background(rng.randint(0, 999), image)
     hook_bg = themes.ImageBG(image, dark=0.25, blur=0) if image is not None else None
     corto = QB.tema_corto(P.get("tema"))
-    extra = corto if len(corto) <= 26 and fmt not in ("simulacro_3", "delegar", "uda_servicio") else None
+    extra = corto if len(corto) <= 26 and fmt not in ("simulacro_3", "delegar", "uda_servicio", "caso_coste") else None
     bdg = badge(fmt, extra, st.get("series"))
     # la web siempre visible arriba, en pequeño (si el reel se descarga y se reenvía, se sabe de dónde viene)
     web_img = fx.pill(M.WEB, 28, T.web_bg, T.web_fg, padx=22, pady=8, path=F800, radius=T.pill_radius)
@@ -737,7 +764,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     hook_logo = fx.logo(70, T.head_col, T.label if T.name != "carbon" else ARENA)
     hook_logo_img = fx.logo(70, WHITE, T.img_hot)
     cards = []
-    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico") and fmt not in QB.POINTS_ONLY:
+    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico", "caso_coste") and fmt not in QB.POINTS_ONLY:
         cards = [QuestionCard(Q, QB.tema_titulo(Q["tema"]).upper(), f"{i + 1}/3" if fmt == "simulacro_3" else None)
                  for i, Q in enumerate(items)]
     expl = stmt = pts = scene_card = cmp_card = chart = None
@@ -749,6 +776,10 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                                   title_fg=T.ok_text if T.ok_mode == "fill" else T.ink))
     elif fmt == "grafico":
         chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P))
+    elif fmt == "caso_coste":                          # barras de UDA en oro, la del empleado en gris
+        chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P),
+                          hi_set=[k for k, b in enumerate(S["barras"]) if b["etiqueta"].startswith("Delegar")])
+        pts = TextCard(None, None, None, big=S["puntos_titulo"], bullets=S["puntos"], icons=True, body_size=58)
     elif fmt in QB.POINTS_ONLY or fmt in ("dato", "comparativa", "mito_realidad"):
         if fmt == "mito_realidad":
             stmt = TextCard("¿MITO O REALIDAD?", S["afirmacion"], None, body_size=70)

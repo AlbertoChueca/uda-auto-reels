@@ -106,6 +106,8 @@ try:
         import estudio
         series_info = estudio.series_today(today)
         fixed["formato"] = series_info["series_fmt"]          # cita fija del día: la gente sabe qué toca
+    elif slot in ("manana", "tarde") and not fixed:
+        fixed["formato"] = "caso_coste"                       # contenido principal: cuánto cuesta delegar tu proyecto
     if style_override in strategy.DEFAULT_ARMS["estilo"]:
         fixed["estilo"] = style_override
     arms = strategy.choose(seed=f"{now:%Y-%m-%d-%H}-{slot}", fixed=fixed)

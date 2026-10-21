@@ -41,6 +41,7 @@ FORMAT_SPEC = {
     "dato": ("dato", ("proyecto", "negocio", "servicios")),
     "mito_realidad": ("mito", ("negocio", "contratar", "servicios", "proyecto")),
     "caso_despacho": ("puntos", ("negocio", "servicios", "contratar")),
+    "caso_coste": ("caso", ("servicios",)),          # contenido principal: cuánto cuesta delegar (casos.py, cifras calculadas)
 }
 POINTS_ONLY = {"claves", "caso_despacho"}                       # hook -> (escena) -> 3 claves -> cierre
 
@@ -56,10 +57,16 @@ def load():
         return []
     for p in ps:
         p["bloque"] = OLD_BLOQUE.get(p.get("bloque"), p.get("bloque"))
+    try:                                                    # casos calculados con la tabla (no se guardan en el banco)
+        import casos
+        ps = [p for p in ps if p.get("tipo") != "caso"] + casos.generate()
+    except Exception as e:
+        print("casos omitidos:", str(e)[:120], flush=True)
     return ps
 
 
 def save(ps):
+    ps = [p for p in ps if p.get("tipo") != "caso"]
     os.makedirs(os.path.dirname(BANK), exist_ok=True)
     json.dump(ps, open(BANK, "w"), ensure_ascii=False, indent=0)
 
@@ -127,6 +134,8 @@ def fits(p, kind="normal"):
             return 5 <= len(p["afirmacion"].split()) <= 16 and 8 <= len(p["explicacion"].split()) <= 26
         if p["tipo"] == "cifras":
             return 2 <= len(p["barras"]) <= 4
+        if p["tipo"] == "caso":
+            return True
         return 10 <= len(p["q"]) <= 110 and 3 <= len(p["a"]) <= 160
     ql, ol = LIMITS[kind]
     return len(p["pregunta"]) <= ql and all(len(o) <= ol for o in p["opciones"])
@@ -135,7 +144,16 @@ def fits(p, kind="normal"):
 MIN_CALIDAD = float(os.environ.get("MIN_CALIDAD", "7"))      # nivel premium: utilidad para un despacho que hace bloques
 
 
+# La tabla de presupuestos solo se usa para EJEMPLOS DE COSTE (casos.py) y para contratar vs delegar; las piezas antiguas
+# de negocio y servicios sacadas de la tabla ya no se publican (el resto de UDA sale de la web).
+TABLA_SOLO = {"uda_delegar", "uda_servicios"}
+
+
 def publishable(p, v=None):
+    if p.get("tipo") == "caso":
+        return bool(p.get("calculado") and p.get("fuente_ok"))
+    if p.get("tema") in TABLA_SOLO and p.get("norma") == "uda_tabla":
+        return False
     v = verif() if v is None else v
     r = v.get(p["id"])
     return bool(r and r.get("veredicto") == "ok" and r.get("fuente_ok") and p.get("fuente_ok")

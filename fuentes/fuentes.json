@@ -335,7 +335,6 @@
 "contratar"
 ],
 "normas": [
-"uda_tabla",
 "uda_web"
 ],
 "filtro": ""
@@ -348,9 +347,8 @@
 "negocio"
 ],
 "normas": [
-"uda_tabla",
-"uda_listado",
-"uda_web"
+"uda_web",
+"uda_listado"
 ],
 "filtro": ""
 },
@@ -365,6 +363,16 @@
 "uda_tabla"
 ],
 "filtro": "despido|indemnizaci|vacaciones|periodo de prueba|jornada|preaviso|contrato de trabajo|contrato indefinido|extinci|horas extraordinarias|permisos|empleado|plantilla|delegar"
+},
+"uda_casos": {
+"titulo": "Cuánto cuesta delegar tu proyecto",
+"corto": "Cuánto cuesta delegar",
+"bloques": [],
+"normas": [
+"uda_tabla",
+"uda_web"
+],
+"filtro": ""
 }
 }
 }

@@ -50,9 +50,11 @@ ROLES = {
 NAMES = list(ROLES)
 
 # Serie fija de cada día (0 = lunes). El reel de las 12:00 sigue la serie; los de las 8:00 y las 15:00 los elige el piloto.
-SERIES = {0: ("Lunes de cifras", "grafico"), 1: ("Martes de contratar o delegar", "comparativa"),
-          2: ("Miércoles de datos de proyecto", "dato"), 3: ("Jueves de mitos del despacho", "mito_realidad"),
-          4: ("Viernes de cifras", "grafico"), 5: ("Sábado de casos de despacho", "caso_despacho"),
+# Los reels de las 8:00 y las 15:00 son el contenido principal: cuánto cuesta delegar (caso_coste). El de las 12:00 es
+# la serie de tips para hacer crecer el despacho.
+SERIES = {0: ("Lunes de mitos del despacho", "mito_realidad"), 1: ("Martes de contratar o delegar", "comparativa"),
+          2: ("Miércoles para facturar más", "mito_realidad"), 3: ("Jueves de contratar o delegar", "comparativa"),
+          4: ("Viernes para ganar horas", "mito_realidad"), 5: ("Sábado de datos de proyecto", "dato"),
           6: ("Domingo de lo que delegas", "comparativa")}
 
 AUDIENCE = ("Público: fundadores y socios de despachos de arquitectura y arquitectos autónomos de España que proyectan "

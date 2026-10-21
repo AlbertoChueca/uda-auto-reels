@@ -12,7 +12,7 @@ on:
       formato:
         description: "Formato (auto = lo elige el piloto automático)"
         type: choice
-        options: [auto, grafico, comparativa, claves, mito_realidad, caso_despacho, dato]
+        options: [auto, caso_coste, comparativa, mito_realidad, grafico, dato, claves, caso_despacho]
         default: auto
       estilo:
         description: "Estilo visual (auto = lo elige el piloto automático)"

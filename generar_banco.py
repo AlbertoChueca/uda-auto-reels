@@ -26,18 +26,21 @@ PIDE = {"negocio": "1 de tipo cifras, 1 de tipo puntos y 1 de tipo mito",
         "servicios": "1 de tipo comparativa (columnas \"En tu despacho\" y \"Con UDA\"), 1 de tipo cifras y 1 de tipo puntos",
         "proyecto": "1 de tipo dato y 1 de tipo puntos"}
 GUIA = {
-    "negocio": "NEGOCIO DEL DESPACHO: cómo facturar más delegando, cómo mejorar el precio por hora del despacho, cómo ganar "
-               "capacidad para aceptar más encargos sin ampliar plantilla, dónde se va el tiempo del arquitecto (revisar, "
-               "formar, supervisar) frente a lo que se cobra mejor (proyectar, cliente, dirección). Se permiten conclusiones "
+    "negocio": "TIPS PARA HACER CRECER EL DESPACHO: cómo facturar más delegando, cómo mejorar el precio por hora, cómo tener "
+               "más horas libres, cómo aceptar más encargos sin ampliar plantilla, cómo convertir costes fijos en variables, "
+               "cómo absorber picos de trabajo sin dormir poco, dónde se va el tiempo del arquitecto (revisar, formar, "
+               "supervisar) frente a lo que se cobra mejor (proyectar, cliente, dirección). La fuente es la web de UDA: "
+               "consejos prácticos de socio a socio, no anuncios. Se permiten conclusiones "
                "y consejos razonados a partir del texto, pero toda cifra tiene que estar en el texto tal cual.",
     "contratar": "CONTRATAR EN PLANTILLA O POR SERVICIOS: qué implica contratar a alguien indefinidamente (contrato, coste "
                  "haya proyectos o no, formación, vacaciones, bajas, extinción) frente a contratar un servicio cerrado por "
                  "proyecto. Con el Estatuto de los Trabajadores solo datos literales de la ley, sin asesoramiento laboral "
                  "concreto; con los textos de UDA, sus datos tal cual.",
-    "servicios": "SERVICIOS DE UDA: cada tarea que UDA hace por el despacho (planimetría, memoria y CTE, instalaciones, "
-                 "estructuras con CYPE, mediciones, pliego, estudio de seguridad y salud, gestión de residuos, modelo Revit, "
-                 "actuaciones específicas...) y qué implicaría hacerla con equipo propio. Un precio SIEMPRE como \"precio de "
-                 "referencia\" (el definitivo es el presupuesto cerrado). La firma corresponde siempre al despacho.",
+    "servicios": "CÓMO TRABAJA UDA, según su web: qué puedes delegar (planimetría en CAD o BIM, memorias y CTE, estructuras "
+                 "con CYPE, instalaciones, mediciones, 3D), marca blanca y confidencialidad, presupuesto cerrado, entrega por "
+                 "fases, 7 días de subsanaciones, pago 60/40, plazos habituales, programas, servicio modular (solo una fase). "
+                 "NO des precios en estas piezas (los ejemplos de coste van en otro formato). La firma corresponde siempre "
+                 "al despacho.",
     "proyecto": "DATOS DE PROYECTO QUE POCOS CONOCEN, contados para un fundador (no para un técnico): qué documentos lleva "
                 "obligatoriamente un proyecto y quién responde de qué. Nada de jerga normativa ni números de apartado en el texto.",
 }
