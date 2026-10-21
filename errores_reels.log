@@ -38,3 +38,35 @@ reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): La locució
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Frase duplicada en audio entre 0:34 y 0:38 con dos voces distintas.; Cambios de tono o locutor durante la locución que restan continuidad editorial.
 
+2026-10-21 14:09 manual [caso_coste] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 170, in <module>
+    caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 215, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Ritmo de locución y pausas ligeramente uniforme estilo locución sintética.; La pantalla de barras de costes acumula mucha cifra antes del punto clave.; Llamada final a la acción algo genérica para generar conversación inmediata.
+
+2026-10-21 14:09 manual [comparativa] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 170, in <module>
+    caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 215, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.4/10, mínimo 8): Inicio visual excesivamente estático en los primeros segundos; Estructura de tabla algo densa para consumo rápido
+
+2026-10-21 14:09 manual [mito_realidad] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 170, in <module>
+    caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 215, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.4/10, mínimo 8): Ritmo visual plano basado exclusivamente en tipografía sobre fondo oscuro.; Locución con cadencia ligeramente sintética.
+
+2026-10-21 14:09 manual [grafico] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 170, in <module>
+    caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 215, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Doble locución inicial con tono inconsistente antes del cambio de voz.; El gancho inicial resulta algo estático y corporativo.; Bajo incentivo explícito a debatir en comentarios.
+
