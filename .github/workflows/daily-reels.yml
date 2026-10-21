@@ -3,10 +3,14 @@ name: Reels diarios
 on:
   schedule:
     # Publica a las 8:00, 12:00 y 15:00 hora de España: arranca 45 min antes y espera a la hora exacta para publicar.
-    # GitHub usa UTC: el cron de verano (CEST) solo corre de marzo a octubre y el de invierno (CET) de octubre a marzo;
-    # en marzo y octubre corren los dos y "Elegir hueco" descarta el que no toca.
-    - cron: "15 5,9,12 * 3-10 *"        # 7:15, 11:15 y 14:15 en verano
-    - cron: "15 6,10,13 * 1-3,10-12 *"  # 7:15, 11:15 y 14:15 en invierno
+    # Un cron por hueco y estación: el hueco sale del cron (no de la hora a la que GitHub lo lanza, que a veces se
+    # retrasa horas). En marzo y octubre corren los dos juegos y "Elegir hueco" descarta el de la otra estación.
+    - cron: "15 5 * 3-10 *"      # verano · mañana
+    - cron: "15 9 * 3-10 *"      # verano · mediodía
+    - cron: "15 12 * 3-10 *"     # verano · tarde
+    - cron: "15 6 * 1-3,10-12 *"   # invierno · mañana
+    - cron: "15 10 * 1-3,10-12 *"  # invierno · mediodía
+    - cron: "15 13 * 1-3,10-12 *"  # invierno · tarde
   workflow_dispatch:
     inputs:
       formato:
@@ -47,13 +51,18 @@ jobs:
           S="${{ github.event.schedule }}"
           if [ -z "$S" ]; then echo "slot=manual" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ "${{ vars.ACTIVO }}" != "true" ]; then echo "slot=skip" >> "$GITHUB_OUTPUT"; echo "Piloto apagado: pon la variable ACTIVO = true"; exit 0; fi
-          LOCAL=$(TZ=Europe/Madrid date +%-H)
-          case "$LOCAL" in
-            7|8)   echo "slot=manana" >> "$GITHUB_OUTPUT" ;;      # admite el retraso de GitHub al lanzar
-            11|12) echo "slot=mediodia" >> "$GITHUB_OUTPUT" ;;
-            14|15) echo "slot=tarde" >> "$GITHUB_OUTPUT" ;;
-            *)  echo "slot=skip" >> "$GITHUB_OUTPUT"; echo "Cron de la otra estación (hora local $LOCAL): no toca" ;;
+          OFF=$(TZ=Europe/Madrid date +%z)                         # +0200 verano, +0100 invierno
+          case "$S" in
+            "15 5 "*|"15 9 "*|"15 12 "*) SEASON="+0200" ;;
+            *) SEASON="+0100" ;;
           esac
+          if [ "$OFF" != "$SEASON" ]; then echo "slot=skip" >> "$GITHUB_OUTPUT"; echo "Cron de la otra estación: no toca"; exit 0; fi
+          case "$S" in
+            "15 5 "*|"15 6 "*)   echo "slot=manana" >> "$GITHUB_OUTPUT" ;;
+            "15 9 "*|"15 10 "*)  echo "slot=mediodia" >> "$GITHUB_OUTPUT" ;;
+            *)                   echo "slot=tarde" >> "$GITHUB_OUTPUT" ;;
+          esac
+          echo "Hueco: $S (aunque GitHub lo lance con retraso, se publica igual)"
 
       - uses: actions/checkout@v5
         if: steps.slot.outputs.slot != 'skip'
@@ -111,7 +120,7 @@ jobs:
           IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
           IG_STORY: ${{ vars.IG_STORY || 'true' }}
           TIKTOK: ${{ vars.TIKTOK || 'true' }}
-          TIKTOK_STORY_BORRADOR: ${{ vars.TIKTOK_STORY_BORRADOR || 'true' }}
+          TIKTOK_STORY_BORRADOR: ${{ vars.TIKTOK_STORY_BORRADOR || 'false' }}
           LINKEDIN: ${{ vars.LINKEDIN || 'carrusel' }}
           PUBLISH_MAX_WAIT_MIN: ${{ vars.PUBLISH_MAX_WAIT_MIN || '50' }}
         run: python run_daily.py ${{ steps.slot.outputs.slot }}

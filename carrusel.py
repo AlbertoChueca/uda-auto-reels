@@ -586,6 +586,9 @@ def main():
         print("ya se publicó el carrusel de hoy"); return
     if not MOCK and not os.environ.get("GEMINI_API_KEY"):
         raise SystemExit("Falta GEMINI_API_KEY: sin verificador no se publica ningún carrusel.")
+    if os.environ.get("PUBLISH_AT") and any(e.get("fecha") == str(today) and e.get("publicado") for e in log()):
+        print("carrusel: hoy ya se publicó uno (a mano); el programado no repite", flush=True)
+        return
     seed = str(today)
     bloque = os.environ.get("CARRUSEL_BLOQUE") or "auto"
     bloque = PLAN[today.weekday()] if bloque not in ETIQUETA else bloque
