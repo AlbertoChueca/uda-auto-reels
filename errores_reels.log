@@ -629,3 +629,25 @@ reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): La pantalla
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Locución algo lineal en el cierre; Densidad de texto en pantalla en el bloque central
 
+2026-10-22 19:58 manual [render] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 270, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')}/10 (mínimo {reviewer.MIN_SCORE:g})")
+reviewer.RejectReel: diseño 7.4/10 (mínimo 8)
+
+2026-10-22 19:58 manual [infografia] e "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 274, in <module>
+    raise rev_first[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 258, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 221, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Gancho inicial predecible para el perfil sénior.; Gráfica de barras estática al presentar importes.
+
