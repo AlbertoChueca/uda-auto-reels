@@ -666,3 +666,18 @@ reviewer.RejectReel: diseño 9.0 · vídeo 6.8/10 (mínimo 8): 00:35: La locuci�
     raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
 reviewer.RejectReel: diseño 9.0 · vídeo 6.8/10 (mínimo 8): 00:11 La voz dice 'la firma' pero en pantalla figura 'La firma y el visado'.; 00:32 La voz menciona 'Proyecto de ejecución en 30 a 55 días' mientras en pantalla se lee 'Entrega por fases'.
 
+2026-10-22 22:57 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 268, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 7.0 · vídeo 7.0/10 (mínimo 8): 
+
+2026-10-22 22:57 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 268, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 9.0 · vídeo 6.8/10 (mínimo 8): 
+
+2026-10-22 22:57 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 268, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 8.8 · vídeo 7.0/10 (mínimo 8): 
+
