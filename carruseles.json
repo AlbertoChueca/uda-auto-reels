@@ -38,5 +38,25 @@
 "linkedin_documento": "6ad8f7286f3d4af577a74e5a"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-10-22",
+"bloque": "negocio",
+"tema": "uda_servicios",
+"subtema": "Escalar producción sin costes fijos",
+"titulo": "Escalar estudio sin plantilla ni costes fijos",
+"fragmentos": [
+" (cont.)"
+],
+"quiz_id": null,
+"imagenes": 6,
+"nota": 8.5,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18132030676771015",
+"tiktok_carrusel": "6ada4a0bfb2da05e49dfc8de",
+"linkedin_documento": "6ada4a164564beb4f72f27b5"
+},
+"dry_run": false
 }
 ]

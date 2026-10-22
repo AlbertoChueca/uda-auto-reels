@@ -1,2 +1,9 @@
-Carrusel 2026-10-21 19:26 UTC
-ya se publicó el carrusel de hoy
+Carrusel 2026-10-22 17:36 UTC
+carrusel: verificado (Escalar producción sin costes fijos)
+carrusel: revisión 8.5/10 ["La diapositiva final (06) presenta saturación visual y competencia jerárquica al encadenar dos bloques destacados tipo botón ('AGENDA UNA REUNIÓN...' en dorado y la pastilla crema de la URL). Conviene jerarquizar un único CTA principal.", 'Monotonía estructural en el cuerpo del carrusel: las láminas 02 a 05 calcan exactamente la misma retícula de tres cajas apiladas, lo que puede provocar fatiga visual al deslizar rápido en el móvil.', "El pie legal ('Fuente: Condiciones del servicio técnico...') se repite en todas las diapositivas interiores, restando aire compositivo a un formato de lectura rápida donde no aporta valor directo."]
+carrusel: Qué hace UDA por tu despacho · Escalar producción sin costes fijos · 6 imágenes
+Instagram carrusel: https://www.instagram.com/p/DeziXfYjZUh/
+Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
+Zernio tiktok carrusel: creado 6ada4a0bfb2da05e49dfc8de
+Zernio linkedin documento: creado 6ada4a164564beb4f72f27b5
+publicación: {"instagram_carrusel": "ig:18132030676771015", "tiktok_carrusel": "6ada4a0bfb2da05e49dfc8de", "linkedin_documento": "6ada4a164564beb4f72f27b5"}
