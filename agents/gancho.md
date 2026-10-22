@@ -1,5 +1,7 @@
-# Cuaderno de gancho (2026-10-21)
+# Cuaderno de gancho (2026-10-22)
 
-• Seguir haciendo: Ganchos de dilema directo de negocio y coste/hora ('Plantilla o delegar', 'Horas caras dibujando adosados'); lideran scores (8.81 y 6.56) y retención.
-• Dejar de hacer: Ganchos basados en tamaño de obra ('2.000 m² más') o enunciados abstractos ('El coste de redactarlo todo'); obtuvieron las métricas más bajas.
-• Probar: Fórmulas de conflicto inmediato en 2 segundos tipo '¿Facturar o producir?' o preguntas directas sobre rentabilidad del despacho.
+# Cuaderno de gancho (2026-10-22)
+
+• Seguir haciendo: Ganchos de dilema operativo y coste/hora ('Plantilla o delegar', 'Horas caras dibujando adosados'); lideran scores (9.73 y 6.56) y guardados.
+• Dejar de hacer: Ganchos abstractos ('El coste de redactarlo todo') o métricas de obra ('2.000 m² más'); obtienen scores mínimos o nulos.
+• Probar: Fórmulas de impacto inmediato en 2 segundos sobre rentabilidad frente a trabajo rutinario (ej. '¿Arquitecto o delineante de tus propios proyectos?').

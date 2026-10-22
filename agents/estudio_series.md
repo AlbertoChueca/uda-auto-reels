@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-10-21)
+# Cuaderno de series (2026-10-22)
 
-- Seguir haciendo: (Datos insuficientes: todos los reels publicados figuran con serie None).
-- Dejar de hacer: Publicar de forma aislada sin estructura serial ni citas fijas por día.
-- Probar: Lanzar la serie semanal 'Costes de Despacho', aprovechando que los dos mejores ganchos tratan sobre gestión y rentabilidad.
+- Seguir haciendo: (Datos insuficientes: el 100% de los contenidos se ha publicado con 'serie None').
+- Dejar de hacer: Publicaciones desconectadas sin recurrencia temática ni numeración fija.
+- Probar: Estrenar la serie semanal numerada 'Números de Despacho', aprovechando el éxito del dilema plantilla vs. delegación técnica.

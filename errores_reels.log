@@ -179,3 +179,48 @@ reviewer.RejectReel: el revisor rechaza el reel (4.5/10, mínimo 8): Acento no p
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (5.0/10, mínimo 8): 
 
+2026-10-22 10:08 manana [infografia] _daily.py", line 250, in <module>
+    raise rev_first[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 234, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 217, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (5.2/10, mínimo 8): Acento no peninsular con seseo constante ('sien', 'sinco mil', 'confiansa').; Locución sintética con cadencia artificial y corte forzado en 'punto, com'.
+
+2026-10-22 10:08 manana [infografia] .17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 217, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (4.5/10, mínimo 8): Acento no peninsular: la voz presenta seseo constante y entonación neutra/latinoamericana ('sien', 'sinco mil', 'ejecusión', 'una sola ves', 'confiansa'). Es un fallo crítico para despachos en España.; Error de lectura en la web final: dice 'uniondearquitectos punto [pausa] com'.; Falta de concordancia entre texto y voz en 00:18: el texto indica 'Tú eliges cuánto delegas' y la voz pronuncia 'Tú eliges cuánto delega'.
+
+2026-10-22 10:08 manana [infografia] t[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 234, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 217, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.7/10, mínimo 8): La locución resume y omite los textos secundarios de las tarjetas intermedias.; Entonación de locución ligeramente plana en los puntos de dolor.; Microcorte en la dicción justo antes del dominio web final.
+

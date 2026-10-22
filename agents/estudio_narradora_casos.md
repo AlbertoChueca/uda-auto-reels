@@ -1,5 +1,5 @@
-# Cuaderno de narradora_casos (2026-10-21)
+# Cuaderno de narradora_casos (2026-10-22)
 
-- Seguir haciendo: Conflictos cotidianos de gestión técnica que generan clics: contratar plantilla versus delegar por encargo.
-- Dejar de hacer: Planteamientos genéricos y abstractos como 'redactarlo todo' sin contexto de entrega real.
-- Probar: Escenas de tensión en despachos previas a visados o sobrecostes en proyectos de ejecución.
+- Seguir haciendo: Dilemas de rentabilidad operativa en despachos ('Plantilla o delegar por encargo' lidera con 66 clics).
+- Dejar de hacer: Ganchos abstractos sin tensión tangible como 'El coste de redactarlo todo' (0 views, 0 clics).
+- Probar: Casos sobre el cuello de botella previo a visar un proyecto de ejecución de adosados.

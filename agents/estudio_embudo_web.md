@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-10-21)
+# Cuaderno de embudo_web (2026-10-22)
 
-- Seguir haciendo: Asociar la propuesta a 'delegar por encargo' y 'coste técnico en naves', que lograron 34 y 7 clics.
-- Dejar de hacer: Focos en grandes equipamientos públicos que no conducen tráfico a uniondearquitectos.com.
-- Probar: CTA específicos indicando cómo UDA absorbe el pico de trabajo de ejecución sin aumentar estructura fija.
+- Seguir haciendo: Vincular la delegación de carga de trabajo con uniondearquitectos.com (el gancho 'Plantilla o delegar' logró 66 clics).
+- Dejar de hacer: Foco en proyectos institucionales o naves sin enlace claro a externalización.
+- Probar: Llamada a la acción orientada a resolver picos de trabajo en proyectos de ejecución sin asumir costes fijos.

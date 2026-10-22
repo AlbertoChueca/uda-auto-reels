@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-10-21)
+# Cuaderno de diseno (2026-10-22)
 
-• Seguir haciendo: Formato carrusel y mito/realidad en fondo carbón/negro; son los formatos con mejor desempeño registrado.
-• Dejar de hacer: Infografías complejas y densas en una sola pieza; registraron caída drástica de visionado.
-• Probar: Portadas sobrias con tipografía geométrica de alto contraste y bronce de acento, optimizando legibilidad móvil en los primeros 3 slides del carrusel.
+# Cuaderno de diseno (2026-10-22)
+
+• Seguir haciendo: Formatos carrusel y mito_realidad sobre fondo carbón/negro; registran el 100% de los guardados y mejores scores.
+• Dejar de hacer: Infografías unitarias y comparativas estáticas; tienen baja respuesta y scores inferiores a 5.6.
+• Probar: Portadas minimalistas con contraste extremo, acento bronce en el término de fricción ('delegar', 'coste') y tipografía geométrica legible al primer scroll.

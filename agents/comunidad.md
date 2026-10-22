@@ -1,6 +1,8 @@
-# Cuaderno de comunidad (2026-10-21)
+# Cuaderno de comunidad (2026-10-22)
 
-• Estado de datos: Volumen nulo de comentarios directos hasta la fecha; no hay objeciones o dudas textuales registradas.
-• Seguir haciendo: Monitorear el comportamiento pasivo (guardados), que apunta a interés en costes de plantilla y externalización.
-• Dejar de hacer: Asumir intereses sin interacción explícita.
-• Probar: Preguntas abiertas y polarizantes al final de carruseles para provocar las primeras opiniones sobre delegar proyectos.
+# Cuaderno de comunidad (2026-10-22)
+
+• Estado de datos: Datos insuficientes. No hay comentarios registrados en ninguna publicación.
+• Seguir haciendo: Usar los guardados como señal de interés implícito; la audiencia responde a costes de plantilla y externalización de trabajo repetitivo.
+• Dejar de hacer: Tratar la ausencia de comentarios como falta de objeciones; falta un detonante claro en el contenido.
+• Probar: Preguntas cerradas y directas al final para provocar la primera conversación sobre externalización.

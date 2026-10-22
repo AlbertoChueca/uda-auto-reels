@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-10-21)
+# Cuaderno de memoria (2026-10-22)
 
-- Seguir haciendo: Formatos carrusel con datos claros sobre optimización de costes técnicos (únicos formatos con guardados).
-- Dejar de hacer: Comparativas genéricas sin datos técnicos accionables para el día a día.
-- Probar: Tablas de cálculo rápido de horas técnicas por tipología que el arquitecto quiera guardar para presupuestar.
+- Seguir haciendo: Formato carrusel enfocado a gestión de horas (único con guardados y máximo score: 9.73).
+- Dejar de hacer: Infografías de equipamientos grandes sin utilidad directa de archivo para el profesional.
+- Probar: Desgloses de cálculo de horas técnicas invertidas en redacción de memorias para guardar antes de presupuestar.

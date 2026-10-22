@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-10-21)
+# Cuaderno de seo (2026-10-22)
 
-- Seguir haciendo: Términos de gestión operativa con tracción demostrada: 'plantilla', 'delegar', 'coste técnico', 'adosados'.
-- Dejar de hacer: Frases ambiguas sin palabras clave del sector como 'redactarlo todo'.
-- Probar: Incorporar de forma natural términos muy buscados: 'CTE', 'proyecto de ejecución', 'subcontratación técnica' y 'despacho de arquitectura'.
+- Seguir haciendo: Palabras clave operativas con tracción probada: 'plantilla', 'delegar', 'coste técnico', 'adosados'.
+- Dejar de hacer: Fórmulas genéricas no indexables como 'redactarlo todo'.
+- Probar: Posicionar 'proyecto de ejecución', 'CTE' y 'externalización para arquitectos' en las dos primeras líneas de la descripción.

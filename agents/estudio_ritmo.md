@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-10-21)
+# Cuaderno de ritmo (2026-10-22)
 
-- Seguir haciendo: Ritmo pausado y sobrio que permite retenciones superiores a 4 segundos en contenidos técnicos.
-- Dejar de hacer: Transiciones precipitadas en carruseles con alta carga de datos.
-- Probar: Aperturas con locución más firme en los primeros 2 segundos para elevar el visionado de las comparativas.
+- Seguir haciendo: Locución pausada en formatos técnicos donde se logró retención de hasta 7590 ms.
+- Dejar de hacer: Ritmos lentos en piezas sin gancho claro que provocan abandono inmediato (0 views/score).
+- Probar: Entrada tajante de voz y corte seco en el segundo 2 para retener antes de plantear la solución.
