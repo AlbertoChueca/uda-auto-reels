@@ -651,3 +651,18 @@ reviewer.RejectReel: diseño 7.4/10 (mínimo 8)
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Gancho inicial predecible para el perfil sénior.; Gráfica de barras estática al presentar importes.
 
+2026-10-22 22:26 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 268, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 7.0 · vídeo 7.0/10 (mínimo 8): 00:48: Discrepancia entre texto en pantalla y locución: el texto muestra «Repercútelo a tu cliente» y «Factura más», mientras que la voz dice «Repercutible a tu cliente» y «más facturación para tu estudio».
+
+2026-10-22 22:26 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 268, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 9.0 · vídeo 6.8/10 (mínimo 8): 00:35: La locución dice «la firma» y omite «y el visado» que figura en pantalla.; 00:38: Desfase temporal donde la voz narra el presupuesto 3 segundos antes de que aparezca el texto (00:41).
+
+2026-10-22 22:26 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 268, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 9.0 · vídeo 6.8/10 (mínimo 8): 00:11 La voz dice 'la firma' pero en pantalla figura 'La firma y el visado'.; 00:32 La voz menciona 'Proyecto de ejecución en 30 a 55 días' mientras en pantalla se lee 'Entrega por fases'.
+
