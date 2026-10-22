@@ -828,9 +828,10 @@ def _say_many(texts, speed, styles, one_take):
             if LOCK == "elevenlabs":
                 raise VoiceError(f"elevenlabs failed mid-reel: {str(e)[-200:]}")
             print("voice: elevenlabs failed, using gemini:", str(e)[-300:], flush=True)
-    if key and not _GOOGLE_OFF[0] and engine in ("gemini", "auto", "google") and LOCK in (None, "google"):
+    gkey = os.environ.get("GOOGLE_TTS_KEY") or key            # clave de Google Cloud con la API de Text-to-Speech
+    if gkey and not _GOOGLE_OFF[0] and engine in ("gemini", "auto", "google") and LOCK in (None, "google"):
         try:
-            clips = _google_many(texts, key, speed)
+            clips = _google_many(texts, gkey, speed)
             ENGINE_USED = LOCK = "google"
             print(f"voice: google {GOOGLE_TTS_VOICE} ({len(texts)} lines)", flush=True)
             return [polish(c, light=True) for c in clips]
