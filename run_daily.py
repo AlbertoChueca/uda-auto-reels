@@ -193,13 +193,15 @@ for fmt in chain:
             from concurrent.futures import ThreadPoolExecutor
             t_ = time.time()
             with ThreadPoolExecutor(3) as ex:              # foto, voz y textos de cierre A LA VEZ (antes, uno tras otro)
-                f_img = ex.submit(estudio.imagen_para, fmt, items, arms.get("estilo", "negro"), S, out[:-4])
+                def _timed(name, fn, *a):
+                    t0 = time.time(); r = fn(*a); tiempo(name, t0); return r
+                f_img = ex.submit(_timed, "foto", estudio.imagen_para, fmt, items, arms.get("estilo", "negro"), S, out[:-4])
                 f_gl = ex.submit(agents.growth_lines, S, fmt)
                 if fmt == "infografia":
                     voice.reset()
                     L_ = make_quiz.lines_for(fmt, items, S)
-                    f_vo = ex.submit(voice.say_many, [t for _, t, _ in L_], float(style.get("voice_speed") or 1.0),
-                                     [make_quiz.ONE_VOICE] * len(L_), True)
+                    f_vo = ex.submit(_timed, "voz", voice.say_many, [t for _, t, _ in L_],
+                                     float(style.get("voice_speed") or 1.0), [make_quiz.ONE_VOICE] * len(L_), True)
                 else:
                     f_vo = None
                 image, dinfo = f_img.result()
@@ -209,7 +211,7 @@ for fmt in chain:
                         f_vo.result(); pre_voice = True
                     except Exception as e:
                         print("voz anticipada fallida; se graba en el render:", str(e)[:150], flush=True)
-            tiempo("foto + voz + textos", t_)
+            tiempo(f"foto + voz + textos (voz: {voice.ENGINE_USED})", t_)
         t_ = time.time()
         meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"),
                                keep_voice=pre_voice)
