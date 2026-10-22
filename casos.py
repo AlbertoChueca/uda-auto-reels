@@ -168,7 +168,9 @@ def infografia(p, var, k=0):
     mm = f"{p['m2']:,}".replace(",", ".")
     torres = [dict(b[0], etiqueta="Estructuras e instalaciones"), dict(b[1], etiqueta="P. Ejecución completo"),
               dict(b[2], etiqueta="Básico + Ejecución")]
-    t = TESTIMONIOS[2] if k % 2 else TESTIMONIOS[1]                             # los que encajan con una voz masculina
+    t = TESTIMONIOS[2] if k % 2 else TESTIMONIOS[1]
+    t = {TESTIMONIOS[1]: "Se me hacía duro contratar a alguien para 3 meses y tener que despedirle. UDA me ayuda mucho en el día a día.",
+         TESTIMONIOS[2]: "Varias veces se me juntan varios proyectos de golpe. Desde que trabajo con UDA eso cambió y lo gestiono mejor y sin problemas."}[t]   # extracto literal: más ágil                             # los que encajan con una voz masculina
     datos = {
         "stack": {"titulo": "Tu estudio hoy", "nuevo": f"{corto} · {mm} m²"},
         "towers": {"titulo": f"{corto} de {mm} m² · cuánto cuesta delegar", "barras": torres,

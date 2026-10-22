@@ -369,11 +369,17 @@ class CompareCard:
         return im
 
 
-def brand_card(style, h=None):
+def brand_card(style, h=None, stage=9):
+    """stage: cuántos bloques se ven (0 logo y claim, 1-3 ventajas, 4 llamada a la acción, 5 web): el cierre se va
+    construyendo al ritmo de la voz en vez de soltar todo el texto de golpe."""
+    return _brand_card(style, h, stage)
+
+
+def _brand_card(style, h=None, stage=9):
     """Tarjeta final, como la cabecera de los documentos de UDA: bloque carbón, logotipo, claim y la web (solo hechos)."""
     if h is None:                                          # 1ª pasada: mide; 2ª: dibuja la tarjeta a su altura justa
-        probe = brand_card(style, 1400)
-        return brand_card(style, probe.info.get("used", 1400))
+        probe = _brand_card(style, 1400)
+        return _brand_card(style, probe.info.get("used", 1400), stage)
     im = Image.new("RGBA", (CARD_W, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle([0, 0, CARD_W - 1, h - 1], 12, fill=T.brand_bg, outline=T.card_outline if T.name == "negro" else None, width=2)
     d.rectangle([6, 0, CARD_W - 7, 8], fill=T.brand_rule)
@@ -382,17 +388,22 @@ def brand_card(style, h=None):
     y = 64 + lg.height + 44
     cl = fx.text_block("Seremos tu equipo técnico de confianza", F900, 50, 800, T.brand_ink, align="center")
     im.alpha_composite(cl, ((CARD_W - cl.width) // 2, y)); y += cl.height + 26
-    for v_ in M.VENTAJAS_CIERRE:                           # presupuesto en 24 h · repercutible al cliente · más facturación
+    for i_, v_ in enumerate(M.VENTAJAS_CIERRE):            # presupuesto en 24 h · repercutible al cliente · más facturación
         ic = fx.icon("check", 44, T.brand_sub); tx = fx.text_block(v_, F800, 38, 820, T.brand_ink)
         tw_ = 44 + 16 + max(int(fx.font(F800, 38).getlength(x)) for x in M.VENTAJAS_CIERRE); x_ = (CARD_W - tw_) // 2
-        im.alpha_composite(ic, (x_, y + 4)); im.alpha_composite(tx, (x_ + ic.width + 16, y)); y += 60
+        if stage >= i_ + 1:
+            im.alpha_composite(ic, (x_, y + 4)); im.alpha_composite(tx, (x_ + ic.width + 16, y))
+        y += 60
     y += 18
     p1 = fx.pill("AGENDA UNA REUNIÓN", 38, T.brand_pill, T.brand_pill_fg, padx=34, pady=15, radius=4)
-    im.alpha_composite(p1, ((CARD_W - p1.width) // 2, y)); y += p1.height + 10
     p1b = fx.text_block("para conocernos y crecer juntos", F800, 32, 700, T.brand_sub, align="center")
-    im.alpha_composite(p1b, ((CARD_W - p1b.width) // 2, y)); y += p1b.height + 16
+    if stage >= 4:
+        im.alpha_composite(p1, ((CARD_W - p1.width) // 2, y)); im.alpha_composite(p1b, ((CARD_W - p1b.width) // 2, y + p1.height + 10))
+    y += p1.height + 10 + p1b.height + 16
     p2 = fx.pill(M.WEB, 54, T.brand_web, T.brand_web_fg, padx=40, pady=16, radius=4)
-    im.alpha_composite(p2, ((CARD_W - p2.width) // 2, y)); y += p2.height + 24
+    if stage >= 5:
+        im.alpha_composite(p2, ((CARD_W - p2.width) // 2, y))
+    y += p2.height + 24
     im.info["used"] = y + 50                               # cierre limpio: sin textos de relleno
     return im
 
@@ -730,7 +741,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                        trampa=S.get("trampa") if fmt == "error_tipico" else None); say("rev", a + 0.15)
             if "ex" in A:
                 a = t; seg("explain", D["ex"] + 1.2); say("ex", a + 0.5)
-        a = t; seg("cta", max(4.8, D["cta"] + 1.8)); say("cta", a + 0.4)
+        a = t; seg("cta", max(4.2, D["cta"] + 1.0)); say("cta", a + 0.4)
         return SEG, VO, t
 
     SEG, VO, total = plan(count)
@@ -847,6 +858,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         if fmt == "caso_despacho" and hook_bg is None:
             scene_card = TextCard("CASO DE DESPACHO", S["escena"], None, body_size=58)
     brand = fx.shadowed(brand_card(st), alpha=70)
+    brands = [fx.shadowed(brand_card(st, stage=k), alpha=70) for k in range(6)]   # el cierre se construye por partes
     stamp_img = fx.pill(S.get("veredicto", "MITO"), 116, T.mito_col if S.get("veredicto") == "MITO" else T.real_col, WHITE if T.name != "negro" or S.get("veredicto") == "MITO" else NEGRO_,
                         padx=60, pady=26, outline=WHITE, radius=6) if fmt == "mito_realidad" else None
     n_items = len(items)
@@ -1027,7 +1039,9 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             s_ = sub_img("fin", tt)
             if s_ is not None: fx.paste_center(fr, s_, W / 2, 1260)
         elif kind == "cta":
-            fx.paste_center(fr, brand, W / 2, 330 + brand.height / 2 - 66, eob(lt / 0.4), min(1, lt / 0.2))
+            dcta = max(1.0, D.get("cta", 4.0))
+            stg = sum(1 for f_ in (0.22, 0.38, 0.52, 0.62, 0.78) if lt >= 0.4 + f_ * dcta)
+            fx.paste_center(fr, brands[stg], W / 2, 330 + brand.height / 2 - 66, eob(lt / 0.4), min(1, lt / 0.2))
             if st.get("share_line") and lt > 1.2 and fmt != "infografia":
                 fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1345,
                                 eob((lt - 1.2) / 0.35))

@@ -857,7 +857,7 @@ def _say_many(texts, speed, styles, one_take):
     gkey = os.environ.get("GOOGLE_TTS_KEY") or key            # clave de Google Cloud con la API de Text-to-Speech
     if gkey and not _GOOGLE_OFF[0] and engine in ("gemini", "auto", "google") and LOCK in (None, "google"):
         try:
-            clips = _google_many(texts, gkey, speed)
+            clips = _google_many(texts, gkey, max(float(speed or 1.0), 1.08))   # un punto más de ritmo: no decae
             ENGINE_USED = LOCK = "google"
             print(f"voice: google {GOOGLE_TTS_VOICE} ({len(texts)} lines)", flush=True)
             return [polish(c, light=True) for c in clips]
