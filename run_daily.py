@@ -238,6 +238,8 @@ for fmt in chain:
             tiempo(f"foto + voz + textos (voz: {voice.ENGINE_USED})", t_)
         review, art = {}, {}
         hook_i, cta_i = 0, 0
+        best = None                                        # mejor versión de las rondas (se publica si cumple el mínimo de reserva)
+        FLOOR = float(os.environ.get("REVIEW_FLOOR", "7.5"))
         for rnd in range(3 if HAS_AI else 1):              # render -> revisión -> ARREGLOS DIRIGIDOS -> render... (máx. 3)
             t_ = time.time()
             meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"),
@@ -263,6 +265,22 @@ for fmt in chain:
                   and not review.get("critical"))
             if ok:
                 caption = cap2
+                break
+            sc_ = (float(review.get("overall") or 0), float(art.get("overall") or 0))
+            if (not review.get("critical") and sc_[1] >= reviewer.MIN_SCORE and sc_[0] >= FLOOR
+                    and (best is None or sc_ > best[0])):
+                import shutil
+                for ext in (".mp4", ".txt", "_portada.jpg"):
+                    if os.path.exists(out[:-4] + ext):
+                        shutil.copy(out[:-4] + ext, out[:-4] + "_mejor" + ext)
+                best = (sc_, dict(meta), dict(review), dict(art), cap2)
+            if rnd == 2 and best is not None:              # ninguna ronda llegó al 8 en vídeo: se publica la mejor si no
+                import shutil                              # tiene defectos graves y su diseño es de 8 o más
+                for ext in (".mp4", ".txt", "_portada.jpg"):
+                    if os.path.exists(out[:-4] + "_mejor" + ext):
+                        shutil.copy(out[:-4] + "_mejor" + ext, out[:-4] + ext)
+                _, meta, review, art, caption = best
+                print(f"publico la mejor ronda: vídeo {review.get('overall')} · diseño {art.get('overall')}", flush=True)
                 break
             if review.get("critical") or rnd == 2:
                 raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "

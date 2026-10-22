@@ -490,8 +490,9 @@ def lines_for(fmt, items, S):
         L.append(("pu", S["puente"], ""))
     elif fmt == "infografia":
         G = S["infografia"]
-        for sc in G["orden"]:                              # UNA frase por escena (sus golpes van dentro, por palabras):
-            L.append((sc, " ".join(G["voz"][sc]), ""))     # menos cortes en la toma única = voz continua, sin saltos
+        for sc in G["orden"]:                              # un clip por golpe: cada texto aparece JUSTO cuando se dice
+            for k, t_ in enumerate(G["voz"][sc]):          # (la voz de Google tiene el mismo timbre en todos los clips)
+                L.append((f"{sc}{k}", t_, ""))
     elif fmt == "caso_coste":
         for k, b in enumerate(S["barras"]):
             L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
@@ -720,10 +721,10 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         elif fmt == "infografia":
             G = S["infografia"]
             for sc in G["orden"]:
-                lead = 0.5 / pace; a = t; say(sc, a + lead)
-                ws = [len(x.split()) for x in G["voz"][sc]]; tot = max(1, sum(ws))
-                starts = [lead + D[sc] * sum(ws[:k]) / tot for k in range(len(ws))]   # cada golpe, cuando se dice
-                dur = max(lead + D[sc] + 0.8 / pace, 4.0 if sc == "donut" else 0)    # ritmo: sin esperas al final
+                a = t; tt = a + 0.4 / pace; starts = []
+                for k in range(len(G["voz"][sc])):         # el golpe k aparece en el instante exacto en que empieza su frase
+                    starts.append(tt - a); say(f"{sc}{k}", tt); tt += D[f"{sc}{k}"] + 0.22 / pace
+                dur = max(tt - a + 0.7 / pace, 4.0 if sc == "donut" else 0)          # ritmo: sin esperas al final
                 seg("ig_" + sc, dur, starts=starts, cstart=starts[-1], bstart=starts[1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
