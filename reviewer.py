@@ -142,8 +142,9 @@ Fotogramas (en orden) del reel de hoy. Gancho: "{S.get('screen_hook')}". Tokens 
 {json.dumps({k: style.get(k) for k in ('screen_hook', 'caption_scale', 'follow_line', 'share_line')}, ensure_ascii=False)}
 
 Puntúa 1-10: gancho en pantalla, calidad de los textos (cortos, claros, tono profesional), tipografía y legibilidad en el móvil,
-todo dentro de la zona segura, acabado profesional, claridad de la pregunta y de la respuesta correcta, fuerza de la
-tarjeta final (seguir + compartir + web), probabilidad de que lo guarden.
+todo dentro de la zona segura, acabado profesional, claridad del mensaje (la ventaja de delegar en UDA), fuerza de la
+tarjeta final y probabilidad de que lo guarden. La tarjeta final lleva A PROPÓSITO una sola llamada a la acción («Agenda
+una reunión para conocernos y crecer juntos» + la web), sin «síguenos» ni «compártelo»: no lo penalices ni lo pidas.
 Propón mejoras SOLO con estos tokens (omite los que no cambies):
 - screen_hook: 2-6 palabras, sin emojis, sin datos nuevos (se muestra grande al principio)
 - caption_scale: 0.85-1.2 (tamaño de subtítulos)

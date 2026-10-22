@@ -501,6 +501,39 @@ def _clean_edges(a, text):
     return a
 
 
+# ------------------------------------------------------------------ Google Cloud Text-to-Speech (voz de España de verdad)
+# Voces Chirp 3 HD de es-ES: acento peninsular real (distinción z/c), MISMO timbre en todas las frases (no depende de un
+# prompt como Gemini) y rapidísimas. Usa la misma clave (GEMINI_API_KEY) si en su proyecto de Google Cloud está activada
+# la «Cloud Text-to-Speech API». Si no lo está, se usa Gemini como hasta ahora.
+GOOGLE_TTS_VOICE = os.environ.get("GOOGLE_TTS_VOICE", "es-ES-Chirp3-HD-Orus")
+_GOOGLE_OFF = [os.environ.get("GOOGLE_TTS") == "false"]
+
+
+def _google_line(text, key, speed=1.0):
+    import base64 as _b64, io, wave
+    body = {"input": {"text": text}, "voice": {"languageCode": "es-ES", "name": GOOGLE_TTS_VOICE},
+            "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": SR, "speakingRate": round(float(speed), 2)}}
+    for attempt in range(4):
+        r = requests.post("https://texttospeech.googleapis.com/v1/text:synthesize", params={"key": key}, json=body, timeout=60)
+        if r.status_code == 400 and "speakingRate" in json.dumps(body) and "rate" in r.text.lower():
+            body["audioConfig"].pop("speakingRate", None); continue
+        if r.status_code in (429, 500, 503):
+            time.sleep(3 * (attempt + 1)); continue
+        if r.status_code != 200:
+            raise RuntimeError(f"Google TTS {r.status_code}: {r.text[:200]}")
+        raw = _b64.b64decode(r.json()["audioContent"])
+        with wave.open(io.BytesIO(raw)) as w:
+            sr = w.getframerate(); pcm = np.frombuffer(w.readframes(w.getnframes()), dtype="<i2").astype(np.float32) / 32768
+        return _trim(_resample(pcm, sr))
+    raise RuntimeError("Google TTS no responde")
+
+
+def _google_many(texts, key, speed=1.0):
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(4) as ex:
+        return list(ex.map(lambda t: _google_line(t, key, speed), texts))
+
+
 def _gemini_line(text, style, key, pace):
     """Up to 3 takes with different prompt shapes. A take is accepted when it says the right words with a
     natural length; otherwise the best acceptable one is kept. Fails only if every take is clearly wrong."""
@@ -795,6 +828,17 @@ def _say_many(texts, speed, styles, one_take):
             if LOCK == "elevenlabs":
                 raise VoiceError(f"elevenlabs failed mid-reel: {str(e)[-200:]}")
             print("voice: elevenlabs failed, using gemini:", str(e)[-300:], flush=True)
+    if key and not _GOOGLE_OFF[0] and engine in ("gemini", "auto", "google") and LOCK in (None, "google"):
+        try:
+            clips = _google_many(texts, key, speed)
+            ENGINE_USED = LOCK = "google"
+            print(f"voice: google {GOOGLE_TTS_VOICE} ({len(texts)} lines)", flush=True)
+            return [polish(c, light=True) for c in clips]
+        except Exception as e:
+            if LOCK == "google":
+                raise VoiceError(f"google tts failed mid-reel: {str(e)[-200:]}")
+            _GOOGLE_OFF[0] = True
+            print("voice: Google Cloud TTS no disponible (¿API sin activar?), uso Gemini:", str(e)[-300:], flush=True)
     allow_gemini = (key and engine in ("gemini", "auto", "chatterbox", "elevenlabs") and os.environ.get("VOICE_NO_GEMINI") != "1"
                     and LOCK in (None, "gemini"))
     allow_cb = os.path.exists(CB_PY) and engine != "kokoro" and LOCK in (None, "local", "chatterbox")
@@ -826,4 +870,4 @@ def _say_many(texts, speed, styles, one_take):
 
 def next_engine():
     """Engine to force after a VoiceError."""
-    return {"elevenlabs": "gemini", "gemini": "local", "chatterbox": "kokoro"}.get(LOCK, "kokoro")
+    return {"elevenlabs": "gemini", "google": "gemini", "gemini": "local", "chatterbox": "kokoro"}.get(LOCK, "kokoro")

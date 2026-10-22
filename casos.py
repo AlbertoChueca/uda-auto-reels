@@ -200,7 +200,7 @@ def infografia(p, var, k=0):
         "stack": ["Tu equipo ya tiene tres encargos en marcha. Y entra otro."],
         "towers": [f"Solo estructuras e instalaciones: {b[0]['texto']}.", f"El proyecto de ejecución completo: {b[1]['texto']}.",
                    f"Básico y ejecución: {b[2]['texto']}.", "Tú eliges cuánto delegas."],
-        "versus": ["Un empleado: de 40.000 a 47.000 € al año, haya proyectos o no.",
+        "versus": ["Un arquitecto en plantilla: de 40.000 a 47.000 € al año, haya proyectos o no.",
                    f"Delegar este proyecto: {b[2]['texto']}, una sola vez."],
         "cargas": ["Y no es solo dinero.", "Hay que formarle.", "Puede coger una baja.",
                    "Le pagas aunque no haya trabajo.", "Y despedir duele.", "Con UDA, nada de eso."],
