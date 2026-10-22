@@ -94,7 +94,8 @@ class GradientBG:
 class ImageBG:
     """Imagen original de fondo: movimiento lento tipo Ken Burns, oscurecida (carbón) para que las tarjetas se lean."""
 
-    def __init__(self, img, dark=0.55, blur=6):
+    def __init__(self, img, dark=0.55, blur=6, punch=0.0):
+        self.punch = punch                          # acercamiento rápido al principio (gancho con movimiento)
         im = img.convert("RGB")
         r = max(W * 1.12 / im.width, H * 1.12 / im.height)
         im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1), Image.LANCZOS)
@@ -103,7 +104,7 @@ class ImageBG:
         self.soft = Image.blend(soft, Image.new("RGB", soft.size, CARBON_D), dark)
 
     def frame(self, t, sharp=False):
-        q = (round(t * 8) / 8, sharp)                # Ken Burns lentísimo: 8 cálculos por segundo son suficientes
+        q = (round(t * (25 if self.punch else 8)) / (25 if self.punch else 8), sharp)   # lento: 8 cálculos/s; gancho: 25
         if getattr(self, "_last", (None,))[0] == q:
             return self._last[1].copy()
         im = self._frame(q[0], sharp)
@@ -112,7 +113,7 @@ class ImageBG:
 
     def _frame(self, t, sharp=False):
         src = self.sharp if sharp else self.soft
-        z = 1.0 + 0.05 * (0.5 - 0.5 * math.cos(min(t, 60) / 60 * math.pi))
+        z = 1.0 + 0.05 * (0.5 - 0.5 * math.cos(min(t, 60) / 60 * math.pi)) + self.punch * (1 - (1 - min(t, 4) / 4) ** 2)
         vw, vh = src.width / 1.12 / z, src.height / 1.12 / z
         x0 = (src.width - vw) / 2 + 20 * math.sin(t * 0.05); y0 = (src.height - vh) / 2
         return src.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((W, H), Image.BILINEAR).convert("RGBA")

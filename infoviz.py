@@ -108,13 +108,13 @@ def scene_towers(T, d, lt, starts, cstart):
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
     y = _label(T, d["titulo"], TOP + 20, c, clamp(lt / 0.3))
     bars = d["barras"]; n = len(bars)
-    base = 1290; hmax = base - y - 250
+    base = 1230; hmax = base - y - 250
     vmax = max(b["valor"] for b in bars)
-    bw = 210; gap = (W - 120 - n * bw) / max(1, n - 1)
-    dr.line([(60, base), (W - 60, base)], fill=tuple(T.label[:3]) + (180,), width=3)
+    bw = 200; gap = (W - 220 - n * bw) / max(1, n - 1)
+    dr.line([(100, base), (W - 100, base)], fill=tuple(T.label[:3]) + (180,), width=3)
     for k, b in enumerate(bars):
         p = clamp((lt - starts[k]) / 1.0)
-        x = 60 + k * (bw + gap)
+        x = 110 + k * (bw + gap)
         hh = max(6, hmax * b["valor"] / vmax * eo(p))
         top = base - hh
         hot = k == n - 1 or d.get("hot") == k
@@ -142,13 +142,13 @@ def scene_versus(T, d, lt, b_start):
     """d = {"a_tit","a_num","a_txt","b_tit","b_num","b_txt"} (a = contratar, gris; b = delegar, oro)."""
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
     y = _label(T, d.get("titulo", "Contratar o delegar"), TOP + 20, c, clamp(lt / 0.3))
-    cw = 470; top = y + 30; bot = 1400
+    cw = 420; top = y + 30; bot = 1400                 # márgenes laterales: fuera de los botones de la app
     for side in (0, 1):
         st = 0.1 if side == 0 else b_start
         p = eo(clamp((lt - st) / 0.5))
         if p <= 0:
             continue
-        x = 40 if side == 0 else W - 40 - cw
+        x = 100 if side == 0 else W - 100 - cw
         x += (-1 if side == 0 else 1) * (1 - p) * 120
         gold = side == 1
         box = [x, top, x + cw, bot]
@@ -164,12 +164,12 @@ def scene_versus(T, d, lt, b_start):
         num = d["b_num" if gold else "a_num"]
         pn = clamp((lt - st - 0.3) / 1.0)
         shown = num
-        nm = _txt(shown, 84 if len(num) < 10 else 44, cw - 100, T.ink)
+        nm = _txt(shown, 84 if len(num) < 10 else 42, cw - 30, T.ink)
         _paste(c, nm, x + cw / 2, top + 380 + (1 - eo(pn)) * 20, clamp(pn * 1.5))
         sub = _txt(d["b_txt" if gold else "a_txt"], 40, cw - 70, T.ink if gold else (150, 146, 138), bold=False)
         _paste(c, sub, x + cw / 2, top + 560, clamp((lt - st - 0.6) / 0.4))
         mark = fx.icon("check" if gold else "cross", 90, T.label if gold else (130, 126, 120))
-        c.alpha_composite(mark, (int(x + cw / 2 - 45), int(bot - 150)))
+        c.alpha_composite(mark, (int(x + cw / 2 - 45), int(bot - 120)))
     p = eob(clamp((lt - b_start + 0.2) / 0.4))
     if p > 0:
         r = 70 * p
@@ -254,7 +254,7 @@ def scene_delegable(T, d, lt, b_start):
     """Qué delegas (oro, ✓) y qué sigue siendo tuyo (crema, pluma): d = {"si": [...], "no": [...]}."""
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
     y = _label(T, d.get("titulo", "Qué delegas y qué sigue siendo tuyo"), TOP + 20, c, clamp(lt / 0.3))
-    x0, x1 = 70, W - 70
+    x0, x1 = 100, W - 100
     # bloque 1: lo que delegas
     p = eo(clamp((lt - 0.2) / 0.4))
     _panel(c, [x0, y + 10, x1, y + 10 + 110 + 82 * len(d["si"])], T)
@@ -288,7 +288,7 @@ def scene_cargas(T, d, lt, starts):
     starts: [titular, formar, baja, nómina, despido, uda]"""
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
     y = _label(T, d.get("titulo", "Y no es solo dinero"), TOP + 20, c, clamp(lt / 0.3))
-    tw, th, gap = 470, 380, 24
+    tw, th, gap = 430, 380, 24
     x0 = (W - 2 * tw - gap) / 2; y0 = y + 20
     grey = (190, 184, 172)
     done = lt >= starts[-1] if len(starts) > 5 else False

@@ -141,7 +141,7 @@ TESTIMONIOS = [
 VARIANTES = {
     "caso": ("CUÁNTO CUESTA DELEGAR", None, None, ["towers", "versus", "cargas"]),
     "contratar": ("CONTRATAR O DELEGAR", "¿Contratar o delegar?",
-                  "¿Contratas a alguien o delegas el proyecto? Haz números.", ["versus", "cargas", "quote"]),
+                  "¿Contratas a alguien o delegas el proyecto? Haz números.", ["versus", "cargas", "delegable"]),
     "delegable": ("QUÉ PUEDES DELEGAR", "¿Qué puedes delegar?",
                   "¿Qué parte de un proyecto puedes delegar sin perder el control?", ["delegable", "towers", "timeline"]),
     "tiempo": ("MÁS TIEMPO PARA TU ESTUDIO", "¿Te faltan horas?",
@@ -178,7 +178,7 @@ def infografia(p, var, k=0):
         # contratar = coste anual de la tabla (40.000–47.000 €/año, haya proyectos o no): delegar SIEMPRE sale muy por debajo
         "versus": {"titulo": "Contratar o delegar", "a_tit": "Un arquitecto en plantilla", "a_num": "40.000–47.000 €",
                    "a_txt": "al año, haya proyectos o no", "b_tit": "Delegar en UDA", "b_num": b[2]["texto"],
-                   "b_txt": "Básico + Ejecución, una sola vez"},
+                   "b_txt": "una sola vez, proyecto completo"},
         # lo que no sale en la nómina (tabla, apartado 01, y testimonio de la web)
         "cargas": {"titulo": "Y no es solo dinero", "items": [
             ("doc", "Hay que formarle", "meses enseñándole tus plantillas"),
@@ -187,7 +187,7 @@ def infografia(p, var, k=0):
             ("team", "Despedir duele", "también emocionalmente")], "uda": "Con UDA, nada de eso"},
         # qué se puede delegar y qué no (tabla, apartado 09)
         "delegable": {"titulo": "Qué delegas y qué sigue siendo tuyo",
-                      "si": ["Planos en CAD o Revit", "Estructuras con CYPE", "Instalaciones", "Memorias", "Mediciones y presupuesto"],
+                      "si": ["Planos en CAD o Revit", "Estructuras con CYPE", "Instalaciones", "Memorias y mediciones"],
                       "no": ["El diseño", "La firma y el visado", "La dirección de obra"]},
         "donut": {"pct": 67, "prefijo": "hasta un", "texto": "más de tiempo para actividades de valor",
                   "titulo": "Lo que ganan los estudios que externalizan", "fuente": "uniondearquitectos.com"},

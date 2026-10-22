@@ -664,7 +664,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         def say(k, at):
             VO[k] = at
 
-        seg("hook", max(2.8, D["hook"] + 0.95)); say("hook", 0.25)        # aire tras el gancho: sin cortes bruscos
+        seg("hook", max(2.4, D["hook"] + 0.6)); say("hook", 0.2)          # gancho ágil, sin quedarse quieto
         if fmt == "repaso_express":
             pause = max(1.2, min(2.5, count / 3))
             for i in range(len(items)):
@@ -793,7 +793,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
 
     # ---- elementos visuales
     bg = T.background(rng.randint(0, 999), image)
-    hook_bg = themes.ImageBG(image, dark=0.25, blur=0) if image is not None else None
+    hook_bg = themes.ImageBG(image, dark=0.25, blur=0, punch=0.10) if image is not None else None   # zoom de entrada
     ig_bg = themes.ImageBG(image, dark=0.80, blur=16) if image is not None else None      # fondo de las infografías
     corto = QB.tema_corto(P.get("tema"))
     extra = corto if len(corto) <= 26 and fmt not in ("simulacro_3", "delegar", "uda_servicio", "caso_coste") else None
