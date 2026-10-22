@@ -219,6 +219,10 @@ for fmt in chain:
         if HAS_AI:
             import reviewer, agents
             from concurrent.futures import ThreadPoolExecutor
+            style["screen_hook"] = S.get("screen_hook")    # el revisor ve el gancho real (no un campo vacío)
+            if fmt == "infografia":
+                for k_ in ("follow_line", "share_line"):   # el cierre de las infografías no los usa
+                    style.pop(k_, None)
             t_ = time.time()
             with ThreadPoolExecutor(2) as ex:              # diseño y vídeo se revisan a la vez
                 f_art = ex.submit(reviewer.art_direct, out, S, style, meta["timeline"], meta["duration"])

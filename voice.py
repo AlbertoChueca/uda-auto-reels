@@ -565,8 +565,43 @@ def _split_takes(a, texts):
     parts = [_clean_edges(_tighten(_trim(a[edges[k]:edges[k + 1]])), texts[k]) for k in range(n)]
     for p, t in zip(parts, texts):
         sim = _similarity(p, t)
-        if not _sane(p, t, 3.2) or (sim is not None and sim < 0.75) or problem(p, t):
+        if not _sane(p, t, 3.2) or (sim is not None and sim < 0.75) or problem(p, t, soft_ok=True):
             raise RuntimeError("split pieces do not match the text")
+    return parts
+
+
+def _split_by_asr(a, texts):
+    """Corta la toma única por las palabras que se oyen (marcas de tiempo del reconocedor), no por pausas: sirve cuando
+    entre dos frases apenas hay silencio. Corta a mitad del hueco entre la última palabra de una frase y la siguiente."""
+    import difflib
+    heard = _asr(a)
+    if not heard:
+        raise RuntimeError("sin reconocedor para cortar la toma")
+    hw = [_norm(w) for w, _, _ in heard]
+    sw, owner = [], []
+    for k, t in enumerate(texts):
+        for w in spoken_text(t).split():
+            n = _norm(w)
+            if n:
+                sw.append(n); owner.append(k)
+    sm = difflib.SequenceMatcher(None, sw, hw, autojunk=False)
+    last_end = {}
+    first_start = {}
+    for blk in sm.get_matching_blocks():
+        for j in range(blk.size):
+            k = owner[blk.a + j]; _, s0, e0 = heard[blk.b + j]
+            last_end[k] = max(last_end.get(k, 0), e0)
+            first_start[k] = min(first_start.get(k, 1e9), s0)
+    cuts = []
+    for k in range(len(texts) - 1):
+        if k not in last_end or (k + 1) not in first_start or first_start[k + 1] < last_end[k]:
+            raise RuntimeError("no se puede alinear la toma con el guion")
+        cuts.append(int(SR * (last_end[k] + first_start[k + 1]) / 2))
+    edges = [0] + cuts + [len(a)]
+    parts = [_clean_edges(_tighten(_trim(a[edges[k]:edges[k + 1]])), texts[k]) for k in range(len(texts))]
+    for p, t in zip(parts, texts):
+        if not _sane(p, t, 3.2) or problem(p, t, soft_ok=True):
+            raise RuntimeError("los trozos alineados no coinciden con el texto")
     return parts
 
 
@@ -585,7 +620,11 @@ def _gemini_many(texts, styles, key, one_take, pace):
                 raise RuntimeError("one take far too long (model added extra speech)")
             if problem(take, " ".join(texts)):
                 raise RuntimeError("one take includes repeated or extra words")
-            return _split_takes(take, texts)
+            try:
+                return _split_takes(take, texts)
+            except RuntimeError as e_:
+                print("voice: corte por pausas fallido, corto por palabras:", str(e_)[:120], flush=True)
+                return _split_by_asr(take, texts)
         except Exception as e:
             if "unreachable" in str(e) or "no Gemini TTS" in str(e):
                 raise

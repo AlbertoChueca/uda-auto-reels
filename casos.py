@@ -145,7 +145,7 @@ VARIANTES = {
     "delegable": ("QUÉ PUEDES DELEGAR", "¿Qué puedes delegar?",
                   "¿Qué parte de un proyecto puedes delegar sin perder el control?", ["delegable", "towers", "timeline"]),
     "tiempo": ("MÁS TIEMPO PARA TU ESTUDIO", "¿Te faltan horas?",
-               "¿Te faltan horas para proyectar y atender a tus clientes?", ["stack", "donut", "towers"]),
+               "¿Te faltan horas para proyectar y atender a tus clientes?", ["stack", "delegable", "towers"]),
     "proceso": ("CÓMO TRABAJAMOS", "Así se delega un proyecto", "Así se delega un proyecto, paso a paso.",
                 ["timeline", "delegable", "versus"]),
     "testimonio": ("LO QUE DICEN LOS ESTUDIOS", "Lo que cambia al delegar",
@@ -175,7 +175,7 @@ def infografia(p, var, k=0):
                    "conclusion": "Tú eliges cuánto delegas"},
         # contratar = coste anual de la tabla (40.000–47.000 €/año, haya proyectos o no): delegar SIEMPRE sale muy por debajo
         "versus": {"titulo": "Contratar o delegar", "a_tit": "Un arquitecto en plantilla", "a_num": "40.000–47.000 €",
-                   "a_txt": "al año, haya proyectos o no", "b_tit": f"Delegar {corto.lower()} de {mm} m²", "b_num": b[2]["texto"],
+                   "a_txt": "al año, haya proyectos o no", "b_tit": "Delegar en UDA", "b_num": b[2]["texto"],
                    "b_txt": "Básico + Ejecución, una sola vez"},
         # lo que no sale en la nómina (tabla, apartado 01, y testimonio de la web)
         "cargas": {"titulo": "Y no es solo dinero", "items": [

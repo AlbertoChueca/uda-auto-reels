@@ -459,9 +459,8 @@ def lines_for(fmt, items, S):
         L.append(("conc", S["conclusion"], "emphatic, confident conclusion"))
     elif fmt == "infografia":
         G = S["infografia"]
-        for sc in G["orden"]:                              # cada escena: sus frases (claves: towers0, towers1...)
-            for k, t_ in enumerate(G["voz"][sc]):
-                L.append((f"{sc}{k}", t_, ""))
+        for sc in G["orden"]:                              # UNA frase por escena (sus golpes van dentro, por palabras):
+            L.append((sc, " ".join(G["voz"][sc]), ""))     # menos cortes en la toma única = voz continua, sin saltos
     elif fmt == "caso_coste":
         for k, b in enumerate(S["barras"]):
             L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
@@ -683,10 +682,10 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         elif fmt == "infografia":
             G = S["infografia"]
             for sc in G["orden"]:
-                a = t; tt = a + 0.5; starts = []
-                for k in range(len(G["voz"][sc])):
-                    starts.append(tt - a); say(f"{sc}{k}", tt); tt += D[f"{sc}{k}"] + (0.3 if sc == "cargas" else 0.4)
-                dur = max(tt - a + 1.2, 0, 4.0 if sc == "donut" else 0)
+                a = t; say(sc, a + 0.5)
+                ws = [len(x.split()) for x in G["voz"][sc]]; tot = max(1, sum(ws))
+                starts = [0.5 + D[sc] * sum(ws[:k]) / tot for k in range(len(ws))]   # cada golpe, cuando se dice
+                dur = max(0.5 + D[sc] + 1.3, 4.0 if sc == "donut" else 0)
                 seg("ig_" + sc, dur, starts=starts, cstart=starts[-1], bstart=starts[1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
@@ -931,15 +930,15 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         else:
             fr = bg.frame(tt)
         if kind != "cta":
-            fx.paste_center(fr, bdg, 60 + bdg.width / 2, 312, alpha=eo(tt / 0.4))
-            fx.paste_center(fr, web_dark if (kind in ("hook", "scene") and hook_bg is not None) else web_img, W / 2, 222)
+            fx.paste_center(fr, bdg, 60 + bdg.width / 2, 352, alpha=eo(tt / 0.4))          # dentro de la zona segura
+            fx.paste_center(fr, web_dark if (kind in ("hook", "scene") and hook_bg is not None) else web_img, W / 2, 288)
         if kind == "hook":
             y_h = 860 if hook_bg is not None else 820
             fx.paste_center(fr, hook_logo_img if hook_bg is not None else hook_logo, W / 2, y_h - hook_img.height / 2 - 120,
                             alpha=min(1, lt / 0.3))
             fx.paste_center(fr, hook_img, W / 2, y_h, eob(lt / 0.35), min(1, lt / 0.15))
             s_ = sub_img("hook", tt, dark=hook_bg is not None)
-            if s_ is not None: fx.paste_center(fr, s_, W / 2, 1300)
+            if s_ is not None: fx.paste_center(fr, s_, W / 2, 1190)     # lejos de la franja de la interfaz
         elif kind == "scene":
             if scene_card is not None:
                 img = scene_card.render(lit=lit("esc", tt)); im_, y, p = card_at(img, tt, sg["a"])
