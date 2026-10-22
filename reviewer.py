@@ -191,7 +191,11 @@ def review_video(path, S, caption):
         data = base64.b64encode(open(small, "rb").read()).decode()
         first, rest = (caption.split("\n", 1) + [""])[:2]
         res = _ask([{"text": f"""{PRODUCER}
-Mira este reel terminado (3 claves, comparativa a dos columnas, dato de proyecto, mito o caso de despacho; cierre con la marca).
+Mira este reel terminado (infografía animada sobre delegar en UDA: costes, contratar o delegar, qué se delega, proceso o
+testimonio; cierre con la marca). La locución es A PROPÓSITO una voz sintética de alta calidad (Google, español de España):
+no hay locutor humano, así que NO restes puntos por «suena sintética» o «cadencia de TTS»; sí por acento no peninsular,
+palabras mal dichas, cortes, saltos de timbre o un tono claramente robótico. Las infografías con cifras son el formato
+elegido: valora si se entienden, no las penalices por llevar datos.
 Debe sentirse PREMIUM y elegante, para fundadores de despachos: ni repaso de examen ni anuncio de teletienda. Gancho: {S.get('screen_hook')!r}.
 Primera línea actual de la descripción: {first!r}
 
