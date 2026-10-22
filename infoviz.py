@@ -94,7 +94,10 @@ def scene_stack(T, d, lt):
             c.alpha_composite(g, (int(bx + tw / 2 - g.width / 2), int(by + th / 2 - g.height / 2)))
             dr.rounded_rectangle(box, 10, fill=(30, 27, 20, 245), outline=T.label, width=4)
             c.alpha_composite(_txt("NUEVO", 40, 300, T.label, align="left"), (int(bx + 36), int(by + 36)))
-            c.alpha_composite(_txt(d["nuevo"], 46, tw - 150, T.ink, align="left"), (int(bx + 36), int(by + 96)))
+            sz = 46
+            while sz > 30 and max(fx.font(F_BOLD, sz).getlength(w_) for w_ in d["nuevo"].split()) > tw - 150:
+                sz -= 2                                         # ninguna palabra se sale de la tarjeta («Equipamiento»)
+            c.alpha_composite(_txt(d["nuevo"], sz, tw - 150, T.ink, align="left"), (int(bx + 36), int(by + 96)))
             q = fx.font(F_BOLD, 150); dr.text((bx + tw - 130, by + th - 190), "?", font=q, fill=T.label)
     return c
 

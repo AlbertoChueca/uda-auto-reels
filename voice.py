@@ -301,7 +301,7 @@ def _trim(a):
         return a
     thr = max(0.01, 0.04 * float(np.max(np.abs(a))))
     nz = np.nonzero(np.abs(a) > thr)[0]
-    return a[max(0, nz[0] - 240): nz[-1] + 1600] if len(nz) else a
+    return a[max(0, nz[0] - 1440): nz[-1] + 1600] if len(nz) else a      # 60 ms antes: no se come la primera consonante
 
 
 def _tighten(a, max_gap=0.45):

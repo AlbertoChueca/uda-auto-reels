@@ -61,7 +61,7 @@ jobs:
 
       - name: Paquetes del sistema
         if: steps.slot.outputs.slot != 'skip'
-        run: command -v ffmpeg >/dev/null && command -v espeak-ng >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg espeak-ng)
+        run: command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)   # sin espeak-ng: su instalación tardaba hasta 30 min y Piper ya trae sus datos
 
       - name: Paquetes de Python
         if: steps.slot.outputs.slot != 'skip'
