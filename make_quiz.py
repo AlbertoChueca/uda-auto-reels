@@ -31,11 +31,11 @@ BADGE = {"render": "CURIOSIDADES DE ARQUITECTURA", "caso_coste": "CUÁNTO CUESTA
          "norma_30s": "NORMATIVA EN 30 SEGUNDOS", "simulacro_3": "TEST RÁPIDO", "caso_despacho": "CASO DE DESPACHO",
          "checklist": "CHECKLIST DE PROYECTO", "delegar": "CONTRATAR O DELEGAR", "uda_servicio": "ASÍ TRABAJA UDA",
          "repaso_express": "REPASO EXPRÉS"}
-DEFAULT_STYLE = {"caption_scale": 1.0, "screen_hook": "", "follow_line": "Síguenos: normativa y oficio cada día",
+DEFAULT_STYLE = {"caption_scale": 1.0, "screen_hook": "", "follow_line": "Síguenos para hacer crecer tu estudio",
                  "share_line": "Envíaselo a tu socio del despacho", "save_line": "", "reto_line": "", "series": ""}
 TAGS_FIXED = ["#arquitectura", "#arquitectos"]
-TAGS_ROT = ["#CTE", "#normativa", "#proyectodeejecucion", "#despachodearquitectura", "#arquitecturaespaña", "#BIM", "#Revit",
-            "#arquitectostecnicos", "#edificacion"]
+TAGS_ROT = ["#proyectodeejecucion", "#despachodearquitectura", "#arquitecturaespaña", "#BIM", "#Revit", "#estudiodearquitectura",
+            "#proyectobasico", "#arquitectosespaña", "#externalizacion"]
 T = themes.get("negro")
 NEGRO_ = fx.NEGRO
 
@@ -619,7 +619,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     P = items[0]
     count = 5 if fmt == "simulacro_3" else THINK.get(arms.get("think_time"), 7)
     L = lines_for(fmt, items, S)
-    speed = float(st.get("voice_speed") or 1.0)
+    pace = float(st.get("pace") or 1.0)                 # ritmo (lo sube el bucle de mejora si el revisor lo pide)
+    speed = float(st.get("voice_speed") or 1.0) * pace
 
     if not keep_voice:
         voice.reset()                    # reel nuevo: elige la mejor voz y úsala en todas las frases
@@ -686,7 +687,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         def say(k, at):
             VO[k] = at
 
-        seg("hook", max(2.4, D["hook"] + 0.6)); say("hook", 0.2)          # gancho ágil, sin quedarse quieto
+        seg("hook", max(2.2, D["hook"] + 0.6 / pace)); say("hook", 0.2)   # gancho ágil, sin quedarse quieto
         if fmt == "repaso_express":
             pause = max(1.2, min(2.5, count / 3))
             for i in range(len(items)):
@@ -719,10 +720,10 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         elif fmt == "infografia":
             G = S["infografia"]
             for sc in G["orden"]:
-                a = t; say(sc, a + 0.5)
+                lead = 0.5 / pace; a = t; say(sc, a + lead)
                 ws = [len(x.split()) for x in G["voz"][sc]]; tot = max(1, sum(ws))
-                starts = [0.5 + D[sc] * sum(ws[:k]) / tot for k in range(len(ws))]   # cada golpe, cuando se dice
-                dur = max(0.5 + D[sc] + 0.8, 4.0 if sc == "donut" else 0)          # ritmo: sin esperas al final
+                starts = [lead + D[sc] * sum(ws[:k]) / tot for k in range(len(ws))]   # cada golpe, cuando se dice
+                dur = max(lead + D[sc] + 0.8 / pace, 4.0 if sc == "donut" else 0)    # ritmo: sin esperas al final
                 seg("ig_" + sc, dur, starts=starts, cstart=starts[-1], bstart=starts[1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
@@ -819,7 +820,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
 
     # ---- elementos visuales
     bg = T.background(rng.randint(0, 999), image)
-    hook_bg = themes.ImageBG(image, dark=0.25, blur=0, punch=0.10) if image is not None else None   # zoom de entrada
+    hook_bg = themes.ImageBG(image, dark=0.25, blur=0, punch=0.16 if st.get("motion") else 0.10) if image is not None else None
     ig_bg = themes.ImageBG(image, dark=0.80, blur=16) if image is not None else None      # fondo de las infografías
     imgs_r = [im_ for im_ in (images or []) if im_ is not None] or ([image] if image is not None else [])
     r_bgs = [themes.ImageBG(im_, dark=0.22, blur=0, punch=0.08) for im_ in imgs_r]           # renders a pantalla completa
@@ -1070,8 +1071,9 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             fx.paste_center(fr, tx, W / 2, 900 + tx.height / 2 * 0, p_, clamp(lt / 0.25))
         elif kind.startswith("ig_"):
             import infoviz as IV
-            ov = IV.render(T, kind[3:], S["infografia"]["datos"][kind[3:]], lt, sg)
-            fr.alpha_composite(ov)
+            ov = IV.render(T, kind[3:], dict(S["infografia"]["datos"][kind[3:]], compact=bool(st.get("compact"))), lt, sg)
+            mv = (22 if st.get("motion") else 12) * eo(clamp(lt / max(1.0, sg["b"] - sg["a"])))   # la escena nunca está quieta
+            fr.alpha_composite(ov, (0, -int(mv)))
         elif kind == "chart":
             grow = [clamp((tt - s0) / 0.9) for s0 in sg["starts"]]
             img = chart.render(grow=grow, show_conc=clamp((tt - sg["cstart"]) / 0.3), lit=lit("conc", tt))

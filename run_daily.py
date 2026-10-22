@@ -15,7 +15,7 @@ Cada ejecución:
 Si un formato no puede salir (sin piezas verificadas, guion rechazado, Gemini caído...), prueba el siguiente formato
 de la cadena, así que siempre sale algo correcto o no sale nada (nunca algo sin verificar).
 """
-import datetime, json, os, sys, time, traceback
+import datetime, json, os, re, sys, time, traceback
 
 import questions as QB
 
@@ -236,44 +236,60 @@ for fmt in chain:
                     except Exception as e:
                         print("voz anticipada fallida; se graba en el render:", str(e)[:150], flush=True)
             tiempo(f"foto + voz + textos (voz: {voice.ENGINE_USED})", t_)
-        t_ = time.time()
-        meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"),
-                               keep_voice=pre_voice, images=images if fmt == "render" else None)
-        tiempo("render", t_)
-        caption = open(out.replace(".mp4", ".txt")).read()
         review, art = {}, {}
-        if HAS_AI:
+        hook_i, cta_i = 0, 0
+        for rnd in range(3 if HAS_AI else 1):              # render -> revisión -> ARREGLOS DIRIGIDOS -> render... (máx. 3)
+            t_ = time.time()
+            meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"),
+                                   keep_voice=pre_voice, images=images if fmt == "render" else None)
+            tiempo(f"render (ronda {rnd + 1})", t_)
+            caption = open(out.replace(".mp4", ".txt")).read()
+            if not HAS_AI:
+                break
             import reviewer, agents
             from concurrent.futures import ThreadPoolExecutor
             style["screen_hook"] = S.get("screen_hook")    # el revisor ve el gancho real (no un campo vacío)
-            if fmt == "infografia":
-                for k_ in ("follow_line", "share_line"):   # el cierre de las infografías no los usa
+            if fmt in ("infografia", "render"):
+                for k_ in ("follow_line", "share_line"):   # el cierre de estos formatos no los usa
                     style.pop(k_, None)
             t_ = time.time()
             with ThreadPoolExecutor(2) as ex:              # diseño y vídeo se revisan a la vez
                 f_art = ex.submit(reviewer.art_direct, out, S, style, meta["timeline"], meta["duration"])
                 f_rev = ex.submit(reviewer.review_video, out, S, caption)
                 new_style, art = f_art.result()
-                try:
-                    rev_first = ("ok", f_rev.result())
-                except Exception as e:
-                    rev_first = ("err", e)
-            tiempo("revisiones", t_)
+                cap2, review = f_rev.result()
+            tiempo(f"revisiones (ronda {rnd + 1}): diseño {art.get('overall')} · vídeo {review.get('overall')}", t_)
+            ok = (float(art.get("overall") or 0) >= reviewer.MIN_SCORE and float(review.get("overall") or 0) >= reviewer.MIN_SCORE
+                  and not review.get("critical"))
+            if ok:
+                caption = cap2
+                break
+            if review.get("critical") or rnd == 2:
+                raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+                                          f"{reviewer.MIN_SCORE:g}): {'; '.join((review.get('issues') or [])[:3])}")
+            # arreglos dirigidos según lo que piden los revisores (no se tira el reel: se corrige y se vuelve a revisar)
+            txt_ = " ".join(str(x) for x in (review.get("issues") or []) + (review.get("suggestions") or [])
+                            + (art.get("issues") or [])).lower()
+            fixes = []
             if new_style:
-                print("director de arte: vuelvo a renderizar con", {k: v for k, v in new_style.items() if style.get(k) != v}, flush=True)
-                style = new_style
-                meta = make_quiz.build(fmt, items, S, seed, out, arms, style, keep_voice=True, image=image,
-                                       estilo=arms.get("estilo"))                  # voz en caché: no se regraba
-                caption = open(out.replace(".mp4", ".txt")).read()
-                _, art = reviewer.art_direct(out, S, style, meta["timeline"], meta["duration"])   # nueva nota
-            if art and float(art.get("overall") or 0) < reviewer.MIN_SCORE:
-                raise reviewer.RejectReel(f"diseño {art.get('overall')}/10 (mínimo {reviewer.MIN_SCORE:g})")
-            if new_style:                                  # se volvió a renderizar: hay que revisar el vídeo nuevo
-                caption, review = reviewer.review_video(out, S, caption)          # RejectReel -> siguiente formato
-            elif rev_first[0] == "err":
-                raise rev_first[1]
-            else:
-                caption, review = rev_first[1]
+                for k_ in ("caption_scale",):
+                    if new_style.get(k_) and new_style.get(k_) != style.get(k_):
+                        style[k_] = new_style[k_]; fixes.append(k_)
+            hooks_ = (S.get("infografia") or {}).get("hooks") or []
+            if re.search(r"gancho|hook|primer(os)? segundo|tarda en|genéric|predecible", txt_) and hook_i + 1 < len(hooks_):
+                hook_i += 1; S["screen_hook"], S["hook_line"] = hooks_[hook_i]; style["screen_hook"] = S["screen_hook"]
+                fixes.append("gancho")
+            if re.search(r"ritmo|pausad|lent|uniforme|monóton|monoton|decae|plano|cadencia", txt_):
+                style["pace"] = round(min(1.2, float(style.get("pace") or 1.0) * 1.07), 3); fixes.append("ritmo")
+            if re.search(r"texto|dens|satur|carga|demasiad|lectura", txt_):
+                style["compact"] = True; fixes.append("menos texto")
+            if re.search(r"estátic|estatic|quiet|dinamismo|movimiento|plano fijo", txt_):
+                style["motion"] = True; fixes.append("más movimiento")
+            if re.search(r"cierre|llamada|cta|final", txt_):
+                cta_i = (cta_i + 1) % len(writer.CTAS); S["cta_line"] = writer.CTAS[cta_i]; fixes.append("cierre")
+            print(f"ronda {rnd + 1}: no llega al {reviewer.MIN_SCORE:g}; arreglos: {fixes or ['ninguno claro']}", flush=True)
+            pre_voice = False                              # la voz se vuelve a grabar (Google: segundos) con el nuevo guion/ritmo
+        if HAS_AI:
             if not review.get("overall"):
                 raise reviewer.RejectReel("el revisor de vídeo no ha podido puntuar el reel: sin nota no se publica")
             caption = agents.growth_caption(caption, S, review)

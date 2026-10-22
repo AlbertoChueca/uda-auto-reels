@@ -1,65 +1,77 @@
 {
-"_info": "Curiosidades de arquitectura para los reels de renders (2 a la semana). Cada dato está comprobado en la fuente indicada. Las imágenes son renders ORIGINALES generados por IA a partir de 'render' (nunca réplicas de edificios reales). 'puente' une la curiosidad con un hecho cierto de UDA.",
-"items": [
- {"id": "pritzker", "badge": "CURIOSIDADES DE ARQUITECTURA", "screen_hook": "El «Nobel» de la arquitectura",
-  "hook_line": "¿Sabes cuándo nació el premio más importante de la arquitectura?",
-  "beats": ["El Premio Pritzker lo crearon Jay y Cindy Pritzker en 1979.",
-            "El primer premiado fue Philip Johnson, ese mismo año.",
-            "Y la primera mujer en ganarlo fue Zaha Hadid, en 2004."],
-  "puente": "Detrás de cada gran estudio hay un gran equipo técnico. En UDA somos el tuyo.",
-  "fuente": "Pritzker Architecture Prize · en.wikipedia.org/wiki/Pritzker_Architecture_Prize",
-  "render": ["sala de exposiciones de arquitectura minimalista con maquetas blancas iluminadas en penumbra elegante",
-             "auditorio contemporáneo de hormigón blanco y vidrio al atardecer, arquitectura original",
-             "torre contemporánea de formas fluidas y curvas al anochecer, arquitectura original no reconocible"]},
- {"id": "espana_pritzker", "badge": "CURIOSIDADES DE ARQUITECTURA", "screen_hook": "España en el Pritzker",
-  "hook_line": "¿Cuántos arquitectos españoles han ganado el Pritzker?",
-  "beats": ["Rafael Moneo fue el primer español en ganarlo, en 1996.",
-            "En 2017 lo ganó RCR Arquitectes: tres arquitectos de Olot, en Girona.",
-            "Rafael Aranda, Carme Pigem y Ramon Vilalta fundaron el estudio en 1988."],
-  "puente": "Un estudio pequeño también puede llegar lejos. Con UDA, sin ampliar plantilla.",
-  "fuente": "biografiasyvidas.com (Moneo) · officeinsight.com (RCR Arquitectes, Pritzker 2017)",
-  "render": ["pabellón contemporáneo de acero corten entre un bosque mediterráneo, luz cálida rasante, arquitectura original",
-             "museo contemporáneo de muros de ladrillo y arcos con luz cenital dorada, arquitectura original",
-             "estudio de arquitectura pequeño con maquetas y planos sobre una mesa de madera, luz de tarde"]},
- {"id": "guggenheim", "badge": "CURIOSIDADES DE ARQUITECTURA", "screen_hook": "Un museo diseñado con software de aviones",
-  "hook_line": "¿Sabías que un museo famoso se diseñó con software de aviones?",
-  "beats": ["Frank Gehry diseñó el Guggenheim de Bilbao con CATIA, un programa de la industria aeroespacial.",
-            "Según el museo, nunca antes lo había usado un arquitecto.",
-            "Y el edificio está cubierto con casi 33.000 placas de titanio."],
-  "puente": "La herramienta cambia el proyecto. En UDA trabajamos en CAD o en Revit, al mismo precio.",
-  "fuente": "Museo Guggenheim Bilbao · guggenheim-bilbao.eus/en/did-you-know/frank-gehry",
-  "render": ["detalle abstracto de una fachada curva de placas metálicas plateadas al atardecer, arquitectura original",
-             "pantalla de ordenador con un modelo 3D alámbrico de un edificio de curvas en un estudio en penumbra",
-             "museo contemporáneo de volúmenes curvos metálicos junto al agua al anochecer, arquitectura original no reconocible"]},
- {"id": "sidney", "badge": "CURIOSIDADES DE ARQUITECTURA", "screen_hook": "El presupuesto que se multiplicó por 14",
-  "hook_line": "¿Sabes qué obra tiene el récord de desviación de presupuesto?",
-  "beats": ["La Ópera de Sídney se presupuestó en 7 millones de dólares australianos.",
-            "Al terminar, en 1973, había costado 102 millones.",
-            "Más de 14 veces lo previsto: récord Guinness de desviación de costes."],
-  "puente": "Por eso en UDA trabajamos a presupuesto cerrado: sabes el coste desde el primer día.",
-  "fuente": "Guinness World Records · Largest proportional increase in cost for a building project",
-  "render": ["teatro contemporáneo de cubiertas blancas curvas junto a un puerto al atardecer, arquitectura original no reconocible",
-             "obra de un gran edificio cultural con grúas al atardecer, trabajadores de espaldas con EPI",
-             "planos y presupuestos sobre una mesa de arquitecto con calculadora y escalímetro, luz cálida"]},
- {"id": "sagrada", "badge": "CURIOSIDADES DE ARQUITECTURA", "screen_hook": "Gaudí no empezó la Sagrada Familia",
-  "hook_line": "¿Sabías que la Sagrada Familia no la empezó Gaudí?",
-  "beats": ["La primera piedra se puso en 1882 con un proyecto neogótico de Francisco de Paula del Villar.",
-            "Gaudí se hizo cargo en 1883 y, desde 1914, se dedicó solo a ella hasta 1926.",
-            "En vida solo pudo terminar uno de sus campanarios: el de San Bernabé."],
-  "puente": "Los grandes proyectos se hacen en equipo. Delega la parte técnica en UDA.",
-  "fuente": "Basílica de la Sagrada Familia · sagradafamilia.org/es/historia-del-templo",
-  "render": ["interior de una nave de columnas arbóreas de piedra con luz de colores filtrada, arquitectura original",
-             "taller de un arquitecto modernista con maquetas de yeso y dibujos a lápiz, luz de ventana",
-             "torres de piedra esculpida con andamios y grúas al atardecer, arquitectura original no reconocible"]},
- {"id": "moneo", "badge": "CURIOSIDADES DE ARQUITECTURA", "screen_hook": "Tres obras de Moneo que debes conocer",
-  "hook_line": "Tres obras de Rafael Moneo que todo arquitecto debería conocer.",
-  "beats": ["El Museo de Arte Romano de Mérida, construido entre 1980 y 1986.",
-            "La ampliación de la estación de Atocha, en Madrid, entre 1985 y 1990.",
-            "Y el Kursaal de San Sebastián, inaugurado en 1999 y Premio Mies van der Rohe en 2001."],
-  "puente": "Tú pones la idea; la documentación técnica, la hacemos en UDA.",
-  "fuente": "biografiasyvidas.com/biografia/m/moneo.htm",
-  "render": ["nave de grandes arcos de ladrillo con luz cenital, museo contemporáneo, arquitectura original",
-             "gran vestíbulo de estación con cubierta de lucernarios y columnas esbeltas, arquitectura original",
-             "dos volúmenes translúcidos de vidrio iluminados junto al mar al anochecer, arquitectura original no reconocible"]}
-]
+ "_info": "Curiosidades de arquitectura para los reels de renders (2 a la semana). Cada dato está comprobado en la fuente indicada. Las imágenes son renders ORIGINALES generados por IA a partir de 'render' (nunca réplicas de edificios reales). 'puente' une la curiosidad con un hecho cierto de UDA. Solo curiosidades sobre premios, estudios y el oficio (no sobre un edificio concreto que el render no puede mostrar).",
+ "items": [
+  {
+   "id": "pritzker",
+   "badge": "CURIOSIDADES DE ARQUITECTURA",
+   "screen_hook": "El «Nobel» de la arquitectura",
+   "hook_line": "¿Sabes cuándo nació el premio más importante de la arquitectura?",
+   "beats": [
+    "El Premio Pritzker lo crearon Jay y Cindy Pritzker en 1979.",
+    "El primer premiado fue Philip Johnson, ese mismo año.",
+    "Y la primera mujer en ganarlo fue Zaha Hadid, en 2004."
+   ],
+   "puente": "Los grandes estudios se apoyan en buenos equipos. Si el tuyo va justo, en UDA te echamos una mano.",
+   "fuente": "Pritzker Architecture Prize · en.wikipedia.org/wiki/Pritzker_Architecture_Prize",
+   "render": [
+    "sala de exposiciones de arquitectura minimalista con maquetas blancas iluminadas en penumbra elegante",
+    "auditorio contemporáneo de hormigón blanco y vidrio al atardecer, arquitectura original",
+    "torre contemporánea de formas fluidas y curvas al anochecer, arquitectura original no reconocible"
+   ]
+  },
+  {
+   "id": "espana_pritzker",
+   "badge": "CURIOSIDADES DE ARQUITECTURA",
+   "screen_hook": "España en el Pritzker",
+   "hook_line": "¿Cuántos arquitectos españoles han ganado el Pritzker?",
+   "beats": [
+    "Rafael Moneo fue el primer español en ganarlo, en 1996.",
+    "En 2017 lo ganó RCR Arquitectes: tres arquitectos de Olot, en Girona.",
+    "Rafael Aranda, Carme Pigem y Ramon Vilalta fundaron el estudio en 1988."
+   ],
+   "puente": "Un estudio pequeño también puede llegar muy lejos. Y no tiene por qué hacerlo solo.",
+   "fuente": "biografiasyvidas.com (Moneo) · officeinsight.com (RCR Arquitectes, Pritzker 2017)",
+   "render": [
+    "pabellón contemporáneo de acero corten entre un bosque mediterráneo, luz cálida rasante, arquitectura original",
+    "museo contemporáneo de muros de ladrillo y arcos con luz cenital dorada, arquitectura original",
+    "estudio de arquitectura pequeño con maquetas y planos sobre una mesa de madera, luz de tarde"
+   ]
+  },
+  {
+   "id": "guggenheim",
+   "badge": "CURIOSIDADES DE ARQUITECTURA",
+   "screen_hook": "Un museo diseñado con software de aviones",
+   "hook_line": "¿Sabías que un museo famoso se diseñó con software de aviones?",
+   "beats": [
+    "Frank Gehry diseñó el Guggenheim de Bilbao con CATIA, un programa de la industria aeroespacial.",
+    "Según el museo, nunca antes lo había usado un arquitecto.",
+    "Y el edificio está cubierto con casi 33.000 placas de titanio."
+   ],
+   "puente": "La herramienta cambia el proyecto. En UDA trabajamos en CAD o en Revit, como prefieras.",
+   "fuente": "Museo Guggenheim Bilbao · guggenheim-bilbao.eus/en/did-you-know/frank-gehry",
+   "render": [
+    "detalle abstracto de una fachada curva de placas metálicas plateadas al atardecer, arquitectura original",
+    "pantalla de ordenador con un modelo 3D alámbrico de un edificio de curvas en un estudio en penumbra",
+    "museo contemporáneo de volúmenes curvos metálicos junto al agua al anochecer, arquitectura original no reconocible"
+   ]
+  },
+  {
+   "id": "sidney",
+   "badge": "CURIOSIDADES DE ARQUITECTURA",
+   "screen_hook": "El presupuesto que se multiplicó por 14",
+   "hook_line": "¿Sabes qué obra tiene el récord de desviación de presupuesto?",
+   "beats": [
+    "La Ópera de Sídney se presupuestó en 7 millones de dólares australianos.",
+    "Al terminar, en 1973, había costado 102 millones.",
+    "Más de 14 veces lo previsto: récord Guinness de desviación de costes."
+   ],
+   "puente": "Saber el coste desde el principio vale oro. Por eso en UDA trabajamos a presupuesto cerrado.",
+   "fuente": "Guinness World Records · Largest proportional increase in cost for a building project",
+   "render": [
+    "teatro contemporáneo de cubiertas blancas curvas junto a un puerto al atardecer, arquitectura original no reconocible",
+    "obra de un gran edificio cultural con grúas al atardecer, trabajadores de espaldas con EPI",
+    "planos y presupuestos sobre una mesa de arquitecto con calculadora y escalímetro, luz cálida"
+   ]
+  }
+ ]
 }

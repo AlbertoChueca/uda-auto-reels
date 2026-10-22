@@ -213,7 +213,22 @@ def infografia(p, var, k=0):
         "quote": [t],                                     # la voz lee el testimonio: se lee a su ritmo, sin prisas
     }
     badge, sh, hl, orden = VARIANTES[var]
-    return {"variante": var, "badge": badge, "screen_hook": sh or p["screen_hook"], "hook_line": hl or p["escena"],
+    n_ = G[tipo][0]; tot = b[2]["texto"]
+    # ganchos: el primero es el más concreto (el dilema y la cifra desde el segundo cero); el bucle de mejora prueba
+    # los siguientes si el revisor dice que el gancho es genérico o tarda en llegar
+    hooks = {
+        "caso": [(f"{tot} o 40.000 € al año", f"Delegar {n_} de {mm} metros: {tot}. Contratar a alguien: 40.000 euros al año."),
+                 (p["screen_hook"], p["escena"])],
+        "contratar": [("40.000 € al año o un proyecto", f"Un arquitecto en plantilla cuesta 40.000 euros al año. Delegar un proyecto completo, {tot}."),
+                      ("Lo que no sale en la nómina", "Contratar no es solo un sueldo. Esto es lo que no ves.")],
+        "delegable": [("Tú diseñas. Nosotros, el resto", "Tú diseñas y firmas. Los planos, las estructuras y las instalaciones, los hacemos nosotros."),
+                      (sh, hl)],
+        "tiempo": [("3 encargos y entra otro", "Tienes tres encargos en marcha y entra otro. ¿Cómo lo sacas sin contratar?"),
+                   (sh, hl)],
+        "proceso": [("De la reunión a tu firma", "De la primera reunión a tu firma: así se delega un proyecto."), (sh, hl)],
+        "testimonio": [("«Esos días duermo poco y mal»", "Esto nos contó un estudio que tenía varios proyectos de golpe."), (sh, hl)],
+    }[var]
+    return {"variante": var, "badge": badge, "screen_hook": hooks[0][0], "hook_line": hooks[0][1], "hooks": hooks,
             "orden": orden, "datos": {k_: datos[k_] for k_ in orden}, "voz": {k_: voz[k_] for k_ in orden}}
 
 

@@ -141,6 +141,9 @@ def art_direct(path, S, style, timeline, total):
 Fotogramas (en orden) del reel de hoy. Gancho: "{S.get('screen_hook')}". Tokens actuales:
 {json.dumps({k: style.get(k) for k in ('screen_hook', 'caption_scale', 'follow_line', 'share_line')}, ensure_ascii=False)}
 
+ESCALA ANCLADA: 8 = profesional y sin ningún DEFECTO OBJETIVO de diseño (errata, texto que se sale o se corta, solapes,
+fuera de la zona segura, ilegible en el móvil, bajo contraste); las opiniones de estilo no bajan de 8 (van en "why").
+6-7 = al menos un defecto objetivo (descríbelo en "issues" con su segundo). 9-10 = excelente.
 Puntúa 1-10: gancho en pantalla, calidad de los textos (cortos, claros, tono profesional), tipografía y legibilidad en el móvil,
 todo dentro de la zona segura, acabado profesional, claridad del mensaje (la ventaja de delegar en UDA), fuerza de la
 tarjeta final y probabilidad de que lo guarden. La tarjeta final lleva A PROPÓSITO una sola llamada a la acción («Agenda
@@ -199,11 +202,21 @@ elegido: valora si se entienden, no las penalices por llevar datos.
 Debe sentirse PREMIUM y elegante, para fundadores de despachos: ni repaso de examen ni anuncio de teletienda. Gancho: {S.get('screen_hook')!r}.
 Primera línea actual de la descripción: {first!r}
 
-Puntúa 1-10: gancho en 1,5 s, claridad, ritmo (ni lento ni atropellado), voz masculina natural con ACENTO DE ESPAÑA (peninsular, con distinción z/c; nada de acento latinoamericano), con energía (no plana), que diga lo
-mismo que el texto, palabras sueltas que sobren o siseo/ruido, subtítulos y resaltado sincronizados, la respuesta correcta
-se ve clara, explicación útil, cierre claro, probabilidad de comentar/guardar/compartir.
+Comprueba: gancho en 1,5 s, claridad, ritmo, voz (acento de España, sin cortes ni palabras mal dichas), que la voz
+diga lo mismo que el texto en pantalla, legibilidad en el móvil, zona segura, cierre claro.
+ESCALA ANCLADA (aplícala al pie de la letra; así la nota es estable entre revisiones):
+- 9-10: excelente, nada que corregir.
+- 8: profesional y publicable: SIN NINGÚN DEFECTO OBJETIVO. Las opiniones de estilo («el ritmo podría ser más vivo»,
+  «el gancho podría ser más directo», «cierre previsible») NO bajan de 8: van en "suggestions".
+- 6-7: hay al menos un DEFECTO OBJETIVO: errata o texto cortado/que se sale, la voz dice algo distinto del texto en
+  pantalla, corte de audio, silencio de más de 1,5 s, escena completamente quieta más de 4 s, texto ilegible en el móvil o
+  tapado por la interfaz de la app.
+- 5 o menos: defecto grave (acento no peninsular, palabra mal pronunciada o inventada, voz ininteligible, vídeo roto, dato
+  falso).
+"issues" = SOLO los defectos objetivos, cada uno con su segundo; si no hay ninguno, lista vacía y nota 8 o más.
+"suggestions" = mejoras de estilo (no cuentan para la nota).
 "critical" = true si el acento NO es de España (seseo, entonación latinoamericana) o si el reel está claramente roto (mudo, congelado/negro, ilegible, voz equivocada o ininteligible,
-una palabra mal pronunciada o inventada —escucha palabra a palabra: p. ej. «dimaro» en vez de «dinero»—, la respuesta resaltada no coincide con la que dice la voz). Después escribe una PRIMERA línea de descripción mejor (máx. 12
+una palabra mal pronunciada o inventada —escucha palabra a palabra: p. ej. «dimaro» en vez de «dinero»—). Después escribe una PRIMERA línea de descripción mejor (máx. 12
 palabras, máx. 1 emoji, sin datos nuevos) y una invitación a comentar (máx. 12 palabras).
 Devuelve JSON: {{"overall": number, "scores": {{...}}, "critical": bool, "issues": [str], "suggestions": [str],
 "caption_first_line": str, "comment_prompt": str}}"""},
@@ -217,8 +230,7 @@ Devuelve JSON: {{"overall": number, "scores": {{...}}, "critical": bool, "issues
     _log("video", {"hook": S.get("screen_hook"), "overall": overall, "scores": res.get("scores"), "critical": res.get("critical"),
                    "issues": res.get("issues"), "suggestions": res.get("suggestions")})
     print(f"revisor: reel {overall}/10" + (f" - {'; '.join(res.get('issues', [])[:3])}" if res.get("issues") else ""), flush=True)
-    if res.get("critical") or overall < MIN_SCORE:
-        raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+    # la decisión (publicar, corregir o descartar) la toma run_daily con esta nota, los defectos y las sugerencias
     new_first = (res.get("caption_first_line") or "").strip()
     prompt = (res.get("comment_prompt") or "").strip()
     cap = caption
@@ -226,4 +238,5 @@ Devuelve JSON: {{"overall": number, "scores": {{...}}, "critical": bool, "issues
         cap = new_first + "\n" + rest
     if prompt and 3 <= len(prompt.split()) <= 14 and "#" not in prompt and S.get("comment_prompt") in cap:
         cap = cap.replace(S["comment_prompt"], prompt, 1)
-    return cap, {"overall": overall, "issues": res.get("issues"), "suggestions": res.get("suggestions")}
+    return cap, {"overall": overall, "issues": res.get("issues"), "suggestions": res.get("suggestions"),
+                 "critical": bool(res.get("critical"))}

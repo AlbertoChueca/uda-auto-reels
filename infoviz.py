@@ -232,7 +232,8 @@ def scene_timeline(T, d, lt, starts):
         if p > 0.5:
             i = fx.icon(ic, 64, T.label); c.alpha_composite(i, (int(x - 32), int(yy - 32)))
         a = clamp(p * 1.5)
-        tt = _txt(tit, 54, 720, T.ink, align="left"); dd = _txt(det, 40, 720, (160, 154, 142), bold=False, align="left")
+        tt = _txt(tit, 54, 720, T.ink, align="left")
+        dd = _txt(det if not d.get("compact") else " ", 40, 720, (160, 154, 142), bold=False, align="left")
         for im_, oy in ((tt, yy - 48), (dd, yy + 10)):
             im2 = im_.copy(); im2.putalpha(im2.getchannel("A").point(lambda v: int(v * a)))
             c.alpha_composite(im2, (int(x + 100 + (1 - a) * 40), int(oy)))
@@ -306,8 +307,9 @@ def scene_cargas(T, d, lt, starts):
         c.alpha_composite(fx.icon(ic, 110, grey), (int(bx + 40), int(by + 40)))
         ti = _txt(tit, 46, tw - 80, (236, 230, 218), align="left")
         c.alpha_composite(ti, (int(bx + 40), int(by + 166)))
-        c.alpha_composite(_txt(det, 34, tw - 80, (150, 144, 132), bold=False, align="left"),
-                          (int(bx + 40), int(by + 166 + ti.height + 4)))
+        if not d.get("compact"):                              # modo compacto: solo el titular de cada losa
+            c.alpha_composite(_txt(det, 34, tw - 80, (150, 144, 132), bold=False, align="left"),
+                              (int(bx + 40), int(by + 166 + ti.height + 4)))
         if done:                                              # tachado dorado: con UDA desaparece
             q = eo(clamp((lt - starts[-1] - 0.1 * k) / 0.35))
             dr.line([(bx + 30, by + th / 2), (bx + 30 + (tw - 60) * q, by + th / 2)], fill=T.label, width=7)

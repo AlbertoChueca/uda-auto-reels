@@ -202,8 +202,14 @@ def _short_expl(text, max_words=40):
     return res if len(res.split()) <= max_words + 12 else None
 
 
-CTA_DEFAULT = ("Seremos tu equipo de confianza, con presupuestos cerrados en 24 horas que puedes repercutir a tu cliente. "
-               "Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.")   # sin leer la web en voz alta
+# Cierres hablados: todos dicen lo mismo que la tarjeta (24 h · repercutible al cliente · factura más · agenda una reunión)
+CTAS = ["Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. "
+        "Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.",
+        "Mándanos tu próximo proyecto: en 24 horas tienes un presupuesto cerrado que puedes repercutir a tu cliente. "
+        "Factura más sin ampliar plantilla. Agenda una reunión desde el perfil y crezcamos juntos.",
+        "Seremos tu equipo técnico de confianza: presupuesto cerrado en 24 horas, repercutible a tu cliente, y más "
+        "facturación para tu estudio. Agenda una reunión desde el perfil para conocernos."]
+CTA_DEFAULT = CTAS[0]                                    # sin leer la web en voz alta
 
 
 def verified(fmt, P):
