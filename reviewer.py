@@ -181,8 +181,8 @@ Devuelve JSON: {{"overall": number, "scores": {{...}}, "issues": [str], "changes
     print(f"director de arte: {overall}/10" + (f" - {'; '.join((res.get('issues') or [])[:3])}" if res.get("issues") else ""), flush=True)
     # volver a renderizar cuesta varios minutos de GitHub: solo si el diseño flojea de verdad
     if new == style or overall >= float(os.environ.get("ART_RERENDER_BELOW", "8")):
-        return None, {"overall": overall}
-    return new, {"overall": overall}
+        return None, {"overall": overall, "issues": res.get("issues") or []}
+    return new, {"overall": overall, "issues": res.get("issues") or []}
 
 
 # ------------------------------------------------------------------ 3. vídeo terminado

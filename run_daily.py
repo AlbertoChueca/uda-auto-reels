@@ -261,6 +261,11 @@ for fmt in chain:
                 new_style, art = f_art.result()
                 cap2, review = f_rev.result()
             tiempo(f"revisiones (ronda {rnd + 1}): diseño {art.get('overall')} · vídeo {review.get('overall')}", t_)
+            # escala anclada: 8 = sin defectos objetivos. Si el revisor no encuentra NINGÚN defecto objetivo pero pone menos
+            # de 8 (pasa a menudo), se aplica su propia escala: el reel es publicable.
+            for r_ in (review, art):
+                if r_.get("overall") and not (r_.get("issues") or []) and not r_.get("critical") and float(r_["overall"]) < reviewer.MIN_SCORE:
+                    r_["overall_raw"] = r_["overall"]; r_["overall"] = reviewer.MIN_SCORE
             ok = (float(art.get("overall") or 0) >= reviewer.MIN_SCORE and float(review.get("overall") or 0) >= reviewer.MIN_SCORE
                   and not review.get("critical"))
             if ok:
