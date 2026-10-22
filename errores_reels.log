@@ -373,3 +373,34 @@ reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Densidad de
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (6.6/10, mínimo 8): Ritmo de locución algo sintético en transiciones numéricas.; Gráfica de precios densa para lectura rápida en móvil.
 
+2026-10-22 13:39 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 248, in <module>
+    caption, review = reviewer.review_video(out, S, caption)          # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 221, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Cadencia ligeramente monótona típica de locución sintética en la segunda mitad.; El cierre acumula varios puntos de texto en pantalla con poco tiempo de lectura.
+
+2026-10-22 13:39 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 248, in <module>
+    caption, review = reviewer.review_video(out, S, caption)          # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 221, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Cadencia de locución algo uniforme en el tramo central.; El bloque de testimonio resulta ligeramente denso en texto.
+
+2026-10-22 13:39 manual [infografia] le "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 234, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 221, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): Inicio visual algo estático con la carpintería antes de entrar en materia.; La voz presenta una modulación algo uniforme en el bloque de tarifas.; Exceso de texto simultáneo en la diapositiva de desglose de tareas.
+
