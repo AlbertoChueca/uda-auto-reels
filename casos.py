@@ -198,18 +198,19 @@ def infografia(p, var, k=0):
             ("shield", "Tú firmas", "el trabajo es 100 % tuyo")]},
         "quote": {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Un estudio que ya delega"},
     }
+    # la voz dice EXACTAMENTE lo que pone en pantalla (el revisor marca cualquier diferencia como defecto)
     voz = {
-        "stack": ["Tu equipo ya tiene tres encargos en marcha. Y entra otro."],
-        "towers": [f"Solo estructuras e instalaciones: {b[0]['texto']}.", f"El proyecto de ejecución completo: {b[1]['texto']}.",
-                   f"Básico y ejecución: {b[2]['texto']}.", "Tú eliges cuánto delegas."],
+        "stack": ["Tu estudio hoy: tres encargos en marcha. Y entra uno nuevo."],
+        "towers": [f"Estructuras e instalaciones: {b[0]['texto']}.", f"Proyecto de ejecución completo: {b[1]['texto']}.",
+                   f"Básico más ejecución: {b[2]['texto']}.", "Tú eliges cuánto delegas."],
         "versus": ["Un arquitecto en plantilla: de 40.000 a 47.000 € al año, haya proyectos o no.",
-                   f"Delegar este proyecto: {b[2]['texto']}, una sola vez."],
-        "cargas": ["Y no es solo dinero.", "Hay que formarle.", "Puede coger una baja.",
-                   "Le pagas aunque no haya trabajo.", "Y despedir duele.", "Con UDA, nada de eso."],
-        "delegable": ["Delegas planos, estructuras, instalaciones, memorias y mediciones.", "Lo tuyo: el diseño, la firma y la dirección de obra."],
+                   f"Delegar en UDA: {b[2]['texto']}, una sola vez, proyecto completo."],
+        "cargas": ["Y no es solo dinero.", "Hay que formarle.", "Bajas y vacaciones.",
+                   "Nómina sin trabajo.", "Despedir duele.", "Con UDA, nada de eso."],
+        "delegable": ["Lo delegas en UDA: planos en CAD o Revit, estructuras con CYPE, instalaciones, memorias y mediciones.",
+                      "Sigue siendo tuyo: el diseño, la firma y el visado, y la dirección de obra."],
         "donut": ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."],
-        "timeline": ["Una reunión.", "Presupuesto cerrado en 24 horas.",
-                     f"Proyecto de ejecución en {PLAZO_PE[tipo].replace('–', ' a ')}.", "Y tú firmas."],
+        "timeline": ["Reunión.", "Presupuesto cerrado, en 24 horas.", "Entrega por fases.", "Y tú firmas."],
         "quote": [t],                                     # la voz lee el testimonio: se lee a su ritmo, sin prisas
     }
     badge, sh, hl, orden = VARIANTES[var]

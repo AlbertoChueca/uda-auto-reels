@@ -208,8 +208,8 @@ ESCALA ANCLADA (aplícala al pie de la letra; así la nota es estable entre revi
 - 9-10: excelente, nada que corregir.
 - 8: profesional y publicable: SIN NINGÚN DEFECTO OBJETIVO. Las opiniones de estilo («el ritmo podría ser más vivo»,
   «el gancho podría ser más directo», «cierre previsible») NO bajan de 8: van en "suggestions".
-- 6-7: hay al menos un DEFECTO OBJETIVO: errata o texto cortado/que se sale, la voz dice algo distinto del texto en
-  pantalla, corte de audio, silencio de más de 1,5 s, escena completamente quieta más de 4 s, texto ilegible en el móvil o
+- 6-7: hay al menos un DEFECTO OBJETIVO: errata o texto cortado/que se sale, la voz dice un dato o concepto distinto
+  del que hay en pantalla (decir lo mismo con otras palabras o resumirlo NO es defecto), corte de audio, silencio de más de 1,5 s, escena completamente quieta más de 4 s, texto ilegible en el móvil o
   tapado por la interfaz de la app.
 - 5 o menos: defecto grave (acento no peninsular, palabra mal pronunciada o inventada, voz ininteligible, vídeo roto, dato
   falso).
