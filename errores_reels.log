@@ -577,3 +577,55 @@ reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): El ritmo de
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Ritmo ligeramente uniforme en la enumeración intermedia; Llamada a la acción final predecible para el formato de perfil profesional
 
+2026-10-22 19:51 manual [infografia] ily.py", line 274, in <module>
+    raise rev_first[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 258, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 221, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Gancho inicial algo predecible y estático para los primeros dos segundos.; Ligera falta de modulación orgánica típica de la síntesis de voz en transiciones.
+
+2026-10-22 19:51 manual [infografia] uda-auto-reels/run_daily.py", line 274, in <module>
+    raise rev_first[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 258, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 221, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.8/10, mínimo 8): La pantalla inicial contiene excesivo texto en poco tiempo.; El cierre final se prolonga unos segundos de más con información estática.
+
+2026-10-22 19:51 manual [infografia] l last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 274, in <module>
+    raise rev_first[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 258, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 221, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (7.0/10, mínimo 8): Locución algo lineal en el cierre; Densidad de texto en pantalla en el bloque central
+
