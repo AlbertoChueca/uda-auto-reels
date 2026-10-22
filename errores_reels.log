@@ -102,3 +102,46 @@ RuntimeError: la voz no sale limpia en una sola toma; no se publica con frases s
     raise RuntimeError("la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre")
 RuntimeError: la voz no sale limpia en una sola toma; no se publica con frases sueltas de otro timbre
 
+2026-10-21 22:56 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 194, in <module>
+    caption, review = reviewer.review_video(out, S, caption)              # RejectReel -> siguiente formato
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 216, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (5.0/10, mínimo 8): Locución con seseo y entonación sintética no peninsular.; Pausa extraña y lectura antinatural del enlace web en el cierre.; El dato del 67% carece de contexto de rigor para despachos senior.
+
+2026-10-21 22:56 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 193, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')}/10 (mínimo {reviewer.MIN_SCORE:g})")
+reviewer.RejectReel: diseño 7.8/10 (mínimo 8)
+
+2026-10-22 00:29 manual [infografia] 32, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 216, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (5.8/10, mínimo 8): La locución carece de acento de España peninsular: presenta seseo evidente en palabras como 'instalaciones', 'ejecución', 'vacaciones', 'confianza' y 'crecer' (todas pronunciadas con /s/ en vez de /θ/).; Cadencia robótica con pausa antinatural al dictar la URL al final ('punto... com').
+
+2026-10-22 00:29 manual [infografia] 2, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 216, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (6.4/10, mínimo 8): Discrepancia en 0:05: la voz dice 'Un empleado' mientras la tarjeta indica 'Un arquitecto en plantilla'.; Pausa antinatural de la voz sintética al pronunciar la URL en el cierre ('punto... com').; Tono de locución algo plano y estático para un contenido dirigido a directores de despacho.
+
