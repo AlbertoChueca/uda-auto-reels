@@ -1,4 +1,4 @@
-# Estado (2026-10-21)
+# Estado (2026-10-22)
 
 | comprobación | detalle |
 |---|---|
@@ -7,6 +7,10 @@
 | ✅ Instagram (API de Meta) | @uniondearquitectos · publica directo, sin Zernio |
 | ✅ Gemini texto | 46 modelos disponibles |
 | ✅ Gemini voz | gemini-2.5-flash-preview-tts, gemini-2.5-pro-preview-tts, gemini-3.1-flash-tts-preview |
+| ⚠️ Voz de España (Google Cloud TTS) | no disponible: activa la «Cloud Text-to-Speech API» en el proyecto de Google Cloud de tu clave (se usa Gemini mientras tanto) · Google TTS 401: {
+  "error": {
+    "code": 401,
+    "message": "API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See ht |
 | ✅ Gemini imagen | gemini-2.5-flash-image, gemini-3-pro-image-preview, gemini-3-pro-image |
 | ✅ Banco verificado | 218 piezas publicables sin usar (negocio 28, contratar 33, servicios 157, proyecto 0) · 9 pendientes de verificar · ~54 días de reserva |
 | ✅ Piezas de negocio | 28 publicables |
