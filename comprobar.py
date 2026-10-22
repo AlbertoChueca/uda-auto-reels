@@ -52,6 +52,13 @@ if os.environ.get("GEMINI_API_KEY"):
         gemini.ask('Devuelve JSON {"ok": true}', 0)
         ok("Gemini texto", True, f"{len(av)} modelos disponibles")
         ok("Gemini voz", bool(tts), ", ".join(tts[:3]) or "sin modelos TTS: se usará la voz de respaldo")
+        try:
+            import voice
+            a = voice._google_line("Hola, somos Unión de Arquitectos.", os.environ["GEMINI_API_KEY"])
+            ok("Voz de España (Google Cloud TTS)", True, f"{voice.GOOGLE_TTS_VOICE} · {len(a) / voice.SR:.1f} s de audio")
+        except Exception as e:
+            ok("Voz de España (Google Cloud TTS)", False, "no disponible: activa la «Cloud Text-to-Speech API» en el proyecto de "
+               f"Google Cloud de tu clave (se usa Gemini mientras tanto) · {str(e)[:200]}")
         ok("Gemini imagen", bool(img), ", ".join(img[:3]) or "sin modelos de imagen: reels sin ilustración")
     except Exception as e:
         ok("Gemini", False, f"error: {str(e)[:150]}", True)
