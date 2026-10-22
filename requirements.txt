@@ -5,3 +5,4 @@ requests
 num2words
 kokoro-onnx
 faster-whisper==1.1.1
+piper-tts==1.8.0

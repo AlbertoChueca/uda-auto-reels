@@ -534,6 +534,32 @@ def _google_many(texts, key, speed=1.0):
         return list(ex.map(lambda t: _google_line(t, key, speed), texts))
 
 
+# ------------------------------------------------------------------ Piper (local, gratis, voz de ESPAÑA es_ES)
+# Modelo neuronal local con acento peninsular (distinción z/c): no depende de cuotas ni de red, siempre el mismo
+# timbre y tarda segundos. Es la voz por defecto mientras no haya GOOGLE_TTS_KEY.
+PIPER_MODEL = os.environ.get("PIPER_MODEL", os.path.join(os.path.dirname(os.path.abspath(__file__)), "models",
+                                                         "es_ES-davefx-medium.onnx"))
+_PIPER = []
+
+
+def _piper_many(texts, speed=1.0):
+    from piper import PiperVoice
+    from piper.config import SynthesisConfig
+    if not _PIPER:
+        _PIPER.append(PiperVoice.load(PIPER_MODEL))
+    v = _PIPER[0]
+    cfg = SynthesisConfig(length_scale=round(1.0 / max(0.8, float(speed or 1.0)), 3), noise_scale=0.6, noise_w_scale=0.75)
+    out = []
+    for t in texts:
+        parts, sr = [], 22050
+        for ch in v.synthesize(t, syn_config=cfg):
+            sr = ch.sample_rate; parts.append(ch.audio_float_array.astype(np.float32))
+            parts.append(np.zeros(int(sr * 0.18), np.float32))              # respiro natural entre frases
+        a = np.concatenate(parts) if parts else np.zeros(1, np.float32)
+        out.append(_trim(_resample(a, sr)))
+    return out
+
+
 def _gemini_line(text, style, key, pace):
     """Up to 3 takes with different prompt shapes. A take is accepted when it says the right words with a
     natural length; otherwise the best acceptable one is kept. Fails only if every take is clearly wrong."""
@@ -840,6 +866,16 @@ def _say_many(texts, speed, styles, one_take):
                 raise VoiceError(f"google tts failed mid-reel: {str(e)[-200:]}")
             _GOOGLE_OFF[0] = True
             print("voice: Google Cloud TTS no disponible (¿API sin activar?), uso Gemini:", str(e)[-300:], flush=True)
+    if os.path.exists(PIPER_MODEL) and os.environ.get("PIPER") != "false" and engine != "kokoro" and LOCK in (None, "piper"):
+        try:                                       # voz de España local: segundos, sin cuotas, sin seseo
+            clips = _piper_many(texts, speed)
+            ENGINE_USED = LOCK = "piper"
+            print(f"voice: piper {os.path.basename(PIPER_MODEL)} ({len(texts)} lines)", flush=True)
+            return [polish(c, light=True) for c in clips]
+        except Exception as e:
+            if LOCK == "piper":
+                raise VoiceError(f"piper failed mid-reel: {str(e)[-200:]}")
+            print("voice: piper no disponible:", str(e)[-200:], flush=True)
     allow_gemini = (key and engine in ("gemini", "auto", "chatterbox", "elevenlabs") and os.environ.get("VOICE_NO_GEMINI") != "1"
                     and LOCK in (None, "gemini"))
     allow_cb = os.path.exists(CB_PY) and engine != "kokoro" and LOCK in (None, "local", "chatterbox")
@@ -871,4 +907,4 @@ def _say_many(texts, speed, styles, one_take):
 
 def next_engine():
     """Engine to force after a VoiceError."""
-    return {"elevenlabs": "gemini", "google": "gemini", "gemini": "local", "chatterbox": "kokoro"}.get(LOCK, "kokoro")
+    return {"elevenlabs": "gemini", "google": "piper", "piper": "gemini", "gemini": "local", "chatterbox": "kokoro"}.get(LOCK, "kokoro")

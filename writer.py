@@ -203,7 +203,7 @@ def _short_expl(text, max_words=40):
 
 
 CTA_DEFAULT = ("Seremos tu equipo de confianza, con presupuestos cerrados en 24 horas que puedes repercutir a tu cliente. "
-               "Agenda una reunión en uniondearquitectos.com para conocernos y crecer juntos.")
+               "Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.")   # sin leer la web en voz alta
 
 
 def verified(fmt, P):
