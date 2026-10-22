@@ -145,3 +145,37 @@ reviewer.RejectReel: el revisor rechaza el reel (5.8/10, mínimo 8): La locució
     raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
 reviewer.RejectReel: el revisor rechaza el reel (6.4/10, mínimo 8): Discrepancia en 0:05: la voz dice 'Un empleado' mientras la tarjeta indica 'Un arquitecto en plantilla'.; Pausa antinatural de la voz sintética al pronunciar la URL en el cierre ('punto... com').; Tono de locución algo plano y estático para un contenido dirigido a directores de despacho.
 
+2026-10-22 01:36 manual [infografia] _first[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 232, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 217, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (4.5/10, mínimo 8): Acento no peninsular con marcado seseo y ausencia de distinción z/c.; Pausa artificial en la locución final al decir 'punto... com'.; Ritmo de locución y grafismos algo plano para el estándar prémium.
+
+2026-10-22 01:36 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 248, in <module>
+    raise rev_first[1]
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 232, in <module>
+    rev_first = ("ok", f_rev.result())
+                       ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/reviewer.py", line 217, in review_video
+    raise RejectReel(f"el revisor rechaza el reel ({overall}/10, mínimo {MIN_SCORE:g}): {'; '.join(res.get('issues', [])[:3])}")
+reviewer.RejectReel: el revisor rechaza el reel (5.0/10, mínimo 8): 
+
