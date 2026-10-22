@@ -41,8 +41,9 @@ FORMAT_SPEC = {
     "dato": ("dato", ("negocio", "servicios", "contratar")),
     "mito_realidad": ("mito", ("negocio", "contratar", "servicios", "proyecto")),
     "caso_despacho": ("puntos", ("negocio", "servicios", "contratar")),
-    "caso_coste": ("caso", ("servicios",)),
-    "infografia": ("caso", ("servicios",)),            # el mismo caso, contado con infografías animadas (infoviz.py)          # contenido principal: cuánto cuesta delegar (casos.py, cifras calculadas)
+    "caso_coste": ("caso", ("servicios",)),           # cuánto cuesta delegar (casos.py, cifras calculadas)
+    "infografia": ("caso", ("servicios",)),           # el mismo caso, contado con infografías animadas (infoviz.py)
+    "render": ("curiosidad", ("servicios",)),         # renders de arquitectura + curiosidades (fuentes/curiosidades.json)
 }
 POINTS_ONLY = {"claves", "caso_despacho"}                       # hook -> (escena) -> 3 claves -> cierre
 
@@ -60,7 +61,10 @@ def load():
         p["bloque"] = OLD_BLOQUE.get(p.get("bloque"), p.get("bloque"))
     try:                                                    # casos calculados con la tabla (no se guardan en el banco)
         import casos
-        ps = [p for p in ps if p.get("tipo") != "caso"] + casos.generate()
+        ps = [p for p in ps if p.get("tipo") not in ("caso", "curiosidad")] + casos.generate()
+        cur = json.load(open(os.path.join(HERE, "fuentes", "curiosidades.json")))["items"]
+        ps += [dict(c, tipo="curiosidad", tema="uda_casos", bloque="servicios", fuente_ok=True, calculado=True,
+                    referencia=c["fuente"]) for c in cur]
     except Exception as e:
         print("casos omitidos:", str(e)[:120], flush=True)
     return ps
@@ -135,7 +139,7 @@ def fits(p, kind="normal"):
             return 5 <= len(p["afirmacion"].split()) <= 16 and 8 <= len(p["explicacion"].split()) <= 26
         if p["tipo"] == "cifras":
             return 2 <= len(p["barras"]) <= 4
-        if p["tipo"] == "caso":
+        if p["tipo"] in ("caso", "curiosidad"):
             return True
         return 10 <= len(p["q"]) <= 110 and 3 <= len(p["a"]) <= 160
     ql, ol = LIMITS[kind]
@@ -151,7 +155,7 @@ TABLA_SOLO = {"uda_delegar", "uda_servicios"}
 
 
 def publishable(p, v=None):
-    if p.get("tipo") == "caso":
+    if p.get("tipo") in ("caso", "curiosidad"):
         return bool(p.get("calculado") and p.get("fuente_ok"))
     if p.get("norma") == "uda_tabla" or p.get("bloque") == "proyecto" or p.get("tema") not in cfg()["temas"]:
         return False                                  # sin BOE/CTE y sin tablas de precios: la tabla solo sirve para los casos

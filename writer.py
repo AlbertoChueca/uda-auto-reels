@@ -214,6 +214,9 @@ def verified(fmt, P):
         return {"titulo_norma": P["titulo"], "col_a": P["col_a"], "col_b": P["col_b"], "filas": [dict(f) for f in P["filas"]]}
     if P["tipo"] == "cifras":
         return {"titulo_norma": P["titulo"], "barras": [dict(b) for b in P["barras"]], "conclusion": P["conclusion"]}
+    if P["tipo"] == "curiosidad":
+        return {"titulo_norma": P["screen_hook"], "beats": list(P["beats"]), "puente": P["puente"], "render": list(P["render"]),
+                "badge": P["badge"], "fuente": P["fuente"]}
     if P["tipo"] == "caso":
         return {"titulo_norma": P["titulo"], "barras": [dict(b) for b in P["barras"]], "conclusion": P["conclusion"],
                 "puntos": list(P["puntos"]), "puntos_titulo": P["puntos_titulo"], "escena": P["escena"],
@@ -236,7 +239,8 @@ def template(fmt, items):
              "mito_realidad": ("¿Mito o realidad?", "Mito o realidad. Piénsalo antes de que lo diga."),
              "caso_despacho": ("Caso de despacho", "Caso de despacho. Imagina que te llega este encargo."),
              "caso_coste": (P.get("screen_hook", ""), P.get("escena", "")),
-             "infografia": (P.get("screen_hook", ""), P.get("escena", ""))}
+             "infografia": (P.get("screen_hook", ""), P.get("escena", "")),
+             "render": (P.get("screen_hook", ""), P.get("hook_line", ""))}
     sh, hl = hooks[fmt]
     if fmt == "comparativa" and P.get("col_a"):
         b = P["col_b"] if P["col_b"][:3].isupper() or P["col_b"].split()[0].isupper() else P["col_b"][0].lower() + P["col_b"][1:]
@@ -247,9 +251,10 @@ def template(fmt, items):
     return {"screen_hook": sh, "hook_line": hl, "reveal_line": "Vamos allá.",
             "intro_line": "Mira cómo cambian las cifras." if fmt == "grafico" else "Tres claves. Guárdalo para cuando lo necesites.",
             "cta_line": CTA_DEFAULT,
-            "caption_hook": P["escena"] + " 📐" if fmt in ("caso_coste", "infografia") else {"comparativa": "Dos formas de sacar el trabajo adelante 📐", "dato": "Un dato de proyecto que pocos tienen presente 📐",
+            "caption_hook": (P.get("hook_line", "") + " 🏛️") if fmt == "render" else P["escena"] + " 📐" if fmt in ("caso_coste", "infografia") else {"comparativa": "Dos formas de sacar el trabajo adelante 📐", "dato": "Un dato de proyecto que pocos tienen presente 📐",
                              "mito_realidad": "¿Mito o realidad en tu despacho? 📐"}.get(fmt, "Lo que cambia en un despacho que delega 📐"),
-            "comment_prompt": {"caso_coste": "¿Cuántos encargos tienes ahora mismo? Te leemos en comentarios",
+            "comment_prompt": {"render": "¿Lo sabías? Te leemos en comentarios",
+                               "caso_coste": "¿Cuántos encargos tienes ahora mismo? Te leemos en comentarios",
                                "infografia": "¿Cuántos encargos tienes ahora mismo? Te leemos en comentarios",
                                "mito_realidad": "¿Mito o realidad? Te leemos en comentarios",
                                "comparativa": "¿Tú qué eliges? Te leemos en comentarios"}.get(fmt, "¿Qué añadirías tú? Te leemos en comentarios"),
@@ -259,7 +264,7 @@ def template(fmt, items):
 def script_for(fmt, items, arms=None, avoid=(), verify=True, series_info=None):
     """Guion verificado. Hasta 2 intentos con IA; si no pasa el verificador -> plantilla segura (formatos que lo permiten)."""
     notes = None
-    if fmt in ("caso_coste", "infografia"):              # cifras calculadas: textos fijos, la IA no reescribe nada
+    if fmt in ("caso_coste", "infografia", "render"):    # cifras calculadas / curiosidades comprobadas: textos fijos, la IA no reescribe nada
         s = strip_meta(fmt, items, template(fmt, items))
         if series_info:
             s["series"] = series_info["series"]; s["follow_line"] = f"Mañana: {series_info['manana']}. Síguenos"

@@ -123,6 +123,8 @@ style_override = os.environ.get("STYLE_OVERRIDE", "auto")
 try:
     import strategy
     fixed = {"formato": override} if override in strategy.DEFAULT_ARMS["formato"] else {}
+    if not fixed and slot == "mediodia" and today.weekday() in (1, 4):   # martes y viernes: renders + curiosidades
+        fixed["formato"] = "render"
     if not fixed:                                             # contenido principal: infografías de cuánto cuesta delegar
         fixed["formato"] = "infografia"
     if not os.environ.get("IG_VARIANTE"):                     # tipo de reel según el día y la hora (nunca todos iguales)
@@ -186,25 +188,47 @@ for fmt in chain:
         import make_quiz
         style = dict(make_quiz.DEFAULT_STYLE)
         style.update({k: S[k] for k in STYLE_KEYS if S.get(k)})
-        image, dinfo = None, {}
+        image, dinfo, images = None, {}, None
         pre_voice = False
         if HAS_AI and src in ("ia", "calculado"):
             import agents, estudio, voice
             from concurrent.futures import ThreadPoolExecutor
             t_ = time.time()
-            with ThreadPoolExecutor(3) as ex:              # foto, voz y textos de cierre A LA VEZ (antes, uno tras otro)
+            with ThreadPoolExecutor(5) as ex:              # foto, voz y textos de cierre A LA VEZ (antes, uno tras otro)
                 def _timed(name, fn, *a):
                     t0 = time.time(); r = fn(*a); tiempo(name, t0); return r
-                f_img = ex.submit(_timed, "foto", estudio.imagen_para, fmt, items, arms.get("estilo", "negro"), S, out[:-4])
+
+                def _render(idea):                         # render original para el formato de curiosidades
+                    for _ in range(2):
+                        try:
+                            img_, _p = estudio.ilustradora(idea, arms.get("estilo", "negro"))
+                            ok_, why_, better_ = estudio.revisora(img_, idea)
+                            if ok_:
+                                return img_
+                            idea = better_ or idea
+                        except Exception as e:
+                            print("render no generado:", str(e)[:120], flush=True)
+                    return None
+                if fmt == "render":
+                    f_rs = [ex.submit(_render, idea) for idea in S["render"]]
+                    f_img = None
+                else:
+                    f_img = ex.submit(_timed, "foto", estudio.imagen_para, fmt, items, arms.get("estilo", "negro"), S, out[:-4])
                 f_gl = ex.submit(agents.growth_lines, S, fmt)
-                if fmt == "infografia":
+                if fmt in ("infografia", "render"):
                     voice.reset()
                     L_ = make_quiz.lines_for(fmt, items, S)
                     f_vo = ex.submit(_timed, "voz", voice.say_many, [t for _, t, _ in L_],
                                      float(style.get("voice_speed") or 1.0), [make_quiz.ONE_VOICE] * len(L_), True)
                 else:
                     f_vo = None
-                image, dinfo = f_img.result()
+                if f_img is not None:
+                    image, dinfo = f_img.result()
+                else:
+                    images = [f.result() for f in f_rs]
+                    if sum(1 for im_ in images if im_ is not None) < 2:
+                        raise RuntimeError("no hay renders suficientes para el reel de curiosidades")
+                    image = next(im_ for im_ in images if im_ is not None); dinfo = {"concepto": "renders"}
                 style.update({k: v for k, v in f_gl.result().items() if not S.get(k)})
                 if f_vo is not None:
                     try:
@@ -214,7 +238,7 @@ for fmt in chain:
             tiempo(f"foto + voz + textos (voz: {voice.ENGINE_USED})", t_)
         t_ = time.time()
         meta = make_quiz.build(fmt, items, S, seed, out, arms, style, image=image, estilo=arms.get("estilo"),
-                               keep_voice=pre_voice)
+                               keep_voice=pre_voice, images=images if fmt == "render" else None)
         tiempo("render", t_)
         caption = open(out.replace(".mp4", ".txt")).read()
         review, art = {}, {}

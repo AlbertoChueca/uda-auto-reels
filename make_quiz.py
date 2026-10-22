@@ -26,7 +26,7 @@ CARD_CENTER = 900         # las tarjetas se centran aquí si caben (zona segura 
 CARD_MAX_BOTTOM = 1385   # deja sitio debajo para 'Comenta…' / retos dentro de la zona segura
 HDR = 74                  # alto de la cabecera de la hoja (estilo examen)
 THINK = {"corto": 5, "normal": 7, "largo": 9}
-BADGE = {"caso_coste": "CUÁNTO CUESTA DELEGAR", "infografia": "CUÁNTO CUESTA DELEGAR", "grafico": "LAS CIFRAS", "claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
+BADGE = {"render": "CURIOSIDADES DE ARQUITECTURA", "caso_coste": "CUÁNTO CUESTA DELEGAR", "infografia": "CUÁNTO CUESTA DELEGAR", "grafico": "LAS CIFRAS", "claves": "3 CLAVES PARA TU DESPACHO", "comparativa": "CONTRATAR O DELEGAR", "dato": "DATO DE PROYECTO",
          "test_normativa": "TEST DE NORMATIVA", "error_tipico": "ERROR TÍPICO EN PROYECTO", "mito_realidad": "MITO O REALIDAD",
          "norma_30s": "NORMATIVA EN 30 SEGUNDOS", "simulacro_3": "TEST RÁPIDO", "caso_despacho": "CASO DE DESPACHO",
          "checklist": "CHECKLIST DE PROYECTO", "delegar": "CONTRATAR O DELEGAR", "uda_servicio": "ASÍ TRABAJA UDA",
@@ -484,6 +484,10 @@ def lines_for(fmt, items, S):
         for k, b in enumerate(S["barras"]):
             L.append((f"b{k}", f"{b['etiqueta']}: {b['texto']}.", "clear, assured, building up"))
         L.append(("conc", S["conclusion"], "emphatic, confident conclusion"))
+    elif fmt == "render":
+        for k, b in enumerate(S["beats"]):
+            L.append((f"r{k}", b, ""))
+        L.append(("pu", S["puente"], ""))
     elif fmt == "infografia":
         G = S["infografia"]
         for sc in G["orden"]:                              # UNA frase por escena (sus golpes van dentro, por palabras):
@@ -576,6 +580,8 @@ def caption_text(fmt, items, S, rng, st=None):
             f"▪️ {r['aspecto']} → {S['col_a']}: {r['a']} · {S['col_b']}: {r['b']}" for r in S["filas"])
     elif fmt == "dato":
         body = f"{S['afirmacion']}\n\n{S['explicacion']}"
+    elif fmt == "render":
+        body = "\n".join(f"▪️ {b}" for b in S["beats"]) + f"\n\n{S['puente']}\n\nFuente: {S['fuente']}"
     elif fmt in ("caso_coste", "infografia"):
         body = (f"{S['titulo_norma']} (precios de referencia):\n\n" + "\n".join(f"▪️ {b['etiqueta']}: {b['texto']}" for b in S["barras"])
                 + f"\n\n→ {S['conclusion']}\n\n{S['puntos_titulo']}:\n" + "\n".join(f"✔️ {p}" for p in S["puntos"]))
@@ -597,7 +603,7 @@ def caption_text(fmt, items, S, rng, st=None):
 
 
 # ------------------------------------------------------------------ build
-def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_voice=False, image=None, estilo=None):
+def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_voice=False, image=None, estilo=None, images=None):
     """image: ilustración original (PIL) para el estilo 'ilustrado', el gancho y la escena del caso de despacho."""
     global T
     import voice
@@ -706,6 +712,10 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 starts.append(tt); say(f"b{k}", tt); tt += D[f"b{k}"] + 0.45
             cstart = tt; say("conc", tt); tt += D["conc"]
             seg("chart", tt - a + 1.8, starts=starts, cstart=cstart)
+        elif fmt == "render":
+            for k in range(len(S["beats"])):
+                a = t; seg("rbeat", D[f"r{k}"] + 1.2, k=k); say(f"r{k}", a + 0.4)
+            a = t; seg("rpuente", D["pu"] + 1.0); say("pu", a + 0.35)
         elif fmt == "infografia":
             G = S["infografia"]
             for sc in G["orden"]:
@@ -781,7 +791,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     for k, at in VO.items():
         put(vo, A[k], at)
     for sg in SEG:
-        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare", "chart") or sg["kind"].startswith("ig_"):
+        if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare", "chart", "rbeat", "rpuente") or sg["kind"].startswith("ig_"):
             put(sfx, fx.whoosh(), sg["a"] - 0.15, 1.1)
         if sg["kind"] == "count":
             for s_ in range(sg["n"]):
@@ -811,8 +821,11 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     bg = T.background(rng.randint(0, 999), image)
     hook_bg = themes.ImageBG(image, dark=0.25, blur=0, punch=0.10) if image is not None else None   # zoom de entrada
     ig_bg = themes.ImageBG(image, dark=0.80, blur=16) if image is not None else None      # fondo de las infografías
+    imgs_r = [im_ for im_ in (images or []) if im_ is not None] or ([image] if image is not None else [])
+    r_bgs = [themes.ImageBG(im_, dark=0.22, blur=0, punch=0.08) for im_ in imgs_r]           # renders a pantalla completa
+    r_soft = themes.ImageBG(imgs_r[-1], dark=0.78, blur=14) if imgs_r else None
     corto = QB.tema_corto(P.get("tema"))
-    extra = corto if len(corto) <= 26 and fmt not in ("simulacro_3", "delegar", "uda_servicio", "caso_coste") else None
+    extra = corto if len(corto) <= 26 and fmt not in ("simulacro_3", "delegar", "uda_servicio", "caso_coste", "render") else None
     if extra and extra.lower() in (BADGE.get(fmt, "").lower(), str(st.get("series") or "").lower()):
         extra = None                                      # nunca la misma etiqueta dos veces
     bdg = badge(fmt, None, S["infografia"]["badge"]) if fmt == "infografia" else badge(fmt, extra, st.get("series"))
@@ -828,7 +841,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     hook_logo = fx.logo(70, T.head_col, T.label if T.name != "carbon" else ARENA)
     hook_logo_img = fx.logo(70, WHITE, T.img_hot)
     cards = []
-    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico", "caso_coste", "infografia") and fmt not in QB.POINTS_ONLY:
+    if fmt not in ("repaso_express", "dato", "comparativa", "mito_realidad", "grafico", "caso_coste", "infografia", "render") and fmt not in QB.POINTS_ONLY:
         cards = [QuestionCard(Q, QB.tema_titulo(Q["tema"]).upper(), f"{i + 1}/3" if fmt == "simulacro_3" else None)
                  for i, Q in enumerate(items)]
     expl = stmt = pts = scene_card = cmp_card = chart = None
@@ -840,8 +853,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                                   title_fg=T.ok_text if T.ok_mode == "fill" else T.ink))
     elif fmt == "grafico":
         chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P))
-    elif fmt == "infografia":
-        pass                                           # escenas a pantalla completa (infoviz.py), sin tarjetas
+    elif fmt in ("infografia", "render"):
+        pass                                           # escenas a pantalla completa, sin tarjetas
     elif fmt == "caso_coste":                          # barras de UDA en oro, la del empleado en gris
         chart = ChartCard(S["titulo_norma"], S["barras"], S["conclusion"], ref_label(P),
                           hi_set=[k for k, b in enumerate(S["barras"]) if "empleado" not in b["etiqueta"] and "plantilla" not in b["etiqueta"]])
@@ -954,6 +967,15 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 a_ = int(200 * max(0, (yy - H * 0.35) / (H * 0.65)) ** 1.3 + 90 * max(0, 1 - yy / 420))
                 gd.rectangle([0, yy, W, yy + 8], fill=(0, 0, 0, min(220, a_)))
             fr.alpha_composite(grad)
+        elif kind == "rbeat" and r_bgs:
+            fr = r_bgs[sg["k"] % len(r_bgs)].frame(lt)
+            grad = Image.new("RGBA", (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(grad)
+            for yy in range(0, H, 8):
+                a_ = int(210 * max(0, (yy - H * 0.38) / (H * 0.62)) ** 1.2 + 80 * max(0, 1 - yy / 460))
+                gd.rectangle([0, yy, W, yy + 8], fill=(0, 0, 0, min(225, a_)))
+            fr.alpha_composite(grad)
+        elif kind == "rpuente" and r_soft is not None:
+            fr = r_soft.frame(tt)
         elif kind.startswith("ig_") and ig_bg is not None:
             fr = ig_bg.frame(tt)
         else:
@@ -1031,6 +1053,21 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             fx.paste_center(fr, shadow(im_), W / 2, y, alpha=p)
             if save_lab is not None and lt > 1.0 and y + img.height / 2 + 80 < fx.SAFE_BOTTOM:
                 fx.paste_center(fr, save_lab, W / 2, y + img.height / 2 + 70, eob((lt - 1.0) / 0.35))
+        elif kind == "rbeat":                             # curiosidad sobre el render: tarjeta abajo, en la zona segura
+            k = sg["k"]; p_ = eo(clamp(lt / 0.45))
+            lab = fx.spaced(("¿SABÍAS QUE…?" if k == 0 else f"{k + 1}/{len(S['beats'])}"), F900, 30, T.label, 0.12)
+            tx = fx.text_block(S["beats"][k], F900, 56, 880, T.ink, lit=lit(f"r{k}", tt), dim=(150, 144, 132))
+            ch = 46 + lab.height + 22 + tx.height + 46
+            card = Image.new("RGBA", (980, ch), (0, 0, 0, 0)); cd = ImageDraw.Draw(card)
+            cd.rounded_rectangle([0, 0, 979, ch - 1], 10, fill=(14, 14, 14, 215), outline=(70, 60, 40), width=2)
+            cd.rectangle([6, 0, 973, 6], fill=T.label)
+            card.alpha_composite(lab, (46, 40)); card.alpha_composite(tx, (46, 40 + lab.height + 22))
+            fx.paste_center(fr, card, W / 2, min(1440 - ch / 2, 1180) + (1 - p_) * 60, alpha=p_)
+        elif kind == "rpuente":
+            p_ = eob(clamp(lt / 0.4))
+            lg = fx.logo(96, T.ink, T.label); fx.paste_center(fr, lg, W / 2, 640, alpha=clamp(lt / 0.3))
+            tx = fx.text_block(S["puente"], F900, 62, 900, T.ink, lit=lit("pu", tt), dim=(150, 144, 132), align="center")
+            fx.paste_center(fr, tx, W / 2, 900 + tx.height / 2 * 0, p_, clamp(lt / 0.25))
         elif kind.startswith("ig_"):
             import infoviz as IV
             ov = IV.render(T, kind[3:], S["infografia"]["datos"][kind[3:]], lt, sg)
@@ -1059,7 +1096,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             dcta = max(1.0, D.get("cta", 4.0))
             stg = sum(1 for f_ in (0.22, 0.38, 0.52, 0.64, 0.99) if lt >= 0.4 + f_ * dcta)
             fx.paste_center(fr, brands[stg], W / 2, 330 + brand.height / 2 - 66, eob(lt / 0.4), min(1, lt / 0.2))
-            if st.get("share_line") and lt > 1.2 and fmt != "infografia":
+            if st.get("share_line") and lt > 1.2 and fmt not in ("infografia", "render"):
                 fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1345,
                                 eob((lt - 1.2) / 0.35))
             # sin subtítulo en el cierre: la tarjeta ya dice lo mismo (menos texto a la vez, nada en la zona de la interfaz)
@@ -1078,6 +1115,21 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
     cap = caption_text(fmt, items, S, rng, st)
     open(out.replace(".mp4", ".txt"), "w").write(cap)
     cover = None
+    if fmt == "render" and imgs_r:                        # portada: el render + el titular grande
+        try:
+            cover = out.replace(".mp4", "_portada.jpg")
+            base = themes.ImageBG(imgs_r[0], dark=0.35, blur=0).frame(0).convert("RGBA")
+            shade = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sd_ = ImageDraw.Draw(shade)
+            for yy in range(0, H, 6):
+                sd_.rectangle([0, yy, W, yy + 6], fill=(0, 0, 0, int(60 + 140 * max(0, yy / H - 0.35))))
+            base.alpha_composite(shade)
+            fx.paste_center(base, fx.pill(BADGE["render"], 34, T.label, fx.NEGRO, padx=26, pady=12, radius=4), W / 2, 330)
+            hl_ = fx.headline(S["screen_hook"], 116, 960, 3, color=(242, 236, 224), hot=T.label, hot_words=(), stroke=0, shadow=True)
+            fx.paste_center(base, hl_, W / 2, 1180)
+            fx.paste_center(base, fx.logo(60, (242, 236, 224), T.label), W / 2, 1560)
+            base.convert("RGB").save(cover, "JPEG", quality=92)
+        except Exception as e:
+            print("portada no generada:", str(e)[:150], flush=True); cover = None
     if fmt == "infografia":                               # portada propia: infografía + titular (miniatura del perfil)
         try:
             import infoviz as IV
