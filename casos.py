@@ -155,10 +155,27 @@ VARIANTES = {
 SEMANA = [["caso", "tiempo", "contratar"], ["delegable", "caso", "testimonio"], ["contratar", "proceso", "caso"],
           ["tiempo", "caso", "delegable"], ["caso", "testimonio", "proceso"], ["contratar", "caso", "tiempo"],
           ["testimonio", "delegable", "caso"]]
+# cada tipo tiene varias combinaciones de escenas: aunque el tipo se repita, el reel no se parece al anterior
+ESCENAS_ALT = {
+    "caso": [["towers", "versus", "cargas"], ["versus", "towers", "timeline"], ["towers", "cargas", "donut"]],
+    "contratar": [["versus", "cargas", "delegable"], ["cargas", "versus", "timeline"], ["versus", "cargas", "quote"]],
+    "delegable": [["delegable", "towers", "timeline"], ["delegable", "versus", "cargas"], ["delegable", "donut", "towers"]],
+    "tiempo": [["stack", "delegable", "towers"], ["stack", "donut", "versus"], ["stack", "timeline", "towers"]],
+    "proceso": [["timeline", "delegable", "versus"], ["timeline", "towers", "cargas"], ["timeline", "quote", "towers"]],
+    "testimonio": [["quote", "cargas", "versus"], ["quote", "towers", "timeline"], ["quote", "donut", "delegable"]],
+}
+NO_REPETIR = 5          # un tipo de reel no vuelve a salir hasta que hayan salido otros 5 distintos
 
 
-def variante_de(fecha, slot):
-    return SEMANA[fecha.weekday()][{"manana": 0, "mediodia": 1, "tarde": 2}.get(slot, 0)]
+def variante_de(fecha, slot, recientes=()):
+    """Tipo de reel para este hueco: el del calendario si no ha salido en los últimos reels; si no, el que lleva más
+    tiempo sin salir (así nunca salen dos reels del mismo tipo seguidos, tampoco en los lanzamientos manuales)."""
+    rec = [r for r in recientes if r][-NO_REPETIR:]
+    plan = SEMANA[fecha.weekday()][{"manana": 0, "mediodia": 1, "tarde": 2}.get(slot, 0)]
+    if plan not in rec:
+        return plan
+    orden = list(VARIANTES)
+    return min(orden, key=lambda v: (max([i for i, r in enumerate(rec) if r == v], default=-1), orden.index(v)))
 
 
 def infografia(p, var, k=0):
@@ -214,21 +231,34 @@ def infografia(p, var, k=0):
         "quote": [t],                                     # la voz lee el testimonio: se lee a su ritmo, sin prisas
     }
     badge, sh, hl, orden = VARIANTES[var]
+    orden = ESCENAS_ALT[var][k % len(ESCENAS_ALT[var])]
     n_ = G[tipo][0]; tot = b[2]["texto"]
     # ganchos: el primero es el más concreto (el dilema y la cifra desde el segundo cero); el bucle de mejora prueba
     # los siguientes si el revisor dice que el gancho es genérico o tarda en llegar
+    cc = G[tipo][1]; Cc = cc[0].upper() + cc[1:]
     hooks = {
         "caso": [(f"{tot} o 40.000 € al año", f"Delegar {n_} de {mm} metros: {tot}. Contratar a alguien: 40.000 euros al año."),
+                 (f"{Cc} de {mm} m²: {tot}", f"{Cc} de {mm} metros, proyecto completo: {tot}. Y sin ampliar plantilla."),
                  (p["screen_hook"], p["escena"])],
         "contratar": [("40.000 € al año o un proyecto", f"Un arquitecto en plantilla cuesta 40.000 euros al año. Delegar un proyecto completo, {tot}."),
-                      ("Lo que no sale en la nómina", "Contratar no es solo un sueldo. Esto es lo que no ves.")],
+                      ("Lo que no sale en la nómina", "Contratar no es solo un sueldo. Esto es lo que no ves."),
+                      (f"¿Contratar por {cc}?", f"¿Vas a contratar a alguien por {cc} de {mm} metros? Haz números antes.")],
         "delegable": [("Tú diseñas. Nosotros, el resto", "Tú diseñas y firmas. Los planos, las estructuras y las instalaciones, los hacemos nosotros."),
+                      ("Tu firma, nuestro equipo", "La firma es tuya. El trabajo que no te deja dormir, lo hacemos nosotros."),
+                      (f"{Cc} de {mm} m²: ¿qué delegas?", f"Te entra {cc} de {mm} metros. ¿Qué parte puedes delegar sin perder el control?"),
                       (sh, hl)],
         "tiempo": [("3 encargos y entra otro", "Tienes tres encargos en marcha y entra otro. ¿Cómo lo sacas sin contratar?"),
-                   (sh, hl)],
-        "proceso": [("De la reunión a tu firma", "De la primera reunión a tu firma: así se delega un proyecto."), (sh, hl)],
-        "testimonio": [("«Esos días duermo poco y mal»", "Esto nos contó un estudio que tenía varios proyectos de golpe."), (sh, hl)],
+                   ("¿Te faltan horas?", "¿Te faltan horas para proyectar y atender a tus clientes?"),
+                   (f"{mm} m² más y sin tiempo", f"Tu equipo va a tope y entra {cc} de {mm} metros. ¿De dónde sacas las horas?")],
+        "proceso": [("De la reunión a tu firma", "De la primera reunión a tu firma: así se delega un proyecto."),
+                    ("Presupuesto cerrado en 24 h", "Nos cuentas el proyecto y en 24 horas tienes un presupuesto cerrado."),
+                    (f"Así se delega {cc}", f"Así se delega {cc} de {mm} metros, paso a paso.")],
+        "testimonio": [("«Esos días duermo poco y mal»", "Esto nos contó un estudio que tenía varios proyectos de golpe."),
+                       ("Lo que cambia al delegar", "Esto es lo que cambia cuando un estudio delega."),
+                       ("Un estudio que ya delega", "Te contamos lo que nos dijo un estudio que ya trabaja con nosotros.")],
     }[var]
+    j = k % len(hooks)
+    hooks = hooks[j:] + hooks[:j]                         # cada caso abre con un gancho distinto
     return {"variante": var, "badge": badge, "screen_hook": hooks[0][0], "hook_line": hooks[0][1], "hooks": hooks,
             "orden": orden, "datos": {k_: datos[k_] for k_ in orden}, "voz": {k_: voz[k_] for k_ in orden}}
 

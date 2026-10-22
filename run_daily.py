@@ -117,6 +117,24 @@ if HAS_AI and LEARN:
         print(msg, flush=True); status.append(msg)
 
 # ---- serie del día (hueco de mediodía) + experimento del piloto automático
+def recent_variantes(n=8):
+    """Tipos de infografía de los últimos reels (los antiguos sin registro se deducen por su gancho)."""
+    try:
+        import casos
+        por_gancho = {}
+        for p in casos.generate():
+            for h, _ in p["infografia"]["hooks"]:
+                por_gancho.setdefault(h, p["infografia"]["variante"])
+        out = []
+        for line in open("log.jsonl"):
+            e = json.loads(line)
+            if e.get("formato") == "infografia":
+                out.append(e.get("variante") or por_gancho.get(e.get("hook")))
+        return [v for v in out if v][-n:]
+    except Exception:
+        return []
+
+
 arms, strat_msg, series_info = {}, "", None
 override = os.environ.get("FORMAT_OVERRIDE", "auto")
 style_override = os.environ.get("STYLE_OVERRIDE", "auto")
@@ -129,7 +147,7 @@ try:
         fixed["formato"] = "infografia"
     if not os.environ.get("IG_VARIANTE"):                     # tipo de reel según el día y la hora (nunca todos iguales)
         import casos
-        os.environ["IG_VARIANTE"] = casos.variante_de(today, slot)
+        os.environ["IG_VARIANTE"] = casos.variante_de(today, slot, recent_variantes())
     print("tipo de reel de hoy:", os.environ["IG_VARIANTE"], flush=True)
     if slot == "mediodia" and not fixed:
         import estudio
@@ -157,7 +175,9 @@ chain = list(dict.fromkeys([arms.get("formato", "infografia"), "infografia"]))
 if chain[0] == "infografia":                       # si una infografía no pasa el 8, se prueban otros tipos de infografía
     import casos as _c
     _v0 = os.environ.get("IG_VARIANTE")
-    chain += [f"infografia:{v}" for v in _c.VARIANTES if v != _v0][:2]
+    _rec = recent_variantes()
+    chain += sorted([f"infografia:{v}" for v in _c.VARIANTES if v != _v0],
+                    key=lambda x: x.split(":")[1] in _rec[-_c.NO_REPETIR:])[:2]   # de reserva, tipos que no han salido hace poco
 # sin formatos de texto de reserva: si ninguna infografía llega al 8, hoy no sale reel (mejor nada que algo confuso)
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
@@ -298,7 +318,8 @@ for fmt in chain:
                 for k_ in ("caption_scale",):
                     if new_style.get(k_) and new_style.get(k_) != style.get(k_):
                         style[k_] = new_style[k_]; fixes.append(k_)
-            hooks_ = (S.get("infografia") or {}).get("hooks") or []
+            hooks_ = [h for h in ((S.get("infografia") or {}).get("hooks") or [])
+                      if h[0] == S.get("screen_hook") or h[0] not in recent_hooks(20)]   # tampoco aquí ganchos ya publicados
             if re.search(r"gancho|hook|primer(os)? segundo|tarda en|genéric|predecible", txt_) and hook_i + 1 < len(hooks_):
                 hook_i += 1; S["screen_hook"], S["hook_line"] = hooks_[hook_i]; style["screen_hook"] = S["screen_hook"]
                 fixes.append("gancho")
@@ -385,8 +406,9 @@ if summary:
                                                   for k, v in results.items()))
 meta["voice"] = voice_used
 meta["arms"] = arms
+meta["variante"] = ((items or [{}])[0].get("infografia") or {}).get("variante")
 log({k: meta.get(k) for k in ("formato", "estilo", "series", "imagen", "concepto", "voice_speed", "music", "ids", "temas",
                               "respuestas", "veredicto", "hook", "hook_line", "duration", "guion", "voice", "review_score",
-                              "design_score", "arms", "publicado")})
+                              "design_score", "arms", "publicado", "variante")})
 if all(str(v).startswith("error") for v in results.values()):
     raise SystemExit("No se pudo publicar en ninguna red")

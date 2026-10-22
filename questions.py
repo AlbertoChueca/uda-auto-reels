@@ -100,6 +100,17 @@ def save_verif(v):
     json.dump(v, open(VERIF, "w"), ensure_ascii=False, indent=0)
 
 
+def recent_hooks(n=20):
+    out = []
+    try:
+        for line in open(os.path.join(HERE, "log.jsonl")):
+            h = json.loads(line).get("hook")
+            if h: out.append(h)
+    except Exception:
+        pass
+    return out[-n:]
+
+
 def used():
     try:
         return json.load(open(USED))
@@ -178,6 +189,8 @@ def candidates(fmt, bloque=None, seed=0):
     u = used()
     done = {x["id"] for x in u}
     fresh = [p for p in ps if p["id"] not in done] or ps          # banco agotado para este formato: vuelve a empezar
+    vistos = set(recent_hooks(20))                                 # nunca el mismo gancho que un reel reciente
+    fresh = [p for p in fresh if p.get("screen_hook") not in vistos] or fresh
     recent = {x.get("tema") for x in u[-6:]}
     rng = random.Random(seed)
     rng.shuffle(fresh)

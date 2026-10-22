@@ -28,18 +28,18 @@ Precios: fórmulas de la Tabla de presupuestos 2026 (comprobadas con sus ejemplo
 
 ### CONTRATAR O DELEGAR · tipo «contratar»
 
-- **Gancho:** 40.000 € al año o un proyecto — voz: «Un arquitecto en plantilla cuesta 40.000 euros al año. Delegar un proyecto completo, 2.955 €.»
-- **Contratar o delegar:** «Un arquitecto en plantilla: de 40.000 a 47.000 € al año, haya proyectos o no.» / «Delegar en UDA: 2.955 €, una sola vez, proyecto completo.»
+- **Gancho:** Lo que no sale en la nómina — voz: «Contratar no es solo un sueldo. Esto es lo que no ves.»
 - **Y no es solo dinero:** «Y no es solo dinero.» / «Hay que formarle.» / «Bajas y vacaciones.» / «Nómina sin trabajo.» / «Despedir duele.» / «Con UDA, nada de eso.»
-- **Qué delegas y qué sigue siendo tuyo:** «Lo delegas en UDA: planos en CAD o Revit, estructuras con CYPE, instalaciones, memorias y mediciones.» / «Sigue siendo tuyo: el diseño, la firma y el visado, y la dirección de obra.»
+- **Contratar o delegar:** «Un arquitecto en plantilla: de 40.000 a 47.000 € al año, haya proyectos o no.» / «Delegar en UDA: 2.955 €, una sola vez, proyecto completo.»
+- **Así funciona:** «Reunión.» / «Presupuesto cerrado, en 24 horas.» / «Entrega por fases.» / «Y tú firmas.»
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
 ### QUÉ PUEDES DELEGAR · tipo «delegable»
 
-- **Gancho:** Tú diseñas. Nosotros, el resto — voz: «Tú diseñas y firmas. Los planos, las estructuras y las instalaciones, los hacemos nosotros.»
+- **Gancho:** Tu firma, nuestro equipo — voz: «La firma es tuya. El trabajo que no te deja dormir, lo hacemos nosotros.»
 - **Qué delegas y qué sigue siendo tuyo:** «Lo delegas en UDA: planos en CAD o Revit, estructuras con CYPE, instalaciones, memorias y mediciones.» / «Sigue siendo tuyo: el diseño, la firma y el visado, y la dirección de obra.»
+- **Tiempo:** «Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor.»
 - **Cuánto cuesta delegar (3 edificios dorados):** «Estructuras e instalaciones: 1.185 €.» / «Proyecto de ejecución completo: 1.985 €.» / «Básico más ejecución: 2.955 €.» / «Tú eliges cuánto delegas.»
-- **Así funciona:** «Reunión.» / «Presupuesto cerrado, en 24 horas.» / «Entrega por fases.» / «Y tú firmas.»
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
 ### MÁS TIEMPO PARA TU ESTUDIO · tipo «tiempo»
@@ -52,18 +52,18 @@ Precios: fórmulas de la Tabla de presupuestos 2026 (comprobadas con sus ejemplo
 
 ### CÓMO TRABAJAMOS · tipo «proceso»
 
-- **Gancho:** De la reunión a tu firma — voz: «De la primera reunión a tu firma: así se delega un proyecto.»
+- **Gancho:** Presupuesto cerrado en 24 h — voz: «Nos cuentas el proyecto y en 24 horas tienes un presupuesto cerrado.»
 - **Así funciona:** «Reunión.» / «Presupuesto cerrado, en 24 horas.» / «Entrega por fases.» / «Y tú firmas.»
-- **Qué delegas y qué sigue siendo tuyo:** «Lo delegas en UDA: planos en CAD o Revit, estructuras con CYPE, instalaciones, memorias y mediciones.» / «Sigue siendo tuyo: el diseño, la firma y el visado, y la dirección de obra.»
-- **Contratar o delegar:** «Un arquitecto en plantilla: de 40.000 a 47.000 € al año, haya proyectos o no.» / «Delegar en UDA: 2.955 €, una sola vez, proyecto completo.»
+- **Cuánto cuesta delegar (3 edificios dorados):** «Estructuras e instalaciones: 1.185 €.» / «Proyecto de ejecución completo: 1.985 €.» / «Básico más ejecución: 2.955 €.» / «Tú eliges cuánto delegas.»
+- **Y no es solo dinero:** «Y no es solo dinero.» / «Hay que formarle.» / «Bajas y vacaciones.» / «Nómina sin trabajo.» / «Despedir duele.» / «Con UDA, nada de eso.»
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
 ### LO QUE DICEN LOS ESTUDIOS · tipo «testimonio»
 
-- **Gancho:** «Esos días duermo poco y mal» — voz: «Esto nos contó un estudio que tenía varios proyectos de golpe.»
+- **Gancho:** Un estudio que ya delega — voz: «Te contamos lo que nos dijo un estudio que ya trabaja con nosotros.»
 - **Testimonio (web de UDA):** «Se me hacía duro contratar a alguien para 3 meses y tener que despedirle. UDA me ayuda mucho en el día a día.»
-- **Y no es solo dinero:** «Y no es solo dinero.» / «Hay que formarle.» / «Bajas y vacaciones.» / «Nómina sin trabajo.» / «Despedir duele.» / «Con UDA, nada de eso.»
-- **Contratar o delegar:** «Un arquitecto en plantilla: de 40.000 a 47.000 € al año, haya proyectos o no.» / «Delegar en UDA: 2.955 €, una sola vez, proyecto completo.»
+- **Tiempo:** «Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor.»
+- **Qué delegas y qué sigue siendo tuyo:** «Lo delegas en UDA: planos en CAD o Revit, estructuras con CYPE, instalaciones, memorias y mediciones.» / «Sigue siendo tuyo: el diseño, la firma y el visado, y la dirección de obra.»
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
 ## Renders + curiosidades (martes y viernes a las 12:00)
