@@ -642,7 +642,7 @@ def main():
             hh, mm = map(int, os.environ["PUBLISH_AT"].split(":"))
             now = datetime.datetime.now(ZoneInfo("Europe/Madrid"))
             secs = (now.replace(hour=hh, minute=mm, second=0, microsecond=0) - now).total_seconds()
-            if 0 < secs <= 3600:
+            if 0 < secs <= 5400:
                 print(f"carrusel: espero {secs / 60:.1f} min para publicar a las {hh}:{mm:02d}", flush=True)
                 time.sleep(secs)
         except Exception as e:

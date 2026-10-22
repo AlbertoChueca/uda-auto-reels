@@ -206,7 +206,7 @@ def infografia(p, var, k=0):
                    f"Delegar este proyecto: {b[2]['texto']}, una sola vez."],
         "cargas": ["Y no es solo dinero.", "Hay que formarle.", "Puede coger una baja.",
                    "Le pagas aunque no haya trabajo.", "Y despedir duele.", "Con UDA, nada de eso."],
-        "delegable": ["Delegas planos, estructuras, instalaciones, memorias y mediciones.", "Lo tuyo: el diseño, la firma y la obra."],
+        "delegable": ["Delegas planos, estructuras, instalaciones, memorias y mediciones.", "Lo tuyo: el diseño, la firma y la dirección de obra."],
         "donut": ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."],
         "timeline": ["Una reunión.", "Presupuesto cerrado en 24 horas.",
                      f"Proyecto de ejecución en {PLAZO_PE[tipo].replace('–', ' a ')}.", "Y tú firmas."],
