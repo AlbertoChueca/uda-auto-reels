@@ -375,6 +375,22 @@ def brand_card(style, h=None, stage=9):
     return _brand_card(style, h, stage)
 
 
+def _brand_final(h):
+    """Último golpe del cierre, limpio: logo, AGENDA UNA REUNIÓN y la web (las ventajas ya se han dicho y visto)."""
+    im = Image.new("RGBA", (CARD_W, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([0, 0, CARD_W - 1, h - 1], 12, fill=T.brand_bg, outline=T.card_outline if T.name == "negro" else None, width=2)
+    d.rectangle([6, 0, CARD_W - 7, 8], fill=T.brand_rule)
+    lg = fx.logo(120, T.brand_ink, T.brand_sub); y = 90
+    im.alpha_composite(lg, ((CARD_W - lg.width) // 2, y)); y += lg.height + 70
+    p1 = fx.pill("AGENDA UNA REUNIÓN", 52, T.brand_pill, T.brand_pill_fg, padx=44, pady=20, radius=4)
+    im.alpha_composite(p1, ((CARD_W - p1.width) // 2, y)); y += p1.height + 18
+    p1b = fx.text_block("para conocernos y crecer juntos", F800, 40, 800, T.brand_sub, align="center")
+    im.alpha_composite(p1b, ((CARD_W - p1b.width) // 2, y)); y += p1b.height + 60
+    p2 = fx.pill(M.WEB, 54, T.brand_web, T.brand_web_fg, padx=40, pady=16, radius=4)
+    im.alpha_composite(p2, ((CARD_W - p2.width) // 2, y))
+    return im
+
+
 def _brand_card(style, h=None, stage=9):
     """Tarjeta final, como la cabecera de los documentos de UDA: bloque carbón, logotipo, claim y la web (solo hechos)."""
     if h is None:                                          # 1ª pasada: mide; 2ª: dibuja la tarjeta a su altura justa
@@ -696,7 +712,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 a = t; say(sc, a + 0.5)
                 ws = [len(x.split()) for x in G["voz"][sc]]; tot = max(1, sum(ws))
                 starts = [0.5 + D[sc] * sum(ws[:k]) / tot for k in range(len(ws))]   # cada golpe, cuando se dice
-                dur = max(0.5 + D[sc] + 1.3, 4.0 if sc == "donut" else 0)
+                dur = max(0.5 + D[sc] + 0.8, 4.0 if sc == "donut" else 0)          # ritmo: sin esperas al final
                 seg("ig_" + sc, dur, starts=starts, cstart=starts[-1], bstart=starts[1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []
@@ -858,7 +874,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         if fmt == "caso_despacho" and hook_bg is None:
             scene_card = TextCard("CASO DE DESPACHO", S["escena"], None, body_size=58)
     brand = fx.shadowed(brand_card(st), alpha=70)
-    brands = [fx.shadowed(brand_card(st, stage=k), alpha=70) for k in range(6)]   # el cierre se construye por partes
+    brands = [fx.shadowed(brand_card(st, stage=k), alpha=70) for k in range(4)]   # ventajas, una a una...
+    brands += [fx.shadowed(_brand_final(brand_card(st).height), alpha=70)] * 2     # ...y después solo la llamada a la acción
     stamp_img = fx.pill(S.get("veredicto", "MITO"), 116, T.mito_col if S.get("veredicto") == "MITO" else T.real_col, WHITE if T.name != "negro" or S.get("veredicto") == "MITO" else NEGRO_,
                         padx=60, pady=26, outline=WHITE, radius=6) if fmt == "mito_realidad" else None
     n_items = len(items)
@@ -1040,7 +1057,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             if s_ is not None: fx.paste_center(fr, s_, W / 2, 1260)
         elif kind == "cta":
             dcta = max(1.0, D.get("cta", 4.0))
-            stg = sum(1 for f_ in (0.22, 0.38, 0.52, 0.62, 0.78) if lt >= 0.4 + f_ * dcta)
+            stg = sum(1 for f_ in (0.22, 0.38, 0.52, 0.64, 0.99) if lt >= 0.4 + f_ * dcta)
             fx.paste_center(fr, brands[stg], W / 2, 330 + brand.height / 2 - 66, eob(lt / 0.4), min(1, lt / 0.2))
             if st.get("share_line") and lt > 1.2 and fmt != "infografia":
                 fx.paste_center(fr, fx.pill(st["share_line"].upper(), 32, T.badge_bg, T.badge_fg, padx=26, pady=12, radius=4), W / 2, 1345,
