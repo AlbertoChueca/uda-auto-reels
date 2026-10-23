@@ -305,12 +305,12 @@
    "pregunta": "¿Qué significa SATE?",
    "opciones": [
     "Sistema de Aislamiento Térmico por el Exterior",
-    "Sistema Acústico de Tabiquería Exterior",
-    "Solado Antideslizante Técnico Exterior",
-    "Sistema de Anclaje Térmico Estructural"
+    "Sistema Acústico Exterior",
+    "Solado Antideslizante Exterior",
+    "Sistema de Anclaje Estructural"
    ],
    "correcta": 0,
-   "explicacion": "El aislamiento va por fuera del muro, como un abrigo.",
+   "explicacion": "El aislamiento va por fuera, como un abrigo.",
    "fuente": "es.wikipedia.org/wiki/Sistema_de_aislamiento_térmico_por_el_exterior"
   },
   {

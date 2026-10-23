@@ -333,19 +333,21 @@ def _opt_rows(T, c, d, y, lt, starts, reveal=None):
     """Opciones en filas (letra en círculo + texto). reveal: índice correcto (oro) o -1 (encuesta: todas neutras)."""
     dr = ImageDraw.Draw(c)
     ops = d["opciones"]; n = len(ops)
-    x0, x1 = 100, W - 100; gap = 22; fs = 46 if n > 2 else 54
+    x0, x1 = 100, W - 100; gap = 18; fs = 44 if n > 2 else 54
     ims = []
     for k, o in enumerate(ops):
         ok = reveal is not None and reveal >= 0 and k == reveal
         dim = reveal is not None and reveal >= 0 and k != reveal
         col = fx.NEGRO if ok else ((120, 116, 108) if dim else T.ink)
         ims.append((_txt(o, fs, x1 - x0 - 230, col, align="left"), ok, dim))
-    rh = max([128 if n > 2 else 150] + [im.height + 44 for im, _, _ in ims])   # filas de dos líneas: más altas
+    hs = [max(116 if n > 2 else 150, im.height + 40) for im, _, _ in ims]     # cada fila, su altura (2 líneas: más alta)
+    ys = [y + sum(hs[:k]) + k * gap for k in range(n)]
     for k, (im, ok, dim) in enumerate(ims):
         p = eob(clamp((lt - (starts[k] if k < len(starts) else 0)) / 0.35)) if reveal is None else 1.0
+        rh = hs[k]
         if p <= 0:
             continue
-        yy = y + k * (rh + gap) + (1 - p) * 30
+        yy = ys[k] + (1 - p) * 30
         fill = tuple(T.label[:3]) + (245,) if ok else (26, 25, 23, 150 if dim else 238)
         dr.rounded_rectangle([x0, yy, x1, yy + rh], 14, fill=fill, outline=(78, 74, 68) if not ok else None, width=2)
         cx, cy = x0 + 70, yy + rh / 2
@@ -356,16 +358,16 @@ def _opt_rows(T, c, d, y, lt, starts, reveal=None):
         _center_v(c, im, x0 + 135, cy)
         if ok:
             c.alpha_composite(fx.icon("check", 64, fx.NEGRO), (int(x1 - 90), int(cy - 32)))
-    return y + n * (rh + gap)
+    return y + sum(hs) + n * gap
 
 
 def scene_pregunta(T, d, lt, starts, end):
     """Pregunta + opciones que aparecen al decirlas + cuenta atrás con «Comenta tu respuesta»."""
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
-    y = _label(T, d.get("titulo", "Test de arquitecto"), TOP + 20 - 120, c, clamp(lt / 0.3))
-    q = _txt(d["pregunta"], 66, 900, T.ink)
+    y = TOP + 10                                           # sin rótulo propio: la etiqueta fija del reel ya dice qué es
+    q = _txt(d["pregunta"], 62, 900, T.ink)
     _paste(c, q, W / 2, y + 10, clamp((lt - starts[0]) / 0.3))
-    y2 = y + 10 + q.height + 50
+    y2 = y + q.height + 44
     y3 = _opt_rows(T, c, d, y2, lt, starts[1:1 + len(d["opciones"])])
     cst = starts[-1]
     if lt >= cst:
@@ -387,8 +389,8 @@ def scene_pregunta(T, d, lt, starts, end):
 def scene_respuesta(T, d, lt, starts):
     """La solución: la opción correcta en oro (o, en las encuestas, todas iguales) + explicación + invitación a guardar."""
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    y = _label(T, d.get("titulo", "La respuesta"), TOP + 20 - 120, c, clamp(lt / 0.3))
-    q = _txt(d["pregunta"], 44, 900, (190, 184, 172), bold=False)
+    y = TOP + 10
+    q = _txt(d["pregunta"], 42, 900, (190, 184, 172), bold=False)
     _paste(c, q, W / 2, y)
     y2 = _opt_rows(T, c, d, y + q.height + 30, lt, [0] * 4, reveal=d.get("correcta", -1))
     if len(starts) > 1 and lt >= starts[1] and d.get("explicacion"):
@@ -456,7 +458,7 @@ def cover(T, ig, photo=None):
         if main == "pregunta":                                     # portada del test: pregunta y opciones, sin la solución
             sg["starts"] = [0] * 7; sg["b"] = 30.0
         ov = render(T, main, ig["datos"][main], 30.0, sg)
-        crop = ov.crop((0, (TOP - 60) if main == "pregunta" else (TOP + 70), W, 1490))   # sin la etiqueta pequeña
+        crop = ov.crop((0, (TOP - 10) if main == "pregunta" else (TOP + 70), W, 1490))   # sin la etiqueta pequeña
         k = min(0.9, (1560 - y0) / crop.height)
         crop = crop.resize((int(W * k), int(crop.height * k)), Image.LANCZOS)
         base.alpha_composite(crop, (int((W - crop.width) / 2), int(y0)))

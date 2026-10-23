@@ -275,7 +275,7 @@ def _voz(t):
 def _quiz(tema, clave, k, badge, titulo, pregunta, opciones, correcta, explicacion, hooks, caption, voz_ops,
           cta="Comenta tu respuesta", pill="Guárdalo para repasar", sol_voz=None, letras=LETRAS):
     preg = {"titulo": titulo, "pregunta": pregunta, "opciones": opciones, "letras": letras, "cta": cta, "segundos": 3,
-            "pausa": 3.0}
+            "pausa": 2.5}
     preg_voz = [_voz(pregunta)] + voz_ops + [cta + "."]
     resp = {"titulo": "La respuesta" if correcta >= 0 else "Tu respuesta", "pregunta": pregunta, "opciones": opciones,
             "letras": letras, "correcta": correcta, "explicacion": explicacion, "pill": pill}
@@ -288,8 +288,8 @@ def _quiz(tema, clave, k, badge, titulo, pregunta, opciones, correcta, explicaci
 def interaccion():
     B = json.load(open(os.path.join(HERE, "fuentes", "interaccion.json")))
     out = []
-    H_TEST = [("Test de arquitecto: ¿la sabes?", "Test rápido para arquitectos. ¿Sabrías responder?"),
-              ("Contesta sin buscarlo", "Una pregunta de arquitectura. Contesta sin buscarlo."),
+    H_TEST = [("¿La sabes sin buscarla?", "Una pregunta de arquitectura. ¿La sabes sin buscarla?"),
+              ("Pásaselo a tu equipo", "Pásaselo a tu equipo y comparad respuestas."),
               ("¿Aciertas a la primera?", "A ver si aciertas a la primera. Pásaselo a tu equipo y comparad.")]
     for i, q in enumerate(B["tests"]):
         ops, c = q["opciones"], q["correcta"]
@@ -299,9 +299,9 @@ def interaccion():
                          q["explicacion"], H_TEST, cap, [f"{LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)],
                          sol_voz=f"La respuesta correcta es la {LETRAS[c]}: {_voz(ops[c])}."))
         out[-1]["referencia"] = q["fuente"]
-    H_VF = [("¿Verdadero o falso?", "Verdadero o falso. Contesta antes de que salga la respuesta."),
+    H_VF = [("Esta parece fácil", "Esta parece fácil. Contesta antes de que salga la respuesta."),
             ("Contesta sin buscarlo", "Verdadero o falso. Contesta sin buscarlo."),
-            ("¿Te la sabes?", "Esta parece fácil. ¿Verdadero o falso?")]
+            ("¿Te la sabes?", "¿Te la sabes? Comenta antes de ver la solución.")]
     for i, q in enumerate(B["vf"]):
         c = 0 if q["verdadero"] else 1
         ex = q["explicacion"].split(". ", 1)[1] if q["explicacion"].startswith(("Verdadero.", "Falso.")) else q["explicacion"]
@@ -311,7 +311,7 @@ def interaccion():
                          ["Verdadero", "Falso"], c, ex, H_VF, cap, ["¿Verdadero?", "¿O falso?"],
                          cta="Comenta V o F", sol_voz=("Verdadero." if c == 0 else "Falso."), letras="VF"))
         out[-1]["referencia"] = q["fuente"]
-    H_EN = [("Encuesta para arquitectos", "Encuesta rápida para arquitectos. Contesta en comentarios."),
+    H_EN = [("Contesta con una letra", "Una pregunta rápida para arquitectos. Contesta con una letra."),
             ("Queremos saberlo", "Queremos saber cómo trabajas. Contesta en comentarios."),
             ("¿Y tú qué contestas?", "Una pregunta para los que llevan un estudio. ¿Tú qué contestas?")]
     for i, q in enumerate(B["encuestas"]):
