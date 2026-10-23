@@ -1,7 +1,5 @@
-# Cuaderno de crecimiento (2026-10-22)
+# Cuaderno de crecimiento (2026-10-23)
 
-# Cuaderno de crecimiento (2026-10-22)
-
-• Seguir haciendo: Llamadas a guardar centradas en optimización de costes y plantilla (únicos guardados logrados).
-• Dejar de hacer: Copys sin llamada explícita a la web; seguimos con 0 visitas al perfil en todas las publicaciones.
-• Probar: CTA polarizante para forzar el primer comentario ('¿Prefieres contratar o delegar por encargo?') y enlace directo a uniondearquitectos.com para calcular horas delegadas.
+• Seguir haciendo: Mensajes centrados en rentabilidad del despacho y plantilla flexible, único tema que generó guardados.
+• Dejar de hacer: Cierres sin llamada a la acción específica; mantenemos 0 visitas al perfil y 0 compartidos en todo el histórico.
+• Probar: CTA binario para forzar el primer comentario ('¿Plantilla fija o externalizar por encargo?') y derivación clara a uniondearquitectos.com para cotizar proyectos.

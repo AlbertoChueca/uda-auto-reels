@@ -1,5 +1,7 @@
-# Cuaderno de revisora_visual (2026-10-22)
+# Cuaderno de revisora_visual (2026-10-23)
 
-- Seguir haciendo: Criterio estricto rechazando asimetrías estructurales, dobles filas de pilares incoherentes y siluetas dudosas.
-- Dejar de hacer: (Datos insuficientes para corregir el filtro; las aprobaciones de planos cenitales limpios funcionan al 100%).
-- Probar: Exigir previamente esquemas geométricos elementales antes de renderizar para asegurar la coherencia tipológica y tectónica.
+# Cuaderno de revisora_visual (2026-10-23)
+
+- Seguir haciendo: Filtro estricto que rechaza soluciones constructivas falsas (muro cortina con pletinas impropias) y aprueba detalles creíbles.
+- Dejar de hacer: Datos insuficientes para suavizar el criterio; el estándar actual ha validado 5 imágenes seguidas.
+- Probar: Revisar con prioridad la lógica de perfiles extruidos y encuentros térmicos antes de validar detalles de envolvente.

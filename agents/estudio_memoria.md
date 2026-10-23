@@ -1,5 +1,7 @@
-# Cuaderno de memoria (2026-10-22)
+# Cuaderno de memoria (2026-10-23)
 
-- Seguir haciendo: Formato carrusel enfocado a gestión de horas (único con guardados y máximo score: 9.73).
-- Dejar de hacer: Infografías de equipamientos grandes sin utilidad directa de archivo para el profesional.
-- Probar: Desgloses de cálculo de horas técnicas invertidas en redacción de memorias para guardar antes de presupuestar.
+# Cuaderno de memoria (2026-10-23)
+
+- Seguir haciendo: Contenidos de eficiencia operativa; 'Horas caras dibujando adosados' logró el único guardado registrado.
+- Dejar de hacer: Infografías que no aporten un dato aplicable o archivable para el arquitecto que redacta.
+- Probar: Tablas de cálculo rápido sobre horas de dibujo invertidas frente a rentabilidad de delegar para guardar y presupuestar.

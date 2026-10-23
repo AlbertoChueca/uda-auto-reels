@@ -1,5 +1,7 @@
-# Cuaderno de viralidad (2026-10-22)
+# Cuaderno de viralidad (2026-10-23)
 
-- Seguir haciendo: Ganchos directos sobre ineficiencias de despacho ('Horas caras dibujando adosados', 3260 ms de retención).
-- Dejar de hacer: Cierres planos; compartidos y comentarios siguen en cero absoluto en todas las publicaciones analizadas.
-- Probar: Retar al debate entre socios: «¿Cuánto os cuesta rehacer planos básicos en el estudio?» para forzar el reenvío.
+# Cuaderno de viralidad (2026-10-23)
+
+- Seguir haciendo: Ganchos provocadores sobre ineficiencias del estudio ('Horas caras dibujando adosados', 3260 ms de retención).
+- Dejar de hacer: Cierres pasivos; compartidos y comentarios siguen en cero en todas las publicaciones analizadas.
+- Probar: Preguntas directas a socios de despacho: «¿Cuánto os cuesta rehacer planos básicos en el estudio? Etiqueta a tu socio».

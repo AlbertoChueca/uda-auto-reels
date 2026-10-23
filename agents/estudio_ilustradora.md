@@ -1,5 +1,7 @@
-# Cuaderno de ilustradora (2026-10-22)
+# Cuaderno de ilustradora (2026-10-23)
 
-- Seguir haciendo: Planos cenitales sobrios con paleta negro profundo, estilográficas oscuras y sutil luz dorada.
-- Dejar de hacer: Estructuras industriales complejas de gran luz con cerchas o pórticos propensos a incongruencias geométricas.
-- Probar: Encuadres verticales macro de planos técnicos enrollados y maquetas volumétricas en madera clara con luz rasante dorada.
+# Cuaderno de ilustradora (2026-10-23)
+
+- Seguir haciendo: Macros 1:1 y composiciones cenitales con luz rasante cálida, acero pavonado, nogal y piedra sinterizada negra.
+- Dejar de hacer: Ensambles de perfilería de muro cortina con tornillos o pletinas planas decorativas que parezcan herrajes de carpintería.
+- Probar: Encuadres cerrados sobre fijaciones ocultas de fachada y uniones atornilladas estructurales normalizadas.

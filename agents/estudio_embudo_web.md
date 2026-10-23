@@ -1,5 +1,7 @@
-# Cuaderno de embudo_web (2026-10-22)
+# Cuaderno de embudo_web (2026-10-23)
 
-- Seguir haciendo: Vincular la delegación de carga de trabajo con uniondearquitectos.com (el gancho 'Plantilla o delegar' logró 66 clics).
-- Dejar de hacer: Foco en proyectos institucionales o naves sin enlace claro a externalización.
-- Probar: Llamada a la acción orientada a resolver picos de trabajo en proyectos de ejecución sin asumir costes fijos.
+# Cuaderno de embudo_web (2026-10-23)
+
+- Seguir haciendo: Mensajes directos sobre delegar carga de trabajo; 'Plantilla o delegar por encargo' generó 89 clics hacia la web.
+- Dejar de hacer: Foco en tipologías específicas sin llamada clara al servicio externalizado de UDA.
+- Probar: CTA enfocado a resolver picos de trabajo en proyectos de ejecución sin asumir costes fijos de contratación.

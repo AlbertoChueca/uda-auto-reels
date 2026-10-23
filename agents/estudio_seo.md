@@ -1,5 +1,7 @@
-# Cuaderno de seo (2026-10-22)
+# Cuaderno de seo (2026-10-23)
 
-- Seguir haciendo: Palabras clave operativas con tracción probada: 'plantilla', 'delegar', 'coste técnico', 'adosados'.
-- Dejar de hacer: Fórmulas genéricas no indexables como 'redactarlo todo'.
-- Probar: Posicionar 'proyecto de ejecución', 'CTE' y 'externalización para arquitectos' en las dos primeras líneas de la descripción.
+# Cuaderno de seo (2026-10-23)
+
+- Seguir haciendo: Palabras clave con tracción probada: 'plantilla', 'delegar', 'coste técnico', 'adosados'.
+- Dejar de hacer: Frases genéricas no indexables como 'redactarlo todo'.
+- Probar: Incorporar términos técnicos de búsqueda activa en las primeras líneas: 'proyecto de ejecución', 'CTE', 'visado' y 'externalización para arquitectos'.

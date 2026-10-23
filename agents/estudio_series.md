@@ -1,5 +1,7 @@
-# Cuaderno de series (2026-10-22)
+# Cuaderno de series (2026-10-23)
 
-- Seguir haciendo: (Datos insuficientes: el 100% de los contenidos se ha publicado con 'serie None').
-- Dejar de hacer: Publicaciones desconectadas sin recurrencia temática ni numeración fija.
-- Probar: Estrenar la serie semanal numerada 'Números de Despacho', aprovechando el éxito del dilema plantilla vs. delegación técnica.
+# Cuaderno de series (2026-10-23)
+
+- Seguir haciendo: Datos insuficientes; el 100% de las publicaciones analizadas sigue catalogado como 'serie None'.
+- Dejar de hacer: Publicaciones aisladas que diluyen la fidelización y el seguimiento recurrente de la cuenta.
+- Probar: Lanzar la serie fija semanal 'Números de Despacho' (Ep. 1: Plantilla vs. Delegar), aprovechando el tema de mayor tracción.
