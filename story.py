@@ -17,10 +17,10 @@ from fx import W, H, FPS, SR, F900, BRONCE, ARENA, CARBON, INK, WHITE, TERRACOTA
 DUR = 12.0
 HANDLE = os.environ.get("IG_HANDLE", "@uniondearquitectos")
 ASK = {"grafico": "¿Lo adivinas?", "mito_realidad": "¿Mito o realidad?", "caso_despacho": "¿Qué harías tú?", "claves": "3 claves para tu despacho",
-       "comparativa": "¿Contratar o delegar?", "dato": "¿Lo sabías?"}
+       "comparativa": "¿Contratar o delegar?", "dato": "¿Lo sabías?", "visual": "¿Con cuál te quedas?"}
 SOL = {"grafico": "LAS CIFRAS, EN EL REEL DE HOY", "claves": "LAS 3 CLAVES, EN EL REEL DE HOY", "caso_despacho": "LAS 3 CLAVES, EN EL REEL DE HOY",
        "comparativa": "LA COMPARATIVA, EN EL REEL DE HOY", "dato": "EL DATO, EN EL REEL DE HOY",
-       "mito_realidad": "LA RESPUESTA, EN EL REEL DE HOY"}
+       "mito_realidad": "LA RESPUESTA, EN EL REEL DE HOY", "visual": "MÍRALO EN EL REEL DE HOY"}
 
 
 def _ring(remain, frac, size=170):

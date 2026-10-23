@@ -195,6 +195,27 @@ if HAS_AI:
 STYLE_KEYS = ("follow_line", "share_line", "save_line", "reto_line", "series", "voice_speed", "music")
 
 meta, items, S, errors, src, image = None, None, None, [], None, None
+try:
+    import visual as _vis
+    _es_visual = TEMATICA in _vis.FORMATOS
+except Exception:
+    _es_visual = False
+if _es_visual:                                     # reels VISUALES (imagen primero): visual.py hace todo el reel
+    import tematicas as _tm
+    for _f in [TEMATICA] + _tm.reserva(TEMATICA, recent_tematicas()):
+        try:
+            _t = time.time()
+            meta, items = _vis.hacer(_f, out, seed=f"{seed}-{_f}")
+            tiempo(f"reel visual ({_f})", _t)
+            break
+        except Exception as e:
+            errors.append(f"[visual {_f}] {str(e)[:300]}"); print("visual:", _f, "falló:", str(e)[:300], flush=True)
+            try:
+                with open("errores_reels.log", "a") as _fe:
+                    _fe.write(f"{today} {slot} [visual {_f}] {str(e)[:500]}\n")
+            except Exception:
+                pass
+    chain = [] if meta else ["render"]             # si ningún visual sale, último recurso: curiosidad con renders
 _t0 = __import__("time").time()
 for fmt in chain:
     if meta is None and errors and __import__("time").time() - _t0 > 55 * 60:
@@ -415,10 +436,11 @@ if summary:
 meta["voice"] = voice_used
 meta["arms"] = arms
 meta["ts"] = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")   # hora real (bot de comunidad)
-meta["variante"] = ((items or [{}])[0].get("infografia") or {}).get("variante")
+meta["variante"] = meta.get("variante") or ((items or [{}])[0].get("infografia") or {}).get("variante")
 try:
     import tematicas as _tm
-    meta["tematica"] = "inspiracion" if meta.get("formato") == "render" else _tm.TEMA_DE_VARIANTE.get(meta["variante"], meta["variante"])
+    meta["tematica"] = meta.get("tematica") or ("inspiracion" if meta.get("formato") == "render" else
+                                                _tm.TEMA_DE_VARIANTE.get(meta["variante"], meta["variante"]))
 except Exception:
     pass
 log({k: meta.get(k) for k in ("formato", "estilo", "series", "imagen", "concepto", "voice_speed", "music", "ids", "temas",

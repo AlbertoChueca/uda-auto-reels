@@ -436,11 +436,11 @@ PROGS = [  # (acordes en Hz, raíz del bajo) — maj7 / m9: sofisticado, tranqui
 ]
 
 
-def premium_beat(total, bpm=84, seed=0, energy=1.0):
+def premium_beat(total, bpm=84, seed=0, energy=1.0, jitter=True):
     """Base musical premium: acordes de piano eléctrico, bajo redondo, arpegio con eco y pulso suave."""
     rng = random.Random(seed)
     prog = PROGS[rng.randrange(len(PROGS))]
-    bpm = bpm + rng.choice((-4, 0, 4))
+    bpm = bpm + (rng.choice((-4, 0, 4)) if jitter else 0)     # jitter=False: tempo exacto (cortes al ritmo)
     beat = 60 / bpm; bar = beat * 4
     n = int(SR * (total + 2)); keys = np.zeros(n, np.float32); low = np.zeros(n, np.float32); perc = np.zeros(n, np.float32)
 

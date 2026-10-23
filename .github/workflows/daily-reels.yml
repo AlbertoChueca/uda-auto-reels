@@ -21,7 +21,7 @@ on:
       variante:
         description: "Temática (auto = la que toca según el calendario semanal)"
         type: choice
-        options: [auto, test, vf, encuesta, atajos, inspiracion, coste, contratar, partidas, actuaciones, revit, proceso]
+        options: [auto, galeria, tips, antes_despues, proceso_visual, obra, inspiracion, test, vf, encuesta, atajos, coste, contratar, partidas, actuaciones, revit, proceso]
         default: auto
       publicar_a:
         description: "Hora de publicación (HH:MM, hora de España). Vacío = en cuanto esté listo"

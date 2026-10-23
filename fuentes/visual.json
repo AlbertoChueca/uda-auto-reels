@@ -1,0 +1,576 @@
+{
+ "_info": "Banco de reels visuales (imagen primero). Las imágenes se generan con IA, originales (nunca edificios reales); los textos son de diseño general. Ver visual.py.",
+ "galeria": [
+  {
+   "id": "interiores",
+   "hook": "Interiores que pondría en mi casa",
+   "cierre": "¿Con cuál te quedas?",
+   "escenas": [
+    {
+     "idea": "salón luminoso con suelo de roble claro, sofá de lino y gran ventanal al jardín",
+     "label": "Roble y lino"
+    },
+    {
+     "idea": "cocina abierta con isla de piedra natural y frentes de madera sin tiradores",
+     "label": "Isla de piedra"
+    },
+    {
+     "idea": "dormitorio sereno con paredes de cal, cabecero de madera y luz de mañana",
+     "label": "Cal y madera"
+    },
+    {
+     "idea": "baño con microcemento continuo, lavabo de piedra y ducha a ras de suelo",
+     "label": "Microcemento"
+    },
+    {
+     "idea": "escalera de hormigón visto con luz cenital en una vivienda contemporánea",
+     "label": "Hormigón y luz cenital"
+    },
+    {
+     "idea": "rincón de lectura junto a una ventana profunda con banco de madera",
+     "label": "Ventana con banco"
+    }
+   ]
+  },
+  {
+   "id": "cocinas",
+   "hook": "Cocinas que nunca pasan de moda",
+   "cierre": "¿Cuál elegirías?",
+   "escenas": [
+    {
+     "idea": "cocina blanca minimalista con encimera de mármol y luz natural lateral",
+     "label": "Blanco y mármol"
+    },
+    {
+     "idea": "cocina de madera de nogal con isla y taburetes de cuero",
+     "label": "Nogal"
+    },
+    {
+     "idea": "cocina verde oliva con encimera de piedra y grifería de latón",
+     "label": "Verde y latón"
+    },
+    {
+     "idea": "cocina en hormigón y acero en un loft con gran ventanal",
+     "label": "Hormigón y acero"
+    },
+    {
+     "idea": "cocina mediterránea con azulejo artesanal y estantes de madera",
+     "label": "Azulejo artesanal"
+    },
+    {
+     "idea": "cocina negra mate con iluminación lineal cálida bajo los muebles",
+     "label": "Negro mate"
+    }
+   ]
+  },
+  {
+   "id": "banos",
+   "hook": "Baños de revista",
+   "cierre": "¿Cuál pondrías en tu casa?",
+   "escenas": [
+    {
+     "idea": "baño de piedra travertino con bañera exenta y luz natural",
+     "label": "Travertino"
+    },
+    {
+     "idea": "baño de microcemento gris con ducha abierta y lavabo suspendido",
+     "label": "Microcemento"
+    },
+    {
+     "idea": "baño con azulejo verde artesanal y mueble de madera",
+     "label": "Azulejo verde"
+    },
+    {
+     "idea": "baño minimalista blanco con lucernario sobre la ducha",
+     "label": "Lucernario"
+    },
+    {
+     "idea": "baño con mármol veteado y grifería negra mate",
+     "label": "Mármol veteado"
+    },
+    {
+     "idea": "baño con patio inglés ajardinado tras un gran vidrio",
+     "label": "Patio verde"
+    }
+   ]
+  },
+  {
+   "id": "campo",
+   "hook": "Casas de campo que enamoran",
+   "cierre": "¿Con cuál te quedas?",
+   "escenas": [
+    {
+     "idea": "casa de piedra rehabilitada con carpinterías de madera y campo de olivos",
+     "label": "Piedra y olivos"
+    },
+    {
+     "idea": "porche de madera con vigas vistas al atardecer en el campo",
+     "label": "Porche de vigas"
+    },
+    {
+     "idea": "salón con chimenea de piedra y techo de madera a dos aguas",
+     "label": "Chimenea de piedra"
+    },
+    {
+     "idea": "casa blanca con muros gruesos y patio con parra",
+     "label": "Patio con parra"
+    },
+    {
+     "idea": "cocina rústica contemporánea con suelo de barro cocido",
+     "label": "Barro cocido"
+    },
+    {
+     "idea": "piscina de piedra natural integrada en un paisaje de campo",
+     "label": "Piscina natural"
+    }
+   ]
+  },
+  {
+   "id": "doble_altura",
+   "hook": "Salones con doble altura",
+   "cierre": "¿Cuál te gusta más?",
+   "escenas": [
+    {
+     "idea": "salón a doble altura con estantería de suelo a techo y luz cenital",
+     "label": "Biblioteca a doble altura"
+    },
+    {
+     "idea": "salón a doble altura con gran ventanal al bosque",
+     "label": "Ventanal al bosque"
+    },
+    {
+     "idea": "salón a doble altura con pasarela de madera y barandilla de vidrio",
+     "label": "Pasarela de madera"
+    },
+    {
+     "idea": "salón a doble altura de hormigón con chimenea suspendida",
+     "label": "Chimenea suspendida"
+    },
+    {
+     "idea": "salón a doble altura blanco mediterráneo con vigas de madera",
+     "label": "Vigas de madera"
+    },
+    {
+     "idea": "salón a doble altura con lámpara escultórica y escalera ligera",
+     "label": "Escalera ligera"
+    }
+   ]
+  },
+  {
+   "id": "patios",
+   "hook": "Patios para vivir fuera",
+   "cierre": "¿Dónde te quedarías?",
+   "escenas": [
+    {
+     "idea": "patio interior mediterráneo con olivo y muros blancos",
+     "label": "Olivo y cal"
+    },
+    {
+     "idea": "patio con estanque de agua y pavimento de piedra",
+     "label": "Lámina de agua"
+    },
+    {
+     "idea": "patio con pérgola de madera y vegetación colgante",
+     "label": "Pérgola vegetal"
+    },
+    {
+     "idea": "patio inglés con bambú y luz natural cenital",
+     "label": "Patio inglés"
+    },
+    {
+     "idea": "terraza en ático con jardineras y vistas a la ciudad al atardecer",
+     "label": "Ático al atardecer"
+    },
+    {
+     "idea": "porche abierto con suelo de barro y sillas de fibra natural",
+     "label": "Porche de barro"
+    }
+   ]
+  },
+  {
+   "id": "escaleras",
+   "hook": "Escaleras que son esculturas",
+   "cierre": "¿Cuál es tu favorita?",
+   "escenas": [
+    {
+     "idea": "escalera helicoidal de hormigón blanco con luz cenital",
+     "label": "Helicoidal"
+    },
+    {
+     "idea": "escalera volada de peldaños de madera anclados al muro",
+     "label": "Peldaños volados"
+    },
+    {
+     "idea": "escalera de chapa de acero plegada negra",
+     "label": "Chapa plegada"
+    },
+    {
+     "idea": "escalera de piedra en un patio exterior",
+     "label": "Piedra al exterior"
+    },
+    {
+     "idea": "escalera con estantería integrada en el lateral",
+     "label": "Escalera biblioteca"
+    },
+    {
+     "idea": "escalera de madera con barandilla de listones verticales",
+     "label": "Listones de madera"
+    }
+   ]
+  },
+  {
+   "id": "mar",
+   "hook": "Casas frente al mar",
+   "cierre": "¿Con cuál te quedas?",
+   "escenas": [
+    {
+     "idea": "casa blanca de volúmenes cúbicos frente al mar Mediterráneo",
+     "label": "Volúmenes blancos"
+    },
+    {
+     "idea": "salón abierto al mar con carpinterías correderas de suelo a techo",
+     "label": "Abierta al mar"
+    },
+    {
+     "idea": "terraza de madera con piscina desbordante frente al mar",
+     "label": "Piscina desbordante"
+    },
+    {
+     "idea": "casa de hormigón entre rocas junto a la costa",
+     "label": "Hormigón y roca"
+    },
+    {
+     "idea": "porche con celosía de madera y vistas al mar",
+     "label": "Celosía de madera"
+    },
+    {
+     "idea": "dormitorio con ventana horizontal al horizonte del mar",
+     "label": "Ventana al horizonte"
+    }
+   ]
+  },
+  {
+   "id": "montana",
+   "hook": "Casas en la montaña",
+   "cierre": "¿Dónde vivirías?",
+   "escenas": [
+    {
+     "idea": "casa de madera y vidrio en un bosque de pinos con nieve",
+     "label": "Madera y nieve"
+    },
+    {
+     "idea": "casa de piedra y hormigón en una ladera de montaña",
+     "label": "Ladera de piedra"
+    },
+    {
+     "idea": "salón con gran ventanal a las montañas y chimenea",
+     "label": "Ventanal a la montaña"
+    },
+    {
+     "idea": "cabaña contemporánea de cubierta inclinada negra",
+     "label": "Cubierta negra"
+    },
+    {
+     "idea": "terraza volada sobre el valle con barandilla de vidrio",
+     "label": "Terraza volada"
+    },
+    {
+     "idea": "interior de madera clara con estufa y vistas al bosque",
+     "label": "Madera clara"
+    }
+   ]
+  },
+  {
+   "id": "dormitorios",
+   "hook": "Dormitorios para descansar de verdad",
+   "cierre": "¿Cuál elegirías?",
+   "escenas": [
+    {
+     "idea": "dormitorio minimalista blanco con cabecero de lino",
+     "label": "Lino blanco"
+    },
+    {
+     "idea": "dormitorio con paredes de terracota y madera",
+     "label": "Terracota"
+    },
+    {
+     "idea": "dormitorio con gran ventanal al jardín y cortinas ligeras",
+     "label": "Abierto al jardín"
+    },
+    {
+     "idea": "dormitorio con techo de vigas de madera y suelo de barro",
+     "label": "Vigas y barro"
+    },
+    {
+     "idea": "dormitorio en tonos piedra con iluminación indirecta cálida",
+     "label": "Luz indirecta"
+    },
+    {
+     "idea": "dormitorio con vestidor de madera integrado",
+     "label": "Vestidor integrado"
+    }
+   ]
+  }
+ ],
+ "proceso": [
+  {
+   "id": "p0",
+   "tipo": "casa",
+   "descripcion": "una casa mediterránea blanca de una planta con patio"
+  },
+  {
+   "id": "p1",
+   "tipo": "casa",
+   "descripcion": "una casa de hormigón visto en una ladera"
+  },
+  {
+   "id": "p2",
+   "tipo": "casa",
+   "descripcion": "una vivienda entre medianeras de tres plantas con fachada de ladrillo"
+  },
+  {
+   "id": "p3",
+   "tipo": "casa",
+   "descripcion": "una casa de madera en el bosque"
+  },
+  {
+   "id": "p4",
+   "tipo": "casa",
+   "descripcion": "una casa patio de muros encalados"
+  },
+  {
+   "id": "p5",
+   "tipo": "casa",
+   "descripcion": "una vivienda unifamiliar contemporánea con cubierta plana y voladizo"
+  }
+ ],
+ "antes_despues": [
+  {
+   "id": "a0",
+   "tipo": "estancia",
+   "descripcion": "un salón de los años 80 con moqueta, papel pintado y muebles oscuros"
+  },
+  {
+   "id": "a1",
+   "tipo": "estancia",
+   "descripcion": "una cocina antigua con azulejo blanco de los 90 y muebles de formica"
+  },
+  {
+   "id": "a2",
+   "tipo": "estancia",
+   "descripcion": "un baño de los 90 con azulejo rosa y bañera vieja"
+  },
+  {
+   "id": "a3",
+   "tipo": "estancia",
+   "descripcion": "un dormitorio oscuro con techo bajo y muebles de los 70"
+  },
+  {
+   "id": "a4",
+   "tipo": "estancia",
+   "descripcion": "un local comercial vacío y descuidado"
+  },
+  {
+   "id": "a5",
+   "tipo": "estancia",
+   "descripcion": "una terraza de ático abandonada con suelo de baldosa rota"
+  }
+ ],
+ "tips": [
+  {
+   "id": "foto",
+   "hook": "5 tips para fotografiar arquitectura",
+   "tips": [
+    {
+     "tip": "Dispara en la hora dorada",
+     "idea": "fachada contemporánea con luz dorada rasante del atardecer"
+    },
+    {
+     "tip": "Mantén las verticales rectas",
+     "idea": "fachada de edificio fotografiada de frente con líneas verticales perfectamente paralelas"
+    },
+    {
+     "tip": "Busca la simetría",
+     "idea": "pasillo de arquitectura simétrico con punto de fuga central"
+    },
+    {
+     "tip": "Incluye una persona para dar escala",
+     "idea": "gran vestíbulo de hormigón con una persona pequeña de espaldas al fondo"
+    },
+    {
+     "tip": "Fotografía los materiales de cerca",
+     "idea": "detalle de encuentro entre madera y hormigón con luz rasante"
+    }
+   ]
+  },
+  {
+   "id": "luz",
+   "hook": "5 claves para un salón con más luz",
+   "tips": [
+    {
+     "tip": "Paredes y techo en tonos claros",
+     "idea": "salón con paredes blancas cálidas y techo claro muy luminoso"
+    },
+    {
+     "tip": "Un espejo frente a la ventana",
+     "idea": "salón con gran espejo que refleja la luz de la ventana"
+    },
+    {
+     "tip": "Cortinas ligeras de lino",
+     "idea": "ventanal con cortinas de lino translúcido y luz suave"
+    },
+    {
+     "tip": "Luz en capas",
+     "idea": "salón al anochecer con luz indirecta, lámparas de pie y luz ambiental cálida"
+    },
+    {
+     "tip": "Suelos claros y mates",
+     "idea": "salón con suelo de roble claro mate bañado de luz"
+    }
+   ]
+  },
+  {
+   "id": "pequeno",
+   "hook": "5 trucos para que un piso pequeño parezca grande",
+   "tips": [
+    {
+     "tip": "El mismo suelo en toda la casa",
+     "idea": "piso pequeño con suelo continuo de madera clara en todas las estancias"
+    },
+    {
+     "tip": "Muebles a medida",
+     "idea": "salón pequeño con mueble a medida de suelo a techo"
+    },
+    {
+     "tip": "Puertas correderas",
+     "idea": "puerta corredera de madera que se oculta en el tabique"
+    },
+    {
+     "tip": "Espejos bien colocados",
+     "idea": "pasillo estrecho ampliado visualmente con un espejo grande"
+    },
+    {
+     "tip": "Pocos colores",
+     "idea": "piso pequeño en tonos neutros blancos y madera"
+    }
+   ]
+  },
+  {
+   "id": "materiales",
+   "hook": "4 materiales que elevan cualquier interior",
+   "tips": [
+    {
+     "tip": "Madera natural",
+     "idea": "detalle de revestimiento de madera natural de roble con luz cálida"
+    },
+    {
+     "tip": "Piedra",
+     "idea": "pared de piedra natural en un salón contemporáneo"
+    },
+    {
+     "tip": "Microcemento",
+     "idea": "baño continuo de microcemento sin juntas"
+    },
+    {
+     "tip": "Latón",
+     "idea": "grifería y detalles de latón cepillado sobre piedra clara"
+    }
+   ]
+  },
+  {
+   "id": "iluminacion",
+   "hook": "5 ideas de iluminación de arquitecto",
+   "tips": [
+    {
+     "tip": "Luz lineal indirecta",
+     "idea": "techo con foseado y luz lineal indirecta cálida"
+    },
+    {
+     "tip": "Bañar las paredes de luz",
+     "idea": "pared de piedra bañada de luz rasante desde el techo"
+    },
+    {
+     "tip": "Luz cálida en casa",
+     "idea": "salón acogedor con luz cálida al anochecer"
+    },
+    {
+     "tip": "Luz baja en zócalos y escaleras",
+     "idea": "escalera con luz lineal en los peldaños al anochecer"
+    },
+    {
+     "tip": "Una lámpara como escultura",
+     "idea": "lámpara escultórica colgante sobre una mesa de comedor de madera"
+    }
+   ]
+  },
+  {
+   "id": "cocina",
+   "hook": "5 claves para una cocina que funciona",
+   "tips": [
+    {
+     "tip": "Encimera continua y despejada",
+     "idea": "cocina con encimera continua de piedra despejada"
+    },
+    {
+     "tip": "Luz bajo los muebles altos",
+     "idea": "cocina con tira de luz cálida bajo los armarios superiores"
+    },
+    {
+     "tip": "Almacenaje en columna",
+     "idea": "cocina con columnas de almacenaje de suelo a techo sin tiradores"
+    },
+    {
+     "tip": "Isla con paso cómodo alrededor",
+     "idea": "cocina amplia con isla central y espacio de paso holgado"
+    },
+    {
+     "tip": "Fregadero bajo la ventana",
+     "idea": "fregadero bajo una ventana con vistas al jardín"
+    }
+   ]
+  },
+  {
+   "id": "fachadas",
+   "hook": "5 materiales para una fachada que dura",
+   "tips": [
+    {
+     "tip": "Ladrillo visto",
+     "idea": "fachada contemporánea de ladrillo visto con aparejo cuidado"
+    },
+    {
+     "tip": "Piedra natural",
+     "idea": "fachada de piedra natural en una casa de campo contemporánea"
+    },
+    {
+     "tip": "Hormigón visto",
+     "idea": "fachada de hormigón visto con textura de tablilla de madera"
+    },
+    {
+     "tip": "Madera tratada",
+     "idea": "fachada de listones de madera tratada en una casa contemporánea"
+    },
+    {
+     "tip": "Revoco de cal",
+     "idea": "fachada blanca de revoco de cal en una casa mediterránea"
+    }
+   ]
+  }
+ ],
+ "obra": [
+  {
+   "id": "o0",
+   "tipo": "casa",
+   "descripcion": "una casa unifamiliar contemporánea de dos plantas con fachada blanca"
+  },
+  {
+   "id": "o1",
+   "tipo": "casa",
+   "descripcion": "una casa de hormigón y madera"
+  },
+  {
+   "id": "o2",
+   "tipo": "casa",
+   "descripcion": "una vivienda mediterránea con patio"
+  }
+ ]
+}

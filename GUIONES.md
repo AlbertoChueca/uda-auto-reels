@@ -8,13 +8,13 @@ Todo lo que dicen y muestran los reels sale de aquí. La voz dice exactamente el
 
 | Día | 8:00 | 12:00 | 15:00 | 18:00 |
 |---|---|---|---|---|
-| Lunes | Test de arquitecto | Encuesta | UDA (rota entre sus 6 temas) | Carrusel |
-| Martes | ¿Verdadero o falso? | Renders y curiosidades | Test de arquitecto | Carrusel |
-| Miércoles | Guárdalo: atajos | Test de arquitecto | Encuesta | Carrusel |
-| Jueves | UDA (rota entre sus 6 temas) | ¿Verdadero o falso? | Test de arquitecto | Carrusel |
-| Viernes | Renders y curiosidades | Test de arquitecto | Encuesta | Carrusel |
-| Sábado | ¿Verdadero o falso? | UDA (rota entre sus 6 temas) | Guárdalo: atajos | Carrusel |
-| Domingo | Test de arquitecto | Renders y curiosidades | UDA (rota entre sus 6 temas) | Carrusel |
+| Lunes | Galería: «Interiores que pondría en mi casa» | Tips visuales | Antes y después de una reforma | Carrusel |
+| Martes | Del boceto al render | Galería: «Interiores que pondría en mi casa» | Renders y curiosidades | Carrusel |
+| Miércoles | Antes y después de una reforma | Tips visuales | Galería: «Interiores que pondría en mi casa» | Carrusel |
+| Jueves | De la zanja a la llave | Galería: «Interiores que pondría en mi casa» | Antes y después de una reforma | Carrusel |
+| Viernes | Tips visuales | Del boceto al render | Galería: «Interiores que pondría en mi casa» | Carrusel |
+| Sábado | Renders y curiosidades | Antes y después de una reforma | De la zanja a la llave | Carrusel |
+| Domingo | Galería: «Interiores que pondría en mi casa» | Tips visuales | Del boceto al render | Carrusel |
 
 ## Los tipos de reel
 
@@ -38,7 +38,7 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 
 **Ejemplo 1** — gancho: Contesta con una letra · voz: «Una pregunta rápida para arquitectos. Contesta con una letra.»
 - **Pregunta (cuenta atrás: comenta):** «¿Cuántos proyectos llevas a la vez?» / «Opción A: 1 o 2.» / «Opción B: De 3 a 5.» / «Opción C: De 6 a 10.» / «Opción D: Más de 10.» / «Contesta en comentarios.»
-- **Solución:** «Aquí no hay respuesta correcta.» / «Queremos saber cómo trabajáis los estudios.» / «Te leemos en comentarios.»
+- **Solución:** «Aquí no hay respuesta correcta.» / «No hay respuesta buena o mala: cuéntanos la tuya.» / «Te leemos en comentarios.»
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
@@ -190,6 +190,26 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 - **Así funciona:** «Marcas en el listado solo lo que delegas.» / «El 60 % al iniciar la fase.» / «El 40 % antes de la entrega.» / «Y una revisión incluida en cada fase.»
 - **Y no es solo dinero:** «Lo que incluye siempre.» / «Una revisión por fase.» / «Siete días de soporte.» / «PDF y editables.» / «Marca blanca.» / «Y presupuesto cerrado.»
 - **Cuánto cuesta delegar (3 edificios dorados):** «Estructuras e instalaciones: 1.154 €.» / «Proyecto de ejecución completo: 1.932 €.» / «Básico más ejecución: 2.874 €.» / «Tú eliges cuánto delegas.»
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### Galería: «Interiores que pondría en mi casa» · 0 reels distintos
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### Tips visuales · 0 reels distintos
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### Antes y después de una reforma · 0 reels distintos
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### Del boceto al render · 0 reels distintos
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### De la zanja a la llave · 0 reels distintos
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 

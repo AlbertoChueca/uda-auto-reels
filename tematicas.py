@@ -21,19 +21,25 @@ import casos
 HERE = os.path.dirname(os.path.abspath(__file__))
 INTERACCION = ["test", "vf", "encuesta", "atajos", "inspiracion"]
 UDA = ["coste", "contratar", "partidas", "actuaciones", "revit", "proceso"]
-TEMAS = INTERACCION + UDA
+VISUAL = ["galeria", "tips", "antes_despues", "proceso_visual", "obra"]          # visual.py (100 % del calendario)
+TEMAS = INTERACCION + UDA + VISUAL
 NOMBRE = {"test": "Test de arquitecto", "vf": "¿Verdadero o falso?", "encuesta": "Encuesta", "atajos": "Guárdalo: atajos",
           "inspiracion": "Renders y curiosidades",
           "coste": "UDA · Cuánto cuesta delegar", "contratar": "UDA · Contratar o delegar",
           "partidas": "UDA · Qué incluye cada partida", "actuaciones": "UDA · Encargos con precio cerrado",
-          "revit": "UDA · CAD o Revit", "proceso": "UDA · Cómo trabajamos", "uda": "UDA (rota entre sus 6 temas)"}
+          "revit": "UDA · CAD o Revit", "proceso": "UDA · Cómo trabajamos", "uda": "UDA (rota entre sus 6 temas)",
+          "galeria": "Galería: «Interiores que pondría en mi casa»", "tips": "Tips visuales",
+          "antes_despues": "Antes y después de una reforma", "proceso_visual": "Del boceto al render",
+          "obra": "De la zanja a la llave"}
 VARIANTE = {"coste": "caso", "contratar": "contratar", "proceso": "proceso"}       # nombre interno en casos.py
 TEMA_DE_VARIANTE = {v: k for k, v in VARIANTE.items()}
 SLOTS = {"manana": 0, "mediodia": 1, "tarde": 2}
-# lunes..domingo × (8:00, 12:00, 15:00): test 6, encuesta 3, vf 3, inspiración 3, atajos 2, UDA 4 (= 19 %).
-# Nunca dos reels seguidos del mismo tipo (tampoco de domingo a lunes).
-PLAN = [["test", "encuesta", "uda"], ["vf", "inspiracion", "test"], ["atajos", "test", "encuesta"],
-        ["uda", "vf", "test"], ["inspiracion", "test", "encuesta"], ["vf", "uda", "atajos"], ["test", "inspiracion", "uda"]]
+# 100 % VISUAL (lo que triunfa en TikTok de arquitectura): lunes..domingo × (8:00, 12:00, 15:00)
+# galería 6, tips 4, antes/después 4, boceto→render 3, obra 2, curiosidades con renders 2. Nunca dos seguidos iguales.
+PLAN = [["galeria", "tips", "antes_despues"], ["proceso_visual", "galeria", "inspiracion"],
+        ["antes_despues", "tips", "galeria"], ["obra", "galeria", "antes_despues"], ["tips", "proceso_visual", "galeria"],
+        ["inspiracion", "antes_despues", "obra"], ["galeria", "tips", "proceso_visual"]]
+ROTACION = VISUAL + ["inspiracion"]
 
 
 def _ultimo(t, rec):
@@ -45,23 +51,20 @@ def plan(fecha, slot):
 
 
 def tema_de(fecha, slot, recientes=()):
-    """La del calendario. El hueco «uda» toma el tema de UDA que lleva más tiempo sin salir. Si lo que toca acaba de salir
-    (lanzamientos manuales) o es un lanzamiento manual: 1 de cada 5 de UDA y el resto, la interacción más antigua."""
+    """La del calendario; si acaba de salir (lanzamientos manuales) o es manual, la visual que lleva más tiempo sin salir."""
     rec = [r for r in recientes if r]
     p = plan(fecha, slot) if slot in SLOTS else None
     if p == "uda":
         return min(UDA, key=lambda t: (_ultimo(t, rec), UDA.index(t)))
     if p and (not rec or p != rec[-1]):
         return p
-    if not any(r in UDA for r in rec[-4:]):
-        return min(UDA, key=lambda t: (_ultimo(t, rec), UDA.index(t)))
-    return min([t for t in INTERACCION if not rec or t != rec[-1]], key=lambda t: (_ultimo(t, rec), INTERACCION.index(t)))
+    return min([t for t in ROTACION if not rec or t != rec[-1]], key=lambda t: (_ultimo(t, rec), ROTACION.index(t)))
 
 
 def reserva(tema, recientes=(), n=2):
-    """Si un reel no llega al 8: otros tipos de infografía del mismo grupo (interacción o UDA), los menos recientes."""
+    """Si un reel no llega al 8: otros del mismo grupo (visual, interacción o UDA), los menos recientes."""
     rec = [r for r in recientes if r]
-    grupo = UDA if tema in UDA else [t for t in INTERACCION if t != "inspiracion"]
+    grupo = VISUAL if tema in VISUAL else UDA if tema in UDA else [t for t in INTERACCION if t != "inspiracion"]
     otras = [t for t in grupo if t not in (tema, "inspiracion")]
     return sorted(otras, key=lambda t: _ultimo(t, rec))[:n]
 
