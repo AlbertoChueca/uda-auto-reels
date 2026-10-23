@@ -160,6 +160,9 @@ class Zernio:
         try:
             r = requests.get(f"{self.API}/posts/{pid}", headers=self._h(), timeout=60)
             post = (r.json() or {}).get("post") or r.json()
+            if os.environ.get("COMUNIDAD_DEBUG") and not NATIVOS.get("_debug_" + self.red):
+                NATIVOS["_debug_" + self.red] = "1"
+                say(f"[debug] GET posts/{pid} {r.status_code}: " + json.dumps(post.get("platforms") or post)[:1500])
             for pl in post.get("platforms") or []:
                 if (pl.get("platform") or "").lower() != self.red:
                     continue

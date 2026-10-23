@@ -41,6 +41,7 @@ jobs:
           ZERNIO_TT_ACCOUNT: ${{ vars.ZERNIO_TT_ACCOUNT }}
           ZERNIO_LI_ACCOUNT: ${{ vars.ZERNIO_LI_ACCOUNT }}
           IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
+          COMUNIDAD_DEBUG: ${{ inputs.prueba && '1' || '' }}
         run: python comunidad.py ${{ inputs.prueba && '--prueba' || '' }} | tee comunidad.log
       - name: Guardar el estado
         if: always()
