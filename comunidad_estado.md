@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-23 03:37 UTC · 0 respuestas_
+_Última pasada: 2026-10-23 09:35 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -17,6 +17,9 @@ _Última pasada: 2026-10-23 03:37 UTC · 0 respuestas_
 | 2026-10-23 | instagram | vf | Esta parece fácil | 0 | pendiente |
 | 2026-10-23 | tiktok | vf | Esta parece fácil | 0 | pendiente |
 | 2026-10-23 | linkedin | vf | Esta parece fácil | 0 | pendiente |
+| 2026-10-23 | instagram | inspiracion | «La forma sigue a la función» | 0 | — |
+| 2026-10-23 | tiktok | inspiracion | «La forma sigue a la función» | 0 | — |
+| 2026-10-23 | linkedin | inspiracion | «La forma sigue a la función» | 0 | — |
 | 2026-10-22 | instagram | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | tiktok | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | linkedin | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
