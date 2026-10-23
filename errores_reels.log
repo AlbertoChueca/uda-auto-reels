@@ -696,3 +696,18 @@ reviewer.RejectReel: diseño 7.0 · vídeo 7.0/10 (mínimo 8):
     raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
 reviewer.RejectReel: diseño 9.0 · vídeo 7.2/10 (mínimo 8): 
 
+2026-10-23 02:16 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 319, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 6.5 · vídeo 6.0/10 (mínimo 8): 00:04 Texto duplicado y montado en el margen superior entre la URL y la etiqueta.
+
+2026-10-23 02:16 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 319, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 6.8 · vídeo 6.5/10 (mínimo 8): 00:03 - Capas de texto superpuestas en la cabecera central bajo la URL.
+
+2026-10-23 02:16 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 319, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 6.8 · vídeo 6.8/10 (mínimo 8): 00:05: Texto duplicado residual visible detrás de la etiqueta superior.; 00:21: Capa de texto 'TU RESPUESTA' montada detrás del rótulo superior.
+
