@@ -264,7 +264,7 @@ def template(fmt, items):
     return {"screen_hook": sh, "hook_line": hl, "reveal_line": "Vamos allá.",
             "intro_line": "Mira cómo cambian las cifras." if fmt == "grafico" else "Tres claves. Guárdalo para cuando lo necesites.",
             "cta_line": CTA_DEFAULT,
-            "caption_hook": (P.get("hook_line", "") + " 🏛️") if fmt == "render" else P["escena"] + " 📐" if fmt in ("caso_coste", "infografia") else {"comparativa": "Dos formas de sacar el trabajo adelante 📐", "dato": "Un dato de proyecto que pocos tienen presente 📐",
+            "caption_hook": ("📌 Guarda este reel. " + P.get("hook_line", "")) if fmt == "render" else P["escena"] + " 📐" if fmt in ("caso_coste", "infografia") else {"comparativa": "Dos formas de sacar el trabajo adelante 📐", "dato": "Un dato de proyecto que pocos tienen presente 📐",
                              "mito_realidad": "¿Mito o realidad en tu despacho? 📐"}.get(fmt, "Lo que cambia en un despacho que delega 📐"),
             "comment_prompt": {"render": "¿Lo sabías? Te leemos en comentarios",
                                "caso_coste": "¿Cuántos encargos tienes ahora mismo? Te leemos en comentarios",

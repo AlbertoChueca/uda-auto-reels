@@ -375,6 +375,9 @@ def scene_pregunta(T, d, lt, starts, end):
         p = eob(clamp((lt - cst) / 0.4))
         pill = fx.pill(d.get("cta", "Comenta tu respuesta"), 50, T.label, fx.NEGRO, padx=40, pady=20, radius=6)
         _paste(c, pill, W / 2, y3 + 30 + (1 - p) * 30, clamp(p))
+        if d.get("nota"):                                  # «La solución, mañana en comentarios»
+            nt = _txt(d["nota"], 40, 900, (200, 194, 182), bold=False)
+            _paste(c, nt, W / 2, y3 + 30 + pill.height + 22 + (1 - p) * 30, clamp(p))
         if d.get("segundos"):
             span = max(1.0, end - cst - 0.3); frac = clamp((lt - cst) / span)
             rem = max(1, math.ceil(d["segundos"] * (1 - frac)))

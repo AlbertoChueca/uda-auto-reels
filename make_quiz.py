@@ -488,6 +488,7 @@ def lines_for(fmt, items, S):
         for k, b in enumerate(S["beats"]):
             L.append((f"r{k}", b, ""))
         L.append(("pu", S["puente"], ""))
+        L.append(("gu", "Guarda este reel para tenerlo a mano.", ""))     # curiosidades: que lo guarden
     elif fmt == "infografia":
         G = S["infografia"]
         for sc in G["orden"]:                              # un clip por golpe: cada texto aparece JUSTO cuando se dice
@@ -719,7 +720,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         elif fmt == "render":
             for k in range(len(S["beats"])):
                 a = t; seg("rbeat", D[f"r{k}"] + 1.2, k=k); say(f"r{k}", a + 0.4)
-            a = t; seg("rpuente", D["pu"] + 1.0); say("pu", a + 0.35)
+            gst = 0.35 + D["pu"] + 0.3
+            a = t; seg("rpuente", gst + D["gu"] + 1.0, gstart=gst); say("pu", a + 0.35); say("gu", a + gst)
         elif fmt == "infografia":
             G = S["infografia"]
             for sc in G["orden"]:
@@ -1073,6 +1075,10 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             lg = fx.logo(96, T.ink, T.label); fx.paste_center(fr, lg, W / 2, 640, alpha=clamp(lt / 0.3))
             tx = fx.text_block(S["puente"], F900, 62, 900, T.ink, lit=lit("pu", tt), dim=(150, 144, 132), align="center")
             fx.paste_center(fr, tx, W / 2, 900 + tx.height / 2 * 0, p_, clamp(lt / 0.25))
+            if lt >= sg.get("gstart", 99):                   # «Guarda este reel», cuando la voz lo dice
+                q_ = eob(clamp((lt - sg["gstart"]) / 0.4))
+                pl = fx.pill("Guarda este reel", 56, T.label, fx.NEGRO, padx=44, pady=22, radius=6)
+                fx.paste_center(fr, pl, W / 2, 900 + tx.height / 2 + 150 + (1 - q_) * 30, alpha=clamp(q_))
         elif kind.startswith("ig_"):
             import infoviz as IV
             ov = IV.render(T, kind[3:], dict(S["infografia"]["datos"][kind[3:]], compact=bool(st.get("compact"))), lt, sg)

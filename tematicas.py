@@ -84,13 +84,13 @@ def _eur(x):
     return casos.eur(x)
 
 
-def _pieza(tema, clave, k, badge, hooks, escenas, caption, grupo):
+def _pieza(tema, clave, k, badge, hooks, escenas, caption, grupo, pid_key=None):
     """Pieza de infografía con el mismo formato que las de casos.py (la usan el guionista, el montaje y la descripción)."""
     datos = {sc: d for sc, (d, v) in escenas.items()}
     voz = {sc: v for sc, (d, v) in escenas.items()}
     orden = list(escenas)
     j = k % len(hooks); hooks = hooks[j:] + hooks[:j]
-    pid = hashlib.sha1(f"{tema}|{clave}|{k}|{'/'.join(orden)}".encode()).hexdigest()[:10]
+    pid = hashlib.sha1(f"{tema}|{clave}|{k}|{pid_key or '/'.join(orden)}".encode()).hexdigest()[:10]
     ig = {"variante": tema, "badge": badge, "screen_hook": hooks[0][0], "hook_line": hooks[0][1], "hooks": hooks,
           "orden": orden, "datos": datos, "voz": voz, "caption": caption}
     torres = next((d for sc, d in datos.items() if sc.startswith("towers")), None)
@@ -144,7 +144,7 @@ def partidas():
         cap = (f"{nom}: lo que cuesta delegarla (precios de referencia, gestión incluida):\n\n"
                + "\n".join(f"▪️ {lab}: {_eur(v)}" for (_, _, lab, _), v in zip(TIPOS3, vals))
                + f"\n\nIncluye:\n" + "\n".join(f"✔️ {d}" for d in docs)
-               + "\n\nTú sigues firmando: el diseño, el visado y la dirección de obra son tuyos.")
+               + "\n\nTú sigues firmando: el diseño, el visado y la dirección de obra son tuyos." + "\n\n📌 Guárdalo para cuando lo necesites.")
         for k in range(3):
             esc = dict([("delegable", (deleg, deleg_voz)), ("towers", (torres, torres_voz))][::1 if k % 2 == 0 else -1])
             esc.update([extra[k]])
@@ -206,7 +206,7 @@ def actuaciones():
         cap = (f"{tit} (precios de referencia de UDA, precio cerrado por paquete):\n\n"
                + "\n".join(f"▪️ {e}: {t}" for e, _, t, _ in barras)
                + "\n\nIncluye estado actual y reformado, justificación normativa, memoria, mediciones y presupuesto. "
-                 "Tú presupuestas, firmas y tramitas; nuestro precio te deja margen.")
+                 "Tú presupuestas, firmas y tramitas; nuestro precio te deja margen." + "\n\n📌 Guárdalo para cuando lo necesites.")
         extra = [("timeline", (MARGEN, MARGEN_VOZ)), ("cargas_garantias", (casos.GARANTIAS, casos.GARANTIAS_VOZ)),
                  ("timeline_pagos", (casos.PAGOS, casos.PAGOS_VOZ))]
         for k in range(3):
@@ -251,7 +251,7 @@ REVIT_HOOKS = [("CAD o Revit: mismo precio", "¿CAD o Revit? Si delegas el proye
 REVIT_CAP = ("CAD o Revit: si nos encargas el proyecto completo, pagas lo mismo (vivienda de 150 m², Básico + Ejecución: "
              "2.955 €).\n\nEn Revit el modelo es el proyecto: el modelado vale más y el resto menos.\n▪️ Modelado: +130 %\n"
              "▪️ Mediciones: −60 %\n▪️ Memoria: −25 %\n▪️ Estructuras: −20 %\n\nRecibes el modelo LOD 300 con sus familias, "
-             "IFC durante el trabajo y RVT con el pago final.")
+             "IFC durante el trabajo y RVT con el pago final." + "\n\n📌 Guárdalo para cuando lo necesites.")
 
 
 def revit():
@@ -273,15 +273,22 @@ def _voz(t):
 
 
 def _quiz(tema, clave, k, badge, titulo, pregunta, opciones, correcta, explicacion, hooks, caption, voz_ops,
-          cta="Comenta tu respuesta", pill="Guárdalo para repasar", sol_voz=None, letras=LETRAS):
+          cta="Comenta tu respuesta", pill="Guárdalo para repasar", sol_voz=None, letras=LETRAS, revelar=True, nota=None):
+    """revelar=False (tests y verdadero o falso): el reel acaba en la pregunta y la solución la publica el bot de
+    comunidad en los comentarios 12-24 h después (comunidad.py). Así la gente comenta para participar y vuelve."""
     preg = {"titulo": titulo, "pregunta": pregunta, "opciones": opciones, "letras": letras, "cta": cta, "segundos": 3,
-            "pausa": 2.5}
-    preg_voz = [_voz(pregunta)] + voz_ops + [cta + "."]
+            "pausa": 2.5, "nota": nota}
+    preg_voz = [_voz(pregunta)] + voz_ops + [cta + "." + (" Mañana te damos la solución." if not revelar else "")]
     resp = {"titulo": "La respuesta" if correcta >= 0 else "Tu respuesta", "pregunta": pregunta, "opciones": opciones,
             "letras": letras, "correcta": correcta, "explicacion": explicacion, "pill": pill}
     resp_voz = [sol_voz, _voz(explicacion), pill + "."]
-    p = _pieza(tema, clave, k, badge, hooks, {"pregunta": (preg, preg_voz), "respuesta": (resp, resp_voz)}, caption, clave)
+    escenas = {"pregunta": (preg, preg_voz)}
+    if revelar:
+        escenas["respuesta"] = (resp, resp_voz)
+    p = _pieza(tema, clave, k, badge, hooks, escenas, caption, clave, pid_key="pregunta/respuesta")   # id estable
     p["infografia"]["cta"] = CTA_INTERACCION
+    p["solucion"] = {"tipo": tema, "pregunta": pregunta, "opciones": opciones, "letras": letras, "correcta": correcta,
+                     "explicacion": explicacion}                  # para el bot de comunidad
     return p
 
 
@@ -294,22 +301,25 @@ def interaccion():
     for i, q in enumerate(B["tests"]):
         ops, c = q["opciones"], q["correcta"]
         cap = (f"{q['pregunta']}\n\n" + "\n".join(f"{LETRAS[j]}) {o}" for j, o in enumerate(ops))
-               + "\n\n👇 Comenta tu respuesta antes de ver la solución.\n📌 Guárdalo para repasar y compártelo con tu equipo.")
+               + "\n\n👇 Comenta tu respuesta (A, B, C o D). Mañana publicamos la solución en comentarios.\n"
+                 "🔁 Pásaselo a tu equipo y comparad.")
         out.append(_quiz("test", f"t{i}", i, "TEST DE ARQUITECTO", "Test de arquitecto", q["pregunta"], ops, c,
                          q["explicacion"], H_TEST, cap, [f"Opción {LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)],
-                         sol_voz=f"La correcta es la opción {LETRAS[c]}."))   # sin repetir el nombre: lo dice la explicación
+                         sol_voz=f"La correcta es la opción {LETRAS[c]}.", revelar=False,
+                         nota="La solución, mañana en comentarios"))
         out[-1]["referencia"] = q["fuente"]
-    H_VF = [("Esta parece fácil", "Esta parece fácil. Contesta antes de que salga la respuesta."),
+    H_VF = [("Esta parece fácil", "Esta parece fácil. ¿Verdadero o falso?"),
             ("Contesta sin buscarlo", "Verdadero o falso. Contesta sin buscarlo."),
-            ("¿Te la sabes?", "¿Te la sabes? Comenta antes de ver la solución.")]
+            ("¿Te la sabes?", "¿Te la sabes? Comenta tu respuesta.")]
     for i, q in enumerate(B["vf"]):
         c = 0 if q["verdadero"] else 1
         ex = q["explicacion"].split(". ", 1)[1] if q["explicacion"].startswith(("Verdadero.", "Falso.")) else q["explicacion"]
-        cap = (f"¿Verdadero o falso?\n\n{q['afirmacion']}\n\n👇 Comenta V o F antes de ver la solución.\n"
-               "📌 Guárdalo y compártelo con tu equipo.")
+        cap = (f"¿Verdadero o falso?\n\n{q['afirmacion']}\n\n👇 Comenta V o F. Mañana publicamos la solución en "
+               "comentarios.\n🔁 Pásaselo a tu equipo y comparad.")
         out.append(_quiz("vf", f"v{i}", i, "¿VERDADERO O FALSO?", "¿Verdadero o falso?", q["afirmacion"],
                          ["Verdadero", "Falso"], c, ex, H_VF, cap, ["¿Verdadero?", "¿O falso?"],
-                         cta="Comenta V o F", sol_voz=("Verdadero." if c == 0 else "Falso."), letras="VF"))
+                         cta="Comenta V o F", sol_voz=("Verdadero." if c == 0 else "Falso."), letras="VF", revelar=False,
+                         nota="La solución, mañana en comentarios"))
         out[-1]["referencia"] = q["fuente"]
     H_EN = [("Contesta con una letra", "Una pregunta rápida para arquitectos. Contesta con una letra."),
             ("Queremos saberlo", "Queremos saber cómo trabajas. Contesta en comentarios."),
@@ -317,7 +327,8 @@ def interaccion():
     for i, q in enumerate(B["encuestas"]):
         ops = q["opciones"]
         cap = (f"{q['pregunta']}\n\n" + "\n".join(f"{LETRAS[j]}) {o}" for j, o in enumerate(ops))
-               + "\n\n👇 Contesta en comentarios con la letra. Te leemos a todos.\n🔁 Compártelo con otro arquitecto.")
+               + "\n\n👇 Contesta en comentarios con la letra. Mañana te contamos qué ha votado la mayoría.\n"
+                 "🔁 Compártelo con otro arquitecto.")
         out.append(_quiz("encuesta", f"e{i}", i, "ENCUESTA PARA ARQUITECTOS", "Encuesta", q["pregunta"], ops, -1,
                          "Queremos saber cómo trabajáis los estudios.", H_EN, cap,
                          [f"Opción {LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)], cta="Contesta en comentarios",

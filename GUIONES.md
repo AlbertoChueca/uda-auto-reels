@@ -23,16 +23,14 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 ### Test de arquitecto · 35 reels distintos
 
 **Ejemplo 1** — gancho: ¿La sabes sin buscarla? · voz: «Una pregunta de arquitectura. ¿La sabes sin buscarla?»
-- **Pregunta (cuenta atrás: comenta):** «¿Quién diseñó la Villa Savoye?» / «Opción A: Le Corbusier.» / «Opción B: Mies van der Rohe.» / «Opción C: Walter Gropius.» / «Opción D: Alvar Aalto.» / «Comenta tu respuesta.»
-- **Solución:** «La correcta es la opción A.» / «Le Corbusier, entre 1928 y 1931, en Poissy, a las afueras de París.» / «Guárdalo para repasar.»
+- **Pregunta (cuenta atrás: comenta):** «¿Quién diseñó la Villa Savoye?» / «Opción A: Le Corbusier.» / «Opción B: Mies van der Rohe.» / «Opción C: Walter Gropius.» / «Opción D: Alvar Aalto.» / «Comenta tu respuesta. Mañana te damos la solución.»
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
 ### ¿Verdadero o falso? · 12 reels distintos
 
-**Ejemplo 1** — gancho: Esta parece fácil · voz: «Esta parece fácil. Contesta antes de que salga la respuesta.»
-- **Pregunta (cuenta atrás: comenta):** «La Sagrada Familia se empezó antes de que Gaudí se hiciera cargo.» / «¿Verdadero?» / «¿O falso?» / «Comenta V o F.»
-- **Solución:** «Verdadero.» / «La empezó Francisco de Paula del Villar en 1882; Gaudí llegó en 1883.» / «Guárdalo para repasar.»
+**Ejemplo 1** — gancho: Esta parece fácil · voz: «Esta parece fácil. ¿Verdadero o falso?»
+- **Pregunta (cuenta atrás: comenta):** «La Sagrada Familia se empezó antes de que Gaudí se hiciera cargo.» / «¿Verdadero?» / «¿O falso?» / «Comenta V o F. Mañana te damos la solución.»
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 

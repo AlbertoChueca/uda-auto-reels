@@ -414,6 +414,7 @@ if summary:
                                                   for k, v in results.items()))
 meta["voice"] = voice_used
 meta["arms"] = arms
+meta["ts"] = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")   # hora real (bot de comunidad)
 meta["variante"] = ((items or [{}])[0].get("infografia") or {}).get("variante")
 try:
     import tematicas as _tm
@@ -422,6 +423,6 @@ except Exception:
     pass
 log({k: meta.get(k) for k in ("formato", "estilo", "series", "imagen", "concepto", "voice_speed", "music", "ids", "temas",
                               "respuestas", "veredicto", "hook", "hook_line", "duration", "guion", "voice", "review_score",
-                              "design_score", "arms", "publicado", "variante", "tematica")})
+                              "design_score", "arms", "publicado", "variante", "tematica", "ts")})
 if all(str(v).startswith("error") for v in results.values()):
     raise SystemExit("No se pudo publicar en ninguna red")
