@@ -152,13 +152,30 @@ class Zernio:
     def _h(self):
         return {"Authorization": f"Bearer {os.environ['ZERNIO_API_KEY']}", "Content-Type": "application/json"}
 
+    @staticmethod
+    def _req(method, url, **kw):
+        """Zernio permite 60 llamadas por minuto: un pequeño ritmo y, si avisa, espera lo que pide."""
+        for _ in range(3):
+            time.sleep(1.1)
+            r = requests.request(method, url, timeout=60, **kw)
+            if r.status_code != 429:
+                return r
+            try:
+                wait = int((r.json().get("details") or {}).get("retryAfterSeconds") or 30)
+            except Exception:
+                wait = 30
+            time.sleep(min(wait + 1, 65))
+        return r
+
     def nativo(self, pid):
         """Id de la publicación en la propia red (TikTok lo exige; Zernio guarda el suyo). Se guarda en caché."""
+        if pid.startswith("ig:"):
+            return pid.split(":", 1)[1]
         if pid in NATIVOS:
             return NATIVOS[pid]
         out = pid
         try:
-            r = requests.get(f"{self.API}/posts/{pid}", headers=self._h(), timeout=60)
+            r = self._req("GET", f"{self.API}/posts/{pid}", headers=self._h())
             post = (r.json() or {}).get("post") or r.json()
             if os.environ.get("COMUNIDAD_DEBUG") and not NATIVOS.get("_debug_" + self.red):
                 NATIVOS["_debug_" + self.red] = "1"
@@ -184,8 +201,8 @@ class Zernio:
 
     def comentarios(self, pid):
         pid = self.nativo(pid)
-        r = requests.get(f"{self.API}/inbox/comments/{pid}", params={"accountId": self._acc(), "limit": 100},
-                         headers=self._h(), timeout=60)
+        r = self._req("GET", f"{self.API}/inbox/comments/{pid}", params={"accountId": self._acc(), "limit": 100},
+                      headers=self._h())
         if r.status_code >= 400:
             raise RuntimeError(f"Zernio {self.red} comentarios {r.status_code}: {r.text[:300]}")
         return [{"id": c["id"], "texto": c.get("message", ""), "autor": (c.get("from") or {}).get("username")
@@ -195,8 +212,8 @@ class Zernio:
     def _post(self, pid, body):
         pid = self.nativo(pid)
         body = {"accountId": self._acc(), **body}
-        r = requests.post(f"{self.API}/inbox/comments/{pid}", json=body, timeout=60,
-                          headers={**self._h(), "Idempotency-Key": hashlib.sha1(json.dumps(body, sort_keys=True).encode()).hexdigest()})
+        r = self._req("POST", f"{self.API}/inbox/comments/{pid}", json=body,
+                      headers={**self._h(), "Idempotency-Key": hashlib.sha1(json.dumps(body, sort_keys=True).encode()).hexdigest()})
         if r.status_code >= 400:
             raise RuntimeError(f"Zernio {self.red} {r.status_code}: {r.text[:300]}")
         return (r.json().get("data") or {}).get("commentId")
@@ -210,15 +227,32 @@ class Zernio:
     def fijar(self, pid, cid):
         if self.red != "tiktok" or not cid:
             return None
-        r = requests.post(f"{self.API}/inbox/comments/{self.nativo(pid)}/{cid}/pin", json={"accountId": self._acc()},
-                          headers=self._h(), timeout=60)
+        r = self._req("POST", f"{self.API}/inbox/comments/{self.nativo(pid)}/{cid}/pin", json={"accountId": self._acc()},
+                      headers=self._h())
         return r.status_code < 400
+
+
+_IG_MODO = []
 
 
 def red_para(red, pid):
     if red == "instagram" and pid.startswith("ig:"):
-        return Instagram()
+        if not _IG_MODO:                                   # se decide una vez por pasada
+            modo = "directo"
+            try:
+                import publish_zernio as Z
+                if os.environ.get("ZERNIO_API_KEY") and Z.accounts().get("instagram"):
+                    modo = "zernio"                        # Instagram conectado en Zernio: su bandeja de comentarios
+            except Exception:
+                pass
+            _IG_MODO.append(modo)
+        return Zernio("instagram") if _IG_MODO[0] == "zernio" else Instagram()
     return Zernio(red)
+
+
+def _inaccesible(red, err):
+    """Publicación borrada o de antes de conectar bien la cuenta: se deja de mirar (no es un fallo de la red)."""
+    return ("40002" in err and red == "tiktok") or ("unauthorized on urn" in err and red == "linkedin")
 
 
 # ------------------------------------------------------------------ textos
@@ -359,16 +393,22 @@ def main():
     st = load_state()
     NATIVOS.update(st.get("nativos", {}))
     hechos = set(st["contestados"])
-    n_resp, resumen, errores = 0, [], {}
+    n_resp, resumen, errores, funciona = 0, [], {}, set()
     for clave, red, pid, pieza, info in publicaciones():
         api = red_para(red, pid)
-        if not api.ok():
+        ps = st["posts"].setdefault(clave, {})
+        if not api.ok() or ps.get("inaccesible"):
             continue
         try:
             coms = api.comentarios(pid)
+            funciona.add(red)
         except Exception as e:
-            errores[red] = str(e)[:400]; say(f"{clave}: {str(e)[:400]}"); continue
-        ps = st["posts"].setdefault(clave, {})
+            err = str(e)[:400]
+            if _inaccesible(red, err):
+                ps["inaccesible"] = err[:160]; say(f"{clave}: inaccesible (borrada o antigua); no se vuelve a mirar")
+            else:
+                errores[red] = err; say(f"{clave}: {err}")
+            continue
         sol = _sol(pieza)
         revelada = bool(ps.get("solucion"))
         # 1) la solución (o los resultados) entre 12 y 24 h después
@@ -414,6 +454,11 @@ def main():
         ps["comentarios"] = len(coms)
         resumen.append(f"| {info.get('fecha')} | {red} | {info.get('tematica')} | {(info.get('hook') or '')[:40]} | "
                        f"{len(coms)} | {'sí' if ps.get('solucion') else ('pendiente' if sol else '—')} |")
+    errores = {k: v for k, v in errores.items() if k not in funciona or "no deja" in v}
+    if "instagram" in errores and "permission" in errores["instagram"].lower() + "missing permissions":
+        errores["instagram"] = ("el token de Instagram no tiene permiso para leer comentarios. Solución: conecta "
+                                "Instagram en Zernio (la misma cuenta) o renueva IG_TOKEN con el permiso de comentarios "
+                                "(instagram_business_manage_comments). " + errores["instagram"][:160])
     st["contestados"] = sorted(hechos)[-20000:]
     st["errores"] = errores
     st["nativos"] = NATIVOS
