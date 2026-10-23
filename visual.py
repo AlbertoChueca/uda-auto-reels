@@ -68,8 +68,26 @@ def pieza(formato, seed=0):
 
 
 # ------------------------------------------------------------------ imágenes (IA + revisora)
-def _gen(prompt, refs=(), revisar=True, intentos=2):
-    import gemini, estudio
+def revisa(img, idea):
+    """Revisora propia de los reels visuales: SOLO defectos objetivos (la imagen ocupa toda la pantalla; no hace falta
+    hueco para texto ni un encuadre concreto). Devuelve (ok, motivo)."""
+    import gemini
+    b = io.BytesIO(); im = img.copy(); im.thumbnail((640, 640)); im.convert("RGB").save(b, "JPEG", quality=82)
+    try:
+        r = gemini.ask([{"text": f"""Revisa esta imagen para un reel de arquitectura. Debía mostrar: {idea}.
+Rechaza (ok=false) SOLO si hay un defecto objetivo que un arquitecto vería en el móvil: texto, letras o números legibles;
+geometría imposible o absurda (escaleras sin sentido, ventanas o muebles deformados, objetos fundidos); un edificio
+famoso reconocible; caras de personas reconocibles; algo inquietante; o si no se parece a lo pedido. Los detalles de
+encuadre, estilo o normativa NO son motivo de rechazo.
+Devuelve JSON: {{"ok": bool, "problemas": [str]}}"""},
+                        {"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(b.getvalue()).decode()}}], 0.2)
+        return bool(r.get("ok")), "; ".join(r.get("problemas") or [])[:300]
+    except Exception as e:
+        return True, f"revisora no disponible ({str(e)[:80]}); la revisión del vídeo hará de filtro"
+
+
+def _gen(prompt, refs=(), revisar=True, intentos=3):
+    import gemini
     idea = prompt
     for k in range(intentos):
         try:
@@ -78,12 +96,17 @@ def _gen(prompt, refs=(), revisar=True, intentos=2):
             say("imagen no generada:", str(e)[:150]); continue
         if not revisar:
             return img
-        ok, why, mejor = estudio.revisora(img, prompt)
+        ok, why = revisa(img, prompt)
+        try:
+            with open(os.path.join(HERE, "image_log.jsonl"), "a") as f:
+                f.write(json.dumps({"date": str(datetime.date.today()), "visual": True, "idea": prompt[:200], "ok": ok,
+                                    "problemas": why}, ensure_ascii=False) + "\n")
+        except Exception:
+            pass
         if ok:
             return img
         say(f"revisora rechaza ({why[:120]}); intento {k + 2}")
-        if mejor:
-            idea = f"{prompt}. Corrige: {why[:200]}"
+        idea = f"{prompt}. Evita esto: {why[:200]}"
     return None
 
 
@@ -101,8 +124,11 @@ def imagenes(formato, P):
         elif formato == "tips":
             fs = [ex.submit(_gen, t["idea"]) for t in P["tips"]]
             pasos = [(f.result(), t["tip"]) for f, t in zip(fs, P["tips"])]
-            if any(im is None for im, _ in pasos):
-                raise RuntimeError("tips: falta alguna imagen aprobada")
+            pasos = [x for x in pasos if x[0] is not None]
+            if len(pasos) < max(3, len(P["tips"]) - 1):
+                raise RuntimeError("tips: faltan imágenes aprobadas")
+            if len(pasos) < len(P["tips"]):                    # «5 tips» -> «4 tips» si una no salió bien
+                P["hook"] = P["hook"].replace(str(len(P["tips"])), str(len(pasos)), 1)
         elif formato in ("proceso", "obra"):
             final = _gen(f"Render fotorrealista exterior de {P['descripcion']}, terminada, jardín cuidado, luz de atardecer")
             if final is None:
@@ -126,9 +152,10 @@ def imagenes(formato, P):
                      True)]
                 fin = "¡Terminada!"
             fs = [ex.submit(_gen, txt, [final], rev) for _, txt, rev in etapas]
-            pasos = [(f.result(), lab) for f, (lab, _, _) in zip(fs, etapas)] + [(final, fin)]
-            if any(im is None for im, _ in pasos):
-                raise RuntimeError(f"{formato}: falta alguna etapa")
+            pasos = [(f.result(), lab) for f, (lab, _, _) in zip(fs, etapas)]
+            pasos = [x for x in pasos if x[0] is not None] + [(final, fin)]
+            if len(pasos) < 3:                                  # al menos 2 etapas + el resultado
+                raise RuntimeError(f"{formato}: faltan etapas")
         else:                                                      # antes / después
             def par(e):
                 antes = _gen(f"Fotografía real de {e['descripcion']}, aspecto anticuado y descuidado, luz pobre, "
