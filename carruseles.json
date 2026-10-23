@@ -58,5 +58,25 @@
 "linkedin_documento": "6ada4a164564beb4f72f27b5"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-10-23",
+"bloque": "servicios",
+"tema": "uda_servicios",
+"subtema": "Alcance y entregables delegables",
+"titulo": "Qué incluye delegar tu proyecto",
+"fragmentos": [
+"08 Opciones adicionales"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.2,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18200188219376975",
+"tiktok_carrusel": "6adb84bd55f0d60d57802145",
+"linkedin_documento": "6adb84d0229847700f1356f9"
+},
+"dry_run": false
 }
 ]

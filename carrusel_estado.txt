@@ -1,9 +1,15 @@
-Carrusel 2026-10-22 17:36 UTC
-carrusel: verificado (Escalar producción sin costes fijos)
-carrusel: revisión 8.5/10 ["La diapositiva final (06) presenta saturación visual y competencia jerárquica al encadenar dos bloques destacados tipo botón ('AGENDA UNA REUNIÓN...' en dorado y la pastilla crema de la URL). Conviene jerarquizar un único CTA principal.", 'Monotonía estructural en el cuerpo del carrusel: las láminas 02 a 05 calcan exactamente la misma retícula de tres cajas apiladas, lo que puede provocar fatiga visual al deslizar rápido en el móvil.', "El pie legal ('Fuente: Condiciones del servicio técnico...') se repite en todas las diapositivas interiores, restando aire compositivo a un formato de lectura rápida donde no aporta valor directo."]
-carrusel: Qué hace UDA por tu despacho · Escalar producción sin costes fijos · 6 imágenes
-Instagram carrusel: https://www.instagram.com/p/DeziXfYjZUh/
+Carrusel 2026-10-23 15:25 UTC
+carrusel: verificado (Cómputo de viviendas al presupuestar)
+carrusel: revisión 6.5/10 ["Contenido condescendiente para el público objetivo: explicar a fundadores de estudios que hacen bloques qué es una 'vivienda tipo' o que el jardín no computa en la superficie construida resulta una obviedad académica que no aporta valor estratégico ni de negocio.", 'El carrusel se lee más como un formulario de instrucciones internas para cotizar con UDA que como un recurso técnico o financiero que un socio guardaría para optimizar la rentabilidad de su despacho.', 'El esquema en planta de la portada es excesivamente esquemático y rudimentario; no transmite la complejidad ni el calibre de proyectos de envergadura que busca atraer.']
+carrusel: el verificador pide cambios: [{"frase": "Delineación de detalles constructivos 1:20, acabados, superficies y despieces completos de carpinterías.", "motivo": "La fuente indica 'Planos de carpinterías'. El término 'despieces completos' es un dato inventado que no aparece en la fuente."}, {"frase": "Modelado, cálculo y planos de estructura resueltos directamente mediante CYPE.", "motivo": "La fuente indica 'Cálculo y planos de 
+carrusel: verificado (Partidas del Proyecto de Ejecución)
+carrusel: reintento uda_servicios 6.0/10 ["La 'CLAVE' de la diapositiva 03 ('Para hacer el Proyecto de Ejecución es necesario el Proyecto Básico') es una obviedad reglamentaria de primero de carrera; para un titular de despacho resulta condescendiente y resta autoridad técnica.", 'El grafismo técnico de la portada es un croquis esquemático y rudimentario de una sola estancia; no transmite solvencia para despachos que proyectan bloques residenciales o terciario de envergadura.', "La mención recurrente al pie ('Fuente: Listado de documentos de UDA, Apartado 06') aporta ruido administrativo y burocrático innecesario en un formato móvil."]
+carrusel: verificado (Alcance y entregables delegables)
+carrusel: reintento uda_servicios 8.2/10 ['La planta arquitectónica de la portada es un esquema elemental (parece una estancia mínima o caseta) que resta autoridad visual ante un público habituado a redactar bloques de viviendas y obras de gran envergadura.', "El pie de página ('Fuente: Listado de documentos de UDA, Apartados 08 y 10') se repite en todas las diapositivas aportando ruido visual y burocrático sin valor para la toma de decisión del socio.", 'En la diapositiva final de cierre (slide 5) hay saturación de impactos y ruptura de estilo: el bloque blanco/crema de la URL compite y choca visualmente con el botón dorado superior y el resto de la estética oscura.']
+carrusel: Qué hace UDA por tu despacho · Alcance y entregables delegables · 5 imágenes
+carrusel: espero 30.8 min para publicar a las 18:00
+Instagram carrusel: https://www.instagram.com/p/De18A7SAXWM/
 Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
-Zernio tiktok carrusel: creado 6ada4a0bfb2da05e49dfc8de
-Zernio linkedin documento: creado 6ada4a164564beb4f72f27b5
-publicación: {"instagram_carrusel": "ig:18132030676771015", "tiktok_carrusel": "6ada4a0bfb2da05e49dfc8de", "linkedin_documento": "6ada4a164564beb4f72f27b5"}
+Zernio tiktok carrusel: creado 6adb84bd55f0d60d57802145
+Zernio linkedin documento: creado 6adb84d0229847700f1356f9
+publicación: {"instagram_carrusel": "ig:18200188219376975", "tiktok_carrusel": "6adb84bd55f0d60d57802145", "linkedin_documento": "6adb84d0229847700f1356f9"}
