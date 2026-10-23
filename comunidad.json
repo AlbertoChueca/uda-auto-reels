@@ -110,7 +110,9 @@
 "instagram:ig:17873676198601643": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
 "personas": [],
-"comentarios": 0
+"comentarios": 0,
+"solucion": "2026-10-23T19:20:55.653303+00:00",
+"solucion_id": "18062478644716715"
 },
 "tiktok:6adace1545e1032c8b498b46": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
@@ -120,7 +122,9 @@
 "linkedin:6adace152f321ae5ebc9b353": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
 "personas": [],
-"comentarios": 0
+"comentarios": 0,
+"solucion": "2026-10-23T19:20:55.653303+00:00",
+"solucion_id": "7519478060585431041"
 },
 "instagram:ig:17992749981052685": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
@@ -130,7 +134,9 @@
 "tiktok:6adaceeb5695f09d9cf548a1": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
 "personas": [],
-"comentarios": 0
+"comentarios": 0,
+"solucion": "2026-10-23T19:20:55.653303+00:00",
+"solucion_id": "7699811687935083297"
 },
 "linkedin:6adaceeb5695f09d9cf548a8": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
@@ -214,6 +220,30 @@
 "linkedin:6adb5c06c5ce671f817b6f6a": {
 "personas": [],
 "comentarios": 0
+},
+"instagram:ig:18222182560356914": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adb9433085bf551b694d10d": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adb9433085bf551b694d109": {
+"personas": [],
+"comentarios": 0
+},
+"instagram:ig:18200188219376975": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adb84bd55f0d60d57802145": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adb84d0229847700f1356f9": {
+"personas": [],
+"comentarios": 0
 }
 },
 "errores": {},
@@ -249,6 +279,10 @@
 "6adb5ab0b4ac8ad31d9736ae": "7699847768063413537",
 "6adb5ab0d5241bc20a05bf4c": "urn:li:ugcPost:7519382564776730624",
 "6adb5c07c5ce671f817b6f6e": "7699849246404644128",
-"6adb5c06c5ce671f817b6f6a": "urn:li:ugcPost:7519384020258979840"
+"6adb5c06c5ce671f817b6f6a": "urn:li:ugcPost:7519384020258979840",
+"6adb9433085bf551b694d10d": "7699911004901100833",
+"6adb9433085bf551b694d109": "urn:li:ugcPost:7519444325064388609",
+"6adb84bd55f0d60d57802145": "7699893960629587232",
+"6adb84d0229847700f1356f9": "urn:li:ugcPost:7519427799292628993"
 }
 }
