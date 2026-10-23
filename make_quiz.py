@@ -727,6 +727,7 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
                 for k in range(len(G["voz"][sc])):         # el golpe k aparece en el instante exacto en que empieza su frase
                     starts.append(tt - a); say(f"{sc}{k}", tt); tt += D[f"{sc}{k}"] + 0.22 / pace
                 dur = max(tt - a + 0.7 / pace, 4.0 if sc == "donut" else 0)          # ritmo: sin esperas al final
+                dur += float(G["datos"][sc].get("pausa") or 0)        # test: segundos para pensar y comentar
                 seg("ig_" + sc, dur, starts=starts, cstart=starts[-1], bstart=starts[1] if len(starts) > 1 else 99)
         elif fmt == "caso_coste":
             a = t; tt = a + 0.5; starts = []

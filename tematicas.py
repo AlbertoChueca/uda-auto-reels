@@ -1,46 +1,69 @@
-"""Las 7 temáticas de los reels de UDA y su calendario semanal (3 reels al día, 21 a la semana).
+"""Temáticas de los reels de UDA y su calendario semanal (3 reels al día, 21 a la semana): 80 % interacción, 20 % UDA.
 
-Cada temática sale exactamente 3 veces por semana, nunca dos veces el mismo día y nunca dos reels seguidos iguales:
+TikTok e Instagram enseñan más lo que la gente comenta, guarda y comparte. Por eso 17 de los 21 reels semanales son
+contenido para el arquitecto autónomo o el fundador de un despacho, aunque no hable de UDA:
 
-    1 coste        Cuánto cuesta delegar tu proyecto           (casos.py: unifamiliar, nave, equipamiento, por m²)
-    2 contratar    Contratar o delegar: lo que no sale en la nómina   (casos.py)
-    3 partidas     Qué incluye cada partida que delegas y cuánto cuesta (planimetría, construcción, instalaciones...)
-    4 actuaciones  Encargos pequeños con precio cerrado (locales, ascensor, fachada, legalización, piscina...)
-    5 revit        CAD o Revit: mismo precio, modelo LOD 300, mediciones del modelo, instalaciones en 3D
-    6 proceso      Cómo trabajamos: reunión, presupuesto en 24 h, pagos 60/40, revisiones, testimonios (casos.py)
-    7 inspiracion  Renders de arquitectura + curiosidades comprobadas (fuentes/curiosidades.json, formato «render»)
+    test         Test de arquitecto: pregunta con 4 opciones, cuenta atrás «Comenta tu respuesta» y solución   (6/semana)
+    vf           ¿Verdadero o falso?: afirmación, «comenta», solución con explicación                          (3/semana)
+    encuesta     Encuesta sin respuesta correcta («¿Cuántos proyectos llevas a la vez?»): pura conversación   (3/semana)
+    atajos       Guárdalo: 4 comandos de AutoCAD o atajos de Revit                                          (2/semana)
+    inspiracion  Renders de arquitectura + curiosidades comprobadas (formato «render»)                        (3/semana)
 
-Nada se inventa: precios de la Tabla de presupuestos de UDA (fuentes/uda_tabla_presupuestos.txt, apartados 03, 06, 07,
-08 y 09), hechos de assets/uda/hechos.md y testimonios literales de la web. Dentro de cada temática hay varias piezas
-(y cada una con su combinación de escenas y su gancho), así que una temática nunca repite el reel de la semana anterior.
-Calendario completo y guiones: GUIONES.md (python guiones.py).
+y 4 son de UDA (20 %), rotando entre: coste, contratar, partidas, actuaciones, revit y proceso.
+
+Datos: fuentes/interaccion.json y fuentes/curiosidades.json (comprobados en su fuente, sin normativa), la Tabla de
+presupuestos de UDA, assets/uda/hechos.md y testimonios literales de la web. Calendario y guiones: GUIONES.md.
 """
-import hashlib
+import hashlib, json, os
 
 import casos
 
-TEMAS = ["coste", "contratar", "partidas", "actuaciones", "revit", "proceso", "inspiracion"]
-NOMBRE = {"coste": "Cuánto cuesta delegar", "contratar": "Contratar o delegar", "partidas": "Qué incluye cada partida",
-          "actuaciones": "Encargos pequeños, precio cerrado", "revit": "CAD o Revit", "proceso": "Cómo trabajamos",
-          "inspiracion": "Renders y curiosidades"}
+HERE = os.path.dirname(os.path.abspath(__file__))
+INTERACCION = ["test", "vf", "encuesta", "atajos", "inspiracion"]
+UDA = ["coste", "contratar", "partidas", "actuaciones", "revit", "proceso"]
+TEMAS = INTERACCION + UDA
+NOMBRE = {"test": "Test de arquitecto", "vf": "¿Verdadero o falso?", "encuesta": "Encuesta", "atajos": "Guárdalo: atajos",
+          "inspiracion": "Renders y curiosidades",
+          "coste": "UDA · Cuánto cuesta delegar", "contratar": "UDA · Contratar o delegar",
+          "partidas": "UDA · Qué incluye cada partida", "actuaciones": "UDA · Encargos con precio cerrado",
+          "revit": "UDA · CAD o Revit", "proceso": "UDA · Cómo trabajamos", "uda": "UDA (rota entre sus 6 temas)"}
 VARIANTE = {"coste": "caso", "contratar": "contratar", "proceso": "proceso"}       # nombre interno en casos.py
 TEMA_DE_VARIANTE = {v: k for k, v in VARIANTE.items()}
 SLOTS = {"manana": 0, "mediodia": 1, "tarde": 2}
+# lunes..domingo × (8:00, 12:00, 15:00): test 6, encuesta 3, vf 3, inspiración 3, atajos 2, UDA 4 (= 19 %).
+# Nunca dos reels seguidos del mismo tipo (tampoco de domingo a lunes).
+PLAN = [["test", "encuesta", "uda"], ["vf", "inspiracion", "test"], ["atajos", "test", "encuesta"],
+        ["uda", "vf", "test"], ["inspiracion", "test", "encuesta"], ["vf", "uda", "atajos"], ["test", "inspiracion", "uda"]]
+
+
+def _ultimo(t, rec):
+    return max([i for i, r in enumerate(rec) if r == t], default=-1)
 
 
 def plan(fecha, slot):
-    """Calendario fijo: (día de la semana × 3 + hueco) mod 7 -> cada temática 3 veces por semana, nunca seguidas."""
-    return TEMAS[(fecha.weekday() * 3 + SLOTS.get(slot, 0)) % 7]
+    return PLAN[fecha.weekday()][SLOTS.get(slot, 0)]
 
 
 def tema_de(fecha, slot, recientes=()):
-    """La del calendario, salvo que haya salido en los 2 últimos reels (p. ej. tras lanzamientos manuales): entonces la
-    que lleva más tiempo sin salir."""
+    """La del calendario. El hueco «uda» toma el tema de UDA que lleva más tiempo sin salir. Si lo que toca acaba de salir
+    (lanzamientos manuales) o es un lanzamiento manual: 1 de cada 5 de UDA y el resto, la interacción más antigua."""
     rec = [r for r in recientes if r]
     p = plan(fecha, slot) if slot in SLOTS else None
-    if p and p not in rec[-2:]:
+    if p == "uda":
+        return min(UDA, key=lambda t: (_ultimo(t, rec), UDA.index(t)))
+    if p and (not rec or p != rec[-1]):
         return p
-    return min(TEMAS, key=lambda t: (max([i for i, r in enumerate(rec) if r == t], default=-1), TEMAS.index(t)))
+    if not any(r in UDA for r in rec[-4:]):
+        return min(UDA, key=lambda t: (_ultimo(t, rec), UDA.index(t)))
+    return min([t for t in INTERACCION if not rec or t != rec[-1]], key=lambda t: (_ultimo(t, rec), INTERACCION.index(t)))
+
+
+def reserva(tema, recientes=(), n=2):
+    """Si un reel no llega al 8: otros tipos de infografía del mismo grupo (interacción o UDA), los menos recientes."""
+    rec = [r for r in recientes if r]
+    grupo = UDA if tema in UDA else [t for t in INTERACCION if t != "inspiracion"]
+    otras = [t for t in grupo if t not in (tema, "inspiracion")]
+    return sorted(otras, key=lambda t: _ultimo(t, rec))[:n]
 
 
 def semana(lunes):
@@ -240,12 +263,87 @@ def revit():
     return out
 
 
+# ------------------------------------------------------------------ interacción (fuentes/interaccion.json)
+LETRAS = "ABCD"
+CTA_INTERACCION = "Síguenos para más. Y si tu estudio va a tope, agenda una reunión para conocernos y crecer juntos."
+
+
+def _voz(t):
+    return t.replace("ø", "o").replace(" · ", ": ")
+
+
+def _quiz(tema, clave, k, badge, titulo, pregunta, opciones, correcta, explicacion, hooks, caption, voz_ops,
+          cta="Comenta tu respuesta", pill="Guárdalo para repasar", sol_voz=None, letras=LETRAS):
+    preg = {"titulo": titulo, "pregunta": pregunta, "opciones": opciones, "letras": letras, "cta": cta, "segundos": 3,
+            "pausa": 3.0}
+    preg_voz = [_voz(pregunta)] + voz_ops + [cta + "."]
+    resp = {"titulo": "La respuesta" if correcta >= 0 else "Tu respuesta", "pregunta": pregunta, "opciones": opciones,
+            "letras": letras, "correcta": correcta, "explicacion": explicacion, "pill": pill}
+    resp_voz = [sol_voz, _voz(explicacion), pill + "."]
+    p = _pieza(tema, clave, k, badge, hooks, {"pregunta": (preg, preg_voz), "respuesta": (resp, resp_voz)}, caption, clave)
+    p["infografia"]["cta"] = CTA_INTERACCION
+    return p
+
+
+def interaccion():
+    B = json.load(open(os.path.join(HERE, "fuentes", "interaccion.json")))
+    out = []
+    H_TEST = [("Test de arquitecto: ¿la sabes?", "Test rápido para arquitectos. ¿Sabrías responder?"),
+              ("Contesta sin buscarlo", "Una pregunta de arquitectura. Contesta sin buscarlo."),
+              ("¿Aciertas a la primera?", "A ver si aciertas a la primera. Pásaselo a tu equipo y comparad.")]
+    for i, q in enumerate(B["tests"]):
+        ops, c = q["opciones"], q["correcta"]
+        cap = (f"{q['pregunta']}\n\n" + "\n".join(f"{LETRAS[j]}) {o}" for j, o in enumerate(ops))
+               + "\n\n👇 Comenta tu respuesta antes de ver la solución.\n📌 Guárdalo para repasar y compártelo con tu equipo.")
+        out.append(_quiz("test", f"t{i}", i, "TEST DE ARQUITECTO", "Test de arquitecto", q["pregunta"], ops, c,
+                         q["explicacion"], H_TEST, cap, [f"{LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)],
+                         sol_voz=f"La respuesta correcta es la {LETRAS[c]}: {_voz(ops[c])}."))
+        out[-1]["referencia"] = q["fuente"]
+    H_VF = [("¿Verdadero o falso?", "Verdadero o falso. Contesta antes de que salga la respuesta."),
+            ("Contesta sin buscarlo", "Verdadero o falso. Contesta sin buscarlo."),
+            ("¿Te la sabes?", "Esta parece fácil. ¿Verdadero o falso?")]
+    for i, q in enumerate(B["vf"]):
+        c = 0 if q["verdadero"] else 1
+        ex = q["explicacion"].split(". ", 1)[1] if q["explicacion"].startswith(("Verdadero.", "Falso.")) else q["explicacion"]
+        cap = (f"¿Verdadero o falso?\n\n{q['afirmacion']}\n\n👇 Comenta V o F antes de ver la solución.\n"
+               "📌 Guárdalo y compártelo con tu equipo.")
+        out.append(_quiz("vf", f"v{i}", i, "¿VERDADERO O FALSO?", "¿Verdadero o falso?", q["afirmacion"],
+                         ["Verdadero", "Falso"], c, ex, H_VF, cap, ["¿Verdadero?", "¿O falso?"],
+                         cta="Comenta V o F", sol_voz=("Verdadero." if c == 0 else "Falso."), letras="VF"))
+        out[-1]["referencia"] = q["fuente"]
+    H_EN = [("Encuesta para arquitectos", "Encuesta rápida para arquitectos. Contesta en comentarios."),
+            ("Queremos saberlo", "Queremos saber cómo trabajas. Contesta en comentarios."),
+            ("¿Y tú qué contestas?", "Una pregunta para los que llevan un estudio. ¿Tú qué contestas?")]
+    for i, q in enumerate(B["encuestas"]):
+        ops = q["opciones"]
+        cap = (f"{q['pregunta']}\n\n" + "\n".join(f"{LETRAS[j]}) {o}" for j, o in enumerate(ops))
+               + "\n\n👇 Contesta en comentarios con la letra. Te leemos a todos.\n🔁 Compártelo con otro arquitecto.")
+        out.append(_quiz("encuesta", f"e{i}", i, "ENCUESTA PARA ARQUITECTOS", "Encuesta", q["pregunta"], ops, -1,
+                         "Queremos saber cómo trabajáis los estudios.", H_EN, cap,
+                         [f"{LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)], cta="Contesta en comentarios",
+                         pill="Te leemos en comentarios", sol_voz="Aquí no hay respuesta correcta."))
+    for i, a in enumerate(B["atajos"]):
+        prog = "AutoCAD" if a["programa"] == "autocad" else "Revit"
+        pill = a["voz"][-1].rstrip(".")
+        datos = {"titulo": a["titulo"], "items": [tuple(x) for x in a["items"]], "uda": pill, "tachar": False}
+        hooks = [(f"Guárdalo si usas {prog}", f"Si trabajas con {prog}, guárdate esto."),
+                 (f"{prog}: ¿los usas todos?", f"Atajos de {prog}. ¿Cuántos usas ya? Cuéntalo en comentarios."),
+                 (f"Menos clics en {prog}", f"Menos clics y más tiempo para proyectar. Atajos de {prog}.")]
+        cap = (a["titulo"] + ("" if a["programa"] == "revit" else " (versión en inglés)") + ":\n\n"
+               + "\n".join(f"▪️ {t}: {d}" for _, t, d in a["items"])
+               + "\n\n📌 Guárdalo para tenerlo a mano.\n👇 ¿Cuál añadirías tú?")
+        p = _pieza("atajos", f"a{i}", i, "GUÁRDALO", hooks, {"cargas_atajos": (datos, list(a["voz"]))}, cap, f"a{i}")
+        p["infografia"]["cta"] = CTA_INTERACCION
+        out.append(p)
+    return out
+
+
 def _check(p):
     """Cada escena tiene tantas frases como golpes en pantalla (si no, la voz y el texto no cuadran)."""
     ig = p["infografia"]
     for sc in ig["orden"]:
         d, v, base = ig["datos"][sc], ig["voz"][sc], sc.split("_")[0]
-        need = {"towers": len(d.get("barras", [])) + 1, "cargas": 6, "timeline": len(d.get("pasos", [])), "delegable": 2,
+        need = {"towers": len(d.get("barras", [])) + 1, "cargas": 6, "pregunta": 2 + len(d.get("opciones", [])), "respuesta": 3, "timeline": len(d.get("pasos", [])), "delegable": 2,
                 "versus": 2, "donut": 1, "quote": 1, "stack": 1}[base]
         assert len(v) == need, (p["id"], sc, len(v), need)
     return p
@@ -253,7 +351,7 @@ def _check(p):
 
 def generate():
     """Piezas de las temáticas que no salen de casos.py (las de casos.py se añaden en questions.load)."""
-    return [_check(p) for p in partidas() + actuaciones() + revit()]
+    return [_check(p) for p in partidas() + actuaciones() + revit() + interaccion()]
 
 
 if __name__ == "__main__":
@@ -263,3 +361,8 @@ if __name__ == "__main__":
     hoy = datetime.date.today(); lunes = hoy - datetime.timedelta(hoy.weekday())
     for d, fila in zip("LMXJVSD", semana(lunes)):
         print(d, fila)
+    rec = []
+    for d in range(28):
+        for s_ in SLOTS:
+            rec.append(tema_de(lunes + datetime.timedelta(d), s_, rec))
+    print("4 semanas:", collections.Counter(rec), "| UDA:", sum(r in UDA for r in rec) / len(rec))

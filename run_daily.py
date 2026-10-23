@@ -183,9 +183,7 @@ chain = [arms.get("formato", "infografia")]
 try:                                               # si no llega al 8: otras 2 temáticas de infografía que no hayan salido hace poco
     import tematicas as _tm
     _rec = recent_tematicas()
-    _otras = sorted([t for t in _tm.TEMAS if t not in ("inspiracion", TEMATICA)],
-                    key=lambda t: max([i for i, r in enumerate(_rec) if r == t], default=-1))
-    chain += [f"infografia:{_tm.VARIANTE.get(t, t)}" for t in _otras[:2]]
+    chain += [f"infografia:{_tm.VARIANTE.get(t, t)}" for t in _tm.reserva(TEMATICA, _rec)]
 except Exception as e:
     print("reserva de temáticas omitida:", e, flush=True)
 # sin formatos de texto de reserva: si ninguna infografía llega al 8, hoy no sale reel (mejor nada que algo confuso)

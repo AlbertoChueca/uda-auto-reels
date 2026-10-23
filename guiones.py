@@ -14,22 +14,24 @@ import casos, tematicas, writer
 HERE = os.path.dirname(os.path.abspath(__file__))
 TIT = {"towers": "Cuánto cuesta delegar (3 edificios dorados)", "versus": "Contratar o delegar", "cargas": "Y no es solo dinero",
        "delegable": "Qué delegas y qué sigue siendo tuyo", "timeline": "Así funciona", "quote": "Testimonio (web de UDA)",
-       "stack": "Tu estudio hoy", "donut": "Tiempo"}
+       "stack": "Tu estudio hoy", "donut": "Tiempo", "pregunta": "Pregunta (cuenta atrás: comenta)",
+       "respuesta": "Solución"}
 
 
 def main():
     out = ["# Guiones de los reels de UDA", "",
            "Todo lo que dicen y muestran los reels sale de aquí. La voz dice exactamente el texto de cada escena.", "",
            "## Calendario semanal", "",
-           "7 temáticas × 3 veces por semana = 21 reels distintos. Nunca dos reels seguidos de la misma temática ni la "
-           "misma temática dos veces el mismo día. Todos se publican en Instagram, TikTok y LinkedIn.", "",
+           "21 reels a la semana: 17 de interacción (tests, verdadero o falso, encuestas, atajos y curiosidades, para que "
+           "la gente comente y guarde) y 4 de UDA (20 %), que rotan entre sus 6 temas. Nunca dos reels seguidos del mismo "
+           "tipo. Todos se publican en Instagram, TikTok y LinkedIn.", "",
            "| Día | 8:00 | 12:00 | 15:00 | 18:00 |", "|---|---|---|---|---|"]
     import datetime
     dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
     for d, row in enumerate(tematicas.semana(datetime.date(2026, 10, 26))):
         out.append(f"| {dias[d]} | " + " | ".join(tematicas.NOMBRE[t] for t in row) + " | Carrusel |")
     todas = casos.generate() + tematicas.generate()
-    out += ["", "## Las 7 temáticas", "",
+    out += ["", "## Los tipos de reel", "",
             "Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemplos publicados). Contratar: "
             "40.000–47.000 €/año (apartado 01). Ventajas, proceso y testimonios: uniondearquitectos.com.", ""]
     for t in tematicas.TEMAS:

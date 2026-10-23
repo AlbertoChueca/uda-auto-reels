@@ -1,0 +1,797 @@
+{
+ "_info": "Banco de interacción (80 % de los reels): tests, verdadero o falso, encuestas y atajos para guardar. Datos comprobados en la fuente indicada; sin normativa (BOE/CTE). Las encuestas no tienen respuesta correcta.",
+ "tests": [
+  {
+   "pregunta": "¿Quién diseñó la Villa Savoye?",
+   "opciones": [
+    "Le Corbusier",
+    "Mies van der Rohe",
+    "Walter Gropius",
+    "Alvar Aalto"
+   ],
+   "correcta": 0,
+   "explicacion": "Le Corbusier, entre 1928 y 1931, en Poissy, a las afueras de París.",
+   "fuente": "es.wikipedia.org/wiki/Villa_Saboya"
+  },
+  {
+   "pregunta": "¿Quién fue el primer español en ganar el Pritzker?",
+   "opciones": [
+    "Santiago Calatrava",
+    "Rafael Moneo",
+    "Álvaro Siza",
+    "Ricardo Bofill"
+   ],
+   "correcta": 1,
+   "explicacion": "Rafael Moneo, en 1996. Ojo: Álvaro Siza también lo ganó, pero es portugués.",
+   "fuente": "es.wikipedia.org/wiki/Premio_Pritzker"
+  },
+  {
+   "pregunta": "¿Quién diseñó la Casa de la Cascada?",
+   "opciones": [
+    "Louis Kahn",
+    "Richard Neutra",
+    "Frank Lloyd Wright",
+    "Philip Johnson"
+   ],
+   "correcta": 2,
+   "explicacion": "Frank Lloyd Wright la proyectó en 1935, sobre un arroyo de Pensilvania.",
+   "fuente": "es.wikipedia.org/wiki/Casa_de_la_cascada"
+  },
+  {
+   "pregunta": "¿Quién proyectó el Museo del Prado?",
+   "opciones": [
+    "Ventura Rodríguez",
+    "Francesco Sabatini",
+    "Juan de Herrera",
+    "Juan de Villanueva"
+   ],
+   "correcta": 3,
+   "explicacion": "Juan de Villanueva, en 1785. Nació como Gabinete de Ciencias Naturales.",
+   "fuente": "es.wikipedia.org/wiki/Museo_del_Prado"
+  },
+  {
+   "pregunta": "¿Quién fue la primera mujer en ganar el Pritzker?",
+   "opciones": [
+    "Kazuyo Sejima",
+    "Zaha Hadid",
+    "Carme Pigem",
+    "Anne Lacaton"
+   ],
+   "correcta": 1,
+   "explicacion": "Zaha Hadid, en 2004. Kazuyo Sejima lo ganó en 2010, con Ryue Nishizawa.",
+   "fuente": "es.wikipedia.org/wiki/Premio_Pritzker"
+  },
+  {
+   "pregunta": "¿Quién diseñó la Torre Agbar de Barcelona?",
+   "opciones": [
+    "Norman Foster",
+    "Jean Nouvel",
+    "Renzo Piano",
+    "Enric Miralles"
+   ],
+   "correcta": 1,
+   "explicacion": "Jean Nouvel. Hoy se llama Torre Glòries.",
+   "fuente": "es.wikipedia.org/wiki/Torre_Glòries"
+  },
+  {
+   "pregunta": "¿En qué año se puso la primera piedra de la Sagrada Familia?",
+   "opciones": [
+    "1866",
+    "1882",
+    "1900",
+    "1926"
+   ],
+   "correcta": 1,
+   "explicacion": "En 1882. Gaudí se hizo cargo del proyecto un año después, en 1883.",
+   "fuente": "es.wikipedia.org/wiki/Templo_Expiatorio_de_la_Sagrada_Familia"
+  },
+  {
+   "pregunta": "¿Quién fundó la Bauhaus?",
+   "opciones": [
+    "Walter Gropius",
+    "Mies van der Rohe",
+    "Paul Klee",
+    "Marcel Breuer"
+   ],
+   "correcta": 0,
+   "explicacion": "Walter Gropius, en Weimar, en 1919. Mies fue su último director.",
+   "fuente": "metmuseum.org/toah/hd/bauh/hd_bauh"
+  },
+  {
+   "pregunta": "¿Quién diseñó la Ópera de Sídney?",
+   "opciones": [
+    "Jørn Utzon",
+    "Alvar Aalto",
+    "Arne Jacobsen",
+    "Oscar Niemeyer"
+   ],
+   "correcta": 0,
+   "explicacion": "El danés Jørn Utzon. Ganó el Pritzker en 2003.",
+   "fuente": "es.wikipedia.org/wiki/Ópera_de_Sídney"
+  },
+  {
+   "pregunta": "¿Quién diseñó la pirámide del Louvre?",
+   "opciones": [
+    "Norman Foster",
+    "I. M. Pei",
+    "Jean Nouvel",
+    "Dominique Perrault"
+   ],
+   "correcta": 1,
+   "explicacion": "I. M. Pei. Se inauguró en 1989.",
+   "fuente": "es.wikipedia.org/wiki/Pirámide_del_Louvre"
+  },
+  {
+   "pregunta": "¿Quién proyectó el Centro Pompidou de París?",
+   "opciones": [
+    "Jean Nouvel",
+    "Piano y Rogers",
+    "Norman Foster",
+    "Rem Koolhaas"
+   ],
+   "correcta": 1,
+   "explicacion": "Renzo Piano y Richard Rogers, con Gianfranco Franchini. Se inauguró en 1977.",
+   "fuente": "es.wikipedia.org/wiki/Centro_Pompidou"
+  },
+  {
+   "pregunta": "¿Qué estudio proyectó la T4 de Barajas con Estudio Lamela?",
+   "opciones": [
+    "Foster + Partners",
+    "Rogers (RSHP)",
+    "Calatrava",
+    "SOM"
+   ],
+   "correcta": 1,
+   "explicacion": "Richard Rogers, hoy RSHP, con Estudio Lamela. Ganó el Premio Stirling en 2006.",
+   "fuente": "es.wikipedia.org/wiki/Aeropuerto_Adolfo_Suárez_Madrid-Barajas"
+  },
+  {
+   "pregunta": "¿Quién proyectó el Kursaal de San Sebastián?",
+   "opciones": [
+    "Rafael Moneo",
+    "Alberto Campo Baeza",
+    "Enric Miralles",
+    "Juan Navarro Baldeweg"
+   ],
+   "correcta": 0,
+   "explicacion": "Rafael Moneo. Se inauguró en 1999.",
+   "fuente": "es.wikipedia.org/wiki/Kursaal_(San_Sebastián)"
+  },
+  {
+   "pregunta": "¿Quién diseñó el Palau de la Música Catalana?",
+   "opciones": [
+    "Antoni Gaudí",
+    "Domènech i Montaner",
+    "Puig i Cadafalch",
+    "Josep Maria Jujol"
+   ],
+   "correcta": 1,
+   "explicacion": "Lluís Domènech i Montaner, entre 1905 y 1908.",
+   "fuente": "es.wikipedia.org/wiki/Palacio_de_la_Música_Catalana"
+  },
+  {
+   "pregunta": "¿En qué ciudad está la Unidad de Habitación más famosa de Le Corbusier?",
+   "opciones": [
+    "París",
+    "Marsella",
+    "Lyon",
+    "Burdeos"
+   ],
+   "correcta": 1,
+   "explicacion": "En Marsella. Se terminó en 1952 y se proyectó con El Modulor.",
+   "fuente": "es.wikipedia.org/wiki/Unidad_de_habitación"
+  },
+  {
+   "pregunta": "¿De qué material es la cúpula del Panteón de Roma?",
+   "opciones": [
+    "Piedra tallada",
+    "Ladrillo",
+    "Hormigón romano",
+    "Hormigón armado"
+   ],
+   "correcta": 2,
+   "explicacion": "Hormigón romano, sin armadura. Es la mayor cúpula de hormigón sin armar del mundo.",
+   "fuente": "es.wikipedia.org/wiki/Panteón_de_Agripa"
+  },
+  {
+   "pregunta": "¿Qué estudio español ganó el Pritzker en 2017?",
+   "opciones": [
+    "RCR Arquitectes",
+    "Mansilla + Tuñón",
+    "Nieto Sobejano",
+    "Ensamble Studio"
+   ],
+   "correcta": 0,
+   "explicacion": "RCR Arquitectes: Rafael Aranda, Carme Pigem y Ramon Vilalta, de Olot.",
+   "fuente": "es.wikipedia.org/wiki/RCR_Arquitectes"
+  },
+  {
+   "pregunta": "¿Qué estudio diseñó el Burj Khalifa?",
+   "opciones": [
+    "Foster + Partners",
+    "SOM",
+    "Zaha Hadid Architects",
+    "KPF"
+   ],
+   "correcta": 1,
+   "explicacion": "SOM, con Adrian Smith como arquitecto de diseño.",
+   "fuente": "es.wikipedia.org/wiki/Burj_Khalifa"
+  },
+  {
+   "pregunta": "¿Qué Pritzker fue boxeador antes que arquitecto?",
+   "opciones": [
+    "Tadao Ando",
+    "Kenzō Tange",
+    "Toyo Ito",
+    "Shigeru Ban"
+   ],
+   "correcta": 0,
+   "explicacion": "Tadao Ando. Además, aprendió arquitectura por su cuenta. Ganó el Pritzker en 1995.",
+   "fuente": "es.wikipedia.org/wiki/Tadao_Andō"
+  },
+  {
+   "pregunta": "¿Quién ideó la Ciudad Lineal de Madrid?",
+   "opciones": [
+    "Arturo Soria",
+    "Ildefons Cerdà",
+    "Secundino Zuazo",
+    "Carlos María de Castro"
+   ],
+   "correcta": 0,
+   "explicacion": "Arturo Soria, a finales del siglo XIX.",
+   "fuente": "es.wikipedia.org/wiki/Ciudad_Lineal"
+  },
+  {
+   "pregunta": "¿Quién diseñó el Eixample de Barcelona?",
+   "opciones": [
+    "Ildefons Cerdà",
+    "Antoni Gaudí",
+    "Domènech i Montaner",
+    "Arturo Soria"
+   ],
+   "correcta": 0,
+   "explicacion": "Ildefons Cerdà, ingeniero. Su plan se aprobó en 1860.",
+   "fuente": "es.wikipedia.org/wiki/Plan_Cerdá"
+  },
+  {
+   "pregunta": "¿Qué significa LOD en BIM?",
+   "opciones": [
+    "Level of Development",
+    "Layer of Drawing",
+    "Line of Design",
+    "Load of Detail"
+   ],
+   "correcta": 0,
+   "explicacion": "Level of Development: cuánto está desarrollado cada elemento del modelo, de LOD 100 a 500.",
+   "fuente": "es.wikipedia.org/wiki/Modelado_de_información_de_construcción"
+  },
+  {
+   "pregunta": "¿Qué formato abierto se usa para intercambiar modelos BIM?",
+   "opciones": [
+    "DWG",
+    "RVT",
+    "IFC",
+    "SKP"
+   ],
+   "correcta": 2,
+   "explicacion": "IFC, el estándar abierto de buildingSMART. RVT es el formato nativo de Revit.",
+   "fuente": "es.wikipedia.org/wiki/Industry_Foundation_Classes"
+  },
+  {
+   "pregunta": "¿Qué empresa desarrolla ArchiCAD?",
+   "opciones": [
+    "Autodesk",
+    "Graphisoft",
+    "Trimble",
+    "Bentley"
+   ],
+   "correcta": 1,
+   "explicacion": "Graphisoft. Revit y AutoCAD son de Autodesk, y SketchUp, de Trimble.",
+   "fuente": "es.wikipedia.org/wiki/ArchiCAD"
+  },
+  {
+   "pregunta": "¿A qué edad se suele medir la resistencia de proyecto del hormigón?",
+   "opciones": [
+    "7 días",
+    "14 días",
+    "28 días",
+    "90 días"
+   ],
+   "correcta": 2,
+   "explicacion": "A los 28 días: la resistencia característica se refiere a esa edad.",
+   "fuente": "es.wikipedia.org/wiki/Hormigón"
+  },
+  {
+   "pregunta": "¿Qué significa SATE?",
+   "opciones": [
+    "Sistema de Aislamiento Térmico por el Exterior",
+    "Sistema Acústico de Tabiquería Exterior",
+    "Solado Antideslizante Técnico Exterior",
+    "Sistema de Anclaje Térmico Estructural"
+   ],
+   "correcta": 0,
+   "explicacion": "El aislamiento va por fuera del muro, como un abrigo.",
+   "fuente": "es.wikipedia.org/wiki/Sistema_de_aislamiento_térmico_por_el_exterior"
+  },
+  {
+   "pregunta": "En un plano a escala 1:50, ¿cuánto mide en realidad 1 cm?",
+   "opciones": [
+    "5 cm",
+    "50 cm",
+    "5 m",
+    "50 m"
+   ],
+   "correcta": 1,
+   "explicacion": "50 cm. A 1:100, cada centímetro es un metro.",
+   "fuente": "es.wikipedia.org/wiki/Escala_(cartografía)"
+  },
+  {
+   "pregunta": "¿Cuánto mide un A1?",
+   "opciones": [
+    "420 × 594 mm",
+    "594 × 841 mm",
+    "841 × 1189 mm",
+    "297 × 420 mm"
+   ],
+   "correcta": 1,
+   "explicacion": "594 × 841 mm. Dos A1 juntos forman un A0, de un metro cuadrado.",
+   "fuente": "es.wikipedia.org/wiki/ISO_216"
+  },
+  {
+   "pregunta": "¿Cuántos A4 caben en un A0?",
+   "opciones": [
+    "8",
+    "12",
+    "16",
+    "32"
+   ],
+   "correcta": 2,
+   "explicacion": "16. Cada tamaño es la mitad del anterior: A0, A1, A2, A3, A4.",
+   "fuente": "es.wikipedia.org/wiki/ISO_216"
+  },
+  {
+   "pregunta": "¿Qué tiene de especial una viga Vierendeel?",
+   "opciones": [
+    "Es de madera laminada",
+    "No tiene diagonales",
+    "Siempre es curva",
+    "Solo trabaja a tracción"
+   ],
+   "correcta": 1,
+   "explicacion": "No tiene diagonales: solo cordones y montantes unidos rígidamente.",
+   "fuente": "es.wikipedia.org/wiki/Viga_Vierendeel"
+  },
+  {
+   "pregunta": "En AutoCAD (inglés), ¿qué hace OVERKILL?",
+   "opciones": [
+    "Borra todo el dibujo",
+    "Elimina líneas duplicadas",
+    "Cierra sin guardar",
+    "Fuerza la regeneración"
+   ],
+   "correcta": 1,
+   "explicacion": "Elimina líneas y objetos duplicados o superpuestos. Ideal para limpiar planos heredados.",
+   "fuente": "autodesk.com"
+  },
+  {
+   "pregunta": "En AutoCAD, ¿qué atajo abre la paleta de propiedades?",
+   "opciones": [
+    "Ctrl + 1",
+    "Ctrl + 3",
+    "Ctrl + P",
+    "Ctrl + 9"
+   ],
+   "correcta": 0,
+   "explicacion": "Ctrl + 1. Ctrl + 9 muestra u oculta la línea de comandos.",
+   "fuente": "autodesk.com"
+  },
+  {
+   "pregunta": "En Revit, ¿qué atajo activa las líneas finas?",
+   "opciones": [
+    "LF",
+    "TL",
+    "LT",
+    "FL"
+   ],
+   "correcta": 1,
+   "explicacion": "TL, de thin lines. Muy útil para dibujar con precisión con zoom.",
+   "fuente": "autodesk.com/shortcuts/revit"
+  },
+  {
+   "pregunta": "En Revit, ¿qué hace el atajo CS?",
+   "opciones": [
+    "Copia al portapapeles",
+    "Crea un elemento similar",
+    "Corta una sección",
+    "Cambia el estilo"
+   ],
+   "correcta": 1,
+   "explicacion": "Create Similar: crea otro elemento del mismo tipo que el que tienes seleccionado.",
+   "fuente": "autodesk.com/shortcuts/revit"
+  },
+  {
+   "pregunta": "¿Qué edificio de Mies se terminó en Nueva York en 1958?",
+   "opciones": [
+    "Edificio Seagram",
+    "Lever House",
+    "Edificio Chrysler",
+    "Edificio Flatiron"
+   ],
+   "correcta": 0,
+   "explicacion": "El Seagram, con Philip Johnson. La Lever House es de SOM.",
+   "fuente": "es.wikipedia.org/wiki/Edificio_Seagram"
+  }
+ ],
+ "vf": [
+  {
+   "afirmacion": "La Sagrada Familia se empezó antes de que Gaudí se hiciera cargo.",
+   "verdadero": true,
+   "explicacion": "Verdadero. La empezó Francisco de Paula del Villar en 1882; Gaudí llegó en 1883.",
+   "fuente": "es.wikipedia.org/wiki/Templo_Expiatorio_de_la_Sagrada_Familia"
+  },
+  {
+   "afirmacion": "Le Corbusier estudió la carrera de Arquitectura.",
+   "verdadero": false,
+   "explicacion": "Falso. No tuvo formación reglada de arquitecto: aprendió por su cuenta, igual que Mies.",
+   "fuente": "en.wikipedia.org/wiki/Le_Corbusier"
+  },
+  {
+   "afirmacion": "Tadao Ando estudió Arquitectura en la universidad.",
+   "verdadero": false,
+   "explicacion": "Falso. Fue autodidacta, y antes fue boxeador. Ganó el Pritzker en 1995.",
+   "fuente": "es.wikipedia.org/wiki/Tadao_Andō"
+  },
+  {
+   "afirmacion": "La cúpula del Panteón de Roma es de hormigón armado.",
+   "verdadero": false,
+   "explicacion": "Falso. Es hormigón romano sin armadura, y lleva casi 1.900 años en pie.",
+   "fuente": "es.wikipedia.org/wiki/Panteón_de_Agripa"
+  },
+  {
+   "afirmacion": "La Torre Eiffel se construyó para ser permanente.",
+   "verdadero": false,
+   "explicacion": "Falso. Tenía un permiso de 20 años; se salvó por su uso como antena de radio.",
+   "fuente": "es.wikipedia.org/wiki/Torre_Eiffel"
+  },
+  {
+   "afirmacion": "Zaha Hadid fue la primera mujer en ganar el Pritzker.",
+   "verdadero": true,
+   "explicacion": "Verdadero. Lo ganó en 2004.",
+   "fuente": "es.wikipedia.org/wiki/Premio_Pritzker"
+  },
+  {
+   "afirmacion": "Un plano a 1:200 muestra más detalle que uno a 1:50.",
+   "verdadero": false,
+   "explicacion": "Falso. Cuanto mayor es el denominador, menor es la escala y menos detalle cabe.",
+   "fuente": "es.wikipedia.org/wiki/Escala_(cartografía)"
+  },
+  {
+   "afirmacion": "IFC es un formato propio de Autodesk.",
+   "verdadero": false,
+   "explicacion": "Falso. Es un estándar abierto de buildingSMART; el nativo de Revit es RVT.",
+   "fuente": "es.wikipedia.org/wiki/Industry_Foundation_Classes"
+  },
+  {
+   "afirmacion": "El Guggenheim de Bilbao está cubierto de titanio.",
+   "verdadero": true,
+   "explicacion": "Verdadero. Casi 33.000 placas de titanio, según el propio museo.",
+   "fuente": "guggenheim-bilbao.eus"
+  },
+  {
+   "afirmacion": "Mies van der Rohe dirigió la Bauhaus.",
+   "verdadero": true,
+   "explicacion": "Verdadero. Fue su último director, de 1930 a 1933, cuando la cerró.",
+   "fuente": "metmuseum.org/toah/hd/bauh/hd_bauh"
+  },
+  {
+   "afirmacion": "El Pabellón de Barcelona que se visita hoy es el original de 1929.",
+   "verdadero": false,
+   "explicacion": "Falso. Se desmontó en 1930 y se reconstruyó entre 1983 y 1986.",
+   "fuente": "en.wikipedia.org/wiki/Barcelona_Pavilion"
+  },
+  {
+   "afirmacion": "Rafael Moneo ganó el Pritzker antes que Álvaro Siza.",
+   "verdadero": false,
+   "explicacion": "Falso. Siza lo ganó en 1992 y Moneo, en 1996.",
+   "fuente": "es.wikipedia.org/wiki/Premio_Pritzker"
+  }
+ ],
+ "encuestas": [
+  {
+   "pregunta": "¿Cuántos proyectos llevas a la vez?",
+   "opciones": [
+    "1 o 2",
+    "De 3 a 5",
+    "De 6 a 10",
+    "Más de 10"
+   ]
+  },
+  {
+   "pregunta": "¿Qué parte del proyecto te quita más horas?",
+   "opciones": [
+    "Los planos",
+    "La memoria",
+    "Las mediciones",
+    "Las instalaciones"
+   ]
+  },
+  {
+   "pregunta": "¿Con qué trabajas en tu estudio?",
+   "opciones": [
+    "AutoCAD",
+    "Revit",
+    "ArchiCAD",
+    "Otro"
+   ]
+  },
+  {
+   "pregunta": "¿Qué haces cuando te entran encargos de golpe?",
+   "opciones": [
+    "Contrato a alguien",
+    "Echo horas extra",
+    "Rechazo alguno",
+    "Delego una parte"
+   ]
+  },
+  {
+   "pregunta": "¿Cuántas horas trabajas a la semana?",
+   "opciones": [
+    "Menos de 40",
+    "De 40 a 50",
+    "De 50 a 60",
+    "Más de 60"
+   ]
+  },
+  {
+   "pregunta": "¿Qué es lo más difícil de llevar un despacho?",
+   "opciones": [
+    "Captar clientes",
+    "Cobrar a tiempo",
+    "Cumplir plazos",
+    "Gestionar el equipo"
+   ]
+  },
+  {
+   "pregunta": "¿Cuándo desconectaste del estudio por última vez?",
+   "opciones": [
+    "Esta semana",
+    "Este mes",
+    "Este año",
+    "No me acuerdo"
+   ]
+  },
+  {
+   "pregunta": "¿Quién hace las mediciones en tu estudio?",
+   "opciones": [
+    "Yo",
+    "Alguien del equipo",
+    "Un externo",
+    "Nadie quiere"
+   ]
+  },
+  {
+   "pregunta": "¿Tu arquitecto de referencia?",
+   "opciones": [
+    "Campo Baeza",
+    "Rafael Moneo",
+    "Álvaro Siza",
+    "Otro"
+   ]
+  },
+  {
+   "pregunta": "Si tuvieras 10 horas más a la semana, ¿qué harías?",
+   "opciones": [
+    "Más proyectos",
+    "Captar clientes",
+    "Formarme",
+    "Descansar"
+   ]
+  }
+ ],
+ "atajos": [
+  {
+   "titulo": "AutoCAD: 4 comandos que te ahorran horas",
+   "programa": "autocad",
+   "items": [
+    [
+     "plan",
+     "OVERKILL",
+     "borra líneas duplicadas"
+    ],
+    [
+     "doc",
+     "PURGE",
+     "PU · limpia lo que no se usa"
+    ],
+    [
+     "shield",
+     "MATCHPROP",
+     "MA · copia propiedades"
+    ],
+    [
+     "plan",
+     "XREF",
+     "XR · referencias externas"
+    ]
+   ],
+   "voz": [
+    "Cuatro comandos de AutoCAD que te ahorran horas.",
+    "Overkill: borra líneas duplicadas.",
+    "Purge: limpia lo que no se usa.",
+    "Matchprop: copia las propiedades.",
+    "Xref: referencias externas.",
+    "Guárdalo para tu próximo plano."
+   ]
+  },
+  {
+   "titulo": "AutoCAD: para medir sin calculadora",
+   "programa": "autocad",
+   "items": [
+    [
+     "plan",
+     "AREA",
+     "AA · área de un recinto"
+    ],
+    [
+     "plan",
+     "DIST",
+     "DI · distancia entre puntos"
+    ],
+    [
+     "doc",
+     "LAYER",
+     "LA · gestor de capas"
+    ],
+    [
+     "doc",
+     "Ctrl + 1",
+     "paleta de propiedades"
+    ]
+   ],
+   "voz": [
+    "AutoCAD: para medir sin calculadora.",
+    "Area: el área de un recinto.",
+    "Dist: la distancia entre dos puntos.",
+    "Layer: el gestor de capas.",
+    "Control más uno: la paleta de propiedades.",
+    "Guárdalo para tu próximo plano."
+   ]
+  },
+  {
+   "titulo": "AutoCAD: los 4 que más usarás",
+   "programa": "autocad",
+   "items": [
+    [
+     "plan",
+     "OFFSET",
+     "O · desfase"
+    ],
+    [
+     "plan",
+     "TRIM",
+     "TR · recortar"
+    ],
+    [
+     "plan",
+     "EXTEND",
+     "EX · alargar"
+    ],
+    [
+     "plan",
+     "FILLET",
+     "F · empalme"
+    ]
+   ],
+   "voz": [
+    "Los cuatro comandos de AutoCAD que más usarás.",
+    "Offset: desfase.",
+    "Trim: recortar.",
+    "Extend: alargar.",
+    "Fillet: empalme.",
+    "Guárdalo para tu próximo plano."
+   ]
+  },
+  {
+   "titulo": "Revit: 4 atajos para ver mejor",
+   "programa": "revit",
+   "items": [
+    [
+     "shield",
+     "VG",
+     "visibilidad y gráficos"
+    ],
+    [
+     "plan",
+     "TL",
+     "líneas finas"
+    ],
+    [
+     "shield",
+     "HI",
+     "aislar elemento"
+    ],
+    [
+     "shield",
+     "HR",
+     "volver a mostrar todo"
+    ]
+   ],
+   "voz": [
+    "Revit: cuatro atajos para ver mejor tu modelo.",
+    "V G: visibilidad y gráficos.",
+    "T L: líneas finas.",
+    "H I: aislar el elemento.",
+    "H R: volver a mostrar todo.",
+    "Guárdalo para tu próximo modelo."
+   ]
+  },
+  {
+   "titulo": "Revit: modela más rápido",
+   "programa": "revit",
+   "items": [
+    [
+     "plan",
+     "WA",
+     "muro"
+    ],
+    [
+     "plan",
+     "DR",
+     "puerta"
+    ],
+    [
+     "plan",
+     "WN",
+     "ventana"
+    ],
+    [
+     "plan",
+     "RP",
+     "plano de referencia"
+    ]
+   ],
+   "voz": [
+    "Revit: modela más rápido con estos atajos.",
+    "W A: muro.",
+    "D R: puerta.",
+    "W N: ventana.",
+    "R P: plano de referencia.",
+    "Guárdalo para tu próximo modelo."
+   ]
+  },
+  {
+   "titulo": "Revit: 4 atajos que te ahorran clics",
+   "programa": "revit",
+   "items": [
+    [
+     "plan",
+     "AL",
+     "alinear"
+    ],
+    [
+     "plan",
+     "CS",
+     "crear similar"
+    ],
+    [
+     "doc",
+     "DI",
+     "acotar"
+    ],
+    [
+     "plan",
+     "TR",
+     "recortar o extender"
+    ]
+   ],
+   "voz": [
+    "Revit: cuatro atajos que te ahorran clics.",
+    "A L: alinear.",
+    "C S: crear similar.",
+    "D I: acotar.",
+    "T R: recortar o extender a esquina.",
+    "Guárdalo para tu próximo modelo."
+   ]
+  }
+ ]
+}

@@ -82,7 +82,7 @@ Campos:
 - "screen_hook": texto GRANDE de los 2 primeros segundos (2-6 palabras, sin emojis): que un arquitecto deje de hacer scroll.
 - "hook_line": lo primero que dice la voz (5-14 palabras); no repitas literal el screen_hook.
 - {SCHEMAS[fmt]}
-- "cta_line": cierre hablado (10-22 palabras), elegante y nada agresivo, que lleve a uniondearquitectos.com con un hecho cierto de UDA (p. ej. delegar el proyecto con presupuesto cerrado en 24–72 horas, tu firma al final); puedes decir "link en la bio".
+- "cta_line": cierre hablado (10-22 palabras), elegante y nada agresivo, que lleve a uniondearquitectos.com con un hecho cierto de UDA (p. ej. delegar el proyecto con presupuesto cerrado en 24 horas, tu firma al final); puedes decir "link en la bio".
 - "caption_hook": primera línea de la descripción (máx. 12 palabras, como mucho 1 emoji).
 - "comment_prompt": invitación a comentar (máx. 12 palabras), una pregunta abierta a un colega.
 No repitas ganchos recientes: {'; '.join(list(avoid)[-12:]) or 'ninguno'}.
@@ -254,6 +254,13 @@ def template(fmt, items):
     if fmt == "grafico" and P.get("titulo") and 2 <= len(P["titulo"].split()) <= 7:
         sh = P["titulo"]                                  # el gancho dice qué enseña el gráfico, no "las cifras lo dicen"
         hl = P["titulo"].rstrip(".") + ". Mira las cifras."
+    ig = P.get("infografia") or {}
+    extra_ig = {}
+    if ig.get("cta"):                                     # tests, encuestas, atajos: cierre propio + invitación a comentar
+        extra_ig = {"cta_line": ig["cta"], "comment_prompt": "¿Qué has contestado? Te leemos en comentarios",
+                    "caption_hook": {"test": "Test para arquitectos 📐", "vf": "¿Verdadero o falso? 📐",
+                                     "encuesta": "Encuesta para arquitectos 📐", "atajos": "Guárdalo 📌"}.get(ig.get("variante"),
+                                                                                                         "Para arquitectos 📐")}
     return {"screen_hook": sh, "hook_line": hl, "reveal_line": "Vamos allá.",
             "intro_line": "Mira cómo cambian las cifras." if fmt == "grafico" else "Tres claves. Guárdalo para cuando lo necesites.",
             "cta_line": CTA_DEFAULT,
@@ -264,7 +271,7 @@ def template(fmt, items):
                                "infografia": "¿Cuántos encargos tienes ahora mismo? Te leemos en comentarios",
                                "mito_realidad": "¿Mito o realidad? Te leemos en comentarios",
                                "comparativa": "¿Tú qué eliges? Te leemos en comentarios"}.get(fmt, "¿Qué añadirías tú? Te leemos en comentarios"),
-            "cierre_line": "", **verified(fmt, P)}
+            "cierre_line": "", **verified(fmt, P), **extra_ig}
 
 
 def script_for(fmt, items, arms=None, avoid=(), verify=True, series_info=None):

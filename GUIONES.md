@@ -4,23 +4,54 @@ Todo lo que dicen y muestran los reels sale de aquí. La voz dice exactamente el
 
 ## Calendario semanal
 
-7 temáticas × 3 veces por semana = 21 reels distintos. Nunca dos reels seguidos de la misma temática ni la misma temática dos veces el mismo día. Todos se publican en Instagram, TikTok y LinkedIn.
+21 reels a la semana: 17 de interacción (tests, verdadero o falso, encuestas, atajos y curiosidades, para que la gente comente y guarde) y 4 de UDA (20 %), que rotan entre sus 6 temas. Nunca dos reels seguidos del mismo tipo. Todos se publican en Instagram, TikTok y LinkedIn.
 
 | Día | 8:00 | 12:00 | 15:00 | 18:00 |
 |---|---|---|---|---|
-| Lunes | Cuánto cuesta delegar | Contratar o delegar | Qué incluye cada partida | Carrusel |
-| Martes | Encargos pequeños, precio cerrado | CAD o Revit | Cómo trabajamos | Carrusel |
-| Miércoles | Renders y curiosidades | Cuánto cuesta delegar | Contratar o delegar | Carrusel |
-| Jueves | Qué incluye cada partida | Encargos pequeños, precio cerrado | CAD o Revit | Carrusel |
-| Viernes | Cómo trabajamos | Renders y curiosidades | Cuánto cuesta delegar | Carrusel |
-| Sábado | Contratar o delegar | Qué incluye cada partida | Encargos pequeños, precio cerrado | Carrusel |
-| Domingo | CAD o Revit | Cómo trabajamos | Renders y curiosidades | Carrusel |
+| Lunes | Test de arquitecto | Encuesta | UDA (rota entre sus 6 temas) | Carrusel |
+| Martes | ¿Verdadero o falso? | Renders y curiosidades | Test de arquitecto | Carrusel |
+| Miércoles | Guárdalo: atajos | Test de arquitecto | Encuesta | Carrusel |
+| Jueves | UDA (rota entre sus 6 temas) | ¿Verdadero o falso? | Test de arquitecto | Carrusel |
+| Viernes | Renders y curiosidades | Test de arquitecto | Encuesta | Carrusel |
+| Sábado | ¿Verdadero o falso? | UDA (rota entre sus 6 temas) | Guárdalo: atajos | Carrusel |
+| Domingo | Test de arquitecto | Renders y curiosidades | UDA (rota entre sus 6 temas) | Carrusel |
 
-## Las 7 temáticas
+## Los tipos de reel
 
 Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemplos publicados). Contratar: 40.000–47.000 €/año (apartado 01). Ventajas, proceso y testimonios: uniondearquitectos.com.
 
-### Cuánto cuesta delegar · 22 reels distintos
+### Test de arquitecto · 35 reels distintos
+
+**Ejemplo 1** — gancho: Test de arquitecto: ¿la sabes? · voz: «Test rápido para arquitectos. ¿Sabrías responder?»
+- **Pregunta (cuenta atrás: comenta):** «¿Quién diseñó la Villa Savoye?» / «A: Le Corbusier.» / «B: Mies van der Rohe.» / «C: Walter Gropius.» / «D: Alvar Aalto.» / «Comenta tu respuesta.»
+- **Solución:** «La respuesta correcta es la A: Le Corbusier.» / «Le Corbusier, entre 1928 y 1931, en Poissy, a las afueras de París.» / «Guárdalo para repasar.»
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### ¿Verdadero o falso? · 12 reels distintos
+
+**Ejemplo 1** — gancho: ¿Verdadero o falso? · voz: «Verdadero o falso. Contesta antes de que salga la respuesta.»
+- **Pregunta (cuenta atrás: comenta):** «La Sagrada Familia se empezó antes de que Gaudí se hiciera cargo.» / «¿Verdadero?» / «¿O falso?» / «Comenta V o F.»
+- **Solución:** «Verdadero.» / «La empezó Francisco de Paula del Villar en 1882; Gaudí llegó en 1883.» / «Guárdalo para repasar.»
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### Encuesta · 10 reels distintos
+
+**Ejemplo 1** — gancho: Encuesta para arquitectos · voz: «Encuesta rápida para arquitectos. Contesta en comentarios.»
+- **Pregunta (cuenta atrás: comenta):** «¿Cuántos proyectos llevas a la vez?» / «A: 1 o 2.» / «B: De 3 a 5.» / «C: De 6 a 10.» / «D: Más de 10.» / «Contesta en comentarios.»
+- **Solución:** «Aquí no hay respuesta correcta.» / «Queremos saber cómo trabajáis los estudios.» / «Te leemos en comentarios.»
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### Guárdalo: atajos · 6 reels distintos
+
+**Ejemplo 1** — gancho: Guárdalo si usas AutoCAD · voz: «Si trabajas con AutoCAD, guárdate esto.»
+- **Y no es solo dinero:** «Cuatro comandos de AutoCAD que te ahorran horas.» / «Overkill: borra líneas duplicadas.» / «Purge: limpia lo que no se usa.» / «Matchprop: copia las propiedades.» / «Xref: referencias externas.» / «Guárdalo para tu próximo plano.»
+
+- **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
+
+### UDA · Cuánto cuesta delegar · 22 reels distintos
 
 **Ejemplo 1** — gancho: 2.550 € o 40.000 € al año · voz: «Delegar una vivienda unifamiliar de 100 metros: 2.550 €. Contratar a alguien: 40.000 euros al año.»
 - **Cuánto cuesta delegar (3 edificios dorados):** «Estructuras e instalaciones: 1.030 €.» / «Proyecto de ejecución completo: 1.720 €.» / «Básico más ejecución: 2.550 €.» / «Tú eliges cuánto delegas.»
@@ -39,7 +70,7 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
-### Contratar o delegar · 22 reels distintos
+### UDA · Contratar o delegar · 22 reels distintos
 
 **Ejemplo 1** — gancho: Lo que no sale en la nómina · voz: «Contratar no es solo un sueldo. Esto es lo que no ves.»
 - **Y no es solo dinero:** «Y no es solo dinero.» / «Hay que formarle.» / «Bajas y vacaciones.» / «Nómina sin trabajo.» / «Despedir duele.» / «Con UDA, nada de eso.»
@@ -58,7 +89,7 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
-### Qué incluye cada partida · 18 reels distintos
+### UDA · Qué incluye cada partida · 18 reels distintos
 
 **Ejemplo 1** — gancho: ¿Cuánto cuesta delegar planimetría? · voz: «¿Cuánto cuesta delegar los planos del Proyecto Básico? Te lo enseño con números.»
 - **Qué delegas y qué sigue siendo tuyo:** «Planimetría incluye: situación y emplazamiento, plantas, alzados y secciones, acabados, superficies y cotas y en Revit, modelo LOD 200.» / «Sigue siendo tuyo: el diseño, la firma y el visado, y la dirección de obra.»
@@ -92,7 +123,7 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
-### Encargos pequeños, precio cerrado · 12 reels distintos
+### UDA · Encargos con precio cerrado · 12 reels distintos
 
 **Ejemplo 1** — gancho: ¿Te piden una licencia de actividad? · voz: «¿Un cliente te pide la licencia de un local? Mira lo que cuesta delegarla.»
 - **Cuánto cuesta delegar (3 edificios dorados):** «Licencia de actividad sin obra: desde 750 €.» / «Adecuación de local para actividad inocua: desde 1.400 €.» / «Para actividad clasificada: desde 2.800 €.» / «Precios hasta 150 metros cuadrados.»
@@ -126,7 +157,7 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
-### CAD o Revit · 8 reels distintos
+### UDA · CAD o Revit · 8 reels distintos
 
 **Ejemplo 1** — gancho: CAD o Revit: mismo precio · voz: «¿CAD o Revit? Si delegas el proyecto completo, pagas lo mismo.»
 - **Contratar o delegar:** «En CAD: 2.955 €, básico y ejecución.» / «En Revit: 2.955 €. El mismo precio.»
@@ -145,7 +176,7 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
-### Cómo trabajamos · 22 reels distintos
+### UDA · Cómo trabajamos · 22 reels distintos
 
 **Ejemplo 1** — gancho: Así se delega una unifamiliar · voz: «Así se delega una unifamiliar de 100 metros, paso a paso.»
 - **Así funciona:** «Reunión.» / «Presupuesto cerrado, en 24 horas.» / «Entrega por fases.» / «Y tú firmas.»
