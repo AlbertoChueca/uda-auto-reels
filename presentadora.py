@@ -61,9 +61,16 @@ def _h():
 
 
 def modelos():
-    r = requests.get(f"{BASE}/models?pageSize=300", headers=_h(), timeout=60).json()
+    todos, tok = [], None
+    while True:
+        r = requests.get(f"{BASE}/models", params={"pageSize": 1000, **({"pageToken": tok} if tok else {})},
+                         headers=_h(), timeout=60).json()
+        todos += r.get("models", []); tok = r.get("nextPageToken")
+        if not tok:
+            break
+    print("modelos en total:", len(todos), flush=True)
     out = {}
-    for m in r.get("models", []):
+    for m in todos:
         n = m["name"].split("/")[-1]
         if any(x in n for x in ("veo", "image", "imagen")):
             out[n] = m.get("supportedGenerationMethods")
