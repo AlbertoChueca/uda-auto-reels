@@ -721,3 +721,4 @@ reviewer.RejectReel: diseño 8.8 · vídeo 6.0/10 (mínimo 8): 00:12: La voz int
     raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
 reviewer.RejectReel: diseño 7.0 · vídeo 6.8/10 (mínimo 8): 00:10 Falta tilde en «Álvaro» dentro de la opción C.
 
+2026-10-23 manual [visual tips] tips: falta alguna imagen aprobada
