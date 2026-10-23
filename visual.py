@@ -366,7 +366,7 @@ def render(G, out, seed=0, bpm=84):
             else:
                 fx.paste_center(fr, tit, W / 2, SAFE_TOP + 60 + tit.height / 2)
             if not (k == 0 and lt < hook_t):
-                la = labs[k]; a = eob(clamp((lt - (hook_t if k == 0 else 0.12)) / 0.3))
+                la = labs[k]; a = eo(clamp((lt - (hook_t if k == 0 else 0.18) - (0.16 if k > 0 else 0)) / 0.3))   # sin rebote
                 cy = 1270 if fmt != "tips" else 1180
                 fx.paste_center(fr, la, W / 2, cy - (1 - a) * 30, alpha=clamp(a))
         else:
