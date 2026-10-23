@@ -105,8 +105,13 @@ class Instagram:
 
     def comentarios(self, pid):
         mid = pid.split(":", 1)[1]
-        r = requests.get(f"{self.g}/{mid}/comments", params={"fields": "id,text,username,timestamp,like_count",
-                                                              "limit": 100, "access_token": self.t}, timeout=60)
+        q = {"fields": "id,text,username,timestamp,like_count", "limit": 100, "access_token": self.t}
+        r = requests.get(f"{self.g}/{mid}/comments", params=q, timeout=60)
+        if r.status_code >= 400 and "graph.facebook.com" in self.g:   # token de «Instagram con inicio de sesión»
+            alt = self.g.replace("graph.facebook.com", "graph.instagram.com")
+            r2 = requests.get(f"{alt}/{mid}/comments", params=q, timeout=60)
+            if r2.status_code < 400:
+                self.g, r = alt, r2
         if r.status_code >= 400:
             raise RuntimeError(f"Instagram comentarios {r.status_code}: {r.text[:300]}")
         return [{"id": c["id"], "texto": c.get("text", ""), "autor": c.get("username", ""),
@@ -166,6 +171,9 @@ class Zernio:
                     m = re.search(r"(urn:li:(?:share|ugcPost|activity):\d+)", url); nid = m.group(1) if m else None
                 if nid:
                     out = str(nid)
+                else:
+                    say(f"{self.red}: Zernio no da el id nativo de {pid}; campos: "
+                        + json.dumps({k: (v if not isinstance(v, (dict, list)) else "…") for k, v in pl.items()})[:600])
         except Exception as e:
             say(f"{self.red}: no encuentro el id nativo de {pid}: {str(e)[:120]}")
         NATIVOS[pid] = out
