@@ -393,7 +393,7 @@ def main():
     st = load_state()
     NATIVOS.update(st.get("nativos", {}))
     hechos = set(st["contestados"])
-    n_resp, resumen, errores, funciona = 0, [], {}, set()
+    n_resp, resumen, errores, funciona, ig_dudosas = 0, [], {}, set(), []
     for clave, red, pid, pieza, info in publicaciones():
         api = red_para(red, pid)
         ps = st["posts"].setdefault(clave, {})
@@ -406,6 +406,8 @@ def main():
             err = str(e)[:400]
             if _inaccesible(red, err):
                 ps["inaccesible"] = err[:160]; say(f"{clave}: inaccesible (borrada o antigua); no se vuelve a mirar")
+            elif red == "instagram" and "does not exist" in err:
+                ig_dudosas.append(ps)                       # ¿borrada o sin permiso? se decide al final
             else:
                 errores[red] = err; say(f"{clave}: {err}")
             continue
@@ -454,11 +456,14 @@ def main():
         ps["comentarios"] = len(coms)
         resumen.append(f"| {info.get('fecha')} | {red} | {info.get('tematica')} | {(info.get('hook') or '')[:40]} | "
                        f"{len(coms)} | {'sí' if ps.get('solucion') else ('pendiente' if sol else '—')} |")
+    if ig_dudosas and "instagram" in funciona:             # otras de Instagram se leen: estas están borradas
+        for ps in ig_dudosas:
+            ps["inaccesible"] = "Instagram: la publicación ya no existe"
+    elif ig_dudosas:
+        errores["instagram"] = ("el token de Instagram no puede leer comentarios. Solución: conecta Instagram en Zernio "
+                                "(la misma cuenta) o renueva IG_TOKEN con el permiso de comentarios "
+                                "(instagram_business_manage_comments).")
     errores = {k: v for k, v in errores.items() if k not in funciona or "no deja" in v}
-    if "instagram" in errores and "permission" in errores["instagram"].lower() + "missing permissions":
-        errores["instagram"] = ("el token de Instagram no tiene permiso para leer comentarios. Solución: conecta "
-                                "Instagram en Zernio (la misma cuenta) o renueva IG_TOKEN con el permiso de comentarios "
-                                "(instagram_business_manage_comments). " + errores["instagram"][:160])
     st["contestados"] = sorted(hechos)[-20000:]
     st["errores"] = errores
     st["nativos"] = NATIVOS
