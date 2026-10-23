@@ -65,7 +65,7 @@ jobs:
 
       - name: Paquetes de Python
         if: steps.slot.outputs.slot != 'skip'
-        run: pip install -r requirements.txt
+        run: timeout 360 pip install --prefer-binary --timeout 20 --retries 2 -q -r requirements.txt || pip install --prefer-binary --timeout 20 -q -r requirements.txt   # si PyPI va lento: corta a los 6 min y reintenta
 
       - name: Caché de modelos de voz y subtítulos
         if: steps.slot.outputs.slot != 'skip'
