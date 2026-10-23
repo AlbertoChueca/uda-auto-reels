@@ -272,10 +272,13 @@ def portada(img, out):
         d.rectangle([0, yy, W, yy + 4], fill=(0, 0, 0, int(200 * max(0, (yy / H) - 0.45) / 0.55)))
     base.alpha_composite(sh)
     IV.frame(base, T)
-    fx.paste_center(base, fx.pill("TU EQUIPO TÉCNICO", 38, T.label, fx.NEGRO, padx=30, pady=14, radius=4), W / 2, 1180)
-    hl = fx.headline("¿Tu estudio va a tope?", 112, 920, 2, color=fx.CREMA, hot=T.label, hot_words=("tope?",), shadow=True)
-    fx.paste_center(base, hl, W / 2, 1330 + hl.height / 2 - 40)
-    fx.paste_center(base, fx.logo(52, fx.CREMA, T.label), W / 2, 1560)
+    pill = fx.pill("TU EQUIPO TÉCNICO", 38, T.label, fx.NEGRO, padx=30, pady=14, radius=4)
+    hl = fx.headline("¿Tu estudio va a tope?", 108, 920, 2, color=fx.CREMA, hot=T.label, hot_words=("tope?",), shadow=True)
+    lg = fx.logo(52, fx.CREMA, T.label)
+    y = 1600 - lg.height - 30 - hl.height - 20 - pill.height        # todo encima del logo, dentro del recorte 3:4
+    fx.paste_center(base, pill, W / 2, y + pill.height / 2); y += pill.height + 20
+    fx.paste_center(base, hl, W / 2, y + hl.height / 2); y += hl.height + 30
+    fx.paste_center(base, lg, W / 2, y + lg.height / 2)
     base.convert("RGB").save(out, "JPEG", quality=92)
 
 
@@ -291,7 +294,11 @@ CAPTION = (
 
 def generar():
     os.makedirs(PREV, exist_ok=True)
-    model = _veo_model(); print("modelo de vídeo:", model, flush=True)
+    try:
+        model = _veo_model(); print("modelo de vídeo:", model, flush=True)
+    except RuntimeError as e:
+        print(f"{e}: hago el reel con el retrato animado y voz de Google", flush=True)
+        return generar_retratos()
     img = retrato()
     clips, info, presupuesto = [], [], 7                       # como mucho 7 planos de Veo en total (coste)
     for k, frase in enumerate(GUION):
@@ -323,6 +330,154 @@ def generar():
     portada(img, os.path.join(PREV, "presentadora_portada.jpg"))
     json.dump({"modelo": model, "duracion": round(total, 1), "planos": info, "caption": CAPTION},
               open(os.path.join(PREV, "presentadora.json"), "w"), ensure_ascii=False, indent=1)
+    print("listo:", out, f"({total:.1f} s)", flush=True)
+
+
+# ------------------------------------------------------------------ modo sin Veo: retrato animado + voz femenina de España
+VOZ_PRESENTADORA = os.environ.get("PRESENTADORA_VOZ", "es-ES-Chirp3-HD-Kore")   # femenina, firme y profesional
+PLANOS = [  # (archivo, escena) — la misma mujer en cada plano, con el retrato como referencia
+    ("presentadora.png", None),
+    ("presentadora_planos.png",
+     "sentada en una gran mesa de trabajo de roble revisando planos de arquitectura impresos y un portátil abierto, "
+     "levanta la vista hacia cámara con una sonrisa serena"),
+    ("presentadora_maqueta.png",
+     "de pie junto a una mesa con una maqueta blanca de un edificio contemporáneo, la señala con una mano mientras "
+     "mira a cámara con seguridad"),
+    ("presentadora_brazos.png",
+     "de pie con los brazos cruzados, sonrisa amplia y segura, mirando a cámara, ventanal con luz dorada de atardecer "
+     "detrás"),
+]
+
+
+def retratos():
+    base = retrato(); out = [base]
+    for nombre, escena in PLANOS[1:]:
+        p = os.path.join(HERE, "assets", nombre)
+        if not os.path.exists(p):
+            im = gemini.image(
+                "Fotografía editorial hiperrealista, vertical 9:16. La MISMA mujer de la imagen de referencia (misma cara, "
+                "mismo peinado, misma americana negra y blusa crema, mismos pendientes de oro), " + escena + ". Mismo "
+                "estudio de arquitectura minimalista de hormigón, roble y grandes ventanales; luz cálida de cine; paleta "
+                "negra, crema y oro. Plano medio, cara nítida y natural. Sin texto, sin logotipos.", aspect="9:16", refs=[base])
+            im.save(p); print("plano nuevo:", p, flush=True)
+        out.append(Image.open(p).convert("RGB"))
+    return out
+
+
+def voz_frases():
+    """Cada frase con la voz femenina de Google (Chirp 3 HD, castellano de España), comprobada con Whisper."""
+    import soundfile as sf
+    os.environ["GOOGLE_TTS_VOICE"] = VOZ_PRESENTADORA
+    import importlib, voice
+    importlib.reload(voice)
+    key = os.environ.get("GOOGLE_TTS_KEY") or gemini.key()
+    out = []
+    for k, frase in enumerate(GUION):
+        best = None
+        for intento in range(3):
+            a = voice._google_line(frase, key, speed=1.04)
+            p = os.path.join(PREV, "tmp", f"voz{k}_{intento}.wav"); os.makedirs(os.path.dirname(p), exist_ok=True)
+            sf.write(p, a, voice.SR)
+            words, _ = transcribe(p)
+            sim = parecido(" ".join(w for w, _, _ in words), frase)
+            print(f"voz {k + 1}: {sim:.2f}", flush=True)
+            if best is None or sim > best[0]:
+                best = (sim, a, words)
+            if sim >= 0.85:
+                break
+        if best[0] < 0.7:
+            raise RuntimeError(f"la voz de la frase {k + 1} no sale bien; no se publica")
+        out.append((best[1], best[2]))
+    return out, voice.SR
+
+
+def _kb(img, t, dur, k):
+    """Movimiento de cámara lento (zoom y desplazamiento suaves, distinto en cada plano)."""
+    p = t / max(dur, 0.1); p = p * p * (3 - 2 * p)
+    z = 1.04 + 0.08 * (p if k % 2 == 0 else 1 - p)
+    dx = (0.5 + (0.06 if k % 3 == 1 else -0.05 if k % 3 == 2 else 0) * (p - 0.5))
+    dy = 0.42 + 0.04 * (p - 0.5) * (1 if k % 2 else -1)
+    iw, ih = img.size; cw, ch = iw / z, ih / z
+    x0 = (iw - cw) * dx; y0 = (ih - ch) * dy
+    return img.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((W, H), Image.BICUBIC)
+
+
+def montar_retratos(imgs, voces, sr, out):
+    import soundfile as sf
+    import themes
+    import make_quiz as MQ
+    T = themes.get("negro"); MQ.T = T
+    big = [im.resize((int(W * 1.12), int(H * 1.12)), Image.LANCZOS) if im.size != (int(W * 1.12), int(H * 1.12)) else im
+           for im in imgs]
+    GAP = 0.35; XF = 0.4; END = 3.6
+    durs = [len(a) / sr + GAP for a, _ in voces]
+    starts = [sum(durs[:k]) + 0.4 for k in range(len(durs))]      # 0,4 s de entrada antes de la primera frase
+    habla = starts[-1] + durs[-1]; total = habla + END
+    n = int(fx.SR * total); voz = np.zeros(n, np.float32)
+    for (a, _), s0 in zip(voces, starts):
+        a = a if sr == fx.SR else np.interp(np.linspace(0, len(a), int(len(a) * fx.SR / sr), endpoint=False),
+                                            np.arange(len(a)), a).astype(np.float32)
+        i = int(s0 * fx.SR); voz[i:i + len(a)] += a[: n - i]
+    mus = fx.premium_beat(total, 80, seed="presentadora"); mus = np.pad(mus, (0, max(0, n - len(mus))))[:n]
+    env = np.ones(n, np.float32) * 0.2; env[int(habla * fx.SR):] = 0.45
+    sfx = np.zeros(n, np.float32)
+    for s0 in starts[1:] + [habla]:
+        w2 = fx.whoosh2(); i = int(max(0, s0 - 0.45) * fx.SR); sfx[i:i + len(w2)] += w2[: n - i] * 0.8
+    sh = fx.shimmer(); i = int((habla + 0.1) * fx.SR); sfx[i:i + len(sh)] += sh[: n - i] * 0.6
+    mix = fx.dehiss(np.tanh((voz * 1.15 + mus * env + sfx) * 1.02) * 0.95)
+    tmpd = os.path.join(PREV, "tmp"); wav = os.path.join(tmpd, "mezcla.wav"); sf.write(wav, mix, fx.SR)
+    subs = []
+    for (a, words), s0, frase in zip(voces, starts, SUBS):
+        g = frase.split(); nw = max(1, len(words))
+        tt = [(g[i], s0 + words[min(nw - 1, int(i * nw / len(g)))][1], s0 + words[min(nw - 1, int(i * nw / len(g)))][2])
+              for i in range(len(g))] if words else []
+        subs += _chunks(tt)
+    sub_imgs = [(_sub_img(t), a_, b_) for t, a_, b_ in subs]
+    tag = fx.pill("UDA · UNIÓN DE ARQUITECTOS", 30, T.label, fx.NEGRO, padx=24, pady=11, radius=4)
+    final = MQ._brand_final(900)
+    from themes import ImageBG
+    bg_end = ImageBG(imgs[-1], dark=0.72, blur=14).frame(0).convert("RGBA")
+    enc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                            "-r", str(FPS), "-i", "-", "-i", wav, "-shortest"] + fx.enc_args(out, scale=False),
+                           stdin=subprocess.PIPE)
+    seg_a = [0.0] + starts[1:]; seg_b = starts[1:] + [habla]
+    for f in range(int(total * FPS)):
+        t = f / FPS
+        if t >= habla:
+            p = min(1.0, (t - habla) / 0.4)
+            fr = bg_end.copy()
+            last = _kb(big[-1], seg_b[-1] - seg_a[-1], seg_b[-1] - seg_a[-1], len(big) - 1).convert("RGBA")
+            fr = Image.blend(last, fr, p)
+            fx.paste_center(fr, final, W / 2, 960 + (1 - p) * 40, alpha=p)
+        else:
+            k = max(i for i in range(len(seg_a)) if seg_a[i] <= t)
+            fr = _kb(big[k % len(big)], t - seg_a[k], seg_b[k] - seg_a[k], k).convert("RGBA")
+            if k + 1 < len(seg_a) and t > seg_b[k] - XF:                      # fundido al plano siguiente
+                nxt = _kb(big[(k + 1) % len(big)], 0, seg_b[k + 1] - seg_a[k + 1], k + 1).convert("RGBA")
+                fr = Image.blend(fr, nxt, (t - (seg_b[k] - XF)) / XF)
+            if t < 0.4:
+                fr = Image.blend(Image.new("RGBA", (W, H), (0, 0, 0, 255)), fr, t / 0.4)
+            fx.paste_center(fr, tag, W / 2, 300)
+            for im, a_, b_ in sub_imgs:
+                if a_ - 0.05 <= t <= b_ + 0.15:
+                    q = min(1.0, (t - a_ + 0.05) / 0.12)
+                    fx.paste_center(fr, im, W / 2, 1300 + (1 - q) * 14, alpha=max(0.0, q))
+                    break
+        enc.stdin.write(fr.convert("RGB").tobytes())
+    enc.stdin.close(); enc.wait()
+    return total
+
+
+def generar_retratos():
+    os.makedirs(os.path.join(PREV, "tmp"), exist_ok=True)
+    imgs = retratos()
+    voces, sr = voz_frases()
+    out = os.path.join(PREV, "presentadora.mp4")
+    total = montar_retratos(imgs, voces, sr, out)
+    portada(imgs[0], os.path.join(PREV, "presentadora_portada.jpg"))
+    json.dump({"modo": "retrato animado (sin Veo)", "voz": VOZ_PRESENTADORA, "duracion": round(total, 1),
+               "frases": GUION, "caption": CAPTION}, open(os.path.join(PREV, "presentadora.json"), "w"),
+              ensure_ascii=False, indent=1)
     print("listo:", out, f"({total:.1f} s)", flush=True)
 
 

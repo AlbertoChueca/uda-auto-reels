@@ -44,6 +44,7 @@ jobs:
       - name: Presentadora
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
           ZERNIO_MATCH: ${{ vars.ZERNIO_MATCH || 'uniondearquitectos' }}
@@ -52,4 +53,4 @@ jobs:
         run: python presentadora.py ${{ inputs.modo }} 2>&1 | tee presentadora.log; exit ${PIPESTATUS[0]}
       - name: Guardar
         if: always()
-        run: python sincronizar.py "Presentadora IA (${{ inputs.modo }})" presentadora.log previews/presentadora.mp4 previews/presentadora_portada.jpg previews/presentadora.json assets/presentadora.png log.jsonl
+        run: python sincronizar.py "Presentadora IA (${{ inputs.modo }})" presentadora.log previews/presentadora.mp4 previews/presentadora_portada.jpg previews/presentadora.json assets/presentadora.png assets/presentadora_planos.png assets/presentadora_maqueta.png assets/presentadora_brazos.png log.jsonl
