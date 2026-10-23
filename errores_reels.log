@@ -716,3 +716,8 @@ reviewer.RejectReel: diseño 6.8 · vídeo 6.8/10 (mínimo 8): 00:05: Texto dupl
     raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
 reviewer.RejectReel: diseño 8.8 · vídeo 6.0/10 (mínimo 8): 00:12: La voz interpreta la opción (D) como el tratamiento de cortesía «Don» en vez de leer la letra «D».; 00:21-00:23: La locución repite por duplicado «Rafael Moneo» («...es la A, Rafael Moneo. Rafael Moneo. Se inauguró en 1999»).; 00:20-00:26: El texto inferior «Rafael Moneo. Se inauguró en 1999.» queda en una posición baja que coincide con la zona de subtítulos y descripción de la plataforma.
 
+2026-10-23 12:55 manual [infografia] Traceback (most recent call last):
+  File "/home/runner/work/uda-auto-reels/uda-auto-reels/run_daily.py", line 319, in <module>
+    raise reviewer.RejectReel(f"diseño {art.get('overall')} · vídeo {review.get('overall')}/10 (mínimo "
+reviewer.RejectReel: diseño 7.0 · vídeo 6.8/10 (mínimo 8): 00:10 Falta tilde en «Álvaro» dentro de la opción C.
+
