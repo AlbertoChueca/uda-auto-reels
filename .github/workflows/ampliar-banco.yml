@@ -1,0 +1,35 @@
+# Prueba manual de la ampliación del banco de interacción (no guarda nada: solo enseña lo que añadiría).
+# La ampliación real la hace el workflow diario de reels cuando un tipo llega al 80 % de uso.
+name: Probar ampliación del banco
+
+on:
+  workflow_dispatch:
+    inputs:
+      tipo:
+        description: "Tipo a probar"
+        type: choice
+        options: [tests, vf, encuestas, atajos, curiosidades]
+        default: tests
+      cuantos:
+        description: "Cuántas piezas pedir"
+        default: "4"
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: timeout 360 pip install --prefer-binary --timeout 20 -q pillow numpy requests
+      - name: Probar
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AMPLIAR_CUANTOS: ${{ inputs.cuantos }}
+        run: python ampliar_banco.py --forzar ${{ inputs.tipo }} --prueba | tee ampliar_prueba.log
+      - name: Guardar el resultado
+        if: always()
+        run: python sincronizar.py "Prueba ampliación banco" ampliar_prueba.log

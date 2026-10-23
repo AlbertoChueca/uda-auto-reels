@@ -4,6 +4,7 @@ atajos y curiosidades). Lo lanza el workflow diario después de publicar; si no 
     python ampliar_banco.py            # amplía lo que pase del 80 %
     python ampliar_banco.py --estado   # solo muestra el uso de cada tipo
     python ampliar_banco.py --forzar test   # amplía ese tipo aunque no llegue al 80 % (pruebas)
+    python ampliar_banco.py --forzar test --prueba   # igual, pero solo enseña lo que añadiría (no guarda nada)
 
 Cómo se asegura de que no entra nada falso ni feo:
   1. Un agente (Gemini) propone piezas nuevas, distintas de las que ya hay, para arquitectos autónomos y fundadores de
@@ -25,6 +26,8 @@ F_INT = os.path.join(HERE, "fuentes", "interaccion.json")
 F_CUR = os.path.join(HERE, "fuentes", "curiosidades.json")
 UMBRAL = float(os.environ.get("AMPLIAR_UMBRAL", "0.8"))
 CUANTOS = {"tests": 20, "vf": 10, "encuestas": 8, "atajos": 4, "curiosidades": 6}
+if os.environ.get("AMPLIAR_CUANTOS"):
+    CUANTOS = {k: int(os.environ["AMPLIAR_CUANTOS"]) for k in CUANTOS}
 VARIANTE = {"tests": "test", "vf": "vf", "encuestas": "encuesta", "atajos": "atajos"}
 PROHIBIDO = re.compile(r"\b(CTE|BOE|C[óo]digo T[ée]cnico|real decreto|decreto|DB[- ]?(SI|SUA|HE|HS|HR|SE)|UDA|"
                        r"Uni[óo]n de Arquitectos)\b", re.I)
@@ -257,6 +260,11 @@ def main():
             nuevas, motivos = ampliar(t, banco)
         except Exception as e:
             print(f"banco: {t}: no se pudo ampliar: {str(e)[:200]}", flush=True); continue
+        if "--prueba" in args:                                # solo enseñar, sin guardar
+            print(f"banco (prueba): {t}: aceptadas {len(nuevas)}, descartadas {len(motivos)}: {motivos[:6]}", flush=True)
+            for p in nuevas:
+                print("  +", json.dumps(p, ensure_ascii=False), flush=True)
+            continue
         if t == "curiosidades":
             cur["items"] += nuevas; banco["_cur"] = cur["items"]
             json.dump(cur, open(F_CUR, "w"), ensure_ascii=False, indent=1)
