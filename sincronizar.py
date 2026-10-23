@@ -55,6 +55,16 @@ def merge(path, mine, theirs):
         return {"chunks": {**t.get("chunks", {}), **m.get("chunks", {})},
                 "temas": {k: max(t.get("temas", {}).get(k, ""), m.get("temas", {}).get(k, ""))
                           for k in set(t.get("temas", {})) | set(m.get("temas", {}))}}
+    if path in ("fuentes/interaccion.json", "fuentes/curiosidades.json"):   # banco: unión de listas, nunca se pierde nada
+        t, m = theirs or {}, mine or {}
+        out = dict(t)
+        for k, v in m.items():
+            if isinstance(v, list):
+                seen = {json.dumps(e, sort_keys=True) for e in out.get(k, [])}
+                out[k] = list(out.get(k, [])) + [e for e in v if json.dumps(e, sort_keys=True) not in seen]
+            else:
+                out.setdefault(k, v)
+        return out
     if path in ("used.json", "carruseles.json"):
         seen, out = set(), []
         for e in (theirs or []) + (mine or []):
