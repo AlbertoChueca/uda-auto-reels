@@ -1,0 +1,10 @@
+tests: 1/35 usados (3%)
+vf: 1/12 usados (8%)
+encuestas: 0/10 usados (0%)
+atajos: 0/6 usados (0%)
+curiosidades: 0/11 usados (0%)
+banco (prueba): tests: aceptadas 4, descartadas 3: ["verificación: La explicación afirma que el edificio se 'proyectó en 2001'. Sin embargo, el pro", 'verificación: Aunque la autoría (Rafael Moneo), el año (1986) y el elemento arquitectónico (ar', "verificación: La explicación afirma que los pilares son 'perimetrales', lo cual es falso. La i"]
+  + {"pregunta": "¿Quién proyectó el edificio Torres Blancas en Madrid?", "opciones": ["Miguel Fisac", "Fernando Higueras", "Francisco Javier Sáenz de Oíza", "Antonio Bonet"], "correcta": 2, "explicacion": "Francisco Javier Sáenz de Oíza terminó en 1968 esta obra cumbre del organicismo.", "fuente": "es.wikipedia.org/wiki/Torres_Blancas", "origen": "ia-verificada", "fecha": "2026-10-23"}
+  + {"pregunta": "¿De qué país era el maestro Alvar Aalto?", "opciones": ["Suecia", "Noruega", "Dinamarca", "Finlandia"], "correcta": 3, "explicacion": "Finlandia, donde desarrolló una obra clave para el Movimiento Moderno y el diseño.", "fuente": "es.wikipedia.org/wiki/Alvar_Aalto", "origen": "ia-verificada", "fecha": "2026-10-23"}
+  + {"pregunta": "En Revit, ¿qué atajo de teclado activa el comando Alinear?", "opciones": ["AA", "AL", "AN", "AR"], "correcta": 1, "explicacion": "AL es el atajo estándar para alinear componentes y caras en Revit.", "fuente": "autodesk.com/shortcuts/revit", "origen": "ia-verificada", "fecha": "2026-10-23"}
+  + {"pregunta": "¿Quién proyectó el Gimnasio del Colegio Maravillas de Madrid?", "opciones": ["Miguel Fisac", "Rafael Moneo", "Alejandro de la Sota", "Fernando Higueras"], "correcta": 2, "explicacion": "Alejandro de la Sota lo acabó en 1962, salvando el desnivel con cerchas habitadas.", "fuente": "es.wikipedia.org/wiki/Gimnasio_del_Colegio_Maravillas", "origen": "ia-verificada", "fecha": "2026-10-23"}
