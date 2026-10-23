@@ -31,3 +31,19 @@ modelos en total: 60
   "batchGenerateContent"
  ]
 }
+esta clave de Gemini no tiene acceso a Veo (vídeo): hago el reel con el retrato animado y voz de Google
+modelo de imagen: gemini-3.1-flash-image
+retrato nuevo guardado en /home/runner/work/uda-auto-reels/uda-auto-reels/assets/presentadora.png
+modelo de imagen: gemini-3.1-flash-image
+plano nuevo: /home/runner/work/uda-auto-reels/uda-auto-reels/assets/presentadora_planos.png
+modelo de imagen: gemini-3.1-flash-image
+plano nuevo: /home/runner/work/uda-auto-reels/uda-auto-reels/assets/presentadora_maqueta.png
+modelo de imagen: gemini-3.1-flash-image
+plano nuevo: /home/runner/work/uda-auto-reels/uda-auto-reels/assets/presentadora_brazos.png
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[0;93m2026-10-23 15:59:30.894283916 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+voz 1: 1.00
+voz 2: 0.92
+voz 3: 1.00
+voz 4: 1.00
+listo: /home/runner/work/uda-auto-reels/uda-auto-reels/previews/presentadora.mp4 (25.9 s)
