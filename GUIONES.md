@@ -23,8 +23,8 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 ### Test de arquitecto · 35 reels distintos
 
 **Ejemplo 1** — gancho: ¿La sabes sin buscarla? · voz: «Una pregunta de arquitectura. ¿La sabes sin buscarla?»
-- **Pregunta (cuenta atrás: comenta):** «¿Quién diseñó la Villa Savoye?» / «A: Le Corbusier.» / «B: Mies van der Rohe.» / «C: Walter Gropius.» / «D: Alvar Aalto.» / «Comenta tu respuesta.»
-- **Solución:** «La respuesta correcta es la A: Le Corbusier.» / «Le Corbusier, entre 1928 y 1931, en Poissy, a las afueras de París.» / «Guárdalo para repasar.»
+- **Pregunta (cuenta atrás: comenta):** «¿Quién diseñó la Villa Savoye?» / «Opción A: Le Corbusier.» / «Opción B: Mies van der Rohe.» / «Opción C: Walter Gropius.» / «Opción D: Alvar Aalto.» / «Comenta tu respuesta.»
+- **Solución:** «La correcta es la opción A.» / «Le Corbusier, entre 1928 y 1931, en Poissy, a las afueras de París.» / «Guárdalo para repasar.»
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»
 
@@ -39,7 +39,7 @@ Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemp
 ### Encuesta · 10 reels distintos
 
 **Ejemplo 1** — gancho: Contesta con una letra · voz: «Una pregunta rápida para arquitectos. Contesta con una letra.»
-- **Pregunta (cuenta atrás: comenta):** «¿Cuántos proyectos llevas a la vez?» / «A: 1 o 2.» / «B: De 3 a 5.» / «C: De 6 a 10.» / «D: Más de 10.» / «Contesta en comentarios.»
+- **Pregunta (cuenta atrás: comenta):** «¿Cuántos proyectos llevas a la vez?» / «Opción A: 1 o 2.» / «Opción B: De 3 a 5.» / «Opción C: De 6 a 10.» / «Opción D: Más de 10.» / «Contesta en comentarios.»
 - **Solución:** «Aquí no hay respuesta correcta.» / «Queremos saber cómo trabajáis los estudios.» / «Te leemos en comentarios.»
 
 - **Cierre:** «Presupuesto cerrado en 24 horas, que puedes repercutir a tu cliente, para que tu estudio facture más. Agenda una reunión desde el enlace del perfil para conocernos y crecer juntos.»

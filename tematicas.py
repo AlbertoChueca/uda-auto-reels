@@ -296,8 +296,8 @@ def interaccion():
         cap = (f"{q['pregunta']}\n\n" + "\n".join(f"{LETRAS[j]}) {o}" for j, o in enumerate(ops))
                + "\n\n👇 Comenta tu respuesta antes de ver la solución.\n📌 Guárdalo para repasar y compártelo con tu equipo.")
         out.append(_quiz("test", f"t{i}", i, "TEST DE ARQUITECTO", "Test de arquitecto", q["pregunta"], ops, c,
-                         q["explicacion"], H_TEST, cap, [f"{LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)],
-                         sol_voz=f"La respuesta correcta es la {LETRAS[c]}: {_voz(ops[c])}."))
+                         q["explicacion"], H_TEST, cap, [f"Opción {LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)],
+                         sol_voz=f"La correcta es la opción {LETRAS[c]}."))   # sin repetir el nombre: lo dice la explicación
         out[-1]["referencia"] = q["fuente"]
     H_VF = [("Esta parece fácil", "Esta parece fácil. Contesta antes de que salga la respuesta."),
             ("Contesta sin buscarlo", "Verdadero o falso. Contesta sin buscarlo."),
@@ -320,7 +320,7 @@ def interaccion():
                + "\n\n👇 Contesta en comentarios con la letra. Te leemos a todos.\n🔁 Compártelo con otro arquitecto.")
         out.append(_quiz("encuesta", f"e{i}", i, "ENCUESTA PARA ARQUITECTOS", "Encuesta", q["pregunta"], ops, -1,
                          "Queremos saber cómo trabajáis los estudios.", H_EN, cap,
-                         [f"{LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)], cta="Contesta en comentarios",
+                         [f"Opción {LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)], cta="Contesta en comentarios",
                          pill="Te leemos en comentarios", sol_voz="Aquí no hay respuesta correcta."))
     for i, a in enumerate(B["atajos"]):
         prog = "AutoCAD" if a["programa"] == "autocad" else "Revit"

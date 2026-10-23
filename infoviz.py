@@ -329,18 +329,19 @@ def _center_v(c, im, x, cy):
     c.alpha_composite(im, (int(x), int(cy - (bb[1] + bb[3]) / 2)))
 
 
-def _opt_rows(T, c, d, y, lt, starts, reveal=None):
+def _opt_rows(T, c, d, y, lt, starts, reveal=None, compact=False):
     """Opciones en filas (letra en círculo + texto). reveal: índice correcto (oro) o -1 (encuesta: todas neutras)."""
     dr = ImageDraw.Draw(c)
     ops = d["opciones"]; n = len(ops)
-    x0, x1 = 100, W - 100; gap = 18; fs = 44 if n > 2 else 54
+    x0, x1 = 100, W - 100; gap = 14 if compact else 18
+    fs = (40 if compact else 44) if n > 2 else (48 if compact else 54)
     ims = []
     for k, o in enumerate(ops):
         ok = reveal is not None and reveal >= 0 and k == reveal
         dim = reveal is not None and reveal >= 0 and k != reveal
         col = fx.NEGRO if ok else ((120, 116, 108) if dim else T.ink)
         ims.append((_txt(o, fs, x1 - x0 - 230, col, align="left"), ok, dim))
-    hs = [max(116 if n > 2 else 150, im.height + 40) for im, _, _ in ims]     # cada fila, su altura (2 líneas: más alta)
+    hs = [max((96 if compact else 116) if n > 2 else (120 if compact else 150), im.height + 36) for im, _, _ in ims]     # cada fila, su altura (2 líneas: más alta)
     ys = [y + sum(hs[:k]) + k * gap for k in range(n)]
     for k, (im, ok, dim) in enumerate(ims):
         p = eob(clamp((lt - (starts[k] if k < len(starts) else 0)) / 0.35)) if reveal is None else 1.0
@@ -392,7 +393,7 @@ def scene_respuesta(T, d, lt, starts):
     y = TOP + 10
     q = _txt(d["pregunta"], 42, 900, (190, 184, 172), bold=False)
     _paste(c, q, W / 2, y)
-    y2 = _opt_rows(T, c, d, y + q.height + 30, lt, [0] * 4, reveal=d.get("correcta", -1))
+    y2 = _opt_rows(T, c, d, y + q.height + 26, lt, [0] * 4, reveal=d.get("correcta", -1), compact=True)
     if len(starts) > 1 and lt >= starts[1] and d.get("explicacion"):
         p = eo(clamp((lt - starts[1]) / 0.4))
         ex = _txt(d["explicacion"], 46, 880, T.ink, bold=False)
