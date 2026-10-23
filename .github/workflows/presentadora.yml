@@ -1,0 +1,55 @@
+# Reel con presentadora creada con IA (solo Instagram). Ver presentadora.py.
+# 1) modo «generar»: crea el vídeo y lo deja en previews/ para revisarlo (no publica).
+# 2) modo «publicar»: publica previews/presentadora.mp4 en Instagram.
+name: Presentadora IA
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "Qué hacer"
+        type: choice
+        options: [modelos, generar, publicar]
+        default: generar
+      veo_model:
+        description: "Modelo de Veo (vacío = el mejor disponible)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: presentadora
+  cancel-in-progress: false
+
+jobs:
+  presentadora:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Paquetes del sistema
+        run: command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)
+      - name: Paquetes de Python
+        run: timeout 360 pip install --prefer-binary --timeout 20 --retries 2 -q -r requirements.txt || pip install --prefer-binary --timeout 20 -q -r requirements.txt
+      - name: Caché de modelos de subtítulos
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-presentadora-v1
+      - name: Presentadora
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_MATCH: ${{ vars.ZERNIO_MATCH || 'uniondearquitectos' }}
+          IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
+          VEO_MODEL: ${{ inputs.veo_model }}
+        run: python presentadora.py ${{ inputs.modo }} 2>&1 | tee presentadora.log; exit ${PIPESTATUS[0]}
+      - name: Guardar
+        if: always()
+        run: python sincronizar.py "Presentadora IA (${{ inputs.modo }})" presentadora.log previews/presentadora.mp4 previews/presentadora_portada.jpg previews/presentadora.json assets/presentadora.png log.jsonl
