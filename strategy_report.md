@@ -1,6 +1,6 @@
 # Piloto automático UDA - qué está funcionando
 
-_Updated 2026-10-22 · 0 reels with results (3+ days old) · average score 0.00_
+_Updated 2026-10-23 · 1 reels with results (3+ days old) · average score 6.56_
 
 
 Still collecting data: options are being tested evenly for now.
@@ -17,14 +17,14 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| negro | 0 | - |
+| negro | 1 | 6.56 |
 
 ## hook_style
 
 | option | reels | avg score |
 |---|---|---|
+| precio/hora | 1 | 6.56 |
 | facturación | 0 | - |
-| precio/hora | 0 | - |
 | socio senior | 0 | - |
 | contraste | 0 | - |
 | dato | 0 | - |
@@ -34,7 +34,7 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| negocio | 0 | - |
+| negocio | 1 | 6.56 |
 | contratar | 0 | - |
 | servicios | 0 | - |
 | mixto | 0 | - |
@@ -43,6 +43,6 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| corto | 0 | - |
+| corto | 1 | 6.56 |
 | normal | 0 | - |
 | largo | 0 | - |
