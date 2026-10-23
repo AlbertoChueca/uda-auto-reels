@@ -35,6 +35,7 @@ VF_SOLO = re.compile(r"^\W*([vf])\W*$", re.I)
 WEB = "uniondearquitectos.com"
 NOW = datetime.datetime.now(datetime.timezone.utc)
 LOG = []
+NATIVOS = {}
 
 
 def say(*a):
@@ -146,7 +147,32 @@ class Zernio:
     def _h(self):
         return {"Authorization": f"Bearer {os.environ['ZERNIO_API_KEY']}", "Content-Type": "application/json"}
 
+    def nativo(self, pid):
+        """Id de la publicación en la propia red (TikTok lo exige; Zernio guarda el suyo). Se guarda en caché."""
+        if pid in NATIVOS:
+            return NATIVOS[pid]
+        out = pid
+        try:
+            r = requests.get(f"{self.API}/posts/{pid}", headers=self._h(), timeout=60)
+            post = (r.json() or {}).get("post") or r.json()
+            for pl in post.get("platforms") or []:
+                if (pl.get("platform") or "").lower() != self.red:
+                    continue
+                nid = pl.get("platformPostId") or pl.get("platformId") or pl.get("postId")
+                url = pl.get("platformPostUrl") or pl.get("url") or ""
+                if not nid and self.red == "tiktok":
+                    m = re.search(r"/video/(\d+)", url); nid = m.group(1) if m else None
+                if not nid and self.red == "linkedin":
+                    m = re.search(r"(urn:li:(?:share|ugcPost|activity):\d+)", url); nid = m.group(1) if m else None
+                if nid:
+                    out = str(nid)
+        except Exception as e:
+            say(f"{self.red}: no encuentro el id nativo de {pid}: {str(e)[:120]}")
+        NATIVOS[pid] = out
+        return out
+
     def comentarios(self, pid):
+        pid = self.nativo(pid)
         r = requests.get(f"{self.API}/inbox/comments/{pid}", params={"accountId": self._acc(), "limit": 100},
                          headers=self._h(), timeout=60)
         if r.status_code >= 400:
@@ -156,6 +182,7 @@ class Zernio:
                  "likes": c.get("likeCount", 0)} for c in r.json().get("comments", [])]
 
     def _post(self, pid, body):
+        pid = self.nativo(pid)
         body = {"accountId": self._acc(), **body}
         r = requests.post(f"{self.API}/inbox/comments/{pid}", json=body, timeout=60,
                           headers={**self._h(), "Idempotency-Key": hashlib.sha1(json.dumps(body, sort_keys=True).encode()).hexdigest()})
@@ -172,7 +199,7 @@ class Zernio:
     def fijar(self, pid, cid):
         if self.red != "tiktok" or not cid:
             return None
-        r = requests.post(f"{self.API}/inbox/comments/{pid}/{cid}/pin", json={"accountId": self._acc()},
+        r = requests.post(f"{self.API}/inbox/comments/{self.nativo(pid)}/{cid}/pin", json={"accountId": self._acc()},
                           headers=self._h(), timeout=60)
         return r.status_code < 400
 
@@ -319,6 +346,7 @@ Devuelve JSON: {{"responder": bool, "texto": str}}""", 0.6)
 # ------------------------------------------------------------------ pasada
 def main():
     st = load_state()
+    NATIVOS.update(st.get("nativos", {}))
     hechos = set(st["contestados"])
     n_resp, resumen, errores = 0, [], {}
     for clave, red, pid, pieza, info in publicaciones():
@@ -328,7 +356,7 @@ def main():
         try:
             coms = api.comentarios(pid)
         except Exception as e:
-            errores[red] = str(e)[:200]; continue
+            errores[red] = str(e)[:400]; say(f"{clave}: {str(e)[:400]}"); continue
         ps = st["posts"].setdefault(clave, {})
         sol = _sol(pieza)
         revelada = bool(ps.get("solucion"))
@@ -377,6 +405,7 @@ def main():
                        f"{len(coms)} | {'sí' if ps.get('solucion') else ('pendiente' if sol else '—')} |")
     st["contestados"] = sorted(hechos)[-20000:]
     st["errores"] = errores
+    st["nativos"] = NATIVOS
     if not PRUEBA:
         json.dump(st, open(ESTADO, "w"), ensure_ascii=False, indent=0)
         open(RESUMEN, "w").write(
