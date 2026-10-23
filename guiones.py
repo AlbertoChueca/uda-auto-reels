@@ -3,12 +3,13 @@
     python guiones.py
 
 Fuente única de los reels:
-  · casos.py               -> infografías (precios calculados con la Tabla de presupuestos 2026 + textos de la web de UDA)
+  · tematicas.py           -> las 7 temáticas y su calendario semanal (3 reels al día; cada temática 3 veces por semana)
+  · casos.py               -> temáticas coste, contratar y proceso (precios calculados con la Tabla de presupuestos)
   · fuentes/curiosidades.json -> renders + curiosidades (cada dato con su fuente)
   · writer.CTAS            -> cierres hablados
 """
 import json, os
-import casos, writer
+import casos, tematicas, writer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TIT = {"towers": "Cuánto cuesta delegar (3 edificios dorados)", "versus": "Contratar o delegar", "cargas": "Y no es solo dinero",
@@ -19,23 +20,37 @@ TIT = {"towers": "Cuánto cuesta delegar (3 edificios dorados)", "versus": "Cont
 def main():
     out = ["# Guiones de los reels de UDA", "",
            "Todo lo que dicen y muestran los reels sale de aquí. La voz dice exactamente el texto de cada escena.", "",
-           "## Calendario", "", "| Día | 8:00 | 12:00 | 15:00 | 18:00 |", "|---|---|---|---|---|"]
+           "## Calendario semanal", "",
+           "7 temáticas × 3 veces por semana = 21 reels distintos. Nunca dos reels seguidos de la misma temática ni la "
+           "misma temática dos veces el mismo día. Todos se publican en Instagram, TikTok y LinkedIn.", "",
+           "| Día | 8:00 | 12:00 | 15:00 | 18:00 |", "|---|---|---|---|---|"]
+    import datetime
     dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
-    for d, row in enumerate(casos.SEMANA):
-        mid = "Renders + curiosidad" if d in (1, 4) else row[1]
-        out.append(f"| {dias[d]} | {row[0]} | {mid} | {row[2]} | Carrusel |")
-    out += ["", "## Infografías (ejemplo: vivienda unifamiliar de 150 m²)", "",
-            "Precios: fórmulas de la Tabla de presupuestos 2026 (comprobadas con sus ejemplos publicados). "
-            "Contratar: 40.000–47.000 €/año (apartado 01 de la tabla). Ventajas y proceso: uniondearquitectos.com.", ""]
-    ej = {p["infografia"]["variante"]: p for p in casos.generate() if p["tipologia"] == "unifamiliar" and p["m2"] == 150}
-    for var, p in ej.items():
-        G = p["infografia"]
-        out += [f"### {G['badge']} · tipo «{var}»", "", f"- **Gancho:** {G['screen_hook']} — voz: «{G['hook_line']}»"]
-        for sc in G["orden"]:
-            out.append(f"- **{TIT.get(sc, sc)}:** " + " / ".join(f"«{x}»" for x in G["voz"][sc]))
+    for d, row in enumerate(tematicas.semana(datetime.date(2026, 10, 26))):
+        out.append(f"| {dias[d]} | " + " | ".join(tematicas.NOMBRE[t] for t in row) + " | Carrusel |")
+    todas = casos.generate() + tematicas.generate()
+    out += ["", "## Las 7 temáticas", "",
+            "Precios: fórmulas de la Tabla de presupuestos de UDA (comprobadas con sus ejemplos publicados). Contratar: "
+            "40.000–47.000 €/año (apartado 01). Ventajas, proceso y testimonios: uniondearquitectos.com.", ""]
+    for t in tematicas.TEMAS:
+        if t == "inspiracion":
+            continue
+        var = tematicas.VARIANTE.get(t, t)
+        ps = [p for p in todas if p["infografia"]["variante"] == var]
+        out += [f"### {tematicas.NOMBRE[t]} · {len(ps)} reels distintos", ""]
+        vistos = set()
+        for p in ps:
+            G = p["infografia"]; key = (p.get("grupo", "").split(":")[-1] if t in ("partidas", "actuaciones") else "") + "/".join(G["orden"])
+            if key in vistos or len(vistos) >= (6 if t in ("partidas", "actuaciones") else 3):
+                continue
+            vistos.add(key)
+            out += [f"**Ejemplo {len(vistos)}** — gancho: {G['screen_hook']} · voz: «{G['hook_line']}»"]
+            for sc in G["orden"]:
+                out.append(f"- **{TIT.get(sc.split('_')[0], sc)}:** " + " / ".join(f"«{x}»" for x in G["voz"][sc]))
+            out.append("")
         out += [f"- **Cierre:** «{writer.CTAS[0]}»", ""]
     cur = json.load(open(os.path.join(HERE, "fuentes", "curiosidades.json")))["items"]
-    out += ["## Renders + curiosidades (martes y viernes a las 12:00)", ""]
+    out += [f"### {tematicas.NOMBRE['inspiracion']} · {len(cur)} curiosidades comprobadas", ""]
     for c in cur:
         out += [f"### {c['screen_hook']}", f"- **Gancho:** «{c['hook_line']}»"] + [f"- «{b}»" for b in c["beats"]] + \
                [f"- **Puente:** «{c['puente']}»", f"- **Fuente:** {c['fuente']}", ""]

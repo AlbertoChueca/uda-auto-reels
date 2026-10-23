@@ -60,7 +60,7 @@ jobs:
           LINKEDIN_ORG_URN: ${{ vars.LINKEDIN_ORG_URN }}
           IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
           TIKTOK: ${{ vars.TIKTOK || 'true' }}
-          LINKEDIN: ${{ vars.LINKEDIN || 'carrusel' }}
+          LINKEDIN: ${{ vars.LINKEDIN || 'todos' }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
           PUBLISH_AT: ${{ github.event_name == 'schedule' && '18:00' || '' }}
           CARRUSEL_TEMA: ${{ github.event_name == 'workflow_dispatch' && inputs.tema || '' }}

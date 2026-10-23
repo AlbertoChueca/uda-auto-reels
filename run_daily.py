@@ -117,38 +117,46 @@ if HAS_AI and LEARN:
         print(msg, flush=True); status.append(msg)
 
 # ---- serie del día (hueco de mediodía) + experimento del piloto automático
-def recent_variantes(n=8):
-    """Tipos de infografía de los últimos reels (los antiguos sin registro se deducen por su gancho)."""
+def recent_tematicas(n=10):
+    """Temáticas de los últimos reels (los antiguos sin registro se deducen por su formato o su gancho)."""
     try:
-        import casos
+        import casos, tematicas
         por_gancho = {}
-        for p in casos.generate():
+        for p in casos.generate() + tematicas.generate():
             for h, _ in p["infografia"]["hooks"]:
                 por_gancho.setdefault(h, p["infografia"]["variante"])
         out = []
         for line in open("log.jsonl"):
             e = json.loads(line)
-            if e.get("formato") == "infografia":
-                out.append(e.get("variante") or por_gancho.get(e.get("hook")))
-        return [v for v in out if v][-n:]
+            if e.get("tematica"):
+                out.append(e["tematica"])
+            elif e.get("formato") == "render":
+                out.append("inspiracion")
+            elif e.get("formato") == "infografia":
+                v = e.get("variante") or por_gancho.get(e.get("hook"))
+                out.append(tematicas.TEMA_DE_VARIANTE.get(v, v))
+        return [x for x in out if x][-n:]
     except Exception:
         return []
 
 
-arms, strat_msg, series_info = {}, "", None
+arms, strat_msg, series_info, TEMATICA = {}, "", None, None
 override = os.environ.get("FORMAT_OVERRIDE", "auto")
 style_override = os.environ.get("STYLE_OVERRIDE", "auto")
 try:
     import strategy
+    import tematicas
     fixed = {"formato": override} if override in strategy.DEFAULT_ARMS["formato"] else {}
-    if not fixed and slot == "mediodia" and today.weekday() in (1, 4):   # martes y viernes: renders + curiosidades
-        fixed["formato"] = "render"
-    if not fixed:                                             # contenido principal: infografías de cuánto cuesta delegar
-        fixed["formato"] = "infografia"
-    if not os.environ.get("IG_VARIANTE"):                     # tipo de reel según el día y la hora (nunca todos iguales)
-        import casos
-        os.environ["IG_VARIANTE"] = casos.variante_de(today, slot, recent_variantes())
-    print("tipo de reel de hoy:", os.environ["IG_VARIANTE"], flush=True)
+    _pedida = os.environ.get("IG_VARIANTE")                   # lanzamiento manual con una temática concreta
+    TEMATICA = tematicas.TEMA_DE_VARIANTE.get(_pedida, _pedida) if _pedida else None
+    if fixed.get("formato") == "render":
+        TEMATICA = "inspiracion"
+    if TEMATICA not in tematicas.TEMAS:                        # calendario: 7 temáticas, cada una 3 veces por semana
+        TEMATICA = tematicas.tema_de(today, slot, recent_tematicas())
+    if not fixed:
+        fixed["formato"] = "render" if TEMATICA == "inspiracion" else "infografia"
+    os.environ["IG_VARIANTE"] = tematicas.VARIANTE.get(TEMATICA, TEMATICA)
+    print("temática de este reel:", TEMATICA, f"({tematicas.NOMBRE[TEMATICA]})", flush=True)
     if slot == "mediodia" and not fixed:
         import estudio
         series_info = estudio.series_today(today)
@@ -171,13 +179,15 @@ if HAS_AI and LEARN:
     except Exception as e:
         status.append(f"estudio omitido: {str(e)[:120]}")
 
-chain = list(dict.fromkeys([arms.get("formato", "infografia"), "infografia"]))
-if chain[0] == "infografia":                       # si una infografía no pasa el 8, se prueban otros tipos de infografía
-    import casos as _c
-    _v0 = os.environ.get("IG_VARIANTE")
-    _rec = recent_variantes()
-    chain += sorted([f"infografia:{v}" for v in _c.VARIANTES if v != _v0],
-                    key=lambda x: x.split(":")[1] in _rec[-_c.NO_REPETIR:])[:2]   # de reserva, tipos que no han salido hace poco
+chain = [arms.get("formato", "infografia")]
+try:                                               # si no llega al 8: otras 2 temáticas de infografía que no hayan salido hace poco
+    import tematicas as _tm
+    _rec = recent_tematicas()
+    _otras = sorted([t for t in _tm.TEMAS if t not in ("inspiracion", TEMATICA)],
+                    key=lambda t: max([i for i, r in enumerate(_rec) if r == t], default=-1))
+    chain += [f"infografia:{_tm.VARIANTE.get(t, t)}" for t in _otras[:2]]
+except Exception as e:
+    print("reserva de temáticas omitida:", e, flush=True)
 # sin formatos de texto de reserva: si ninguna infografía llega al 8, hoy no sale reel (mejor nada que algo confuso)
 out = f"out/{today}_{slot}_{now.hour:02d}.mp4"
 verify_fn = None
@@ -407,8 +417,13 @@ if summary:
 meta["voice"] = voice_used
 meta["arms"] = arms
 meta["variante"] = ((items or [{}])[0].get("infografia") or {}).get("variante")
+try:
+    import tematicas as _tm
+    meta["tematica"] = "inspiracion" if meta.get("formato") == "render" else _tm.TEMA_DE_VARIANTE.get(meta["variante"], meta["variante"])
+except Exception:
+    pass
 log({k: meta.get(k) for k in ("formato", "estilo", "series", "imagen", "concepto", "voice_speed", "music", "ids", "temas",
                               "respuestas", "veredicto", "hook", "hook_line", "duration", "guion", "voice", "review_score",
-                              "design_score", "arms", "publicado", "variante")})
+                              "design_score", "arms", "publicado", "variante", "tematica")})
 if all(str(v).startswith("error") for v in results.values()):
     raise SystemExit("No se pudo publicar en ninguna red")

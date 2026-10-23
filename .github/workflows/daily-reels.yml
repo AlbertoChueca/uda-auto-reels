@@ -19,9 +19,9 @@ on:
         options: [auto, negro, piedra, carbon, plano, ficha, minimal, ilustrado]
         default: auto
       variante:
-        description: "Tipo de infografía (auto = el que toca según el día)"
+        description: "Temática (auto = la que toca según el calendario semanal)"
         type: choice
-        options: [auto, caso, contratar, delegable, tiempo, proceso, testimonio]
+        options: [auto, coste, contratar, partidas, actuaciones, revit, proceso, inspiracion]
         default: auto
       publicar_a:
         description: "Hora de publicación (HH:MM, hora de España). Vacío = en cuanto esté listo"
@@ -111,7 +111,7 @@ jobs:
           IG_STORY: ${{ vars.IG_STORY || 'true' }}
           TIKTOK: ${{ vars.TIKTOK || 'true' }}
           TIKTOK_STORY_BORRADOR: ${{ vars.TIKTOK_STORY_BORRADOR || 'false' }}
-          LINKEDIN: ${{ vars.LINKEDIN || 'carrusel' }}
+          LINKEDIN: ${{ vars.LINKEDIN || 'todos' }}
           PUBLISH_MAX_WAIT_MIN: ${{ vars.PUBLISH_MAX_WAIT_MIN || '80' }}
           PUBLISH_AT_MANUAL: ${{ github.event_name == 'workflow_dispatch' && inputs.publicar_a || '' }}
         run: python run_daily.py ${{ steps.slot.outputs.slot }}

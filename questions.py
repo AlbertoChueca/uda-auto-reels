@@ -61,7 +61,8 @@ def load():
         p["bloque"] = OLD_BLOQUE.get(p.get("bloque"), p.get("bloque"))
     try:                                                    # casos calculados con la tabla (no se guardan en el banco)
         import casos
-        ps = [p for p in ps if p.get("tipo") not in ("caso", "curiosidad")] + casos.generate()
+        import tematicas
+        ps = [p for p in ps if p.get("tipo") not in ("caso", "curiosidad")] + casos.generate() + tematicas.generate()
         cur = json.load(open(os.path.join(HERE, "fuentes", "curiosidades.json")))["items"]
         ps += [dict(c, tipo="curiosidad", tema="uda_casos", bloque="servicios", fuente_ok=True, calculado=True,
                     referencia=c["fuente"]) for c in cur]
@@ -121,7 +122,8 @@ def used():
 def mark_used(ps, fmt):
     u = used()
     for p in ps:
-        u.append({"id": p["id"], "tema": p.get("tema"), "fecha": str(datetime.date.today()), "formato": fmt})
+        u.append({"id": p["id"], "tema": p.get("tema"), "fecha": str(datetime.date.today()), "formato": fmt,
+                  "grupo": p.get("grupo") or (p.get("infografia") or {}).get("variante")})
     json.dump(u, open(USED, "w"), indent=0)
 
 
@@ -191,10 +193,11 @@ def candidates(fmt, bloque=None, seed=0):
     fresh = [p for p in ps if p["id"] not in done] or ps          # banco agotado para este formato: vuelve a empezar
     vistos = set(recent_hooks(20))                                 # nunca el mismo gancho que un reel reciente
     fresh = [p for p in fresh if p.get("screen_hook") not in vistos] or fresh
+    grupos = [x.get("grupo") for x in u[-12:] if x.get("grupo")]   # ni la misma partida / actuación que hace poco
     recent = {x.get("tema") for x in u[-6:]}
     rng = random.Random(seed)
     rng.shuffle(fresh)
-    fresh.sort(key=lambda p: p.get("tema") in recent)             # temas recientes al final
+    fresh.sort(key=lambda p: (p.get("grupo") in grupos, p.get("tema") in recent))   # lo reciente, al final
     return fresh
 
 

@@ -157,14 +157,30 @@ SEMANA = [["caso", "tiempo", "contratar"], ["delegable", "caso", "testimonio"], 
           ["testimonio", "delegable", "caso"]]
 # cada tipo tiene varias combinaciones de escenas: aunque el tipo se repita, el reel no se parece al anterior
 ESCENAS_ALT = {
-    "caso": [["towers", "versus", "cargas"], ["versus", "towers", "timeline"], ["towers", "cargas", "donut"]],
-    "contratar": [["versus", "cargas", "delegable"], ["cargas", "versus", "timeline"], ["versus", "cargas", "quote"]],
-    "delegable": [["delegable", "towers", "timeline"], ["delegable", "versus", "cargas"], ["delegable", "donut", "towers"]],
-    "tiempo": [["stack", "delegable", "towers"], ["stack", "donut", "versus"], ["stack", "timeline", "towers"]],
-    "proceso": [["timeline", "delegable", "versus"], ["timeline", "towers", "cargas"], ["timeline", "quote", "towers"]],
-    "testimonio": [["quote", "cargas", "versus"], ["quote", "towers", "timeline"], ["quote", "donut", "delegable"]],
+    "caso": [["towers", "delegable", "timeline"], ["stack", "towers", "cargas_garantias"], ["towers", "donut", "timeline_pagos"]],
+    "contratar": [["versus", "cargas", "quote"], ["cargas", "versus", "donut"], ["versus", "cargas", "timeline"]],
+    "proceso": [["timeline", "cargas_garantias", "quote"], ["timeline_pagos", "cargas_garantias", "towers"],
+                ["timeline", "quote", "timeline_pagos"]],
 }
+EN_CASOS = tuple(ESCENAS_ALT)          # temáticas que salen de los casos calculados (las demás, en tematicas.py)
 NO_REPETIR = 5          # un tipo de reel no vuelve a salir hasta que hayan salido otros 5 distintos
+
+
+# lo que incluye siempre (tabla, apartados 09-10, y hechos.md) y cómo se paga (60 % / 40 % por fase)
+GARANTIAS = {"titulo": "Lo que incluye siempre", "items": [
+    ("shield", "1 revisión por fase", "2 en bloques de 30 viviendas o más"),
+    ("calendar", "7 días de soporte", "después de cada entrega"),
+    ("doc", "PDF y editables", "DWG en CAD, RVT en Revit"),
+    ("team", "Marca blanca", "tu cliente nunca lo sabe")], "uda": "Y presupuesto cerrado", "tachar": False}
+GARANTIAS_VOZ = ["Lo que incluye siempre.", "Una revisión por fase.", "Siete días de soporte.", "PDF y editables.",
+                 "Marca blanca.", "Y presupuesto cerrado."]
+PAGOS = {"titulo": "Así se paga", "pasos": [
+    ("doc", "Listado de documentos", "solo pagas lo que delegas"),
+    ("euro", "60 % al iniciar la fase", "nunca pagas todo de golpe"),
+    ("euro", "40 % antes de la entrega", "cada fase, por separado"),
+    ("shield", "Revisión incluida", "validas cada entrega")]}
+PAGOS_VOZ = ["Marcas en el listado solo lo que delegas.", "El 60 % al iniciar la fase.", "El 40 % antes de la entrega.",
+             "Y una revisión incluida en cada fase."]
 
 
 def variante_de(fecha, slot, recientes=()):
@@ -214,6 +230,8 @@ def infografia(p, var, k=0):
             ("plan", "Entrega por fases", f"P. Ejecución en {PLAZO_PE[tipo]}"),
             ("shield", "Tú firmas", "el trabajo es 100 % tuyo")]},
         "quote": {"texto": t, "autor": "Estudio que colabora con UDA", "titulo": "Un estudio que ya delega"},
+        "cargas_garantias": GARANTIAS,
+        "timeline_pagos": PAGOS,
     }
     # la voz dice EXACTAMENTE lo que pone en pantalla (el revisor marca cualquier diferencia como defecto)
     voz = {
@@ -229,6 +247,8 @@ def infografia(p, var, k=0):
         "donut": ["Los estudios que externalizan ganan hasta un 67 % más de tiempo para actividades de valor."],
         "timeline": ["Reunión.", "Presupuesto cerrado, en 24 horas.", "Entrega por fases.", "Y tú firmas."],
         "quote": [t],                                     # la voz lee el testimonio: se lee a su ritmo, sin prisas
+        "cargas_garantias": GARANTIAS_VOZ,
+        "timeline_pagos": PAGOS_VOZ,
     }
     badge, sh, hl, orden = VARIANTES[var]
     orden = ESCENAS_ALT[var][k % len(ESCENAS_ALT[var])]
@@ -269,9 +289,10 @@ def generate():
         return []
     out = []
     for i, (t, m) in enumerate(CASOS):
-        for v, var in enumerate(VARIANTES):                 # cada caso, en los 6 tipos de reel
+        for v, var in enumerate(EN_CASOS):                  # cada caso, en sus temáticas
             p = caso(t, m, i + v)
             p["id"] = hashlib.sha1(f"{p['id']}|{var}".encode()).hexdigest()[:10]
+            p["grupo"] = f"{t}:{m}"                           # no repetir el mismo edificio en reels cercanos
             p["infografia"] = infografia(p, var, i + v)
             p["screen_hook"], p["escena"] = p["infografia"]["screen_hook"], p["infografia"]["hook_line"]
             out.append(p)

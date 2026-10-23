@@ -3,8 +3,8 @@ a los demás).
 
   Instagram   Reel (portada = fotograma del gancho) + Story propia de 12 s que anuncia el reel
   TikTok      el mismo vídeo + la story al buzón como borrador (opcional)
-  LinkedIn    el reel, solo en el hueco elegido con la variable LINKEDIN ("manana", "mediodia", "tarde"; por defecto el
-            carrusel de las 18:00) y nunca más de una publicación al día
+  LinkedIn    todos los reels y el carrusel (variable LINKEDIN = "todos", por defecto); con "carrusel" o un hueco
+            ("manana", "mediodia", "tarde") solo eso y nunca más de una publicación al día
 
 Huecos: 8:00, 12:00 y 15:00 (los tres reels completos en Instagram y TikTok); el carrusel va a las 18:00.
 Interruptores (Settings > Secrets and variables > Actions > Variables): IG_STORY, TIKTOK, TIKTOK_STORY_BORRADOR:
@@ -71,7 +71,10 @@ def publish(reel, story, caption, meta, slot=""):
         jobs["tiktok_video"] = lambda: Z.tiktok_video(url(light), caption, meta.get("thumb_ms"))
     if on("TIKTOK_STORY_BORRADOR") and story and not morning:
         jobs["tiktok_story_borrador"] = lambda: Z.tiktok_draft(url(story), caption.split("\n", 1)[0])
-    if os.environ.get("LINKEDIN", "carrusel").lower() == slot and slot:
+    lk = os.environ.get("LINKEDIN", "todos").lower()
+    if lk in ("todos", "true"):                       # todos los reels también en LinkedIn (como vídeo nativo)
+        jobs["linkedin_video"] = lambda: Z.linkedin_video(url(light), caption)
+    elif lk == slot and slot:
         if Z.linkedin_used_today():
             print("LinkedIn: hoy ya hay una publicación; no se publica otra", flush=True)
         else:

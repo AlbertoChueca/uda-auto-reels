@@ -570,8 +570,9 @@ def publish(paths, pdf, cap, c):
             res["tiktok_carrusel"] = Z.tiktok_photos(urls, title, cap)
         except Exception as e:
             res["tiktok_carrusel"] = f"error: {str(e)[:300]}"
-    if os.environ.get("LINKEDIN", "carrusel").lower() == "carrusel":
-        if Z.linkedin_used_today():
+    lk = os.environ.get("LINKEDIN", "todos").lower()
+    if lk in ("carrusel", "todos", "true"):
+        if lk == "carrusel" and Z.linkedin_used_today():
             print("LinkedIn: hoy ya hay una publicación; no se publica otra", flush=True)
         else:
             try:

@@ -583,6 +583,8 @@ def caption_text(fmt, items, S, rng, st=None):
         body = f"{S['afirmacion']}\n\n{S['explicacion']}"
     elif fmt == "render":
         body = "\n".join(f"▪️ {b}" for b in S["beats"]) + f"\n\n{S['puente']}\n\nFuente: {S['fuente']}"
+    elif fmt == "infografia" and (S.get("infografia") or {}).get("caption"):
+        body = S["infografia"]["caption"]                 # temáticas de tematicas.py: descripción propia, con sus cifras
     elif fmt in ("caso_coste", "infografia"):
         body = (f"{S['titulo_norma']} (precios de referencia):\n\n" + "\n".join(f"▪️ {b['etiqueta']}: {b['texto']}" for b in S["barras"])
                 + f"\n\n→ {S['conclusion']}\n\n{S['puntos_titulo']}:\n" + "\n".join(f"✔️ {p}" for p in S["puntos"]))

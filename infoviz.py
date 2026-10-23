@@ -128,9 +128,11 @@ def scene_towers(T, d, lt, starts, cstart):
                 for wx in range(int(x + 22), int(x + bw - 30), 40):
                     dr.rectangle([wx, wy, wx + 20, wy + 16], fill=(20, 18, 14, 150))
             dr.rectangle([x - 6, top - 10, x + bw + 6, top], fill=_mix(col, (255, 255, 255), 0.25))
-            v = _txt(b["texto"], 64, 320, T.ink)                      # cifra fija (sin contar: no parpadea)
-            _paste(c, v, x + bw / 2, top - 92, clamp(p * 2))
-            lab = _txt(b["etiqueta"], 38, bw + 60, T.ink if hot else (160, 154, 142), bold=hot)
+            vs = 64 if n <= 3 else 50                                 # 4 barras: cifra más pequeña, sin pisarse
+            v = _txt(b["texto"], vs, bw + gap - 12, T.ink)            # cifra fija (sin contar: no parpadea)
+            _paste(c, v, x + bw / 2, top - v.height - 18, clamp(p * 2))
+            lab = _txt(b["etiqueta"], 38 if n <= 3 else 34, (bw + 60) if n <= 3 else (bw + gap - 14),
+                       T.ink if hot else (160, 154, 142), bold=hot)
             _paste(c, lab, x + bw / 2, base + 18, clamp(p * 2))
     if lt > cstart and d.get("conclusion"):
         p = eob(clamp((lt - cstart) / 0.4))
@@ -304,13 +306,13 @@ def scene_cargas(T, d, lt, starts):
         col, row = k % 2, k // 2
         bx, by = x0 + col * (tw + gap), y0 + row * (th + gap) + (1 - p) * 50
         dr.rounded_rectangle([bx, by, bx + tw, by + th], 10, fill=(26, 25, 23, 238), outline=(78, 74, 68), width=2)
-        c.alpha_composite(fx.icon(ic, 110, grey), (int(bx + 40), int(by + 40)))
+        c.alpha_composite(fx.icon(ic, 110, grey if d.get("tachar", True) else T.label), (int(bx + 40), int(by + 40)))
         ti = _txt(tit, 46, tw - 80, (236, 230, 218), align="left")
         c.alpha_composite(ti, (int(bx + 40), int(by + 166)))
         if not d.get("compact"):                              # modo compacto: solo el titular de cada losa
             c.alpha_composite(_txt(det, 34, tw - 80, (150, 144, 132), bold=False, align="left"),
                               (int(bx + 40), int(by + 166 + ti.height + 4)))
-        if done:                                              # tachado dorado: con UDA desaparece
+        if done and d.get("tachar", True):                    # tachado dorado: con UDA desaparece (solo en costes)
             q = eo(clamp((lt - starts[-1] - 0.1 * k) / 0.35))
             dr.line([(bx + 30, by + th / 2), (bx + 30 + (tw - 60) * q, by + th / 2)], fill=T.label, width=7)
     if done:
@@ -323,6 +325,7 @@ def scene_cargas(T, d, lt, starts):
 def render(T, sc, d, lt, sg):
     """Escena sc con sus datos d en el instante lt (sg: segmento del plan, con starts / bstart / cstart)."""
     starts = list(sg.get("starts") or [0.3 + 0.5 * k for k in range(8)])
+    sc = sc.split("_")[0]                                 # «cargas_garantias», «timeline_pagos»: misma escena, otros datos
     if sc == "stack":
         return scene_stack(T, d, lt)
     if sc == "towers":
@@ -357,10 +360,11 @@ def cover(T, ig, photo=None):
                      + ("delegar", "Delegar", "contratar", "horas", "delega", "estudios"), stroke=0, shadow=True)
     _paste(base, hl, W / 2, 380)
     y0 = 380 + hl.height + 30
-    prefer = {"caso": "towers", "contratar": "versus", "delegable": "delegable", "tiempo": "donut", "proceso": "timeline",
-              "testimonio": "quote"}.get(ig.get("variante"))           # cada tipo de reel, su propia portada
-    main = prefer if prefer in ig["orden"] else next((x for x in ("towers", "versus", "donut", "cargas", "delegable",
-                                                                    "timeline", "stack", "quote") if x in ig["orden"]), None)
+    prefer = {"caso": "towers", "contratar": "versus", "proceso": "timeline", "partidas": "towers", "actuaciones": "towers",
+              "revit": "versus"}.get(ig.get("variante"))           # cada temática, su propia portada
+    main = prefer if prefer in ig["orden"] else next((x for b in ("towers", "versus", "donut", "cargas", "delegable",
+                                                                  "timeline", "stack", "quote")
+                                                      for x in ig["orden"] if x.split("_")[0] == b), None)
     if main:
         sg = {"starts": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "cstart": 1.0, "bstart": 0.4, "a": 0, "b": 7}
         ov = render(T, main, ig["datos"][main], 30.0, sg)
