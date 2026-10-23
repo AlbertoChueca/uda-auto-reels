@@ -1,0 +1,32 @@
+{
+ "gemini-2.5-flash-image": [
+  "generateContent",
+  "countTokens",
+  "batchGenerateContent"
+ ],
+ "gemini-3-pro-image-preview": [
+  "generateContent",
+  "countTokens",
+  "batchGenerateContent"
+ ],
+ "gemini-3-pro-image": [
+  "generateContent",
+  "countTokens",
+  "batchGenerateContent"
+ ],
+ "gemini-3.1-flash-image-preview": [
+  "generateContent",
+  "countTokens",
+  "batchGenerateContent"
+ ],
+ "gemini-3.1-flash-image": [
+  "generateContent",
+  "countTokens",
+  "batchGenerateContent"
+ ],
+ "gemini-3.1-flash-lite-image": [
+  "generateContent",
+  "countTokens",
+  "batchGenerateContent"
+ ]
+}
