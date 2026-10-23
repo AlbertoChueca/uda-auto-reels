@@ -68,7 +68,16 @@ def publish(reel, story, caption, meta, slot=""):
         if on("IG_STORY") or morning:
             jobs["instagram_story"] = lambda: Z.instagram_story(url(Z.story_safe(src)))
     if on("TIKTOK"):
-        jobs["tiktok_video"] = lambda: Z.tiktok_video(url(light), caption, meta.get("thumb_ms"))
+        def tt_video():
+            cu = None
+            if meta.get("cover"):
+                try:
+                    cu = url(meta["cover"])
+                except Exception as e:
+                    print("portada de TikTok sin subir:", str(e)[:150], flush=True)
+            return Z.tiktok_video(url(light), caption, meta.get("thumb_ms"), cover_url=cu,
+                                  ai=meta.get("formato") in ("visual", "render"))       # imágenes de IA: aviso de TikTok
+        jobs["tiktok_video"] = tt_video
     if on("TIKTOK_STORY_BORRADOR") and story and not morning:
         jobs["tiktok_story_borrador"] = lambda: Z.tiktok_draft(url(story), caption.split("\n", 1)[0])
     lk = os.environ.get("LINKEDIN", "todos").lower()

@@ -183,12 +183,25 @@ def instagram_carousel(image_urls, caption):
 
 
 # ------------------------------------------------------------------ TikTok
-def tiktok_video(video_url, caption, cover_ms=1200):
-    return _post({"content": _tt_text(caption), "mediaItems": [{"type": "video", "url": video_url}], "publishNow": True,
-                  "platforms": [{"platform": "tiktok", "accountId": _acc("tiktok")}],
-                  "tiktokSettings": {"privacy_level": "PUBLIC_TO_EVERYONE", "allow_comment": True, "allow_duet": True,
-                                     "allow_stitch": True, "content_preview_confirmed": True, "express_consent_given": True,
-                                     "video_cover_timestamp_ms": int(cover_ms or 1000)}}, "tiktok vídeo")
+def tiktok_video(video_url, caption, cover_ms=1200, cover_url=None, ai=False):
+    """cover_url: portada propia (la misma que en Instagram). ai=True: aviso de contenido creado con IA de TikTok."""
+    ts = {"privacy_level": "PUBLIC_TO_EVERYONE", "allow_comment": True, "allow_duet": True,
+          "allow_stitch": True, "content_preview_confirmed": True, "express_consent_given": True,
+          "video_cover_timestamp_ms": int(cover_ms or 1000)}
+    if cover_url:
+        ts["video_cover_image_url"] = cover_url
+    if ai:
+        ts["video_made_with_ai"] = True
+    body = {"content": _tt_text(caption), "mediaItems": [{"type": "video", "url": video_url}], "publishNow": True,
+            "platforms": [{"platform": "tiktok", "accountId": _acc("tiktok")}], "tiktokSettings": ts}
+    try:
+        return _post(body, "tiktok vídeo")
+    except RuntimeError as e:
+        if not cover_url or " 4" not in str(e)[:25]:
+            raise
+        print("TikTok no acepta la portada propia; uso el fotograma:", str(e)[:150], flush=True)
+        ts.pop("video_cover_image_url", None)
+        return _post(body, "tiktok vídeo")
 
 
 def tiktok_photos(image_urls, title, description):

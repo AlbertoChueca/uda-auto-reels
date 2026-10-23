@@ -32,8 +32,21 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+      - name: Caché de ffmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg-bin
+          key: ffmpeg-static-v1
+
       - name: Paquetes del sistema
-        run: command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)
+        run: |   # ffmpeg estático en caché (segundos); apt solo de reserva y con límite: a veces se atasca 20+ min
+          if [ -x ~/ffmpeg-bin/ffmpeg ] && [ -x ~/ffmpeg-bin/ffprobe ]; then echo "$HOME/ffmpeg-bin" >> "$GITHUB_PATH"; exit 0; fi
+          mkdir -p ~/ffmpeg-bin /tmp/ffs
+          if timeout 240 curl -fsSL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz | tar -xJ -C /tmp/ffs; then
+            cp /tmp/ffs/*/bin/ffmpeg /tmp/ffs/*/bin/ffprobe ~/ffmpeg-bin/ && echo "$HOME/ffmpeg-bin" >> "$GITHUB_PATH"
+          elif ! command -v ffmpeg >/dev/null; then
+            timeout 600 sudo apt-get update -qq && timeout 600 sudo apt-get install -y -qq --no-install-recommends ffmpeg
+          fi
       - name: Paquetes de Python
         run: timeout 360 pip install --prefer-binary --timeout 20 --retries 2 -q -r requirements.txt || pip install --prefer-binary --timeout 20 -q -r requirements.txt
       - name: Caché de modelos de subtítulos
