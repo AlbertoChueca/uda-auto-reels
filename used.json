@@ -160,5 +160,12 @@
 "fecha": "2026-10-23",
 "formato": "infografia",
 "grupo": "encuesta:e7"
+},
+{
+"id": "visual:escaleras",
+"tema": "visual",
+"fecha": "2026-10-23",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
