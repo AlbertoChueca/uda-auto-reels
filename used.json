@@ -118,5 +118,12 @@
 "tema": "uda_casos",
 "fecha": "2026-10-23",
 "formato": "infografia"
+},
+{
+"id": "c269753bf8",
+"tema": "uda_casos",
+"fecha": "2026-10-23",
+"formato": "infografia",
+"grupo": "test:t12"
 }
 ]
