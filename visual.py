@@ -171,9 +171,9 @@ def _ventana(big, z, c):
 
 def _plano(img, seed):
     r = random.Random(seed)
-    z0, z1 = (1.0, 1.08) if r.random() < 0.6 else (1.08, 1.0)
+    z0, z1 = (1.0, 1.13) if r.random() < 0.6 else (1.13, 1.0)          # Ken Burns bien visible
     c0 = (r.uniform(0.35, 0.65), r.uniform(0.4, 0.6)); c1 = (r.uniform(0.35, 0.65), r.uniform(0.4, 0.6))
-    iw, ih = img.size; s = max(W / iw, H / ih) * 1.1
+    iw, ih = img.size; s = max(W / iw, H / ih) * 1.15
     big = img.convert("RGB").resize((int(iw * s), int(ih * s)), Image.BICUBIC)
     return lambda p: _ventana(big, z0 + (z1 - z0) * eo(clamp(p)), (c0[0] + (c1[0] - c0[0]) * p, c0[1] + (c1[1] - c0[1]) * p))
 
@@ -185,6 +185,16 @@ def _degradados():
     for y in range(1000, H, 4):
         d.rectangle([0, y, W, y + 4], fill=(0, 0, 0, int(210 * ((y - 1000) / (H - 1000)) ** 1.3)))
     return g
+
+
+def _panel(im, pad=36, alpha=150):
+    """Texto grande sobre una banda oscura difuminada: legible aunque la foto sea muy clara."""
+    w, h = im.width + 2 * pad, im.height + 2 * pad
+    p = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    ImageDraw.Draw(p).rounded_rectangle([pad // 2, pad // 2, w - pad // 2, h - pad // 2], 40, fill=(0, 0, 0, alpha))
+    p = p.filter(ImageFilter.GaussianBlur(pad / 2))
+    p.alpha_composite(im, (pad, pad))
+    return p
 
 
 def _titulo_fijo(texto):
@@ -225,9 +235,10 @@ def render(G, out, seed=0, bpm=84):
     t_fin = t; total = t + G["fin"]
     planos = [_plano(g["img"], f"{seed}-{k}") for k, g in enumerate(golpes)]
     grad = _degradados()
-    hook_big = fx.headline(G["hook"], 118, 960, 3, color=CREMA, hot=ORO,
-                           hot_words=tuple(w.lower().strip("¿?¡!.,") for w in G["hook"].split() if w[:1].isdigit()), shadow=True)
-    tit = _titulo_fijo(G["hook"])
+    hook_big = _panel(fx.headline(G["hook"], 118, 960, 3, color=CREMA, hot=ORO,
+                                  hot_words=tuple(w.lower().strip("¿?¡!.,") for w in G["hook"].split() if w[:1].isdigit()),
+                                  shadow=True), 50, 140)
+    tit = _panel(_titulo_fijo(G["hook"]), 24, 120)
     labs = []
     for k, g in enumerate(golpes):
         lab = g["label"]
@@ -241,6 +252,7 @@ def render(G, out, seed=0, bpm=84):
             tx = fx.headline(lab, 92, 940, 3, color=CREMA, hot=ORO, shadow=True)
             im = Image.new("RGBA", (max(n.width, tx.width), n.height + tx.height - 30), (0, 0, 0, 0))
             im.alpha_composite(n, ((im.width - n.width) // 2, 0)); im.alpha_composite(tx, ((im.width - tx.width) // 2, n.height - 30))
+            im = _panel(im, 44, 150)
         elif fmt == "antes_despues":
             im = fx.pill(lab, 64, ORO if lab == "DESPUÉS" else (40, 38, 34), NEGRO if lab == "DESPUÉS" else CREMA,
                          padx=40, pady=18, radius=6)
@@ -249,6 +261,7 @@ def render(G, out, seed=0, bpm=84):
             tx = fx.headline(lab, 88, 900, 2, color=CREMA, hot=ORO, shadow=True)
             im = Image.new("RGBA", (max(num.width, tx.width), num.height + 16 + tx.height), (0, 0, 0, 0))
             im.alpha_composite(num, ((im.width - num.width) // 2, 0)); im.alpha_composite(tx, ((im.width - tx.width) // 2, num.height + 16))
+            im = _panel(im, 40, 140)
         labs.append(im)
     # cierre: cuadrícula de miniaturas numeradas (galería) o la última imagen; pregunta + «guárdalo» + marca
     ult = golpes[-1]["img"].convert("RGB")
