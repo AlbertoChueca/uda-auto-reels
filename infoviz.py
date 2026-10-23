@@ -198,7 +198,7 @@ def scene_donut(T, d, lt):
     """d = {"pct": 67, "grande": "67 %", "texto", "prefijo": "hasta un", "fuente"}"""
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(c)
     y = _label(T, d.get("titulo", "Tiempo para lo que vale"), TOP + 20, c, clamp(lt / 0.3))
-    cx, cy, R = W / 2, y + 400, 300
+    cx, cy, R = W / 2, y + 360, 280
     p = eo(clamp((lt - 0.3) / 1.6))
     g = _glow(900, T.label, int(40 + 30 * p)); c.alpha_composite(g, (int(cx - 450), int(cy - 450)))
     dr.ellipse([cx - R, cy - R, cx + R, cy + R], outline=(50, 47, 42), width=48)

@@ -105,22 +105,29 @@ def text_block(text, path, size, maxw, color=INK, lit=None, dim=None, align="lef
     widths = {}
     for w, x, ln in pos:
         widths[ln] = x + f.getlength(w)
-    im = Image.new("RGBA", (int(maxw) + 8, lh * n + int(size * 0.35)), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    top = accent_pad(f)                                     # sitio para la tilde de Á, É, Ó (si no, se corta)
+    im = Image.new("RGBA", (int(maxw) + 8, lh * n + int(size * 0.35) + top), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     for k, (w, x, ln) in enumerate(pos):
         off = 0 if align == "left" else (maxw - widths[ln]) / 2
         c = color if (lit is None or k < lit) else (dim or MUTED)
-        d.text((x + off, ln * lh), w, font=f, fill=c)
+        d.text((x + off, ln * lh + top), w, font=f, fill=c)
     return im
+
+
+def accent_pad(f):
+    """Píxeles que sobresalen por arriba las mayúsculas con tilde (la fuente las dibuja por encima de la línea)."""
+    return max(0, -f.getbbox("ÁÉÍÓÚÑ")[1]) + 2
 
 
 def word_img(word, size, color=WHITE, stroke=0, path=None, stroke_col=CARBON, shadow=False):
     """Palabra grande (ganchos y titulares). Estilo editorial: sin contorno salvo sobre imagen."""
     fo = font(path or F900, size)
     w = int(fo.getlength(word)) + 2 * stroke + 20
-    im = Image.new("RGBA", (w, int(size * 1.4) + 2 * stroke), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    top = accent_pad(fo)
+    im = Image.new("RGBA", (w, int(size * 1.4) + 2 * stroke + top), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     if shadow:
-        d.text((stroke + 10 + 3, stroke + 5), word, font=fo, fill=(0, 0, 0, 110))
-    d.text((stroke + 10, stroke), word, font=fo, fill=color, stroke_width=stroke, stroke_fill=stroke_col)
+        d.text((stroke + 10 + 3, stroke + 5 + top), word, font=fo, fill=(0, 0, 0, 110))
+    d.text((stroke + 10, stroke + top), word, font=fo, fill=color, stroke_width=stroke, stroke_fill=stroke_col)
     return im
 
 

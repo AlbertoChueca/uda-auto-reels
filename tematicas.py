@@ -330,7 +330,7 @@ def interaccion():
                + "\n\n👇 Contesta en comentarios con la letra. Mañana te contamos qué ha votado la mayoría.\n"
                  "🔁 Compártelo con otro arquitecto.")
         out.append(_quiz("encuesta", f"e{i}", i, "ENCUESTA PARA ARQUITECTOS", "Encuesta", q["pregunta"], ops, -1,
-                         "Queremos saber cómo trabajáis los estudios.", H_EN, cap,
+                         "No hay respuesta buena o mala: cuéntanos la tuya.", H_EN, cap,
                          [f"Opción {LETRAS[j]}: {_voz(o)}." for j, o in enumerate(ops)], cta="Contesta en comentarios",
                          pill="Te leemos en comentarios", sol_voz="Aquí no hay respuesta correcta."))
     for i, a in enumerate(B["atajos"]):
