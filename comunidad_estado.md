@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-23 19:20 UTC · 0 respuestas_
+_Última pasada: 2026-10-23 23:13 UTC · 1 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -11,11 +11,11 @@ _Última pasada: 2026-10-23 19:20 UTC · 0 respuestas_
 | 2026-10-22 | tiktok | None | Tú diseñas. Nosotros, el resto | 0 | — |
 | 2026-10-23 | instagram | None | Lo que no sale en la nómina | 0 | — |
 | 2026-10-23 | tiktok | None | Lo que no sale en la nómina | 0 | — |
-| 2026-10-23 | instagram | test | ¿La sabes sin buscarla? | 0 | sí |
-| 2026-10-23 | tiktok | test | ¿La sabes sin buscarla? | 0 | pendiente |
-| 2026-10-23 | linkedin | test | ¿La sabes sin buscarla? | 0 | sí |
+| 2026-10-23 | instagram | test | ¿La sabes sin buscarla? | 1 | sí |
+| 2026-10-23 | tiktok | test | ¿La sabes sin buscarla? | 0 | sí |
+| 2026-10-23 | linkedin | test | ¿La sabes sin buscarla? | 1 | sí |
 | 2026-10-23 | instagram | vf | Esta parece fácil | 0 | pendiente |
-| 2026-10-23 | tiktok | vf | Esta parece fácil | 0 | sí |
+| 2026-10-23 | tiktok | vf | Esta parece fácil | 1 | sí |
 | 2026-10-23 | linkedin | vf | Esta parece fácil | 0 | pendiente |
 | 2026-10-23 | instagram | inspiracion | «La forma sigue a la función» | 0 | — |
 | 2026-10-23 | tiktok | inspiracion | «La forma sigue a la función» | 0 | — |
