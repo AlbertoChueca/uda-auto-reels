@@ -799,7 +799,19 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         put(vo, A[k], at)
     for sg in SEG:
         if sg["kind"] in ("question", "statement", "points", "explain", "cta", "score", "scene", "fq", "compare", "chart", "rbeat", "rpuente") or sg["kind"].startswith("ig_"):
-            put(sfx, fx.whoosh(), sg["a"] - 0.15, 1.1)
+            put(sfx, fx.whoosh2(), sg["a"] - 0.35, 1.0)          # aire que entra justo antes del cambio...
+            put(sfx, fx.impact(), sg["a"] - 0.02, 0.8)           # ...y un golpe grave suave al aparecer la escena
+        if sg["kind"] == "ig_pregunta":                           # test: una nota por opción y cuenta atrás de madera
+            st_ = sg.get("starts") or []
+            for k_, s0 in enumerate(st_[1:-1]):
+                put(sfx, fx.blip(k_), sg["a"] + s0, 0.9)
+            nseg = int((S.get("infografia") or {}).get("datos", {}).get("pregunta", {}).get("segundos") or 0)
+            if nseg and st_:
+                t_end = sg["b"] - 0.25
+                for s_ in range(nseg):
+                    put(sfx, fx.tick2(s_ == nseg - 1), t_end - (nseg - s_), 1.0)
+        if sg["kind"] in ("cta",) or sg["kind"] == "brand":
+            put(sfx, fx.shimmer(), sg["a"] + 0.1, 0.6)
         if sg["kind"] == "count":
             for s_ in range(sg["n"]):
                 put(sfx, fx.tick(s_ >= sg["n"] - 3), sg["a"] + s_, 1.0)
@@ -809,12 +821,13 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
         if sg["kind"] == "stamp":
             put(sfx, fx.stamp(), sg["a"] + 0.05, 0.9)
     bpm = {"calma": T.music_bpm - 8, "energica": T.music_bpm + 14}.get(st.get("music"), T.music_bpm)
-    music = fx.study_beat(total, bpm)[:n]
+    music = fx.premium_beat(total, bpm, seed=f"{seed}-{fmt}", energy=1.15 if st.get("music") == "energica" else 1.0)
+    music = np.pad(music, (0, max(0, n - len(music))))[:n]
     venv = np.convolve((np.abs(vo) > 0.01).astype(np.float32), np.ones(3000) / 3000, "same")
     for sg in SEG:
         if sg["kind"] == "count":                         # más tensión y menos música mientras piensas
             music[int(sg["a"] * SR):int(sg["b"] * SR)] *= 0.55
-    mix = vo * 1.15 + sfx + music * (0.55 - 0.35 * np.clip(venv * 3, 0, 1))
+    mix = vo * 1.15 + sfx + music * (0.42 - 0.27 * np.clip(venv * 3, 0, 1))   # la música acompaña, nunca tapa la voz
     mix = fx.dehiss(np.tanh(mix * 1.05) * 0.92)
     wav = out.replace(".mp4", ".wav"); sf.write(wav, mix, SR)
 
@@ -1138,6 +1151,8 @@ def build(fmt, items, S, seed, out, arms=None, style=None, max_len=58.0, keep_vo
             fx.paste_center(base, fx.pill(BADGE["render"], 34, T.label, fx.NEGRO, padx=26, pady=12, radius=4), W / 2, 330)
             hl_ = fx.headline(S["screen_hook"], 116, 960, 3, color=(242, 236, 224), hot=T.label, hot_words=(), stroke=0, shadow=True)
             fx.paste_center(base, hl_, W / 2, 1180)
+            import infoviz as IV
+            IV.frame(base, T)
             fx.paste_center(base, fx.logo(60, (242, 236, 224), T.label), W / 2, 1560)
             base.convert("RGB").save(cover, "JPEG", quality=92)
         except Exception as e:

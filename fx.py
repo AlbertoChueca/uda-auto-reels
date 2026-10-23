@@ -7,7 +7,7 @@ Marca: la de los documentos de UDA (tabla de presupuestos y listado de documento
 Tipografía: TeX Gyre Adventor (geométrica, la misma de los documentos; licencia GUST en fonts/).
 Sonido 100 % tonal (sin ruido blanco) + filtro final `dehiss` como red de seguridad.
 """
-import math, os
+import math, os, random
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -87,8 +87,8 @@ def wrap(words, fnt, maxw, space=None):
 
 
 def fit_font(text, path, size, maxw, max_lines, min_size=34):
-    """Tamaño de letra más grande con el que `text` cabe en max_lines líneas."""
-    words = text.split()
+    """Tamaño de letra más grande con el que `text` (o su lista de palabras) cabe en max_lines líneas."""
+    words = text if isinstance(text, list) else text.split()
     while size > min_size:
         _, n = wrap(words, font(path, size), maxw)
         if n <= max_lines:
@@ -128,10 +128,16 @@ def headline(text, size=104, maxw=940, max_lines=3, color=WHITE, hot=ARENA, hot_
              shadow=False, upper=False, align="center"):
     """Titular de varias líneas (sin contorno salvo sobre imagen); palabras de hot_words en color `hot`."""
     text = text.upper() if upper else text
-    size = fit_font(text, F900, size, maxw - 40, max_lines, 54)
+    words = []
+    for w in text.split():                                  # «2.712 €», «20 %», «150 m²»: la unidad nunca va sola
+        if words and w.strip(".,:;!?") in ("€", "%", "m²", "h"):
+            words[-1] += " " + w
+        else:
+            words.append(w)
+    size = fit_font(words, F900, size, maxw - 40, max_lines, 54)
     sp = font(F900, size).getlength(" ")
-    ims = [word_img(w, size, hot if w.strip(".,!?¿¡:").lower() in hot_words else color, stroke, None, stroke_col, shadow)
-           for w in text.split()]
+    ims = [word_img(w, size, hot if w.split(" ")[0].strip(".,!?¿¡:").lower() in hot_words else color, stroke, None,
+                    stroke_col, shadow) for w in words]
     adv = lambda im: im.width - 20 - 2 * stroke + sp
     lines, cur, cw = [], [], 0
     for im in ims:
@@ -379,3 +385,145 @@ def icon_for(text):
         if _re.search(rx, t):
             return name
     return "check"
+
+
+# ------------------------------------------------------------------ sonido premium (v2): música y transiciones
+# Todo sintetizado aquí (sin licencias): piano eléctrico con armónicos, bajo, arpegio con eco, reverb por convolución y
+# percusión suave. Varias progresiones y tempos: cada reel suena distinto pero siempre elegante (negro y oro en audio).
+def _env(n, a=0.005, d=1.2, sr=SR):
+    t = np.arange(n) / sr
+    return np.clip(t / max(a, 1e-4), 0, 1) * np.exp(-t / d)
+
+
+def epiano(freq, dur, vel=1.0):
+    """Nota de piano eléctrico (Rhodes): parciales con caída distinta + ligero trémolo + campanita de ataque."""
+    n = int(SR * dur); t = np.arange(n) / SR
+    s = (np.sin(2 * np.pi * freq * t) * _env(n, 0.004, 1.6)
+         + 0.35 * np.sin(2 * np.pi * freq * 2.0 * t) * _env(n, 0.003, 0.7)
+         + 0.12 * np.sin(2 * np.pi * freq * 3.0 * t) * _env(n, 0.002, 0.35)
+         + 0.08 * np.sin(2 * np.pi * freq * 7.02 * t) * _env(n, 0.001, 0.06))          # «tine» del ataque
+    s *= 1 + 0.06 * np.sin(2 * np.pi * 4.5 * t)
+    rel = min(n, int(SR * 0.08)); s[-rel:] *= np.linspace(1, 0, rel)
+    return (s * 0.11 * vel).astype(np.float32)
+
+
+def _reverb(x, secs=2.2, wet=0.28, seed=7):
+    """Reverb de sala por convolución con una respuesta suave (ruido filtrado y en caída: el resultado es tonal)."""
+    rng = np.random.default_rng(seed)
+    n = int(SR * secs); t = np.arange(n) / SR
+    ir = rng.standard_normal(n) * np.exp(-t * 3.2 / secs)
+    ir = np.convolve(ir, np.ones(24) / 24, "same")                    # quita los agudos (más cálido, sin siseo)
+    ir /= np.sqrt(np.sum(ir ** 2)) + 1e-9
+    L = len(x) + n; N = 1 << (L - 1).bit_length()
+    y = np.fft.irfft(np.fft.rfft(x, N) * np.fft.rfft(ir, N), N)[: len(x)]
+    return (x * (1 - wet) + y.astype(np.float32) * wet * 0.9).astype(np.float32)
+
+
+PROGS = [  # (acordes en Hz, raíz del bajo) — maj7 / m9: sofisticado, tranquilo y con brillo
+    [((261.6, 329.6, 392.0, 493.9), 65.4), ((220.0, 261.6, 329.6, 392.0), 55.0),
+     ((174.6, 220.0, 261.6, 329.6), 87.3), ((196.0, 246.9, 293.7, 392.0), 98.0)],      # Cmaj7 Am7 Fmaj7 G6
+    [((293.7, 349.2, 440.0, 523.3), 73.4), ((196.0, 246.9, 349.2, 440.0), 98.0),
+     ((261.6, 329.6, 392.0, 493.9), 65.4), ((220.0, 261.6, 329.6, 392.0), 55.0)],      # Dm7 G9 Cmaj7 Am7
+    [((233.1, 293.7, 349.2, 440.0), 58.3), ((196.0, 233.1, 293.7, 349.2), 98.0),
+     ((207.7, 261.6, 311.1, 392.0), 51.9), ((174.6, 220.0, 261.6, 349.2), 87.3)],      # Bbmaj7 Gm7 Abmaj7 F
+]
+
+
+def premium_beat(total, bpm=84, seed=0, energy=1.0):
+    """Base musical premium: acordes de piano eléctrico, bajo redondo, arpegio con eco y pulso suave."""
+    rng = random.Random(seed)
+    prog = PROGS[rng.randrange(len(PROGS))]
+    bpm = bpm + rng.choice((-4, 0, 4))
+    beat = 60 / bpm; bar = beat * 4
+    n = int(SR * (total + 2)); keys = np.zeros(n, np.float32); low = np.zeros(n, np.float32); perc = np.zeros(n, np.float32)
+
+    def add(buf, a, t0):
+        i = int(t0 * SR)
+        if i >= n: return
+        j = min(n, i + len(a)); buf[i:j] += a[: j - i]
+
+    t, b = 0.0, 0
+    patt = rng.choice(([0, 2, 1, 3, 2, 1, 3, 2], [0, 1, 2, 3, 2, 1, 0, 2], [0, 2, 3, 1, 2, 3, 1, 2]))
+    while t < total + bar:
+        ch, root = prog[b % len(prog)]
+        for k, f in enumerate(ch):                              # acorde, ligeramente rasgueado
+            add(keys, epiano(f, bar * 1.05, 0.55), t + 0.012 * k)
+        if b % 2 == 1:                                           # empuje en el 3er tiempo de compases alternos
+            for f in ch[1:]:
+                add(keys, epiano(f, beat * 1.4, 0.32), t + 2.5 * beat)
+        for s_, idx in enumerate(patt):                          # arpegio en corcheas, una octava arriba
+            add(keys, epiano(ch[idx] * 2, beat * 0.9, 0.22 * energy), t + s_ * beat / 2)
+        nb = int(SR * bar); tb = np.arange(nb) / SR              # bajo: raíz con caída larga y armónico suave
+        bass = (np.sin(2 * np.pi * root * tb) + 0.25 * np.sin(2 * np.pi * root * 2 * tb)) * _env(nb, 0.02, 1.4) * 0.22
+        add(low, bass.astype(np.float32), t)
+        for q in range(4):                                       # pulso: bombo suave en 1 y 3, «click» en 2 y 4
+            tq = t + q * beat
+            if q % 2 == 0:
+                nk = int(SR * 0.35); tk = np.arange(nk) / SR
+                kick = np.sin(2 * np.pi * np.cumsum(48 + 60 * np.exp(-tk * 30)) / SR) * np.exp(-tk * 9) * 0.32 * energy
+                add(perc, kick.astype(np.float32), tq)
+            else:
+                add(perc, tone(2400, 0.04, 160, 0.025 * energy) + tone(1200, 0.04, 90, 0.02 * energy), tq)
+        t += bar; b += 1
+    d = int(SR * beat * 0.75)                                    # eco del arpegio a corchea con puntillo
+    echo = np.zeros_like(keys); echo[d:] = keys[:-d] * 0.28
+    mix = _reverb(keys + echo, 2.4, 0.32, rng.randrange(10 ** 6)) + low + perc
+    fade = min(len(mix), int(SR * 1.5))
+    mix[:int(SR * 0.6)] *= np.linspace(0, 1, int(SR * 0.6))
+    out = mix[: int(SR * total)]
+    out[-fade:] *= np.linspace(1, 0, fade)
+    return (out / (np.max(np.abs(out)) + 1e-9) * 0.5).astype(np.float32)
+
+
+def _band_noise(n, f0, f1, seed=3):
+    """Ruido de banda estrecha que barre de f0 a f1 (por bloques en frecuencia): suena a aire, nunca a siseo."""
+    rng = np.random.default_rng(seed)
+    out = np.zeros(n, np.float32); blk = 1024
+    for i in range(0, n, blk // 2):
+        seg = rng.standard_normal(blk); F = np.fft.rfft(seg * np.hanning(blk))
+        fr = np.fft.rfftfreq(blk, 1 / SR); fc = f0 + (f1 - f0) * min(1, i / max(1, n))
+        F *= np.exp(-((fr - fc) / (fc * 0.35)) ** 2)
+        s = np.fft.irfft(F, blk).astype(np.float32)
+        j = min(n, i + blk); out[i:j] += s[: j - i]
+    return out / (np.max(np.abs(out)) + 1e-9)
+
+
+def whoosh2(dur=0.5):
+    """Transición de diapositiva: soplo de aire que sube + cuerpo tonal suave (elegante, sin estridencias)."""
+    n = int(SR * dur); t = np.arange(n) / SR; ph = t / dur
+    air = _band_noise(n, 500, 2600) * np.sin(np.pi * ph) ** 2.2 * 0.09
+    f = 180 + 320 * ph ** 1.6
+    body = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * ph) ** 2 * 0.035
+    return (air + body).astype(np.float32)
+
+
+def impact():
+    """Golpe grave y corto al entrar cada escena (da peso, como en los anuncios premium)."""
+    n = int(SR * 0.6); t = np.arange(n) / SR
+    s = np.sin(2 * np.pi * np.cumsum(38 + 50 * np.exp(-t * 18)) / SR) * np.exp(-t * 6.5) * 0.30
+    s += np.sin(2 * np.pi * 110 * t) * np.exp(-t * 30) * 0.05
+    return s.astype(np.float32)
+
+
+def blip(k=0):
+    """Aparición de una opción: nota de marimba suave que sube con cada opción (A, B, C, D)."""
+    f = (659.3, 784.0, 880.0, 1046.5, 1174.7)[k % 5]
+    n = int(SR * 0.35); t = np.arange(n) / SR
+    s = (np.sin(2 * np.pi * f * t) + 0.3 * np.sin(2 * np.pi * f * 3.99 * t) * np.exp(-t * 40)) * np.exp(-t * 14) * 0.09
+    return s.astype(np.float32)
+
+
+def tick2(last=False):
+    """Cuenta atrás: tic de madera (el último, más agudo)."""
+    f = 1900 if last else 1400
+    n = int(SR * 0.08); t = np.arange(n) / SR
+    s = (np.sin(2 * np.pi * f * t) + 0.5 * np.sin(2 * np.pi * f * 2.7 * t)) * np.exp(-t * 85) * 0.11
+    return s.astype(np.float32)
+
+
+def shimmer():
+    """Cierre / momento clave: brillo de campanitas en arpegio con reverb."""
+    out = np.zeros(int(SR * 1.6), np.float32)
+    for k, f in enumerate((1046.5, 1318.5, 1568.0, 2093.0)):
+        s = epiano(f, 1.2, 0.5); i = int(SR * 0.06 * k); out[i:i + len(s)] += s[: len(out) - i]
+    return _reverb(out, 1.4, 0.4, 11)

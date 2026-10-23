@@ -434,9 +434,125 @@ def render(T, sc, d, lt, sg):
     return scene_quote(T, dict(d, dur=sg.get("b", 7) - sg.get("a", 0)), lt)
 
 
+# ------------------------------------------------------------------ portadas de póster (cuadrícula del perfil)
+GRID = (240, 1680)          # recorte 3:4 del perfil de Instagram: todo lo importante va aquí dentro
+
+
+def _poster_base(T, photo, dark=0.62):
+    """Fondo: la foto de arquitectura muy oscurecida + viñeta + marco dorado fino (premium y legible en miniatura)."""
+    from themes import ImageBG
+    base = (ImageBG(photo, dark=dark, blur=4).frame(0) if photo is not None else T.background(1).frame(0)).convert("RGBA")
+    sh = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(sh)
+    for yy in range(0, H, 4):
+        a = int(70 + 150 * abs(yy / H - 0.5) ** 1.3 * 2)
+        sd.rectangle([0, yy, W, yy + 4], fill=(0, 0, 0, min(235, a)))
+    base.alpha_composite(sh)
+    return frame(base, T)
+
+
+def frame(base, T):
+    """Marco dorado fino con esquinas marcadas, dentro del recorte 3:4 del perfil (todas las portadas iguales)."""
+    d = ImageDraw.Draw(base)
+    y0, y1 = GRID[0] + 36, GRID[1] - 36
+    d.rectangle([44, y0, W - 44, y1], outline=tuple(T.label[:3]) + (200,), width=3)
+    for (x, y, dx, dy) in ((44, y0, 1, 1), (W - 44, y0, -1, 1), (44, y1, 1, -1), (W - 44, y1, -1, -1)):
+        d.line([(x, y), (x + 70 * dx, y)], fill=T.label, width=9); d.line([(x, y), (x, y + 70 * dy)], fill=T.label, width=9)
+    return base
+
+
+def _big_mark(T, ch, size):
+    """Signo gigante (¿?, V/F...) en oro muy tenue de fondo: se reconoce el tipo de reel desde la cuadrícula."""
+    f = fx.font(F_BOLD, size); bb = f.getbbox(ch)
+    im = Image.new("RGBA", (bb[2] + 40, bb[3] + 40), (0, 0, 0, 0))
+    ImageDraw.Draw(im).text((20 - bb[0], 20 - bb[1]), ch, font=f, fill=tuple(T.label[:3]) + (46,))
+    return im
+
+
+def cover_quiz(T, ig, photo=None):
+    """Test / verdadero o falso / encuesta: la PREGUNTA enorme + las opciones en chips + «¿Cuál es?», centrado."""
+    d = ig["datos"]["pregunta"]; var = ig.get("variante")
+    base = _poster_base(T, photo)
+    mark = _big_mark(T, "?" if var != "vf" else "V/F", 1000 if var != "vf" else 560)
+    _paste(base, mark, W - 110 - mark.width / 2 + (80 if var != "vf" else 0), GRID[0] + 260)
+    tag = fx.pill(ig["badge"], 40, T.label, fx.NEGRO, padx=32, pady=15, radius=4)
+    _paste(base, tag, W / 2, GRID[0] + 100)
+    q = fx.headline(d["pregunta"], 120, 920, 4, color=fx.CREMA, hot=T.label,
+                    hot_words=tuple(w.strip("¿?¡!.,").lower() for w in d["pregunta"].split() if w[:1].isupper())[1:],
+                    stroke=0, shadow=True)
+    ops, letras = d["opciones"], d.get("letras", "ABCD")
+    # opciones (se miden antes para centrar todo el bloque)
+    if var == "vf":
+        bw, bh = 420, 170; opts_h = bh
+    else:
+        cw, g = 460, 22
+        tx = [_txt(o, 40, cw - 128, T.ink, align="left") for o in ops[:4]]
+        rows = [max(132, max(t.height for t in tx[r * 2:r * 2 + 2]) + 44) for r in range(2)]
+        opts_h = sum(rows) + g
+    cta = {"encuesta": "Vota en comentarios", "vf": "¿Tú qué dices?"}.get(var, "¿Cuál es? Comenta")
+    p = fx.pill(cta, 50, T.label, fx.NEGRO, padx=40, pady=20, radius=6)
+    top, bot = GRID[0] + 190, GRID[1] - 190
+    total = q.height + 40 + opts_h + 60 + p.height
+    y = top + max(0, (bot - top - total) / 2)
+    _paste(base, q, W / 2, y); y += q.height + 40
+    dr = ImageDraw.Draw(base)
+    if var == "vf":
+        for k, o in enumerate(ops):
+            x = W / 2 - bw - 20 + k * (bw + 40)
+            dr.rounded_rectangle([x, y, x + bw, y + bh], 20, fill=(20, 19, 17, 235), outline=T.label, width=5)
+            t = _txt(o.upper(), 64, bw - 30, T.label); _center_v(base, t, x + bw / 2 - t.width / 2, y + bh / 2)
+    else:
+        yy = y
+        for r in range(2):
+            for cidx in range(2):
+                k = r * 2 + cidx
+                if k >= len(tx):
+                    continue
+                x = W / 2 - cw - g / 2 + cidx * (cw + g); ch_ = rows[r]
+                dr.rounded_rectangle([x, yy, x + cw, yy + ch_], 16, fill=(20, 19, 17, 235), outline=(90, 84, 72), width=2)
+                cx, cy = x + 58, yy + ch_ / 2
+                dr.ellipse([cx - 36, cy - 36, cx + 36, cy + 36], fill=T.label)
+                lf = fx.font(F_BOLD, 42); bb = lf.getbbox(letras[k])
+                dr.text((cx - (bb[0] + bb[2]) / 2, cy - (bb[1] + bb[3]) / 2), letras[k], font=lf, fill=fx.NEGRO)
+                _center_v(base, tx[k], x + 112, cy)
+            yy += rows[r] + g
+    y += opts_h + 60
+    _paste(base, p, W / 2, y)
+    _paste(base, fx.logo(52, fx.CREMA, T.label), W / 2, GRID[1] - 120)
+    return base.convert("RGB")
+
+
+def cover_atajos(T, ig, photo=None):
+    """Atajos: teclas grandes tipo teclado con los comandos + «GUÁRDALO»."""
+    d = next(v for k, v in ig["datos"].items() if k.startswith("cargas"))
+    base = _poster_base(T, photo)
+    _paste(base, fx.pill("GUÁRDALO", 44, T.label, fx.NEGRO, padx=40, pady=16, radius=4), W / 2, GRID[0] + 100)
+    hl = fx.headline(d["titulo"], 96, 920, 3, color=fx.CREMA, hot=T.label, hot_words=("autocad:", "revit:", "autocad", "revit"),
+                     shadow=True)
+    kw, kh, g = 440, 220, 26
+    top, bot = GRID[0] + 190, GRID[1] - 190
+    total = hl.height + 50 + 2 * kh + g
+    y = top + max(0, (bot - top - total) / 2)
+    _paste(base, hl, W / 2, y)
+    y += hl.height + 50
+    dr = ImageDraw.Draw(base)
+    for k, (_, tit, det) in enumerate(d["items"][:4]):
+        x = W / 2 - kw - g / 2 + (k % 2) * (kw + g); yy = y + (k // 2) * (kh + g)
+        dr.rounded_rectangle([x + 6, yy + 12, x + kw + 6, yy + kh + 12], 22, fill=(0, 0, 0, 160))      # sombra de tecla
+        dr.rounded_rectangle([x, yy, x + kw, yy + kh], 22, fill=(34, 32, 28, 250), outline=T.label, width=3)
+        dr.rounded_rectangle([x + 14, yy + 12, x + kw - 14, yy + kh - 30], 16, fill=(46, 43, 37, 255))
+        t = _txt(tit, 64 if len(tit) <= 6 else 46, kw - 50, T.label); _paste(base, t, x + kw / 2, yy + 34)
+        s = _txt(det.split(" · ")[-1], 30, kw - 50, (200, 194, 182), bold=False); _paste(base, s, x + kw / 2, yy + kh - 74)
+    _paste(base, fx.logo(52, fx.CREMA, T.label), W / 2, GRID[1] - 120)
+    return base.convert("RGB")
+
+
 def cover(T, ig, photo=None):
     """Portada del reel (la miniatura del perfil): foto + titular grande + la infografía principal ya completa.
     Todo lo importante cabe en el recorte 3:4 de la cuadrícula del perfil (y = 240-1680)."""
+    if ig.get("variante") in ("test", "vf", "encuesta"):
+        return cover_quiz(T, ig, photo)
+    if ig.get("variante") == "atajos":
+        return cover_atajos(T, ig, photo)
     from themes import ImageBG
     base = ImageBG(photo, dark=0.55, blur=6).frame(0) if photo is not None else T.background(1).frame(0)
     base = base.convert("RGBA")
@@ -466,6 +582,7 @@ def cover(T, ig, photo=None):
         k = min(0.9, (1560 - y0) / crop.height)
         crop = crop.resize((int(W * k), int(crop.height * k)), Image.LANCZOS)
         base.alpha_composite(crop, (int((W - crop.width) / 2), int(y0)))
+    frame(base, T)
     lg = fx.logo(56, (242, 236, 224), T.label)
-    _paste(base, lg, W / 2, 1585)
+    _paste(base, lg, W / 2, 1560)
     return base.convert("RGB")
