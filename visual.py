@@ -487,6 +487,6 @@ def hacer(formato, out, seed=0, max_rondas=2):
     open(out.replace(".mp4", ".txt"), "w").write(cap)
     meta = {"formato": "visual", "estilo": "visual", "hook": G["hook"], "duration": info["duration"], "cover": cover,
             "thumb_ms": 1500, "review_score": rev["overall"], "design_score": rev["overall"], "ids": P["ids"],
-            "story_base": cover, "variante": formato, "tematica": tematica, "guion": "visual"}
+            "story_base": cover, "temas": [], "variante": formato, "tematica": tematica, "guion": "visual"}
     say(f"listo en {time.time() - t0:.0f} s · {info['duration']} s de vídeo · nota {rev['overall']}")
     return meta, [{"id": i, "tema": "visual", "grupo": formato} for i in P["ids"]]

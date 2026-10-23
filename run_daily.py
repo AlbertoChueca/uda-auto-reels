@@ -403,7 +403,7 @@ if summary:
             f.write(f"## ✅ Reel listo: {meta['formato']} · estilo {meta['estilo']}" + (f" · {meta['series']}" if meta.get("series") else "")
                     + (" · con ilustración" if meta.get("imagen") else "") + "\n\n"
                     f"- Hueco: `{slot}` · voz: `{voice_used}` · guion: `{src}` · duración {meta['duration']} s\n"
-                    f"- Gancho: **{meta['hook']}**\n- Tema(s): {', '.join(QB.tema_titulo(t) for t in meta['temas'])}"
+                    f"- Gancho: **{meta['hook']}**\n- Tema(s): {', '.join(QB.tema_titulo(t) for t in (meta.get('temas') or [])) or meta.get('tematica', '')}"
                     + (f" · respuesta(s): {', '.join(meta['respuestas'])}" if meta.get("respuestas") else "") + "\n"
                     + (f"- Revisor: {meta.get('review_score')}/10 · Director de arte: {meta.get('design_score')}/10\n")
                     + (f"- Experimento: {', '.join(f'{k}={str(v).split(chr(58))[0]}' for k, v in arms.items())}\n" if arms else ""))
