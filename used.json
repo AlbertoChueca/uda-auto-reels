@@ -230,5 +230,12 @@
 "fecha": "2026-10-24",
 "formato": "visual",
 "grupo": "antes_despues"
+},
+{
+"id": "visual:o1",
+"tema": "visual",
+"fecha": "2026-10-24",
+"formato": "visual",
+"grupo": "obra"
 }
 ]
