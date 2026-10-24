@@ -119,7 +119,7 @@
 "tiktok:6adace1545e1032c8b498b46": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
 "personas": [],
-"comentarios": 0,
+"comentarios": 1,
 "solucion": "2026-10-23T23:13:51.452779+00:00",
 "solucion_id": "7699891161900860192"
 },
@@ -135,7 +135,9 @@
 "instagram:ig:17992749981052685": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
 "personas": [],
-"comentarios": 0
+"comentarios": 0,
+"solucion": "2026-10-24T01:41:43.438596+00:00",
+"solucion_id": "18031993178857497"
 },
 "tiktok:6adaceeb5695f09d9cf548a1": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
@@ -250,6 +252,54 @@
 "linkedin:6adb84d0229847700f1356f9": {
 "personas": [],
 "comentarios": 0
+},
+"instagram:ig:18004311567007190": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adbf2d7a048f6ea3846cb04": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adbf2d6a048f6ea3846caea": {
+"personas": [],
+"comentarios": 0
+},
+"instagram:ig:18147273460577579": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adbf382900993f0730e25fd": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adbf382900993f0730e25f9": {
+"personas": [],
+"comentarios": 0
+},
+"instagram:ig:18422616355152957": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adbf4657a5f2523b6fb7194": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adbf4657a5f2523b6fb7190": {
+"personas": [],
+"comentarios": 0
+},
+"instagram:ig:18068688656617239": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adbf54f487914976fcdcff2": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adbf54e487914976fcdcfe7": {
+"personas": [],
+"comentarios": 0
 }
 },
 "errores": {},
@@ -289,6 +339,14 @@
 "6adb9433085bf551b694d10d": "7699911004901100833",
 "6adb9433085bf551b694d109": "urn:li:ugcPost:7519444325064388609",
 "6adb84bd55f0d60d57802145": "7699893960629587232",
-"6adb84d0229847700f1356f9": "urn:li:ugcPost:7519427799292628993"
+"6adb84d0229847700f1356f9": "urn:li:ugcPost:7519427799292628993",
+"6adbf2d7a048f6ea3846cb04": "7700015046956551457",
+"6adbf2d6a048f6ea3846caea": "urn:li:ugcPost:7519545958171545601",
+"6adbf382900993f0730e25fd": "7700015765767900449",
+"6adbf382900993f0730e25f9": "urn:li:ugcPost:7519546658423111680",
+"6adbf4657a5f2523b6fb7194": "7700016753522265376",
+"6adbf4657a5f2523b6fb7190": "urn:li:ugcPost:7519547613906534400",
+"6adbf54f487914976fcdcff2": "7700017760541084960",
+"6adbf54e487914976fcdcfe7": "urn:li:ugcPost:7519548594358714368"
 }
 }
