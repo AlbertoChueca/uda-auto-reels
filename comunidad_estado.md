@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-24 01:41 UTC · 0 respuestas_
+_Última pasada: 2026-10-24 07:24 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -14,15 +14,15 @@ _Última pasada: 2026-10-24 01:41 UTC · 0 respuestas_
 | 2026-10-23 | instagram | test | ¿La sabes sin buscarla? | 1 | sí |
 | 2026-10-23 | tiktok | test | ¿La sabes sin buscarla? | 1 | sí |
 | 2026-10-23 | linkedin | test | ¿La sabes sin buscarla? | 1 | sí |
-| 2026-10-23 | instagram | vf | Esta parece fácil | 0 | sí |
+| 2026-10-23 | instagram | vf | Esta parece fácil | 1 | sí |
 | 2026-10-23 | tiktok | vf | Esta parece fácil | 1 | sí |
-| 2026-10-23 | linkedin | vf | Esta parece fácil | 0 | pendiente |
+| 2026-10-23 | linkedin | vf | Esta parece fácil | 0 | sí |
 | 2026-10-23 | instagram | inspiracion | «La forma sigue a la función» | 0 | — |
 | 2026-10-23 | tiktok | inspiracion | «La forma sigue a la función» | 0 | — |
 | 2026-10-23 | linkedin | inspiracion | «La forma sigue a la función» | 0 | — |
 | 2026-10-23 | instagram | test | Pásaselo a tu equipo | 0 | pendiente |
-| 2026-10-23 | tiktok | test | Pásaselo a tu equipo | 0 | pendiente |
-| 2026-10-23 | linkedin | test | Pásaselo a tu equipo | 0 | pendiente |
+| 2026-10-23 | tiktok | test | Pásaselo a tu equipo | 0 | sí |
+| 2026-10-23 | linkedin | test | Pásaselo a tu equipo | 0 | sí |
 | 2026-10-23 | instagram | atajos | AutoCAD: ¿los usas todos? | 0 | — |
 | 2026-10-23 | tiktok | atajos | AutoCAD: ¿los usas todos? | 0 | — |
 | 2026-10-23 | linkedin | atajos | AutoCAD: ¿los usas todos? | 0 | — |
