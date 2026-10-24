@@ -1,6 +1,8 @@
 {
 "contestados": [
-"urn:li:comment:(urn:li:ugcPost:7519231585569759232,7519478060585431041)"
+"urn:li:comment:(urn:li:ugcPost:7519231585569759232,7519478060585431041)",
+"urn:li:comment:(urn:li:ugcPost:7519232480210567168,7519660236148764673)",
+"urn:li:comment:(urn:li:ugcPost:7519360622640300032,7519660291178086400)"
 ],
 "posts": {
 "tiktok:6ad7bfa4543d02f449a6bd81": {
@@ -148,8 +150,10 @@
 },
 "linkedin:6adaceeb5695f09d9cf548a8": {
 "visto": "2026-10-23T03:37:11.741884+00:00",
-"personas": [],
-"comentarios": 0,
+"personas": [
+"uniondearquitectos"
+],
+"comentarios": 1,
 "solucion": "2026-10-24T07:24:49.625288+00:00",
 "solucion_id": "7519660236148764673"
 },
@@ -197,17 +201,19 @@
 },
 "instagram:ig:18116760854055127": {
 "personas": [],
-"comentarios": 0
+"comentarios": 0,
+"solucion": "2026-10-24T12:46:16.253598+00:00",
+"solucion_id": "18112918202591381"
 },
 "tiktok:6adb463d9f963c6d2fdaee96": {
 "personas": [],
-"comentarios": 0,
+"comentarios": 1,
 "solucion": "2026-10-24T07:24:49.625288+00:00",
 "solucion_id": "7699920033530757920"
 },
 "linkedin:6adb463c9f963c6d2fdaee90": {
 "personas": [],
-"comentarios": 0,
+"comentarios": 1,
 "solucion": "2026-10-24T07:24:49.625288+00:00",
 "solucion_id": "7519660291178086400"
 },
@@ -306,6 +312,18 @@
 "linkedin:6adbf54e487914976fcdcfe7": {
 "personas": [],
 "comentarios": 0
+},
+"instagram:ig:18433754857176391": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adc81a7d29f15075ef215ae": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adc81a7f9d7b7c3bea004e7": {
+"personas": [],
+"comentarios": 0
 }
 },
 "errores": {},
@@ -353,6 +371,8 @@
 "6adbf4657a5f2523b6fb7194": "7700016753522265376",
 "6adbf4657a5f2523b6fb7190": "urn:li:ugcPost:7519547613906534400",
 "6adbf54f487914976fcdcff2": "7700017760541084960",
-"6adbf54e487914976fcdcfe7": "urn:li:ugcPost:7519548594358714368"
+"6adbf54e487914976fcdcfe7": "urn:li:ugcPost:7519548594358714368",
+"6adc81a7d29f15075ef215ae": "7700172114606738721",
+"6adc81a7f9d7b7c3bea004e7": "urn:li:ugcPost:7519699283328212992"
 }
 }
