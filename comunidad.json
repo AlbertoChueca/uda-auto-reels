@@ -201,7 +201,7 @@
 },
 "instagram:ig:18116760854055127": {
 "personas": [],
-"comentarios": 0,
+"comentarios": 1,
 "solucion": "2026-10-24T12:46:16.253598+00:00",
 "solucion_id": "18112918202591381"
 },
@@ -324,6 +324,18 @@
 "linkedin:6adc81a7f9d7b7c3bea004e7": {
 "personas": [],
 "comentarios": 0
+},
+"instagram:ig:18011586744003734": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6adcb9f5e24972b2f2084e8f": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6adcb9f27bd49fae7f98387c": {
+"personas": [],
+"comentarios": 0
 }
 },
 "errores": {},
@@ -373,6 +385,8 @@
 "6adbf54f487914976fcdcff2": "7700017760541084960",
 "6adbf54e487914976fcdcfe7": "urn:li:ugcPost:7519548594358714368",
 "6adc81a7d29f15075ef215ae": "7700172114606738721",
-"6adc81a7f9d7b7c3bea004e7": "urn:li:ugcPost:7519699283328212992"
+"6adc81a7f9d7b7c3bea004e7": "urn:li:ugcPost:7519699283328212992",
+"6adcb9f5e24972b2f2084e8f": "7700234011238599968",
+"6adcb9f27bd49fae7f98387c": "urn:li:ugcPost:7519759734082764801"
 }
 }

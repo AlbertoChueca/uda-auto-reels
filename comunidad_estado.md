@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-24 12:46 UTC · 1 respuestas_
+_Última pasada: 2026-10-24 16:42 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -20,7 +20,7 @@ _Última pasada: 2026-10-24 12:46 UTC · 1 respuestas_
 | 2026-10-23 | instagram | inspiracion | «La forma sigue a la función» | 0 | — |
 | 2026-10-23 | tiktok | inspiracion | «La forma sigue a la función» | 0 | — |
 | 2026-10-23 | linkedin | inspiracion | «La forma sigue a la función» | 0 | — |
-| 2026-10-23 | instagram | test | Pásaselo a tu equipo | 0 | sí |
+| 2026-10-23 | instagram | test | Pásaselo a tu equipo | 1 | sí |
 | 2026-10-23 | tiktok | test | Pásaselo a tu equipo | 1 | sí |
 | 2026-10-23 | linkedin | test | Pásaselo a tu equipo | 1 | sí |
 | 2026-10-23 | instagram | atajos | AutoCAD: ¿los usas todos? | 0 | — |
@@ -47,6 +47,9 @@ _Última pasada: 2026-10-24 12:46 UTC · 1 respuestas_
 | 2026-10-24 | instagram | antes_despues | Antes y después de una reforma | 0 | — |
 | 2026-10-24 | tiktok | antes_despues | Antes y después de una reforma | 0 | — |
 | 2026-10-24 | linkedin | antes_despues | Antes y después de una reforma | 0 | — |
+| 2026-10-24 | instagram | obra | De la zanja a la llave | 0 | — |
+| 2026-10-24 | tiktok | obra | De la zanja a la llave | 0 | — |
+| 2026-10-24 | linkedin | obra | De la zanja a la llave | 0 | — |
 | 2026-10-22 | instagram | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | tiktok | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | linkedin | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
