@@ -78,5 +78,26 @@
 "linkedin_documento": "6adb84d0229847700f1356f9"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-10-25",
+"bloque": "negocio",
+"tema": "uda_servicios",
+"subtema": "Presupuestar bloques de viviendas",
+"titulo": "Presupuestar bloques de viviendas",
+"fragmentos": [
+"03 Superficies y viviendas",
+"UDA · UNIÓN DE ARQUITECTOS · DOCUMENTO 02 Listado de documentos a dele"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.3,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:17952586005306089",
+"tiktok_carrusel": "6ade266f0b400cadeabf1bfe",
+"linkedin_documento": "6ade26794caad37f101284a9"
+},
+"dry_run": false
 }
 ]
