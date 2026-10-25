@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-25 01:17 UTC · 0 respuestas_
+_Última pasada: 2026-10-25 06:17 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -26,9 +26,9 @@ _Última pasada: 2026-10-25 01:17 UTC · 0 respuestas_
 | 2026-10-23 | instagram | atajos | AutoCAD: ¿los usas todos? | 0 | — |
 | 2026-10-23 | tiktok | atajos | AutoCAD: ¿los usas todos? | 0 | — |
 | 2026-10-23 | linkedin | atajos | AutoCAD: ¿los usas todos? | 0 | — |
-| 2026-10-23 | instagram | encuesta | Queremos saberlo | 0 | pendiente |
+| 2026-10-23 | instagram | encuesta | Queremos saberlo | 0 | sí |
 | 2026-10-23 | tiktok | encuesta | Queremos saberlo | 0 | pendiente |
-| 2026-10-23 | linkedin | encuesta | Queremos saberlo | 0 | pendiente |
+| 2026-10-23 | linkedin | encuesta | Queremos saberlo | 0 | sí |
 | 2026-10-23 | instagram | galeria | Escaleras que son esculturas | 0 | — |
 | 2026-10-23 | tiktok | galeria | Escaleras que son esculturas | 0 | — |
 | 2026-10-23 | linkedin | galeria | Escaleras que son esculturas | 0 | — |
