@@ -1,7 +1,5 @@
-# Cuaderno de ritmo (2026-10-23)
+# Cuaderno de ritmo (2026-10-25)
 
-# Cuaderno de ritmo (2026-10-23)
-
-- Seguir haciendo: Estructura técnica pausada en piezas visuales complejas (la infografía de equipamiento retuvo 7750 ms).
-- Dejar de hacer: Entradas lentas en formatos tipo carrusel que generan abandono inmediato (660 ms de visionado).
-- Probar: Gancho de audio tajante en el segundo 1 con corte seco antes de plantear la solución operativa.
+- Seguir haciendo: Ritmo analítico y detallado en piezas complejas (12.090 ms en «Qué incluye delegar» y 7.710 ms en infografía).
+- Dejar de hacer: Inicios lentos en carruseles estáticos que causan abandono inmediato a los 660 ms.
+- Probar: Gancho de audio cortante en los dos primeros segundos antes de exponer el desglose de costes del encargo.

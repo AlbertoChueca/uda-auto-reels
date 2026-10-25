@@ -1,7 +1,5 @@
-# Cuaderno de ilustradora (2026-10-23)
+# Cuaderno de ilustradora (2026-10-25)
 
-# Cuaderno de ilustradora (2026-10-23)
-
-- Seguir haciendo: Macros 1:1 y composiciones cenitales con luz rasante cálida, acero pavonado, nogal y piedra sinterizada negra.
-- Dejar de hacer: Ensambles de perfilería de muro cortina con tornillos o pletinas planas decorativas que parezcan herrajes de carpintería.
-- Probar: Encuadres cerrados sobre fijaciones ocultas de fachada y uniones atornilladas estructurales normalizadas.
+- Seguir haciendo: Renders fotorrealistas con iluminación cálida y fotografías de reformas contrastadas con geometría coherente.
+- Dejar de hacer: Representar perspectivas artísticas al ilustrar «Planos en AutoCAD» (rechazada por incoherencia técnica) y alterar ventanas en secuencias antes/después.
+- Probar: Estética 2D técnica pura (trazados CAD vectoriales y detalles constructivos sobre fondo oscuro mate).

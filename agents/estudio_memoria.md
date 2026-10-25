@@ -1,7 +1,5 @@
-# Cuaderno de memoria (2026-10-23)
+# Cuaderno de memoria (2026-10-25)
 
-# Cuaderno de memoria (2026-10-23)
-
-- Seguir haciendo: Contenidos de eficiencia operativa; 'Horas caras dibujando adosados' logró el único guardado registrado.
-- Dejar de hacer: Infografías que no aporten un dato aplicable o archivable para el arquitecto que redacta.
-- Probar: Tablas de cálculo rápido sobre horas de dibujo invertidas frente a rentabilidad de delegar para guardar y presupuestar.
+- Seguir haciendo: Enfoque en ineficiencias de costes técnicos; «Horas caras dibujando adosados» logró retención de 3.260 ms y guardado.
+- Dejar de hacer: Infografías genéricas sin datos concretos que no aportan valor archivable para el redactor.
+- Probar: Tablas de equivalencia de horas de dibujo frente a coste de delegación listas para capturar y guardar.

@@ -1,6 +1,6 @@
 # Piloto automático UDA - qué está funcionando
 
-_Updated 2026-10-24 · 3 reels with results (3+ days old) · average score 4.06_
+_Updated 2026-10-25 · 4 reels with results (3+ days old) · average score 4.52_
 
 
 Still collecting data: options are being tested evenly for now.
@@ -10,14 +10,14 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| infografia | 1 | 5.62 |
+| infografia | 2 | 5.76 |
 | render | 0 | - |
 
 ## estilo
 
 | option | reels | avg score |
 |---|---|---|
-| negro | 3 | 4.06 |
+| negro | 4 | 4.52 |
 
 ## hook_style
 
@@ -25,7 +25,7 @@ Still collecting data: options are being tested evenly for now.
 |---|---|---|
 | precio/hora | 1 | 6.56 |
 | socio senior | 1 | 5.62 |
-| facturación | 1 | 0.00 |
+| facturación | 2 | 2.95 |
 | contraste | 0 | - |
 | dato | 0 | - |
 | escena | 0 | - |
@@ -34,7 +34,7 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| negocio | 1 | 6.56 |
+| negocio | 2 | 6.23 |
 | mixto | 1 | 5.62 |
 | servicios | 1 | 0.00 |
 | contratar | 0 | - |
@@ -43,6 +43,6 @@ Still collecting data: options are being tested evenly for now.
 
 | option | reels | avg score |
 |---|---|---|
-| corto | 1 | 6.56 |
+| corto | 2 | 6.23 |
 | largo | 2 | 2.81 |
 | normal | 0 | - |

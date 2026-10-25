@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-10-23)
+# Cuaderno de diseno (2026-10-25)
 
-• Seguir haciendo: Formatos carrusel y mito_realidad sobre fondo carbón/negro; acumulan el mayor alcance (185 y 165 views) y el 100% de los guardados.
-• Dejar de hacer: Infografías estáticas y formato comparativa; obtienen scores inferiores a 5.62 y nula interacción.
-• Probar: Portadas de carrusel con máxima jerarquía: tipografía geométrica en piedra, fondo carbón y acento bronce exclusivo en la palabra clave de fricción ('plantilla', 'horas').
+# Cuaderno de diseno
+
+• Seguir haciendo: Formatos carrusel y mito_realidad sobre fondo carbón; concentran el mejor rendimiento (scores 9.67 y 6.56) y retención.
+• Dejar de hacer: Formato render aislado (score 3.77) y comparativas saturadas de texto que quedan en 0 views.
+• Probar: Portadas de carrusel ultra legibles: fondo carbón, titulares cortos en blanco piedra y acento bronce solo en la cifra o dilema clave.

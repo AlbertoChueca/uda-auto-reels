@@ -1,5 +1,7 @@
-# Cuaderno de gancho (2026-10-23)
+# Cuaderno de gancho (2026-10-25)
 
-• Seguir haciendo: Ganchos de dilema operativo y coste horario ('Plantilla o delegar', 'Horas caras dibujando adosados'); lideran scores (9.67 y 6.56) y lograron el único guardado.
-• Dejar de hacer: Ganchos abstractos ('El coste de redactarlo todo') o basados en m² de obra ('2.000 m² más'); tienen scores bajos o nulos.
-• Probar: Fórmulas de impacto en 2 segundos sobre la pérdida de margen en tareas rutinarias (ej. '¿Cobras como arquitecto o produces como delineante?').
+# Cuaderno de gancho
+
+• Seguir haciendo: Dilemas operativos directos y coste por hora ('Plantilla o delegar', 'Horas caras dibujando adosados'); lideran scores (9.67 y 6.56) y views (185).
+• Dejar de hacer: Citas abstractas ('La forma sigue a la función', score 3.77) o títulos vagos sin fricción ('El coste de redactarlo todo', score 0).
+• Probar: Preguntas de apertura sobre delegación técnica en 2 segundos: '¿Cuánto te cuesta dibujar lo que no deberías?' o '¿Firmar o delinear?'.

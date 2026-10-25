@@ -1,6 +1,8 @@
-# Cuaderno de comunidad (2026-10-23)
+# Cuaderno de comunidad (2026-10-25)
 
-• Estado: Datos insuficientes. No constan comentarios registrados en ninguna publicación.
-• Seguir haciendo: Usar el único guardado (en 'Horas caras dibujando adosados') como indicador de que la audiencia sufre con el coste de tareas repetitivas.
-• Dejar de hacer: Interpretar el silencio como falta de audiencia; la falta de respuesta se debe a la ausencia de preguntas detonantes.
-• Probar: Plantear dudas directas sobre las objeciones habituales al delegar (control de calidad y plazos) para abrir debate.
+# Cuaderno de comunidad
+
+• Estado: Datos muy escasos. Aunque no hay textos registrados, 'Pásaselo a tu equipo' logró los primeros 3 comentarios.
+• Seguir haciendo: Validar interés en fricciones reales de gestión: los 2 guardados confirman que preocupan el coste/hora y el paso de boceto a entrega.
+• Dejar de hacer: Asumir desinterés general; la falta de comentarios viene de publicar afirmaciones cerradas en vez de debates.
+• Probar: Preguntar abiertamente: '¿Cuál es la tarea técnica que más tiempo te quita de proyectar?' para activar respuestas cualitativas.

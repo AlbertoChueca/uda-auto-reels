@@ -237,5 +237,12 @@
 "fecha": "2026-10-24",
 "formato": "visual",
 "grupo": "obra"
+},
+{
+"id": "visual:cocinas",
+"tema": "visual",
+"fecha": "2026-10-25",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
