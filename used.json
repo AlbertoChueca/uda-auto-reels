@@ -272,5 +272,12 @@
 "fecha": "2026-10-25",
 "formato": "visual",
 "grupo": "antes_despues"
+},
+{
+"id": "visual:p3",
+"tema": "visual",
+"fecha": "2026-10-25",
+"formato": "visual",
+"grupo": "proceso"
 }
 ]
