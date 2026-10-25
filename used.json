@@ -244,5 +244,12 @@
 "fecha": "2026-10-25",
 "formato": "visual",
 "grupo": "galeria"
+},
+{
+"id": "visual:iluminacion",
+"tema": "visual",
+"fecha": "2026-10-25",
+"formato": "visual",
+"grupo": "tips"
 }
 ]
