@@ -1,0 +1,28 @@
+# Despertador: lanza cada reel (8:00, 12:00, 15:00) y el carrusel (18:00) a su hora sin depender de los programados
+# de GitHub, que llegan con horas de retraso. Ver despertador.py. Lo relanzan los reels y el carrusel al terminar.
+name: Despertador
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 4,6,10,13,16 * * *"   # red de seguridad por si la cadena se rompiera (si llega, mejor)
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: despertador
+  cancel-in-progress: true          # solo un despertador: el más nuevo recalcula y sustituye al anterior
+
+jobs:
+  esperar:
+    if: vars.ACTIVO == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v5
+      - name: Esperar al siguiente hueco y lanzarlo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 despertador.py

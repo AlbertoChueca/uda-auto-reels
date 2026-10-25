@@ -22,6 +22,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: carrusel
@@ -77,3 +78,9 @@ jobs:
       - name: Recordar los temas publicados
         if: always() && steps.gate.outputs.go == 'yes'
         run: python sincronizar.py "Carrusel $(date +%F)" carruseles.json carrusel_estado.txt
+
+      - name: Despertador para el siguiente hueco
+        if: always() && steps.gate.outputs.go == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run despertador.yml --ref main || true
