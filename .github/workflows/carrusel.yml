@@ -4,7 +4,7 @@ name: Carrusel diario
 # Interruptor: variable CARRUSEL = true (por defecto) / false. Tema o bloque concretos a mano al lanzarlo.
 on:
   schedule:
-    - cron: "37 * * * *"   # cada hora (GitHub retrasa los programados): elegir_hueco.py decide si toca el de las 18:00
+    - cron: "3-59/10 * * * *"   # cada 10 min (GitHub descarta muchos programados): elegir_hueco.py decide si toca el de las 18:00
   workflow_dispatch:
     inputs:
       dry_run:
