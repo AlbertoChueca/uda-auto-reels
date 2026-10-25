@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-25 06:17 UTC · 0 respuestas_
+_Última pasada: 2026-10-25 11:47 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -12,7 +12,6 @@ _Última pasada: 2026-10-25 06:17 UTC · 0 respuestas_
 | 2026-10-23 | instagram | None | Lo que no sale en la nómina | 0 | — |
 | 2026-10-23 | tiktok | None | Lo que no sale en la nómina | 0 | — |
 | 2026-10-23 | instagram | test | ¿La sabes sin buscarla? | 1 | sí |
-| 2026-10-23 | tiktok | test | ¿La sabes sin buscarla? | 1 | sí |
 | 2026-10-23 | linkedin | test | ¿La sabes sin buscarla? | 1 | sí |
 | 2026-10-23 | instagram | vf | Esta parece fácil | 1 | sí |
 | 2026-10-23 | tiktok | vf | Esta parece fácil | 1 | sí |
@@ -27,7 +26,7 @@ _Última pasada: 2026-10-25 06:17 UTC · 0 respuestas_
 | 2026-10-23 | tiktok | atajos | AutoCAD: ¿los usas todos? | 0 | — |
 | 2026-10-23 | linkedin | atajos | AutoCAD: ¿los usas todos? | 0 | — |
 | 2026-10-23 | instagram | encuesta | Queremos saberlo | 0 | sí |
-| 2026-10-23 | tiktok | encuesta | Queremos saberlo | 0 | pendiente |
+| 2026-10-23 | tiktok | encuesta | Queremos saberlo | 0 | sí |
 | 2026-10-23 | linkedin | encuesta | Queremos saberlo | 0 | sí |
 | 2026-10-23 | instagram | galeria | Escaleras que son esculturas | 0 | — |
 | 2026-10-23 | tiktok | galeria | Escaleras que son esculturas | 0 | — |
@@ -50,6 +49,12 @@ _Última pasada: 2026-10-25 06:17 UTC · 0 respuestas_
 | 2026-10-24 | instagram | obra | De la zanja a la llave | 0 | — |
 | 2026-10-24 | tiktok | obra | De la zanja a la llave | 0 | — |
 | 2026-10-24 | linkedin | obra | De la zanja a la llave | 0 | — |
+| 2026-10-25 | instagram | galeria | Cocinas que nunca pasan de moda | 0 | — |
+| 2026-10-25 | tiktok | galeria | Cocinas que nunca pasan de moda | 0 | — |
+| 2026-10-25 | linkedin | galeria | Cocinas que nunca pasan de moda | 0 | — |
+| 2026-10-25 | instagram | tips | 5 ideas de iluminación de arquitecto | 0 | — |
+| 2026-10-25 | tiktok | tips | 5 ideas de iluminación de arquitecto | 0 | — |
+| 2026-10-25 | linkedin | tips | 5 ideas de iluminación de arquitecto | 0 | — |
 | 2026-10-22 | instagram | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | tiktok | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | linkedin | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
