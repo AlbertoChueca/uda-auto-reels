@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-26 14:23 UTC · 0 respuestas_
+_Última pasada: 2026-10-26 20:36 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -83,3 +83,6 @@ _Última pasada: 2026-10-26 14:23 UTC · 0 respuestas_
 | 2026-10-25 | instagram | carrusel | Presupuestar bloques de viviendas | 0 | — |
 | 2026-10-25 | tiktok | carrusel | Presupuestar bloques de viviendas | 0 | — |
 | 2026-10-25 | linkedin | carrusel | Presupuestar bloques de viviendas | 0 | — |
+| 2026-10-26 | instagram | carrusel | Escalar tu despacho sin costes fijos | 0 | — |
+| 2026-10-26 | tiktok | carrusel | Escalar tu despacho sin costes fijos | 0 | — |
+| 2026-10-26 | linkedin | carrusel | Escalar tu despacho sin costes fijos | 0 | — |
