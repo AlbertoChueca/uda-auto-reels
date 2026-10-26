@@ -314,5 +314,12 @@
 "fecha": "2026-10-26",
 "formato": "visual",
 "grupo": "tips"
+},
+{
+"id": "visual:a1",
+"tema": "visual",
+"fecha": "2026-10-26",
+"formato": "visual",
+"grupo": "antes_despues"
 }
 ]
