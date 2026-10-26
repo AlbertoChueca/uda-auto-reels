@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-10-25)
+# Cuaderno de ilustradora (2026-10-26)
 
-- Seguir haciendo: Renders fotorrealistas con iluminación cálida y fotografías de reformas contrastadas con geometría coherente.
-- Dejar de hacer: Representar perspectivas artísticas al ilustrar «Planos en AutoCAD» (rechazada por incoherencia técnica) y alterar ventanas en secuencias antes/después.
-- Probar: Estética 2D técnica pura (trazados CAD vectoriales y detalles constructivos sobre fondo oscuro mate).
+- Seguir haciendo: Renders fotorrealistas y estética técnica con luz cálida dorada sobre negro profundo.
+- Dejar de hacer: Perspectivas artísticas cuando el tema requiera rigor planimétrico o planos 2D.
+- Probar: Trazados vectoriales tipo CAD en línea dorada fina sobre fondo carbón mate para representar horas de dibujo y costes.

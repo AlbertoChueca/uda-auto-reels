@@ -279,5 +279,12 @@
 "fecha": "2026-10-25",
 "formato": "visual",
 "grupo": "proceso"
+},
+{
+"id": "visual:campo",
+"tema": "visual",
+"fecha": "2026-10-26",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]

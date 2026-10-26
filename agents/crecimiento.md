@@ -1,7 +1,5 @@
-# Cuaderno de crecimiento (2026-10-25)
+# Cuaderno de crecimiento (2026-10-26)
 
-# Cuaderno de crecimiento
-
-• Seguir haciendo: Mensajes dirigidos a la gestión de recursos del despacho (plantilla vs. encargo), único foco con guardados y engagement.
-• Dejar de hacer: Finales pasivos sin llamada clara; el perfil sigue marcando 0 visitas y 0 compartidos en todo el histórico.
-• Probar: Llamada a la acción con elección forzada ('¿Plantilla fija o apoyo puntual? Te leemos') y enlace visible para calcular costes en uniondearquitectos.com.
+• Seguir haciendo: Contenido enfocado a dilemas de plantilla vs. encargo, única vía que ha conseguido retención y guardados.
+• Dejar de hacer: Publicaciones sin llamada a la acción imperativa; mantenemos 0 visitas al perfil y 0 compartidos en todo el histórico.
+• Probar: CTA específico invitando a guardar para la próxima licitación y enlace en bio para presupuestar entregas en uniondearquitectos.com.

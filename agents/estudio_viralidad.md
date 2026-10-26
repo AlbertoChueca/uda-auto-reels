@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-10-25)
+# Cuaderno de viralidad (2026-10-26)
 
-- Seguir haciendo: Interpelaciones directas al equipo de trabajo; «Pásaselo a tu equipo» generó los únicos 3 comentarios registrados.
-- Dejar de hacer: Mensajes pasivos o contemplativos que consiguen 0 comentarios y 0 compartidos.
-- Probar: Preguntas polarizantes dirigidas a socios de estudio: «¿Seguís dibujando detalles estándar a mano? Menciona a tu socio».
+- Seguir haciendo: Interpelaciones directas a la dinámica interna del estudio; «Pásaselo a tu equipo» concentró los únicos comentarios.
+- Dejar de hacer: Cierres contemplativos que resultan en 0 compartidos y nula conversación.
+- Probar: Preguntas dirigidas a socios: «¿Cuántas horas perdiste este mes delineando detalles estándar? Pásaselo a tu socio».

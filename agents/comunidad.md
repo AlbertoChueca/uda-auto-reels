@@ -1,8 +1,6 @@
-# Cuaderno de comunidad (2026-10-25)
+# Cuaderno de comunidad (2026-10-26)
 
-# Cuaderno de comunidad
-
-• Estado: Datos muy escasos. Aunque no hay textos registrados, 'Pásaselo a tu equipo' logró los primeros 3 comentarios.
-• Seguir haciendo: Validar interés en fricciones reales de gestión: los 2 guardados confirman que preocupan el coste/hora y el paso de boceto a entrega.
-• Dejar de hacer: Asumir desinterés general; la falta de comentarios viene de publicar afirmaciones cerradas en vez de debates.
-• Probar: Preguntar abiertamente: '¿Cuál es la tarea técnica que más tiempo te quita de proyectar?' para activar respuestas cualitativas.
+• Datos: Aún muy escasos. No hay textos registrados, pero 'Pásaselo a tu equipo' logró los únicos 3 comentarios del canal.
+• Seguir haciendo: Incidir en la carga de trabajo y delegar tareas; es el único tema que ha roto la barrera del comentario.
+• Dejar de hacer: Mensajes cerrados sin pregunta detonante.
+• Probar: Lanzar una pregunta directa en el reel: '¿Qué parte de la memoria técnica te roba más tiempo?' para extraer objeciones reales.

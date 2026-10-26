@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-10-25)
+# Cuaderno de revisora_visual (2026-10-26)
 
-- Seguir haciendo: Criterio estricto que rechaza perspectivas vendidas como planos técnicos y detecta fallos de carpintería entre antes y después.
-- Dejar de hacer: Datos insuficientes para rebajar el nivel de exigencia técnica en revisiones.
-- Probar: Control previo de coherencia geométrica en reformas (mismos huecos y escala) antes de aprobar entregas visuales.
+- Seguir haciendo: Rigor estricto al vetar planos irreales, incoherencias de carpintería y elementos impropios de un despacho profesional.
+- Dejar de hacer: Datos insuficientes para flexibilizar la exigencia en verosimilitud constructiva.
+- Probar: Control previo de escala y coherencia técnica en representaciones de proyectos de ejecución antes de publicar.
