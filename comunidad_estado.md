@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-26 06:28 UTC · 0 respuestas_
+_Última pasada: 2026-10-26 14:23 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -62,6 +62,18 @@ _Última pasada: 2026-10-26 06:28 UTC · 0 respuestas_
 | 2026-10-25 | instagram | proceso_visual | Del boceto al render | 0 | — |
 | 2026-10-25 | tiktok | proceso_visual | Del boceto al render | 0 | — |
 | 2026-10-25 | linkedin | proceso_visual | Del boceto al render | 0 | — |
+| 2026-10-26 | instagram | galeria | Casas de campo que enamoran | 0 | — |
+| 2026-10-26 | tiktok | galeria | Casas de campo que enamoran | 0 | — |
+| 2026-10-26 | linkedin | galeria | Casas de campo que enamoran | 0 | — |
+| 2026-10-26 | instagram | antes_despues | Antes y después de una reforma | 0 | — |
+| 2026-10-26 | tiktok | antes_despues | Antes y después de una reforma | 0 | — |
+| 2026-10-26 | linkedin | antes_despues | Antes y después de una reforma | 0 | — |
+| 2026-10-26 | instagram | tips | 5 claves para una cocina que funciona | 0 | — |
+| 2026-10-26 | tiktok | tips | 5 claves para una cocina que funciona | 0 | — |
+| 2026-10-26 | linkedin | tips | 5 claves para una cocina que funciona | 0 | — |
+| 2026-10-26 | instagram | antes_despues | Antes y después de una reforma | 0 | — |
+| 2026-10-26 | tiktok | antes_despues | Antes y después de una reforma | 0 | — |
+| 2026-10-26 | linkedin | antes_despues | Antes y después de una reforma | 0 | — |
 | 2026-10-22 | instagram | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | tiktok | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | linkedin | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
