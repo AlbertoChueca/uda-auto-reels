@@ -99,5 +99,25 @@
 "linkedin_documento": "6ade26794caad37f101284a9"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-10-26",
+"bloque": "negocio",
+"tema": "uda_delegar",
+"subtema": "Costes fijos frente a variables",
+"titulo": "Escalar tu despacho sin costes fijos",
+"fragmentos": [
+" (cont.)"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.0,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18111393845182470",
+"tiktok_carrusel": "6adf7ae5affb276f2a20174b",
+"linkedin_documento": "6adf7aefaffb276f2a201779"
+},
+"dry_run": false
 }
 ]

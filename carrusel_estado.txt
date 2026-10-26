@@ -1,12 +1,9 @@
-Carrusel 2026-10-25 15:50 UTC
-carrusel: el verificador pide cambios: [{"frase": "El soporte técnico permite llevar a cabo la transmisión de comunicaciones mediante redes electrónicas.", "motivo": "La fuente original habla de 'almacenamiento o acceso técnico' en el contexto de las cookies de la página web, no del 'soporte técnico' que ofrece UDA a los despachos."}, {"frase": "El almacenamiento técnico permite guardar preferencias legítimas para la operativa de traba
-carrusel: el verificador pide cambios: [{"frase": "El almacenamiento técnico permite registrar preferencias no solicitadas para la **personalización del entorno**.", "motivo": "Dato inventado. La fuente indica que la finalidad es 'almacenar preferencias no solicitadas', pero no menciona en ningún momento que sea para la 'personalización del entorno'."}, {"frase": "▪️ Preferencias → Control total para configurar y guardar consentimiento
-carrusel: tema uda_delegar descartado: no hay carrusel verificado para Facturar más y ganar tiempo delegando
-carrusel: verificado (Presupuestar bloques de viviendas)
-carrusel: revisión 8.3/10 ["Diapositiva 5: El cajetín blanco de la web ('uniondearquitectos.com') rompe bruscamente la sofisticación de la paleta negro y oro; debería resolverse en color crema o con borde dorado para mantener la estética premium.", 'Diapositiva 5: Redundancia de marca y exceso de llamadas a la acción en un solo encuadre (el logotipo de UDA aparece duplicado en cabecera y cuerpo central; compiten el botón dorado y el bloque web).', "Diapositiva 1: La píldora 'DESLIZA ->' resulta tosca y con un peso excesivo frente al esquema de planta técnica; un indicador de paginación o flecha minimalista encajaría mejor con el tono del sector."]
-carrusel: Qué hace UDA por tu despacho · Presupuestar bloques de viviendas · 5 imágenes
-Instagram carrusel: https://www.instagram.com/p/De7E-mhjdh5/
+Carrusel 2026-10-26 16:06 UTC
+carrusel: verificado (Costes fijos frente a variables)
+carrusel: revisión 8.0/10 ['El esquema de planta de la portada (slide 1) es excesivamente elemental y plano; no transmite la complejidad técnica ni la envergadura de proyectos residenciales colectivos que busca captar el despacho.', "El pie de página 'Fuente: uniondearquitectos.com · Preguntas frecuentes' repetido en todas las diapositivas ensucia el diseño y le resta empaque editorial premium.", "En la diapositiva 2, la caja dorada de 'CLAVE' es redundante: repite casi literalmente lo ya expuesto en los dos bloques superiores sin aportar un salto cualitativo o dato diferencial."]
+carrusel: Facturar más y ganar tiempo delegando · Costes fijos frente a variables · 5 imágenes
+Instagram carrusel: https://www.instagram.com/p/De9rNDqoK9i/
 Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
-Zernio tiktok carrusel: creado 6ade266f0b400cadeabf1bfe
-Zernio linkedin documento: creado 6ade26794caad37f101284a9
-publicación: {"instagram_carrusel": "ig:17952586005306089", "tiktok_carrusel": "6ade266f0b400cadeabf1bfe", "linkedin_documento": "6ade26794caad37f101284a9"}
+Zernio tiktok carrusel: creado 6adf7ae5affb276f2a20174b
+Zernio linkedin documento: creado 6adf7aefaffb276f2a201779
+publicación: {"instagram_carrusel": "ig:18111393845182470", "tiktok_carrusel": "6adf7ae5affb276f2a20174b", "linkedin_documento": "6adf7aefaffb276f2a201779"}
