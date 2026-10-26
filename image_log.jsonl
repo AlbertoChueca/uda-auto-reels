@@ -155,3 +155,19 @@
 {"date": "2026-10-26", "visual": true, "idea": "porche de madera con vigas vistas al atardecer en el campo", "ok": true, "problemas": ""}
 {"date": "2026-10-26", "visual": true, "idea": "casa blanca con muros gruesos y patio con parra", "ok": true, "problemas": ""}
 {"date": "2026-10-26", "visual": true, "idea": "salón con chimenea de piedra y techo de madera a dos aguas", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "detalle de encuentro entre madera y hormigón con luz rasante", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "fachada de edificio fotografiada de frente con líneas verticales perfectamente paralelas", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "fachada contemporánea con luz dorada rasante del atardecer", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "gran vestíbulo de hormigón con una persona pequeña de espaldas al fondo", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "pasillo de arquitectura simétrico con punto de fuga central", "ok": false, "problemas": "El pasillo no es simétrico: la pared izquierda cuenta con estanterías y puertas ciegas, mientras que la derecha presenta un cerramiento acristalado."}
+{"date": "2026-10-26", "visual": true, "idea": "pasillo de arquitectura simétrico con punto de fuga central", "ok": false, "problemas": "El pasillo no es simétrico: presenta muros y carpintería a la izquierda y un muro cortina acristalado a la derecha."}
+{"date": "2026-10-26", "visual": true, "idea": "pasillo de arquitectura simétrico con punto de fuga central", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "Render fotorrealista exterior de una vivienda mediterránea con patio, terminada, jardín cuidado, luz de atardecer", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "La obra de ESTA MISMA casa en fase de cimentación: zanjas, armaduras y hormigón de limpieza en el solar, sin personas", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "La obra de ESTA MISMA casa con la estructura de hormigón terminada: pilares y forjados, andamio perimetral, sin personas", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "La obra de ESTA MISMA casa con fachadas y cubierta cerradas, aún sin acabar, andamios", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "Fotografía real de una terraza de ático abandonada con suelo de baldosa rota, aspecto anticuado y descuidado, luz pobre, cámara a la altura de los ojos", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "Fotografía real de un local comercial vacío y descuidado, aspecto anticuado y descuidado, luz pobre, cámara a la altura de los ojos", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "Fotografía real de un salón de los años 80 con moqueta, papel pintado y muebles oscuros, aspecto anticuado y descuidado, luz pobre, cámara a la altura de los ojos", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "La MISMA estancia de la imagen de referencia (misma geometría, mismas ventanas y la misma cámara) después de una reforma de arquitecto: contemporánea, luminosa, materiales naturales, impecable", "ok": true, "problemas": ""}
+{"date": "2026-10-26", "visual": true, "idea": "DESPUÉS. Evita: La figura humana en la imagen 2 presenta una distorsión borrosa típica de artefacto de IA.", "ok": true, "problemas": ""}

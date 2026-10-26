@@ -1,0 +1,30 @@
+{
+"formato": [
+"infografia",
+"render"
+],
+"estilo": [
+"negro"
+],
+"hook_style": [
+"facturación: abrir con lo que le cuesta al despacho no delegar (solo con datos del material)",
+"precio/hora: hablar de dónde se va la hora del arquitecto y dónde se cobra mejor",
+"socio senior: de tú a tú, como un socio que comparte lo que ha aprendido",
+"contraste: dos formas de trabajar enfrentadas en una frase",
+"dato: abrir con el dato exacto de la fuente que más sorprende",
+"escena: el momento en que entra un encargo grande y el equipo ya va a tope",
+"cuello_de_botella: Señala la tarea técnica repetitiva (memorias, detalles CTE) que colapsa la entrega de visado.",
+"coste_de_oportunidad: Confronta los proyectos o licitaciones que el despacho rechaza por no tener equipo de producción."
+],
+"bloque": [
+"negocio",
+"contratar",
+"servicios",
+"mixto"
+],
+"think_time": [
+"corto",
+"normal",
+"largo"
+]
+}

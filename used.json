@@ -286,5 +286,26 @@
 "fecha": "2026-10-26",
 "formato": "visual",
 "grupo": "galeria"
+},
+{
+"id": "visual:a0",
+"tema": "visual",
+"fecha": "2026-10-26",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:a5",
+"tema": "visual",
+"fecha": "2026-10-26",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:a4",
+"tema": "visual",
+"fecha": "2026-10-26",
+"formato": "visual",
+"grupo": "antes_despues"
 }
 ]
