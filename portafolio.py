@@ -12,7 +12,7 @@ Estilo: planos en «modo oscuro» (la línea en crema y el color de cada instala
 que recorre y se acerca a donde está el trabajo (las zonas con más instalación), trazado que se «dibuja» al entrar,
 etiqueta dorada por lámina, voz de arquitecto que cuenta lo que se ve y cierre con la propuesta de UDA.
 """
-import base64, json, math, os, random, subprocess, time
+import re, base64, json, math, os, random, subprocess, time
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
@@ -24,7 +24,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MAN = os.path.join(HERE, "fuentes", "portfolio.json")
 DIR = os.path.join(HERE, "assets", "portfolio")
 ORO, CREMA, NEGRO = fx.ORO, fx.CREMA, fx.NEGRO
-BOX = (30, 440, 1050, 1480)                 # zona del plano (entre el título y la etiqueta, dentro de la zona segura)
+BOX = (30, 430, 1050, 1390)                 # zona del plano (entre el título y la etiqueta, dentro de la zona segura)
 FONDO = (12, 12, 13)
 
 HOOKS = {
@@ -145,8 +145,14 @@ def guion(tipo, P, seed=0):
 
 
 # ------------------------------------------------------------------ montaje
+def _escala(t):
+    """«1:20» se lee «uno a veinte» (el sintetizador lo leía como una hora)."""
+    return re.sub(r"\b1:(\d+)\b", r"uno a \1", t)
+
+
 def _voz(textos):
     import voice
+    textos = [_escala(t) for t in textos]
     voice.reset()
     return voice.say_many(textos, 1.06, None, True)
 
