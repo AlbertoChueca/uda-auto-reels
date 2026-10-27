@@ -2,6 +2,6 @@
 
 # Cuaderno de crecimiento (2026-10-27)
 
-• Seguir haciendo: Publicaciones dirigidas al dolor del despacho (plantilla vs. encargo), único tema que genera guardados.
-• Dejar de hacer: Llamadas a la acción genéricas o ausentes; seguimos con 0 visitas al perfil y 0 compartidos en todo el histórico.
-• Probar: CTA imperativo y contextualizado al final de la descripción: 'Guarda este post para tu próxima entrega límite' y enlace directo para cotizar paquetes de planos en uniondearquitectos.com.
+• Seguir haciendo: Enfocar copys en dilemas de contratación y costes fijos, únicos temas que atraen views y guardados.
+• Dejar de hacer: Finales neutros sin llamada a la acción; mantenemos 0 visitas al perfil y 0 compartidos en todo el histórico.
+• Probar: CTA imperativo directo: 'Guarda esta guía para tu próxima entrega' e invitación a calcular costes en uniondearquitectos.com.

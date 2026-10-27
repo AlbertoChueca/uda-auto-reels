@@ -1,5 +1,5 @@
 # Cuaderno de revisora_visual (2026-10-27)
 
-- Seguir haciendo: Cero tolerancia a artefactos de IA, figuras humanas distorsionadas o incoherencias constructivas.
-- Dejar de hacer: Datos insuficientes para evaluar rechazos recientes (todas las últimas imágenes fueron aprobadas).
-- Probar: Comprobar que los planos técnicos simulados muestren grafismo profesional creíble sin replicar proyectos reales protegidos.
+- Seguir haciendo: Veto absoluto a distorsiones de IA y figuras humanas artificiales en los visuales.
+- Dejar de hacer: Datos insuficientes para flexibilizar la exigencia; mantener el filtro riguroso en planimetría.
+- Probar: Validar que cada documento gráfico represente entregables reales de ejecución (detalles constructivos, cotas creíbles y cuadros de superficies).

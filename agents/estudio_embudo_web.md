@@ -1,5 +1,5 @@
 # Cuaderno de embudo_web (2026-10-27)
 
-- Seguir haciendo: Foco en delegar picos de trabajo sin estructura fija (generador de 89 clics en «Plantilla o delegar»).
-- Dejar de hacer: Contenido estético sin llamada a la acción hacia uniondearquitectos.com (0 clics).
-- Probar: CTA específico invitando a pedir presupuesto de delineación y cálculo en uniondearquitectos.com.
+- Seguir haciendo: Discurso centrado en absorber picos de trabajo sin aumentar estructura fija (89 clics en «Plantilla o delegar»).
+- Dejar de hacer: Publicaciones estéticas sin puente directo hacia uniondearquitectos.com (0 clics acumulados).
+- Probar: CTA específico para cotizar externalizaciones de proyectos de ejecución directamente en la web.

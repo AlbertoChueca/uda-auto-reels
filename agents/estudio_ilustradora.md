@@ -1,5 +1,5 @@
 # Cuaderno de ilustradora (2026-10-27)
 
-- Seguir haciendo: Fondos negro profundo con toques dorados e infografías limpias con estética editorial.
-- Dejar de hacer: Fotorrealismo de reformas e interiorismo doméstico sin anclaje en el negocio del arquitecto.
-- Probar: Axonometrías técnicas y detalles constructivos en línea vectorial dorada sobre negro mate para ilustrar proyectos de ejecución complejos.
+- Seguir haciendo: Estilo negro con luz cálida dorada e infografías técnicas sobrias que comunican solvencia.
+- Dejar de hacer: Renders residenciales idílicos y fotos de reformas desvinculadas de la gestión técnica del despacho.
+- Probar: Esquemas de axonométrica analítica y diagramas de flujo de trabajo en trazo dorado sobre fondo negro.

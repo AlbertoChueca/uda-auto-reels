@@ -2,7 +2,7 @@
 
 # Cuaderno de comunidad (2026-10-27)
 
-• Datos: Aún muy escasos; no hay texto de comentarios registrado en métricas, pero 'Pásaselo a tu equipo' logró los únicos 3 comentarios del canal.
-• Seguir haciendo: Temas que tocan la sobrecarga laboral y la fricción de delegar en equipo; es el único ángulo que ha roto la barrera de respuesta.
-• Dejar de hacer: Conclusiones cerradas que no invitan a debatir.
-• Probar: Pregunta de cierre explícita: '¿Cuántas horas extra dedicó tu estudio a la última entrega?' para identificar objeciones reales a la externalización.
+• Datos: Aún muy escasos, sin textos de comentarios registrados en el panel.
+• Seguir haciendo: Incidir en la sobrecarga y el reparto de tareas; 'Pásaselo a tu equipo' generó los únicos 3 comentarios registrados.
+• Dejar de hacer: Publicar sin pregunta detonante.
+• Probar: Pregunta de cierre orientada a fricciones reales: '¿Qué parte de la memoria técnica te roba más fin de semana?' para identificar objeciones a delegar.

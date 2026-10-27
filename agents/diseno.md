@@ -2,6 +2,6 @@
 
 # Cuaderno de diseno (2026-10-27)
 
-• Seguir haciendo: Formatos carrusel y mito_realidad sobre fondo carbón; retienen más tiempo (hasta 12s) y encabezan la lista de conversión (score 9.67).
-• Dejar de hacer: Formato render y composiciones visuales sin texto estructurado (scores entre 2.79 y 3.77).
-• Probar: Portadas editoriales con tipografía geométrica en blanco piedra y acento bronce restringido únicamente a cifras de horas o dinero, optimizadas para el tercio central de pantalla.
+• Seguir haciendo: Formatos carrusel y mito_realidad sobre fondo carbón; concentran los mejores scores (9.67 y 6.56) y retención.
+• Dejar de hacer: Renders aislados e infografías saturadas (scores entre 2.93 y 3.77).
+• Probar: Portadas editoriales estrictas UDA: fondo carbón, titular conciso en blanco piedra y cifras clave de coste u horas destacadas en bronce en zona segura móvil.
