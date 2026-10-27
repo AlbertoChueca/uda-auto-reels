@@ -151,6 +151,17 @@ jobs:
           retention-days: 7
           if-no-files-found: ignore
 
+      - name: Copia ligera de la prueba en la rama «pruebas» (para revisarla)
+        if: always() && inputs.dry_run && steps.slot.outputs.slot != 'skip'
+        continue-on-error: true
+        run: |
+          mkdir -p /tmp/pr && for f in $(find out -name "*.mp4" ! -name "*_review*"); do
+            n=$(basename "$f" .mp4); ffmpeg -loglevel error -y -i "$f" -vf scale=540:960 -c:v libx264 -crf 30 -preset veryfast -c:a aac -b:a 96k "/tmp/pr/$n.mp4"; done
+          find out \( -name "*.txt" -o -name "*portada*.jpg" \) -exec cp {} /tmp/pr/ \; || true
+          git config user.name "uda-bot"; git config user.email "bot@users.noreply.github.com"
+          R=prueba-${{ github.run_id }}; git fetch -q origin pruebas && git worktree add -q /tmp/wt origin/pruebas || git worktree add -q --orphan -b pruebas /tmp/wt
+          cd /tmp/wt && mkdir -p $R && cp /tmp/pr/* $R/ && git add $R && git commit -qm "$R" && git push -q origin HEAD:pruebas
+
       - name: Ampliar el banco si se ha usado el 80 %
         if: always() && steps.slot.outputs.slot != 'skip'
         continue-on-error: true
