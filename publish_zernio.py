@@ -188,13 +188,14 @@ TIKTOK_HUECO = os.environ.get("TIKTOK_HUECO", "mediodia")                  # 1 v
 
 
 def tiktok_permitido(slot):
-    """TikTok penaliza publicar mucho: como máximo 1 vídeo al día (el del hueco TIKTOK_HUECO; los manuales no), y
+    """TikTok penaliza publicar mucho: como máximo 1 vídeo al día (normalmente el de mediodía; si ese no salió, el
+    primero que se publique después), y
     nada hasta pasada la fecha de descanso. Devuelve (sí/no, motivo)."""
     hoy = datetime.date.today()
     if str(hoy) <= TIKTOK_PAUSA_HASTA:
         return False, f"TikTok en descanso hasta el {TIKTOK_PAUSA_HASTA} (cuenta restringida por exceso de publicaciones)"
-    if TIKTOK_HUECO not in ("todos", "true") and slot != TIKTOK_HUECO:
-        return False, f"TikTok: solo el reel de {TIKTOK_HUECO} (máx. 1 al día)"
+    if TIKTOK_HUECO not in ("todos", "true") and slot == "manana":
+        return False, f"TikTok: el vídeo del día va en {TIKTOK_HUECO} (máx. 1 al día)"
     try:
         for line in open(os.path.join(HERE, "log.jsonl")):
             e = json.loads(line)
