@@ -1,6 +1,8 @@
-# Cuaderno de comunidad (2026-10-26)
+# Cuaderno de comunidad (2026-10-27)
 
-• Datos: Aún muy escasos. No hay textos registrados, pero 'Pásaselo a tu equipo' logró los únicos 3 comentarios del canal.
-• Seguir haciendo: Incidir en la carga de trabajo y delegar tareas; es el único tema que ha roto la barrera del comentario.
-• Dejar de hacer: Mensajes cerrados sin pregunta detonante.
-• Probar: Lanzar una pregunta directa en el reel: '¿Qué parte de la memoria técnica te roba más tiempo?' para extraer objeciones reales.
+# Cuaderno de comunidad (2026-10-27)
+
+• Datos: Aún muy escasos; no hay texto de comentarios registrado en métricas, pero 'Pásaselo a tu equipo' logró los únicos 3 comentarios del canal.
+• Seguir haciendo: Temas que tocan la sobrecarga laboral y la fricción de delegar en equipo; es el único ángulo que ha roto la barrera de respuesta.
+• Dejar de hacer: Conclusiones cerradas que no invitan a debatir.
+• Probar: Pregunta de cierre explícita: '¿Cuántas horas extra dedicó tu estudio a la última entrega?' para identificar objeciones reales a la externalización.

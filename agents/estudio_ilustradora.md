@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-10-26)
+# Cuaderno de ilustradora (2026-10-27)
 
-- Seguir haciendo: Renders fotorrealistas y estética técnica con luz cálida dorada sobre negro profundo.
-- Dejar de hacer: Perspectivas artísticas cuando el tema requiera rigor planimétrico o planos 2D.
-- Probar: Trazados vectoriales tipo CAD en línea dorada fina sobre fondo carbón mate para representar horas de dibujo y costes.
+- Seguir haciendo: Fondos negro profundo con toques dorados e infografías limpias con estética editorial.
+- Dejar de hacer: Fotorrealismo de reformas e interiorismo doméstico sin anclaje en el negocio del arquitecto.
+- Probar: Axonometrías técnicas y detalles constructivos en línea vectorial dorada sobre negro mate para ilustrar proyectos de ejecución complejos.

@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-10-26)
+# Cuaderno de embudo_web (2026-10-27)
 
-- Seguir haciendo: Foco en delegar picos de trabajo sin asumir costes fijos de personal (motor de los 89 clics en «Plantilla o delegar»).
-- Dejar de hacer: Contenido estético sin llamada a la acción hacia uniondearquitectos.com (0 clics acumulados).
-- Probar: CTA directo enfocado en calcular el presupuesto de externalización de proyectos de ejecución en la web.
+- Seguir haciendo: Foco en delegar picos de trabajo sin estructura fija (generador de 89 clics en «Plantilla o delegar»).
+- Dejar de hacer: Contenido estético sin llamada a la acción hacia uniondearquitectos.com (0 clics).
+- Probar: CTA específico invitando a pedir presupuesto de delineación y cálculo en uniondearquitectos.com.

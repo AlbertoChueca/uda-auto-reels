@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-10-26)
+# Cuaderno de revisora_visual (2026-10-27)
 
-- Seguir haciendo: Rigor estricto al vetar planos irreales, incoherencias de carpintería y elementos impropios de un despacho profesional.
-- Dejar de hacer: Datos insuficientes para flexibilizar la exigencia en verosimilitud constructiva.
-- Probar: Control previo de escala y coherencia técnica en representaciones de proyectos de ejecución antes de publicar.
+- Seguir haciendo: Cero tolerancia a artefactos de IA, figuras humanas distorsionadas o incoherencias constructivas.
+- Dejar de hacer: Datos insuficientes para evaluar rechazos recientes (todas las últimas imágenes fueron aprobadas).
+- Probar: Comprobar que los planos técnicos simulados muestren grafismo profesional creíble sin replicar proyectos reales protegidos.

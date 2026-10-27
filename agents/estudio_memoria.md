@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-10-26)
+# Cuaderno de memoria (2026-10-27)
 
-- Seguir haciendo: Desgloses de ineficiencia horaria en tipologías concretas, palanca del guardado en «Horas caras dibujando adosados».
-- Dejar de hacer: Infografías genéricas sin datos técnicos precisos que no aportan valor archivable.
-- Probar: Tablas de equivalencia (horas internas de dibujo frente a coste de delegar) optimizadas para captura de pantalla.
+- Seguir haciendo: Desgloses de ineficiencia técnica y costes que justifican guardar el contenido («Horas caras», 1 guardado).
+- Dejar de hacer: Consejos genéricos de diseño que no sirven como consulta de trabajo.
+- Probar: Carrusel con checklist de verificación de normativa y planos mínimos para cerrar un proyecto de ejecución sin errores.

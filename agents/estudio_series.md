@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-10-26)
+# Cuaderno de series (2026-10-27)
 
-- Seguir haciendo: Datos insuficientes (el 100% de reels analizados no tiene serie asignada).
-- Dejar de hacer: Publicar piezas aisladas sin continuidad que desaprovechan la retención acumulativa.
-- Probar: Lanzar la serie fija semanal «Números de Despacho» (Cap. 1: Plantilla vs. Delegar), capitalizando el contenido con más clics.
+- Seguir haciendo: Datos insuficientes sobre impacto de series (el 100% de los reels analizados se publicó sin serie).
+- Dejar de hacer: Lanzar piezas aisladas sin continuidad temática semanal.
+- Probar: Crear la serie fija «Números de Despacho» (Cap. 1: Plantilla vs. Delegar) para fidelizar audiencia profesional.
