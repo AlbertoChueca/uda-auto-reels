@@ -67,7 +67,10 @@ def publish(reel, story, caption, meta, slot=""):
             jobs["instagram_reel"] = lambda: Z.instagram_reel(url(light), caption, meta.get("thumb_ms"))
         if on("IG_STORY") or morning:
             jobs["instagram_story"] = lambda: Z.instagram_story(url(Z.story_safe(src)))
-    if on("TIKTOK"):
+    tt_ok, tt_why = Z.tiktok_permitido(slot)
+    if not tt_ok:
+        print(tt_why, flush=True)
+    if on("TIKTOK") and tt_ok:
         def tt_video():
             cu = None
             if meta.get("cover"):
@@ -78,7 +81,7 @@ def publish(reel, story, caption, meta, slot=""):
             return Z.tiktok_video(url(light), caption, meta.get("thumb_ms"), cover_url=cu,
                                   ai=meta.get("formato") in ("visual", "render"))       # imágenes de IA: aviso de TikTok
         jobs["tiktok_video"] = tt_video
-    if on("TIKTOK_STORY_BORRADOR") and story and not morning:
+    if on("TIKTOK_STORY_BORRADOR") and tt_ok and story and not morning:
         jobs["tiktok_story_borrador"] = lambda: Z.tiktok_draft(url(story), caption.split("\n", 1)[0])
     lk = os.environ.get("LINKEDIN", "todos").lower()
     if lk in ("todos", "true"):                       # todos los reels también en LinkedIn (como vídeo nativo)

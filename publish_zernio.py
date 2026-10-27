@@ -183,6 +183,29 @@ def instagram_carousel(image_urls, caption):
 
 
 # ------------------------------------------------------------------ TikTok
+TIKTOK_PAUSA_HASTA = os.environ.get("TIKTOK_PAUSA_HASTA", "2026-10-30")   # descanso tras el exceso de publicaciones del 23/10
+TIKTOK_HUECO = os.environ.get("TIKTOK_HUECO", "mediodia")                  # 1 vídeo al día en TikTok, en este hueco
+
+
+def tiktok_permitido(slot):
+    """TikTok penaliza publicar mucho: como máximo 1 vídeo al día (el del hueco TIKTOK_HUECO; los manuales no), y
+    nada hasta pasada la fecha de descanso. Devuelve (sí/no, motivo)."""
+    hoy = datetime.date.today()
+    if str(hoy) <= TIKTOK_PAUSA_HASTA:
+        return False, f"TikTok en descanso hasta el {TIKTOK_PAUSA_HASTA} (cuenta restringida por exceso de publicaciones)"
+    if TIKTOK_HUECO not in ("todos", "true") and slot != TIKTOK_HUECO:
+        return False, f"TikTok: solo el reel de {TIKTOK_HUECO} (máx. 1 al día)"
+    try:
+        for line in open(os.path.join(HERE, "log.jsonl")):
+            e = json.loads(line)
+            if e.get("date") == str(hoy) and any(k.startswith("tiktok") and not str(v).startswith("error")
+                                                 for k, v in (e.get("publicado") or {}).items()):
+                return False, "TikTok: hoy ya hay un vídeo"
+    except Exception:
+        pass
+    return True, ""
+
+
 def tiktok_video(video_url, caption, cover_ms=1200, cover_url=None, ai=False):
     """cover_url: portada propia (la misma que en Instagram). ai=True: aviso de contenido creado con IA de TikTok."""
     ts = {"privacy_level": "PUBLIC_TO_EVERYONE", "allow_comment": True, "allow_duet": True,
