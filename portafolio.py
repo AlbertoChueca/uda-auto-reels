@@ -18,7 +18,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
 import fx
-from fx import W, H, FPS, SR, F_REG, clamp, eo, eob
+from fx import W, H, FPS, SR, F_REG, F_BOLD, clamp, eo, eob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MAN = os.path.join(HERE, "fuentes", "portfolio.json")
@@ -38,7 +38,7 @@ HOOKS = {
                  "Así se dibuja un detalle a escala 1:20",
                  "Los detalles que no ve el cliente, pero que importan"],
 }
-CIERRE_VOZ = ("El estudio diseña y firma. Nosotros desarrollamos el proyecto, con presupuesto cerrado en 24 horas.")
+CIERRE_VOZ = ("El estudio diseña y firma. Nosotros lo desarrollamos. Presupuesto cerrado en 24 horas.")
 
 
 def say(*a):
@@ -196,7 +196,7 @@ def render(G, out, seed=0):
     # cierre
     q = fx.headline("El estudio diseña y firma. Nosotros lo desarrollamos.", 74, 940, 3, color=CREMA, hot=ORO, shadow=True)
     p1 = fx.pill("Presupuesto cerrado en 24 h", 48, ORO, NEGRO, padx=34, pady=16, radius=6)
-    p2 = fx.text_block("Agenda una reunión para conocernos y crecer juntos", F_REG, 40, 900, CREMA, align="center")
+    p2 = V._panel(fx.text_block("Agenda una reunión para conocernos y crecer juntos", F_BOLD, 42, 900, (245, 240, 230), align="center"), 26, 190)
     lg = fx.logo(64, CREMA, ORO)
     web = fx.text_block("uniondearquitectos.com", F_REG, 34, 900, (200, 194, 182), align="center")
 
