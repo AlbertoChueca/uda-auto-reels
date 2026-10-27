@@ -119,5 +119,26 @@
 "linkedin_documento": "6adf7aefaffb276f2a201779"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-10-27",
+"bloque": "servicios",
+"tema": "uda_servicios",
+"subtema": "Entorno de trabajo en CAD y Revit",
+"titulo": "Revit o CAD en tu proyecto de ejecución",
+"fragmentos": [
+"04 Entorno de trabajo y punto de partida *",
+"06 Proyecto de Ejecución"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.1,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18080308529397279",
+"tiktok_carrusel": "6ae0c896f03ea53405f4cb3e",
+"linkedin_documento": "6ae0c8a1f03ea53405f4cba4"
+},
+"dry_run": false
 }
 ]
