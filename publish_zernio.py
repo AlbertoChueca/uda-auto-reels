@@ -183,7 +183,7 @@ def instagram_carousel(image_urls, caption):
 
 
 # ------------------------------------------------------------------ TikTok
-TIKTOK_PAUSA_HASTA = os.environ.get("TIKTOK_PAUSA_HASTA", "2026-10-30")   # descanso tras el exceso de publicaciones del 23/10
+TIKTOK_PAUSA_HASTA = os.environ.get("TIKTOK_PAUSA_HASTA", "2026-10-26")   # descanso tras el exceso del 23/10 (ya terminado)
 TIKTOK_HUECO = os.environ.get("TIKTOK_HUECO", "mediodia")                  # 1 vídeo al día en TikTok, en este hueco
 
 
