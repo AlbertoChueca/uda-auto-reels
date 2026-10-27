@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-27 13:21 UTC · 0 respuestas_
+_Última pasada: 2026-10-27 19:29 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -83,6 +83,9 @@ _Última pasada: 2026-10-27 13:21 UTC · 0 respuestas_
 | 2026-10-27 | instagram | galeria | Casas frente al mar | 0 | — |
 | 2026-10-27 | tiktok | galeria | Casas frente al mar | 0 | — |
 | 2026-10-27 | linkedin | galeria | Casas frente al mar | 0 | — |
+| 2026-10-27 | instagram | inspiracion | España en el Pritzker | 0 | — |
+| 2026-10-27 | tiktok | inspiracion | España en el Pritzker | 0 | — |
+| 2026-10-27 | linkedin | inspiracion | España en el Pritzker | 0 | — |
 | 2026-10-22 | instagram | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | tiktok | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | linkedin | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
@@ -95,3 +98,6 @@ _Última pasada: 2026-10-27 13:21 UTC · 0 respuestas_
 | 2026-10-26 | instagram | carrusel | Escalar tu despacho sin costes fijos | 0 | — |
 | 2026-10-26 | tiktok | carrusel | Escalar tu despacho sin costes fijos | 0 | — |
 | 2026-10-26 | linkedin | carrusel | Escalar tu despacho sin costes fijos | 0 | — |
+| 2026-10-27 | instagram | carrusel | Revit o CAD en tu proyecto de ejecución | 0 | — |
+| 2026-10-27 | tiktok | carrusel | Revit o CAD en tu proyecto de ejecución | 0 | — |
+| 2026-10-27 | linkedin | carrusel | Revit o CAD en tu proyecto de ejecución | 0 | — |
