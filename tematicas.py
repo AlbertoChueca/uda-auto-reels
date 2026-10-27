@@ -21,7 +21,7 @@ import casos
 HERE = os.path.dirname(os.path.abspath(__file__))
 INTERACCION = ["test", "vf", "encuesta", "atajos", "inspiracion"]
 UDA = ["coste", "contratar", "partidas", "actuaciones", "revit", "proceso"]
-VISUAL = ["galeria", "tips", "antes_despues", "proceso_visual", "obra"]          # visual.py (100 % del calendario)
+VISUAL = ["portfolio", "antes_despues", "tips", "proceso_visual", "galeria", "obra"]   # visual.py (100 % del calendario)
 TEMAS = INTERACCION + UDA + VISUAL
 NOMBRE = {"test": "Test de arquitecto", "vf": "¿Verdadero o falso?", "encuesta": "Encuesta", "atajos": "Guárdalo: atajos",
           "inspiracion": "Renders y curiosidades",
@@ -30,16 +30,16 @@ NOMBRE = {"test": "Test de arquitecto", "vf": "¿Verdadero o falso?", "encuesta"
           "revit": "UDA · CAD o Revit", "proceso": "UDA · Cómo trabajamos", "uda": "UDA (rota entre sus 6 temas)",
           "galeria": "Galería: «Interiores que pondría en mi casa»", "tips": "Tips visuales",
           "antes_despues": "Antes y después de una reforma", "proceso_visual": "Del boceto al render",
-          "obra": "De la zanja a la llave"}
+          "obra": "De la zanja a la llave", "portfolio": "Proyecto real de UDA (portafolio)"}
 VARIANTE = {"coste": "caso", "contratar": "contratar", "proceso": "proceso"}       # nombre interno en casos.py
 TEMA_DE_VARIANTE = {v: k for k, v in VARIANTE.items()}
 SLOTS = {"manana": 0, "mediodia": 1, "tarde": 2}
-# 100 % VISUAL (lo que triunfa en TikTok de arquitectura): lunes..domingo × (8:00, 12:00, 15:00)
-# galería 6, tips 4, antes/después 4, boceto→render 3, obra 2, curiosidades con renders 2. Nunca dos seguidos iguales.
-PLAN = [["galeria", "tips", "antes_despues"], ["proceso_visual", "galeria", "inspiracion"],
-        ["antes_despues", "tips", "galeria"], ["obra", "galeria", "antes_despues"], ["tips", "proceso_visual", "galeria"],
-        ["inspiracion", "antes_despues", "obra"], ["galeria", "tips", "proceso_visual"]]
-ROTACION = VISUAL + ["inspiracion"]
+# MENOS Y MEJOR: 2 reels al día (12:00 y 15:00; la mañana, apagada) y solo los formatos que funcionan.
+# Proyecto real de UDA 4 veces por semana; antes/después 3, tips 3, boceto→render 2, galería de interiores 2.
+PLAN = [[None, "portfolio", "antes_despues"], [None, "tips", "proceso_visual"], [None, "portfolio", "galeria"],
+        [None, "antes_despues", "tips"], [None, "portfolio", "proceso_visual"], [None, "galeria", "antes_despues"],
+        [None, "portfolio", "tips"]]
+ROTACION = [t for t in VISUAL if t != "obra"]
 
 
 def _ultimo(t, rec):

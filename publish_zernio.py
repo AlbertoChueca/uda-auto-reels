@@ -207,8 +207,29 @@ def tiktok_permitido(slot):
     return True, ""
 
 
-def tiktok_video(video_url, caption, cover_ms=1200, cover_url=None, ai=False):
-    """cover_url: portada propia (la misma que en Instagram). ai=True: aviso de contenido creado con IA de TikTok."""
+def tiktok_musica(duracion=20, seed=None):
+    """Canción en tendencia de la Biblioteca de Música Comercial de TikTok (España) para poner de fondo, o None.
+    Usa el «clip» de la canción (con el id completo, a parte del público le sale «no disponible en su país»)."""
+    import random
+    try:
+        r = requests.get(f"{API}/accounts/{_acc('tiktok')}/tiktok/commercial-music", headers=_h(),
+                         params={"countryCode": "ES"}, timeout=60)
+        tracks = _check(r, "música comercial").get("tracks") or []
+    except Exception as e:
+        print("TikTok: sin música comercial:", str(e)[:150], flush=True)
+        return None
+    ok = [t for t in tracks if (t.get("clip") or {}).get("id") and float((t.get("clip") or {}).get("durationSec") or 0) >= min(duracion, 30)]
+    ok.sort(key=lambda t: t.get("rank") or 999)
+    if not ok:
+        return None
+    t = random.Random(seed).choice(ok[:25])                           # de las 25 más en tendencia, una al azar
+    print(f"TikTok: música «{t.get('name')}» de {t.get('artist')} (puesto {t.get('rank')})", flush=True)
+    return {"musicSoundId": t["clip"]["id"], "nombre": t.get("name"), "artista": t.get("artist")}
+
+
+def tiktok_video(video_url, caption, cover_ms=1200, cover_url=None, ai=False, musica=None, voz=False):
+    """cover_url: portada propia (la misma que en Instagram). ai=True: aviso de contenido creado con IA de TikTok.
+    musica: canción de tiktok_musica() (el vídeo debe ir SIN nuestra música de fondo); voz=True la deja más baja."""
     ts = {"privacy_level": "PUBLIC_TO_EVERYONE", "allow_comment": True, "allow_duet": True,
           "allow_stitch": True, "content_preview_confirmed": True, "express_consent_given": True,
           "video_cover_timestamp_ms": int(cover_ms or 1000)}
@@ -216,15 +237,18 @@ def tiktok_video(video_url, caption, cover_ms=1200, cover_url=None, ai=False):
         ts["video_cover_image_url"] = cover_url
     if ai:
         ts["video_made_with_ai"] = True
+    if musica:
+        ts["musicSoundInfo"] = {"musicSoundId": musica["musicSoundId"], "musicSoundVolume": 30 if voz else 60}
+        ts["videoOriginalSoundVolume"] = 100
     body = {"content": _tt_text(caption), "mediaItems": [{"type": "video", "url": video_url}], "publishNow": True,
             "platforms": [{"platform": "tiktok", "accountId": _acc("tiktok")}], "tiktokSettings": ts}
     try:
         return _post(body, "tiktok vídeo")
     except RuntimeError as e:
-        if not cover_url or " 4" not in str(e)[:25]:
+        if musica or not cover_url or " 4" not in str(e)[:25]:      # con música: quien llama reintenta con el vídeo normal
             raise
-        print("TikTok no acepta la portada propia; uso el fotograma:", str(e)[:150], flush=True)
-        ts.pop("video_cover_image_url", None)
+        print("TikTok no acepta la portada propia o la música; pruebo sin ellas:", str(e)[:150], flush=True)
+        ts.pop("video_cover_image_url", None); ts.pop("musicSoundInfo", None); ts.pop("videoOriginalSoundVolume", None)
         return _post(body, "tiktok vídeo")
 
 

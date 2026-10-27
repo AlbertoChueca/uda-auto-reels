@@ -26,10 +26,18 @@ from fx import W, H, FPS, SR, F_BOLD, F_REG, F900, clamp, eo, eob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BANCO = os.path.join(HERE, "fuentes", "visual.json")
-FORMATOS = ["galeria", "proceso_visual", "antes_despues", "tips", "obra"]
+FORMATOS = ["galeria", "proceso_visual", "antes_despues", "tips", "obra", "portfolio"]
 BANCO_DE = {"proceso_visual": "proceso"}                     # nombre de la sección del banco
 NOMBRE = {"galeria": "Galería de inspiración", "proceso_visual": "Del boceto al render", "proceso": "Del boceto al render", "antes_despues": "Antes y después",
-          "tips": "Tips visuales", "obra": "De la zanja a la llave"}
+          "tips": "Tips visuales", "obra": "De la zanja a la llave", "portfolio": "Proyecto real de UDA"}
+# galerías que mejor funcionan (interiores): el resto del banco queda en reserva
+GALERIAS_TOP = {"interiores", "cocinas", "banos", "doble_altura", "dormitorios", "escaleras"}
+# ganchos de primer segundo: pregunta, POV o reto (uno por reel; {h} = titular de la pieza)
+GANCHOS = {"galeria": ["{h}", "¿Cuál elegirías tú?", "POV: diseñas tu propia casa"],
+           "tips": ["{h}", "Guárdalo: {hl}"],
+           "proceso": ["¿Cuánto cambia del boceto al render?", "POV: tu boceto se hace realidad", "Del boceto al render"],
+           "obra": ["¿Sabrías decir en qué fase va?", "POV: tu casa, de la zanja a la llave", "De la zanja a la llave"],
+           "antes_despues": ["¿Adivinas cómo estaba antes?", "Así quedó. Mira cómo estaba", "POV: compras para reformar"]}
 ORO, CREMA, NEGRO = fx.ORO, fx.CREMA, fx.NEGRO
 FOTO = ("Fotografía de arquitectura e interiorismo de revista: luz natural bonita, colores reales y cálidos, encuadre "
         "editorial, nítida y aspiracional")
@@ -62,6 +70,8 @@ def pieza(formato, seed=0):
         el = (frescas + [p for p in lista if p not in frescas])[:3]
         return {"id": "+".join(p["id"] for p in el), "ids": [f"visual:{p['id']}" for p in el], "estancias": el,
                 "hook": "Antes y después de una reforma"}
+    if formato == "galeria":
+        lista = [p for p in lista if p["id"] in GALERIAS_TOP] or lista
     frescas = [p for p in lista if f"visual:{p['id']}" not in usados] or lista
     p = dict(rng.choice(frescas)); p["ids"] = [f"visual:{p['id']}"]
     return p
@@ -229,27 +239,94 @@ def _titulo_fijo(texto):
     return fx.headline(texto, 54, 900, 2, color=CREMA, hot=ORO, hot_words=(), shadow=True)
 
 
-def guion(formato, P, pasos, bpm):
+def _jpg64(img, lado=640):
+    im = img.convert("RGB"); im.thumbnail((lado, lado))
+    b = io.BytesIO(); im.save(b, "JPEG", quality=80)
+    return base64.b64encode(b.getvalue()).decode()
+
+
+def analizar(formato, hook, pasos):
+    """Capa ORIGINAL de cada reel: un arquitecto de UDA comenta lo que se ve en cada imagen (voz) y deja una nota corta
+    en dorado. Gemini mira las imágenes de verdad. Devuelve (voz_gancho, [{"voz", "nota"}], voz_cierre) o None."""
+    import gemini
+    partes = [{"text": f"""Eres arquitecto en España (equipo técnico UDA · Unión de Arquitectos) y pones la voz a un reel
+de «{NOMBRE[formato]}» con el titular «{hook}». Te paso {len(pasos)} imágenes en orden con su etiqueta. Para CADA imagen:
+- "voz": UNA frase hablada, natural, de 8 a 15 palabras, con criterio de arquitecto sobre algo CONCRETO que se ve
+  (proporción, luz, material, detalle constructivo, por qué funciona o qué falla). Nada genérico ni de catálogo.
+  Español de España, tuteando. Sin cifras inventadas, sin normativa, sin precios, sin hablar de IA ni de «render».
+- "nota": 2 a 4 palabras para escribir sobre la imagen (p. ej. «Luz cenital», «Roble sin barniz», «Hueco a eje»).
+En antes/después: en el ANTES di qué falla; en el DESPUÉS, qué decisión lo arregla.
+Además "gancho": lo que dices en el primer segundo (máx. 8 palabras; pregunta o reto que obligue a quedarse, coherente
+con el titular) y "cierre": máx. 12 palabras que inviten a comentar o a guardar el vídeo.
+Devuelve JSON: {{"gancho": str, "frases": [{{"voz": str, "nota": str}}], "cierre": str}}"""}]
+    for k, (img, lab) in enumerate(pasos):
+        partes += [{"text": f"Imagen {k + 1}: {lab}"}, {"inline_data": {"mime_type": "image/jpeg", "data": _jpg64(img)}}]
+    try:
+        r = gemini.ask(partes, 0.7)
+        fr = r.get("frases") or []
+        if len(fr) != len(pasos) or not all(f.get("voz") for f in fr):
+            raise ValueError(f"{len(fr)} frases para {len(pasos)} imágenes")
+        for f in fr:
+            f["nota"] = " ".join(str(f.get("nota") or "").replace("«", "").replace("»", "").split()[:4])
+        return str(r.get("gancho") or hook), fr, str(r.get("cierre") or "")
+    except Exception as e:
+        say("análisis de voz no disponible (reel solo con música):", str(e)[:150])
+        return None
+
+
+def _voces(textos):
+    try:
+        import voice
+        voice.reset()
+        return voice.say_many(textos, 1.08, None, True)
+    except Exception as e:
+        say("voz no disponible (reel solo con música):", str(e)[:150])
+        return None
+
+
+def guion(formato, P, pasos, bpm, seed=0, con_voz=True):
     formato = BANCO_DE.get(formato, formato)
-    beat = 60 / bpm
+    beat = 60 / bpm; rng = random.Random(f"gancho-{seed}")
     por = {"galeria": 2, "tips": 4, "proceso": 3, "obra": 3, "antes_despues": 2}[formato]
-    hook = P.get("hook") or {"proceso": "Del boceto al render", "obra": "De la zanja a la llave"}[formato]
+    base = P.get("hook") or {"proceso": "Del boceto al render", "obra": "De la zanja a la llave"}.get(formato, NOMBRE[formato])
+    hook = rng.choice(GANCHOS[formato]).format(h=base, hl=base[:1].lower() + base[1:])
+    if len(hook) > 46:
+        hook = base
     sub = P.get("descripcion", "")
+    an = analizar(formato, hook, pasos) if con_voz else None
+    clips = _voces([an[0]] + [f["voz"] for f in an[1]] + [an[2] or "Guárdalo y cuéntanos en comentarios."]) if an else None
+    if not clips:
+        an = None
+    q = lambda d: math.ceil(d / beat - 0.05) * beat                 # cortes siempre en el tiempo fuerte
+    gh = (len(clips[0]) / SR + 0.45) if clips else 0
     golpes = []
+    if formato == "antes_despues":                                   # teaser: el DESPUÉS primero, para engancharse
+        img_d = next(img for img, lab in pasos if lab == "DESPUÉS")
+        golpes.append({"img": img_d, "label": "", "dur": q(max(beat * 3, gh)), "n": -1, "teaser": True,
+                       "voz": None, "nota": ""})
     for k, (img, lab) in enumerate(pasos):
         d = beat * por
-        if k == 0:
-            d += beat * 3                                            # el primero lleva antes el gancho (≈2 s)
         if formato == "antes_despues" and lab == "DESPUÉS":
             d = beat * 3
-        golpes.append({"img": img, "label": lab, "dur": d, "n": k})
+        vz = clips[k + 1] if clips else None
+        if vz is not None:
+            d = max(d, len(vz) / SR + 0.6)
+        if k == 0 and not golpes:
+            d += max(beat * 3, gh)                                   # el primero lleva antes el gancho
+        golpes.append({"img": img, "label": lab, "dur": q(d), "n": k, "voz": vz,
+                       "nota": an[1][k]["nota"] if an else "", "texto_voz": an[1][k]["voz"] if an else ""})
     cierre = {"galeria": (P.get("cierre", "¿Con cuál te quedas?"), "Comenta el número"),
               "tips": ("¿Cuál aplicas ya?", "Guárdalo para tu próximo proyecto"),
               "proceso": ("¿Qué fase te gusta más?", "Guárdalo y compártelo con tu equipo"),
               "obra": ("¿Cuál es la fase más difícil?", "Cuéntanoslo en comentarios"),
               "antes_despues": ("¿Cuál te sorprende más?", "Guárdalo para tu próxima reforma")}[formato]
+    fin = beat * 6
+    if clips:
+        fin = max(fin, q(len(clips[-1]) / SR + 1.4))
     return {"formato": formato, "hook": hook, "sub": sub, "golpes": golpes, "cierre": cierre, "beat": beat,
-            "fin": beat * 6}
+            "fin": fin, "voz_gancho": clips[0] if clips else None, "voz_cierre": clips[-1] if clips else None,
+            "hook_t": golpes[0]["dur"] if golpes[0].get("teaser") else max(beat * 3, gh),
+            "textos_voz": ([an[0]] + [f["voz"] for f in an[1]] + [an[2]]) if an else []}
 
 
 def render(G, out, seed=0, bpm=84):
@@ -266,9 +343,10 @@ def render(G, out, seed=0, bpm=84):
                                   hot_words=tuple(w.lower().strip("¿?¡!.,") for w in G["hook"].split() if w[:1].isdigit()),
                                   shadow=True), 50, 140)
     tit = _panel(_titulo_fijo(G["hook"]), 24, 120)
-    labs = []
+    labs, notas = [], []
     for k, g in enumerate(golpes):
         lab = g["label"]
+        notas.append(fx.pill(g["nota"].upper(), 34, (12, 12, 12), ORO, padx=22, pady=10, radius=4) if g.get("nota") else None)
         if fmt == "galeria":
             num = fx.pill(f"{k + 1:02d}", 54, ORO, NEGRO, padx=24, pady=14, radius=6)
             txt = fx.pill(lab, 54, (18, 17, 15), CREMA, padx=28, pady=14, radius=6)
@@ -326,9 +404,26 @@ def render(G, out, seed=0, bpm=84):
             if g["label"] == "DESPUÉS":
                 put(fx.shimmer(), t0s[k] + 0.1, 0.35)
     put(fx.shimmer(), t_fin + 0.2, 0.55)
-    mix = fx.dehiss(np.tanh((music + sfx) * 1.1) * 0.9)
-    wav = out.replace(".mp4", ".wav")
+    vo = np.zeros(n, np.float32)
+
+    def voz(c, at):
+        if c is None: return
+        i = int(at * SR); j = min(n, i + len(c)); vo[i:j] += c[: j - i]
+    hook_t0 = G.get("hook_t") or 3 * beat
+    voz(G.get("voz_gancho"), 0.2)
+    for k, g in enumerate(golpes):
+        if g.get("voz") is not None:
+            voz(g["voz"], t0s[k] + (hook_t0 if k == 0 else 0) + 0.25)
+    voz(G.get("voz_cierre"), t_fin + 0.35)
     import soundfile as sf
+    vwav = out.replace(".mp4", "_voz.wav")
+    if os.path.exists(vwav): os.remove(vwav)
+    if np.abs(vo).max() > 0:
+        venv = np.convolve((np.abs(vo) > 0.01).astype(np.float32), np.ones(3000) / 3000, "same")
+        music = music * (1 - 0.62 * np.clip(venv * 3, 0, 1))
+        sf.write(vwav, np.tanh((vo * 1.15 + sfx) * 1.05) * 0.92, SR)   # para TikTok con su música
+    mix = fx.dehiss(np.tanh((music + vo * 1.15 + sfx) * 1.1) * 0.9)
+    wav = out.replace(".mp4", ".wav")
     sf.write(wav, mix, SR)
 
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
@@ -344,7 +439,7 @@ def render(G, out, seed=0, bpm=84):
             k = max(i for i, a in enumerate(t0s) if a <= tt)
             g = golpes[k]; lt = tt - t0s[k]
             fr = planos[k](lt / g["dur"]).convert("RGBA")
-            if fmt == "antes_despues" and g["label"] == "DESPUÉS" and k > 0:   # cortinilla dorada desde el «antes»
+            if fmt == "antes_despues" and g["label"] == "DESPUÉS" and k > 0 and not golpes[k - 1].get("teaser"):   # cortinilla dorada desde el «antes»
                 w_ = eo(clamp(lt / 0.7))
                 if w_ < 1:
                     prev = planos[k - 1](1.0).convert("RGBA")
@@ -356,7 +451,7 @@ def render(G, out, seed=0, bpm=84):
                 prev = planos[k - 1](1.0).convert("RGBA")
                 fr = Image.blend(prev, fr, lt / 0.16)
             fr.alpha_composite(grad)
-            hook_t = 3 * beat
+            hook_t = hook_t0
             if k == 0 and lt < hook_t:                                # gancho grande al principio (solo)
                 a = eob(clamp(lt / 0.35))
                 im = hook_big
@@ -368,7 +463,13 @@ def render(G, out, seed=0, bpm=84):
             if not (k == 0 and lt < hook_t):
                 la = labs[k]; a = eo(clamp((lt - (hook_t if k == 0 else 0.18) - (0.16 if k > 0 else 0)) / 0.3))   # sin rebote
                 cy = 1270 if fmt != "tips" else 1180
-                fx.paste_center(fr, la, W / 2, cy - (1 - a) * 30, alpha=clamp(a))
+                if not g.get("teaser"):
+                    fx.paste_center(fr, la, W / 2, cy - (1 - a) * 30, alpha=clamp(a))
+                nt = notas[k]
+                if nt is not None:                                    # nota del arquitecto, en dorado
+                    b_ = eo(clamp((lt - (hook_t if k == 0 else 0) - 0.7) / 0.35))
+                    yy = (cy - la.height / 2 - 34 - nt.height / 2) if fmt != "tips" else cy + la.height / 2 + 30 + nt.height / 2
+                    fx.paste_center(fr, nt, W / 2 + (1 - b_) * 40, yy, alpha=clamp(b_))
         else:
             lt = tt - t_fin
             fr = fondo_fin.copy()
@@ -385,7 +486,7 @@ def render(G, out, seed=0, bpm=84):
     proc.stdin.close(); proc.wait(); os.remove(wav)
     if proc.returncode:
         raise RuntimeError("ffmpeg falló al codificar el reel visual")
-    return {"duration": round(total, 1), "t0s": t0s, "t_fin": t_fin}
+    return {"duration": round(total, 1), "t0s": t0s, "t_fin": t_fin, "voz": os.path.exists(vwav)}
 
 
 # ------------------------------------------------------------------ portada
@@ -405,7 +506,8 @@ def portada(G, path):
         hl = fx.headline(G["hook"], 110, 960, 3, color=CREMA, hot=ORO, shadow=True)
         fx.paste_center(base, hl, W / 2, (IV.GRID[0] + IV.GRID[1]) / 2)
     elif fmt == "antes_despues":                               # mitad antes / mitad después
-        a, d = golpes[0]["img"], golpes[1]["img"]
+        gg = [g for g in golpes if not g.get("teaser")]
+        a, d = gg[0]["img"], gg[1]["img"]
         base = _cover_fit(a.convert("RGB")).convert("RGBA")
         base.paste(_cover_fit(d.convert("RGB")).crop((W // 2, 0, W, H)), (W // 2, 0))
         ImageDraw.Draw(base).rectangle([W // 2 - 4, 0, W // 2 + 4, H], fill=ORO)
@@ -440,10 +542,9 @@ def revisar(path, G):
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", path, "-vf", "scale=360:640", "-r", "12", "-c:v", "libx264",
                         "-preset", "veryfast", "-crf", "30", "-c:a", "aac", "-b:a", "48k", small], check=True)
         data = base64.b64encode(open(small, "rb").read()).decode()
-        etiquetas = [f"{k + 1}: «{g['label']}» ({g['dur']:.1f} s)" for k, g in enumerate(G["golpes"])]
+        etiquetas = [f"{k + 1}: «{g['label'] or 'avance del resultado final'}» ({g['dur']:.1f} s)" for k, g in enumerate(G["golpes"])]
         res = reviewer._ask([{"text": f"""Eres director creativo de una cuenta de TikTok e Instagram de arquitectura para
-arquitectos y amantes del diseño. Revisa este reel VISUAL (imágenes de arquitectura creadas con IA + música, sin voz, a
-propósito). Formato: {NOMBRE[G['formato']]}. Gancho: «{G['hook']}». Imágenes en orden: {'; '.join(etiquetas)}.
+arquitectos y amantes del diseño. Revisa este reel VISUAL (imágenes de arquitectura creadas con IA + música{(" + voz de arquitecto que comenta cada imagen: «" + " / ".join(G.get("textos_voz") or []) + "»") if G.get("textos_voz") else ", sin voz, a propósito"}). Notas doradas: {[g.get("nota") for g in G["golpes"] if g.get("nota")]}. Formato: {NOMBRE[G['formato']]}. Gancho: «{G['hook']}». Imágenes en orden: {'; '.join(etiquetas)}.
 Comprueba: que cada imagen sea bonita, verosímil y coherente con su etiqueta (en antes/después y en el proceso, que sea
 reconocible la MISMA estancia o casa); defectos de IA (geometría imposible, escaleras o ventanas absurdas, texto o
 letras raras en la imagen, objetos deformes); legibilidad de los textos en el móvil y zona segura; que el gancho se
@@ -470,11 +571,17 @@ Devuelve JSON: {{"overall": number, "issues": [str], "suggestions": [str], "mala
 
 
 # ------------------------------------------------------------------ descripción
-TAGS = {"galeria": "#arquitectura #interiorismo #diseñodeinteriores #architecture #interiordesign #casas #decoracion",
-        "proceso": "#arquitectura #autocad #revit #render #arquitecto #proyecto #architecture",
-        "antes_despues": "#reforma #antesydespues #arquitectura #interiorismo #reformas #architecture",
-        "tips": "#arquitectura #tipsdearquitectura #interiorismo #diseño #architecture #arquitecto",
-        "obra": "#obra #construccion #arquitectura #arquitecto #casa #architecture"}
+TAGS = {"galeria": "#interiorismo #arquitectura #diseñodeinteriores #casasbonitas #arquitecto",
+        "proceso": "#arquitectura #autocad #revit #render #arquitecto",
+        "antes_despues": "#antesydespues #reforma #reformaintegral #interiorismo #arquitectura",
+        "tips": "#tipsdearquitectura #arquitectura #interiorismo #arquitecto #diseño",
+        "obra": "#obranueva #construccion #arquitectura #autoconstruccion #arquitecto"}
+# palabras que la gente busca en TikTok (buscador): van en la primera línea de la descripción
+CLAVES = {"galeria": "ideas de interiorismo · diseño de interiores · casas bonitas",
+          "proceso": "del boceto al render · proyecto de arquitectura · AutoCAD y Revit",
+          "antes_despues": "antes y después de una reforma · reforma integral · ideas de reforma",
+          "tips": "consejos de arquitecto · ideas para tu casa · interiorismo",
+          "obra": "construcción de una casa paso a paso · obra nueva · fases de obra"}
 
 
 def descripcion(G):
@@ -484,7 +591,7 @@ def descripcion(G):
               "proceso": " → ".join(g["label"] for g in G["golpes"]),
               "obra": " → ".join(g["label"] for g in G["golpes"]),
               "antes_despues": "Tres estancias, la misma cámara: antes y después de la reforma."}[G["formato"]]
-    return (f"{G['hook']} ✨\n\n{cuerpo}\n\n👇 {q} {sv if G['formato'] == 'galeria' else ''}".rstrip()
+    return (f"{G['hook']} ✨\n{CLAVES[G['formato']]}\n\n{cuerpo}\n\n👇 {q} {sv if G['formato'] == 'galeria' else ''}".rstrip()
             + f"\n📌 Guárdalo para tu próximo proyecto.\n\nImágenes creadas con IA por el equipo de UDA · Unión de "
               f"Arquitectos, tu equipo técnico para proyectos básicos y de ejecución.\n\n{TAGS[G['formato']]}")
 
@@ -492,6 +599,9 @@ def descripcion(G):
 # ------------------------------------------------------------------ todo junto
 def hacer(formato, out, seed=0, max_rondas=2):
     """Genera, monta, revisa y deja el reel listo. Devuelve meta (como run_daily) y la pieza (para marcarla usada)."""
+    if formato == "portfolio":                               # proyectos reales de UDA (portafolio.py)
+        import portafolio
+        return portafolio.hacer(out, seed)
     t0 = time.time()
     tematica = formato
     formato = BANCO_DE.get(formato, formato)
@@ -502,12 +612,13 @@ def hacer(formato, out, seed=0, max_rondas=2):
     bpm = random.Random(seed).choice((80, 84, 88))
     mejor = None
     for ronda in range(max_rondas):
-        G = guion(formato, P, pasos, bpm)
+        G = guion(formato, P, pasos, bpm, seed=seed)
         info = render(G, out, seed=f"{seed}-{ronda}", bpm=bpm)
         rev = revisar(out, G)
         if rev["overall"] >= 8 and not rev.get("critical"):
             mejor = (G, info, rev); break
-        malas = [int(m) - 1 for m in (rev.get("malas") or []) if str(m).isdigit() and 0 < int(m) <= len(pasos)]
+        off = 1 if G["golpes"][0].get("teaser") else 0               # el teaser repite una imagen del reel
+        malas = sorted({max(0, int(m) - 1 - off) for m in (rev.get("malas") or []) if str(m).isdigit() and 0 < int(m) <= len(pasos) + off})
         if not malas or ronda == max_rondas - 1:
             break
         say("regenero las imágenes", [m + 1 for m in malas])
@@ -525,8 +636,20 @@ def hacer(formato, out, seed=0, max_rondas=2):
     cover = portada(G, out.replace(".mp4", "_portada.jpg"))
     cap = descripcion(G)
     open(out.replace(".mp4", ".txt"), "w").write(cap)
+    tt = None
+    if info.get("voz"):                                     # TikTok: vídeo con voz y efectos, sin nuestra música
+        tt = out.replace(".mp4", "_tiktok.mp4")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", out, "-i", out.replace(".mp4", "_voz.wav"), "-map", "0:v",
+                        "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2", "-shortest", tt])
+        tt = tt if os.path.exists(tt) else None
     meta = {"formato": "visual", "estilo": "visual", "hook": G["hook"], "duration": info["duration"], "cover": cover,
             "thumb_ms": 1500, "review_score": rev["overall"], "design_score": rev["overall"], "ids": P["ids"],
-            "story_base": cover, "temas": [], "variante": formato, "tematica": tematica, "guion": "visual"}
+            "story_base": cover, "temas": [], "variante": formato, "tematica": tematica, "guion": "visual",
+            "tt_video": tt, "con_voz": bool(info.get("voz")),
+            "pregunta": {"galeria": f"👇 {G['cierre'][0]} Comenta el número",
+                         "tips": "👇 ¿Cuál de estos aplicas ya en tus proyectos?",
+                         "proceso": "👇 ¿Qué fase te gusta más: boceto, planos, modelo o render?",
+                         "obra": "👇 ¿Qué fase de obra te parece más difícil de llevar?",
+                         "antes_despues": "👇 ¿Cuál de las tres reformas te sorprende más?"}[formato]}
     say(f"listo en {time.time() - t0:.0f} s · {info['duration']} s de vídeo · nota {rev['overall']}")
     return meta, [{"id": i, "tema": "visual", "grupo": formato} for i in P["ids"]]

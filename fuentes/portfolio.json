@@ -1,0 +1,128 @@
+{
+ "_info": "Trabajos reales de UDA (marca blanca) para estudios. Láminas recortadas al dibujo: sin cajetín, logotipos, calles, coordenadas, fechas ni nombres. Nunca nombrar al cliente ni la localidad.",
+ "proyectos": [
+  {
+   "id": "a",
+   "titulo": "Vivienda unifamiliar de nueva planta",
+   "fase": "Proyecto de Ejecución",
+   "laminas": [
+    {
+     "f": "a_fontaneria",
+     "label": "Fontanería",
+     "tipo": "instalacion",
+     "capa": "a",
+     "voz": "Fontanería: agua fría y caliente, punto por punto."
+    },
+    {
+     "f": "a_electricidad",
+     "label": "Electricidad",
+     "tipo": "instalacion",
+     "capa": "a",
+     "voz": "Electricidad: circuitos, mecanismos y cuadro."
+    },
+    {
+     "f": "a_iluminacion",
+     "label": "Iluminación",
+     "tipo": "instalacion",
+     "capa": "a",
+     "voz": "Iluminación, estancia por estancia."
+    },
+    {
+     "f": "a_cimentacion",
+     "label": "Cimentación",
+     "tipo": "estructura",
+     "voz": "La cimentación, calculada y armada."
+    },
+    {
+     "f": "a_forjado",
+     "label": "Forjados",
+     "tipo": "estructura",
+     "voz": "Los forjados, con su despiece."
+    },
+    {
+     "f": "a_seccion",
+     "label": "Sección constructiva",
+     "tipo": "detalle",
+     "voz": "La sección constructiva, capa a capa."
+    },
+    {
+     "f": "a_detalles",
+     "label": "Detalles 1:20",
+     "tipo": "detalle",
+     "voz": "Y los detalles constructivos, a escala 1:20."
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titulo": "Rehabilitación de vivienda con patio",
+   "fase": "Básico y Ejecución",
+   "laminas": [
+    {
+     "f": "b_planta",
+     "label": "Planta propuesta",
+     "tipo": "planta",
+     "voz": "La planta propuesta, con superficies y acabados."
+    },
+    {
+     "f": "b_fontaneria",
+     "label": "Fontanería",
+     "tipo": "instalacion",
+     "capa": "b",
+     "voz": "Fontanería en las dos plantas."
+    },
+    {
+     "f": "b_electricidad",
+     "label": "Electricidad",
+     "tipo": "instalacion",
+     "capa": "b",
+     "voz": "Electricidad, sobre la misma base."
+    },
+    {
+     "f": "b_climatizacion",
+     "label": "Climatización",
+     "tipo": "instalacion",
+     "capa": "b",
+     "voz": "Y climatización, zona por zona."
+    },
+    {
+     "f": "b_estructura",
+     "label": "Estructura de madera",
+     "tipo": "estructura",
+     "voz": "La estructura de madera, pieza a pieza."
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titulo": "Reforma de vivienda entre medianeras",
+   "fase": "Proyecto de Ejecución",
+   "laminas": [
+    {
+     "f": "c_saneamiento",
+     "label": "Saneamiento",
+     "tipo": "instalacion",
+     "voz": "Saneamiento: cada bajante y cada colector."
+    },
+    {
+     "f": "c_fontaneria",
+     "label": "Evacuación de cubiertas",
+     "tipo": "instalacion",
+     "voz": "La evacuación de las cubiertas."
+    },
+    {
+     "f": "c_electricidad",
+     "label": "Fontanería",
+     "tipo": "instalacion",
+     "voz": "Fontanería, con sus diámetros."
+    },
+    {
+     "f": "c_detalles_estructura",
+     "label": "Detalles de estructura",
+     "tipo": "detalle",
+     "voz": "Y los detalles de la estructura de madera."
+    }
+   ]
+  }
+ ]
+}

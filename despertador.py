@@ -16,8 +16,7 @@ from zoneinfo import ZoneInfo
 import elegir_hueco as E
 
 TZ = ZoneInfo("Europe/Madrid")
-OBJETIVOS = [("daily-reels.yml", "manana", 8, 0), ("daily-reels.yml", "mediodia", 12, 0),
-             ("daily-reels.yml", "tarde", 15, 0), ("carrusel.yml", "carrusel", 18, 0)]
+OBJETIVOS = [("daily-reels.yml", s, h, m) for s, h, m in E.HUECOS["reels"]] + [("carrusel.yml", "carrusel", 18, 0)]
 ANTES = datetime.timedelta(minutes=70)          # el reel se genera antes y espera a la hora exacta
 MAX_ESPERA = datetime.timedelta(hours=5, minutes=30)
 
@@ -30,7 +29,7 @@ def proximo(now):
             t = datetime.datetime(dia.year, dia.month, dia.day, h, m, tzinfo=TZ)
             hh, mm = E.HASTA[slot]
             fin = t.replace(hour=hh, minute=mm)
-            if now <= fin and not E.publicado(slot, str(dia)):
+            if now <= fin and E.toca_dia(slot, dia) and not E.publicado(slot, str(dia)):
                 return wf, slot, t
     return None
 

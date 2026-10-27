@@ -69,7 +69,8 @@ def publicaciones():
         except Exception:
             continue
         pz = next((piezas[i] for i in (e.get("ids") or []) if i in piezas), None)
-        info = {"tematica": e.get("tematica"), "hook": e.get("hook"), "ts": e.get("ts"), "fecha": e["date"]}
+        info = {"tematica": e.get("tematica"), "hook": e.get("hook"), "ts": e.get("ts"), "fecha": e["date"],
+                "pregunta": e.get("pregunta")}
         for k, v in (e.get("publicado") or {}).items():
             v = str(v)
             if v.startswith("error") or "story" in k or "borrador" in k:
@@ -413,6 +414,20 @@ def main():
             continue
         sol = _sol(pieza)
         revelada = bool(ps.get("solucion"))
+        # 0) la pregunta del reel como primer comentario, fijada (TikTok y LinkedIn; Instagram no deja fijar)
+        pq = info.get("pregunta")
+        if pq and not ps.get("pregunta") and not sol and info.get("fecha") and \
+                (NOW.date() - datetime.date.fromisoformat(info["fecha"])).days <= 1:
+            try:
+                if PRUEBA:
+                    say(f"[prueba] {clave}: comentaría y fijaría: {pq}")
+                else:
+                    cid = api.comentar(pid, pq)
+                    fij = api.fijar(pid, cid)
+                    ps["pregunta"] = cid or "ok"
+                    say(f"{clave}: pregunta publicada" + (" y fijada" if fij else ""))
+            except Exception as e:
+                ps["pregunta"] = f"error: {str(e)[:120]}"
         # 1) la solución (o los resultados) entre 12 y 24 h después
         if sol and not revelada and NOW >= momento_solucion(clave, info, st):
             txt = texto_solucion(sol, coms)

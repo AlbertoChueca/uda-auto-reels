@@ -21,7 +21,7 @@ on:
       variante:
         description: "Temática (auto = la que toca según el calendario semanal)"
         type: choice
-        options: [auto, galeria, tips, antes_despues, proceso_visual, obra, inspiracion, test, vf, encuesta, atajos, coste, contratar, partidas, actuaciones, revit, proceso]
+        options: [auto, portfolio, galeria, tips, antes_despues, proceso_visual, obra, inspiracion, test, vf, encuesta, atajos, coste, contratar, partidas, actuaciones, revit, proceso]
         default: auto
       hueco:
         description: "Hueco al que cuenta este reel (manual = uno extra; manana/mediodia/tarde = cubre ese hueco del día)"
@@ -162,6 +162,13 @@ jobs:
       - name: Recordar piezas usadas, verificaciones y aprendizajes
         if: always() && steps.slot.outputs.slot != 'skip'
         run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" fuentes/interaccion.json fuentes/curiosidades.json used.json log.jsonl review_log.jsonl performance.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl errores_reels.log tiempos.log agents
+
+      - name: Bot de comunidad en la primera hora (pregunta fijada y respuestas rápidas)
+        if: success() && steps.slot.outputs.slot != 'skip' && !inputs.dry_run
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run comunidad.yml --ref main -f primera_hora=true || true
 
       - name: Despertador para el siguiente hueco
         if: always() && steps.slot.outputs.slot != 'manual' && steps.slot.outputs.slot != 'skip'

@@ -11,6 +11,10 @@ on:
         description: "Solo enseñar lo que haría (no publica nada)"
         type: boolean
         default: false
+      primera_hora:
+        description: "Primera hora de un reel: 4 pasadas, una cada 15 min (lo lanza el reel al publicarse)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -23,7 +27,7 @@ jobs:
   comunidad:
     if: vars.ACTIVO == 'true' && vars.COMUNIDAD != 'false'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -42,7 +46,12 @@ jobs:
           ZERNIO_LI_ACCOUNT: ${{ vars.ZERNIO_LI_ACCOUNT }}
           IG_HANDLE: ${{ vars.IG_HANDLE || '@uniondearquitectos' }}
           COMUNIDAD_DEBUG: ${{ inputs.prueba && '1' || '' }}
-        run: python comunidad.py ${{ inputs.prueba && '--prueba' || '' }} | tee comunidad.log
+        run: |
+          if [ "${{ inputs.primera_hora }}" = "true" ]; then
+            for i in 1 2 3 4; do python comunidad.py | tee -a comunidad.log; [ $i -lt 4 ] && sleep 900; done
+          else
+            python comunidad.py ${{ inputs.prueba && '--prueba' || '' }} | tee comunidad.log
+          fi
       - name: Guardar el estado
         if: always()
         run: python sincronizar.py "Comunidad $(date +%F-%H)" comunidad.json comunidad_estado.md comunidad.log

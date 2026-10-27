@@ -106,7 +106,7 @@ if not HAS_AI:                                     # sin Gemini no hay verificad
         open(os.environ["GITHUB_STEP_SUMMARY"], "a").write(f"## ❌ {msg}\n")
     if not (os.environ.get("QUIZ_MOCK") == "1" and QB.verif()):
         raise SystemExit(msg)
-LEARN = slot == "manana" or os.environ.get("LEARN") == "true"     # aprendizaje diario: una vez al día, no en cada reel
+LEARN = slot == "mediodia" or os.environ.get("LEARN") == "true"     # aprendizaje diario: una vez al día, no en cada reel
 if HAS_AI and LEARN:
     for name, fn in (("insights", lambda: __import__("insights").update()),
                      ("agentes", lambda: __import__("agents").daily_learning())):
@@ -445,6 +445,6 @@ except Exception:
     pass
 log({k: meta.get(k) for k in ("formato", "estilo", "series", "imagen", "concepto", "voice_speed", "music", "ids", "temas",
                               "respuestas", "veredicto", "hook", "hook_line", "duration", "guion", "voice", "review_score",
-                              "design_score", "arms", "publicado", "variante", "tematica", "ts")})
+                              "design_score", "arms", "publicado", "variante", "tematica", "ts", "pregunta")})
 if all(str(v).startswith("error") for v in results.values()):
     raise SystemExit("No se pudo publicar en ninguna red")

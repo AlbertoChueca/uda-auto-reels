@@ -11,7 +11,16 @@ import datetime, json, os, sys
 from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-HUECOS = {"reels": [("manana", 8, 0), ("mediodia", 12, 0), ("tarde", 15, 0)], "carrusel": [("carrusel", 18, 0)]}
+HUECOS_TODOS = {"reels": [("manana", 8, 0), ("mediodia", 12, 0), ("tarde", 15, 0)], "carrusel": [("carrusel", 18, 0)]}
+# activos (variable HUECOS_ACTIVOS, p. ej. "mediodia,tarde"): menos y mejor, 2 reels al día
+ACTIVOS = [h.strip() for h in os.environ.get("HUECOS_ACTIVOS", "mediodia,tarde").split(",") if h.strip()]
+HUECOS = {"reels": [h for h in HUECOS_TODOS["reels"] if h[0] in ACTIVOS], "carrusel": HUECOS_TODOS["carrusel"]}
+# carrusel solo algunos días (0 = lunes): por defecto martes y jueves
+DIAS_CARRUSEL = {int(d) for d in os.environ.get("DIAS_CARRUSEL", "1,3").split(",") if d.strip()}
+
+
+def toca_dia(slot, fecha):
+    return slot != "carrusel" or fecha.weekday() in DIAS_CARRUSEL
 
 
 def publicado(slot, hoy):
@@ -40,7 +49,7 @@ def elegir(tipo, now=None):
         t = now.replace(hour=h, minute=m, second=0, microsecond=0)
         hh, mm = HASTA[slot]
         fin = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
-        if t - datetime.timedelta(minutes=75) <= now <= fin and not publicado(slot, hoy):
+        if t - datetime.timedelta(minutes=75) <= now <= fin and toca_dia(slot, now.date()) and not publicado(slot, hoy):
             return slot
     return "skip"
 

@@ -78,8 +78,20 @@ def publish(reel, story, caption, meta, slot=""):
                     cu = url(meta["cover"])
                 except Exception as e:
                     print("portada de TikTok sin subir:", str(e)[:150], flush=True)
-            return Z.tiktok_video(url(light), caption, meta.get("thumb_ms"), cover_url=cu,
-                                  ai=meta.get("formato") in ("visual", "render"))       # imágenes de IA: aviso de TikTok
+            ai = meta.get("ai", meta.get("formato") in ("visual", "render"))               # imágenes de IA: aviso de TikTok
+            musica, video = None, light
+            if meta.get("tt_video") and os.path.exists(meta["tt_video"]):              # versión sin nuestra música
+                musica = Z.tiktok_musica(meta.get("duration") or 20, seed=meta.get("hook"))
+                if musica:
+                    video = Z.ig_safe(meta["tt_video"]); meta["tt_musica"] = f"{musica['nombre']} · {musica['artista']}"
+            if musica:
+                try:
+                    return Z.tiktok_video(url(video), caption, meta.get("thumb_ms"), cover_url=cu, ai=ai, musica=musica,
+                                          voz=bool(meta.get("con_voz")))
+                except Exception as e:
+                    print("TikTok con música comercial fallido; publico el vídeo con nuestra música:", str(e)[:150], flush=True)
+                    meta.pop("tt_musica", None)
+            return Z.tiktok_video(url(light), caption, meta.get("thumb_ms"), cover_url=cu, ai=ai)
         jobs["tiktok_video"] = tt_video
     if on("TIKTOK_STORY_BORRADOR") and tt_ok and story and not morning:
         jobs["tiktok_story_borrador"] = lambda: Z.tiktok_draft(url(story), caption.split("\n", 1)[0])
