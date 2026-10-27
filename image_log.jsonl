@@ -183,3 +183,9 @@
 {"date": "2026-10-27", "visual": true, "idea": "Modelo en Revit. Evita: La imagen 3 presenta un modelo 3D volumétrico que no coincide claramente con el diseño de la vivienda y altera el formato a pantalla dividida.; La imagen 2 muestra un alzado té", "ok": false, "problemas": "La imagen muestra una fotografía de una vivienda real terminada con patio en lugar de un modelo en Revit como se pedía."}
 {"date": "2026-10-27", "visual": true, "idea": "Modelo en Revit. Evita: La imagen 3 presenta un modelo 3D volumétrico que no coincide claramente con el diseño de la vivienda y altera el formato a pantalla dividida.; La imagen 2 muestra un alzado té", "ok": false, "problemas": "La imagen muestra un render fotorrealista o fotografía de una vivienda terminada en lugar de un modelo en Revit como se solicitaba."}
 {"date": "2026-10-27", "visual": true, "idea": "Modelo en Revit. Evita: La imagen 3 presenta un modelo 3D volumétrico que no coincide claramente con el diseño de la vivienda y altera el formato a pantalla dividida.; La imagen 2 muestra un alzado té", "ok": false, "problemas": "No muestra un modelo en Revit, sino una imagen de la vivienda terminada."}
+{"date": "2026-10-27", "visual": true, "idea": "dormitorio con ventana horizontal al horizonte del mar", "ok": true, "problemas": ""}
+{"date": "2026-10-27", "visual": true, "idea": "salón abierto al mar con carpinterías correderas de suelo a techo", "ok": true, "problemas": ""}
+{"date": "2026-10-27", "visual": true, "idea": "terraza de madera con piscina desbordante frente al mar", "ok": true, "problemas": ""}
+{"date": "2026-10-27", "visual": true, "idea": "casa blanca de volúmenes cúbicos frente al mar Mediterráneo", "ok": true, "problemas": ""}
+{"date": "2026-10-27", "visual": true, "idea": "porche con celosía de madera y vistas al mar", "ok": true, "problemas": ""}
+{"date": "2026-10-27", "visual": true, "idea": "casa de hormigón entre rocas junto a la costa", "ok": true, "problemas": ""}
