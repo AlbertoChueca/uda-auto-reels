@@ -167,7 +167,8 @@ proyecto que tu equipo (UDA) desarrolló para un estudio. Titular: «{G['hook']}
 frases habladas, 12 a 20 palabras en total, que digan algo CONCRETO que se ve en ese plano (qué resuelve, cómo está
 organizado, qué cuidado tiene) con naturalidad, como quien lo enseña a un colega con orgullo. Español de España.
 Prohibido: nombres de clientes, estudios, calles o municipios, fechas, precios, normativa, cifras que no se lean en el
-plano, palabras de venta («contrata», «presupuesto», «servicio»), y empezar todas igual. La primera menciona la etiqueta.
+plano, palabras de venta («contrata», «presupuesto», «servicio»), y empezar todas igual. El titular ya se ha dicho:
+NO lo repitas ni lo parafrasees; la primera frase entra directa en la lámina y menciona su etiqueta.
 Devuelve JSON: {{"frases": [str]}}"""}]
         for k, g in enumerate(G["golpes"]):
             im = Image.open(os.path.join(DIR, g["f"] + ".jpg")).convert("RGB"); im.thumbnail((1100, 1100))
