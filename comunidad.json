@@ -522,9 +522,9 @@
 "comentarios": 0
 },
 "instagram:ig:18065351669795725": {
-"pregunta": "17973365964140134",
+"pregunta": "18116765440826788",
 "personas": [],
-"comentarios": 1
+"comentarios": 2
 },
 "tiktok:6ae1d5bf5975cc7e72da7b8e": {
 "inaccesible": "Zernio tiktok comentarios 400: {\"error\":\"Failed to fetch comments\",\"type\":\"platform_error\",\"code\":\"platform_api_error\",\"platform\":\"tiktok\",\"platformError\":{\"cod"
@@ -535,6 +535,21 @@
 "uniondearquitectos"
 ],
 "comentarios": 1
+},
+"instagram:ig:18077799584443124": {
+"pregunta": "17881522203630865",
+"personas": [],
+"comentarios": 1
+},
+"tiktok:6ae1d731e421753f8d376372": {
+"pregunta": "7701494622505337632",
+"personas": [],
+"comentarios": 1
+},
+"linkedin:6ae1d730256a29624f254c54": {
+"pregunta": "error: Zernio linkedin 422: {\"error\":\"This Idempotency-Key was already used with a different request. Use a new key.\",\"type\":\"i",
+"personas": [],
+"comentarios": 0
 }
 },
 "errores": {},
@@ -617,7 +632,9 @@
 "6ae0ae6947b1d8f85edde8d4": "urn:li:ugcPost:7520846888812756992",
 "6ae0c896f03ea53405f4cb3e": "7701375906782121248",
 "6ae0c8a1f03ea53405f4cba4": "urn:li:ugcPost:7520874993161949185",
-"6ae1d5bf5975cc7e72da7b8e": "6ae1d5bf5975cc7e72da7b8e",
-"6ae1d5baaf18f61db3c81bef": "urn:li:ugcPost:7521163945819295745"
+"6ae1d5bf5975cc7e72da7b8e": "v_pub_url~v2.7701671864489445408",
+"6ae1d5baaf18f61db3c81bef": "urn:li:ugcPost:7521163945819295745",
+"6ae1d731e421753f8d376372": "7701675049593343264",
+"6ae1d730256a29624f254c54": "urn:li:ugcPost:7521165508532965376"
 }
 }
