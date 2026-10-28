@@ -1,5 +1,5 @@
-# Cuaderno de narradora_casos (2026-10-27)
+# Cuaderno de narradora_casos (2026-10-28)
 
-- Seguir haciendo: Escenas de fricción económica real de despacho («Plantilla o delegar», «Horas caras dibujando adosados»).
-- Dejar de hacer: Narrativas contemplativas de diseño o decoración sin impacto en la rentabilidad del estudio.
-- Probar: Relatos breves de un arquitecto al recibir un encargo grande (logístico o plurifamiliar) con plazos al límite.
+- Seguir haciendo: Escenas de fricción económica y logística real («Plantilla o delegar», «Horas caras dibujando adosados»).
+- Dejar de hacer: Relatos contemplativos sobre el proceso creativo que no tocan el bolsillo ni los plazos del arquitecto.
+- Probar: Narrativa breve de un despacho desbordado ante una entrega inminente de ejecución con opciones: contratar o delegar.

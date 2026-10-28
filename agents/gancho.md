@@ -1,7 +1,5 @@
-# Cuaderno de gancho (2026-10-27)
+# Cuaderno de gancho (2026-10-28)
 
-# Cuaderno de gancho (2026-10-27)
-
-• Seguir haciendo: Dilemas operativos y coste por hora ('Plantilla o delegar por encargo', score 9.67; 'Horas caras dibujando adosados', score 6.56 y 1 guardado).
-• Dejar de hacer: Ganchos de diseño o citas abstractas ('5 ideas de iluminación', score 3.49; 'La forma sigue a la función', score 3.77).
-• Probar: Fricción numérica directa en 2 segundos: '¿Cuánto pagas por delinear memorias?' o 'Delinear adosados a precio de arquitecto socio'.
+• Seguir haciendo: Dilemas directos de contratación y coste/hora ('Plantilla o delegar por encargo', score 9.67; 'Horas caras dibujando adosados', score 6.56 y 1 guardado).
+• Dejar de hacer: Ganchos estéticos, decorativos o abstractos ('Casas de campo', 3.07; '5 ideas de iluminación', 3.49).
+• Probar: Ganchos numéricos de fricción en los primeros 2 segundos: '¿Cuánto pagas la hora de memoria técnica?' o 'Delinear adosados a precio de socio'.

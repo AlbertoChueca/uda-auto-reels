@@ -1,8 +1,6 @@
-# Cuaderno de comunidad (2026-10-27)
+# Cuaderno de comunidad (2026-10-28)
 
-# Cuaderno de comunidad (2026-10-27)
-
-• Datos: Aún muy escasos, sin textos de comentarios registrados en el panel.
-• Seguir haciendo: Incidir en la sobrecarga y el reparto de tareas; 'Pásaselo a tu equipo' generó los únicos 3 comentarios registrados.
-• Dejar de hacer: Publicar sin pregunta detonante.
-• Probar: Pregunta de cierre orientada a fricciones reales: '¿Qué parte de la memoria técnica te roba más fin de semana?' para identificar objeciones a delegar.
+• Datos: Muy escasos; el panel no registra textos de comentarios, aunque 'Pásaselo a tu equipo' generó 3 comentarios.
+• Seguir haciendo: Contenido enfocado en la sobrecarga y la delegación de tareas entre el equipo del estudio.
+• Dejar de hacer: Publicaciones sin pregunta detonante al final.
+• Probar: Preguntas de cierre sobre fricciones operativas concretas: '¿Qué parte de la memoria técnica te roba más fin de semana?' para detectar objeciones a delegar.
