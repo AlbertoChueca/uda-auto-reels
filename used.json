@@ -377,5 +377,12 @@
 "fecha": "2026-10-28",
 "formato": "visual",
 "grupo": "galeria"
+},
+{
+"id": "portfolio:proyecto:b",
+"tema": "portfolio",
+"fecha": "2026-10-28",
+"formato": "visual",
+"grupo": "proyecto"
 }
 ]
