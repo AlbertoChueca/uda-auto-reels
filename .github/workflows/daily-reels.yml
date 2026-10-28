@@ -50,6 +50,8 @@ jobs:
     timeout-minutes: 120    # varios formatos si alguno no llega al 8 (+ espera a la hora de publicar)
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main          # lo último de main (si no, no ve lo que publicó el trabajo anterior y repite)
 
       - name: Elegir hueco
         id: slot

@@ -835,6 +835,22 @@ def say_many(texts, speed=1.08, styles=None, one_take=False, force=False):
 _CLIPS = {}
 
 
+def expresiva(texts, styles, speed=1.0):
+    """Voz con interpretación (altibajos, énfasis, pausas): Gemini TTS en una sola toma con dirección por frase.
+    Si Gemini no está disponible o falla, la voz habitual (Google) para no dejar el reel sin voz."""
+    if os.environ.get("VOICE_ENGINE", "gemini").lower() == "mock":
+        reset(); return say_many(texts, speed)
+    try:
+        reset("gemini")
+        clips = say_many(texts, speed, styles, one_take=True)
+        print("voice: interpretación expresiva (gemini)", flush=True)
+        return clips
+    except Exception as e:
+        print("voice: voz expresiva no disponible, uso la habitual:", str(e)[:200], flush=True)
+        reset()
+        return say_many(texts, 1.06, None, one_take=True)
+
+
 def _say_many(texts, speed, styles, one_take):
     global ENGINE_USED, LOCK
     styles = list(styles or [None] * len(texts))

@@ -34,6 +34,8 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main          # lo último de main (si no, no ve lo que publicó el trabajo anterior y repite)
       - name: ¿Toca hoy?
         id: gate
         run: |

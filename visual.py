@@ -276,9 +276,10 @@ Devuelve JSON: {{"gancho": str, "frases": [{{"voz": str, "nota": str}}], "cierre
 
 def _voces(textos):
     try:
-        import voice
-        voice.reset()
-        return voice.say_many(textos, 1.08, None, True)
+        import voice, portafolio
+        n = len(textos)
+        est = [portafolio.ESTILOS[0]] + [portafolio.ESTILOS[1 + (k % 4)] for k in range(n - 2)] + [portafolio.ESTILOS[5]]
+        return voice.expresiva(textos, est)
     except Exception as e:
         say("voz no disponible (reel solo con música):", str(e)[:150])
         return None
