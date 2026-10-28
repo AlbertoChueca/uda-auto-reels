@@ -114,6 +114,17 @@ jobs:
           [ -f models/es_ES-davefx-medium.onnx ] || curl -sSL -o models/es_ES-davefx-medium.onnx $P/es_ES-davefx-medium.onnx
           [ -f models/es_ES-davefx-medium.onnx.json ] || curl -sSL -o models/es_ES-davefx-medium.onnx.json $P/es_ES-davefx-medium.onnx.json
 
+      - name: Cazatendencias (agente 9, una vez al día)
+        if: steps.slot.outputs.slot != 'skip'
+        continue-on-error: true
+        timeout-minutes: 12
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_MATCH: ${{ vars.ZERNIO_MATCH || 'uniondearquitectos' }}
+          ZERNIO_TT_ACCOUNT: ${{ vars.ZERNIO_TT_ACCOUNT }}
+        run: python cazatendencias.py
+
       - name: Generar y publicar
         if: steps.slot.outputs.slot != 'skip'
         env:
@@ -174,7 +185,7 @@ jobs:
 
       - name: Recordar piezas usadas, verificaciones y aprendizajes
         if: always() && steps.slot.outputs.slot != 'skip'
-        run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" fuentes/interaccion.json fuentes/curiosidades.json used.json log.jsonl review_log.jsonl performance.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl errores_reels.log tiempos.log agents
+        run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" fuentes/interaccion.json fuentes/curiosidades.json used.json log.jsonl review_log.jsonl performance.json fuentes/visual.json tendencias.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl errores_reels.log tiempos.log agents
 
       - name: Bot de comunidad en la primera hora (pregunta fijada y respuestas rápidas)
         if: success() && steps.slot.outputs.slot != 'skip' && !inputs.dry_run

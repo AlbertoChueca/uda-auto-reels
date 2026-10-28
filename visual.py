@@ -64,12 +64,18 @@ def pieza(formato, seed=0):
     B = json.load(open(BANCO)); rng = random.Random(seed); usados = _used()
     formato = BANCO_DE.get(formato, formato)
     lista = B[formato]
+    import cazatendencias as CT
+    moda = [p for p in lista if CT.fresca(p) and f"visual:{p['id']}" not in usados]   # el cazatendencias va primero
     if formato == "antes_despues":
-        frescas = [p for p in lista if f"visual:{p['id']}" not in usados] or lista
+        frescas = [p for p in lista if f"visual:{p['id']}" not in usados and p not in moda] or lista
         rng.shuffle(frescas)
-        el = (frescas + [p for p in lista if p not in frescas])[:3]
+        el = (moda[:1] + frescas + [p for p in lista if p not in frescas])[:3]
         return {"id": "+".join(p["id"] for p in el), "ids": [f"visual:{p['id']}" for p in el], "estancias": el,
                 "hook": "Antes y después de una reforma"}
+    if moda:
+        p = dict(moda[-1]); p["ids"] = [f"visual:{p['id']}"]
+        say("pieza del cazatendencias:", p.get("hook") or p.get("descripcion"))
+        return p
     if formato == "galeria":
         lista = [p for p in lista if p["id"] in GALERIAS_TOP] or lista
     frescas = [p for p in lista if f"visual:{p['id']}" not in usados] or lista
@@ -173,8 +179,9 @@ def imagenes(formato, P):
                 if antes is None:
                     return None
                 despues = _gen("La MISMA estancia de la imagen de referencia (misma geometría, mismas ventanas y la misma "
-                               "cámara) después de una reforma de arquitecto: contemporánea, luminosa, materiales naturales, "
-                               "impecable", [antes])
+                               "cámara) después de una reforma de arquitecto: "
+                               + (f"{e['estilo']}, luminosa, impecable" if e.get("estilo") else
+                                  "contemporánea, luminosa, materiales naturales, impecable"), [antes])
                 return (antes, despues) if despues is not None else None
             fs = [ex.submit(par, e) for e in P["estancias"]]
             pares = [f.result() for f in fs]
@@ -589,14 +596,20 @@ CLAVES = {"galeria": "ideas de interiorismo · diseño de interiores · casas bo
 
 def descripcion(G):
     q, sv = G["cierre"]
+    import cazatendencias as CT
+    T = CT.actuales()
+    claves = (T.get("por_tipo") or {}).get(G["formato"]) or CLAVES[G["formato"]]
+    base = TAGS[G["formato"]].split()
+    extra = [h for h in T.get("hashtags") or [] if h not in base][:2]          # 2 hashtags de la semana + 3 fijos
+    tags = " ".join(base[:5 - len(extra)] + extra)
     cuerpo = {"galeria": "\n".join(f"{k + 1}. {g['label']}" for k, g in enumerate(G["golpes"])),
               "tips": "\n".join(f"{k + 1}. {g['label']}" for k, g in enumerate(G["golpes"])),
               "proceso": " → ".join(g["label"] for g in G["golpes"]),
               "obra": " → ".join(g["label"] for g in G["golpes"]),
               "antes_despues": "Tres estancias, la misma cámara: antes y después de la reforma."}[G["formato"]]
-    return (f"{G['hook']} ✨\n{CLAVES[G['formato']]}\n\n{cuerpo}\n\n👇 {q} {sv if G['formato'] == 'galeria' else ''}".rstrip()
+    return (f"{G['hook']} ✨\n{claves}\n\n{cuerpo}\n\n👇 {q} {sv if G['formato'] == 'galeria' else ''}".rstrip()
             + f"\n📌 Guárdalo para tu próximo proyecto.\n\nImágenes creadas con IA por el equipo de UDA · Unión de "
-              f"Arquitectos, tu equipo técnico para proyectos básicos y de ejecución.\n\n{TAGS[G['formato']]}")
+              f"Arquitectos, tu equipo técnico para proyectos básicos y de ejecución.\n\n{tags}")
 
 
 # ------------------------------------------------------------------ todo junto
