@@ -384,5 +384,12 @@
 "fecha": "2026-10-28",
 "formato": "visual",
 "grupo": "proyecto"
+},
+{
+"id": "portfolio:proyecto:a",
+"tema": "portfolio",
+"fecha": "2026-10-28",
+"formato": "visual",
+"grupo": "proyecto"
 }
 ]
