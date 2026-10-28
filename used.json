@@ -363,5 +363,12 @@
 "fecha": "2026-10-28",
 "formato": "visual",
 "grupo": "detalles"
+},
+{
+"id": "visual:o2",
+"tema": "visual",
+"fecha": "2026-10-28",
+"formato": "visual",
+"grupo": "obra"
 }
 ]
