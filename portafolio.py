@@ -29,7 +29,7 @@ FONDO = (12, 12, 13)
 PAPEL = (252, 251, 248)                      # la hoja: el plano tal cual, sin modo oscuro
 
 HOOKS = {
-    "proyecto": ["POV: delegas el Proyecto de Ejecución y te llega esto",
+    "proyecto": ["Delegas el Proyecto de Ejecución y te llega esto",
                  "Esto es lo que entregamos a un estudio de arquitectura",
                  "Un proyecto real, lámina a lámina"],
     "instalaciones": ["¿Cuántas horas te llevan las instalaciones?",
