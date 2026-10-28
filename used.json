@@ -356,5 +356,12 @@
 "fecha": "2026-10-28",
 "formato": "visual",
 "grupo": "capas"
+},
+{
+"id": "portfolio:detalles:c",
+"tema": "portfolio",
+"fecha": "2026-10-28",
+"formato": "visual",
+"grupo": "detalles"
 }
 ]

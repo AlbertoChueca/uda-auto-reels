@@ -1,5 +1,5 @@
 # Cuaderno de revisora_visual (2026-10-28)
 
-- Seguir haciendo: Control riguroso sobre planimetría creíble y ausencia absoluta de texto invasivo o edificios famosos.
-- Dejar de hacer: Validar escenas meramente decorativas que no aporten rigor a la práctica arquitectónica profesional.
-- Probar: Supervisar que los detalles constructivos representados correspondan a proyectos de ejecución delegables (naves, plurifamiliares o terciario).
+- Seguir haciendo: Control riguroso de coherencia constructiva y veto a estéticas de IA o figuras artificiales.
+- Dejar de hacer: Aprobar imágenes puramente decorativas desvinculadas de la realidad de un despacho de arquitectura.
+- Probar: Exigir que cualquier plano o sección representada contenga cotas, tramas y grafismo con rigor normativo real.

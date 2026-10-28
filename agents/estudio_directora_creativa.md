@@ -1,5 +1,5 @@
 # Cuaderno de directora_creativa (2026-10-28)
 
-- Seguir haciendo: Conceptos editoriales sobre rentabilidad, gestión y delegación técnica en el despacho (score 9.67 y 89 clics).
-- Dejar de hacer: Ideas genéricas de interiorismo o citas teóricas abstractas («La forma sigue a la función», score 3.77).
-- Probar: Metáforas visuales de contraste: el peso del volumen de planos acumulados frente a la sobriedad técnica del proyecto resuelto.
+- Seguir haciendo: Conceptos editoriales centrados en rentabilidad de despacho y delegación técnica («Plantilla o delegar», 89 clics).
+- Dejar de hacer: Temas aspiracionales genéricos de decoración o reformas («Cocinas», «Casas de campo», score < 3.5).
+- Probar: Portadas tipográficas sobrias y esquemas conceptuales que contrasten la sobrecarga de trabajo técnico frente a la externalización.

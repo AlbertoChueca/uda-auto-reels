@@ -1,5 +1,5 @@
 # Cuaderno de ritmo (2026-10-28)
 
-- Seguir haciendo: Ritmo pausado y explicativo en desgloses operativos densos (12.090 ms de retención en «Qué incluye delegar»).
-- Dejar de hacer: Arranques débiles sin dato de impacto que hunden el visionado a 660 ms («Escalar estudio»).
-- Probar: Impacto sonoro y cifra económica en los primeros 2 segundos para cortar la fuga antes del desglose.
+- Seguir haciendo: Ritmo sostenido y analítico en carruseles técnicos explicativos (12.090 ms en «Qué incluye delegar»).
+- Dejar de hacer: Entradas lentas sin conflicto inicial que provocan caídas inmediatas (660 ms en «Escalar estudio»).
+- Probar: Aperturas contundentes con una cifra económica o dilema de despacho en los primeros 2 segundos.

@@ -1841,8 +1841,8 @@
 "think_time": "corto"
 },
 "date": "2026-10-27",
-"views": 290,
-"reach": 24,
+"views": 291,
+"reach": 25,
 "likes": 0,
 "comments": 0,
 "shares": 0,
@@ -1854,12 +1854,12 @@
 "profile_visits": 0,
 "por_red": {
 "instagram_reel": {
-"views": 22,
-"reach": 21,
+"views": 23,
+"reach": 22,
 "likes": 0,
 "comments": 0,
 "shares": 0,
-"ig_reels_avg_watch_time": 8095,
+"ig_reels_avg_watch_time": 7822,
 "saved": 0
 },
 "tiktok_video": {
@@ -1922,7 +1922,7 @@
 "review_score": null,
 "arms": null,
 "date": "2026-10-27",
-"views": 94,
+"views": 99,
 "reach": 7,
 "likes": 0,
 "comments": 0,
@@ -1932,7 +1932,7 @@
 "impressions": 0,
 "clicks": 0,
 "profile_visits": 0,
-"ig_reels_avg_watch_time": 3130,
+"ig_reels_avg_watch_time": 3210,
 "por_red": {
 "instagram_carrusel": {
 "views": 12,
@@ -1952,18 +1952,18 @@
 "shares": 0,
 "saved": 0,
 "clicks": 0,
-"views": 82,
+"views": 87,
 "follows": 0,
 "reposts": 0,
-"igReelsVideoViewTotalTime": 262000,
-"igReelsAvgWatchTime": 3130,
+"igReelsVideoViewTotalTime": 292000,
+"igReelsAvgWatchTime": 3210,
 "reelsSkipRate": 0,
-"completionRate": 0.0119,
+"completionRate": 0.011,
 "profile_visits": 0,
 "websiteClicks": 0,
 "replays": 0,
 "engagementRate": 0,
-"ig_reels_avg_watch_time": 3130
+"ig_reels_avg_watch_time": 3210
 },
 "linkedin_documento": {
 "impressions": 0,
