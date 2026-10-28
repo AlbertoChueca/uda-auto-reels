@@ -141,12 +141,12 @@ def guion(tipo, cual, seed=0):
     sel = []
     if tipo == "proyecto":
         orden = {"planta": 0, "instalacion": 1, "estructura": 2, "detalle": 3}
-        sel = [(proy[cual], l) for l in sorted(proy[cual]["laminas"], key=lambda l: orden[l["tipo"]])]
+        sel = [(proy[cual], l) for l in sorted(proy[cual]["laminas"], key=lambda l: orden[l["tipo"]])][:6]
     else:
         quiero = ("instalacion",) if tipo == "instalaciones" else ("estructura", "detalle")
         for p in M["proyectos"]:
             sel += [(p, l) for l in p["laminas"] if l["tipo"] in quiero]
-        sel = sel[:7]
+        sel = sel[:6]
     golpes = []
     for k, (p, l) in enumerate(sel):
         prev = golpes[-1] if golpes else None
@@ -191,7 +191,9 @@ Devuelve JSON: {{"frases": [str]}}"""}]
 # ------------------------------------------------------------------ montaje
 def _escala(t):
     """«1:20» se lee «uno a veinte» (el sintetizador lo leía como una hora)."""
-    return re.sub(r"\b1:(\d+)\b", r"uno a \1", t)
+    t = re.sub(r"\b1:(\d+)\b", r"uno a \1", t)
+    t = re.sub(r"^POV:\s*", "Imagínate: ", t)                         # «POV» se leía letra a letra
+    return re.sub(r"\bUDA\b", "Uda", t)                               # la marca se dice como palabra
 
 
 ESTILOS = ["intrigued and punchy, a real question to a colleague, pitch rising at the end",

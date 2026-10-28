@@ -277,6 +277,7 @@ Devuelve JSON: {{"gancho": str, "frases": [{{"voz": str, "nota": str}}], "cierre
 def _voces(textos):
     try:
         import voice, portafolio
+        textos = [portafolio._escala(t) for t in textos]
         n = len(textos)
         est = [portafolio.ESTILOS[0]] + [portafolio.ESTILOS[1 + (k % 4)] for k in range(n - 2)] + [portafolio.ESTILOS[5]]
         return voice.expresiva(textos, est)
