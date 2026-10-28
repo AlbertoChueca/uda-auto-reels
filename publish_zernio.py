@@ -206,7 +206,10 @@ def tiktok_musica(duracion=20, seed=None):
     except Exception as e:
         print("TikTok: sin música comercial:", str(e)[:150], flush=True)
         return None
-    ok = [t for t in tracks if (t.get("clip") or {}).get("id") and float((t.get("clip") or {}).get("durationSec") or 0) >= min(duracion, 30)]
+    efecto = re.compile(r"sound|error|alert|warning|notification|effect|sfx|\bboom\b|magic|\(\d{4,}\)|ringtone|beep|"
+                        r"efecto|sonido|alarma", re.I)               # efectos de sonido: nunca de música de fondo
+    ok = [t for t in tracks if (t.get("clip") or {}).get("id") and float((t.get("clip") or {}).get("durationSec") or 0) >= min(duracion, 30)
+          and not efecto.search(f"{t.get('name')} {t.get('artist')}")]
     ok.sort(key=lambda t: t.get("rank") or 999)
     if not ok:
         return None

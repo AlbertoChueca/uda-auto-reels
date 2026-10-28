@@ -299,6 +299,8 @@ def guion(formato, P, pasos, bpm, seed=0, con_voz=True):
     por = {"galeria": 2, "tips": 4, "proceso": 3, "obra": 3, "antes_despues": 2}[formato]
     base = P.get("hook") or {"proceso": "Del boceto al render", "obra": "De la zanja a la llave"}.get(formato, NOMBRE[formato])
     hook = rng.choice(GANCHOS[formato]).format(h=base, hl=base[:1].lower() + base[1:])
+    if P.get("tendencia") and P.get("hook"):                       # el titular del cazatendencias ya es el gancho
+        hook = base
     if len(hook) > 46:
         hook = base
     sub = P.get("descripcion", "")

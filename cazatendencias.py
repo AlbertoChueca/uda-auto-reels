@@ -75,7 +75,9 @@ def musica():
         import publish_zernio as Z, requests
         r = requests.get(f"{Z.API}/accounts/{Z._acc('tiktok')}/tiktok/commercial-music", headers=Z._h(),
                          params={"countryCode": "ES"}, timeout=60)
-        return [f"{t.get('name')} · {t.get('artist')}" for t in (r.json().get("tracks") or [])[:10]]
+        ef = re.compile(r"sound|error|alert|warning|notification|effect|sfx|\bboom\b|magic|\(\d{4,}\)|efecto|sonido", re.I)
+        return [f"{t.get('name')} · {t.get('artist')}" for t in (r.json().get("tracks") or [])
+                if not ef.search(f"{t.get('name')} {t.get('artist')}")][:10]
     except Exception as e:
         say("música de TikTok no disponible:", str(e)[:120])
         return []
