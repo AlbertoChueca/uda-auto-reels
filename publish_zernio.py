@@ -184,26 +184,14 @@ def instagram_carousel(image_urls, caption):
 
 # ------------------------------------------------------------------ TikTok
 TIKTOK_PAUSA_HASTA = os.environ.get("TIKTOK_PAUSA_HASTA", "2026-10-26")   # descanso tras el exceso del 23/10 (ya terminado)
-TIKTOK_HUECO = os.environ.get("TIKTOK_HUECO", "mediodia")                  # 1 vídeo al día en TikTok, en este hueco
 
 
 def tiktok_permitido(slot):
-    """TikTok penaliza publicar mucho: como máximo 1 vídeo al día (normalmente el de mediodía; si ese no salió, el
-    primero que se publique después), y
-    nada hasta pasada la fecha de descanso. Devuelve (sí/no, motivo)."""
+    """TikTok publica lo mismo que Instagram (sin límite diario). Solo se para si hay una fecha de descanso
+    (variable TIKTOK_PAUSA_HASTA). Devuelve (sí/no, motivo)."""
     hoy = datetime.date.today()
     if str(hoy) <= TIKTOK_PAUSA_HASTA:
-        return False, f"TikTok en descanso hasta el {TIKTOK_PAUSA_HASTA} (cuenta restringida por exceso de publicaciones)"
-    if TIKTOK_HUECO not in ("todos", "true") and slot == "manana":
-        return False, f"TikTok: el vídeo del día va en {TIKTOK_HUECO} (máx. 1 al día)"
-    try:
-        for line in open(os.path.join(HERE, "log.jsonl")):
-            e = json.loads(line)
-            if e.get("date") == str(hoy) and any(k.startswith("tiktok") and not str(v).startswith("error")
-                                                 for k, v in (e.get("publicado") or {}).items()):
-                return False, "TikTok: hoy ya hay un vídeo"
-    except Exception:
-        pass
+        return False, f"TikTok en descanso hasta el {TIKTOK_PAUSA_HASTA}"
     return True, ""
 
 

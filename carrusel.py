@@ -565,7 +565,7 @@ def publish(paths, pdf, cap, c):
             res["instagram_carrusel"] = Z.instagram_carousel(urls, cap)
     except Exception as e:
         res["instagram_carrusel"] = f"error: {str(e)[:300]}"
-    if os.environ.get("TIKTOK_CARRUSEL", "false").lower() == "true":   # TikTok: solo 1 vídeo al día (el reel)
+    if os.environ.get("TIKTOK_CARRUSEL", "true").lower() == "true":    # TikTok: lo mismo que Instagram
         try:
             res["tiktok_carrusel"] = Z.tiktok_photos(urls, title, cap)
         except Exception as e:

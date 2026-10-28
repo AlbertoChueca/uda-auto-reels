@@ -1,0 +1,38 @@
+name: Copiar reel a TikTok
+
+# Publica en TikTok un reel que ya salió en Instagram/LinkedIn (sin generarlo de nuevo).
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Id de la publicación de LinkedIn en Zernio (vacío = el último reel de hoy sin TikTok)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reels
+  cancel-in-progress: false
+
+jobs:
+  copiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests
+      - name: Copiar a TikTok
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_MATCH: ${{ vars.ZERNIO_MATCH || 'uniondearquitectos' }}
+          ZERNIO_TT_ACCOUNT: ${{ vars.ZERNIO_TT_ACCOUNT }}
+        run: python copiar_a_tiktok.py ${{ inputs.post }}
+      - name: Guardar
+        if: always()
+        run: python sincronizar.py "TikTok copiado $(date +%F)" log.jsonl
