@@ -8,8 +8,8 @@ Tipos (rotan):
     capas       «Las instalaciones de una vivienda, capa a capa»: la misma planta con fontanería, electricidad, iluminación…
     detalles    «Un detalle constructivo bien resuelto, de cerca»: recorrido de cámara por secciones y detalles
 
-Estilo: planos en «modo oscuro» (la línea en crema y el color de cada instalación conservado, sobre negro), cámara
-que recorre y se acerca a donde está el trabajo (las zonas con más instalación), trazado que se «dibuja» al entrar,
+Estilo: las láminas ORIGINALES (fondo blanco, línea y colores tal cual, sin engrosar) en alta resolución, como una
+hoja sobre fondo negro; cámara que nunca amplía por encima de la resolución real (nítida siempre) y que recorre y se acerca a donde está el trabajo (las zonas con más instalación), trazado que se «dibuja» al entrar,
 etiqueta dorada por lámina, voz de arquitecto que cuenta lo que se ve y cierre con la propuesta de UDA.
 """
 import re, io, base64, json, math, os, random, subprocess, time
@@ -26,6 +26,7 @@ DIR = os.path.join(HERE, "assets", "portfolio")
 ORO, CREMA, NEGRO = fx.ORO, fx.CREMA, fx.NEGRO
 BOX = (30, 430, 1050, 1390)                 # zona del plano (entre el título y la etiqueta, dentro de la zona segura)
 FONDO = (12, 12, 13)
+PAPEL = (252, 251, 248)                      # la hoja: el plano tal cual, sin modo oscuro
 
 HOOKS = {
     "proyecto": ["POV: delegas el Proyecto de Ejecución y te llega esto",
@@ -104,16 +105,17 @@ def vista(img, z, c):
     bw, bh = BOX[2] - BOX[0], BOX[3] - BOX[1]
     iw, ih = img.size
     s = min(bw / iw, bh / ih) * z
+    s = min(s, 1.0)                                                    # nunca por encima de la resolución real: nítido
     vw, vh = bw / s, bh / s                                            # ventana en píxeles de la imagen
     cx = min(max(c[0] * iw, vw / 2), iw - vw / 2) if vw < iw else iw / 2
     cy = min(max(c[1] * ih, vh / 2), ih - vh / 2) if vh < ih else ih / 2
     x0, y0 = cx - vw / 2, cy - vh / 2
     sx0, sy0, sx1, sy1 = max(0, x0), max(0, y0), min(iw, x0 + vw), min(ih, y0 + vh)
-    out = Image.new("RGB", (bw, bh), FONDO)
+    out = Image.new("RGB", (bw, bh), PAPEL)
     if sx1 > sx0 and sy1 > sy0:
         dx0, dy0 = (sx0 - x0) * s, (sy0 - y0) * s
         dw, dh = (sx1 - sx0) * s, (sy1 - sy0) * s
-        part = img.resize((max(1, int(dw)), max(1, int(dh))), Image.BICUBIC, box=(sx0, sy0, sx1, sy1))
+        part = img.resize((max(1, int(dw)), max(1, int(dh))), Image.LANCZOS, box=(sx0, sy0, sx1, sy1))
         out.paste(part, (int(dx0), int(dy0)))
     return out
 
@@ -211,7 +213,7 @@ def _voz(textos):
 def render(G, out, seed=0):
     import visual as V
     golpes = G["golpes"]
-    imgs = [oscuro(Image.open(os.path.join(DIR, g["f"] + ".jpg"))) for g in golpes]
+    imgs = [Image.open(os.path.join(DIR, g["f"] + ".jpg")).convert("RGB") for g in golpes]
     focos = [foco(Image.open(os.path.join(DIR, g["f"] + ".jpg"))) for g in golpes]
     textos = [G["hook"]] + [g["voz"] for g in golpes] + [G["cierre_voz"]]
     clips = _voz(textos)
@@ -227,7 +229,7 @@ def render(G, out, seed=0):
     t_fin = t; d_fin = max(dur[-1] + 0.9, 2.8); total = t_fin + d_fin
     vo_at = [0.25, 0.25 + dur[0] + 0.35] + [seg[k][1] + 0.35 for k in range(1, len(golpes))] + [t_fin + 0.3]
 
-    hook_big = V._panel(fx.headline(G["hook"], 98, 960, 3, color=CREMA, hot=ORO, shadow=True), 44, 150)
+    hook_big = V._panel(fx.headline(G["hook"], 98, 960, 3, color=CREMA, hot=ORO, shadow=True), 44, 225)
     tit = V._panel(fx.headline(G["hook"], 46, 940, 2, color=CREMA, hot=ORO, shadow=True), 22, 120)
     real = fx.pill("PROYECTO REAL · HECHO POR UDA", 30, ORO, NEGRO, padx=22, pady=10, radius=4)
     subs = [fx.text_block(G["sub"] if G["tipo"] == "proyecto" else f"{g['proyecto']} · {g['fase']}", F_BOLD, 32, 960,
@@ -300,7 +302,7 @@ def render(G, out, seed=0):
 
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                              "-r", str(FPS), "-i", "-", "-i", wav, "-shortest", "-c:v", "libx264", "-preset", "veryfast",
-                             "-crf", "20", "-maxrate", "8M", "-bufsize", "12M", "-g", str(FPS * 2), "-pix_fmt", "yuv420p",
+                             "-crf", "16", "-maxrate", "14M", "-bufsize", "20M", "-tune", "stillimage", "-g", str(FPS * 2), "-pix_fmt", "yuv420p",
                              "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
                              "-movflags", "+faststart", out], stdin=subprocess.PIPE)
     bw, bh = BOX[2] - BOX[0], BOX[3] - BOX[1]
@@ -337,8 +339,6 @@ def render(G, out, seed=0):
                 fx.paste_center(fr, subs[k], W / 2, BOX[3] + 40, alpha=clamp((lt - (hook_t if k == 0 else 0.3)) / 0.4))
         else:
             lt = tt - t_fin
-            bgv = vista(imgs[-1], 1.0, (0.5, 0.5)).filter(ImageFilter.GaussianBlur(10)).convert("RGBA")
-            fr.paste(bgv, (BOX[0], BOX[1])); fr.alpha_composite(Image.new("RGBA", (W, H), (0, 0, 0, 170)))
             a = eob(clamp(lt / 0.4))
             fx.paste_center(fr, q, W / 2, 760 - (1 - a) * 30, alpha=clamp(a))
             c_ = clamp((lt - 0.5) / 0.4)
@@ -355,7 +355,7 @@ def portada(G, path):
     import infoviz as IV, themes
     T = themes.get("negro")
     g0 = G["golpes"][min(1, len(G["golpes"]) - 1)]
-    img = oscuro(Image.open(os.path.join(DIR, g0["f"] + ".jpg")))
+    img = Image.open(os.path.join(DIR, g0["f"] + ".jpg")).convert("RGB")
     base = Image.new("RGBA", (W, H), FONDO + (255,))
     v = vista(img, 1.25, foco(Image.open(os.path.join(DIR, g0["f"] + ".jpg")))).convert("RGBA")
     base.paste(v, (BOX[0], BOX[1] + 120))
@@ -378,8 +378,9 @@ def revisar(path, G):
                         "-preset", "veryfast", "-crf", "30", "-c:a", "aac", "-b:a", "48k", small], check=True)
         data = base64.b64encode(open(small, "rb").read()).decode()
         res = reviewer._ask([{"text": f"""Eres director creativo de una cuenta de arquitectura para FUNDADORES DE
-DESPACHOS. Revisa este reel con PLANOS REALES de un proyecto que UDA desarrolló para un estudio (en «modo oscuro», a
-propósito). Gancho: «{G['hook']}». Voz (sintética de España, a propósito): {' / '.join(G.get('lineas', []))}.
+DESPACHOS. Revisa este reel con PLANOS REALES de un proyecto que UDA desarrolló para un estudio (las láminas originales, sobre
+fondo blanco). Comprueba también que el dibujo se vea NÍTIDO (sin borrosidad, sin líneas engordadas o emborronadas) y
+que se entienda lo que hay dibujado en cada lámina. Gancho: «{G['hook']}». Voz (sintética de España, a propósito): {' / '.join(G.get('lineas', []))}.
 Comprueba: que la voz diga lo mismo que las etiquetas y textos en pantalla, que los textos superpuestos se lean en el
 móvil y no los tape la interfaz, que el gancho se entienda en 1,5 s, ritmo, que se vea premium e impresione a un
 arquitecto, y que NO aparezca ningún dato sensible (nombre de cliente o estudio, calle, dirección, coordenadas,
