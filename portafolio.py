@@ -229,8 +229,8 @@ def render(G, out, seed=0):
     hook_big = V._panel(fx.headline(G["hook"], 98, 960, 3, color=CREMA, hot=ORO, shadow=True), 44, 150)
     tit = V._panel(fx.headline(G["hook"], 46, 940, 2, color=CREMA, hot=ORO, shadow=True), 22, 120)
     real = fx.pill("PROYECTO REAL · HECHO POR UDA", 30, ORO, NEGRO, padx=22, pady=10, radius=4)
-    subs = [fx.text_block(G["sub"] if G["tipo"] == "proyecto" else f"{g['proyecto']} · {g['fase']}", F_REG, 30, 960,
-                          (200, 194, 182), align="center") for g in golpes]
+    subs = [fx.text_block(G["sub"] if G["tipo"] == "proyecto" else f"{g['proyecto']} · {g['fase']}", F_BOLD, 32, 960,
+                          (236, 228, 212), align="center") for g in golpes]
     labs = []
     for k, g in enumerate(golpes):
         num = fx.pill(f"{k + 1:02d}", 50, ORO, NEGRO, padx=22, pady=12, radius=6)
@@ -318,11 +318,8 @@ def render(G, out, seed=0):
             elif k > 0 and lt < 0.25:
                 prev = vista(imgs[k - 1], *cam(k - 1, seg[k - 1][2] - seg[k - 1][1], seg[k - 1][2] - seg[k - 1][1])).convert("RGBA")
                 v = Image.blend(prev, v, lt / 0.25)
-            if k == 0 and lt < 2.2:                     # el plano se «dibuja» de arriba abajo
-                p = eo(clamp(lt / 2.0)); yy = int(bh * p)
-                m = Image.new("L", (bw, bh), 0); ImageDraw.Draw(m).rectangle([0, 0, bw, yy], fill=255)
-                blank = Image.new("RGBA", (bw, bh), FONDO + (255,)); blank.paste(v, (0, 0), m); v = blank
-                ImageDraw.Draw(v).rectangle([0, max(0, yy - 2), bw, yy + 2], fill=ORO + (255,))
+            if k == 0 and lt < 0.6:                                    # la primera lámina aparece con un fundido
+                v = Image.blend(Image.new("RGBA", v.size, FONDO + (255,)), v, eo(lt / 0.6))
             fr.paste(v, (BOX[0], BOX[1]))
             fr.alpha_composite(marco)
             hook_t = dur[0] + 0.6
@@ -400,7 +397,8 @@ Devuelve JSON: {{"overall": number, "issues": [str], "suggestions": [str], "crit
     if ov < 8 and not (res.get("issues") or []) and not res.get("critical"):
         res["overall_raw"] = ov; ov = 8.0
     res["overall"] = ov
-    reviewer._log("video_portfolio", {"hook": G["hook"], "overall": ov, "issues": res.get("issues"),
+    import voice
+    reviewer._log("video_portfolio", {"hook": G["hook"], "overall": ov, "issues": res.get("issues"), "voz": voice.ENGINE_USED,
                                       "suggestions": res.get("suggestions")})
     say(f"revisión: {ov}/10", res.get("issues") or "")
     return res

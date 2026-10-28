@@ -565,7 +565,8 @@ Devuelve JSON: {{"overall": number, "issues": [str], "suggestions": [str], "mala
     if ov < 8 and not (res.get("issues") or []) and not res.get("critical"):
         res["overall_raw"] = ov; ov = 8.0                         # escala anclada: sin defectos objetivos, es un 8
     res["overall"] = ov
-    reviewer._log("video_visual", {"hook": G["hook"], "overall": ov, "issues": res.get("issues"), "malas": res.get("malas"),
+    import voice
+    reviewer._log("video_visual", {"hook": G["hook"], "overall": ov, "voz": voice.ENGINE_USED, "issues": res.get("issues"), "malas": res.get("malas"),
                                    "suggestions": res.get("suggestions")})
     say(f"revisión: {ov}/10", res.get("issues") or "")
     return res
