@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-28 05:55 UTC · 0 respuestas_
+_Última pasada: 2026-10-28 11:53 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -86,6 +86,8 @@ _Última pasada: 2026-10-28 05:55 UTC · 0 respuestas_
 | 2026-10-27 | instagram | inspiracion | España en el Pritzker | 0 | — |
 | 2026-10-27 | tiktok | inspiracion | España en el Pritzker | 0 | — |
 | 2026-10-27 | linkedin | inspiracion | España en el Pritzker | 0 | — |
+| 2026-10-28 | instagram | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
+| 2026-10-28 | linkedin | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
 | 2026-10-22 | instagram | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | tiktok | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |
 | 2026-10-22 | linkedin | carrusel | Escalar estudio sin plantilla ni costes  | 0 | — |

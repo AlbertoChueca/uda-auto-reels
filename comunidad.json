@@ -2,7 +2,8 @@
 "contestados": [
 "urn:li:comment:(urn:li:ugcPost:7519231585569759232,7519478060585431041)",
 "urn:li:comment:(urn:li:ugcPost:7519232480210567168,7519660236148764673)",
-"urn:li:comment:(urn:li:ugcPost:7519360622640300032,7519660291178086400)"
+"urn:li:comment:(urn:li:ugcPost:7519360622640300032,7519660291178086400)",
+"urn:li:comment:(urn:li:ugcPost:7521163945819295745,7521164615871971328)"
 ],
 "posts": {
 "tiktok:6ad7bfa4543d02f449a6bd81": {
@@ -519,6 +520,21 @@
 "linkedin:6ae0c8a1f03ea53405f4cba4": {
 "personas": [],
 "comentarios": 0
+},
+"instagram:ig:18065351669795725": {
+"pregunta": "17973365964140134",
+"personas": [],
+"comentarios": 1
+},
+"tiktok:6ae1d5bf5975cc7e72da7b8e": {
+"inaccesible": "Zernio tiktok comentarios 400: {\"error\":\"Failed to fetch comments\",\"type\":\"platform_error\",\"code\":\"platform_api_error\",\"platform\":\"tiktok\",\"platformError\":{\"cod"
+},
+"linkedin:6ae1d5baaf18f61db3c81bef": {
+"pregunta": "7521164615871971328",
+"personas": [
+"uniondearquitectos"
+],
+"comentarios": 1
 }
 },
 "errores": {},
@@ -600,6 +616,8 @@
 "6ae0ae6c65a286cc77ddcbeb": "7701347260042464545",
 "6ae0ae6947b1d8f85edde8d4": "urn:li:ugcPost:7520846888812756992",
 "6ae0c896f03ea53405f4cb3e": "7701375906782121248",
-"6ae0c8a1f03ea53405f4cba4": "urn:li:ugcPost:7520874993161949185"
+"6ae0c8a1f03ea53405f4cba4": "urn:li:ugcPost:7520874993161949185",
+"6ae1d5bf5975cc7e72da7b8e": "6ae1d5bf5975cc7e72da7b8e",
+"6ae1d5baaf18f61db3c81bef": "urn:li:ugcPost:7521163945819295745"
 }
 }
