@@ -370,5 +370,12 @@
 "fecha": "2026-10-28",
 "formato": "visual",
 "grupo": "obra"
+},
+{
+"id": "visual:doble_altura",
+"tema": "visual",
+"fecha": "2026-10-28",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
