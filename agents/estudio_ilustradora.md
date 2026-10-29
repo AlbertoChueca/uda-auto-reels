@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-10-28)
+# Cuaderno de ilustradora (2026-10-29)
 
-- Seguir haciendo: Paleta negro profundo con acento dorado cálido en gráficos técnicos («Tú diseñas. Nosotros, el resto»).
-- Dejar de hacer: Renders residenciales bucólicos y fotos de reformas envejecidas que desvían el perfil B2B.
-- Probar: Axonométricas analíticas y diagramas de flujo de trabajo técnico en líneas doradas precisas sobre fondo negro.
+- Seguir haciendo: Paleta negro profundo y líneas doradas con estética técnica rigurosa.
+- Dejar de hacer: Renders bucólicos, salones a doble altura y fotos decorativas que atraen público no profesional.
+- Probar: Despieces axonométricos oscuros con acentos dorados que simulen planos de ejecución y memorias técnicas reales.

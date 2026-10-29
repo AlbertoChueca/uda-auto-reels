@@ -1,5 +1,7 @@
-# Cuaderno de gancho (2026-10-28)
+# Cuaderno de gancho (2026-10-29)
 
-• Seguir haciendo: Dilemas operativos de rentabilidad y coste/hora ('Plantilla o delegar por encargo', score 9.67; 'Horas caras dibujando adosados', score 6.56 y 1 guardado).
-• Dejar de hacer: Temas decorativos, residenciales genéricos o citas teóricas ('Casas de campo', score 3.07; '5 ideas de iluminación', score 3.49; 'La forma sigue a la función', score 3.77).
-• Probar: Ganchos con fricción numérica directa en 2 segundos: 'Tu hora vale 50 €: deja de maquetar memorias' o '¿Cuánto te cuesta una entrega de ejecución en horas extra?'.
+# Cuaderno de gancho
+
+• Seguir haciendo: Ganchos sobre entregables tangibles, dilemas de contratación y coste de horas ('Plantilla o delegar por encargo', score 9.67; 'Esto es lo que entregamos...', score 8.90; 'Horas caras...', score 6.56).
+• Dejar de hacer: Ganchos de estética, interiorismo o citas teóricas ('Del boceto al render', 'Casas de campo', '5 ideas de iluminación', score 0.00).
+• Probar: Fricción numérica y entregables en los primeros 2 segundos: 'Esto le entregamos al estudio en 5 días' o '¿Cuánto te cuesta maquetar la memoria técnica?'.

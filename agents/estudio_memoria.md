@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-10-28)
+# Cuaderno de memoria (2026-10-29)
 
-- Seguir haciendo: Desgloses de ineficiencia horaria que ya lograron guardados («Horas caras dibujando adosados»).
-- Dejar de hacer: Consejos visuales y decorativos que acumulan 0 guardados en todo el histórico.
-- Probar: Tablas de equivalencia de horas/coste de redacción técnica y checklists de entregables de proyecto de ejecución.
+- Seguir haciendo: Contenido desglosado sobre horas y costes de producción técnica, único generador de guardados.
+- Dejar de hacer: Consejos de diseño o iluminación que acumulan cero guardados.
+- Probar: Checklists de entregables de proyecto de ejecución y tablas de horas estimadas por tipología para consulta recurrente.

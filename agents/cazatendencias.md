@@ -1,41 +1,40 @@
-# Cuaderno de cazatendencias (2026-10-28)
+# Cuaderno de cazatendencias (2026-10-29)
 
 ## Tendencias de la semana
-- Armarios empotrados en pasillos: Se ha viralizado la idea de aprovechar los pasillos estrechos instalando metros de armarios de suelo a techo para maximizar el almacenaje en pisos pequeños.
-- Color Drenching: Pintar paredes, techos, puertas y molduras exactamente del mismo color para crear un efecto envolvente y monocromático que elimina los límites visuales.
-- Cocinas de trabajo ocultas: En viviendas pequeñas triunfan los vídeos mostrando paneles correderos o puertas escamoteables que esconden la zona de fuegos y el desorden al recibir invitados.
-- Baños de superficies continuas: El uso de microcemento o porcelánico de gran formato sin juntas, junto con duchas a ras de suelo, domina los vídeos de reformas por su estética limpia y amplitud visual.
-- Lujo humano y texturas táctiles: La audiencia rechaza los espacios fríos y busca casas que se sientan vividas, premiando los primeros planos de materiales naturales, maderas rugosas y textiles gruesos.
-- Mezcla de contemporáneo con vintage: Añadir piezas con historia, pátina o toques retro en espacios modernos rompe la uniformidad y genera mucha interacción y preguntas en los 'house tours'.
+- Casas reales e imperfectas: La gente está agotada de la perfección inalcanzable de las redes; se viralizan hogares emocionales, vividos y con historia, priorizando la comodidad sobre la estética 'para la foto'.
+- Cocinas de trabajo ocultas: Vuelve el concepto de 'office' tradicional o la cocina sucia oculta tras paneles correderos para mantener el orden visual en el salón, muy demandado en los house tours.
+- Baños de superficie continua: El uso de microcemento o porcelánico de gran formato sin juntas, junto con duchas a ras de suelo, genera mucha interacción por la sensación de amplitud, lujo y facilidad de limpieza.
+- Diseño biofílico y biomateriales: Hay una creciente alerta sobre la toxicidad en interiores; triunfan los vídeos mostrando materiales saludables como bambú, arcilla, madera natural y fibras vegetales.
+- Arquitectura fluida y curva: Las líneas rígidas se suavizan. Mostrar arcos, muebles redondeados y transiciones orgánicas da paz visual y retiene a la audiencia por su efecto relajante.
+- Eficiencia energética visible: Mostrar cómo una reforma mejora el aislamiento térmico (ventanas, materiales) y reduce el consumo es un gancho viral absoluto debido a la preocupación por el ahorro económico.
 
 ## Estilos
-- madera oscura con veta visible
-- verde oliva profundo
-- marrón chocolate
-- terracota suave
-- azul klein para acentos
-- siluetas redondeadas y orgánicas
+- verde oliva y salvia
+- tonos terracota y arcilla
+- madera natural cálida
+- microcemento continuo
+- japandi cálido
+- texturas artesanales
 
 ## Para nuestro equipo
-- Aprovechar la fuerza visual del color drenching en tonos tierra y verde oliva; genera gran retención en los primeros segundos.
-- Explotar los planos detalle de texturas táctiles y continuas en baños para conectar con el perfil técnico y reformista.
-- Prescindir de interiores blancos fríos o minimalismos impersonales, ya que la audiencia premia la calidez material.
-- Enfocar el contenido de armarios y almacenaje hacia la solución arquitectónica invisible y panelada.
+- Aprovechar el rechazo al minimalismo frío mostrando materiales con textura táctil: morteros de arcilla, travertino sin pulir y maderas con nudo visible.
+- Enfocar el valor de la cocina oculta como una solución elegante para arquitectos que buscan continuidad espacial entre salón y office sin ruido visual.
+- Evitar los fondos blancos impolutos o muebles lacados brillantes; la audiencia madura y profesional busca calidez atemporal y autenticidad constructiva.
+- Priorizar tomas con luz natural baja y lateral que resalten las curvas arquitectónicas y los encuentros limpios de carpintería.
 
 ## Ya quemado
-- El minimalismo rígido y los espacios que parecen de catálogo
-- El 'rojo inesperado' (ahora sustituido por el naranja setentero)
-- El beige pálido, el blanco clínico y los grises fríos
-- Muebles de acabados perfectos y lisos sin textura
+- El blanco aséptico o estilo hospital sin texturas
+- Las casas de revista perfectas pero inhabitables e impersonales
+- Muebles de líneas excesivamente rectas, rígidas y minimalismo extremo
 
 ## Música en tendencia (TikTok, España)
 - Lost in the Clouds · NyKuo
-- Alert sound to warn of danger (warning: medium)(98764) · modeeisennui
-- System error sound, mechanical alert sound 2(985596) · arnold26
-- Magic "Hawawan"(139908) · sadakichi ( sadakkey )
-- Darkness / Magic / Boom / Evil_02 · MATSU
 - Cool Girl · Jayde Mari
-- Error (message, notification, stop) _02 · gunsou
 - cool girls · Sonatara
-- Gentle lo-fi, chill-out R & B(1158372) · SIRS24
 - Outgoing Haze · DJ BAI
+- 酒会背景音乐-Music for the Royal Fireworks Suite · P&P Music
+- Jittery Outcome · DJ BAI
+- The Trailer · Ruiqi Zhao
+- Spectacular Moment · life motivation
+- Neon Nights · Adrian Rover
+- Please Holding Me (Lofi) · Muspace Lofi

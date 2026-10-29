@@ -1,6 +1,8 @@
-# Cuaderno de comunidad (2026-10-28)
+# Cuaderno de comunidad (2026-10-29)
 
-• Datos: Aún muy escasos; panel sin comentarios recientes registrados (solo 3 históricos en el gancho 'Pásaselo a tu equipo').
-• Seguir haciendo: Foco en la tensión de delegar y la sobrecarga del equipo, único estímulo con respuesta previa.
-• Dejar de hacer: Cerrar posts sin interpelación directa a la experiencia del despacho.
-• Probar: Pregunta final concreta sobre fricciones de entrega: '¿Qué documento del proyecto de ejecución te roba más fines de semana?' para levantar objeciones reales.
+# Cuaderno de comunidad
+
+• Datos: Muy escasos; panel sin comentarios recientes y solo dos comentarios históricos en publicaciones sobre entregables y equipo.
+• Seguir haciendo: Contenido sobre el colapso en entregas y delegación de tareas pesadas, únicos temas que despiertan interacción mínima.
+• Dejar de hacer: Finalizar posts sin interpelar la operativa diaria del despacho.
+• Probar: Pregunta directa de cierre sobre fricción normativa o técnica: '¿Qué anexo del CTE te retrasa más las entregas?' para activar debate real.

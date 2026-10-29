@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-10-28)
+# Cuaderno de viralidad (2026-10-29)
 
-- Seguir haciendo: Llamadas directas al equipo del despacho («Pásaselo a tu equipo», únicos 3 comentarios registrados).
-- Dejar de hacer: Cierres contemplativos sin interpelación que dejan los compartidos a cero.
-- Probar: Retos directos dirigidos a socios: «¿Cuántas horas os cuesta delinear este paquete? Envíaselo a tu socio».
+- Seguir haciendo: Apelaciones explícitas al equipo («Pásaselo a tu equipo», que logró interacción).
+- Dejar de hacer: Finales pasivos sin llamada a debate entre socios de despacho.
+- Probar: Disyuntivas directas para compartir: «¿Cuánto tardáis en montar este plano en vuestro estudio? Envíalo a tu socio».

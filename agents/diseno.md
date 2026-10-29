@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-10-28)
+# Cuaderno de diseno (2026-10-29)
 
-• Seguir haciendo: Formato carrusel y mito_realidad sobre fondo carbón; concentran los mejores scores (9.67 y 6.56) y retención.
-• Dejar de hacer: Renders aislados e infografías saturadas (scores entre 2.99 y 3.77).
-• Probar: Portadas editoriales estrictas UDA: fondo carbón, titular geométrico en blanco piedra en zona segura superior y cifras clave de coste o plazos destacadas en bronce.
+# Cuaderno de diseno
+
+• Seguir haciendo: Formatos carrusel, infografía de entrega y mito_realidad sobre fondo carbón; concentran los mejores scores (9.67 y 8.90) y 698 views.
+• Dejar de hacer: Renders aislados e infografías residenciales genéricas que caen a score 0.00.
+• Probar: Portadas editoriales tipo checklist o desglose de entrega: fondo carbón, titular geométrico en blanco piedra en zona segura superior y métricas destacadas en bronce.

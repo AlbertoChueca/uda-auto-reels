@@ -391,5 +391,12 @@
 "fecha": "2026-10-28",
 "formato": "visual",
 "grupo": "proyecto"
+},
+{
+"id": "vitruvio",
+"tema": "uda_casos",
+"fecha": "2026-10-29",
+"formato": "render",
+"grupo": null
 }
 ]

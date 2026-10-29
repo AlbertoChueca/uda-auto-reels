@@ -343,6 +343,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-28"
+},
+{
+"id": "t20261029g",
+"hook": "Espacios curvos que transmiten calma",
+"cierre": "¿Cuál tendrías en tu casa?",
+"escenas": [
+{
+"idea": "Salón bañado en luz con paso abovedado de mortero de arcilla y sofá curvo tapizado en lino color arena.",
+"label": "Paso abovedado"
+},
+{
+"idea": "Distribuidor fluido con pared ondulada de revoco a la cal y hornacina iluminada para vasija cerámica artesanal.",
+"label": "Pared ondulada"
+},
+{
+"idea": "Dormitorio sereno con cabecero semicircular de madera estriada y mesita suspendida de esquinas redondeadas.",
+"label": "Cabecero orgánico"
+},
+{
+"idea": "Baño continuo de microcemento terracota con ducha semicilíndrica exenta y lucernario circular cenital.",
+"label": "Ducha cilíndrica"
+},
+{
+"idea": "Cocina con isla curva de travertino apomazado y módulos bajos de roble con cantos suavizados.",
+"label": "Isla escultural"
+},
+{
+"idea": "Escalera helicoidal de hormigón claro pulido que asciende de forma suave junto a una cristalera al jardín.",
+"label": "Escalera helicoidal"
+}
+],
+"tendencia": true,
+"fecha": "2026-10-29"
 }
 ],
 "proceso": [
@@ -382,6 +415,13 @@
 "descripcion": "una vivienda unifamiliar con patio central revestida en mortero de cal y carpintería de nogal",
 "tendencia": true,
 "fecha": "2026-10-28"
+},
+{
+"id": "t20261029p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar orgánica con muros curvos de tierra compactada y carpintería de castaño",
+"tendencia": true,
+"fecha": "2026-10-29"
 }
 ],
 "antes_despues": [
@@ -422,6 +462,14 @@
 "estilo": "distribuidor continuo con armarios ocultos panelados en madera oscura y foseados lineales",
 "tendencia": true,
 "fecha": "2026-10-28"
+},
+{
+"id": "t20261029a",
+"tipo": "estancia",
+"descripcion": "una cocina cerrada y angosta con alicatado marrón setentero, suelo de terrazo apagado y muebles oscuros",
+"estilo": "espacio fluido en roble cálido, paneles escamoteables y encimera de cuarcita beige",
+"tendencia": true,
+"fecha": "2026-10-29"
 }
 ],
 "tips": [
@@ -630,6 +678,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-28"
+},
+{
+"id": "t20261029t",
+"hook": "5 claves para ocultar la cocina",
+"tips": [
+{
+"tip": "Puertas escamoteables integradas en pared",
+"idea": "Frente de nogal con hojas plegables abiertas que revelan una zona de trabajo completa con iluminación cálida empotrada."
+},
+{
+"tip": "Mismo acabado en módulos y tabiquería",
+"idea": "Revestimiento continuo de paneles alistonados que disimula los armarios altos y la campana extractora como un único muro decorativo."
+},
+{
+"tip": "Campana extractora de superficie invisible",
+"idea": "Isla central en cuarcita beige con placa de cocción enrasada y extracción integrada sin volumen colgante en el techo."
+},
+{
+"tip": "Despensa ciega para pequeños electrodomésticos",
+"idea": "Módulo en columna con frente corredero coplanar que esconde cafetera, tostadora y enchufes sobre encimera de piedra."
+},
+{
+"tip": "Correderas de vidrio acanalado traslúcido",
+"idea": "Grandes paneles de suelo a techo con perfilería embutida que tamizan la luz y aíslan visualmente la zona de fuegos."
+}
+],
+"tendencia": true,
+"fecha": "2026-10-29"
 }
 ],
 "obra": [

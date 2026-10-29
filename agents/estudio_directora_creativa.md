@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-10-28)
+# Cuaderno de directora_creativa (2026-10-29)
 
-- Seguir haciendo: Conceptos editoriales centrados en rentabilidad de despacho y delegación técnica («Plantilla o delegar», 89 clics).
-- Dejar de hacer: Temas aspiracionales genéricos de decoración o reformas («Cocinas», «Casas de campo», score < 3.5).
-- Probar: Portadas tipográficas sobrias y esquemas conceptuales que contrasten la sobrecarga de trabajo técnico frente a la externalización.
+- Seguir haciendo: Enfoque editorial B2B centrado en dilemas de gestión y entregables («Plantilla o delegar», «Esto es lo que entregamos»).
+- Dejar de hacer: Estética de interiorismo y reformas residenciales («Cocinas», «Casas frente al mar», score 0).
+- Probar: Infografías sobrias de contraste entre carga de delineación interna y entrega técnica empaquetada.
