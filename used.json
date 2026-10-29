@@ -398,5 +398,26 @@
 "fecha": "2026-10-29",
 "formato": "render",
 "grupo": null
+},
+{
+"id": "visual:t20261028a",
+"tema": "visual",
+"fecha": "2026-10-29",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:a4",
+"tema": "visual",
+"fecha": "2026-10-29",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:a5",
+"tema": "visual",
+"fecha": "2026-10-29",
+"formato": "visual",
+"grupo": "antes_despues"
 }
 ]
