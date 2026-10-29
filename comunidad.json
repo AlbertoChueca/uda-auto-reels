@@ -703,6 +703,17 @@
 "pregunta": "error: Zernio linkedin 422: {\"error\":\"This Idempotency-Key was already used with a different request. Use a new key.\",\"type\":\"i",
 "personas": [],
 "comentarios": 0
+},
+"instagram:ig:18374719669209496": {
+"personas": [],
+"comentarios": 0
+},
+"tiktok:6ae327371e51c28c80168372": {
+"inaccesible": "Zernio tiktok comentarios 400: {\"error\":\"Failed to fetch comments\",\"type\":\"platform_error\",\"code\":\"platform_api_error\",\"platform\":\"tiktok\",\"platformError\":{\"cod"
+},
+"linkedin:6ae32735bbb67e9403e14d86": {
+"personas": [],
+"comentarios": 0
 }
 },
 "errores": {},
@@ -794,6 +805,8 @@
 "6ae2442a38e44c6664d23b88": "urn:li:ugcPost:7521282563898937347",
 "6ae244d938e44c6664d2417e": "7701794109371010336",
 "6ae2568ff5e1f4f4bf8e1a8f": "v_pub_url~v2.7701813311532255265",
-"6ae2568cf5e1f4f4bf8e1a8b": "urn:li:ugcPost:7521302306718437376"
+"6ae2568cf5e1f4f4bf8e1a8b": "urn:li:ugcPost:7521302306718437376",
+"6ae327371e51c28c80168372": "v_pub_url~v2.7702042905690703904",
+"6ae32735bbb67e9403e14d86": "urn:li:ugcPost:7521526331470303235"
 }
 }
