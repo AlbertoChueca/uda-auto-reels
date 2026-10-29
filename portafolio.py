@@ -343,7 +343,8 @@ def render(G, out, seed=0):
     subs = [fx.text_block(G["sub"] if G["tipo"] == "proyecto" else f"{g['proyecto']} · {g['fase']}", F_BOLD, 32, 960,
                           (236, 228, 212), align="center") for g in golpes]
     labs = []
-    numeros = [fx.headline(str(len(golpes) - k), 230, 300, 1, color=ORO, hot=ORO, shadow=True) for k in range(len(golpes))]
+    numeros = [V._panel(fx.headline(str(len(golpes) - k), 200, 300, 1, color=ORO, hot=ORO, shadow=True), 22, 225)
+               for k in range(len(golpes))]
     que_es = fx.pill("¿QUÉ ES?", 56, ORO, NEGRO, padx=34, pady=16, radius=6)
     if intro:
         ic = [fx.pill("EL ENCARGO", 34, ORO, NEGRO, padx=24, pady=10, radius=4),
