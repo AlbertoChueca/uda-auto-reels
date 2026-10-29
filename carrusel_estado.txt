@@ -1,9 +1,9 @@
-Carrusel 2026-10-27 15:50 UTC
-carrusel: verificado (Entorno de trabajo en CAD y Revit)
-carrusel: revisión 8.1/10 ['La caja blanca con el dominio en la diapositiva final (05/05) rompe drásticamente la paleta negro/oro y parece un elemento gráfico descontextualizado o sin integrar.', 'Exceso de llamadas a la acción dispersas en la última lámina: compiten simultáneamente la petición de guardar/compartir, las tres viñetas de beneficios, el botón dorado de reunión y el cajetín de la web.', "La coletilla de pie de página ('Fuente: Listado de documentos de UDA, Apartado 04 y 06') en láminas 1 a 4 añade ruido burocrático innecesario que resta elegancia editorial."]
-carrusel: Qué hace UDA por tu despacho · Entorno de trabajo en CAD y Revit · 5 imágenes
-Instagram carrusel: https://www.instagram.com/p/DfAOJ8EG3QC/
+Carrusel 2026-10-29 15:50 UTC
+carrusel: verificado (Facturar más delegando la técnica)
+carrusel: revisión 8.2/10 ['La ilustración de la portada muestra una planta esquemática excesivamente simple (dos estancias básicas) que desmerece ante un público de despachos que desarrollan bloques residenciales y obra mayor; convendría un detalle de proyecto de ejecución real o un grafismo técnico más riguroso.', "Redundancia en la cabecera de portada: 'FACTURAR MÁS EN TU DESPACHO' justo encima del titular principal 'Factura más delegando la técnica'.", 'La diapositiva final (05) acumula demasiada densidad y jerarquía dispersa: conviven llamada a guardar, checklist de 3 puntos, botón dorado de reunión y caja de URL con tipografías y pesos desiguales, restándole sofisticación al remate.']
+carrusel: Facturar más y ganar tiempo delegando · Facturar más delegando la técnica · 5 imágenes
+Instagram carrusel: https://www.instagram.com/p/DfFXxBBGDO_/
 Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
-Zernio tiktok carrusel: creado 6ae0c896f03ea53405f4cb3e
-Zernio linkedin documento: creado 6ae0c8a1f03ea53405f4cba4
-publicación: {"instagram_carrusel": "ig:18080308529397279", "tiktok_carrusel": "6ae0c896f03ea53405f4cb3e", "linkedin_documento": "6ae0c8a1f03ea53405f4cba4"}
+Zernio tiktok carrusel: creado 6ae36baa2cd33a753317225c
+Zernio linkedin documento: creado 6ae36bb603d3ea4d600ce26a
+publicación: {"instagram_carrusel": "ig:18121601590959961", "tiktok_carrusel": "6ae36baa2cd33a753317225c", "linkedin_documento": "6ae36bb603d3ea4d600ce26a"}

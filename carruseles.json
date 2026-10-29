@@ -140,5 +140,25 @@
 "linkedin_documento": "6ae0c8a1f03ea53405f4cba4"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-10-29",
+"bloque": "negocio",
+"tema": "uda_delegar",
+"subtema": "Facturar más delegando la técnica",
+"titulo": "Factura más delegando la técnica",
+"fragmentos": [
+"UnionDeArquitectos | ORG - UDA - Unión de Arquitectos"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.2,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18121601590959961",
+"tiktok_carrusel": "6ae36baa2cd33a753317225c",
+"linkedin_documento": "6ae36bb603d3ea4d600ce26a"
+},
+"dry_run": false
 }
 ]
