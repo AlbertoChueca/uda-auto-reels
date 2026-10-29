@@ -34,10 +34,10 @@ NOMBRE = {"test": "Test de arquitecto", "vf": "¿Verdadero o falso?", "encuesta"
 VARIANTE = {"coste": "caso", "contratar": "contratar", "proceso": "proceso"}       # nombre interno en casos.py
 TEMA_DE_VARIANTE = {v: k for k, v in VARIANTE.items()}
 SLOTS = {"manana": 0, "mediodia": 1, "tarde": 2}
-# MENOS Y MEJOR: 2 reels al día (12:00 y 15:00; la mañana, apagada) y solo los formatos que funcionan.
-# Proyecto real de UDA 4 veces por semana; antes/después 3, tips 3, boceto→render 2, galería de interiores 2.
-PLAN = [[None, "portfolio", "antes_despues"], [None, "tips", "proceso_visual"], [None, "portfolio", "galeria"],
-        [None, "antes_despues", "tips"], [None, "portfolio", "proceso_visual"], [None, "galeria", "antes_despues"],
+# 2 reels al día (12:00 y 15:00). Lo que mejor funciona es enseñar NUESTRO trabajo: proyecto real todos los días a las
+# 12:00 (con 5 estructuras distintas que se rotan, ver portafolio.py) y, a las 15:00, el resto de temas visuales.
+PLAN = [[None, "portfolio", "antes_despues"], [None, "portfolio", "tips"], [None, "portfolio", "galeria"],
+        [None, "portfolio", "proceso_visual"], [None, "portfolio", "antes_despues"], [None, "portfolio", "galeria"],
         [None, "portfolio", "tips"]]
 ROTACION = [t for t in VISUAL if t != "obra"]
 

@@ -38,7 +38,22 @@ HOOKS = {
     "estructura": ["Del forjado al detalle 1:20",
                    "Los detalles que el cliente nunca ve",
                    "Estructura y detalles de proyectos reales"],
+    "capas": ["Misma planta, tres instalaciones",
+              "Capa a capa: las instalaciones de una vivienda real",
+              "Así se superponen las instalaciones de una casa"],
+    "adivina": ["¿Sabrías decir qué plano es cada uno?",
+                "Solo un arquitecto acierta los cuatro",
+                "Te enseño un trozo de plano: ¿qué es?"],
+    "top": ["{n} láminas que entregamos en un Proyecto de Ejecución",
+            "{n} planos que no pueden faltar en tu proyecto",
+            "Top {n}: lo que te llega cuando nos delegas"],
+    "caso": ["Caso real: del diseño del estudio al proyecto",
+             "Caso real: así desarrollamos el proyecto de un estudio",
+             "Un estudio nos pasó su diseño. Esto entregamos"],
 }
+# Estructuras del reel de portfolio: cada una se ve y se cuenta distinto (se rotan; nunca dos seguidas iguales)
+ESTRUCTURAS = ["recorrido", "capas", "adivina", "top", "caso"]
+PREGUNTAS = ["¿Y esto?", "¿Y este plano?", "¿Lo adivinas?", "¿Qué es esto?"]
 CIERRE_VOZ = "Desarrollado por UDA para un estudio de arquitectura."
 MIN_LAMINA = 5.0                         # segundos mínimos por lámina: que dé tiempo a verla entera y su detalle
 ZOOM = 2.1
@@ -121,42 +136,112 @@ def vista(img, z, c):
 
 
 # ------------------------------------------------------------------ guion
-def elegir(seed=0):
-    """Tipo de reel menos usado (used.json): un proyecto entero, o un tema (instalaciones / estructura) con láminas de
-    los tres proyectos. ids «portfolio:<tipo>:<proyecto o tema>»."""
-    M = manifiesto(); rng = random.Random(seed)
+def _usados():
     try:
-        usados = [x["id"] for x in json.load(open(os.path.join(HERE, "used.json")))]
+        return [x["id"] for x in json.load(open(os.path.join(HERE, "used.json")))]
     except Exception:
-        usados = []
-    ops = [("proyecto", p["id"]) for p in M["proyectos"]] + [("instalaciones", "todos"), ("estructura", "todos")]
-    ops.sort(key=lambda o: (sum(1 for u in usados if u.startswith(f"portfolio:{o[0]}:{o[1]}")), rng.random()))
-    return ops[0]
+        return []
 
 
-def guion(tipo, cual, seed=0):
+def _ultima_estructura():
+    try:
+        for line in reversed(open(os.path.join(HERE, "log.jsonl")).readlines()):
+            ids = json.loads(line).get("ids") or []
+            if ids and str(ids[0]).startswith("portfolio:"):
+                e = str(ids[0]).split(":")[1]
+                return "recorrido" if e in ("proyecto", "instalaciones", "estructura", "recorrido") else e
+    except Exception:
+        pass
+    return None
+
+
+def elegir(seed=0, estructura=None):
+    """(estructura, contenido): la estructura menos usada y distinta de la del último reel de portfolio; dentro de ella,
+    el contenido menos usado. ids «portfolio:<estructura>:<contenido>»."""
+    M = manifiesto(); rng = random.Random(seed); usados = _usados()
+    proys = [p["id"] for p in M["proyectos"]]
+    capas = [p["id"] for p in M["proyectos"] if sum(1 for l in p["laminas"] if l.get("capa")) >= 3]
+    ops = {"recorrido": [f"proyecto-{p}" for p in proys] + ["instalaciones", "estructura"],
+           "capas": capas, "adivina": ["mix"], "top": ["mix"], "caso": proys}
+
+    def n(e, c=None):
+        viejo = {"recorrido": ("portfolio:proyecto:", "portfolio:instalaciones:", "portfolio:estructura:")}.get(e, ())
+        return sum(1 for u in usados if u.startswith(f"portfolio:{e}:{c or ''}")
+                   or (c is None and any(u.startswith(v) for v in viejo)))
+    if not estructura:
+        ult = _ultima_estructura()
+        cand = [e for e in ESTRUCTURAS if e != ult and ops[e]] or ESTRUCTURAS
+        estructura = min(cand, key=lambda e: (n(e), rng.random()))
+    cual = min(ops[estructura], key=lambda c: (n(estructura, c), rng.random()))
+    return estructura, cual
+
+
+def guion(estructura, cual, seed=0):
     rng = random.Random(seed)
     M = manifiesto()
     proy = {p["id"]: p for p in M["proyectos"]}
-    sel = []
-    if tipo == "proyecto":
-        orden = {"planta": 0, "instalacion": 1, "estructura": 2, "detalle": 3}
-        sel = [(proy[cual], l) for l in sorted(proy[cual]["laminas"], key=lambda l: orden[l["tipo"]])][:6]
-    else:
-        quiero = ("instalacion",) if tipo == "instalaciones" else ("estructura", "detalle")
-        for p in M["proyectos"]:
-            sel += [(p, l) for l in p["laminas"] if l["tipo"] in quiero]
-        sel = sel[:6]
+    todas = [(p, l) for p in M["proyectos"] for l in p["laminas"]]
+    orden = {"planta": 0, "instalacion": 1, "estructura": 2, "detalle": 3}
+    sel, P = [], None
+    if estructura == "recorrido" and cual.startswith("proyecto-"):
+        P = proy[cual.split("-", 1)[1]]
+        sel = [(P, l) for l in sorted(P["laminas"], key=lambda l: orden[l["tipo"]])][:6]
+    elif estructura == "recorrido":
+        quiero = ("instalacion",) if cual == "instalaciones" else ("estructura", "detalle")
+        sel = [(p, l) for p, l in todas if l["tipo"] in quiero][:6]
+    elif estructura == "capas":
+        P = proy[cual]
+        base = [(P, l) for l in P["laminas"] if l["tipo"] == "planta"][:1]       # la planta, luego las capas
+        sel = base + [(P, l) for l in P["laminas"] if l.get("capa")][:4] + \
+            [(P, l) for l in P["laminas"] if l["tipo"] == "estructura"][:1]      # y, por debajo, la estructura
+    elif estructura == "caso":
+        P = proy[cual]
+        sel = [(P, l) for l in sorted(P["laminas"], key=lambda l: orden[l["tipo"]])][:5]
+    else:                                                          # adivina / top: una lámina de cada tipo, mezcladas
+        por_tipo = {}
+        for p, l in rng.sample(todas, len(todas)):
+            por_tipo.setdefault(l["tipo"], []).append((p, l))
+        tipos = sorted(por_tipo, key=lambda t: orden[t])
+        while len(sel) < 4 and any(por_tipo.values()):
+            for t in tipos:
+                if por_tipo[t] and len(sel) < 4:
+                    sel.append(por_tipo[t].pop())
+        if estructura == "adivina":
+            rng.shuffle(sel)
     golpes = []
+    preguntas = rng.sample(PREGUNTAS, len(PREGUNTAS))
     for k, (p, l) in enumerate(sel):
         prev = golpes[-1] if golpes else None
         capa = bool(l.get("capa") and prev and prev.get("capa") == l.get("capa"))
-        modo = "capa" if capa else "recorrer" if l["tipo"] == "detalle" else "zoom"
-        golpes.append(dict(l, modo=modo, proyecto=p["titulo"], fase=p["fase"], primero=(k == 0)))
-    hook = rng.choice(HOOKS[tipo])
-    sub = f"{sel[0][0]['titulo']} · {sel[0][0]['fase']}" if tipo == "proyecto" else "Proyectos reales desarrollados por UDA"
-    return {"tipo": tipo, "cual": cual, "hook": hook, "golpes": golpes, "sub": sub, "cierre_voz": CIERRE_VOZ,
-            "proyecto": proy.get(cual)}
+        modo = ("adivina" if estructura == "adivina" else "capa" if capa
+                else "recorrer" if l["tipo"] == "detalle" and estructura != "top" else "zoom")
+        golpes.append(dict(l, modo=modo, proyecto=p["titulo"], fase=p["fase"], primero=(k == 0),
+                           pre=(preguntas[(k - 1) % len(preguntas)] if estructura == "adivina" and k > 0 else None)))
+    clave = ("proyecto" if cual.startswith("proyecto-") else cual) if estructura == "recorrido" else estructura
+    hook = rng.choice(HOOKS[clave]).format(n=len(golpes))
+    if P:
+        sub = f"{P['titulo']} · {P['fase']}"
+    else:
+        sub = "Proyectos reales desarrollados por UDA"
+    G = {"estructura": estructura, "cual": cual, "hook": hook, "golpes": golpes, "sub": sub, "cierre_voz": CIERRE_VOZ,
+         "proyecto": P, "tipo": "proyecto" if P else "mix"}
+    if estructura == "caso":                                       # tarjeta inicial: el encargo y lo que hicimos
+        G["intro"] = {"encargo": f"Un estudio nos pasa su diseño: {P['titulo'].lower()}",
+                      "nosotros": f"Nosotros: {P['fase']}"}
+    if estructura == "adivina":
+        G["cierre_voz"] = "¿Cuántos has acertado? Desarrollado por UDA para estudios de arquitectura."
+    return G
+
+
+EXTRA = {
+    "adivina": "Es un juego: antes se ha preguntado al público qué plano es. Cada frase EMPIEZA revelándolo («Es la "
+               "fontanería…», «Son los forjados…») y sigue con un detalle concreto que lo delata. 10 a 16 palabras.",
+    "top": "Es una cuenta atrás: cada frase va al grano (8 a 13 palabras), con ritmo, y dice por qué esa lámina importa.",
+    "capas": "Es la MISMA planta con una instalación nueva encima en cada lámina: cuenta qué añade cada capa y cómo se "
+             "coordina con las anteriores.",
+    "caso": "Es un caso real contado como historia: el estudio nos pasó su diseño y nosotros lo desarrollamos. Cuenta "
+            "qué resolvimos en cada lámina, en pasado («resolvimos», «dibujamos», «coordinamos»).",
+}
 
 
 def comentar(G):
@@ -171,6 +256,7 @@ organizado, qué cuidado tiene) con naturalidad, como quien lo enseña a un cole
 Prohibido: nombres de clientes, estudios, calles o municipios, fechas, precios, normativa, cifras que no se lean en el
 plano, palabras de venta («contrata», «presupuesto», «servicio»), y empezar todas igual. El titular ya se ha dicho:
 NO lo repitas ni lo parafrasees; la primera frase entra directa en la lámina y menciona su etiqueta.
+{EXTRA.get(G.get('estructura'), '')}
 Devuelve JSON: {{"frases": [str]}}"""}]
         for k, g in enumerate(G["golpes"]):
             im = Image.open(os.path.join(DIR, g["f"] + ".jpg")).convert("RGB"); im.thumbnail((1100, 1100))
@@ -216,20 +302,40 @@ def render(G, out, seed=0):
     import visual as V
     golpes = G["golpes"]
     imgs = [Image.open(os.path.join(DIR, g["f"] + ".jpg")).convert("RGB") for g in golpes]
-    focos = [foco(Image.open(os.path.join(DIR, g["f"] + ".jpg"))) for g in golpes]
-    textos = [G["hook"]] + [g["voz"] for g in golpes] + [G["cierre_voz"]]
+    focos = [foco(Image.open(os.path.join(DIR, g["f"] + ".jpg")), 3.2 if g["modo"] == "adivina" else ZOOM) for g in golpes]
+    est = G.get("estructura", "recorrido")
+    intro = G.get("intro")
+    textos = [G["hook"]]
+    for g in golpes:
+        if g.get("pre"):
+            textos.append(g["pre"])
+        textos.append(g["voz"])
+    textos.append(G["cierre_voz"])
     clips = _voz(textos)
     dur = [len(c) / SR for c in clips]
-    # tiempos: el gancho se dice sobre la primera lámina mientras se dibuja; luego una lámina por frase, sin prisas
-    seg = []
-    t = 0.0
-    d0 = max(dur[0] + 0.35 + dur[1] + 1.0, MIN_LAMINA + 2.0)
-    seg.append((0, t, t + d0)); t += d0
-    for k in range(1, len(golpes)):
-        d = max(dur[k + 1] + 1.0, MIN_LAMINA)
-        seg.append((k, t, t + d)); t += d
+    minimo = 4.0 if est == "top" else MIN_LAMINA
+    # tiempos: [tarjeta del encargo] + una lámina por frase; en «adivina», pregunta -> suspense -> revelación
+    seg, vo_at, reveal = [], [0.25], []
+    t, ci = 0.0, 1
+    if intro:
+        d = max(dur[0] + 1.4, 3.6); t = d
+    for k, g in enumerate(golpes):
+        s0 = (dur[0] + 0.6) if (k == 0 and not intro) else 0.35
+        if g.get("pre"):
+            vo_at.append(t + s0); pre = dur[ci]; ci += 1
+        else:
+            pre = 0.0
+        if g["modo"] == "adivina":
+            rv = s0 + pre + 1.3                                         # momento de la revelación
+            vo_at.append(t + rv + 0.25); d = max(rv + 0.25 + dur[ci] + 0.9, minimo)
+        else:
+            rv = None
+            vo_at.append(t + s0); d = max(s0 + dur[ci] + 1.0, minimo)
+        ci += 1
+        seg.append((k, t, t + d)); reveal.append(rv); t += d
     t_fin = t; d_fin = max(dur[-1] + 0.9, 2.8); total = t_fin + d_fin
-    vo_at = [0.25, 0.25 + dur[0] + 0.35] + [seg[k][1] + 0.35 for k in range(1, len(golpes))] + [t_fin + 0.3]
+    vo_at.append(t_fin + 0.3)
+    t_ini = seg[0][1]
 
     hook_big = V._panel(fx.headline(G["hook"], 98, 960, 3, color=CREMA, hot=ORO, shadow=True), 44, 225)
     tit = V._panel(fx.headline(G["hook"], 46, 940, 2, color=CREMA, hot=ORO, shadow=True), 22, 120)
@@ -237,8 +343,18 @@ def render(G, out, seed=0):
     subs = [fx.text_block(G["sub"] if G["tipo"] == "proyecto" else f"{g['proyecto']} · {g['fase']}", F_BOLD, 32, 960,
                           (236, 228, 212), align="center") for g in golpes]
     labs = []
+    numeros = [fx.headline(str(len(golpes) - k), 230, 300, 1, color=ORO, hot=ORO, shadow=True) for k in range(len(golpes))]
+    que_es = fx.pill("¿QUÉ ES?", 56, ORO, NEGRO, padx=34, pady=16, radius=6)
+    if intro:
+        ic = [fx.pill("EL ENCARGO", 34, ORO, NEGRO, padx=24, pady=10, radius=4),
+              fx.headline(intro["encargo"], 70, 900, 3, color=CREMA, hot=ORO, shadow=True),
+              fx.pill("LO QUE HICIMOS", 34, ORO, NEGRO, padx=24, pady=10, radius=4),
+              fx.headline(intro["nosotros"], 64, 900, 2, color=CREMA, hot=ORO, shadow=True)]
     for k, g in enumerate(golpes):
-        num = fx.pill(f"{k + 1:02d}", 50, ORO, NEGRO, padx=22, pady=12, radius=6)
+        ncapa = sum(1 for x in golpes[:k + 1] if x.get("capa"))
+        etiqueta = {"capas": ("BASE" if g["tipo"] == "planta" else "ESTRUCTURA" if g["tipo"] == "estructura" else f"CAPA {ncapa}"),
+                    "top": f"#{len(golpes) - k}", "caso": f"ENTREGABLE {k + 1:02d}"}.get(est, f"{k + 1:02d}")
+        num = fx.pill(etiqueta, 50, ORO, NEGRO, padx=22, pady=12, radius=6)
         txt = fx.pill(g["label"], 50, (18, 17, 15), CREMA, padx=26, pady=12, radius=6)
         im = Image.new("RGBA", (num.width + txt.width + 12, max(num.height, txt.height)), (0, 0, 0, 0))
         im.alpha_composite(num, (0, 0)); im.alpha_composite(txt, (num.width + 12, 0)); labs.append(im)
@@ -259,7 +375,10 @@ def render(G, out, seed=0):
     for k, g in enumerate(golpes):
         d = seg[k][2] - seg[k][1]; f = focos[k]
         ver = max(0.35, 2.6 / d) if k == 0 else 0.33                 # tiempo para ver la lámina entera
-        if g["modo"] == "capa":                                     # misma cámara que la anterior y vuelta al conjunto
+        if g["modo"] == "adivina":                                  # muy cerca (sin saber qué es) -> se aleja y se ve
+            rf = clamp(reveal[k] / d)
+            r = [(0, 3.2, f[0], f[1]), (rf, 2.9, f[0], f[1]), (min(1, rf + .22), 1, .5, .5), (1, 1.04, .5, .5)]
+        elif g["modo"] == "capa":                                     # misma cámara que la anterior y vuelta al conjunto
             pz = rutas[-1][-1][1:]
             fin = (1.0, 0.5, 0.5) if pz[0] > 1.2 else (ZOOM, *focos[k - 1])
             r = [(0, *pz), (0.3, *pz), (1, *fin)]
@@ -292,8 +411,11 @@ def render(G, out, seed=0):
         if i < 0: a = a[-i:]; i = 0
         j = min(n, i + len(a)); sfx[i:j] += a[: j - i] * gain
     put(fx.impact(), 0.0, 0.6)
-    for _, a_, _b in seg[1:]:
+    for _, a_, _b in seg[0 if intro else 1:]:
         put(fx.whoosh2(0.4), a_ - 0.3, 0.6)
+    for (_, a_, _b), rv in zip(seg, reveal):                       # golpe en cada revelación
+        if rv is not None:
+            put(fx.impact(), a_ + rv, 0.45); put(fx.shimmer(), a_ + rv + 0.05, 0.35)
     put(fx.whoosh2(0.4), t_fin - 0.3, 0.6); put(fx.shimmer(), t_fin + 0.2, 0.5)
     mix = vo * 1.15 + sfx + music * (0.40 - 0.28 * np.clip(venv * 3, 0, 1))
     mix = fx.dehiss(np.tanh(mix * 1.05) * 0.92)
@@ -311,7 +433,15 @@ def render(G, out, seed=0):
     for fi in range(int(total * FPS)):
         tt = fi / FPS
         fr = fondo.copy()
-        if tt < t_fin:
+        if intro and tt < t_ini:                                      # caso real: tarjeta del encargo sobre la 1.ª lámina
+            v = vista(imgs[0], 1.0, (0.5, 0.5)).filter(ImageFilter.GaussianBlur(14)).convert("RGBA")
+            fr.paste(v, (BOX[0], BOX[1])); fr.alpha_composite(Image.new("RGBA", (W, H), (8, 8, 9, 238)))
+            y = 560
+            for j, im in enumerate(ic):
+                a = eo(clamp((tt - 0.2 - 0.45 * j) / 0.4))
+                fx.paste_center(fr, im, W / 2, y + im.height / 2 - (1 - a) * 24, alpha=a)
+                y += im.height + (26 if j % 2 == 0 else 70)
+        elif tt < t_fin:
             k = max(i for i, s_ in enumerate(seg) if s_[1] <= tt)
             _, a_, b_ = seg[k]; lt = tt - a_; d = b_ - a_
             z, c = cam(k, lt, d)
@@ -323,22 +453,29 @@ def render(G, out, seed=0):
             elif k > 0 and lt < 0.25:
                 prev = vista(imgs[k - 1], *cam(k - 1, seg[k - 1][2] - seg[k - 1][1], seg[k - 1][2] - seg[k - 1][1])).convert("RGBA")
                 v = Image.blend(prev, v, lt / 0.25)
-            if k == 0 and lt < 0.6:                                    # la primera lámina aparece con un fundido
+            if k == 0 and lt < 0.6 and not intro:                      # la primera lámina aparece con un fundido
                 v = Image.blend(Image.new("RGBA", v.size, FONDO + (255,)), v, eo(lt / 0.6))
             fr.paste(v, (BOX[0], BOX[1]))
             fr.alpha_composite(marco)
-            hook_t = dur[0] + 0.6
+            hook_t = 0 if intro else dur[0] + 0.6
             if tt < hook_t:
                 a = eob(clamp(tt / 0.35)) * (1 - clamp((tt - hook_t + 0.25) / 0.25))
                 fx.paste_center(fr, hook_big, W / 2, 330 + hook_big.height / 2 - 60, alpha=clamp(a))
             else:
                 fx.paste_center(fr, tit, W / 2, 300 + tit.height / 2)
                 fx.paste_center(fr, real, W / 2, 300 + tit.height + 26)
-            if not (k == 0 and tt < hook_t):
-                la = labs[k]; a = eo(clamp((lt - (hook_t if k == 0 else 0.3)) / 0.3))
+            ent = (hook_t if k == 0 else 0.3) if reveal[k] is None else reveal[k] + 0.2
+            if reveal[k] is not None and lt < reveal[k] + 0.2 and not (k == 0 and tt < hook_t):
+                a = eob(clamp((lt - (hook_t if k == 0 else 0.25)) / 0.3)) * (1 - clamp((lt - reveal[k]) / 0.2))
+                fx.paste_center(fr, que_es, W / 2, BOX[3] - 80, alpha=clamp(a))
+            if est == "top" and not (k == 0 and tt < hook_t):           # cuenta atrás: número grande
+                a = eob(clamp((lt - (hook_t if k == 0 else 0.1)) / 0.35))
+                fx.paste_center(fr, numeros[k], BOX[0] + 130, BOX[1] + 170 - (1 - a) * 40, alpha=clamp(a))
+            if not (k == 0 and tt < hook_t) and lt >= ent:
+                la = labs[k]; a = eo(clamp((lt - ent) / 0.3))
                 fx.paste_center(fr, la, W / 2, BOX[3] - 70 - (1 - a) * 20, alpha=a)
-            if not (k == 0 and tt < hook_t):
-                fx.paste_center(fr, subs[k], W / 2, BOX[3] + 40, alpha=clamp((lt - (hook_t if k == 0 else 0.3)) / 0.4))
+            if not (k == 0 and tt < hook_t) and lt >= ent:
+                fx.paste_center(fr, subs[k], W / 2, BOX[3] + 40, alpha=clamp((lt - ent) / 0.4))
         else:
             lt = tt - t_fin
             a = eob(clamp(lt / 0.4))
@@ -409,20 +546,27 @@ Devuelve JSON: {{"overall": number, "issues": [str], "suggestions": [str], "crit
 
 
 def descripcion(G):
-    lista = "\n".join(f"▪️ {g['label']}" + ("" if G["tipo"] == "proyecto" else f" · {g['proyecto'].lower()}")
-                      for g in G["golpes"])
+    est = G.get("estructura", "recorrido")
+    if est == "adivina":
+        lista = "Soluciones: " + " · ".join(f"{k + 1}) {g['label']}" for k, g in enumerate(G["golpes"]))
+    else:
+        lista = "\n".join(f"▪️ {g['label']}" + ("" if G["proyecto"] else f" · {g['proyecto'].lower()}")
+                          for g in G["golpes"])
     contexto = (f"Proyecto real ({G['proyecto']['titulo'].lower()}, {G['proyecto']['fase']}) que desarrollamos para un "
-                "estudio de arquitectura." if G["tipo"] == "proyecto" else
+                "estudio de arquitectura." if G["proyecto"] else
                 "Láminas reales de proyectos que desarrollamos para estudios de arquitectura.")
+    pregunta = {"adivina": "👇 ¿Cuántos has acertado? Dilo en comentarios",
+                "top": "👇 ¿Cuál de estas láminas te lleva más horas?",
+                "capas": "👇 ¿Qué instalación te cuesta más coordinar?",
+                "caso": "👇 ¿Qué parte de tu proyecto delegarías primero?"}.get(est, "👇 ¿Qué parte del proyecto te lleva más horas?")
     return (f"{G['hook']} 📐\nproyecto de ejecución · planos de arquitectura · instalaciones y estructura\n\n"
             f"{contexto} El estudio diseña y firma; nosotros lo desarrollamos. Datos del cliente ocultos.\n\n{lista}\n\n"
-            "👇 ¿Qué parte del proyecto te lleva más horas?\n\n"
-            "#arquitectura #proyectodeejecucion #arquitecto #autocad #planos")
+            f"{pregunta}\n\n#arquitectura #proyectodeejecucion #arquitecto #autocad #planos")
 
 
 def hacer(out, seed=0, max_rondas=2):
     t0 = time.time()
-    tipo, cual = elegir(seed)
+    tipo, cual = elegir(seed, os.environ.get("PORTFOLIO_ESTRUCTURA") or None)
     rev = {}
     for ronda in range(max_rondas):
         G = guion(tipo, cual, f"{seed}-{ronda}")
@@ -445,6 +589,6 @@ def hacer(out, seed=0, max_rondas=2):
             "thumb_ms": 2500, "review_score": rev["overall"], "design_score": rev["overall"], "ids": [pid], "temas": [],
             "story_base": cover, "variante": "portfolio", "tematica": "portfolio", "guion": "portfolio",
             "ai": False, "tt_video": tt if os.path.exists(tt) else None, "con_voz": True,
-            "pregunta": "👇 Arquitectos: ¿qué parte del proyecto de ejecución delegaríais primero? Instalaciones, estructura, detalles..."}
+            "pregunta": descripcion(G).split("\n\n")[-2].strip(), "estructura": tipo}
     say(f"listo en {time.time() - t0:.0f} s · {info['duration']} s")
     return meta, [{"id": pid, "tema": "portfolio", "grupo": tipo}]
