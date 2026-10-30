@@ -426,5 +426,26 @@
 "fecha": "2026-10-30",
 "formato": "visual",
 "grupo": "adivina"
+},
+{
+"id": "visual:t20261029a",
+"tema": "visual",
+"fecha": "2026-10-30",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:t20261030a",
+"tema": "visual",
+"fecha": "2026-10-30",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:a5",
+"tema": "visual",
+"fecha": "2026-10-30",
+"formato": "visual",
+"grupo": "antes_despues"
 }
 ]
