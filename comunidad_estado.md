@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-10-30 16:00 UTC · 0 respuestas_
+_Última pasada: 2026-10-30 20:53 UTC · 1 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -11,7 +11,7 @@ _Última pasada: 2026-10-30 16:00 UTC · 0 respuestas_
 | 2026-10-29 | instagram | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
 | 2026-10-29 | tiktok | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
 | 2026-10-29 | linkedin | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
-| 2026-10-30 | instagram | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
+| 2026-10-30 | instagram | portfolio | Solo un arquitecto acierta los cuatro | 2 | — |
 | 2026-10-30 | tiktok | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-10-30 | linkedin | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-10-30 | instagram | antes_despues | ¿Adivinas cómo estaba antes? | 1 | — |
