@@ -376,6 +376,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-29"
+},
+{
+"id": "t20261030g",
+"hook": "El regreso de las maderas oscuras",
+"cierre": "¿Te atreves con el nogal?",
+"escenas": [
+{
+"idea": "Salón sereno con panelados de nogal oscuro en pared completa, sofá tapizado en bouclé crudo y luz rasante indirecta.",
+"label": "Salón en nogal"
+},
+{
+"idea": "Cocina lineal sin tiradores en roble ahumado con encimera de cuarcita marrón y pavimento continuo de microcemento.",
+"label": "Cocina oscura sobria"
+},
+{
+"idea": "Dormitorio principal con cabecero a medida en wengué estriado, mesitas integradas y ropa de cama en lino terracota.",
+"label": "Cabecero envolvente"
+},
+{
+"idea": "Comedor minimalista presidido por una mesa de nogal macizo con bordes orgánicos y sillas tapizadas en verde oliva.",
+"label": "Mesa orgánica"
+},
+{
+"idea": "Estudio luminoso con estantería modular de madera oscura del suelo al techo y lámpara de sobremesa en latón envejecido.",
+"label": "Librería de estudio"
+},
+{
+"idea": "Aseo de cortesía íntimo con lavamanos suspendido en madera oscura, grifería empotrada negra y espejo retroiluminado.",
+"label": "Aseo escultórico"
+}
+],
+"tendencia": true,
+"fecha": "2026-10-30"
 }
 ],
 "proceso": [
@@ -422,6 +455,13 @@
 "descripcion": "una vivienda unifamiliar orgánica con muros curvos de tierra compactada y carpintería de castaño",
 "tendencia": true,
 "fecha": "2026-10-29"
+},
+{
+"id": "t20261030p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar de piedra y madera oscura integrada en una parcela arbolada",
+"tendencia": true,
+"fecha": "2026-10-30"
 }
 ],
 "antes_despues": [
@@ -470,6 +510,14 @@
 "estilo": "espacio fluido en roble cálido, paneles escamoteables y encimera de cuarcita beige",
 "tendencia": true,
 "fecha": "2026-10-29"
+},
+{
+"id": "t20261030a",
+"tipo": "estancia",
+"descripcion": "un salón compartimentado con paredes de gotelé crema, parquet flotante deslucido y radiadores vistos oxidados",
+"estilo": "espacio fluido con panelados de nogal, suelo continuo de barro y luz tenue",
+"tendencia": true,
+"fecha": "2026-10-30"
 }
 ],
 "tips": [
@@ -706,6 +754,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-29"
+},
+{
+"id": "t20261030t",
+"hook": "5 claves para usar madera oscura",
+"tips": [
+{
+"tip": "Contrasta con textiles muy claros",
+"idea": "Sofá modular en lana color marfil colocado frente a un imponente muro revestido en roble ahumado."
+},
+{
+"tip": "Integra iluminación indirecta y cálida",
+"idea": "Foseado en falso techo proyectando luz dorada suave sobre un panelado de madera de nogal."
+},
+{
+"tip": "Añade piedra natural de contraste",
+"idea": "Isla de cocina en madera oscura combinada con una encimera de caliza clara veteada."
+},
+{
+"tip": "Combina con piezas de diseño vintage",
+"idea": "Butaca clásica de cuero gastado junto a una mesa auxiliar de centro en palisandro restaurado."
+},
+{
+"tip": "Reserva suelo en tonos neutros",
+"idea": "Pavimento continuo de mortero claro que resalta la carpintería y puertas de paso oscuras."
+}
+],
+"tendencia": true,
+"fecha": "2026-10-30"
 }
 ],
 "obra": [

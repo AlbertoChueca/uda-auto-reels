@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-10-29)
+# Cuaderno de series (2026-10-30)
 
-- Seguir haciendo: Ninguna serie activa; los datos reflejan 100% de publicaciones aisladas.
-- Dejar de hacer: Publicar sin recurrencia temática ni numeración.
-- Probar: Crear la serie semanal «Números de Despacho» (Cap. 1: Plantilla vs. Delegar), aprovechando el tema con mayor conversión de clics.
+- Seguir haciendo: Los datos indican 0% de uso de series (todos figuran como «serie None»); no hay nada que mantener.
+- Dejar de hacer: Publicaciones aisladas sin hilo conductor ni numeración.
+- Probar: Estrenar la serie semanal «Números de Despacho» (Cap. 1: Plantilla vs. Delegar), capitalizando el tema con 89 clics.

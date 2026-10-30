@@ -1,7 +1,7 @@
-# Cuaderno de guion (2026-10-29)
+# Cuaderno de guion (2026-10-30)
 
 # Cuaderno de guion
 
-• Seguir haciendo: Transparencia en el entregable y productividad del despacho; 'Esto es lo que entregamos' logró 698 views y 2 guardados, y los carruseles técnicos retienen hasta 12 s.
-• Dejar de hacer: Guiones decorativos o contemplativos (reformas, cocinas, renders) desvinculados de la rentabilidad o carga del arquitecto.
-• Probar: Estructura de desglose de entregables: listar exactamente qué planos, memorias y mediciones asume UDA frente al tiempo liberado por el titular.
+• Seguir haciendo: Desglose concreto de entregables y gestión de recursos del despacho; el enfoque de entregables lidera con 1.094 views y los carruseles técnicos retienen hasta 12 s.
+• Dejar de hacer: Guiones contemplativos o de decoración (cocinas, reformas genéricas) desconectados de la rentabilidad y normativa del titular.
+• Probar: Guion comparativo de carga real: listar tareas que ahogan al titular (CTE, anejos, mediciones) frente al tiempo liberado al derivarlas a UDA.

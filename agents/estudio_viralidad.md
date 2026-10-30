@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-10-29)
+# Cuaderno de viralidad (2026-10-30)
 
-- Seguir haciendo: Apelaciones explícitas al equipo («Pásaselo a tu equipo», que logró interacción).
-- Dejar de hacer: Finales pasivos sin llamada a debate entre socios de despacho.
-- Probar: Disyuntivas directas para compartir: «¿Cuánto tardáis en montar este plano en vuestro estudio? Envíalo a tu socio».
+- Seguir haciendo: Llamadas directas al equipo del despacho («Pásaselo a tu equipo», generó interacción).
+- Dejar de hacer: Cierres contemplativos sin apelación a la toma de decisiones compartida.
+- Probar: Preguntas divisivas sobre coste por m² y rentabilidad de horas para activar el envío entre socios en LinkedIn e Instagram.

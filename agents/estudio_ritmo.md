@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-10-29)
+# Cuaderno de ritmo (2026-10-30)
 
-- Seguir haciendo: Cadencia pausada y analítica en carruseles técnicos de alta retención (hasta 12.000 ms).
-- Dejar de hacer: Entradas descriptivas lentas que pierden audiencia en menos de 1 segundo («Escalar estudio»).
-- Probar: Ganchos de choque en los primeros 2 segundos con datos económicos o plazos de entrega ajustados.
+- Seguir haciendo: Desarrollo analítico y pausado en carruseles técnicos (retenciones altas de 4.880 a 12.090 ms).
+- Dejar de hacer: Entradas descriptivas lentas que provocan abandonos en menos de 1 segundo (660 ms en «Escalar estudio»).
+- Probar: Gancho inicial en los primeros 2 segundos con dato económico de impacto para retener antes del desglose técnico.

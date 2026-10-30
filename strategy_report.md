@@ -1,6 +1,6 @@
 # Piloto automático UDA - qué está funcionando
 
-_Updated 2026-10-29 · 14 reels with results (3+ days old) · average score 0.97_
+_Updated 2026-10-30 · 14 reels with results (3+ days old) · average score 0.97_
 
 
 ## formato
