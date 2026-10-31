@@ -49,7 +49,7 @@ def elegir(tipo, now=None):
         t = now.replace(hour=h, minute=m, second=0, microsecond=0)
         hh, mm = HASTA[slot]
         fin = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
-        if t - datetime.timedelta(minutes=75) <= now <= fin and toca_dia(slot, now.date()) and not publicado(slot, hoy):
+        if t - datetime.timedelta(minutes=40) <= now <= fin and toca_dia(slot, now.date()) and not publicado(slot, hoy):
             return slot
     return "skip"
 

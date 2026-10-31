@@ -115,6 +115,23 @@ def foco(img, z=2.1):
 
 
 # ------------------------------------------------------------------ cámara
+_PIRAMIDE = {}
+
+
+def _nivel(img, s):
+    """Copia de la lámina ya reducida a la escala s (en escalones del 12 %), reutilizada entre fotogramas: reducir
+    desde ahí cuesta poco. La reducción grande (LANCZOS) se hace una sola vez por escalón."""
+    k = 0
+    while 0.88 ** (k + 1) >= s * 1.0001:
+        k += 1
+    key = (id(img), k)
+    if key not in _PIRAMIDE:
+        f = 0.88 ** k
+        _PIRAMIDE[key] = (img.resize((max(1, round(img.width * f)), max(1, round(img.height * f))), Image.LANCZOS)
+                          if k else img, f)
+    return _PIRAMIDE[key]
+
+
 def vista(img, z, c):
     """Lo que ve la cámara dentro de BOX: imagen contenida (z=1) o acercada (z>1) al centro c (0-1)."""
     bw, bh = BOX[2] - BOX[0], BOX[3] - BOX[1]
@@ -130,12 +147,13 @@ def vista(img, z, c):
     if sx1 > sx0 and sy1 > sy0:
         dx0, dy0 = (sx0 - x0) * s, (sy0 - y0) * s
         dw, dh = (sx1 - sx0) * s, (sy1 - sy0) * s
-        part = img.resize((max(1, int(dw)), max(1, int(dh))), Image.LANCZOS, box=(sx0, sy0, sx1, sy1))
+        base, f = _nivel(img, s)                                        # desde el escalón más cercano por arriba
+        part = base.resize((max(1, int(dw)), max(1, int(dh))), Image.BILINEAR if f < 1 else Image.LANCZOS,
+                           box=(sx0 * f, sy0 * f, min(base.width, sx1 * f), min(base.height, sy1 * f)))
         out.paste(part, (int(dx0), int(dy0)))
     return out
 
 
-# ------------------------------------------------------------------ guion
 def _usados():
     try:
         return [x["id"] for x in json.load(open(os.path.join(HERE, "used.json")))]
@@ -143,42 +161,118 @@ def _usados():
         return []
 
 
+def vistas():
+    """Cuántas veces ha salido cada lámina (ids «portfolio:lamina:<f>»). Los reels antiguos (antes de contar por lámina)
+    cuentan por lo que enseñaban: un proyecto entero o un tema."""
+    M = manifiesto(); n = {l["f"]: 0 for p in M["proyectos"] for l in p["laminas"]}
+    for u in _usados():
+        parts = u.split(":")
+        if len(parts) < 3 or parts[0] != "portfolio":
+            continue
+        if parts[1] == "lamina":
+            n[parts[2]] = n.get(parts[2], 0) + 1
+        elif parts[1] in ("proyecto", "caso", "capas") or parts[2].startswith("proyecto-"):
+            pid = parts[2].split("-")[-1]
+            for p in M["proyectos"]:
+                if p["id"] == pid:
+                    for l in p["laminas"]:
+                        if parts[1] != "capas" or l.get("capa") or l["tipo"] in ("planta", "estructura"):
+                            n[l["f"]] += 1
+        elif parts[2] in ("instalaciones", "estructura", "detalles"):
+            quiero = ("instalacion",) if parts[2] == "instalaciones" else ("estructura", "detalle")
+            for p in M["proyectos"]:
+                for l in p["laminas"]:
+                    if l["tipo"] in quiero:
+                        n[l["f"]] += 1
+    return n
+
+
 def _ultima_estructura():
     try:
         for line in reversed(open(os.path.join(HERE, "log.jsonl")).readlines()):
-            ids = json.loads(line).get("ids") or []
+            e = json.loads(line)
+            if e.get("estructura"):
+                return e["estructura"]
+            ids = e.get("ids") or []
             if ids and str(ids[0]).startswith("portfolio:"):
-                e = str(ids[0]).split(":")[1]
-                return "recorrido" if e in ("proyecto", "instalaciones", "estructura", "recorrido") else e
+                est = str(ids[0]).split(":")[1]
+                return "recorrido" if est in ("proyecto", "instalaciones", "estructura", "detalles", "lamina") else est
     except Exception:
         pass
     return None
 
 
+def _estructuras_usadas():
+    out = {e: 0 for e in ESTRUCTURAS}
+    for u in _usados():
+        parts = u.split(":")
+        if parts[0] == "portfolio" and len(parts) > 1:
+            e = parts[1] if parts[1] in ESTRUCTURAS else ("recorrido" if parts[1] != "lamina" else None)
+            if e: out[e] += 1
+    try:                                                              # desde que se cuenta por lámina, va en el log
+        for line in open(os.path.join(HERE, "log.jsonl")):
+            e = json.loads(line).get("estructura")
+            if e in out: out[e] += 1
+    except Exception:
+        pass
+    return out
+
+
+def _recientes(n=6):
+    """(estructura, contenido, láminas) de los últimos n reels de portfolio (el más reciente primero)."""
+    out = []
+    try:
+        for line in reversed(open(os.path.join(HERE, "log.jsonl")).readlines()):
+            e = json.loads(line)
+            ids = e.get("ids") or [""]
+            lam = [i.split(":")[2] for i in ids if i.startswith("portfolio:lamina:")]
+            if e.get("estructura"):
+                out.append((e["estructura"], e.get("contenido"), lam))
+            elif ids[0].startswith("portfolio:"):
+                parts = ids[0].split(":")
+                out.append(("recorrido" if parts[1] in ("proyecto", "instalaciones", "estructura", "detalles") else parts[1],
+                            parts[2] if len(parts) > 2 else None, lam))
+            if len(out) >= n:
+                break
+    except Exception:
+        pass
+    return out
+
+
 def elegir(seed=0, estructura=None):
-    """(estructura, contenido): la estructura menos usada y distinta de la del último reel de portfolio; dentro de ella,
-    el contenido menos usado. ids «portfolio:<estructura>:<contenido>»."""
-    M = manifiesto(); rng = random.Random(seed); usados = _usados()
-    proys = [p["id"] for p in M["proyectos"]]
+    """(estructura, contenido). Estructura: la que lleva más tiempo sin salir (nunca la del último reel). Contenido:
+    el que enseñe las láminas MENOS vistas y no se haya repetido hace poco. Un trabajo solo vuelve a salir cuando ya
+    se ha enseñado todo el portfolio."""
+    M = manifiesto(); rng = random.Random(seed); V = vistas(); rec = _recientes()
+    proys = {p["id"]: p for p in M["proyectos"]}
     capas = [p["id"] for p in M["proyectos"] if sum(1 for l in p["laminas"] if l.get("capa")) >= 3]
     ops = {"recorrido": [f"proyecto-{p}" for p in proys] + ["instalaciones", "estructura"],
-           "capas": capas, "adivina": ["mix"], "top": ["mix"], "caso": proys}
+           "capas": capas, "adivina": ["mix"], "top": ["mix"], "caso": list(proys)}
 
-    def n(e, c=None):
-        viejo = {"recorrido": ("portfolio:proyecto:", "portfolio:instalaciones:", "portfolio:estructura:")}.get(e, ())
-        return sum(1 for u in usados if u.startswith(f"portfolio:{e}:{c or ''}")
-                   or (c is None and any(u.startswith(v) for v in viejo)))
+    def hace(e):                                                       # reels desde la última vez que salió esa estructura
+        return next((k for k, (x, *_) in enumerate(rec) if x == e), 99)
+
+    def frescura(e, c):
+        G = guion(e, c, seed, V)
+        fs = [g["f"] for g in G["golpes"]]
+        media = sum(V.get(f, 0) for f in fs) / max(1, len(fs))
+        solape = 0.0                                                   # láminas que repetiría de los 3 últimos reels
+        for k, (_, _, lam) in enumerate(rec[:3]):
+            if lam:
+                solape = max(solape, len(set(fs) & set(lam)) / len(fs))
+        return media + 3.0 * solape
     if not estructura:
-        ult = _ultima_estructura()
-        cand = [e for e in ESTRUCTURAS if e != ult and ops[e]] or ESTRUCTURAS
-        estructura = min(cand, key=lambda e: (n(e), rng.random()))
-    cual = min(ops[estructura], key=lambda c: (n(estructura, c), rng.random()))
+        cand = [e for e in ESTRUCTURAS if ops[e] and hace(e) > 0] or ESTRUCTURAS
+        estructura = max(cand, key=lambda e: (hace(e), rng.random()))
+    cual = min(ops[estructura], key=lambda c: (round(frescura(estructura, c), 2), rng.random()))
     return estructura, cual
 
 
-def guion(estructura, cual, seed=0):
+def guion(estructura, cual, seed=0, V=None):
     rng = random.Random(seed)
     M = manifiesto()
+    V = V if V is not None else vistas()
+    menos = lambda pl: (V.get(pl[1]["f"], 0), rng.random())      # primero las láminas menos vistas
     proy = {p["id"]: p for p in M["proyectos"]}
     todas = [(p, l) for p in M["proyectos"] for l in p["laminas"]]
     orden = {"planta": 0, "instalacion": 1, "estructura": 2, "detalle": 3}
@@ -188,7 +282,8 @@ def guion(estructura, cual, seed=0):
         sel = [(P, l) for l in sorted(P["laminas"], key=lambda l: orden[l["tipo"]])][:6]
     elif estructura == "recorrido":
         quiero = ("instalacion",) if cual == "instalaciones" else ("estructura", "detalle")
-        sel = [(p, l) for p, l in todas if l["tipo"] in quiero][:6]
+        sel = sorted([(p, l) for p, l in todas if l["tipo"] in quiero], key=menos)[:6]
+        sel.sort(key=lambda pl: (pl[0]["id"], orden[pl[1]["tipo"]]))
     elif estructura == "capas":
         P = proy[cual]
         base = [(P, l) for l in P["laminas"] if l["tipo"] == "planta"][:1]       # la planta, luego las capas
@@ -199,7 +294,9 @@ def guion(estructura, cual, seed=0):
         sel = [(P, l) for l in sorted(P["laminas"], key=lambda l: orden[l["tipo"]])][:5]
     else:                                                          # adivina / top: una lámina de cada tipo, mezcladas
         por_tipo = {}
-        for p, l in rng.sample(todas, len(todas)):
+        ultimo = set(_recientes(1)[0][2]) if _recientes(1) else set()   # láminas del reel anterior: fuera del mix
+        pool = [(p, l) for p, l in todas if l["f"] not in ultimo] or todas
+        for p, l in sorted(pool, key=menos, reverse=True):           # .pop() saca la menos vista
             por_tipo.setdefault(l["tipo"], []).append((p, l))
         tipos = sorted(por_tipo, key=lambda t: orden[t])
         while len(sel) < 4 and any(por_tipo.values()):
@@ -301,6 +398,7 @@ def _voz(textos):
 def render(G, out, seed=0):
     import visual as V
     golpes = G["golpes"]
+    _PIRAMIDE.clear()
     imgs = [Image.open(os.path.join(DIR, g["f"] + ".jpg")).convert("RGB") for g in golpes]
     focos = [foco(Image.open(os.path.join(DIR, g["f"] + ".jpg")), 3.2 if g["modo"] == "adivina" else ZOOM) for g in golpes]
     est = G.get("estructura", "recorrido")
@@ -446,16 +544,16 @@ def render(G, out, seed=0):
             k = max(i for i, s_ in enumerate(seg) if s_[1] <= tt)
             _, a_, b_ = seg[k]; lt = tt - a_; d = b_ - a_
             z, c = cam(k, lt, d)
-            v = vista(imgs[k], z, c).convert("RGBA")
+            v = vista(imgs[k], z, c)
             g = golpes[k]
-            if g["modo"] == "capa" and k > 0:                            # la nueva capa aparece sobre la anterior
-                prev = vista(imgs[k - 1], z, c).convert("RGBA")
+            if g["modo"] == "capa" and k > 0 and lt < 0.9:              # la nueva capa aparece sobre la anterior
+                prev = vista(imgs[k - 1], z, c)
                 v = Image.blend(prev, v, eo(clamp(lt / 0.9)))
             elif k > 0 and lt < 0.25:
-                prev = vista(imgs[k - 1], *cam(k - 1, seg[k - 1][2] - seg[k - 1][1], seg[k - 1][2] - seg[k - 1][1])).convert("RGBA")
+                prev = vista(imgs[k - 1], *cam(k - 1, seg[k - 1][2] - seg[k - 1][1], seg[k - 1][2] - seg[k - 1][1]))
                 v = Image.blend(prev, v, lt / 0.25)
             if k == 0 and lt < 0.6 and not intro:                      # la primera lámina aparece con un fundido
-                v = Image.blend(Image.new("RGBA", v.size, FONDO + (255,)), v, eo(lt / 0.6))
+                v = Image.blend(Image.new("RGB", v.size, FONDO), v, eo(lt / 0.6))
             fr.paste(v, (BOX[0], BOX[1]))
             fr.alpha_composite(marco)
             hook_t = 0 if intro else dur[0] + 0.6
@@ -586,10 +684,11 @@ def hacer(out, seed=0, max_rondas=2):
                     "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2", "-shortest", tt])
     open(out.replace(".mp4", ".txt"), "w").write(descripcion(G))
     pid = f"portfolio:{tipo}:{cual}"
+    ids = [f"portfolio:lamina:{g['f']}" for g in G["golpes"]]
     meta = {"formato": "visual", "estilo": "portfolio", "hook": G["hook"], "duration": info["duration"], "cover": cover,
-            "thumb_ms": 2500, "review_score": rev["overall"], "design_score": rev["overall"], "ids": [pid], "temas": [],
+            "thumb_ms": 2500, "review_score": rev["overall"], "design_score": rev["overall"], "ids": ids, "temas": [],
             "story_base": cover, "variante": "portfolio", "tematica": "portfolio", "guion": "portfolio",
             "ai": False, "tt_video": tt if os.path.exists(tt) else None, "con_voz": True,
-            "pregunta": descripcion(G).split("\n\n")[-2].strip(), "estructura": tipo}
+            "pregunta": descripcion(G).split("\n\n")[-2].strip(), "estructura": tipo, "contenido": cual}
     say(f"listo en {time.time() - t0:.0f} s · {info['duration']} s")
-    return meta, [{"id": pid, "tema": "portfolio", "grupo": tipo}]
+    return meta, [{"id": i, "tema": "portfolio", "grupo": tipo} for i in ids]

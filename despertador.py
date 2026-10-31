@@ -17,7 +17,7 @@ import elegir_hueco as E
 
 TZ = ZoneInfo("Europe/Madrid")
 OBJETIVOS = [("daily-reels.yml", s, h, m) for s, h, m in E.HUECOS["reels"]] + [("carrusel.yml", "carrusel", 18, 0)]
-ANTES = datetime.timedelta(minutes=70)          # el reel se genera antes y espera a la hora exacta
+ANTES = datetime.timedelta(minutes=35)          # el reel se genera antes (5-25 min) y espera a la hora exacta
 MAX_ESPERA = datetime.timedelta(hours=5, minutes=30)
 
 

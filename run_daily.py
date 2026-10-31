@@ -445,6 +445,6 @@ except Exception:
     pass
 log({k: meta.get(k) for k in ("formato", "estilo", "series", "imagen", "concepto", "voice_speed", "music", "ids", "temas",
                               "respuestas", "veredicto", "hook", "hook_line", "duration", "guion", "voice", "review_score",
-                              "design_score", "arms", "publicado", "variante", "tematica", "ts", "pregunta")})
+                              "design_score", "arms", "publicado", "variante", "tematica", "ts", "pregunta", "estructura", "contenido")})
 if all(str(v).startswith("error") for v in results.values()):
     raise SystemExit("No se pudo publicar en ninguna red")
