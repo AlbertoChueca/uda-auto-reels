@@ -1,31 +1,30 @@
-# Cuaderno de cazatendencias (2026-10-30)
+# Cuaderno de cazatendencias (2026-10-31)
 
 ## Tendencias de la semana
-- Maderas oscuras y ricas: El nogal, el wengué y el roble ahumado han desplazado a las maderas claras nórdicas, aportando mayor sofisticación, calidez y contraste a los espacios.
-- Piezas con historia y vintage: La gente huye de los catálogos uniformes y busca muebles heredados o de segunda mano que aporten identidad y un carácter único a la estancia.
-- Espacios fluidos y multifuncionales: Las reformas virales muestran cómo integrar salón, comedor y cocina para maximizar la luz natural y la interacción, adaptándose a las nuevas rutinas.
-- Iluminación cálida y lámparas portátiles: Se priorizan múltiples puntos de luz tenue e indirecta frente a la luz general de techo, creando atmósferas acogedoras, flexibles y emocionales.
-- Texturas envolventes y orgánicas: El uso de tejidos con relieve, terciopelo, bouclé y fibras naturales se viraliza por la necesidad de crear hogares más sensoriales y confortables.
-- Aislamiento y sostenibilidad invisible: Las reformas que muestran el 'antes y después' de mejoras térmicas y acústicas con materiales ecológicos triunfan por la concienciación sobre el ahorro energético.
+- Multiplicar el almacenaje sin obras: Con el cambio de armario de otoño, los vídeos sobre cómo optimizar espacios pequeños usando cajas y organizadores sin hacer reformas están siendo muy virales por su utilidad inmediata.
+- Cocinas abiertas con islas multifuncionales: La integración del salón y la cocina sigue dominando, pero ahora el foco visual está en islas que sirven tanto para cocinar como para teletrabajar o socializar, destacando la fluidez del espacio.
+- El regreso del bar en casa y estilo bistró: De cara a los meses fríos, los usuarios buscan crear rincones de ocio y disfrute dentro del hogar, dándole un toque sofisticado y acogedor a los salones o comedores.
+- Iluminación inteligente y domótica invisible: Mostrar tiras LED ocultas y luces regulables que cambian por completo la atmósfera de una estancia con un solo clic genera mucho 'efecto wow' y retención en vídeos cortos.
+- Hipertactilidad y texturas naturales: La decoración busca el relieve. Mezclar madera natural con texturas minerales, piedra o cristal capta muy bien la luz en cámara y transmite una sensación de calidez muy buscada esta temporada.
+- Materiales sostenibles y ecológicos: El uso de maderas certificadas y pinturas ecológicas es una demanda creciente; los creadores lo destacan como un valor añadido y consciente en los 'house tours' y reformas modernas.
 
 ## Estilos
-- paleta terracota y verde oliva
-- madera de nogal oscuro
-- acentos en azul klein
-- paredes con papel pintado texturizado
-- suelos de piedra natural o barro cocido
+- verde oliva y azul verdoso
+- maderas oscuras con carácter como sapeli o nogal
+- acero inoxidable cepillado
+- amarillo mantequilla combinado con marrón chocolate
+- texturas mate en mobiliario de cocina
 
 ## Para nuestro equipo
-- Aprovechar la fuerte demanda de calidez otoñal potenciando el nogal y las maderas nobles frente al roble claro escandinavo.
-- Evitar a toda costa espacios clínicos de color blanco absoluto o estética nórdica fría, percibidos como impersonales y quemados.
-- Focalizar las propuestas lumínicas en iluminación indirecta, baja y cálida, prescindiendo de downlights cenitales.
-- Conectar las reformas visuales con la continuidad espacial, abriendo tabiques y unificando pavimentos naturales.
+- Aprovechar el tirón del acero inoxidable cepillado y las maderas oscuras (nogal/sapeli) huyendo de acabados brillantes.
+- Explotar el recurso visual de la iluminación indirecta oculta para crear atmósferas acogedoras de temporada de otoño.
+- Evitar salones o cocinas totalmente blancos y asépticos; priorizar texturas táctiles, piedra natural y tonos tierra.
+- El contenido de 'antes y después' debe centrarse en ganar almacenaje o amplitud visual sin tabiques innecesarios.
 
 ## Ya quemado
-- el estilo nórdico totalmente blanco y aséptico
-- los muebles de madera muy clara o contrachapado básico
-- las paredes con gotelé
-- la iluminación fría y plana de techo
+- el recibidor tradicional cerrado y oscuro
+- el minimalismo extremo con paletas neutras aburridas (todo blanco y gris estéril)
+- acabados de alto brillo en los muebles de cocina
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
@@ -34,7 +33,7 @@
 - 酒会背景音乐-Music for the Royal Fireworks Suite · P&P Music
 - The Trailer · Ruiqi Zhao
 - Spectacular Moment · life motivation
-- Neon Nights · Adrian Rover
-- Please Holding Me (Lofi) · Muspace Lofi
 - Restart (Lofi) · Muspace Lofi
+- Dinner Table · Muspace Lofi
+- Please Holding Me (Lofi) · Muspace Lofi
 - Polar Winds (Lofi) · Muspace Lofi

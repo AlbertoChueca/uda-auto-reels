@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-10-30)
+# Cuaderno de memoria (2026-10-31)
 
-- Seguir haciendo: Desgloses de horas y costes de producción que incentivan el guardado («Factura más delegando», «Horas caras»).
-- Dejar de hacer: Tips de diseño e iluminación que obtienen cero guardados sistemáticos.
-- Probar: Tablas comparativas de horas de delineación por tipología y checklists de entrega para guardar y consultar en despacho.
+- Seguir haciendo: Retos normativos y comparativas económicas que disparan los guardados («Solo un arquitecto acierta», 16 guardados).
+- Dejar de hacer: Claves decorativas o de iluminación que acumulan cero guardados sistemáticos.
+- Probar: Tablas de horas de delineación por tipología y checklists de entrega técnica para archivar y consultar en próximos encargos.

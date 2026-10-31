@@ -409,6 +409,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-30"
+},
+{
+"id": "t20261031g",
+"hook": "Islas de cocina que lo cambian todo",
+"cierre": "¿Cuál pondrías en tu casa?",
+"escenas": [
+{
+"idea": "Isla escultórica en acero inoxidable cepillado con zona de cocción integrada y taburetes bajos de madera de nogal.",
+"label": "Acero y nogal"
+},
+{
+"idea": "Bloque monolítico de cuarcita verde oliva con fregadero bajo encimera y espacio amplio para trabajar con portátil.",
+"label": "Piedra verde"
+},
+{
+"idea": "Isla central en roble oscuro ranurado con barra volada iluminada sutilmente desde la base con faldón ciego.",
+"label": "Madera estriada"
+},
+{
+"idea": "Isla multifuncional en microcemento gris cálido combinada con módulo bistró integrado para copas en vidrio estriado.",
+"label": "Rincón bistró"
+},
+{
+"idea": "Mueble isla acabado en laca mate tono chocolate con encimera de caliza clara y enchufes escamoteables ocultos.",
+"label": "Marrón chocolate"
+},
+{
+"idea": "Isla de líneas curvas continuas en travertino claro que separa con fluidez la cocina abierta del salón.",
+"label": "Curvas continuas"
+}
+],
+"tendencia": true,
+"fecha": "2026-10-31"
 }
 ],
 "proceso": [
@@ -462,6 +495,13 @@
 "descripcion": "una vivienda unifamiliar de piedra y madera oscura integrada en una parcela arbolada",
 "tendencia": true,
 "fecha": "2026-10-30"
+},
+{
+"id": "t20261031p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar con cocina abierta al jardín mediante grandes carpinterías de madera oscura",
+"tendencia": true,
+"fecha": "2026-10-31"
 }
 ],
 "antes_despues": [
@@ -518,6 +558,14 @@
 "estilo": "espacio fluido con panelados de nogal, suelo continuo de barro y luz tenue",
 "tendencia": true,
 "fecha": "2026-10-30"
+},
+{
+"id": "t20261031a",
+"tipo": "estancia",
+"descripcion": "un recibidor oscuro y estrecho con puertas ciegas de sapelly y suelo de terrazo apagado",
+"estilo": "espacio fluido con panelados alistonados de nogal, iluminación oculta y espejo curvo retroiluminado",
+"tendencia": true,
+"fecha": "2026-10-31"
 }
 ],
 "tips": [
@@ -782,6 +830,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-30"
+},
+{
+"id": "t20261031t",
+"hook": "5 claves para una luz invisible",
+"tips": [
+{
+"tip": "Foseados perimetrales en falso techo",
+"idea": "Luz indirecta bañando suavemente un muro de mortero de cal sin fuentes luminosas a la vista."
+},
+{
+"tip": "Tiras bajo zócalos o mobiliario",
+"idea": "Isla de cocina que parece levitar gracias a un perfil led cálido escondido en el retranqueo inferior."
+},
+{
+"tip": "Perfiles ocultos en carpintería integrada",
+"idea": "Armario empotrado de madera oscura con iluminación lineal empotrada que resalta las baldas al abrirse."
+},
+{
+"tip": "Bañadores rasantes en texturas minerales",
+"idea": "Luz cálida rasante que enfatiza los relieves rugosos de una pared de piedra natural en el salón."
+},
+{
+"tip": "Luz bajo muebles de cocina",
+"idea": "Encimera de cocina iluminada de forma homogénea mediante perfil oculto bajo los muebles altos sin deslumbrar."
+}
+],
+"tendencia": true,
+"fecha": "2026-10-31"
 }
 ],
 "obra": [

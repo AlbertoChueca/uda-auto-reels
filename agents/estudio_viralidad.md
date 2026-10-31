@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-10-30)
+# Cuaderno de viralidad (2026-10-31)
 
-- Seguir haciendo: Llamadas directas al equipo del despacho («Pásaselo a tu equipo», generó interacción).
-- Dejar de hacer: Cierres contemplativos sin apelación a la toma de decisiones compartida.
-- Probar: Preguntas divisivas sobre coste por m² y rentabilidad de horas para activar el envío entre socios en LinkedIn e Instagram.
+- Seguir haciendo: Retos directos al criterio del arquitecto que impulsan comentarios y compartidos («Solo un arquitecto acierta», 5 comentarios, 2 compartidos).
+- Dejar de hacer: Cierres contemplativos sin apelación a la opinión profesional de los socios del estudio.
+- Probar: Preguntas sobre criterios normativos polémicos o costes de producción por metro cuadrado para provocar debate entre despachos.

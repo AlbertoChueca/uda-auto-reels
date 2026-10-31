@@ -447,5 +447,12 @@
 "fecha": "2026-10-30",
 "formato": "visual",
 "grupo": "antes_despues"
+},
+{
+"id": "portfolio:top:mix",
+"tema": "portfolio",
+"fecha": "2026-10-31",
+"formato": "visual",
+"grupo": "top"
 }
 ]
