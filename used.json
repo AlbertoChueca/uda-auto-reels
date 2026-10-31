@@ -454,5 +454,12 @@
 "fecha": "2026-10-31",
 "formato": "visual",
 "grupo": "top"
+},
+{
+"id": "visual:t20261031g",
+"tema": "visual",
+"fecha": "2026-10-31",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
