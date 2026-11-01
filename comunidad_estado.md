@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-01 09:26 UTC · 0 respuestas_
+_Última pasada: 2026-11-01 11:47 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -20,6 +20,8 @@ _Última pasada: 2026-11-01 09:26 UTC · 0 respuestas_
 | 2026-10-31 | linkedin | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
 | 2026-10-31 | instagram | galeria | Islas de cocina que lo cambian todo | 1 | — |
 | 2026-10-31 | linkedin | galeria | Islas de cocina que lo cambian todo | 1 | — |
+| 2026-11-01 | instagram | portfolio | Capa a capa: las instalaciones de una vi | 1 | — |
+| 2026-11-01 | linkedin | portfolio | Capa a capa: las instalaciones de una vi | 1 | — |
 | 2026-10-29 | instagram | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | tiktok | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | linkedin | carrusel | Factura más delegando la técnica | 0 | — |
