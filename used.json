@@ -496,5 +496,12 @@
 "fecha": "2026-11-01",
 "formato": "visual",
 "grupo": "capas"
+},
+{
+"id": "visual:t20261101t",
+"tema": "visual",
+"fecha": "2026-11-01",
+"formato": "visual",
+"grupo": "tips"
 }
 ]
