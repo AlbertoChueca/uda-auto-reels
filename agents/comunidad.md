@@ -1,6 +1,9 @@
-# Cuaderno de comunidad (2026-10-31)
+# Cuaderno de comunidad (2026-11-01)
 
-• Datos de audiencia: Muy escasos. Sin comentarios recientes registrados. El histórico refleja respuestas únicamente ante desafíos técnicos (5 comentarios) y muestras de entrega o reformas (4 comentarios).
-• Seguir haciendo: Foco en retos operativos del despacho y orgullo gremial, únicos detonantes de conversación.
-• Dejar de hacer: Buscar interacción con contenido decorativo o de inspiración.
-• Probar: Cierres con pregunta directa sobre dudas de visado para provocar objeciones y comentarios sobre delegación técnica.
+# Cuaderno de comunidad
+
+• Datos de audiencia: Muy escasos; sin comentarios nuevos recientes registrados.
+• Lo que dice la audiencia: El histórico demuestra que los arquitectos solo comentan ante retos a su criterio técnico (5 comentarios en top 1) y entregas de despacho reales (3 y 4 comentarios). Desinterés total por decoración.
+• Seguir haciendo: Provocar la opinión experta del arquitecto sobre situaciones de despacho.
+• Dejar de hacer: Preguntas genéricas de inspiración.
+• Probar: Cerrar con pregunta sobre fricciones de colegiación: «¿Qué requerimiento de visado te hace perder más semanas?» para mapear objeciones al delegar.

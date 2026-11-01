@@ -1,39 +1,40 @@
-# Cuaderno de cazatendencias (2026-10-31)
+# Cuaderno de cazatendencias (2026-11-01)
 
 ## Tendencias de la semana
-- Multiplicar el almacenaje sin obras: Con el cambio de armario de otoño, los vídeos sobre cómo optimizar espacios pequeños usando cajas y organizadores sin hacer reformas están siendo muy virales por su utilidad inmediata.
-- Cocinas abiertas con islas multifuncionales: La integración del salón y la cocina sigue dominando, pero ahora el foco visual está en islas que sirven tanto para cocinar como para teletrabajar o socializar, destacando la fluidez del espacio.
-- El regreso del bar en casa y estilo bistró: De cara a los meses fríos, los usuarios buscan crear rincones de ocio y disfrute dentro del hogar, dándole un toque sofisticado y acogedor a los salones o comedores.
-- Iluminación inteligente y domótica invisible: Mostrar tiras LED ocultas y luces regulables que cambian por completo la atmósfera de una estancia con un solo clic genera mucho 'efecto wow' y retención en vídeos cortos.
-- Hipertactilidad y texturas naturales: La decoración busca el relieve. Mezclar madera natural con texturas minerales, piedra o cristal capta muy bien la luz en cámara y transmite una sensación de calidez muy buscada esta temporada.
-- Materiales sostenibles y ecológicos: El uso de maderas certificadas y pinturas ecológicas es una demanda creciente; los creadores lo destacan como un valor añadido y consciente en los 'house tours' y reformas modernas.
+- Casas que sanan y decoración consciente: La gente busca refugios emocionales que reduzcan el estrés mediante iluminación cálida, orden visual y espacios que transmitan paz mental y equilibrio energético.
+- El concepto 'Collected Home': Se huye de las casas de catálogo uniformes para apostar por mezclar piezas artesanales, recuerdos y objetos de diferentes épocas que cuenten una historia personal.
+- Reformas DIY sin obras: Debido a la inflación y el coste de vida, triunfan los vídeos de pintar azulejos, instalar suelos vinílicos o renovar cocinas con bajo presupuesto y esfuerzo propio.
+- Diseño biofílico y materiales de bajo impacto: Hay una mayor conciencia sobre la toxicidad en interiores y la huella de carbono, priorizando maderas certificadas, barro, corcho y fibras vegetales.
+- Espacios fluidos y multifuncionales: Las viviendas modernas necesitan adaptarse a diferentes usos diarios, integrando cocinas abiertas con islas que sirven para cocinar, trabajar y socializar.
+- El fin de los neutros fríos: El gris y el blanco puro ceden su lugar a paletas mucho más cálidas y terrosas que aportan temperatura, profundidad y confort visual a las estancias.
 
 ## Estilos
-- verde oliva y azul verdoso
-- maderas oscuras con carácter como sapeli o nogal
-- acero inoxidable cepillado
-- amarillo mantequilla combinado con marrón chocolate
-- texturas mate en mobiliario de cocina
+- verde oliva y caqui
+- tonos burdeos, vino y berenjena
+- madera de nogal oscura
+- barro cocido y terracota
+- piedra natural y travertino
+- formas curvas y orgánicas
 
 ## Para nuestro equipo
-- Aprovechar el tirón del acero inoxidable cepillado y las maderas oscuras (nogal/sapeli) huyendo de acabados brillantes.
-- Explotar el recurso visual de la iluminación indirecta oculta para crear atmósferas acogedoras de temporada de otoño.
-- Evitar salones o cocinas totalmente blancos y asépticos; priorizar texturas táctiles, piedra natural y tonos tierra.
-- El contenido de 'antes y después' debe centrarse en ganar almacenaje o amplitud visual sin tabiques innecesarios.
+- Aprovechar el tirón de 'casas que sanan' conectándolo con el bienestar visual y la desconexión mental del cliente maduro.
+- Desterrar por completo el gris antracita y el blanco hospitalario; la tendencia vira hacia verdes oliva, burdeos y maderas densas.
+- Priorizar planos detalle táctiles (morteros de cal, barro, vetas profundas de nogal) frente a vistas generales sin textura.
+- Evitar estéticas de catálogo clónico y enfatizar la mezcla de piezas con alma y artesanía imperfecta.
 
 ## Ya quemado
-- el recibidor tradicional cerrado y oscuro
-- el minimalismo extremo con paletas neutras aburridas (todo blanco y gris estéril)
-- acabados de alto brillo en los muebles de cocina
+- El minimalismo extremo y frío (todo blanco y gris aséptico)
+- El 'total beige' sin contrastes ni texturas
+- Muebles de 'fast furniture' idénticos y sin personalidad
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
-- Lost in the Clouds · NyKuo
-- 酒会背景音乐-Music for the Royal Fireworks Suite · P&P Music
 - The Trailer · Ruiqi Zhao
 - Spectacular Moment · life motivation
-- Restart (Lofi) · Muspace Lofi
+- 酒会背景音乐-Music for the Royal Fireworks Suite · P&P Music
 - Dinner Table · Muspace Lofi
-- Please Holding Me (Lofi) · Muspace Lofi
 - Polar Winds (Lofi) · Muspace Lofi
+- Please Holding Me (Lofi) · Muspace Lofi
+- Restart (Lofi) · Muspace Lofi
+- Lucky Thing (Lofi) · Muspace Lofi

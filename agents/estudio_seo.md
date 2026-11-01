@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-10-31)
+# Cuaderno de seo (2026-11-01)
 
-- Seguir haciendo: Palabras clave B2B operativas: «plantilla», «delegar», «proyecto de ejecución», «coste técnico» y «estudio de arquitectura».
-- Dejar de hacer: Términos decorativos B2C como «cocinas», «reforma», «casas de campo» o «iluminación».
-- Probar: Posicionar búsquedas transaccionales de despachos: «externalización de proyectos», «delineación CTE», «cálculo de memorias» y «apoyo técnico arquitectura».
+- Seguir haciendo: Términos operativos B2B como «delegar», «plantilla», «estudio de arquitectura» y «proyecto de ejecución».
+- Dejar de hacer: Búsquedas residenciales y de decoración («cocinas», «reforma», «casas de campo»).
+- Probar: Palabras clave transaccionales de despachos: «externalizar delineación», «CTE ejecución», «apoyo técnico proyectos» y «cálculo de memorias».

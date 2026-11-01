@@ -442,6 +442,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-31"
+},
+{
+"id": "t20261101g",
+"hook": "¿Vivirías en una casa que sana?",
+"cierre": "¿Cuál te transmite más paz?",
+"escenas": [
+{
+"idea": "Rincón de lectura bañado por luz tenue con butaca de lino crudo y hornacina de yeso con libros antiguos.",
+"label": "Luz y silencio"
+},
+{
+"idea": "Salón sereno con paredes de arcilla color arena, sofá bajo modular y gran ventanal abierto a un jardín de helechos.",
+"label": "Muros de barro"
+},
+{
+"idea": "Cocina cálida con armarios de nogal oscuro, encimera de travertino mate y luz indirecta rasante bajo los estantes de madera.",
+"label": "Textura natural"
+},
+{
+"idea": "Baño concebido como santuario con bañera exenta de piedra tallada sobre suelo de barro cocido y luz cenital suave.",
+"label": "Piedra y calma"
+},
+{
+"idea": "Dormitorio minimalista cálido con cabecero de lamas de madera oscura, ropa de cama en tono teja y apliques de bronce.",
+"label": "Calidez terrosa"
+},
+{
+"idea": "Patio interior con estanque de piedra caliza, banco de roble recuperado y vegetación envolvente que tamiza el sol.",
+"label": "Refugio vegetal"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-01"
 }
 ],
 "proceso": [
@@ -502,6 +535,13 @@
 "descripcion": "una vivienda unifamiliar con cocina abierta al jardín mediante grandes carpinterías de madera oscura",
 "tendencia": true,
 "fecha": "2026-10-31"
+},
+{
+"id": "t20261101p",
+"tipo": "casa",
+"descripcion": "una vivienda biofílica estructurada en patios escalonados con muros de piedra travertino y celosías cerámicas",
+"tendencia": true,
+"fecha": "2026-11-01"
 }
 ],
 "antes_despues": [
@@ -566,6 +606,14 @@
 "estilo": "espacio fluido con panelados alistonados de nogal, iluminación oculta y espejo curvo retroiluminado",
 "tendencia": true,
 "fecha": "2026-10-31"
+},
+{
+"id": "t20261101a",
+"tipo": "estancia",
+"descripcion": "una buhardilla sombría con paredes descascarilladas, suelo plástico imitación madera y tragaluz diminuto sucio",
+"estilo": "estilo collected home con vigas vistas de nogal, terracota y rincón de lectura sereno",
+"tendencia": true,
+"fecha": "2026-11-01"
 }
 ],
 "tips": [
@@ -858,6 +906,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-10-31"
+},
+{
+"id": "t20261101t",
+"hook": "5 claves para un hogar consciente",
+"tips": [
+{
+"tip": "Sustituye blancos fríos por terracota",
+"idea": "Salón luminoso con paredes pintadas en tono tierra suave combinadas con molduras limpias y carpintería de madera natural."
+},
+{
+"tip": "Prioriza maderas oscuras y veteadas",
+"idea": "Comedor de techos altos presidido por una mesa de nogal macizo sin barnices brillantes bajo luz cálida focal."
+},
+{
+"tip": "Introduce piezas artesanales con historia",
+"idea": "Aparador rústico con vasijas de cerámica tosca imperfecta y ramas secas frente a un muro texturizado a la cal."
+},
+{
+"tip": "Diseña iluminación indirecta baja",
+"idea": "Dormitorio con lámparas cerámicas de sobremesa y foseados perimetrales tenues, evitando focos empotrados en el techo."
+},
+{
+"tip": "Incorpora barro cocido y fibras",
+"idea": "Recibidor con pavimento continuo de baldosa de terracota tradicional y banco de madera con cojines de yute natural."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-01"
 }
 ],
 "obra": [

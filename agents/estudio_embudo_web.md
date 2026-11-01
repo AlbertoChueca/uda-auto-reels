@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-10-31)
+# Cuaderno de embudo_web (2026-11-01)
 
-- Seguir haciendo: Comparar el coste de plantilla fija frente a la delegación por encargo («Plantilla o delegar», 89 clics a web).
-- Dejar de hacer: Reels visuales sin llamada a la acción hacia uniondearquitectos.com (más de 20 posts con 0 clics).
-- Probar: Conectar publicaciones de alta retención («Qué incluye delegar», 12.090 ms) con cotización de paquetes técnicos cerrados.
+- Seguir haciendo: Enfoque comparativo entre costes fijos de plantilla y delegación puntual («Plantilla o delegar», récord de 89 clics).
+- Dejar de hacer: Reels puramente visuales sin CTA específico a uniondearquitectos.com (más de 20 posts con 0 clics).
+- Probar: Vincular contenidos de alta retención técnica («Qué incluye delegar», 12.090 ms) con paquetes de servicios cerrados en la web.

@@ -1,5 +1,7 @@
-# Cuaderno de gancho (2026-10-31)
+# Cuaderno de gancho (2026-11-01)
 
-• Seguir haciendo: Ganchos de reto o cribado profesional gremial ("Solo un arquitecto acierta los cuatro" lidera con score 11.61, 2.385 views y 16 guardados) y entregables tangibles ("Esto es lo que entregamos...", 9.71).
-• Dejar de hacer: Ganchos de estética residencial o interiorismo genérico ("Del boceto al render", "Casas de campo", "Cocinas", todos score 0.00).
-• Probar: Fórmulas de reto normativo en 2 segundos: «Solo 1 de cada 10 despachos revisa esto antes de visar» o dilemas de horas/coste directo.
+# Cuaderno de gancho
+
+• Seguir haciendo: Retos de validación profesional gremial («Solo un arquitecto acierta los cuatro», score 11.62) y desgloses de entregables técnicos («Top 4: lo que te llega cuando nos delegas», 10.45).
+• Dejar de hacer: Ganchos de estética residencial, reformas decorativas o frases abstractas («Casas de campo», «Del boceto al render», score 0.00).
+• Probar: Ganchos combinando colapso de entrega y rigor técnico: «Los 4 puntos de CTE que te van a tumbar en visado».

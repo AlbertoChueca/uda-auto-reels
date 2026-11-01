@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-10-31)
+# Cuaderno de revisora_visual (2026-11-01)
 
-- Seguir haciendo: Exigencia de rigor técnico para que los planos y entregables parezcan documentación auténtica de despacho.
-- Dejar de hacer: Validar escenas domésticas y reformas de gotelé o terrazas sin carga profesional de arquitectura.
-- Probar: Comprobar que los grafismos técnicos incorporen simbología constructiva y cotas verosímiles sin mostrar proyectos protegidos ni edificios reconocibles.
+- Seguir haciendo: Exigencia de grafismo técnico creíble en entregables B2B («Esto es lo que entregamos», score 9.73).
+- Dejar de hacer: Aprobar imágenes de gotelé, azulejos viejos o terrazas degradadas sin interés arquitectónico profesional.
+- Probar: Verificar que cada ilustración técnica contenga simbología normativa real (CTE, tramas de aislamiento) sin mostrar marcas ni edificios protegidos.

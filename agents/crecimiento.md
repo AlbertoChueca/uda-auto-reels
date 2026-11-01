@@ -1,5 +1,7 @@
-# Cuaderno de crecimiento (2026-10-31)
+# Cuaderno de crecimiento (2026-11-01)
 
-• Seguir haciendo: Promover temas de validación técnica y contratación, los únicos que logran guardados (16 en el top 1) y compartidos.
-• Dejar de hacer: Copys neutros; las visitas al perfil se mantienen estancadas en cero en todas las publicaciones.
-• Probar: CTA de reto interactivo («Guárdalo para comprobar tu proyecto y comenta cuál te falta») con enlace explícito a uniondearquitectos.com para delegar el expediente.
+# Cuaderno de crecimiento
+
+• Seguir haciendo: Foco temático en retos de proyecto y contratación, únicos que generan guardados masivos (16 en el top 1, 10 en top 2).
+• Dejar de hacer: Cierres pasivos; las visitas al perfil y a la web siguen estancadas en cero.
+• Probar: CTA combinado directo: «Guarda esta comprobación para visar y pide presupuesto de redacción técnica en uniondearquitectos.com (enlace en bio)».

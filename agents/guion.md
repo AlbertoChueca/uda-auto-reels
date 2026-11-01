@@ -1,5 +1,7 @@
-# Cuaderno de guion (2026-10-31)
+# Cuaderno de guion (2026-11-01)
 
-• Seguir haciendo: Dinámicas de verificación técnica y desglose de entregables del despacho (el bloque 'contratar' copa los 4 mejores scores: 11.61, 9.71, 9.67 y 9.34).
-• Dejar de hacer: Guiones contemplativos, citas teóricas ("La forma sigue a la función") y reformas sin foco en gestión ni CTE.
-• Probar: Guión estructurado en 4 trampas normativas o técnicas que colapsan entregas, contrastando el error habitual con la solución técnica delegable.
+# Cuaderno de guion
+
+• Seguir haciendo: Guiones con formato lista (Top 4, 4 fallos) y desgloses de entregables directos en los bloques 'contratar' y 'negocio' (copan los scores >9.3).
+• Dejar de hacer: Citas teóricas («La forma sigue a la función»), trucos de interiorismo y consejos sin impacto operativo en despacho.
+• Probar: Estructura técnica de 4 trampas frecuentes de proyecto/normativa enfrentadas a la solución exacta lista para visar que UDA resuelve.
