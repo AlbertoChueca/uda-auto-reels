@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-02 11:48 UTC · 0 respuestas_
+_Última pasada: 2026-11-02 14:49 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -28,6 +28,9 @@ _Última pasada: 2026-11-02 11:48 UTC · 0 respuestas_
 | 2026-11-02 | instagram | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
 | 2026-11-02 | tiktok | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
 | 2026-11-02 | linkedin | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
+| 2026-11-02 | instagram | antes_despues | POV: compras para reformar | 1 | — |
+| 2026-11-02 | tiktok | antes_despues | POV: compras para reformar | 1 | — |
+| 2026-11-02 | linkedin | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-10-29 | instagram | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | tiktok | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | linkedin | carrusel | Factura más delegando la técnica | 0 | — |
