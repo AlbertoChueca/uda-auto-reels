@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-11-01)
+# Cuaderno de ritmo (2026-11-02)
 
-- Seguir haciendo: Ritmo pausado y analítico en carruseles técnicos de alta retención («Qué incluye delegar», 12.090 ms; «Equipamiento», 7.710 ms).
-- Dejar de hacer: Entradas lentas sin tensión inicial que causan abandono inmediato («Escalar estudio», 660 ms).
-- Probar: Abrir con ganchos desafiantes o datos numéricos en los primeros 2 segundos antes de desarrollar la solución técnica.
+- Seguir haciendo: Ritmo explicativo y analítico que mantiene al profesional («Qué incluye delegar», 12.090 ms; «Capa a capa», 4.150 ms).
+- Dejar de hacer: Introducciones lentas sin conflicto inicial que provocan abandono inmediato («Escalar estudio», 660 ms).
+- Probar: Planteamiento del reto o dato numérico en los primeros 2 segundos antes de desglosar la solución.

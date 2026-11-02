@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-11-01)
+# Cuaderno de series (2026-11-02)
 
-- Seguir haciendo: Los datos muestran que ninguna publicación usó series («serie None» en el 100%). Faltan datos para evaluar retención recurrente.
-- Dejar de hacer: Publicar reels aislados sin numeración ni cita fija semanal.
-- Probar: Lanzar la serie semanal «Números de Despacho» (Cap. 1: Plantilla vs. Delegar), aprovechando el interés probado de 89 clics.
+- Seguir haciendo: Faltan datos para evaluar retención: el 100% de los posts se publicó con «serie None».
+- Dejar de hacer: Publicaciones sueltas sin marco editorial ni cita periódica.
+- Probar: Lanzar la serie semanal «Entregables de Despacho» (Cap. 1: Instalaciones), aprovechando el éxito de los formatos de portfolio.

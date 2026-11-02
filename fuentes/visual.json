@@ -475,6 +475,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-01"
+},
+{
+"id": "t20261102g",
+"hook": "¿Prefieres casas vividas o de revista?",
+"cierre": "¿Cuál elegirías para vivir?",
+"escenas": [
+{
+"idea": "Salón cálido con estantería abierta de nogal repleta de libros leídos, lámpara de papel de arroz y butaca de cuero desgastado.",
+"label": "Salón con libros"
+},
+{
+"idea": "Comedor luminoso con mesa maciza de olivo, sillas desparejadas de madera y cerámicas artesanales sobre aparador vintage recuperado.",
+"label": "Comedor rústico"
+},
+{
+"idea": "Rincón de trabajo con escritorio de castaño, cuadros apoyados en pared de terracota y flexo industrial antiguo orientado a ventana.",
+"label": "Despacho creativo"
+},
+{
+"idea": "Cocina abierta con vajilla vista de barro, tarros de gres y encimera de granito rugoso junto a mesa compartida.",
+"label": "Cocina abierta"
+},
+{
+"idea": "Dormitorio sereno con paredes encaladas, sábanas de lino natural arrugadas y mesita de noche de tronco tallado artesanal.",
+"label": "Dormitorio sereno"
+},
+{
+"idea": "Zona de paso con galería de cuadros eclécticos, alfombra de yute desgastada y banco de carpintero con plantas naturales.",
+"label": "Galería ecléctica"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-02"
 }
 ],
 "proceso": [
@@ -542,6 +575,13 @@
 "descripcion": "una vivienda biofílica estructurada en patios escalonados con muros de piedra travertino y celosías cerámicas",
 "tendencia": true,
 "fecha": "2026-11-01"
+},
+{
+"id": "t20261102p",
+"tipo": "casa",
+"descripcion": "una vivienda bioclimática con muros macizos de tapial, ventilación cruzada y celosías de terracota",
+"tendencia": true,
+"fecha": "2026-11-02"
 }
 ],
 "antes_despues": [
@@ -614,6 +654,14 @@
 "estilo": "estilo collected home con vigas vistas de nogal, terracota y rincón de lectura sereno",
 "tendencia": true,
 "fecha": "2026-11-01"
+},
+{
+"id": "t20261102a",
+"tipo": "estancia",
+"descripcion": "un aseo setentero diminuto con sanitarios verde aguacate, azulejos esmaltados oscuros y ventana cegada a patio",
+"estilo": "baño spa contemporáneo con mortero de cal beige, grifería empotrada y hornacina iluminada",
+"tendencia": true,
+"fecha": "2026-11-02"
 }
 ],
 "tips": [
@@ -934,6 +982,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-01"
+},
+{
+"id": "t20261102t",
+"hook": "5 claves para diseñar un baño tipo spa",
+"tips": [
+{
+"tip": "Hornacinas con luz indirecta cálida integrada",
+"idea": "Ducha revestida de microcemento continuo con hornacina horizontal retroiluminada sin perfilería metálica vista."
+},
+{
+"tip": "Grifería empotrada en bronce cepillado",
+"idea": "Lavabo tallado en piedra caliza con caño mural minimalista y accionamiento independiente empotrado."
+},
+{
+"tip": "Revestimientos continuos sin juntas visibles",
+"idea": "Espacio envolvente de mortero de cal en tono arena con plato de ducha integrado a nivel de pavimento."
+},
+{
+"tip": "Bañera exenta con desagüe camuflado",
+"idea": "Bañera ovalada de resina mate situada frente a gran ventanal con celosía cerámica protectora."
+},
+{
+"tip": "Madera tratada para calidez táctil",
+"idea": "Mueble bajolavabo suspendido de nogal estriado combinado con espejo retroiluminado de esquinas curvas."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-02"
 }
 ],
 "obra": [

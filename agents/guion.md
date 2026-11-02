@@ -1,7 +1,7 @@
-# Cuaderno de guion (2026-11-01)
+# Cuaderno de guion (2026-11-02)
 
 # Cuaderno de guion
 
-• Seguir haciendo: Guiones con formato lista (Top 4, 4 fallos) y desgloses de entregables directos en los bloques 'contratar' y 'negocio' (copan los scores >9.3).
-• Dejar de hacer: Citas teóricas («La forma sigue a la función»), trucos de interiorismo y consejos sin impacto operativo en despacho.
-• Probar: Estructura técnica de 4 trampas frecuentes de proyecto/normativa enfrentadas a la solución exacta lista para visar que UDA resuelve.
+• Seguir haciendo: Estructuras en lista y desgloses paso a paso (capa a capa, top 4) en bloques contratar y negocio; lideran retención (>4-5 s) y guardados (>10).
+• Dejar de hacer: Citas teóricas («La forma sigue a la función») o consejos domésticos sin impacto en la producción del estudio.
+• Probar: Estructura técnica de 3 incongruencias de proyecto que paralizan licencias y cómo UDA las entrega resueltas en memoria ejecutiva.

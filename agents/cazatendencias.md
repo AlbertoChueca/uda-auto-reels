@@ -1,40 +1,39 @@
-# Cuaderno de cazatendencias (2026-11-01)
+# Cuaderno de cazatendencias (2026-11-02)
 
 ## Tendencias de la semana
-- Casas que sanan y decoración consciente: La gente busca refugios emocionales que reduzcan el estrés mediante iluminación cálida, orden visual y espacios que transmitan paz mental y equilibrio energético.
-- El concepto 'Collected Home': Se huye de las casas de catálogo uniformes para apostar por mezclar piezas artesanales, recuerdos y objetos de diferentes épocas que cuenten una historia personal.
-- Reformas DIY sin obras: Debido a la inflación y el coste de vida, triunfan los vídeos de pintar azulejos, instalar suelos vinílicos o renovar cocinas con bajo presupuesto y esfuerzo propio.
-- Diseño biofílico y materiales de bajo impacto: Hay una mayor conciencia sobre la toxicidad en interiores y la huella de carbono, priorizando maderas certificadas, barro, corcho y fibras vegetales.
-- Espacios fluidos y multifuncionales: Las viviendas modernas necesitan adaptarse a diferentes usos diarios, integrando cocinas abiertas con islas que sirven para cocinar, trabajar y socializar.
-- El fin de los neutros fríos: El gris y el blanco puro ceden su lugar a paletas mucho más cálidas y terrosas que aportan temperatura, profundidad y confort visual a las estancias.
+- Casas vividas y reales: La audiencia en redes rechaza cada vez más los espacios estériles y de revista. Se viralizan hogares que muestran personalidad, libros apilados, arte ecléctico y un 'desorden estético' que transmite calidez y vida real.
+- Reformas sin obras (cambios ágiles): Debido a la inflación y el alto coste de las obras integrales, triunfan los vídeos de pintar azulejos, cambiar tiradores, instalar suelo vinílico y usar iluminación indirecta para transformar espacios con poco presupuesto.
+- Baños concebidos como spas: El baño ha pasado de ser puramente funcional a un espacio de lujo emocional. Retienen mucha audiencia los vídeos mostrando hornacinas iluminadas en la ducha, grifería empotrada y revestimientos continuos sin juntas.
+- Cocinas abiertas pero camufladas: Siguen gustando abiertas al salón, pero ahora se viraliza ocultar los electrodomésticos por completo, usar placas con extractores integrados invisibles y combinar madera oscura con piedra natural para que parezca mobiliario de salón.
+- Aislamiento y confort térmico: Tras los veranos extremos en España, los usuarios guardan masivamente vídeos sobre ventanas eficientes, ventilación cruzada, aerotermia y materiales que mantienen la casa fresca sin gastar tanta energía.
+- El regreso de las maderas oscuras: Maderas como el sapeli o el nogal, típicas de los pisos españoles de los 70 y 80, vuelven con fuerza en proyectos modernos para dar un toque retro y elegante, desbancando al roble claro nórdico.
 
 ## Estilos
-- verde oliva y caqui
-- tonos burdeos, vino y berenjena
-- madera de nogal oscura
-- barro cocido y terracota
-- piedra natural y travertino
-- formas curvas y orgánicas
+- madera oscura (sapeli, nogal)
+- tonos tierra, terracota y verde oliva
+- curvas y formas orgánicas en muros y arcos
+- hipertactilidad (estucos, limewash, texturas rugosas)
+- piedra natural con vetas muy marcadas
 
 ## Para nuestro equipo
-- Aprovechar el tirón de 'casas que sanan' conectándolo con el bienestar visual y la desconexión mental del cliente maduro.
-- Desterrar por completo el gris antracita y el blanco hospitalario; la tendencia vira hacia verdes oliva, burdeos y maderas densas.
-- Priorizar planos detalle táctiles (morteros de cal, barro, vetas profundas de nogal) frente a vistas generales sin textura.
-- Evitar estéticas de catálogo clónico y enfatizar la mezcla de piezas con alma y artesanía imperfecta.
+- Apostar por el 'desorden estético' y texturas vivas: la audiencia penaliza los interiores asépticos tipo render comercial.
+- Evitar el blanco clínico y la palillería de roble claro en TV, ya saturada y percibida como desfasada.
+- Priorizar vídeos de baños spa táctiles y confort térmico pasivo, los formatos más guardados por su valor práctico.
+- Mostrar materiales de tacto rugoso como el tapial, limewash y nogal para transmitir lujo sobrio y durabilidad.
 
 ## Ya quemado
-- El minimalismo extremo y frío (todo blanco y gris aséptico)
-- El 'total beige' sin contrastes ni texturas
-- Muebles de 'fast furniture' idénticos y sin personalidad
+- El minimalismo extremo todo en blanco y gris (estilo quirófano o piso piloto frío)
+- La palillería de madera clara en la pared del televisor
+- Los carteles con frases motivacionales o letras luminosas de neón genéricas
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
 - The Trailer · Ruiqi Zhao
 - Spectacular Moment · life motivation
-- 酒会背景音乐-Music for the Royal Fireworks Suite · P&P Music
-- Dinner Table · Muspace Lofi
 - Polar Winds (Lofi) · Muspace Lofi
-- Please Holding Me (Lofi) · Muspace Lofi
+- Finally You Are Here · BCD Studio
+- Dinner Table · Muspace Lofi
 - Restart (Lofi) · Muspace Lofi
+- Echos in My Mind (Lofi) · Muspace Lofi
 - Lucky Thing (Lofi) · Muspace Lofi
