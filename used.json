@@ -531,5 +531,19 @@
 "fecha": "2026-11-02",
 "formato": "visual",
 "grupo": "caso"
+},
+{
+"id": "visual:t20261031a",
+"tema": "visual",
+"fecha": "2026-11-02",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:a2",
+"tema": "visual",
+"fecha": "2026-11-02",
+"formato": "visual",
+"grupo": "antes_despues"
 }
 ]
