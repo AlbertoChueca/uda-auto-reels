@@ -1,5 +1,12 @@
-Carrusel 2026-11-03 16:31 UTC
-carrusel: guion no válido (menos de 3 diapositivas válidas (o citas que no están en la fuente))
-carrusel: el verificador pide cambios: [{"frase": "▪️ Locales y cambios de uso → tramitación completa de actividades y reformas a vivienda.", "motivo": "UDA no realiza la tramitación. Según los hechos ciertos, la tramitación corresponde al despacho; UDA actúa únicamente como soporte técnico online redactando la documentación."}]
-carrusel: tema uda_servicios descartado: no hay carrusel verificado para Qué hace UDA por tu despacho
-NO PUBLICADO: hoy no hay carrusel verificado (mejor no publicar que publicar un error)
+Carrusel 2026-11-03 16:33 UTC
+carrusel: el verificador pide cambios: [{"frase": "Conversión de local u oficina en vivienda con justificación urbanística y memoria completa para tramitar.", "motivo": "Incumple la regla de que cada ítem debe estar respaldado por su cita: la cita proporcionada solo nombra el tipo de encargo y no menciona 'justificación urbanística' ni 'memoria completa'. Además, hay un error de precisión respecto a la fuente: el paquete 07 incluye 'ju
+carrusel: verificado (Actuaciones específicas delegables)
+carrusel: revisión 7.0/10 ["Jerga interna incomprensible en la diapositiva 2: la frase 'no hace falta marcar los apartados 5 y 6' hace referencia a un formulario interno de contratación que el lector en redes no conoce ni entiende.", 'Saturación y ruido visual en la diapositiva final (cierre): compiten demasiados niveles de llamada a la acción (guardar/enviar, checkmarks, botón dorado en caja y un bloque blanco sobredimensionado con la web que rompe la estética premium).', "La nota al pie 'Fuente: Listado de documentos de UDA, Apartado 07...' se repite innecesariamente en todas las láminas, restando aire a la maquetación y aportando un matiz burocrático poco editorial."]
+carrusel: verificado (Actuaciones específicas a precio cerrado)
+carrusel: reintento uda_servicios 8.3/10 ["En las diapositivas 04 y 05, los titulares rompen con una sola palabra en la segunda línea ('uso', 'obras'), generando líneas huérfanas que perjudican el ritmo tipográfico.", "El pie de página repetido ('Fuente: Listado de documentos de UDA, 07...') aporta ruido de archivo interno sin valor editorial para el lector.", 'La diapositiva final (06) acumula demasiados niveles de llamada a la acción y la caja blanca de la URL rompe bruscamente con la paleta sobria de negro y dorado.']
+carrusel: Qué hace UDA por tu despacho · Actuaciones específicas a precio cerrado · 6 imágenes
+Instagram carrusel: https://www.instagram.com/p/DfSVFfgDSOZ/
+Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
+Zernio tiktok carrusel: creado 6aea0e12ffb651f461dcc217
+Zernio linkedin documento: creado 6aea0e1dc4a3d467fd29faf1
+publicación: {"instagram_carrusel": "ig:18120536743945657", "tiktok_carrusel": "6aea0e12ffb651f461dcc217", "linkedin_documento": "6aea0e1dc4a3d467fd29faf1"}

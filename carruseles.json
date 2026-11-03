@@ -160,5 +160,26 @@
 "linkedin_documento": "6ae36bb603d3ea4d600ce26a"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-11-03",
+"bloque": "servicios",
+"tema": "uda_servicios",
+"subtema": "Actuaciones específicas a precio cerrado",
+"titulo": "Actuaciones específicas en paquete",
+"fragmentos": [
+"07 Actuaciones específicas",
+"05 Proyecto Básico"
+],
+"quiz_id": null,
+"imagenes": 6,
+"nota": 8.3,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18120536743945657",
+"tiktok_carrusel": "6aea0e12ffb651f461dcc217",
+"linkedin_documento": "6aea0e1dc4a3d467fd29faf1"
+},
+"dry_run": false
 }
 ]
