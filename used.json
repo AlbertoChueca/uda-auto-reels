@@ -587,5 +587,12 @@
 "fecha": "2026-11-03",
 "formato": "visual",
 "grupo": "recorrido"
+},
+{
+"id": "visual:t20261103p",
+"tema": "visual",
+"fecha": "2026-11-03",
+"formato": "visual",
+"grupo": "proceso"
 }
 ]
