@@ -1,7 +1,7 @@
-# Cuaderno de diseno (2026-11-02)
+# Cuaderno de diseno (2026-11-03)
 
 # Cuaderno de diseno
 
-• Seguir haciendo: Formato infografía en fondo carbón/negro; monopoliza los mejores desempeños (scores >9.7) y retenciones consistentes.
-• Dejar de hacer: Renders contemplativos y carruseles sin jerarquía técnica clara (scores inferiores a 3.5 o en 0.00).
-• Probar: Maquetación editorial técnica con despiece por capas (estilo plano técnico en blanco piedra y bronce) cuidando la zona segura inferior para no pisar texto.
+• Seguir haciendo: Formato infografía en fondo carbón/negro; agrupa todos los contenidos de alto rendimiento (scores de 9.76 a 11.63).
+• Dejar de hacer: Carruseles y renders aislados sin apoyo gráfico explicativo (scores desplomados entre 0.00 y 3.32).
+• Probar: Esquema editorial de despiece técnico (planimetría en blanco piedra y cotas en bronce), asegurando márgenes libres en la zona segura inferior para subtítulos.

@@ -1,7 +1,7 @@
-# Cuaderno de crecimiento (2026-11-02)
+# Cuaderno de crecimiento (2026-11-03)
 
 # Cuaderno de crecimiento
 
-• Seguir haciendo: Foco en contenido técnico de alta utilidad; es el único que genera guardados masivos (16, 14 y 10 en los tres primeros puestos).
-• Dejar de hacer: Copys neutros sin llamada a la acción; las visitas a perfil siguen estancadas en cero.
-• Probar: CTA directo y específico: «Guarda esta comprobación para visar y pide presupuesto de redacción técnica en uniondearquitectos.com (enlace en bio)».
+• Seguir haciendo: Contenido técnico ultraespecífico; es el único que activa guardados masivos (16 y 17 en los dos mejores reels).
+• Dejar de hacer: Copys sin llamada a la acción directa; las visitas a perfil siguen en cero en todo el histórico analizado.
+• Probar: CTA de fricción cero orientado al estudio: «Guarda esta comprobación para visar y revisa cómo externalizar tu ejecución en uniondearquitectos.com (enlace en bio)».

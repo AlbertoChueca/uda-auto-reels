@@ -508,6 +508,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-02"
+},
+{
+"id": "t20261103g",
+"hook": "El nuevo minimalismo cálido",
+"cierre": "¿Cuál te transmite más paz?",
+"escenas": [
+{
+"idea": "Salón bañado en luz cenital con paredes de mortero de cal, sofá curvo de lino marfil y mesa baja de nogal macizo.",
+"label": "Salón orgánico"
+},
+{
+"idea": "Dormitorio envolvente pintado en verde salvia suave con cabecero tapizado en bouclé y lámpara suspendida de papel japonés.",
+"label": "Dormitorio envolvente"
+},
+{
+"idea": "Cocina abierta en tono arena mate, encimera de caliza abujardada y aparador rústico de madera recuperada como remate.",
+"label": "Cocina sobria"
+},
+{
+"idea": "Rincón de lectura junto a ventanal con butaca tapizada en lino crudo, estantería empotrada de roble y alfombra de yute.",
+"label": "Rincón de lectura"
+},
+{
+"idea": "Baño continuo revestido enteramente de microcemento tostado con lavabo cilíndrico exento y grifería empotrada en latón cepillado.",
+"label": "Baño continuo"
+},
+{
+"idea": "Comedor con mesa circular de castaño antiguo, sillas tapizadas en bouclé y gran cuadro abstracto de textura rugosa monocromática.",
+"label": "Comedor sereno"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-03"
 }
 ],
 "proceso": [
@@ -582,6 +615,13 @@
 "descripcion": "una vivienda bioclimática con muros macizos de tapial, ventilación cruzada y celosías de terracota",
 "tendencia": true,
 "fecha": "2026-11-02"
+},
+{
+"id": "t20261103p",
+"tipo": "casa",
+"descripcion": "Una vivienda señorial de techos altos restaurada con texturas minerales y carpinterías de nogal.",
+"tendencia": true,
+"fecha": "2026-11-03"
 }
 ],
 "antes_despues": [
@@ -662,6 +702,14 @@
 "estilo": "baño spa contemporáneo con mortero de cal beige, grifería empotrada y hornacina iluminada",
 "tendencia": true,
 "fecha": "2026-11-02"
+},
+{
+"id": "t20261103a",
+"tipo": "estancia",
+"descripcion": "Un salón comedor sombrío con molduras de escayola agrietadas, suelo de sintasol desgastado y puertas cuarteadas.",
+"estilo": "Color drenching verde oliva envolvente, suelo continuo neutro y mobiliario orgánico en nogal.",
+"tendencia": true,
+"fecha": "2026-11-03"
 }
 ],
 "tips": [
@@ -1010,6 +1058,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-02"
+},
+{
+"id": "t20261103t",
+"hook": "5 claves para renovar sin demoler",
+"tips": [
+{
+"tip": "Aplica microcemento sobre alicatados antiguos",
+"idea": "Suelo continuo y paredes de baño sin juntas en tono arena, cubriendo azulejos existentes con acabado liso sedoso."
+},
+{
+"tip": "Unifica carpinterías con el muro",
+"idea": "Puerta de paso y rodapiés lacados exactamente del mismo verde oliva mate que el paramento vertical adyacente."
+},
+{
+"tip": "Sustituye griferías por acabados cepillados",
+"idea": "Lavabo de porcelana con grifo monomando de caño curvo en latón mate cepillado aportando calidez inmediata."
+},
+{
+"tip": "Superpón madera en suelos deslucidos",
+"idea": "Tarima flotante de roble natural en espiga instalada sobre antiguo terrazo pulido sin recrecer marcos de puerta."
+},
+{
+"tip": "Integra iluminación indirecta sin rozas",
+"idea": "Foseado perimetral con moldura ligera que oculta tira de luz led cálida bañando el techo suavemente."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-03"
 }
 ],
 "obra": [

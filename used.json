@@ -545,5 +545,47 @@
 "fecha": "2026-11-02",
 "formato": "visual",
 "grupo": "antes_despues"
+},
+{
+"id": "portfolio:lamina:a_fontaneria",
+"tema": "portfolio",
+"fecha": "2026-11-03",
+"formato": "visual",
+"grupo": "recorrido"
+},
+{
+"id": "portfolio:lamina:a_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-03",
+"formato": "visual",
+"grupo": "recorrido"
+},
+{
+"id": "portfolio:lamina:a_iluminacion",
+"tema": "portfolio",
+"fecha": "2026-11-03",
+"formato": "visual",
+"grupo": "recorrido"
+},
+{
+"id": "portfolio:lamina:a_cimentacion",
+"tema": "portfolio",
+"fecha": "2026-11-03",
+"formato": "visual",
+"grupo": "recorrido"
+},
+{
+"id": "portfolio:lamina:a_forjado",
+"tema": "portfolio",
+"fecha": "2026-11-03",
+"formato": "visual",
+"grupo": "recorrido"
+},
+{
+"id": "portfolio:lamina:a_seccion",
+"tema": "portfolio",
+"fecha": "2026-11-03",
+"formato": "visual",
+"grupo": "recorrido"
 }
 ]

@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-02)
+# Cuaderno de ilustradora (2026-11-03)
 
-- Seguir haciendo: Fondo negro profundo con iluminación dorada cálida en piezas técnicas y teóricas («El libro de arquitectura», score 8.51).
-- Dejar de hacer: Renders domésticos genéricos o imágenes de reformas convencionales sin valor corporativo.
-- Probar: Planimetrías vectoriales limpias en trazo dorado sobre fondo carbón, mostrando instalaciones y nudos constructivos.
+- Seguir haciendo: Paleta negro profundo con iluminación dorada cálida en contenido arquitectónico riguroso («El libro de arquitectura», score 8.51).
+- Dejar de hacer: Renders domésticos convencionales, reformas y fotos de interiores decorativos sin grafismo corporativo.
+- Probar: Planimetrías vectoriales limpias e isometrías MEP con trazo dorado sobre fondo carbón.

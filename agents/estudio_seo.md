@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-02)
+# Cuaderno de seo (2026-11-03)
 
-- Seguir haciendo: Términos operativos B2B como «instalaciones», «proyecto», «estudio de arquitectura» y «delegar».
-- Dejar de hacer: Etiquetas residenciales de usuario final («islas de cocina», «reforma», «casas de campo»).
-- Probar: Palabras clave de búsqueda profesional: «proyecto de ejecución CTE», «externalizar delineación» y «apoyo técnico despacho».
+- Seguir haciendo: Términos profesionales técnicos: «instalaciones», «arquitecto», «delegas», «estudio de arquitectura».
+- Dejar de hacer: Palabras clave residenciales B2C («islas de cocina», «casas de campo», «reforma», 0 interacciones).
+- Probar: Búsquedas transaccionales de despacho: «proyecto de ejecución CTE», «externalización de delineación» y «apoyo técnico despacho».

@@ -1,39 +1,39 @@
-# Cuaderno de cazatendencias (2026-11-02)
+# Cuaderno de cazatendencias (2026-11-03)
 
 ## Tendencias de la semana
-- Casas vividas y reales: La audiencia en redes rechaza cada vez más los espacios estériles y de revista. Se viralizan hogares que muestran personalidad, libros apilados, arte ecléctico y un 'desorden estético' que transmite calidez y vida real.
-- Reformas sin obras (cambios ágiles): Debido a la inflación y el alto coste de las obras integrales, triunfan los vídeos de pintar azulejos, cambiar tiradores, instalar suelo vinílico y usar iluminación indirecta para transformar espacios con poco presupuesto.
-- Baños concebidos como spas: El baño ha pasado de ser puramente funcional a un espacio de lujo emocional. Retienen mucha audiencia los vídeos mostrando hornacinas iluminadas en la ducha, grifería empotrada y revestimientos continuos sin juntas.
-- Cocinas abiertas pero camufladas: Siguen gustando abiertas al salón, pero ahora se viraliza ocultar los electrodomésticos por completo, usar placas con extractores integrados invisibles y combinar madera oscura con piedra natural para que parezca mobiliario de salón.
-- Aislamiento y confort térmico: Tras los veranos extremos en España, los usuarios guardan masivamente vídeos sobre ventanas eficientes, ventilación cruzada, aerotermia y materiales que mantienen la casa fresca sin gastar tanta energía.
-- El regreso de las maderas oscuras: Maderas como el sapeli o el nogal, típicas de los pisos españoles de los 70 y 80, vuelven con fuerza en proyectos modernos para dar un toque retro y elegante, desbancando al roble claro nórdico.
+- Reformas de baño y cocina sin escombros (Low Cost): Con el alto coste de la vivienda en España, los vídeos mostrando cómo pintar azulejos, cambiar griferías por modelos curvos o aplicar microcemento sobre suelo antiguo retienen muchísimo a la audiencia por ser soluciones baratas, accesibles y de impacto visual inmediato.
+- El 'Color Drenching' en salones y dormitorios: Pintar paredes, techos, puertas y molduras exactamente del mismo tono genera un efecto envolvente y de 'lujo silencioso' muy estético en cámara, ideal para captar la atención en los primeros 3 segundos del vídeo.
+- House Flipping castizo y presupuestos transparentes: Mostrar el proceso real de comprar un piso viejo, reformarlo y desglosar el presupuesto exacto (ej. 'Reformé este piso de 50m2 por 10.000€') genera muchísima interacción, guardados y debate en comentarios, lo que dispara el algoritmo.
+- Minimalismo cálido y 'Lujo Humano': La audiencia busca refugios emocionales frente al estrés diario. Mostrar texturas orgánicas, maderas oscuras y luz cálida indirecta transmite una paz visual que contrasta con el ritmo frenético de las redes, logrando mayor tiempo de visualización.
+- Restauración e integración de piezas vintage: Recuperar un mueble antiguo de segunda mano e integrarlo en un espacio moderno apela a la sostenibilidad y a la nostalgia, creando un storytelling perfecto y muy satisfactorio para vídeos de proceso (DIY).
 
 ## Estilos
-- madera oscura (sapeli, nogal)
-- tonos tierra, terracota y verde oliva
-- curvas y formas orgánicas en muros y arcos
-- hipertactilidad (estucos, limewash, texturas rugosas)
-- piedra natural con vetas muy marcadas
+- verde salvia y oliva profundo
+- madera de nogal oscuro
+- microcemento continuo en tonos arena
+- siluetas curvas y sofás orgánicos
+- amarillo mantequilla (buttercream)
+- textiles con textura bouclé o lino grueso
 
 ## Para nuestro equipo
-- Apostar por el 'desorden estético' y texturas vivas: la audiencia penaliza los interiores asépticos tipo render comercial.
-- Evitar el blanco clínico y la palillería de roble claro en TV, ya saturada y percibida como desfasada.
-- Priorizar vídeos de baños spa táctiles y confort térmico pasivo, los formatos más guardados por su valor práctico.
-- Mostrar materiales de tacto rugoso como el tapial, limewash y nogal para transmitir lujo sobrio y durabilidad.
+- Aprovechar el auge de las reformas sin demolición: atrae tanto al profesional que busca optimizar plazos como al particular interesado en intervenciones limpias.
+- Utilizar el 'color drenching' en tonos oliva o arena en los tres primeros segundos del reel para frenar el scroll con un impacto visual envolvente.
+- Evitar mencionar cifras de costes o presupuestos cerrados; sustituirlos por el contraste visual del antes y el después de los materiales.
+- Descartar acabados industriales fríos y blancos clínicos; la audiencia premia texturas táctiles como lino grueso, cal y maderas oscuras.
 
 ## Ya quemado
-- El minimalismo extremo todo en blanco y gris (estilo quirófano o piso piloto frío)
-- La palillería de madera clara en la pared del televisor
-- Los carteles con frases motivacionales o letras luminosas de neón genéricas
+- El minimalismo frío y aséptico (todo blanco, gris y sin texturas)
+- La pared de acento de un solo color vibrante (ahora se lleva el monocromatismo o tonos neutros cálidos)
+- El estilo industrial extremo con muebles de palets y bombillas vistas
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
 - The Trailer · Ruiqi Zhao
 - Spectacular Moment · life motivation
-- Polar Winds (Lofi) · Muspace Lofi
 - Finally You Are Here · BCD Studio
+- Polar Winds (Lofi) · Muspace Lofi
 - Dinner Table · Muspace Lofi
+- Tell Me Where to Go (Lofi) · Muspace Lofi
+- Please Holding Me (Lofi) · Muspace Lofi
 - Restart (Lofi) · Muspace Lofi
-- Echos in My Mind (Lofi) · Muspace Lofi
-- Lucky Thing (Lofi) · Muspace Lofi

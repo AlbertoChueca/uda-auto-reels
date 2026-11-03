@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-11-02)
+# Cuaderno de viralidad (2026-11-03)
 
-- Seguir haciendo: Retos directos al criterio del arquitecto («Solo un arquitecto acierta», 5 comentarios, 2 compartidos).
-- Dejar de hacer: Enunciados pasivos o descriptivos sin fricción ni pregunta final.
-- Probar: Dilemas técnicos sobre criterios normativos o costes por metro cuadrado que inciten a enviar el reel al socio.
+- Seguir haciendo: Desafíos al criterio y ego profesional del arquitecto («Solo un arquitecto acierta», 5 comentarios, 2 compartidos).
+- Dejar de hacer: Ganchos descriptivos o pasivos («De la zanja a la llave», 0 interacciones).
+- Probar: Preguntas trampa sobre discrepancias normativas o errores de plano para forzar debate y envíos a socios.
