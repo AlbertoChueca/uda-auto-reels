@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-03 11:49 UTC · 0 respuestas_
+_Última pasada: 2026-11-03 14:49 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -34,6 +34,8 @@ _Última pasada: 2026-11-03 11:49 UTC · 0 respuestas_
 | 2026-11-03 | instagram | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
 | 2026-11-03 | tiktok | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
 | 2026-11-03 | linkedin | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
+| 2026-11-03 | instagram | proceso_visual | Del boceto al render | 1 | — |
+| 2026-11-03 | linkedin | proceso_visual | Del boceto al render | 1 | — |
 | 2026-10-29 | instagram | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | tiktok | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | linkedin | carrusel | Factura más delegando la técnica | 0 | — |
