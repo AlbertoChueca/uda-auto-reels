@@ -1,93 +1,97 @@
 {
-"fecha": "2026-11-03",
+"fecha": "2026-11-04",
 "temas": [
 {
-"tema": "Reformas de baño y cocina sin escombros (Low Cost)",
-"por_que": "Con el alto coste de la vivienda en España, los vídeos mostrando cómo pintar azulejos, cambiar griferías por modelos curvos o aplicar microcemento sobre suelo antiguo retienen muchísimo a la audiencia por ser soluciones baratas, accesibles y de impacto visual inmediato."
+"tema": "Lujo Humano y Encontrado",
+"por_que": "Se busca que los espacios se sientan vividos y personales, mezclando piezas heredadas, artesanales o de mercadillo con diseño moderno para contar una historia, alejándose del lujo ostentoso y de catálogo."
 },
 {
-"tema": "El 'Color Drenching' en salones y dormitorios",
-"por_que": "Pintar paredes, techos, puertas y molduras exactamente del mismo tono genera un efecto envolvente y de 'lujo silencioso' muy estético en cámara, ideal para captar la atención en los primeros 3 segundos del vídeo."
+"tema": "Cocinas con zona de trabajo oculta",
+"por_que": "La cocina principal se mantiene abierta al salón como zona de representación social, pero se esconde el 'office' o zona de fuegos sucia tras paneles correderos o puertas invisibles."
 },
 {
-"tema": "House Flipping castizo y presupuestos transparentes",
-"por_que": "Mostrar el proceso real de comprar un piso viejo, reformarlo y desglosar el presupuesto exacto (ej. 'Reformé este piso de 50m2 por 10.000€') genera muchísima interacción, guardados y debate en comentarios, lo que dispara el algoritmo."
+"tema": "Color Drenching",
+"por_que": "Pintar paredes, techos, puertas y molduras exactamente del mismo tono para crear atmósferas envolventes, monocromáticas y muy acogedoras que amplían visualmente el espacio."
 },
 {
-"tema": "Minimalismo cálido y 'Lujo Humano'",
-"por_que": "La audiencia busca refugios emocionales frente al estrés diario. Mostrar texturas orgánicas, maderas oscuras y luz cálida indirecta transmite una paz visual que contrasta con el ritmo frenético de las redes, logrando mayor tiempo de visualización."
+"tema": "Baños continuos y esculturales",
+"por_que": "Uso de microcemento o porcelánico de gran formato (120x280 cm) para eliminar juntas, combinando grifería cepillada y accesorios que parecen esculturas para lograr un efecto de santuario."
 },
 {
-"tema": "Restauración e integración de piezas vintage",
-"por_que": "Recuperar un mueble antiguo de segunda mano e integrarlo en un espacio moderno apela a la sostenibilidad y a la nostalgia, creando un storytelling perfecto y muy satisfactorio para vídeos de proceso (DIY)."
+"tema": "Minimalismo cálido y formas orgánicas",
+"por_que": "El mobiliario y la arquitectura interior adoptan curvas, arcos y siluetas redondeadas para suavizar los espacios, aportando confort visual y físico frente a las líneas rectas."
+},
+{
+"tema": "Materiales con historia y textura",
+"por_que": "Se priorizan materias primas que aportan autenticidad y tacto, como maderas de poro abierto, piedra natural, barro y cerámicas artesanales que envejecen bien con el paso del tiempo."
 }
 ],
 "estilos": [
 "verde salvia y oliva profundo",
 "madera de nogal oscuro",
-"microcemento continuo en tonos arena",
-"siluetas curvas y sofás orgánicos",
-"amarillo mantequilla (buttercream)",
-"textiles con textura bouclé o lino grueso"
+"terracota suave y tonos arcilla",
+"burdeos cálido (Port Royale)",
+"naranja setentero en detalles",
+"microcemento y superficies continuas"
 ],
 "formatos": [
-"Vlogs narrados en off estilo 'storytime' desglosando el presupuesto real de la reforma",
-"ASMR de decoración: sonidos reales pintando, alisando paredes o sirviendo café en el nuevo espacio",
-"Antes y después rápido con transiciones de chasquido o tap en la pantalla al ritmo del audio en tendencia",
-"Tours hiperrápidos de 15 segundos por pisos pequeños muy bien aprovechados"
+"vídeos auténticos y sin filtros estilo vlog",
+"house tours narrados con storytelling emocional",
+"transiciones rápidas de antes y después en reformas",
+"ASMR de texturas de materiales y orden en el hogar"
 ],
 "busquedas": [
-"reforma baño sin obra",
-"color drenching salon",
 "tendencias decoracion 2026",
-"minimalismo calido",
-"house flipping españa",
-"pintar azulejos cocina",
-"ideas pisos pequeños"
+"reforma baño sin obra",
+"colores para pintar salon",
+"cocinas ocultas diseño",
+"ideas piso pequeño",
+"muebles segunda mano vintage",
+"lujo silencioso decoracion"
 ],
 "hashtags": [
-"#reformasinteligentes",
-"#minimalismocalido",
-"#colordrenching",
 "#interiorismoespaña",
-"#decoracion2026",
-"#reformasostenible",
+"#tendenciasdecoracion",
+"#reformasintegrales",
+"#casasreales",
+"#decoracioninteriores",
 "#lujosilencioso",
-"#casasreales"
+"#arquitecturainterior",
+"#antesydespues"
 ],
 "quemado": [
-"El minimalismo frío y aséptico (todo blanco, gris y sin texturas)",
-"La pared de acento de un solo color vibrante (ahora se lleva el monocromatismo o tonos neutros cálidos)",
-"El estilo industrial extremo con muebles de palets y bombillas vistas"
+"blancos clínicos y grises azulados fríos",
+"minimalismo rígido de catálogo sin personalidad",
+"el 'rojo inesperado' (reemplazado por el naranja retro)"
 ],
 "por_tipo": {
-"galeria": "minimalismo calido decoracion salon",
-"tips": "reforma bano sin obras ideas",
-"antes_despues": "antes y despues piso antiguo",
-"proceso": "reforma integral piso clasico techos"
+"galeria": "ideas decoracion lujo silencioso vintage",
+"tips": "como combinar muebles modernos vintage",
+"antes_despues": "reforma salon minimalismo calido antes",
+"proceso": "reforma casa piedra y barro"
 },
 "musica_tiktok": [
 "Cool Girl · Jayde Mari",
 "cool girls · Sonatara",
-"The Trailer · Ruiqi Zhao",
 "Spectacular Moment · life motivation",
 "Finally You Are Here · BCD Studio",
-"Polar Winds (Lofi) · Muspace Lofi",
-"Dinner Table · Muspace Lofi",
 "Tell Me Where to Go (Lofi) · Muspace Lofi",
+"Holiday Gift · Muspace",
+"Dreams of Children · Muspace",
 "Please Holding Me (Lofi) · Muspace Lofi",
-"Restart (Lofi) · Muspace Lofi"
+"Free Falling · Muspace",
+"Dinner Table · Muspace Lofi"
 ],
 "fuentes": [
-"https://www.arquitecturaydiseno.es/decoracion/entramos-piso-pequeno-50-m2-reformado-solo-10000-euros-barcelona-paredes-pintar-muebles-reciclados-banera-junto-a-ventana_10234",
-"https://www.elmueble.com/decoracion/experto-interiorismo-cuenta-como-renovar-bano-sin-reformas-sustituir-grifo-antiguo-por-modelo-mas-actuales-permite-modernizarlo-sin-modificar-mobiliario_54321",
-"https://www.fotocasa.es/blog/hogar/decoracion/tendencias-decoracion-espana-2026/",
-"https://kiga.es/tendencias-interiorismo-2026-espana/"
+"https://kiga.es/tendencias-interiorismo-2026-espana/",
+"https://www.elmueble.com/decoracion/tendencias-decoracion-salones-2026-2027",
+"https://www.hola.com/decoracion/20260902/david-gonzalez-interiorista-tendencias-2027/",
+"https://www.arquitecturaydiseno.es/decoracion/ultimas-tendencias-decoracion-paredes-2026"
 ],
 "piezas": {
-"galeria": "t20261103g",
-"tips": "t20261103t",
-"antes_despues": "t20261103a",
-"proceso": "t20261103p"
+"galeria": "t20261104g",
+"tips": "t20261104t",
+"antes_despues": "t20261104a",
+"proceso": "t20261104p"
 }
 }

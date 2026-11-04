@@ -541,6 +541,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-03"
+},
+{
+"id": "t20261104g",
+"hook": "¿Lujo de catálogo o casas con alma?",
+"cierre": "¿Con cuál te quedarías?",
+"escenas": [
+{
+"idea": "Salón bañado en luz con sofá de lino crudo junto a consola de nogal antiguo y jarrones rústicos de barro.",
+"label": "Nogal y lino"
+},
+{
+"idea": "Rincón de lectura envolvente con butaca tapizada en bouclé, mesa auxiliar de caliza rugosa y luz natural rasante.",
+"label": "Piedra y calma"
+},
+{
+"idea": "Comedor en tono terracota suave con mesa de roble recuperado, sillería clásica restaurada y lámpara de latón envejecido.",
+"label": "Comedor vivido"
+},
+{
+"idea": "Dormitorio monocromático en verde oliva profundo con cabecero artesanal de lino desgastado y apliques cerámicos hechos a mano.",
+"label": "Verde oliva"
+},
+{
+"idea": "Cocina abierta con armarios lisos de poro abierto y alacena vintage restaurada ocultando la zona de pequeños electrodomésticos.",
+"label": "Alacena oculta"
+},
+{
+"idea": "Baño monolítico de microcemento cálido continuo con lavabo escultórico tallado en bloque macizo de travertino y espejo envejecido.",
+"label": "Travertino puro"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-04"
 }
 ],
 "proceso": [
@@ -622,6 +655,13 @@
 "descripcion": "Una vivienda señorial de techos altos restaurada con texturas minerales y carpinterías de nogal.",
 "tendencia": true,
 "fecha": "2026-11-03"
+},
+{
+"id": "t20261104p",
+"tipo": "casa",
+"descripcion": "una casa de tapial y piedra recuperada con patio interior y techos abovedados",
+"tendencia": true,
+"fecha": "2026-11-04"
 }
 ],
 "antes_despues": [
@@ -710,6 +750,14 @@
 "estilo": "Color drenching verde oliva envolvente, suelo continuo neutro y mobiliario orgánico en nogal.",
 "tendencia": true,
 "fecha": "2026-11-03"
+},
+{
+"id": "t20261104a",
+"tipo": "estancia",
+"descripcion": "un salón lúgubre con paredes enteladas en burdeos envejecido, vigas de poliuretano y terrazo agrietado",
+"estilo": "minimalismo cálido con microcemento marfil, madera de nogal y arcos orgánicos suaves",
+"tendencia": true,
+"fecha": "2026-11-04"
 }
 ],
 "tips": [
@@ -1086,6 +1134,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-03"
+},
+{
+"id": "t20261104t",
+"hook": "5 claves para mezclar diseño y artesanía",
+"tips": [
+{
+"tip": "Combina madera contemporánea con piezas recuperadas",
+"idea": "Mesa moderna de nogal rodeada por sillas tradicionales torneadas de madera oscura bajo una gran lámpara textil."
+},
+{
+"tip": "Elige siempre textiles de poro abierto",
+"idea": "Caídas de cortinas en lino lavado color crudo rozando suavemente un pavimento continuo de barro cocido mate."
+},
+{
+"tip": "Coloca cerámica artesanal sobre bases continuas",
+"idea": "Colección de vasijas de barro imperfecto alineadas sobre repisa corrida de microcemento con iluminación rasante oculta."
+},
+{
+"tip": "Añade un acento retro puntual",
+"idea": "Butaca de líneas setenteras tapizada en terciopelo naranja quemado reposando frente a una pared encalada con textura."
+},
+{
+"tip": "Usa piedra natural sin pulimentos brillantes",
+"idea": "Isla de cocina con encimera de caliza envejecida al corte mostrando vetas y fósiles naturales bajo luz tenue."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-04"
 }
 ],
 "obra": [

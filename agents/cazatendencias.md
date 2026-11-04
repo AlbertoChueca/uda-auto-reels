@@ -1,39 +1,40 @@
-# Cuaderno de cazatendencias (2026-11-03)
+# Cuaderno de cazatendencias (2026-11-04)
 
 ## Tendencias de la semana
-- Reformas de baño y cocina sin escombros (Low Cost): Con el alto coste de la vivienda en España, los vídeos mostrando cómo pintar azulejos, cambiar griferías por modelos curvos o aplicar microcemento sobre suelo antiguo retienen muchísimo a la audiencia por ser soluciones baratas, accesibles y de impacto visual inmediato.
-- El 'Color Drenching' en salones y dormitorios: Pintar paredes, techos, puertas y molduras exactamente del mismo tono genera un efecto envolvente y de 'lujo silencioso' muy estético en cámara, ideal para captar la atención en los primeros 3 segundos del vídeo.
-- House Flipping castizo y presupuestos transparentes: Mostrar el proceso real de comprar un piso viejo, reformarlo y desglosar el presupuesto exacto (ej. 'Reformé este piso de 50m2 por 10.000€') genera muchísima interacción, guardados y debate en comentarios, lo que dispara el algoritmo.
-- Minimalismo cálido y 'Lujo Humano': La audiencia busca refugios emocionales frente al estrés diario. Mostrar texturas orgánicas, maderas oscuras y luz cálida indirecta transmite una paz visual que contrasta con el ritmo frenético de las redes, logrando mayor tiempo de visualización.
-- Restauración e integración de piezas vintage: Recuperar un mueble antiguo de segunda mano e integrarlo en un espacio moderno apela a la sostenibilidad y a la nostalgia, creando un storytelling perfecto y muy satisfactorio para vídeos de proceso (DIY).
+- Lujo Humano y Encontrado: Se busca que los espacios se sientan vividos y personales, mezclando piezas heredadas, artesanales o de mercadillo con diseño moderno para contar una historia, alejándose del lujo ostentoso y de catálogo.
+- Cocinas con zona de trabajo oculta: La cocina principal se mantiene abierta al salón como zona de representación social, pero se esconde el 'office' o zona de fuegos sucia tras paneles correderos o puertas invisibles.
+- Color Drenching: Pintar paredes, techos, puertas y molduras exactamente del mismo tono para crear atmósferas envolventes, monocromáticas y muy acogedoras que amplían visualmente el espacio.
+- Baños continuos y esculturales: Uso de microcemento o porcelánico de gran formato (120x280 cm) para eliminar juntas, combinando grifería cepillada y accesorios que parecen esculturas para lograr un efecto de santuario.
+- Minimalismo cálido y formas orgánicas: El mobiliario y la arquitectura interior adoptan curvas, arcos y siluetas redondeadas para suavizar los espacios, aportando confort visual y físico frente a las líneas rectas.
+- Materiales con historia y textura: Se priorizan materias primas que aportan autenticidad y tacto, como maderas de poro abierto, piedra natural, barro y cerámicas artesanales que envejecen bien con el paso del tiempo.
 
 ## Estilos
 - verde salvia y oliva profundo
 - madera de nogal oscuro
-- microcemento continuo en tonos arena
-- siluetas curvas y sofás orgánicos
-- amarillo mantequilla (buttercream)
-- textiles con textura bouclé o lino grueso
+- terracota suave y tonos arcilla
+- burdeos cálido (Port Royale)
+- naranja setentero en detalles
+- microcemento y superficies continuas
 
 ## Para nuestro equipo
-- Aprovechar el auge de las reformas sin demolición: atrae tanto al profesional que busca optimizar plazos como al particular interesado en intervenciones limpias.
-- Utilizar el 'color drenching' en tonos oliva o arena en los tres primeros segundos del reel para frenar el scroll con un impacto visual envolvente.
-- Evitar mencionar cifras de costes o presupuestos cerrados; sustituirlos por el contraste visual del antes y el después de los materiales.
-- Descartar acabados industriales fríos y blancos clínicos; la audiencia premia texturas táctiles como lino grueso, cal y maderas oscuras.
+- Aprovechar la narrativa del lujo vivido y las piezas encontradas para alejarse del render genérico e impersonal.
+- Sustituir los blancos hospitalarios y grises fríos por envolventes en terracota, oliva profundo o piedra caliza.
+- Introducir el naranja vintage en sutiles toques de mobiliario en lugar de recurrir al saturado acento rojo.
+- Potenciar planos macro donde se aprecie el grano de la madera de nogal, el barro cocido y el travertino.
 
 ## Ya quemado
-- El minimalismo frío y aséptico (todo blanco, gris y sin texturas)
-- La pared de acento de un solo color vibrante (ahora se lleva el monocromatismo o tonos neutros cálidos)
-- El estilo industrial extremo con muebles de palets y bombillas vistas
+- blancos clínicos y grises azulados fríos
+- minimalismo rígido de catálogo sin personalidad
+- el 'rojo inesperado' (reemplazado por el naranja retro)
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
-- The Trailer · Ruiqi Zhao
 - Spectacular Moment · life motivation
 - Finally You Are Here · BCD Studio
-- Polar Winds (Lofi) · Muspace Lofi
-- Dinner Table · Muspace Lofi
 - Tell Me Where to Go (Lofi) · Muspace Lofi
+- Holiday Gift · Muspace
+- Dreams of Children · Muspace
 - Please Holding Me (Lofi) · Muspace Lofi
-- Restart (Lofi) · Muspace Lofi
+- Free Falling · Muspace
+- Dinner Table · Muspace Lofi

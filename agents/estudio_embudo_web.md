@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-11-03)
+# Cuaderno de embudo_web (2026-11-04)
 
-- Seguir haciendo: Foco en comparativas operativas y costes de gestión («Plantilla o delegar», 89 clics).
-- Dejar de hacer: Reels sin llamada a la acción hacia uniondearquitectos.com (más de 20 posts con 0 clics).
-- Probar: Enlazar los posts de entregables técnicos («Top 4», 1225 views) con presupuestar redacción técnica en web.
+- Seguir haciendo: Comparativas directas de gestión y modelo de despacho («Plantilla o delegar», récord absoluto de 89 clics).
+- Dejar de hacer: Publicar contenido técnico sin llamada a la acción hacia uniondearquitectos.com (la gran mayoría registra 0 clics).
+- Probar: Conectar reels de entregables («Top 4», «Delegas el Proyecto») con presupuesto directo del proyecto técnico en la web.

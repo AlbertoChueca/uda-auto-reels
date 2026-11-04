@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-11-03)
+# Cuaderno de ritmo (2026-11-04)
 
-- Seguir haciendo: Ritmo explicativo y analítico que supera 4-5 segundos de retención («Solo un arquitecto», 5150 ms; «Top 4», 4910 ms).
-- Dejar de hacer: Inicios lentos o títulos ambiguos con abandono fulminante («Escalar estudio», 660 ms).
-- Probar: Mostrar el plano clave o dato crítico en el primer segundo antes de desglosar la solución.
+- Seguir haciendo: Cadencia analítica sostenida que retiene por encima de 4,7 segundos («Solo un arquitecto», 5.150 ms; «Top 4», 4.910 ms).
+- Dejar de hacer: Aperturas difusas o arranques lentos con abandono temprano («Escalar estudio», 660 ms).
+- Probar: Mostrar el entregable técnico o plano clave en el primer segundo antes de iniciar la explicación de capas.
