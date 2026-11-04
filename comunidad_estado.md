@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-04 06:40 UTC · 0 respuestas_
+_Última pasada: 2026-11-04 14:53 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -36,6 +36,12 @@ _Última pasada: 2026-11-04 06:40 UTC · 0 respuestas_
 | 2026-11-03 | linkedin | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
 | 2026-11-03 | instagram | proceso_visual | Del boceto al render | 1 | — |
 | 2026-11-03 | linkedin | proceso_visual | Del boceto al render | 1 | — |
+| 2026-11-04 | instagram | obra | POV: tu casa, de la zanja a la llave | 1 | — |
+| 2026-11-04 | tiktok | obra | POV: tu casa, de la zanja a la llave | 1 | — |
+| 2026-11-04 | linkedin | obra | POV: tu casa, de la zanja a la llave | 1 | — |
+| 2026-11-04 | instagram | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
+| 2026-11-04 | tiktok | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
+| 2026-11-04 | linkedin | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
 | 2026-10-29 | instagram | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | tiktok | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | linkedin | carrusel | Factura más delegando la técnica | 0 | — |
