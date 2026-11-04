@@ -601,5 +601,12 @@
 "fecha": "2026-11-04",
 "formato": "visual",
 "grupo": "obra"
+},
+{
+"id": "visual:t20261104g",
+"tema": "visual",
+"fecha": "2026-11-04",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
