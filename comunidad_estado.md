@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-05 02:34 UTC · 0 respuestas_
+_Última pasada: 2026-11-05 11:50 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -40,6 +40,9 @@ _Última pasada: 2026-11-05 02:34 UTC · 0 respuestas_
 | 2026-11-04 | instagram | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
 | 2026-11-04 | tiktok | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
 | 2026-11-04 | linkedin | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
+| 2026-11-05 | instagram | tips | 5 claves para zonificar sin tabiques | 1 | — |
+| 2026-11-05 | tiktok | tips | 5 claves para zonificar sin tabiques | 1 | — |
+| 2026-11-05 | linkedin | tips | 5 claves para zonificar sin tabiques | 1 | — |
 | 2026-10-29 | instagram | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | tiktok | carrusel | Factura más delegando la técnica | 0 | — |
 | 2026-10-29 | linkedin | carrusel | Factura más delegando la técnica | 0 | — |
