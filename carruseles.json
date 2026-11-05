@@ -181,5 +181,25 @@
 "linkedin_documento": "6aea0e1dc4a3d467fd29faf1"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-11-05",
+"bloque": "negocio",
+"tema": "uda_delegar",
+"subtema": "Proceso de delegación técnica",
+"titulo": "DELEGAR PROYECTOS PASO A PASO",
+"fragmentos": [
+"Delineación y Proyectos de Ejecución para Arquitectos | UDA"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.3,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18221113894342557",
+"tiktok_carrusel": "6aecaeef7577591cec867803",
+"linkedin_documento": "6aecaefdaa609c465bd26d60"
+},
+"dry_run": false
 }
 ]
