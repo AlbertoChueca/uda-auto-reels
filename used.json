@@ -615,5 +615,12 @@
 "fecha": "2026-11-05",
 "formato": "visual",
 "grupo": "tips"
+},
+{
+"id": "visual:t20261105p",
+"tema": "visual",
+"fecha": "2026-11-05",
+"formato": "visual",
+"grupo": "proceso"
 }
 ]
