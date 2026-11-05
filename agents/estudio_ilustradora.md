@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-04)
+# Cuaderno de ilustradora (2026-11-05)
 
-- Seguir haciendo: Paleta negro profundo con iluminación dorada cálida en documentación técnica rigurosa («El libro de arquitectura», score 8.51).
-- Dejar de hacer: Renders domésticos, azulejos o muebles rústicos sin identidad gráfica corporativa.
-- Probar: Planimetrías de instalaciones MEP y axonometrías constructivas con líneas doradas vectoriales sobre fondo carbón.
+- Seguir haciendo: Paleta negro carbón profundo con iluminación dorada cálida en grafismos técnicos («El libro de arquitectura», score 8.52).
+- Dejar de hacer: Renders residenciales de baños, tarimas y muebles rústicos sin identidad visual corporativa.
+- Probar: Axonometrías de instalaciones y detalles constructivos vectoriales trazados en línea dorada fina sobre fondo oscuro.

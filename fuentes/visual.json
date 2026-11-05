@@ -574,6 +574,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-04"
+},
+{
+"id": "t20261105g",
+"hook": "Interiores en calma y tonos tierra",
+"cierre": "¿Cuál transmite más calma?",
+"escenas": [
+{
+"idea": "Salón diáfano con revoco de arcilla en paredes, sofá curvo de lino crudo y mesa baja de nogal macizo.",
+"label": "Muros de arcilla"
+},
+{
+"idea": "Cocina abierta con armarios de roble tostado, isla de mármol travertino con vetas vivas y luz indirecta rasante.",
+"label": "Travertino y roble"
+},
+{
+"idea": "Dormitorio sereno en verde salvia suave con cabecero tapizado de algodón orgánico y gran ventanal hacia el jardín.",
+"label": "Verde salvia"
+},
+{
+"idea": "Rincón de lectura bañado por sol tamizado, butaca orgánica de lana bouclé y estantería empotrada de sapeli oscuro.",
+"label": "Rincón de lectura"
+},
+{
+"idea": "Baño revestido con micromortero tono arena, lavabo escultórico de piedra caliza y grifería empotrada en bronce cepillado.",
+"label": "Piedra caliza"
+},
+{
+"idea": "Comedor bañado en luz cenital suave con mesa circular de castaño, sillas de enea y pavimento continuo de terracota.",
+"label": "Mesa circular"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-05"
 }
 ],
 "proceso": [
@@ -662,6 +695,13 @@
 "descripcion": "una casa de tapial y piedra recuperada con patio interior y techos abovedados",
 "tendencia": true,
 "fecha": "2026-11-04"
+},
+{
+"id": "t20261105p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar diáfana con patios de luz, revoco de cal y carpintería de nogal",
+"tendencia": true,
+"fecha": "2026-11-05"
 }
 ],
 "antes_despues": [
@@ -758,6 +798,14 @@
 "estilo": "minimalismo cálido con microcemento marfil, madera de nogal y arcos orgánicos suaves",
 "tendencia": true,
 "fecha": "2026-11-04"
+},
+{
+"id": "t20261105a",
+"tipo": "estancia",
+"descripcion": "un salón comedor sombrío con puertas plegables de acordeón, moqueta beige apolillada y radiadores vistos oxidados",
+"estilo": "espacio abierto y fluido con tonos greige, carpintería oculta y luz perimetral cálida",
+"tendencia": true,
+"fecha": "2026-11-05"
 }
 ],
 "tips": [
@@ -1162,6 +1210,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-04"
+},
+{
+"id": "t20261105t",
+"hook": "5 claves para zonificar sin tabiques",
+"tips": [
+{
+"tip": "Cambia el pavimento de forma sutil",
+"idea": "Transición continua entre entarimado de nogal cálido en el salón y losas de piedra caliza en la cocina."
+},
+{
+"tip": "Introduce cerramientos ligeros de vidrio",
+"idea": "Puerta corredera de vidrio estriado con perfilería empotrada de latón entre el comedor y la zona de trabajo."
+},
+{
+"tip": "Diferencia alturas en falsos techos",
+"idea": "Foso de iluminación perimetral cálida que enmarca el estar, delimitándolo sutilmente de la cocina abierta contigua."
+},
+{
+"tip": "Usa mobiliario bajo como divisorio",
+"idea": "Aparador suspendido en madera oscura de altura media que separa el recibidor del salón sin restar luz."
+},
+{
+"tip": "Emplea alfombras de fibras naturales",
+"idea": "Gran alfombra de yute grueso y lana que delimita la zona de sofás frente al comedor despejado."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-05"
 }
 ],
 "obra": [

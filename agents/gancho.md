@@ -1,7 +1,7 @@
-# Cuaderno de gancho (2026-11-04)
+# Cuaderno de gancho (2026-11-05)
 
 # Cuaderno de gancho
 
-• Seguir haciendo: Retos gremiales («Solo un arquitecto acierta los cuatro», score 11.63) y desgloses de entregables tangibles («Capa a capa», 10.86; «Top 4», 10.52) con hooks de colapso de entrega o facturación.
-• Dejar de hacer: Ganchos conceptuales, citas célebres o interiorismo («Cocinas», «La forma sigue a la función», score 0.00).
-• Probar: Reto normativo técnico: «El error de DB-HE en proyecto de ejecución que casi ningún estudio detecta a tiempo».
+• Seguir haciendo: Retos gremiales («Solo un arquitecto acierta los cuatro», score 11.63) y desgloses de entregables tangibles («Capa a capa», «Top 4», scores >10.5) con hooks de facturación o colapso de entrega.
+• Dejar de hacer: Citas teóricas («La forma sigue a la función», 0.00) y ganchos de interiorismo o estética.
+• Probar: Reto normativo directo: «3 omisiones en el Proyecto de Ejecución que paralizan la licencia municipal».

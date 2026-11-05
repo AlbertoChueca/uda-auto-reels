@@ -1,40 +1,41 @@
-# Cuaderno de cazatendencias (2026-11-04)
+# Cuaderno de cazatendencias (2026-11-05)
 
 ## Tendencias de la semana
-- Lujo Humano y Encontrado: Se busca que los espacios se sientan vividos y personales, mezclando piezas heredadas, artesanales o de mercadillo con diseño moderno para contar una historia, alejándose del lujo ostentoso y de catálogo.
-- Cocinas con zona de trabajo oculta: La cocina principal se mantiene abierta al salón como zona de representación social, pero se esconde el 'office' o zona de fuegos sucia tras paneles correderos o puertas invisibles.
-- Color Drenching: Pintar paredes, techos, puertas y molduras exactamente del mismo tono para crear atmósferas envolventes, monocromáticas y muy acogedoras que amplían visualmente el espacio.
-- Baños continuos y esculturales: Uso de microcemento o porcelánico de gran formato (120x280 cm) para eliminar juntas, combinando grifería cepillada y accesorios que parecen esculturas para lograr un efecto de santuario.
-- Minimalismo cálido y formas orgánicas: El mobiliario y la arquitectura interior adoptan curvas, arcos y siluetas redondeadas para suavizar los espacios, aportando confort visual y físico frente a las líneas rectas.
-- Materiales con historia y textura: Se priorizan materias primas que aportan autenticidad y tacto, como maderas de poro abierto, piedra natural, barro y cerámicas artesanales que envejecen bien con el paso del tiempo.
+- Casas que sanan y decoración consciente: La decoración deja de ser solo estética para centrarse en el bienestar emocional, buscando reducir el estrés con espacios que transmiten paz y equilibrio.
+- Materiales naturales y texturas orgánicas: Hay una fuerte necesidad de conectar con la naturaleza mediante el uso de madera, piedra, cerámica artesanal y lino, aportando calidez y autenticidad.
+- Espacios abiertos y multifuncionales: Las viviendas modernas buscan fluidez, integrando salón, comedor y cocina para optimizar la luz natural y facilitar la interacción.
+- Iluminación cálida e integrada: La luz indirecta, las tiras LED ocultas y las lámparas esculturales se han convertido en la clave para crear atmósferas acogedoras y cambiar por completo un espacio.
+- Sostenibilidad y eficiencia: El uso de materiales reciclados, pinturas ecológicas y maderas certificadas responde a una mayor conciencia ambiental y a la búsqueda de hogares más saludables.
+- El regreso de las maderas oscuras: Maderas como el nogal, el ébano o el sapeli vuelven con fuerza para aportar un toque de lujo, calidez y carácter, alejándose de las maderas excesivamente claras.
 
 ## Estilos
-- verde salvia y oliva profundo
-- madera de nogal oscuro
-- terracota suave y tonos arcilla
-- burdeos cálido (Port Royale)
-- naranja setentero en detalles
-- microcemento y superficies continuas
+- verde salvia y verde oliva
+- tonos tierra y terracota
+- greige y neutros cálidos
+- muebles curvos y formas orgánicas
+- mármol y piedras naturales con vetas
+- madera oscura (nogal, sapeli)
 
 ## Para nuestro equipo
-- Aprovechar la narrativa del lujo vivido y las piezas encontradas para alejarse del render genérico e impersonal.
-- Sustituir los blancos hospitalarios y grises fríos por envolventes en terracota, oliva profundo o piedra caliza.
-- Introducir el naranja vintage en sutiles toques de mobiliario en lugar de recurrir al saturado acento rojo.
-- Potenciar planos macro donde se aprecie el grano de la madera de nogal, el barro cocido y el travertino.
+- Aprovechar el tirón de las maderas oscuras (nogal y sapeli) equilibrándolas con cal, lino crudo y tonos greige para no saturar.
+- La tendencia 'casas que sanan' funciona mejor cuando se muestran texturas táctiles reales como piedra caliza, terracota y arcilla.
+- Evitar por completo los renders de espacios asépticos, minimalismos fríos o paredes en gris puro, pues generan rechazo y fatiga visual.
+- Enfocar los vídeos de distribución diáfana en resolver la zonificación sin perder la sensación de recogimiento y confort acústico.
 
 ## Ya quemado
-- blancos clínicos y grises azulados fríos
-- minimalismo rígido de catálogo sin personalidad
-- el 'rojo inesperado' (reemplazado por el naranja retro)
+- Gris frío y aséptico en paredes
+- Blanco puro estilo hospital
+- Minimalismo rígido y sin texturas
+- Colores primarios brillantes o rojos intensos en paredes
 
 ## Música en tendencia (TikTok, España)
-- Cool Girl · Jayde Mari
 - cool girls · Sonatara
-- Spectacular Moment · life motivation
-- Finally You Are Here · BCD Studio
+- Cool Girl · Jayde Mari
 - Tell Me Where to Go (Lofi) · Muspace Lofi
+- Finally You Are Here · BCD Studio
 - Holiday Gift · Muspace
+- Final Minutes · Muspace Lofi
 - Dreams of Children · Muspace
 - Please Holding Me (Lofi) · Muspace Lofi
-- Free Falling · Muspace
-- Dinner Table · Muspace Lofi
+- Restart (Lofi) · Muspace Lofi
+- Maybe You · Muspace Lofi
