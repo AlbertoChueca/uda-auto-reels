@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-06 07:59 UTC · 0 respuestas_
+_Última pasada: 2026-11-06 11:49 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -41,6 +41,9 @@ _Última pasada: 2026-11-06 07:59 UTC · 0 respuestas_
 | 2026-11-05 | instagram | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-05 | tiktok | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-05 | linkedin | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
+| 2026-11-06 | instagram | inspiracion | Proyectó hasta los 104 años | 0 | — |
+| 2026-11-06 | tiktok | inspiracion | Proyectó hasta los 104 años | 0 | — |
+| 2026-11-06 | linkedin | inspiracion | Proyectó hasta los 104 años | 0 | — |
 | 2026-11-03 | instagram | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | tiktok | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | linkedin | carrusel | Actuaciones específicas en paquete | 0 | — |
