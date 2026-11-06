@@ -1,41 +1,40 @@
-# Cuaderno de cazatendencias (2026-11-05)
+# Cuaderno de cazatendencias (2026-11-06)
 
 ## Tendencias de la semana
-- Casas que sanan y decoración consciente: La decoración deja de ser solo estética para centrarse en el bienestar emocional, buscando reducir el estrés con espacios que transmiten paz y equilibrio.
-- Materiales naturales y texturas orgánicas: Hay una fuerte necesidad de conectar con la naturaleza mediante el uso de madera, piedra, cerámica artesanal y lino, aportando calidez y autenticidad.
-- Espacios abiertos y multifuncionales: Las viviendas modernas buscan fluidez, integrando salón, comedor y cocina para optimizar la luz natural y facilitar la interacción.
-- Iluminación cálida e integrada: La luz indirecta, las tiras LED ocultas y las lámparas esculturales se han convertido en la clave para crear atmósferas acogedoras y cambiar por completo un espacio.
-- Sostenibilidad y eficiencia: El uso de materiales reciclados, pinturas ecológicas y maderas certificadas responde a una mayor conciencia ambiental y a la búsqueda de hogares más saludables.
-- El regreso de las maderas oscuras: Maderas como el nogal, el ébano o el sapeli vuelven con fuerza para aportar un toque de lujo, calidez y carácter, alejándose de las maderas excesivamente claras.
+- Casas vividas y 'Collected Home': La audiencia rechaza los espacios de revista intocables y estériles. Se viralizan los hogares con alma que mezclan piezas de diferentes épocas, texturas y estilos, mostrando una casa real, habitada y emocional.
+- Diseño biofílico y materiales sin tóxicos: Hay una creciente preocupación por la salud en el hogar. Triunfan los vídeos que explican cómo usar materiales naturales (barro, madera, piedra) y mejorar la calidad del aire interior frente a los sintéticos.
+- Reformas de eficiencia energética y confort térmico: Con los cambios de temperatura y el coste de la energía, los usuarios guardan masivamente contenido sobre aislamiento térmico, aerotermia y ventanas eficientes para revalorizar sus pisos.
+- Cocinas abiertas con electrodomésticos invisibles: La integración total es clave. Las placas de inducción con extractor integrado y los electrodomésticos panelados dominan los 'house tours' para lograr espacios limpios conectados visualmente con el salón.
+- El fin del beige y el regreso del color profundo: Los tonos terracota, verde oliva, burdeos y chocolate están reemplazando a los espacios monocromáticos neutros, aportando carácter y calidez visual a las estancias de cara al invierno.
+- Actualizar sin reformar (cambios rápidos): Por el alto coste y tiempo de las obras, los vídeos de transformaciones rápidas usando pintura, cambio de textiles o revestimientos adhesivos tienen un altísimo nivel de 'guardados' y compartidos.
 
 ## Estilos
-- verde salvia y verde oliva
-- tonos tierra y terracota
-- greige y neutros cálidos
-- muebles curvos y formas orgánicas
-- mármol y piedras naturales con vetas
-- madera oscura (nogal, sapeli)
+- verde oliva y terracota
+- madera de nogal con veta visible
+- suelo de terrazo y barro cocido
+- acero inoxidable cepillado
+- formas orgánicas y curvas
 
 ## Para nuestro equipo
-- Aprovechar el tirón de las maderas oscuras (nogal y sapeli) equilibrándolas con cal, lino crudo y tonos greige para no saturar.
-- La tendencia 'casas que sanan' funciona mejor cuando se muestran texturas táctiles reales como piedra caliza, terracota y arcilla.
-- Evitar por completo los renders de espacios asépticos, minimalismos fríos o paredes en gris puro, pues generan rechazo y fatiga visual.
-- Enfocar los vídeos de distribución diáfana en resolver la zonificación sin perder la sensación de recogimiento y confort acústico.
+- Aprovechar el viraje radical de la audiencia hacia tonos envolventes (terracota, oliva, chocolate) frente al rechazo del minimalismo blanco aséptico.
+- Potenciar detalles constructivos de bienestar pasivo y materiales sanos (cal, barro, madera aceitada), que generan un alto índice de guardados técnicos.
+- Evitar por completo los herrajes dorados brillantes y el mobiliario idéntico de catálogo; la tendencia exige piezas desparejadas y acabados cepillados o mates.
+- Mostrar cocinas integradas donde los electrodomésticos desaparecen tras panelados de madera o campanas ocultas en la propia placa.
 
 ## Ya quemado
-- Gris frío y aséptico en paredes
-- Blanco puro estilo hospital
-- Minimalismo rígido y sin texturas
-- Colores primarios brillantes o rojos intensos en paredes
+- El 'total look' beige o blanco nuclear (estilo minimalista estéril)
+- Muebles comprados en conjunto donde todo combina perfectamente
+- Latón dorado brillante en griferías y tiradores
+- Cocinas cerradas y aisladas del resto de la vivienda
 
 ## Música en tendencia (TikTok, España)
-- cool girls · Sonatara
 - Cool Girl · Jayde Mari
+- cool girls · Sonatara
 - Tell Me Where to Go (Lofi) · Muspace Lofi
-- Finally You Are Here · BCD Studio
-- Holiday Gift · Muspace
 - Final Minutes · Muspace Lofi
 - Dreams of Children · Muspace
-- Please Holding Me (Lofi) · Muspace Lofi
+- Holiday Gift · Muspace
 - Restart (Lofi) · Muspace Lofi
+- Free Falling · Muspace
 - Maybe You · Muspace Lofi
+- Finally You Are Here · BCD Studio

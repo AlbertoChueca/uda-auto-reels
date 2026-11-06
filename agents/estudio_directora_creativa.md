@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-11-05)
+# Cuaderno de directora_creativa (2026-11-06)
 
-- Seguir haciendo: Formato portfolio técnico y despiece de entregables reales de ejecución («Solo un arquitecto», 2.437 views; «Capa a capa», score 10.86).
-- Dejar de hacer: Temáticas de decoración, reformas domésticas e interiorismo B2C («Islas de cocina», «Antes y después», score 0.00).
-- Probar: Planimetrías axonométricas y despieces constructivos con tratamiento editorial sobrio y tipografía técnica sobre fondos oscuros.
+- Seguir haciendo: Formato portfolio técnico y desgloses de entregables reales de ejecución («Solo un arquitecto», 2.438 views; «Capa a capa», 17 guardados).
+- Dejar de hacer: Temáticas de interiorismo doméstico y estilismo B2C (sofás, alfombras, baños) sin valor para un estudio.
+- Probar: Axonometrías constructivas y planimetrías técnicas vectoriales sobrias sobre fondo oscuro con tipografía de despacho.

@@ -1,8 +1,6 @@
-# Cuaderno de comunidad (2026-11-05)
+# Cuaderno de comunidad (2026-11-06)
 
-# Cuaderno de comunidad
-
-• Datos de audiencia: Sin comentarios nuevos en el último lote; interacción histórica baja (1 a 5 comentarios), concentrada solo en retos gremiales y muestras de entregables.
-• Seguir haciendo: Desafiar el conocimiento técnico y normativo del arquitecto para forzar debate.
-• Dejar de hacer: Preguntas abiertas sobre estética que no provocan respuesta.
-• Probar: Pregunta directa de dolor operativo: «¿Qué plano o cálculo de instalaciones te frena más la entrega del ejecutivo?».
+• Datos de audiencia: Escasez de datos frescos; sin comentarios nuevos registrados. La interacción histórica (1-5 comentarios) se concentra exclusivamente en retos gremiales y entregas reales.
+• Seguir haciendo: Retar el criterio técnico y normativo del arquitecto para incentivar debate entre pares.
+• Dejar de hacer: Preguntas abiertas genéricas que no apelan a un dolor operativo del estudio.
+• Probar: Pregunta directa de debate técnico en comentarios: «¿Qué documento del Proyecto de Ejecución te consume más horas antes de visar?».

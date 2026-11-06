@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-05)
+# Cuaderno de seo (2026-11-06)
 
-- Seguir haciendo: Palabras clave profesionales B2B: «instalaciones», «arquitecto», «proyecto de ejecución», «despacho», «delegas».
-- Dejar de hacer: Términos de cliente final o decoración («cocinas», «lujo de catálogo», «hogar consciente»).
-- Probar: Incorporar intenciones transaccionales de búsqueda: «externalizar proyecto de ejecución», «cálculo de instalaciones CTE» y «apoyo técnico arquitectura».
+- Seguir haciendo: Keywords transaccionales B2B consolidadas: «instalaciones», «proyecto de ejecución», «despacho», «delegas», «arquitecto».
+- Dejar de hacer: Términos decorativos o de consumidor final («islas de cocina», «hogar consciente»).
+- Probar: Posicionar búsquedas de dolor de gestión: «externalizar delineación», «cálculo instalaciones CTE» y «apoyo entregas arquitectura».

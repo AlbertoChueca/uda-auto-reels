@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-11-05)
+# Cuaderno de memoria (2026-11-06)
 
-- Seguir haciendo: Desgloses técnicos analíticos y listados de entregables que maximizan guardados («Capa a capa», 17 guardados; «Solo un arquitecto», 16 guardados).
-- Dejar de hacer: Consejos genéricos de diseño sin aplicación documental directa (0 guardados).
-- Probar: Plantillas visuales de checklist normativo CTE listas para guardar y revisar antes de visar un proyecto.
+- Seguir haciendo: Despieces sistemáticos de entregables y capas que maximizan guardados («Capa a capa», 17 guardados; «Solo un arquitecto», 16 guardados).
+- Dejar de hacer: Reflexiones conceptuales sin aplicación documental inmediata (0 guardados en «Coste de redactarlo todo»).
+- Probar: Plantillas y checklists de comprobación técnica CTE listos para consultar antes de visar.

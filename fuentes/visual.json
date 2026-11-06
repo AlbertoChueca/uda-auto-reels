@@ -607,6 +607,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-05"
+},
+{
+"id": "t20261106g",
+"hook": "Casas que abandonan el blanco",
+"cierre": "¿Con cuál te quedas tú?",
+"escenas": [
+{
+"idea": "Salón envuelto en pintura verde oliva mate, sofá tapizado en lino chocolate y mesa baja de nogal macizo con luz lateral rasante.",
+"label": "Salón verde oliva"
+},
+{
+"idea": "Cocina abierta con frentes de acero cepillado, encimera de cuarcita oscura y pared frontal revestida en azulejo terracota artesanal cocido a mano.",
+"label": "Cocina y acero"
+},
+{
+"idea": "Rincón de lectura con biblioteca empotrada en tono burdeos profundo, butaca curvada de bouclé y pavimento continuo de barro cocido natural.",
+"label": "Rincón burdeos"
+},
+{
+"idea": "Comedor bañado en luz cenital con mesa ovalada de madera oscura, sillas de fibras naturales y suelo de terrazo tradicional pulido.",
+"label": "Comedor orgánico"
+},
+{
+"idea": "Baño sobrio con paredes en cal tono arcilla, lavabo suspendido de piedra tallada y grifería empotrada en acabado grafito mate.",
+"label": "Baño mineral"
+},
+{
+"idea": "Dormitorio principal con cabecero a medida en nogal acanalado, ropa de cama en lino canela y lámpara colgante escultórica de cerámica.",
+"label": "Dormitorio cálido"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-06"
 }
 ],
 "proceso": [
@@ -702,6 +735,13 @@
 "descripcion": "una vivienda unifamiliar diáfana con patios de luz, revoco de cal y carpintería de nogal",
 "tendencia": true,
 "fecha": "2026-11-05"
+},
+{
+"id": "t20261106p",
+"tipo": "casa",
+"descripcion": "una vivienda entre medianeras rehabilitada con muros de barro, carpinterías de alerce y aerotermia oculta",
+"tendencia": true,
+"fecha": "2026-11-06"
 }
 ],
 "antes_despues": [
@@ -806,6 +846,14 @@
 "estilo": "espacio abierto y fluido con tonos greige, carpintería oculta y luz perimetral cálida",
 "tendencia": true,
 "fecha": "2026-11-05"
+},
+{
+"id": "t20261106a",
+"tipo": "estancia",
+"descripcion": "un comedor cerrado y lúgubre con falso techo de escayola, tarima vinílica bufada y tabique divisorio ciego",
+"estilo": "cocina abierta conectada en nogal, campana integrada y suelo de terrazo artesanal pulido",
+"tendencia": true,
+"fecha": "2026-11-06"
 }
 ],
 "tips": [

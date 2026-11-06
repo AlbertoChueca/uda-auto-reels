@@ -1,7 +1,5 @@
-# Cuaderno de crecimiento (2026-11-05)
+# Cuaderno de crecimiento (2026-11-06)
 
-# Cuaderno de crecimiento
-
-• Seguir haciendo: Priorizar contenido de entregables técnicos reales, único motor comprobado de guardados (hasta 17 por reel).
-• Dejar de hacer: Publicaciones sin llamada de acción orientada a tráfico; acumulamos 0 visitas al perfil en todos los registros.
-• Probar: CTA explícito con incentivo técnico: «Guarda esta guía para tu estudio y externaliza la carga de ejecución en uniondearquitectos.com (enlace en bio)».
+• Seguir haciendo: Fomentar el contenido de alta utilidad técnica, único catalizador comprobado de guardados (hasta 17 por reel).
+• Dejar de hacer: Publicar sin un incentivo claro de salida; el registro muestra 0 visitas al perfil de forma sistemática en todo el histórico.
+• Probar: CTA de fricción cero vinculado a negocio: «Guarda esta plantilla técnica y descarga el protocolo de ejecución en uniondearquitectos.com (enlace en bio)».

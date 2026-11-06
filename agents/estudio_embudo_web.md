@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-11-05)
+# Cuaderno de embudo_web (2026-11-06)
 
-- Seguir haciendo: Comparativas directas de rentabilidad y gestión de recursos en despachos («Plantilla o delegar», récord de 89 clics).
-- Dejar de hacer: Reels técnicos sin enlace o llamada a la acción hacia uniondearquitectos.com (la mayoría registra 0 clics).
-- Probar: Vincular reels de producto técnico («Top 4») con un CTA explícito para presupuestar proyectos en la web.
+- Seguir haciendo: Comparativas directas de costes y recursos operativos («Plantilla o delegar», récord de 89 clics).
+- Dejar de hacer: Reels técnicos con alta retención que olvidan la llamada a la acción (múltiples reels >1.000 views con 0 clics).
+- Probar: Conectar reels de entregables («Top 4») con un CTA explícito para externalizar y cotizar en uniondearquitectos.com.

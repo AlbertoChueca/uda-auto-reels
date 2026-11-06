@@ -1,5 +1,5 @@
-# Cuaderno de narradora_casos (2026-11-05)
+# Cuaderno de narradora_casos (2026-11-06)
 
-- Seguir haciendo: Plantear el dilema de capacidad operativa y entregas críticas en el despacho («Plantilla o delegar», 89 clics; «Top 4», 1.225 views).
-- Dejar de hacer: Citas teóricas abstractas («La forma sigue a la función», 0 views) o historias para clientes particulares.
-- Probar: Escenas breves de despachos desbordados por plazos inminentes que resuelven su entrega apoyándose en UDA.
+- Seguir haciendo: Casos reales de capacidad técnica y entregas críticas en despacho («Delegas el Proyecto de Ejecución», 935 views; «Plantilla o delegar», 89 clics).
+- Dejar de hacer: Narrativas pasivas orientadas a cliente particular («POV: compras para reformar»).
+- Probar: Situaciones de despacho al límite de plazo resolviendo picos de trabajo al delegar la fase técnica a UDA.

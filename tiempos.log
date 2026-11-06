@@ -518,3 +518,9 @@
 2026-11-05 13:34 tarde reel visual (proceso_visual): 528 s
 2026-11-05 14:00 tarde publicar: 36 s
 2026-11-05 14:00 tarde TOTAL: 2102 s
+2026-11-06 10:51 mediodia voz: 3 s
+2026-11-06 10:52 mediodia foto + voz + textos (voz: google): 49 s
+2026-11-06 10:53 mediodia render (ronda 1): 59 s
+2026-11-06 10:53 mediodia revisiones (ronda 1): diseño 8.8 · vídeo 7.0: 14 s
+2026-11-06 11:00 mediodia publicar: 37 s
+2026-11-06 11:00 mediodia TOTAL: 2038 s

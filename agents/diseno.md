@@ -1,7 +1,5 @@
-# Cuaderno de diseno (2026-11-05)
+# Cuaderno de diseno (2026-11-06)
 
-# Cuaderno de diseno
-
-• Seguir haciendo: Formato infografía en fondo carbón/negro con jerarquía geométrica sobria; monopoliza el top 5 con scores entre 9.65 y 11.63.
-• Dejar de hacer: Renders aislados sin soporte técnico y carruseles estáticos (scores entre 0.00 y 3.54).
-• Probar: Esquema técnico en capas progresivas (líneas en blanco piedra y cotas en bronce), blindando la zona inferior segura contra subtítulos de la app.
+• Seguir haciendo: Formato infografía en fondo carbón/negro con tipografía geométrica sobria y jerarquía clara; domina el top de rendimiento (scores de 9.65 a 11.63).
+• Dejar de hacer: Carruseles estáticos con exceso de texto (scores entre 0.00 y 3.54) y renders decorativos sin contenido técnico.
+• Probar: Diagramas técnicos animados capa a capa (trazado en blanco piedra y cotas en bronce), blindando la zona inferior contra subtítulos de la interfaz.
