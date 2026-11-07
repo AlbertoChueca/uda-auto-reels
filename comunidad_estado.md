@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-07 11:50 UTC · 0 respuestas_
+_Última pasada: 2026-11-07 14:50 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -45,6 +45,9 @@ _Última pasada: 2026-11-07 11:50 UTC · 0 respuestas_
 | 2026-11-07 | instagram | galeria | Cerramientos que transforman cocinas | 1 | — |
 | 2026-11-07 | tiktok | galeria | Cerramientos que transforman cocinas | 1 | — |
 | 2026-11-07 | linkedin | galeria | Cerramientos que transforman cocinas | 1 | — |
+| 2026-11-07 | instagram | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
+| 2026-11-07 | tiktok | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
+| 2026-11-07 | linkedin | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
 | 2026-11-03 | instagram | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | tiktok | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | linkedin | carrusel | Actuaciones específicas en paquete | 0 | — |
