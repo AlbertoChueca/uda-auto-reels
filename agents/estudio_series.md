@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-11-06)
+# Cuaderno de series (2026-11-07)
 
-- Seguir haciendo: Faltan datos para evaluar impacto periódico (el 100% de los reels figura como «serie None»).
-- Dejar de hacer: Publicaciones sueltas sin recurrencia ni identidad serial reconocible.
-- Probar: Lanzar la serie fija «Entregas de Despacho» (Capítulo 1: Instalaciones CTE) apalancando los formatos portfolio con mejor retención.
+- Seguir haciendo: Faltan datos para evaluar rendimiento serial (el 100% de las publicaciones analizadas figura como «serie None»).
+- Dejar de hacer: Publicaciones aisladas sin recurrencia temática ni numeración fija.
+- Probar: Lanzar la serie semanal «Entregas de Despacho» (Capítulo 1: Instalaciones CTE) aprovechando el éxito del formato portfolio.

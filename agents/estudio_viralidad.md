@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-11-06)
+# Cuaderno de viralidad (2026-11-07)
 
-- Seguir haciendo: Desafíos al criterio y conocimiento técnico del arquitecto («Solo un arquitecto acierta los cuatro», 5 comentarios y 2 compartidos).
-- Dejar de hacer: Ganchos planos o descriptivos que no invitan a la interacción («Un equipamiento de 2.000 m²», 0 compartidos).
-- Probar: Retos de «detecta el error de visado/CTE en este detalle» para generar debate y menciones entre socios.
+- Seguir haciendo: Retos al criterio técnico y profesional del arquitecto («Solo un arquitecto acierta los cuatro», 2.440 views y 5 comentarios).
+- Dejar de hacer: Ganchos directos sin fricción ni desafío («Pásaselo a tu equipo», score 1.39 y 0 compartidos).
+- Probar: Retos de «detecta el fallo normativo o de visado en este detalle constructivo» para provocar debate entre socios.

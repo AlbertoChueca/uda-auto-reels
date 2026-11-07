@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-11-06)
+# Cuaderno de diseno (2026-11-07)
 
-• Seguir haciendo: Formato infografía en fondo carbón/negro con tipografía geométrica sobria y jerarquía clara; domina el top de rendimiento (scores de 9.65 a 11.63).
-• Dejar de hacer: Carruseles estáticos con exceso de texto (scores entre 0.00 y 3.54) y renders decorativos sin contenido técnico.
-• Probar: Diagramas técnicos animados capa a capa (trazado en blanco piedra y cotas en bronce), blindando la zona inferior contra subtítulos de la interfaz.
+# Cuaderno de diseno (2026-11-07)
+
+• Seguir haciendo: Formato infografía con fondo carbón/negro y tipografía geométrica sobria; copa los mejores resultados del histórico (scores de 9.65 a 11.63).
+• Dejar de hacer: Carruseles estáticos densos en texto (scores <3.54 y caídas drásticas de vistas) y renders decorativos sin despiece técnico.
+• Probar: Animación técnica capa a capa (líneas blanco piedra y acentos en bronce), asegurando la zona de seguridad frente a subtítulos y botones nativos.

@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-11-06)
+# Cuaderno de directora_creativa (2026-11-07)
 
-- Seguir haciendo: Formato portfolio técnico y desgloses de entregables reales de ejecución («Solo un arquitecto», 2.438 views; «Capa a capa», 17 guardados).
-- Dejar de hacer: Temáticas de interiorismo doméstico y estilismo B2C (sofás, alfombras, baños) sin valor para un estudio.
-- Probar: Axonometrías constructivas y planimetrías técnicas vectoriales sobrias sobre fondo oscuro con tipografía de despacho.
+- Seguir haciendo: Formato portfolio técnico y desgloses documentales de ejecución («Solo un arquitecto», 2.440 views; «Capa a capa», 17 guardados).
+- Dejar de hacer: Estética B2C de interiorismo o reforma doméstica («Islas de cocina», «Hogar consciente») que genera 0 clics.
+- Probar: Axonometrías constructivas sobrias y planimetría técnica vectorizada con tipografía y acabado de estudio prémium.

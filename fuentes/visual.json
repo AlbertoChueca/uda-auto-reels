@@ -640,6 +640,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-06"
+},
+{
+"id": "t20261107g",
+"hook": "Cerramientos que transforman cocinas",
+"cierre": "¿Abierta o semiabierta?",
+"escenas": [
+{
+"idea": "Cocina luminosa separada del comedor mediante un cerramiento acristalado de hierro negro y puertas correderas de suelo a techo.",
+"label": "Perfilería de acero"
+},
+{
+"idea": "Separador de paneles de vidrio con carpintería en madera de nogal estriado, comunicando isla central y salón sereno.",
+"label": "Marco de nogal"
+},
+{
+"idea": "Mampara corredera con vidrio estriado translúcido que oculta la zona de fuegos permitiendo el paso de luz natural.",
+"label": "Cristal acanalado"
+},
+{
+"idea": "Cerramiento acristalado tipo guillotina sobre bancada de caliza clara, conectando visualmente el espacio de trabajo con la mesa.",
+"label": "Ventanal guillotina"
+},
+{
+"idea": "Estructura angular acristalada que independiza la cocina del recibidor, combinada con sutiles detalles de latón envejecido.",
+"label": "Mampara en esquina"
+},
+{
+"idea": "Paso abovedado cerrado con perfilería metálica fina y vidrio templado, separando la despensa del salón con gran elegancia.",
+"label": "Arco acristalado"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-07"
 }
 ],
 "proceso": [
@@ -742,6 +775,13 @@
 "descripcion": "una vivienda entre medianeras rehabilitada con muros de barro, carpinterías de alerce y aerotermia oculta",
 "tendencia": true,
 "fecha": "2026-11-06"
+},
+{
+"id": "t20261107p",
+"tipo": "casa",
+"descripcion": "una vivienda señorial reformada con cerramientos acristalados, carpintería de nogal y baño continuo relajante",
+"tendencia": true,
+"fecha": "2026-11-07"
 }
 ],
 "antes_despues": [
@@ -854,6 +894,14 @@
 "estilo": "cocina abierta conectada en nogal, campana integrada y suelo de terrazo artesanal pulido",
 "tendencia": true,
 "fecha": "2026-11-06"
+},
+{
+"id": "t20261107a",
+"tipo": "estancia",
+"descripcion": "una cocina lúgubre con azulejos amarillentos, encimera de conglomerado hinchada y muebles altos descolgados",
+"estilo": "cocina semiabierta con cerramiento acristalado, isla en travertino mate y nogal estriado",
+"tendencia": true,
+"fecha": "2026-11-07"
 }
 ],
 "tips": [

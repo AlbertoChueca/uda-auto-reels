@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-06)
+# Cuaderno de seo (2026-11-07)
 
-- Seguir haciendo: Keywords transaccionales B2B consolidadas: «instalaciones», «proyecto de ejecución», «despacho», «delegas», «arquitecto».
-- Dejar de hacer: Términos decorativos o de consumidor final («islas de cocina», «hogar consciente»).
-- Probar: Posicionar búsquedas de dolor de gestión: «externalizar delineación», «cálculo instalaciones CTE» y «apoyo entregas arquitectura».
+- Seguir haciendo: Keywords transaccionales B2B de alta intención: «instalaciones», «proyecto de ejecución», «despacho», «delegar», «arquitecto».
+- Dejar de hacer: Búsquedas enfocadas a propietario o decoración («hogar consciente», «islas de cocina»).
+- Probar: Posicionar términos de dolor operativo: «externalizar delineación», «cálculo instalaciones CTE» y «apoyo entregas arquitectura».

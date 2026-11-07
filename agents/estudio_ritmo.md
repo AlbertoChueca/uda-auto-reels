@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-11-06)
+# Cuaderno de ritmo (2026-11-07)
 
-- Seguir haciendo: Ritmo visual analítico sostenido que asegura retención sobre 4.900 ms («Solo un arquitecto», 5.150 ms; «Top 4», 4.910 ms).
-- Dejar de hacer: Entradas lentas sin impacto visual que provocan fuga rápida («Escalar estudio», 660 ms).
-- Probar: Exponer el plano o detalle técnico final en los primeros 1,5 segundos para retener al profesional de inmediato.
+- Seguir haciendo: Ritmo visual analítico y pausado que retiene al profesional más de 4.900 ms («Solo un arquitecto», 5.150 ms; «Top 4», 4.910 ms).
+- Dejar de hacer: Entradas lentas y títulos abstractos que provocan abandono instantáneo («Escalar estudio», 660 ms).
+- Probar: Mostrar el plano o entregable final en los primeros 1,5 segundos para anclar la retención de inmediato.
