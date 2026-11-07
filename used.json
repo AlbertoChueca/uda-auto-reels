@@ -657,5 +657,33 @@
 "fecha": "2026-11-07",
 "formato": "visual",
 "grupo": "galeria"
+},
+{
+"id": "portfolio:lamina:a_detalles",
+"tema": "portfolio",
+"fecha": "2026-11-07",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:b_planta",
+"tema": "portfolio",
+"fecha": "2026-11-07",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:b_estructura",
+"tema": "portfolio",
+"fecha": "2026-11-07",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:c_saneamiento",
+"tema": "portfolio",
+"fecha": "2026-11-07",
+"formato": "visual",
+"grupo": "adivina"
 }
 ]
