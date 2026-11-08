@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-08 06:18 UTC · 0 respuestas_
+_Última pasada: 2026-11-08 11:51 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -44,6 +44,9 @@ _Última pasada: 2026-11-08 06:18 UTC · 0 respuestas_
 | 2026-11-07 | instagram | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
 | 2026-11-07 | tiktok | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
 | 2026-11-07 | linkedin | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
+| 2026-11-08 | instagram | tips | 5 claves para mezclar diseño y artesanía | 1 | — |
+| 2026-11-08 | tiktok | tips | 5 claves para mezclar diseño y artesanía | 1 | — |
+| 2026-11-08 | linkedin | tips | 5 claves para mezclar diseño y artesanía | 1 | — |
 | 2026-11-03 | instagram | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | tiktok | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | linkedin | carrusel | Actuaciones específicas en paquete | 0 | — |
