@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-11-07)
+# Cuaderno de memoria (2026-11-08)
 
-- Seguir haciendo: Despieces analíticos «capa a capa» que disparan los guardados («Capa a capa», 17 guardados; «Solo un arquitecto», 16 guardados).
-- Dejar de hacer: Reflexiones conceptuales sin aplicación documental inmediata (0 guardados en «Coste técnico en naves»).
-- Probar: Checklists visuales de comprobación CTE y entregables técnicos listos para guardar y consultar antes de visar.
+- Seguir haciendo: Despieces analíticos «capa a capa» (17 guardados) y retos de identificación de planos (16 guardados).
+- Dejar de hacer: Publicaciones conceptuales sin material descargable o aplicable (0 guardados en «Coste técnico en naves»).
+- Probar: Fichas técnicas de comprobación CTE y detalles de encuentro constructivo listas para guardar y consultar.

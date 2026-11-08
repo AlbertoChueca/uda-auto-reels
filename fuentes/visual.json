@@ -673,6 +673,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-07"
+},
+{
+"id": "t20261108g",
+"hook": "Materiales que envejecen bien",
+"cierre": "¿Cuál elegirías tú?",
+"escenas": [
+{
+"idea": "Cocina con encimera de piedra caliza abujardada, frentes de roble nudoso y revestimiento de azulejo artesanal vidriado en tono arena.",
+"label": "Caliza y roble"
+},
+{
+"idea": "Rincón de lectura bañado por luz rasante sobre un revoco de cal viva con banco corrido de barro cocido.",
+"label": "Muro de cal"
+},
+{
+"idea": "Lavabo esculpido en un bloque macizo de granito tosco sobre mueble suspendido de madera recuperada con grifería de latón envejecido.",
+"label": "Piedra tosca"
+},
+{
+"idea": "Dormitorio con pared enlucida en arcilla terracota, ropa de cama de lino arrugado y mesillas de tronco natural.",
+"label": "Arcilla natural"
+},
+{
+"idea": "Comedor bañado por luz cenital con mesa rústica de nogal macizo sin desbastar y pavimento de baldosas de terracota manual.",
+"label": "Nogal macizo"
+},
+{
+"idea": "Paso abovedado con ladrillo recuperado visto que conecta una estancia encalada con un patio interior repleto de helechos.",
+"label": "Ladrillo visto"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-08"
 }
 ],
 "proceso": [
@@ -782,6 +815,13 @@
 "descripcion": "una vivienda señorial reformada con cerramientos acristalados, carpintería de nogal y baño continuo relajante",
 "tendencia": true,
 "fecha": "2026-11-07"
+},
+{
+"id": "t20261108p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar de adobe y madera integrada entre colinas con patios vegetales y piedra",
+"tendencia": true,
+"fecha": "2026-11-08"
 }
 ],
 "antes_despues": [
@@ -902,6 +942,14 @@
 "estilo": "cocina semiabierta con cerramiento acristalado, isla en travertino mate y nogal estriado",
 "tendencia": true,
 "fecha": "2026-11-07"
+},
+{
+"id": "t20261108a",
+"tipo": "estancia",
+"descripcion": "un dormitorio principal lúgubre con paredes enteladas en damasco viejo, zócalos de plástico y ventana pequeña encajonada",
+"estilo": "suite minimalista cálida con cabecero alistonado de roble, revoco terroso y luz difusa",
+"tendencia": true,
+"fecha": "2026-11-08"
 }
 ],
 "tips": [

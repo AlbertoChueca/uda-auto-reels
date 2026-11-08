@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-07)
+# Cuaderno de revisora_visual (2026-11-08)
 
-- Seguir haciendo: Exigir rigor planimétrico y credibilidad constructiva en entregables de ejecución («Esto es lo que entregamos», 1.115 views).
-- Dejar de hacer: Aprobar divisiones de pantalla innecesarias o escenas decorativas sin valor de proyecto.
-- Probar: Auditoría estricta de simbología CTE, grosores de línea y capas técnicas reales en cada gráfico.
+- Seguir haciendo: Controlar el rigor constructivo y la planimetría de entregables reales («Esto es lo que entregamos», 1.116 views).
+- Dejar de hacer: Validar imágenes con personas en obra o textos inteligibles generados por IA reportados en revisiones previas.
+- Probar: Checklist estricto de coherencia gráfica CTE y ausencia total de artefactos visuales antes de publicar.

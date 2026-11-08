@@ -1,40 +1,41 @@
-# Cuaderno de cazatendencias (2026-11-07)
+# Cuaderno de cazatendencias (2026-11-08)
 
 ## Tendencias de la semana
-- Cocinas semiabiertas con cerramientos de cristal: La gente huye de los olores y ruidos en el salón, buscando separar los espacios visualmente sin perder luz natural mediante puertas correderas o paneles acristalados.
-- Color drenching en tonos envolventes: Pintar paredes, techos y molduras del mismo color (como verde oliva, burdeos o terracota) crea atmósferas inmersivas y acogedoras, dejando atrás el blanco clínico.
-- El regreso de la madera oscura y texturizada: El nogal y el roble ahumado con veta visible (poro abierto) aportan un toque de 'lujo silencioso' y calidez, reemplazando a las maderas nórdicas excesivamente claras.
-- Baños continuos tipo spa: El uso de microcemento o porcelánico de gran formato sin juntas, junto con duchas a ras de suelo, da sensación de amplitud visual y facilita mucho la limpieza.
-- Collected home (mezcla de épocas): Se busca huir del 'look de catálogo' integrando piezas heredadas, antigüedades o hallazgos de mercadillo con mobiliario moderno para dar personalidad e historia a la casa.
-- Piedra natural mate y calmada: El travertino sin rellenar y la caliza ganan terreno por su textura real y aspecto sereno, sustituyendo a los mármoles de vetas dramáticas y acabados brillantes.
+- Minimalismo cálido y lujo silencioso: La gente busca refugios emocionales que transmitan paz, alejándose de los espacios fríos. Se prioriza el confort visual y físico con materiales nobles y atemporales.
+- Casas que sanan (Diseño biofílico): Hay una creciente preocupación por el bienestar; los usuarios quieren hogares que reduzcan el estrés mediante luz natural, plantas y materiales libres de tóxicos.
+- La imperfección táctil y materiales con historia: Se rechaza lo ultra-pulido. Triunfan las texturas rugosas, la madera con veta visible y la cerámica artesanal porque aportan autenticidad y alma a la casa.
+- Cocinas de trabajo ocultas: En las reformas se busca mantener una cocina estética abierta al salón, pero escondiendo la zona de fuegos y limpieza detrás de paneles o puertas ocultas para cuando hay invitados.
+- El regreso de los tonos tierra y oscuros: El blanco aséptico cansa. Los tonos terracota, verde oliva y marrón chocolate se viralizan porque hacen que los espacios se sientan más abrazadores y habitados.
+- Espacios curvos y orgánicos: Las líneas rectas y rígidas se sustituyen por arcos, sofás modulares envolventes y espejos fluidos para facilitar la circulación y dar sensación de fluidez.
 
 ## Estilos
-- madera de nogal oscuro
-- verde oliva y burdeos
-- piedra travertino mate
-- lujo silencioso
-- estilo retro años 70
+- verde oliva y bosque
+- madera con veta visible
+- tonos terracota y arcilla
+- marrón chocolate
+- fibras naturales como yute o sisal
+- cerámica artesanal imperfecta
 
 ## Para nuestro equipo
-- Aprovechar el debate sobre cocinas abiertas frente a semiabiertas: el cerramiento de vidrio es la solución estrella.
-- Sustituir los mármoles pulidos de vetas agresivas por calizas y travertinos de poro abierto con acabado mate.
-- Priorizar la madera de nogal o roble ahumado para transmitir calidez frente a la frialdad de los blancos puros.
-- Evitar conjuntos de mobiliario idénticos; mostrar piezas con carácter propio integradas de forma orgánica.
+- Aprovechar los tonos chocolate, terracota y verde bosque que sustituyen definitivamente al blanco aséptico y al gris frío.
+- Potenciar la textura táctil en los encuadres: primeros planos de cal, barro y veta de madera viva retienen mejor a la audiencia madura.
+- Evitar renders de aspecto hiperlacado o de catálogo comercial sintético; se premia la apariencia de material noble imperfecto.
+- Enfocar los vídeos de proceso hacia la integración paisajística y el bienestar biofílico en lugar de la técnica constructiva pura.
 
 ## Ya quemado
-- El total white y el exceso de beige aburrido sin texturas.
-- Las cocinas 100% abiertas al salón sin ningún tipo de separación.
-- El mármol Calacatta con vetas muy dramáticas y brillantes en todas partes.
-- Muebles comprados en conjunto que parecen sacados de un catálogo impersonal.
+- El gris frío y el blanco clínico en paredes y muebles
+- El minimalismo extremo, rígido e impersonal
+- Superficies ultra-lisas y brillantes sin textura
+- Mobiliario de catálogo excesivamente perfecto y sin personalidad
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
 - Man on the Run · Jon Sumner
+- Neon Nights · Adrian Rover
 - Final Minutes · Muspace Lofi
-- Holiday Gift · Muspace
 - Tell Me Where to Go (Lofi) · Muspace Lofi
+- Holiday Gift · Muspace
 - Free Falling · Muspace
 - Dreams of Children · Muspace
-- Please Holding Me (Lofi) · Muspace Lofi
-- Polar Winds (Lofi) · Muspace Lofi
+- Maybe You · Muspace Lofi

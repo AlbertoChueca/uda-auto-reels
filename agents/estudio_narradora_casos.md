@@ -1,5 +1,5 @@
-# Cuaderno de narradora_casos (2026-11-07)
+# Cuaderno de narradora_casos (2026-11-08)
 
-- Seguir haciendo: Casos reales de despacho sobre delegar el Proyecto de Ejecución («Delegas el Proyecto», 935 views; «Plantilla o delegar», 89 clics).
-- Dejar de hacer: Narrativas orientadas al cliente particular («POV: compras para reformar»).
-- Probar: Escenas de despacho al borde del plazo de entrega resolviendo picos de trabajo al externalizar la técnica en UDA.
+- Seguir haciendo: Casos reales de despacho sobre picos de trabajo y externalización («Top 4», «Delegas el Proyecto», >900 views).
+- Dejar de hacer: Narrativas centradas en clientes particulares («POV: compras para reformar»).
+- Probar: Fricciones reales de estudio al borde de una entrega de visado resueltas delegando la técnica en UDA.
