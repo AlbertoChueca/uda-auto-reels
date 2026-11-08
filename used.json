@@ -692,5 +692,12 @@
 "fecha": "2026-11-08",
 "formato": "visual",
 "grupo": "tips"
+},
+{
+"id": "pritzker",
+"tema": "uda_casos",
+"fecha": "2026-11-08",
+"formato": "render",
+"grupo": null
 }
 ]
