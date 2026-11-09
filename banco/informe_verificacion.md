@@ -1,6 +1,6 @@
-# Informe del verificador (2026-11-05)
+# Informe del verificador (2026-11-09)
 
-- Piezas en el banco: 678 · revisadas: 492 · **publicables sin usar: 255** (negocio 28, contratar 33, servicios 194, proyecto 0) · pendientes: 18
+- Piezas en el banco: 678 · revisadas: 492 · **publicables sin usar: 253** (negocio 28, contratar 33, servicios 192, proyecto 0) · pendientes: 20
 - Errores: 61 · dudosas: 13 · correctas pero sin cita comprobada: 0
 
 Las piezas con error o dudosas nunca se publican. Si alguna dudosa te parece correcta, no hace falta hacer nada: el generador crea piezas nuevas cada semana.
