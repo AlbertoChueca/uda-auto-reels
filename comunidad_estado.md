@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-09 02:44 UTC · 0 respuestas_
+_Última pasada: 2026-11-09 11:50 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -45,6 +45,9 @@ _Última pasada: 2026-11-09 02:44 UTC · 0 respuestas_
 | 2026-11-08 | instagram | inspiracion | El «Nobel» de la arquitectura | 0 | — |
 | 2026-11-08 | tiktok | inspiracion | El «Nobel» de la arquitectura | 0 | — |
 | 2026-11-08 | linkedin | inspiracion | El «Nobel» de la arquitectura | 0 | — |
+| 2026-11-09 | instagram | portfolio | 4 planos que no pueden faltar en tu proy | 1 | — |
+| 2026-11-09 | tiktok | portfolio | 4 planos que no pueden faltar en tu proy | 1 | — |
+| 2026-11-09 | linkedin | portfolio | 4 planos que no pueden faltar en tu proy | 1 | — |
 | 2026-11-03 | instagram | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | tiktok | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | linkedin | carrusel | Actuaciones específicas en paquete | 0 | — |
