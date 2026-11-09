@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-08)
+# Cuaderno de revisora_visual (2026-11-09)
 
-- Seguir haciendo: Controlar el rigor constructivo y la planimetría de entregables reales («Esto es lo que entregamos», 1.116 views).
-- Dejar de hacer: Validar imágenes con personas en obra o textos inteligibles generados por IA reportados en revisiones previas.
-- Probar: Checklist estricto de coherencia gráfica CTE y ausencia total de artefactos visuales antes de publicar.
+- Seguir haciendo: Exigir rigor constructivo y credibilidad planimétrica de entregable profesional («Esto es lo que entregamos», 1.116 views).
+- Dejar de hacer: Aprobar imágenes con figuras humanas en obra o artefactos geométricos de IA en modelos 3D.
+- Probar: Checklist visual estricto previo: cero texto generado por IA, cero personas y total coherencia geométrica en uniones y estructuras.

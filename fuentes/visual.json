@@ -706,6 +706,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-08"
+},
+{
+"id": "t20261109g",
+"hook": "Cocinas con inducción invisible",
+"cierre": "¿Cocinarías en una isla así?",
+"escenas": [
+{
+"idea": "Isla de porcelánico gran formato en tono arcilla con fogones integrados ocultos y panel de sapeli ranurado.",
+"label": "Porcelánico y sapeli"
+},
+{
+"idea": "Encimera continua de piedra caliza color arena sin juntas, donde solo se aprecian sutiles marcas grabadas en la superficie.",
+"label": "Caliza continua"
+},
+{
+"idea": "Isla escultórica en marrón chocolate mate con campana extractora oculta en el falso techo y frentes lisos sin tirador.",
+"label": "Marrón chocolate"
+},
+{
+"idea": "Cocina abierta al salón con superficie de cuarcita beige pulida y taburetes bajos de roble con nudos naturales.",
+"label": "Cuarcita natural"
+},
+{
+"idea": "Encimera de microcemento tostado con inducción bajo superficie junto a un gran ventanal de madera que da al patio.",
+"label": "Microcemento y luz"
+},
+{
+"idea": "Isla central en granito abujardado mate con iluminación perimetral inferior tenue y detalles de latón envejecido en grifería.",
+"label": "Granito abujardado"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-09"
 }
 ],
 "proceso": [
@@ -822,6 +855,13 @@
 "descripcion": "una vivienda unifamiliar de adobe y madera integrada entre colinas con patios vegetales y piedra",
 "tendencia": true,
 "fecha": "2026-11-08"
+},
+{
+"id": "t20261109p",
+"tipo": "casa",
+"descripcion": "Una vivienda unifamiliar bioclimática con muros de tapial, carpintería de madera y patio interior arbolado.",
+"tendencia": true,
+"fecha": "2026-11-09"
 }
 ],
 "antes_despues": [
@@ -950,6 +990,14 @@
 "estilo": "suite minimalista cálida con cabecero alistonado de roble, revoco terroso y luz difusa",
 "tendencia": true,
 "fecha": "2026-11-08"
+},
+{
+"id": "t20261109a",
+"tipo": "estancia",
+"descripcion": "Un comedor cerrado con paredes de corcho oscuro, suelo vinílico desgastado y lámpara de lágrimas polvorienta.",
+"estilo": "Minimalismo cálido con revoco a la cal, mesa de sapeli y ventanal al jardín.",
+"tendencia": true,
+"fecha": "2026-11-09"
 }
 ],
 "tips": [
@@ -1382,6 +1430,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-05"
+},
+{
+"id": "t20261109t",
+"hook": "5 claves para un minimalismo cálido",
+"tips": [
+{
+"tip": "Aplica mortero de cal en paredes",
+"idea": "Pared continua con textura de cal artesanal en tono arena bañada por luz natural rasante desde un lucernario."
+},
+{
+"tip": "Incorpora madera con nudos visibles",
+"idea": "Panelado vertical de sapeli con vetas vivas que reviste el recibidor y oculta puertas enrasadas."
+},
+{
+"tip": "Sustituye lámparas por luz lineal",
+"idea": "Foso de iluminación indirecta cálida en el encuentro entre techo y pared de yeso mate."
+},
+{
+"tip": "Elige textiles de lino crudo",
+"idea": "Cortinas dobles de lino lavado en tono mantequilla filtrando suavemente el sol sobre pavimento continuo."
+},
+{
+"tip": "Introduce piezas de barro cocido",
+"idea": "Gran tinaja artesanal colocada sobre tarima de madera rústica junto a una pared desnuda."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-09"
 }
 ],
 "obra": [

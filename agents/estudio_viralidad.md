@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-11-08)
+# Cuaderno de viralidad (2026-11-09)
 
-- Seguir haciendo: Retos directos al criterio y conocimiento técnico del arquitecto («Solo un arquitecto acierta los cuatro», 5 comentarios).
-- Dejar de hacer: Mensajes pasivos o corporativos sin fricción («Factura más», 0 compartidos).
-- Probar: Retos de «detecta el fallo normativo o de ejecución en este plano» para suscitar debate entre compañeros de estudio.
+- Seguir haciendo: Retos directos al criterio técnico del arquitecto («Solo un arquitecto acierta los cuatro», top en views y compartidos).
+- Dejar de hacer: Mensajes corporativos pasivos y sin fricción («Factura más delegando», 0 compartidos).
+- Probar: Retos de «encuentra el error normativo/constructivo en este plano» para incitar al debate y provocar menciones entre compañeros de estudio.

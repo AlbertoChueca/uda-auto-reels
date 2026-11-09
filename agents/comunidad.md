@@ -1,6 +1,6 @@
-# Cuaderno de comunidad (2026-11-08)
+# Cuaderno de comunidad (2026-11-09)
 
-• Datos de audiencia: Pocos datos; sin comentarios recientes registrados. La interacción histórica (1 a 5 comentarios) surge solo de retos técnicos y despieces.
-• Seguir haciendo: Retar el ojo crítico del arquitecto para incentivar que comente o debata con colegas.
-• Dejar de hacer: Preguntas abiertas genéricas sobre delegación que no tocan dolores del día a día.
-• Probar: Pregunta directa de fricción: «¿Qué cálculo de CTE te retrasa más la entrega del proyecto?».
+• Datos de audiencia: Muy escasos; sin comentarios recientes. Los comentarios históricos (3 a 5) provienen exclusivamente de retos técnicos y comparativas antes/después.
+• Seguir haciendo: Interpelar directamente el criterio y ojo técnico del arquitecto para incentivar debate.
+• Dejar de hacer: Publicaciones informativas cerradas que no plantean ninguna pregunta a la audiencia.
+• Probar: Pregunta de dolor técnico al final: «¿Qué entrega del CTE te roba más fines de semana en el estudio?».

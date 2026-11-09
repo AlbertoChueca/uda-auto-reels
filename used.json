@@ -699,5 +699,33 @@
 "fecha": "2026-11-08",
 "formato": "render",
 "grupo": null
+},
+{
+"id": "portfolio:lamina:c_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-09",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:a_forjado",
+"tema": "portfolio",
+"fecha": "2026-11-09",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:c_detalles_estructura",
+"tema": "portfolio",
+"fecha": "2026-11-09",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:c_fontaneria",
+"tema": "portfolio",
+"fecha": "2026-11-09",
+"formato": "visual",
+"grupo": "top"
 }
 ]

@@ -1,41 +1,40 @@
-# Cuaderno de cazatendencias (2026-11-08)
+# Cuaderno de cazatendencias (2026-11-09)
 
 ## Tendencias de la semana
-- Minimalismo cálido y lujo silencioso: La gente busca refugios emocionales que transmitan paz, alejándose de los espacios fríos. Se prioriza el confort visual y físico con materiales nobles y atemporales.
-- Casas que sanan (Diseño biofílico): Hay una creciente preocupación por el bienestar; los usuarios quieren hogares que reduzcan el estrés mediante luz natural, plantas y materiales libres de tóxicos.
-- La imperfección táctil y materiales con historia: Se rechaza lo ultra-pulido. Triunfan las texturas rugosas, la madera con veta visible y la cerámica artesanal porque aportan autenticidad y alma a la casa.
-- Cocinas de trabajo ocultas: En las reformas se busca mantener una cocina estética abierta al salón, pero escondiendo la zona de fuegos y limpieza detrás de paneles o puertas ocultas para cuando hay invitados.
-- El regreso de los tonos tierra y oscuros: El blanco aséptico cansa. Los tonos terracota, verde oliva y marrón chocolate se viralizan porque hacen que los espacios se sientan más abrazadores y habitados.
-- Espacios curvos y orgánicos: Las líneas rectas y rígidas se sustituyen por arcos, sofás modulares envolventes y espejos fluidos para facilitar la circulación y dar sensación de fluidez.
+- Minimalismo cálido: La gente huye del 'efecto hospital' de años anteriores. Se buscan espacios limpios pero que abracen, usando tonos arena, greige y texturas naturales.
+- Diseño biofílico y materiales honestos: Hay una necesidad de difuminar la línea entre interior y exterior. Triunfan la madera con nudos, la piedra sin pulir y los grandes ventanales que enmarcan la naturaleza.
+- Iluminación integrada y sensorial: Las lámparas esculturales ceden paso a tiras LED y focos discretos ocultos en la propia arquitectura para modelar el ambiente y crear atmósferas relajantes.
+- Espacios 'navaja suiza' o flexibles: Las estancias ya no tienen un solo uso. Se viralizan soluciones de flexibilidad invisible, como las placas de inducción totalmente ocultas bajo la encimera.
+- Piezas con historia y lujo silencioso: Se mezcla lo moderno con materiales de construcción recuperados, tinajas antiguas o artesanía local para dar carácter y exclusividad sin ostentación.
+- Bioarquitectura y sostenibilidad: Con las nuevas normativas de 2026, el diseño regenerativo, la eficiencia energética y los aislamientos térmicos se han convertido en el nuevo estándar del que todos hablan.
 
 ## Estilos
-- verde oliva y bosque
-- madera con veta visible
-- tonos terracota y arcilla
 - marrón chocolate
-- fibras naturales como yute o sisal
-- cerámica artesanal imperfecta
+- madera de sapeli
+- porcelánico de gran formato
+- acabados a la cal
+- tonos terracota y arcilla mate
+- amarillo mantequilla
 
 ## Para nuestro equipo
-- Aprovechar los tonos chocolate, terracota y verde bosque que sustituyen definitivamente al blanco aséptico y al gris frío.
-- Potenciar la textura táctil en los encuadres: primeros planos de cal, barro y veta de madera viva retienen mejor a la audiencia madura.
-- Evitar renders de aspecto hiperlacado o de catálogo comercial sintético; se premia la apariencia de material noble imperfecto.
-- Enfocar los vídeos de proceso hacia la integración paisajística y el bienestar biofílico en lugar de la técnica constructiva pura.
+- Aprovechar el magnetismo de las inducciones invisibles bajo encimeras continuas para generar impacto y comentarios.
+- Potenciar acabados a la cal y maderas cálidas frente al blanco clínico y los laminados grises que ya se perciben obsoletos.
+- Apostar por iluminación indirecta foseada en la arquitectura en lugar de luminarias de techo voluminosas.
+- Integrar notas de marrón chocolate y arcilla mate para aportar profundidad visual a los espacios neutros.
 
 ## Ya quemado
-- El gris frío y el blanco clínico en paredes y muebles
-- El minimalismo extremo, rígido e impersonal
-- Superficies ultra-lisas y brillantes sin textura
-- Mobiliario de catálogo excesivamente perfecto y sin personalidad
+- Paredes y muebles en blanco nuclear (efecto hospital)
+- Suelos laminados en tonos grises fríos
+- Lámparas de techo gigantes y sobrecargadas
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
 - Man on the Run · Jon Sumner
 - Neon Nights · Adrian Rover
-- Final Minutes · Muspace Lofi
+- Neon Bass · Tangelene Bolton
+- Kaleidoscope · Adrián Berenguer
 - Tell Me Where to Go (Lofi) · Muspace Lofi
+- Final Minutes · Muspace Lofi
 - Holiday Gift · Muspace
 - Free Falling · Muspace
-- Dreams of Children · Muspace
-- Maybe You · Muspace Lofi
