@@ -783,5 +783,12 @@
 "fecha": "2026-11-10",
 "formato": "visual",
 "grupo": "capas"
+},
+{
+"id": "visual:o1",
+"tema": "visual",
+"fecha": "2026-11-10",
+"formato": "visual",
+"grupo": "obra"
 }
 ]
