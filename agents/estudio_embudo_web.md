@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-11-09)
+# Cuaderno de embudo_web (2026-11-10)
 
-- Seguir haciendo: Plantear el dilema operativo y de costes de personal del estudio («Plantilla o delegar», récord de 89 clics).
-- Dejar de hacer: Reels técnicos con alta audiencia (>1.200 views) sin llamada concreta a uniondearquitectos.com (terminan en 0 clics).
-- Probar: Incluir al final de reels de portfolio técnico («Top 4») un CTA explícito para externalizar picos de trabajo en la web.
+- Seguir haciendo: Tratar el dilema de gestión operativa y coste de personal en estudios («Plantilla o delegar», récord absoluto de 89 clics).
+- Dejar de hacer: Reels técnicos con más de 1.200 views sin llamada a la acción hacia uniondearquitectos.com (cerraron con 0 clics).
+- Probar: Conectar el final de reels técnicos de portfolio («Top 4») con la externalización puntual de entregas en la web.

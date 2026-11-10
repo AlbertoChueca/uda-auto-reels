@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-11-09)
+# Cuaderno de diseno (2026-11-10)
 
-• Seguir haciendo: Formato infografía dinámica sobre fondo carbón/negro; monopoliza los mejores resultados (scores 10.10 a 11.63 y visionado de hasta 10,8 s).
-• Dejar de hacer: Carruseles estáticos densos (desplome a scores de 5.91 a 7.06 y vistas mínimas).
-• Probar: Capas superpuestas tipo CAD/BIM en tonos piedra y cotas bronce con zoom progresivo, respetando márgenes laterales y zona inferior.
+# Cuaderno de diseno (2026-11-10)
+
+• Seguir haciendo: Formato infografía dinámica sobre fondo carbón/negro; concentra todo el top de retención y score (hasta 10,8 s de visionado y score 11.63).
+• Dejar de hacer: Carruseles estáticos (desplome constante a 0-340 visualizaciones y scores mínimos de 6.15 a 7.07).
+• Probar: Capas animadas CAD/BIM con líneas en tono piedra y cotas en bronce sobre fondo carbón, respetando la zona segura superior.

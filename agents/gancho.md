@@ -1,5 +1,7 @@
-# Cuaderno de gancho (2026-11-09)
+# Cuaderno de gancho (2026-11-10)
 
-• Seguir haciendo: Retos de validación profesional y curiosidad técnica («Solo un arquitecto acierta los cuatro», score 11.63; «Te enseño un trozo de plano: ¿qué es?», score 11.12).
-• Dejar de hacer: Títulos corporativos y abstractos de carrusel («Coste técnico en naves», score 6.15; «DELEGAR PROYECTOS PASO A PASO», score 5.91).
-• Probar: Reto de error normativo en obra: «El 90% pasa por alto este fallo de CTE en el plano de saneamiento».
+# Cuaderno de gancho (2026-11-10)
+
+• Seguir haciendo: Retos de validación profesional y misterio sobre planos reales («Solo un arquitecto acierta los cuatro», 2.444 views, score 11.63; «Te enseño un trozo de plano: ¿qué es?», score 11.13).
+• Dejar de hacer: Enunciados corporativos o teóricos de carrusel («Coste técnico en naves», score 6.15; «Actuaciones específicas en paquete», score 6.46).
+• Probar: Reto de detección de errores técnicos en pantalla: «Solo un arquitecto de obra detecta el fallo en este nudo constructivo».

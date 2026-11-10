@@ -748,5 +748,40 @@
 "fecha": "2026-11-09",
 "formato": "visual",
 "grupo": "antes_despues"
+},
+{
+"id": "portfolio:lamina:b_planta",
+"tema": "portfolio",
+"fecha": "2026-11-10",
+"formato": "visual",
+"grupo": "capas"
+},
+{
+"id": "portfolio:lamina:b_fontaneria",
+"tema": "portfolio",
+"fecha": "2026-11-10",
+"formato": "visual",
+"grupo": "capas"
+},
+{
+"id": "portfolio:lamina:b_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-10",
+"formato": "visual",
+"grupo": "capas"
+},
+{
+"id": "portfolio:lamina:b_climatizacion",
+"tema": "portfolio",
+"fecha": "2026-11-10",
+"formato": "visual",
+"grupo": "capas"
+},
+{
+"id": "portfolio:lamina:b_estructura",
+"tema": "portfolio",
+"fecha": "2026-11-10",
+"formato": "visual",
+"grupo": "capas"
 }
 ]

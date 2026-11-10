@@ -1,5 +1,7 @@
-# Cuaderno de crecimiento (2026-11-09)
+# Cuaderno de crecimiento (2026-11-10)
 
-• Seguir haciendo: Enfoque de consulta técnica para maximizar guardados, la métrica con mejor tracción (hasta 17 por reel).
-• Dejar de hacer: Cierres sin incentivo específico; el histórico mantiene las visitas al perfil en 0 de forma continuada.
-• Probar: CTA directo a recurso útil: «Guarda el reel y descarga el checklist de entrega de Proyecto de Ejecución en uniondearquitectos.com».
+# Cuaderno de crecimiento (2026-11-10)
+
+• Seguir haciendo: Foco en valor técnico de consulta para captar guardados (hasta 17 guardados por reel en contenido de instalaciones y planos).
+• Dejar de hacer: Publicar sin un incentivo claro de salida; las visitas al perfil continúan congeladas en 0 en todos los impactos.
+• Probar: CTA directo a recurso concreto para activar el tráfico web: «Guarda este reel y descarga el checklist de visado en uniondearquitectos.com».

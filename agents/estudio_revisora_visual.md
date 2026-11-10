@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-09)
+# Cuaderno de revisora_visual (2026-11-10)
 
-- Seguir haciendo: Exigir rigor constructivo y credibilidad planimétrica de entregable profesional («Esto es lo que entregamos», 1.116 views).
-- Dejar de hacer: Aprobar imágenes con figuras humanas en obra o artefactos geométricos de IA en modelos 3D.
-- Probar: Checklist visual estricto previo: cero texto generado por IA, cero personas y total coherencia geométrica en uniones y estructuras.
+- Seguir haciendo: Control riguroso de credibilidad técnica y planimétrica que transmita entregable profesional de estudio real.
+- Dejar de hacer: Validar renders con personas en obra o elementos geométricos anómalos generados por IA.
+- Probar: Checklist visual inflexible antes de entrega: cero figuras humanas, cero texto simulado y perfecta coherencia estructural en uniones y forjados.

@@ -1,40 +1,41 @@
-# Cuaderno de cazatendencias (2026-11-09)
+# Cuaderno de cazatendencias (2026-11-10)
 
 ## Tendencias de la semana
-- Minimalismo cálido: La gente huye del 'efecto hospital' de años anteriores. Se buscan espacios limpios pero que abracen, usando tonos arena, greige y texturas naturales.
-- Diseño biofílico y materiales honestos: Hay una necesidad de difuminar la línea entre interior y exterior. Triunfan la madera con nudos, la piedra sin pulir y los grandes ventanales que enmarcan la naturaleza.
-- Iluminación integrada y sensorial: Las lámparas esculturales ceden paso a tiras LED y focos discretos ocultos en la propia arquitectura para modelar el ambiente y crear atmósferas relajantes.
-- Espacios 'navaja suiza' o flexibles: Las estancias ya no tienen un solo uso. Se viralizan soluciones de flexibilidad invisible, como las placas de inducción totalmente ocultas bajo la encimera.
-- Piezas con historia y lujo silencioso: Se mezcla lo moderno con materiales de construcción recuperados, tinajas antiguas o artesanía local para dar carácter y exclusividad sin ostentación.
-- Bioarquitectura y sostenibilidad: Con las nuevas normativas de 2026, el diseño regenerativo, la eficiencia energética y los aislamientos térmicos se han convertido en el nuevo estándar del que todos hablan.
+- Minimalismo cálido y lujo silencioso: La gente busca refugios acogedores frente al estrés diario, priorizando el confort visual con texturas naturales y maderas sin tratar en lugar de espacios fríos de exposición.
+- Duchas a ras de suelo con superficies continuas: El microcemento y los pavimentos continuos eliminan las juntas visuales, dando sensación de amplitud, limpieza y accesibilidad en los baños, algo muy visual para vídeos de transformaciones.
+- Color drenching en tonos tierra: Pintar paredes, techos y molduras del mismo color (como terracota o verde oliva) crea atmósferas envolventes y monocromáticas que retienen mucho la atención en los vídeos cortos.
+- Desayunadores integrados en la cocina: Con el teletrabajo y las jornadas híbridas, se buscan rincones cómodos para comidas rápidas o tomar el café con el portátil, adaptando la cocina a un uso más flexible y cotidiano.
+- Mobiliario de exterior en el interior: Se difuminan las fronteras de la casa; piezas de ratán, cerámica artesanal o madera de teca se integran en los salones para aportar un toque rústico y natural durante los meses de frío.
+- Formas orgánicas y siluetas curvas: Los sofás modulares curvos y los arcos en las puertas rompen la rigidez de las líneas rectas, facilitando la circulación y aportando una fluidez visual que triunfa en los 'room tours'.
 
 ## Estilos
-- marrón chocolate
-- madera de sapeli
-- porcelánico de gran formato
-- acabados a la cal
-- tonos terracota y arcilla mate
-- amarillo mantequilla
+- blanco cálido cloud dancer
+- madera de nogal oscura
+- verde oliva profundo
+- suelo de terrazo cálido
+- tonos terracota y arcilla
+- piedra natural veteada
 
 ## Para nuestro equipo
-- Aprovechar el magnetismo de las inducciones invisibles bajo encimeras continuas para generar impacto y comentarios.
-- Potenciar acabados a la cal y maderas cálidas frente al blanco clínico y los laminados grises que ya se perciben obsoletos.
-- Apostar por iluminación indirecta foseada en la arquitectura en lugar de luminarias de techo voluminosas.
-- Integrar notas de marrón chocolate y arcilla mate para aportar profundidad visual a los espacios neutros.
+- Aprovechar planos cerrados con texturas táctiles como lino, cal y nogal para retener la atención en los primeros compases.
+- Evitar mostrar baños con juntas visibles o azulejos esmaltados pequeños; el público busca superficies continuas y limpias.
+- Priorizar luz natural rasante en los desayunadores integrados para transmitir una atmósfera matutina creíble y sosegada.
+- Descartar cualquier iluminación artificial cenital fría o decoraciones recargadas que resten sensación de lujo silencioso.
 
 ## Ya quemado
-- Paredes y muebles en blanco nuclear (efecto hospital)
-- Suelos laminados en tonos grises fríos
-- Lámparas de techo gigantes y sobrecargadas
+- cocinas totalmente blancas y asépticas
+- minimalismo frío con tonos grises y azulados
+- paredes de acento con papel pintado estridente
+- mármol pulido brillante en grandes superficies
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
 - Man on the Run · Jon Sumner
-- Neon Nights · Adrian Rover
+- Flowers · Adrián Berenguer
 - Neon Bass · Tangelene Bolton
 - Kaleidoscope · Adrián Berenguer
+- Neon Nights · Adrian Rover
+- Dance Like Nobody’s Watching - Instrumental Version · Siine
 - Tell Me Where to Go (Lofi) · Muspace Lofi
-- Final Minutes · Muspace Lofi
-- Holiday Gift · Muspace
-- Free Falling · Muspace
+- 浪漫 诙谐 生活 · Victoria

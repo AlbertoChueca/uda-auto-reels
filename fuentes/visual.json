@@ -739,6 +739,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-09"
+},
+{
+"id": "t20261110g",
+"hook": "Rincones de café que querrás tener",
+"cierre": "¿Cuál pondrías en tu casa?",
+"escenas": [
+{
+"idea": "Hornacina de madera de nogal con cafetera integrada, baldas flotantes con tazas cerámicas y luz cálida oculta tras el dintel.",
+"label": "Hornacina oculta"
+},
+{
+"idea": "Mueble desayunador con puertas escamoteables de roble natural, encimera de cuarcita veteada y enchufes empotrados discretos.",
+"label": "Puertas escamoteables"
+},
+{
+"idea": "Rincón en esquina revestido de microcemento beige con repisa suspendida y cafetera de filtro artesanal iluminada puntualmente.",
+"label": "Esquina continua"
+},
+{
+"idea": "Barra baja adosada a la isla con taburetes tapizados en lino y cafetera manual sobre bandeja de piedra caliza.",
+"label": "Barra integrada"
+},
+{
+"idea": "Armario desayunador en verde oliva profundo con estantes de latón y repisa iluminada para preparar café matutino.",
+"label": "Verde envolvente"
+},
+{
+"idea": "Bancada tapizada junto a ventanal de cocina con mesa circular de travertino para desayunos relajados con luz natural.",
+"label": "Bancada luminosa"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-10"
 }
 ],
 "proceso": [
@@ -862,6 +895,13 @@
 "descripcion": "Una vivienda unifamiliar bioclimática con muros de tapial, carpintería de madera y patio interior arbolado.",
 "tendencia": true,
 "fecha": "2026-11-09"
+},
+{
+"id": "t20261110p",
+"tipo": "casa",
+"descripcion": "una casa de planta abierta con tonos terracota, curvas suaves y muebles integrados de obra",
+"tendencia": true,
+"fecha": "2026-11-10"
 }
 ],
 "antes_despues": [
@@ -998,6 +1038,14 @@
 "estilo": "Minimalismo cálido con revoco a la cal, mesa de sapeli y ventanal al jardín.",
 "tendencia": true,
 "fecha": "2026-11-09"
+},
+{
+"id": "t20261110a",
+"tipo": "estancia",
+"descripcion": "un baño sombrío con bañera encastrada alta, cenefa floral desfasada y suelo vinílico levantado",
+"estilo": "ducha a ras de suelo en microcemento continuo y grifería empotrada en latón",
+"tendencia": true,
+"fecha": "2026-11-10"
 }
 ],
 "tips": [
@@ -1458,6 +1506,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-09"
+},
+{
+"id": "t20261110t",
+"hook": "5 claves para llevar el exterior al salón",
+"tips": [
+{
+"tip": "Introduce una butaca de ratán natural",
+"idea": "Salón minimalista con una butaca clásica de ratán y cojines de lino crudo junto a una gran ventana."
+},
+{
+"tip": "Usa mesas auxiliares de terracota artesanal",
+"idea": "Conjunto de mesas bajas de barro cocido sobre alfombra de yute en una zona de estar serena."
+},
+{
+"tip": "Apuesta por maderas tratadas de teca",
+"idea": "Banco corrido de teca maciza delimitando la zona de lectura junto a una pared encalada."
+},
+{
+"tip": "Añade jardineras de obra en esquinas",
+"idea": "Macetero continuo de microcemento integrado con arbusto mediterráneo iluminado desde el suelo con foco cálido."
+},
+{
+"tip": "Incorpora telas aptas para exterior deslavadas",
+"idea": "Sofá tapizado en tejido técnico de tacto lino resistente a manchas y luz solar directa."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-10"
 }
 ],
 "obra": [
