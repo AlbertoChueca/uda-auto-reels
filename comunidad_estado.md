@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-10 13:35 UTC · 0 respuestas_
+_Última pasada: 2026-11-10 14:50 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -48,6 +48,9 @@ _Última pasada: 2026-11-10 13:35 UTC · 0 respuestas_
 | 2026-11-10 | instagram | portfolio | Misma planta, tres instalaciones | 1 | — |
 | 2026-11-10 | tiktok | portfolio | Misma planta, tres instalaciones | 1 | — |
 | 2026-11-10 | linkedin | portfolio | Misma planta, tres instalaciones | 1 | — |
+| 2026-11-10 | instagram | obra | De la zanja a la llave | 1 | — |
+| 2026-11-10 | tiktok | obra | De la zanja a la llave | 1 | — |
+| 2026-11-10 | linkedin | obra | De la zanja a la llave | 1 | — |
 | 2026-11-03 | instagram | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | tiktok | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | linkedin | carrusel | Actuaciones específicas en paquete | 0 | — |
