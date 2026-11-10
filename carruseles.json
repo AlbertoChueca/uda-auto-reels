@@ -201,5 +201,26 @@
 "linkedin_documento": "6aecaefdaa609c465bd26d60"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-11-10",
+"bloque": "servicios",
+"tema": "uda_servicios",
+"subtema": "Documentación del Proyecto Básico",
+"titulo": "Proyecto Básico qué incluye cada partida",
+"fragmentos": [
+"01 Datos del despacho y del proyecto",
+"05 Proyecto Básico"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.4,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18120298603781533",
+"tiktok_carrusel": "6af35105aaa2ef036158fb24",
+"linkedin_documento": "6af35112aaa2ef036158fb74"
+},
+"dry_run": false
 }
 ]
