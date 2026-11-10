@@ -1,15 +1,9 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-09 22:30 UTC · 0 respuestas_
+_Última pasada: 2026-11-10 04:40 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-02 | instagram | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
-| 2026-11-02 | tiktok | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
-| 2026-11-02 | linkedin | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
-| 2026-11-02 | instagram | antes_despues | POV: compras para reformar | 1 | — |
-| 2026-11-02 | tiktok | antes_despues | POV: compras para reformar | 1 | — |
-| 2026-11-02 | linkedin | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-11-03 | instagram | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
 | 2026-11-03 | tiktok | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
 | 2026-11-03 | linkedin | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
