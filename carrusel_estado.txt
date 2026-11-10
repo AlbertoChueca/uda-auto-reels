@@ -1,5 +1,10 @@
-Carrusel 2026-11-10 16:53 UTC
-carrusel: el verificador pide cambios: [{"frase": "Diferenciar variantes de tipos nuevos optimiza el encargo y evita rehacer mediciones innecesarias.", "motivo": "La fuente no menciona que diferenciar variantes evite 'rehacer mediciones innecesarias'. Según los datos de UDA, el propósito de definir estos parámetros es calcular correctamente el presupuesto (ya que la vivienda tipo se cobra completa y las repetidas suman un porcentaje)."
+Carrusel 2026-11-10 16:55 UTC
+carrusel: verificado (Tipologías y variantes residenciales)
+carrusel: revisión 5.0/10 ['Contenido percibido como obvio o paternalista: para fundadores y arquitectos que desarrollan bloques de viviendas, explicar qué es una superficie computable o qué constituye una vivienda tipo carece de valor profesional real.', "Enfoque de manual de instrucciones: el carrusel parece la guía de requisitos para rellenar el formulario de presupuesto de UDA (p. ej. la regla arbitraria de 'si supera una cuarta parte del edificio') en vez de aportar criterios estratégicos sobre rentabilidad y delegación.", "Redundancia textual en portada: se repite 'DELEGAR' en el antetítulo ('LO QUE PUEDES DELEGAR') y en el título principal ('Tipologías residenciales al delegar')."]
+carrusel: el verificador pide cambios: [{"frase": "Preparar la documentación para la solicitud de licencia municipal consume semanas de trabajo repetitivo en planimetría, memorias y mediciones estimadas.", "motivo": "Incluye una generalización y una estimación de tiempo ('consume semanas') que no está respaldada por la fuente ni por los hechos ciertos de UDA."}]
+carrusel: guion no válido (menos de 3 diapositivas válidas (o citas que no están en la fuente))
+carrusel: reintento sin contenido: no hay carrusel verificado para Qué hace UDA por tu despacho
+carrusel: el verificador pide cambios: [{"frase": "Se integra el **garaje**, trasteros, zonas comunes y locales para cuantificar el volumen real edificado.", "motivo": "La fuente habla de 'Superficie construida total' (m²), no de 'volumen real edificado'. En arquitectura, superficie y volumen son parámetros métricos completamente distintos, por lo que es un error conceptual grave y un dato inventado que no aparece en la fuente."}]
 carrusel: guion no válido (cifras que no están en la fuente: ['25'])
-carrusel: tema uda_servicios descartado: no hay carrusel verificado para Qué hace UDA por tu despacho
-NO PUBLICADO: hoy no hay carrusel verificado (mejor no publicar que publicar un error)
+carrusel: reintento sin contenido: no hay carrusel verificado para Qué hace UDA por tu despacho
+NO PUBLICADO: hoy no hay carrusel con nota suficiente (5.0/10, mínimo 8)
