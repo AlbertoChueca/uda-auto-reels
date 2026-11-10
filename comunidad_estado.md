@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-10 04:40 UTC · 0 respuestas_
+_Última pasada: 2026-11-10 11:50 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -45,6 +45,9 @@ _Última pasada: 2026-11-10 04:40 UTC · 0 respuestas_
 | 2026-11-09 | instagram | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
 | 2026-11-09 | tiktok | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
 | 2026-11-09 | linkedin | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
+| 2026-11-10 | instagram | portfolio | Misma planta, tres instalaciones | 1 | — |
+| 2026-11-10 | tiktok | portfolio | Misma planta, tres instalaciones | 1 | — |
+| 2026-11-10 | linkedin | portfolio | Misma planta, tres instalaciones | 1 | — |
 | 2026-11-03 | instagram | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | tiktok | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-03 | linkedin | carrusel | Actuaciones específicas en paquete | 0 | — |
