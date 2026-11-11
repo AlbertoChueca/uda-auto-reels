@@ -31,7 +31,8 @@
 "urn:li:comment:(urn:li:ugcPost:7525875025690673152,7525875447176491008)",
 "urn:li:comment:(urn:li:ugcPost:7525920337449041920,7525920824797638657)",
 "urn:li:comment:(urn:li:ugcPost:7526237406203740160,7526283374374846464)",
-"urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526283431232602113)"
+"urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526283431232602113)",
+"urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526391218784833538)"
 ],
 "posts": {
 "tiktok:6ad7bfa4543d02f449a6bd81": {
@@ -1216,9 +1217,10 @@
 "linkedin:6af474e43565d465e35ae68c": {
 "pregunta": "urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526283431232602113)",
 "personas": [
+"carlosgomezrivero",
 "uniondearquitectos"
 ],
-"comentarios": 1
+"comentarios": 2
 }
 },
 "errores": {},
