@@ -772,6 +772,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-10"
+},
+{
+"id": "t20261111g",
+"hook": "La vuelta de la cocina dividida",
+"cierre": "¿Prefieres abierta o dividida?",
+"escenas": [
+{
+"idea": "Isla escultórica en piedra caliza mate abierta al salón, sin fuegos ni fregadero a la vista.",
+"label": "Zona social limpia"
+},
+{
+"idea": "Puertas escamoteables de roble aceitado que revelan una zona de desayuno con cafetera integrada y estantes.",
+"label": "Office oculto"
+},
+{
+"idea": "Espacio posterior cerrado mediante vidriera de acero con encimera de acero inoxidable y zona de cocción intensiva.",
+"label": "Cocina de trabajo"
+},
+{
+"idea": "Puerta enrasada en panelado de madera de nogal que conecta discretamente el salón con la zona de fuegos.",
+"label": "Paso integrado"
+},
+{
+"idea": "Rincón de office luminoso con banco tapizado en lino crudo junto a carpintería de madera natural.",
+"label": "Comedor de diario"
+},
+{
+"idea": "Alacena profunda con tarros de vidrio, baldas de madera maciza y revestimiento interior de mortero de arcilla.",
+"label": "Despensa vista"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-11"
 }
 ],
 "proceso": [
@@ -902,6 +935,13 @@
 "descripcion": "una casa de planta abierta con tonos terracota, curvas suaves y muebles integrados de obra",
 "tendencia": true,
 "fecha": "2026-11-10"
+},
+{
+"id": "t20261111p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar bioclimática con muros de tapial, carpinterías de alerce y ventilación natural cruzada",
+"tendencia": true,
+"fecha": "2026-11-11"
 }
 ],
 "antes_despues": [
@@ -1046,6 +1086,14 @@
 "estilo": "ducha a ras de suelo en microcemento continuo y grifería empotrada en latón",
 "tendencia": true,
 "fecha": "2026-11-10"
+},
+{
+"id": "t20261111a",
+"tipo": "estancia",
+"descripcion": "un comedor cerrado y oscuro con aparador barnizado, papel vinílico desgastado y lámpara de araña amarillenta",
+"estilo": "color drenching envolvente en verde salvia con molduras integradas y mesa de travertino",
+"tendencia": true,
+"fecha": "2026-11-11"
 }
 ],
 "tips": [
@@ -1534,6 +1582,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-10"
+},
+{
+"id": "t20261111t",
+"hook": "5 claves para usar texturas crudas",
+"tips": [
+{
+"tip": "Aplica revoco de cal transpirable",
+"idea": "Pared de salón con textura sedosa de cal en tono arena claro bañada por luz natural rasante."
+},
+{
+"tip": "Elige madera a poro abierto",
+"idea": "Suelo de roble aceitado mate con nudos suaves combinado con carpintería enrasada de líneas limpias."
+},
+{
+"tip": "Prioriza piedra caliza sin pulir",
+"idea": "Lavabo monolítico tallado en bloque de caliza con grifería empotrada en latón envejecido mate."
+},
+{
+"tip": "Incorpora morteros de arcilla pura",
+"idea": "Cabecero de obra revestido en arcilla terracota con hornacina iluminada de forma indirecta."
+},
+{
+"tip": "Usa textiles vegetales sin tratar",
+"idea": "Cortinas vaporosas de lino natural y alfombra de yute crudo sobre pavimento continuo de microcemento."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-11"
 }
 ],
 "obra": [

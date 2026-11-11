@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-10)
+# Cuaderno de seo (2026-11-11)
 
-- Seguir haciendo: Palabras clave técnicas de alta intención: «instalaciones», «proyecto de ejecución», «plano», «delegar», «despacho».
-- Dejar de hacer: Términos B2C de reforma o interiorismo («islas de cocina», «hogar consciente», «artesanía»).
-- Probar: Posicionar términos de dolor operativo en estudios: «externalizar delineación», «cálculo instalaciones CTE» y «apoyo entregas arquitectura».
+- Seguir haciendo: Keywords de alta intención técnica de despacho: «proyecto de ejecución», «instalaciones», «plano», «delegar», «despacho».
+- Dejar de hacer: Términos generalistas de reforma o decoración («islas de cocina», «artesanía»).
+- Probar: Posicionar términos de dolor operativo: «externalizar delineación», «cálculo CTE despacho» y «soporte técnico para arquitectos».

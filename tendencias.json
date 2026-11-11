@@ -1,98 +1,93 @@
 {
-"fecha": "2026-11-10",
+"fecha": "2026-11-11",
 "temas": [
 {
-"tema": "Minimalismo cálido y lujo silencioso",
-"por_que": "La gente busca refugios acogedores frente al estrés diario, priorizando el confort visual con texturas naturales y maderas sin tratar en lugar de espacios fríos de exposición."
+"tema": "Casas que sanan o 'Lujo Humano'",
+"por_que": "La decoración deja de ser solo estética para centrarse en el bienestar emocional, reduciendo el estrés con espacios envolventes, sensoriales y libres de toxicidad."
 },
 {
-"tema": "Duchas a ras de suelo con superficies continuas",
-"por_que": "El microcemento y los pavimentos continuos eliminan las juntas visuales, dando sensación de amplitud, limpieza y accesibilidad en los baños, algo muy visual para vídeos de transformaciones."
+"tema": "El regreso del 'office' y la cocina dividida",
+"por_que": "Tras años de cocinas totalmente abiertas al salón, los usuarios se han cansado de los ruidos y olores, buscando separar la cocina de representación de la zona de trabajo sucio."
 },
 {
-"tema": "Color drenching en tonos tierra",
-"por_que": "Pintar paredes, techos y molduras del mismo color (como terracota o verde oliva) crea atmósferas envolventes y monocromáticas que retienen mucho la atención en los vídeos cortos."
+"tema": "Color Drenching",
+"por_que": "Pintar paredes, techos, puertas y molduras exactamente del mismo tono crea atmósferas monocromáticas inmersivas que eliminan el ruido visual y aportan mucha calma."
 },
 {
-"tema": "Desayunadores integrados en la cocina",
-"por_que": "Con el teletrabajo y las jornadas híbridas, se buscan rincones cómodos para comidas rápidas o tomar el café con el portátil, adaptando la cocina a un uso más flexible y cotidiano."
+"tema": "Materiales descarbonizados y texturas crudas",
+"por_que": "Hay una mayor conciencia sobre la sostenibilidad real y la salud, impulsando el uso de arcilla, cal, maderas naturales a poro abierto y biomateriales sin tratar."
 },
 {
-"tema": "Mobiliario de exterior en el interior",
-"por_que": "Se difuminan las fronteras de la casa; piezas de ratán, cerámica artesanal o madera de teca se integran en los salones para aportar un toque rústico y natural durante los meses de frío."
-},
-{
-"tema": "Formas orgánicas y siluetas curvas",
-"por_que": "Los sofás modulares curvos y los arcos en las puertas rompen la rigidez de las líneas rectas, facilitando la circulación y aportando una fluidez visual que triunfa en los 'room tours'."
+"tema": "Tecnología invisible",
+"por_que": "Se busca la comodidad extrema de la domótica pero sin que los aparatos rompan la estética natural y cálida del hogar; las pantallas, electrodomésticos y cables se ocultan por completo."
 }
 ],
 "estilos": [
-"blanco cálido cloud dancer",
-"madera de nogal oscura",
-"verde oliva profundo",
-"suelo de terrazo cálido",
-"tonos terracota y arcilla",
-"piedra natural veteada"
+"verde oliva y verde salvia",
+"piedra natural mate sin veta dramática (travertino y caliza)",
+"madera de tono medio a poro abierto (nogal, roble aceitado)",
+"amarillo mantequilla",
+"tonos burdeos y terracota",
+"superficies continuas de microcemento"
 ],
 "formatos": [
-"antes y después de reformas con transiciones rápidas al ritmo del beat",
-"recorridos ASMR por estancias destacando texturas y sonidos de materiales",
-"tutoriales de decoración y actualización de espacios sin hacer obras",
-"rutinas de limpieza o 'get ready with me' versión casa (ordenando el salón o cocina)"
+"vídeos de 'errores que envejecen tu casa' o 'lo que ya no se lleva'",
+"house tours sensoriales (estilo ASMR destacando texturas y sonidos de materiales)",
+"transformaciones de estancias usando la técnica de 'color drenching'",
+"tours de cocinas ocultas mostrando el contraste entre la zona social y el 'office'"
 ],
 "busquedas": [
-"ideas reforma baño sin obras",
-"colores tendencia salon 2026",
-"minimalismo calido casa",
-"como decorar con terracota",
-"cocinas de madera modernas",
-"duchas a ras de suelo",
-"casas acogedoras invierno"
+"tendencias decoracion 2026",
+"colores para salones 2027",
+"cocina oculta salon",
+"casas que sanan",
+"como combinar verde oliva",
+"baños de microcemento",
+"reformas sin obras"
 ],
 "hashtags": [
-"#reformasintegrales",
-"#interiorismoespaña",
-"#decoracioninteriores",
-"#minimalismocalido",
-"#casasreales",
-"#tendenciasdeco",
-"#reformasbaños",
-"#arquitecturainterior"
+"#interiorismo",
+"#tendencias2026",
+"#decoracion",
+"#reformas",
+"#casasquesanan",
+"#diseñodeinteriores",
+"#arquitectura",
+"#hogar"
 ],
 "quemado": [
-"cocinas totalmente blancas y asépticas",
-"minimalismo frío con tonos grises y azulados",
-"paredes de acento con papel pintado estridente",
-"mármol pulido brillante en grandes superficies"
+"el mármol calacatta con vetas muy dramáticas y marcadas",
+"los espacios excesivamente neutros (blancos clínicos y grises fríos)",
+"los sofás y muebles con curvas exageradamente mullidas (estilo 'chubby')"
 ],
 "por_tipo": {
-"galeria": "rincon de cafe en cocina",
-"tips": "muebles de exterior en salon",
-"antes_despues": "reforma bano ducha ras suelo",
-"proceso": "reforma casa minimalismo calido interiorismo"
+"galeria": "cocina con office oculta",
+"tips": "materiales naturales interiorismo sostenible",
+"antes_despues": "reforma comedor color drenching",
+"proceso": "casa bioclimatica arquitectura tierra"
 },
 "musica_tiktok": [
 "Cool Girl · Jayde Mari",
 "cool girls · Sonatara",
-"Man on the Run · Jon Sumner",
-"Flowers · Adrián Berenguer",
-"Neon Bass · Tangelene Bolton",
-"Kaleidoscope · Adrián Berenguer",
-"Neon Nights · Adrian Rover",
 "Dance Like Nobody’s Watching - Instrumental Version · Siine",
-"Tell Me Where to Go (Lofi) · Muspace Lofi",
-"浪漫 诙谐 生活 · Victoria"
+"Man on the Run · Jon Sumner",
+"Kaleidoscope · Adrián Berenguer",
+"Neon Bass · Tangelene Bolton",
+"Flowers · Adrián Berenguer",
+"Neon Nights · Adrian Rover",
+"浪漫 诙谐 生活 · Victoria",
+"Tell Me Where to Go (Lofi) · Muspace Lofi"
 ],
 "fuentes": [
-"https://www.arquitecturaydiseno.es/decoracion/tendencias-decoracion-2026_12906",
-"https://www.fotocasa.es/blog/diseno/tendencias-de-decoracion-en-espana-2026/",
-"https://www.hola.com/decoracion/20260107/tendencias-decoracion-2026-claves-expertos/",
-"https://www.idealista.com/news/deco/consejos/2026/08/20/819000-tendencias-de-interiorismo-2026-adios-al-exceso-y-vuelta-a-la-calma-en-el-hogar"
+"https://kiga.es/tendencias-de-interiorismo-para-2026-en-espana/",
+"https://lobointeriors.com/tendencias-interiorismo-2026/",
+"https://www.elmueble.com/decoracion/tendencias-color-2027-los-6-colores-que-mas-veremos-en-decoracion-y-sus-mejores-combinaciones",
+"https://www.archiproducts.com/es/noticias/tendencias-colores-paredes-2027-6-ideas-para-pintar-la-casa"
 ],
 "piezas": {
-"galeria": "t20261110g",
-"tips": "t20261110t",
-"antes_despues": "t20261110a",
-"proceso": "t20261110p"
+"galeria": "t20261111g",
+"tips": "t20261111t",
+"antes_despues": "t20261111a",
+"proceso": "t20261111p"
 }
 }

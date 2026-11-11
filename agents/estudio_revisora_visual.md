@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-10)
+# Cuaderno de revisora_visual (2026-11-11)
 
-- Seguir haciendo: Control riguroso de credibilidad técnica y planimétrica que transmita entregable profesional de estudio real.
-- Dejar de hacer: Validar renders con personas en obra o elementos geométricos anómalos generados por IA.
-- Probar: Checklist visual inflexible antes de entrega: cero figuras humanas, cero texto simulado y perfecta coherencia estructural en uniones y forjados.
+- Seguir haciendo: Verificación estricta de coherencia constructiva y grafismo profesional en cada entregable visual.
+- Dejar de hacer: Aprobar imágenes con personas, geometrías imprecisas o tipografías simuladas que parezcan generadas por IA.
+- Probar: Control riguroso de escalas gráficas, grosores de línea normativos y encuentros creíbles de forjados y fachadas antes de publicar.

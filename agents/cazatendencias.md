@@ -1,41 +1,39 @@
-# Cuaderno de cazatendencias (2026-11-10)
+# Cuaderno de cazatendencias (2026-11-11)
 
 ## Tendencias de la semana
-- Minimalismo cálido y lujo silencioso: La gente busca refugios acogedores frente al estrés diario, priorizando el confort visual con texturas naturales y maderas sin tratar en lugar de espacios fríos de exposición.
-- Duchas a ras de suelo con superficies continuas: El microcemento y los pavimentos continuos eliminan las juntas visuales, dando sensación de amplitud, limpieza y accesibilidad en los baños, algo muy visual para vídeos de transformaciones.
-- Color drenching en tonos tierra: Pintar paredes, techos y molduras del mismo color (como terracota o verde oliva) crea atmósferas envolventes y monocromáticas que retienen mucho la atención en los vídeos cortos.
-- Desayunadores integrados en la cocina: Con el teletrabajo y las jornadas híbridas, se buscan rincones cómodos para comidas rápidas o tomar el café con el portátil, adaptando la cocina a un uso más flexible y cotidiano.
-- Mobiliario de exterior en el interior: Se difuminan las fronteras de la casa; piezas de ratán, cerámica artesanal o madera de teca se integran en los salones para aportar un toque rústico y natural durante los meses de frío.
-- Formas orgánicas y siluetas curvas: Los sofás modulares curvos y los arcos en las puertas rompen la rigidez de las líneas rectas, facilitando la circulación y aportando una fluidez visual que triunfa en los 'room tours'.
+- Casas que sanan o 'Lujo Humano': La decoración deja de ser solo estética para centrarse en el bienestar emocional, reduciendo el estrés con espacios envolventes, sensoriales y libres de toxicidad.
+- El regreso del 'office' y la cocina dividida: Tras años de cocinas totalmente abiertas al salón, los usuarios se han cansado de los ruidos y olores, buscando separar la cocina de representación de la zona de trabajo sucio.
+- Color Drenching: Pintar paredes, techos, puertas y molduras exactamente del mismo tono crea atmósferas monocromáticas inmersivas que eliminan el ruido visual y aportan mucha calma.
+- Materiales descarbonizados y texturas crudas: Hay una mayor conciencia sobre la sostenibilidad real y la salud, impulsando el uso de arcilla, cal, maderas naturales a poro abierto y biomateriales sin tratar.
+- Tecnología invisible: Se busca la comodidad extrema de la domótica pero sin que los aparatos rompan la estética natural y cálida del hogar; las pantallas, electrodomésticos y cables se ocultan por completo.
 
 ## Estilos
-- blanco cálido cloud dancer
-- madera de nogal oscura
-- verde oliva profundo
-- suelo de terrazo cálido
-- tonos terracota y arcilla
-- piedra natural veteada
+- verde oliva y verde salvia
+- piedra natural mate sin veta dramática (travertino y caliza)
+- madera de tono medio a poro abierto (nogal, roble aceitado)
+- amarillo mantequilla
+- tonos burdeos y terracota
+- superficies continuas de microcemento
 
 ## Para nuestro equipo
-- Aprovechar planos cerrados con texturas táctiles como lino, cal y nogal para retener la atención en los primeros compases.
-- Evitar mostrar baños con juntas visibles o azulejos esmaltados pequeños; el público busca superficies continuas y limpias.
-- Priorizar luz natural rasante en los desayunadores integrados para transmitir una atmósfera matutina creíble y sosegada.
-- Descartar cualquier iluminación artificial cenital fría o decoraciones recargadas que resten sensación de lujo silencioso.
+- Aprovechar el debate de la cocina abierta frente a la cocina con office: genera confrontación constructiva y alto guardado entre clientes y proyectistas.
+- Apostar por el 'color drenching' en tonos salvia, terracota o mantequilla; desterrar totalmente los blancos puros y grises fríos que ya saturan el feed.
+- Evitar los mármoles artificiales de veta marcada; nuestro público de despachos conecta mucho mejor con la caliza apomazada, el travertino y la madera natural.
+- Poner foco en el detalle constructivo de la tecnología oculta (enchufes escamoteados, inducción bajo piedra), reforzando el valor del proyecto técnico.
 
 ## Ya quemado
-- cocinas totalmente blancas y asépticas
-- minimalismo frío con tonos grises y azulados
-- paredes de acento con papel pintado estridente
-- mármol pulido brillante en grandes superficies
+- el mármol calacatta con vetas muy dramáticas y marcadas
+- los espacios excesivamente neutros (blancos clínicos y grises fríos)
+- los sofás y muebles con curvas exageradamente mullidas (estilo 'chubby')
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
-- Man on the Run · Jon Sumner
-- Flowers · Adrián Berenguer
-- Neon Bass · Tangelene Bolton
-- Kaleidoscope · Adrián Berenguer
-- Neon Nights · Adrian Rover
 - Dance Like Nobody’s Watching - Instrumental Version · Siine
-- Tell Me Where to Go (Lofi) · Muspace Lofi
+- Man on the Run · Jon Sumner
+- Kaleidoscope · Adrián Berenguer
+- Neon Bass · Tangelene Bolton
+- Flowers · Adrián Berenguer
+- Neon Nights · Adrian Rover
 - 浪漫 诙谐 生活 · Victoria
+- Tell Me Where to Go (Lofi) · Muspace Lofi

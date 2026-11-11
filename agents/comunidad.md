@@ -1,8 +1,8 @@
-# Cuaderno de comunidad (2026-11-10)
+# Cuaderno de comunidad (2026-11-11)
 
-# Cuaderno de comunidad (2026-11-10)
+# Cuaderno de comunidad
 
-• Datos de audiencia: Muy escasos; no hay comentarios recientes en el registro. Los comentarios históricos (3 a 6) provienen únicamente de retos de identificación y comparativas visuales.
-• Seguir haciendo: Cuestionar directamente el ojo crítico y la experiencia de obra del arquitecto para generar respuestas.
-• Dejar de hacer: Publicaciones informativas cerradas que no dejan abierta una pregunta.
-• Probar: Pregunta directa de fricción de despacho: «¿Cuál es el detalle de CTE que más tiempo te quita antes de entregar?».
+• Datos de audiencia: Actualmente no hay comentarios nuevos registrados; los datos son muy escasos. Históricamente, los picos de interacción (4 a 6 comentarios) surgen solo ante retos de identificación de planos o reformas.
+• Seguir haciendo: Interpelar directamente la experiencia de obra y el ojo técnico del arquitecto.
+• Dejar de hacer: Publicaciones explicativas cerradas que no dejan debate abierto.
+• Probar: Pregunta directa sobre fricciones de despacho: «¿Qué parte del Proyecto de Ejecución te suele atascar más la entrega?».

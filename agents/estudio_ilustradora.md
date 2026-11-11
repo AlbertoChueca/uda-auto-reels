@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-10)
+# Cuaderno de ilustradora (2026-11-11)
 
-- Seguir haciendo: Iluminación puntual cálida sobre negro profundo en detalles constructivos y planimetría técnica nítida.
-- Dejar de hacer: Incorporar figuras humanas en escenas de obra o estructura (motivo de rechazo de imagen el 08/11).
-- Probar: Isometrías vectoriales limpias de capas de instalaciones CTE y encuentros de obra en tonos dorados sobre fondo oscuro, estrictamente sin personas.
+- Seguir haciendo: Fondos negro profundo con acentos dorados cálidos sobre planimetría técnica e isometrías nítidas.
+- Dejar de hacer: Incorporar figuras humanas o vegetación decorativa en escenas técnicas o estructurales.
+- Probar: Ilustraciones vectoriales de capas superpuestas de instalaciones CTE y nudos constructivos de hormigón y acero sin elementos superfluos.

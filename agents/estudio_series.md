@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-11-10)
+# Cuaderno de series (2026-11-11)
 
-- Seguir haciendo: Faltan datos; el 100% de las publicaciones analizadas figura como «serie None», lo que impide contrastar rendimientos previos.
-- Dejar de hacer: Publicar piezas aisladas sin orden temático ni fidelización recurrente.
-- Probar: Estrenar franquicia fija semanal («Capas de Proyecto» o «Detalle de Ejecución», Cap. 1) apoyándose en el formato portfolio para generar hábito.
+- Seguir haciendo: Datos insuficientes; el 100% de las publicaciones analizadas figura con «serie None».
+- Dejar de hacer: Publicar piezas sueltas sin recurrencia temática ni fidelización entre episodios.
+- Probar: Lanzar la primera serie fija «Capa a Capa» (aprovechando su récord de guardados) con entregas semanales numeradas sobre ejecución técnica.

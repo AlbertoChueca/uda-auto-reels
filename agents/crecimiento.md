@@ -1,7 +1,7 @@
-# Cuaderno de crecimiento (2026-11-10)
+# Cuaderno de crecimiento (2026-11-11)
 
-# Cuaderno de crecimiento (2026-11-10)
+# Cuaderno de crecimiento
 
-• Seguir haciendo: Foco en valor técnico de consulta para captar guardados (hasta 17 guardados por reel en contenido de instalaciones y planos).
-• Dejar de hacer: Publicar sin un incentivo claro de salida; las visitas al perfil continúan congeladas en 0 en todos los impactos.
-• Probar: CTA directo a recurso concreto para activar el tráfico web: «Guarda este reel y descarga el checklist de visado en uniondearquitectos.com».
+• Seguir haciendo: Contenido técnico de alta utilidad para maximizar guardados (hasta 17 guardados en entregables de instalaciones).
+• Dejar de hacer: Publicar sin un incentivo claro y específico; las visitas al perfil siguen estancadas en 0 en todas las métricas.
+• Probar: Lead magnet directo en la última línea: «Guarda este reel y pide por mensaje directo el checklist de entrega de Proyecto de Ejecución».

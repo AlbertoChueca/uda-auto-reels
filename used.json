@@ -790,5 +790,40 @@
 "fecha": "2026-11-10",
 "formato": "visual",
 "grupo": "obra"
+},
+{
+"id": "portfolio:lamina:a_fontaneria",
+"tema": "portfolio",
+"fecha": "2026-11-11",
+"formato": "visual",
+"grupo": "caso"
+},
+{
+"id": "portfolio:lamina:a_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-11",
+"formato": "visual",
+"grupo": "caso"
+},
+{
+"id": "portfolio:lamina:a_iluminacion",
+"tema": "portfolio",
+"fecha": "2026-11-11",
+"formato": "visual",
+"grupo": "caso"
+},
+{
+"id": "portfolio:lamina:a_cimentacion",
+"tema": "portfolio",
+"fecha": "2026-11-11",
+"formato": "visual",
+"grupo": "caso"
+},
+{
+"id": "portfolio:lamina:a_forjado",
+"tema": "portfolio",
+"fecha": "2026-11-11",
+"formato": "visual",
+"grupo": "caso"
 }
 ]
