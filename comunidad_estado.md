@@ -1,14 +1,9 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-10 20:53 UTC · 0 respuestas_
+_Última pasada: 2026-11-11 01:18 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-03 | instagram | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
-| 2026-11-03 | tiktok | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
-| 2026-11-03 | linkedin | portfolio | Delegas el Proyecto de Ejecución y te ll | 1 | — |
-| 2026-11-03 | instagram | proceso_visual | Del boceto al render | 1 | — |
-| 2026-11-03 | linkedin | proceso_visual | Del boceto al render | 1 | — |
 | 2026-11-04 | instagram | obra | POV: tu casa, de la zanja a la llave | 1 | — |
 | 2026-11-04 | tiktok | obra | POV: tu casa, de la zanja a la llave | 1 | — |
 | 2026-11-04 | linkedin | obra | POV: tu casa, de la zanja a la llave | 1 | — |
@@ -51,9 +46,6 @@ _Última pasada: 2026-11-10 20:53 UTC · 0 respuestas_
 | 2026-11-10 | instagram | obra | De la zanja a la llave | 1 | — |
 | 2026-11-10 | tiktok | obra | De la zanja a la llave | 1 | — |
 | 2026-11-10 | linkedin | obra | De la zanja a la llave | 1 | — |
-| 2026-11-03 | instagram | carrusel | Actuaciones específicas en paquete | 0 | — |
-| 2026-11-03 | tiktok | carrusel | Actuaciones específicas en paquete | 0 | — |
-| 2026-11-03 | linkedin | carrusel | Actuaciones específicas en paquete | 0 | — |
 | 2026-11-05 | instagram | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
 | 2026-11-05 | tiktok | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
 | 2026-11-05 | linkedin | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
