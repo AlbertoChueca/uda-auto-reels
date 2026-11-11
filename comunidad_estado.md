@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-11 11:49 UTC · 0 respuestas_
+_Última pasada: 2026-11-11 14:52 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -46,6 +46,12 @@ _Última pasada: 2026-11-11 11:49 UTC · 0 respuestas_
 | 2026-11-10 | instagram | obra | De la zanja a la llave | 1 | — |
 | 2026-11-10 | tiktok | obra | De la zanja a la llave | 1 | — |
 | 2026-11-10 | linkedin | obra | De la zanja a la llave | 1 | — |
+| 2026-11-11 | instagram | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
+| 2026-11-11 | tiktok | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
+| 2026-11-11 | linkedin | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
+| 2026-11-11 | instagram | galeria | La vuelta de la cocina dividida | 1 | — |
+| 2026-11-11 | tiktok | galeria | La vuelta de la cocina dividida | 1 | — |
+| 2026-11-11 | linkedin | galeria | La vuelta de la cocina dividida | 1 | — |
 | 2026-11-05 | instagram | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
 | 2026-11-05 | tiktok | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
 | 2026-11-05 | linkedin | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
