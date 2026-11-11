@@ -825,5 +825,12 @@
 "fecha": "2026-11-11",
 "formato": "visual",
 "grupo": "caso"
+},
+{
+"id": "visual:t20261111g",
+"tema": "visual",
+"fecha": "2026-11-11",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
