@@ -1,39 +1,40 @@
-# Cuaderno de cazatendencias (2026-11-11)
+# Cuaderno de cazatendencias (2026-11-12)
 
 ## Tendencias de la semana
-- Casas que sanan o 'Lujo Humano': La decoración deja de ser solo estética para centrarse en el bienestar emocional, reduciendo el estrés con espacios envolventes, sensoriales y libres de toxicidad.
-- El regreso del 'office' y la cocina dividida: Tras años de cocinas totalmente abiertas al salón, los usuarios se han cansado de los ruidos y olores, buscando separar la cocina de representación de la zona de trabajo sucio.
-- Color Drenching: Pintar paredes, techos, puertas y molduras exactamente del mismo tono crea atmósferas monocromáticas inmersivas que eliminan el ruido visual y aportan mucha calma.
-- Materiales descarbonizados y texturas crudas: Hay una mayor conciencia sobre la sostenibilidad real y la salud, impulsando el uso de arcilla, cal, maderas naturales a poro abierto y biomateriales sin tratar.
-- Tecnología invisible: Se busca la comodidad extrema de la domótica pero sin que los aparatos rompan la estética natural y cálida del hogar; las pantallas, electrodomésticos y cables se ocultan por completo.
+- Color Drenching en estancias completas: Pintar paredes, techos, puertas y molduras exactamente del mismo tono crea un efecto monocromático muy inmersivo que retiene la atención en los primeros segundos del vídeo y resulta muy estético en cámara.
+- La doble cocina o 'cocina oculta': Mostrar una cocina principal impecable y luego revelar una puerta secreta o panel corredero hacia la zona de trabajo real genera el factor sorpresa que fomenta los compartidos y guardados.
+- Baños de superficies continuas: El uso de microcemento o porcelánicos de gran formato (120x280) sin juntas, con duchas a ras de suelo, transmite un 'lujo silencioso' muy visual y fácil de grabar en recorridos fluidos sin cortes.
+- Brutalismo cálido y texturas honestas: Enseñar de cerca materiales con imperfecciones como hormigón pigmentado, barro, piedra natural o madera de poro abierto funciona muy bien para vídeos sensoriales con sonido ASMR.
+- Minimalismo cálido y formas orgánicas: La transición visual de líneas rectas a arcos, espejos fluidos y mobiliario redondeado resulta muy acogedora, rompiendo la rigidez visual y siendo altamente 'guardable' por los usuarios para inspiración.
+- El 'Lujo Humano' en el hogar: Mostrar casas que se sienten vividas y reales, con textiles desordenados pero elegantes, conecta emocionalmente mejor con la audiencia actual que los espacios que parecen renders fríos.
 
 ## Estilos
-- verde oliva y verde salvia
-- piedra natural mate sin veta dramática (travertino y caliza)
-- madera de tono medio a poro abierto (nogal, roble aceitado)
-- amarillo mantequilla
-- tonos burdeos y terracota
-- superficies continuas de microcemento
+- marrón chocolate y burdeos
+- verde oliva y salvia
+- madera natural de poro abierto
+- microcemento y superficies continuas
+- amarillo mantequilla (buttercream)
+- cerámica artesanal y barro
 
 ## Para nuestro equipo
-- Aprovechar el debate de la cocina abierta frente a la cocina con office: genera confrontación constructiva y alto guardado entre clientes y proyectistas.
-- Apostar por el 'color drenching' en tonos salvia, terracota o mantequilla; desterrar totalmente los blancos puros y grises fríos que ya saturan el feed.
-- Evitar los mármoles artificiales de veta marcada; nuestro público de despachos conecta mucho mejor con la caliza apomazada, el travertino y la madera natural.
-- Poner foco en el detalle constructivo de la tecnología oculta (enchufes escamoteados, inducción bajo piedra), reforzando el valor del proyecto técnico.
+- Priorizar vídeos sensoriales con sonido ambiente real de materiales como piedra rugosa, cal y maderas sin tratar.
+- Aprovechar la técnica del color drenching en tonos tierra y salvia para atrapar al usuario en los primeros tres segundos.
+- Descartar totalmente el blanco aséptico de hospital y los renders sintéticos sin imperfecciones naturales.
+- Destacar soluciones de continuidad como duchas enrasadas y microcemento frente al alicatado tradicional con juntas.
 
 ## Ya quemado
-- el mármol calacatta con vetas muy dramáticas y marcadas
-- los espacios excesivamente neutros (blancos clínicos y grises fríos)
-- los sofás y muebles con curvas exageradamente mullidas (estilo 'chubby')
+- el minimalismo frío, aséptico y los espacios que parecen catálogos sin vida
+- el uso excesivo de grises azulados y blancos clínicos en paredes
+- vídeos hiper-editados o renders 3D perfectos (penalizados por las nuevas etiquetas obligatorias de IA en redes)
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
 - Dance Like Nobody’s Watching - Instrumental Version · Siine
 - Man on the Run · Jon Sumner
+- Flowers · Adrián Berenguer
 - Kaleidoscope · Adrián Berenguer
 - Neon Bass · Tangelene Bolton
-- Flowers · Adrián Berenguer
-- Neon Nights · Adrian Rover
 - 浪漫 诙谐 生活 · Victoria
-- Tell Me Where to Go (Lofi) · Muspace Lofi
+- Neon Nights · Adrian Rover
+- Spectacular Moment · life motivation

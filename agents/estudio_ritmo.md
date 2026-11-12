@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-11-11)
+# Cuaderno de ritmo (2026-11-12)
 
-- Seguir haciendo: Edición dinámica que sostenga la retención por encima de 4.500 ms con locución concisa («Solo un arquitecto», 5.100 ms).
-- Dejar de hacer: Entradas lentas o explicativas que retrasen la aparición del plano en pantalla.
-- Probar: Impacto visual del plano técnico en los primeros 1,2 segundos, sincronizando transiciones ágiles a compás de música sobria.
+- Seguir haciendo: Ritmo visual ágil con retención media superior a 4.500 ms y locución técnica directa («Solo un arquitecto», 5.090 ms).
+- Dejar de hacer: Introducciones lentas o pausas explicativas antes de mostrar el plano en pantalla.
+- Probar: Impacto del plano o detalle constructivo en los primeros 1,2 segundos, marcando transiciones al corte sincronizadas con base musical sobria.

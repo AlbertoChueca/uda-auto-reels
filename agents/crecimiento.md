@@ -1,7 +1,7 @@
-# Cuaderno de crecimiento (2026-11-11)
+# Cuaderno de crecimiento (2026-11-12)
 
 # Cuaderno de crecimiento
 
-• Seguir haciendo: Contenido técnico de alta utilidad para maximizar guardados (hasta 17 guardados en entregables de instalaciones).
-• Dejar de hacer: Publicar sin un incentivo claro y específico; las visitas al perfil siguen estancadas en 0 en todas las métricas.
-• Probar: Lead magnet directo en la última línea: «Guarda este reel y pide por mensaje directo el checklist de entrega de Proyecto de Ejecución».
+• Seguir haciendo: Contenido utilitario de alta densidad técnica que impulse guardados (16 y 17 guardados en entregables reales).
+• Dejar de hacer: Publicar sin un incentivo que fuerce la salida a perfil; las visitas al perfil siguen en 0 en todas las publicaciones analizadas.
+• Probar: CTA directo a la web con descargable específico: «Guarda el reel y entra al enlace de la bio para descargar el checklist de visado».

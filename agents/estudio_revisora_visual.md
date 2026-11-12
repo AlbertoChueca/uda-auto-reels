@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-11)
+# Cuaderno de revisora_visual (2026-11-12)
 
-- Seguir haciendo: Verificación estricta de coherencia constructiva y grafismo profesional en cada entregable visual.
-- Dejar de hacer: Aprobar imágenes con personas, geometrías imprecisas o tipografías simuladas que parezcan generadas por IA.
-- Probar: Control riguroso de escalas gráficas, grosores de línea normativos y encuentros creíbles de forjados y fachadas antes de publicar.
+- Seguir haciendo: Filtro estricto de rigor técnico, grafismo profesional creíble y ausencia absoluta de texto ilegible o artefactos de IA.
+- Dejar de hacer: Validar escenas con incoherencias geométricas (como cubiertas dispares entre fases) o escenas decorativas desconectadas del proyecto de ejecución.
+- Probar: Comprobar proporciones normativas, grosores de línea arquitectónicos y encuentros forjado-fachada físicamente viables antes de dar el visto bueno.

@@ -805,6 +805,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-11"
+},
+{
+"id": "t20261112g",
+"hook": "El encanto del brutalismo cálido",
+"cierre": "¿Vivirías en una casa así?",
+"escenas": [
+{
+"idea": "Salón con muro de hormigón teñido en tono arena, sofá curvo de lino crudo y entrada de luz cenital suave.",
+"label": "Hormigón pigmentado"
+},
+{
+"idea": "Comedor con mesa maciza de roble sin barnizar, sillas de enea trenzada y lámpara colgante de cerámica artesanal sobre fondo neutro.",
+"label": "Madera de poro"
+},
+{
+"idea": "Isla monolítica de travertino rugoso combinada con frentes de madera oscura de poro abierto bajo iluminación tenue y rasante.",
+"label": "Cocina y piedra"
+},
+{
+"idea": "Lavabo tallado en bloque de piedra caliza con grifería empotrada en cobre envejecido y paredes de mortero continuo de cal.",
+"label": "Baño monolítico"
+},
+{
+"idea": "Dormitorio con cabecero de lino rústico deshilachado, mesillas de barro cocido y ventanal abierto a un patio de grava y olivos.",
+"label": "Textiles honestos"
+},
+{
+"idea": "Escalera helicoidal de hormigón visto abujardado con barandilla ciega y suave penumbra resaltando la textura rugosa del material.",
+"label": "Escalera escultórica"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-12"
 }
 ],
 "proceso": [
@@ -942,6 +975,13 @@
 "descripcion": "una vivienda unifamiliar bioclimática con muros de tapial, carpinterías de alerce y ventilación natural cruzada",
 "tendencia": true,
 "fecha": "2026-11-11"
+},
+{
+"id": "t20261112p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar reformada con patio central, muros de barro cocido y carpinterías de roble",
+"tendencia": true,
+"fecha": "2026-11-12"
 }
 ],
 "antes_despues": [
@@ -1094,6 +1134,14 @@
 "estilo": "color drenching envolvente en verde salvia con molduras integradas y mesa de travertino",
 "tendencia": true,
 "fecha": "2026-11-11"
+},
+{
+"id": "t20261112a",
+"tipo": "estancia",
+"descripcion": "un aseo anticuado con azulejos verdosos agrietados, bañera encastrada descascarillada y lavabo de pie con espejo roto",
+"estilo": "baño continuo de microcemento arena con ducha enrasada y grifería cobre cepillado",
+"tendencia": true,
+"fecha": "2026-11-12"
 }
 ],
 "tips": [
@@ -1610,6 +1658,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-11"
+},
+{
+"id": "t20261112t",
+"hook": "5 claves para aplicar color drenching",
+"tips": [
+{
+"tip": "Pinta techo, paredes y molduras",
+"idea": "Salón monocromático en tono verde salvia profundo cubriendo zócalos, paredes lisas, techo y carpinterías sin ningún contraste blanco."
+},
+{
+"tip": "Elige acabados con diferente brillo",
+"idea": "Detalle de pared mate junto a una puerta lacada satinada en el mismo tono burdeos, reflejando sutilmente la luz."
+},
+{
+"tip": "Integra carpinterías y radiadores",
+"idea": "Radiador de hierro fundido y marcos de ventana pintados exactamente del mismo azul noche que el resto del dormitorio."
+},
+{
+"tip": "Añade textiles en gama coordinada",
+"idea": "Cama vestida con linos y mantas en diversas intensidades de marrón chocolate, creando profundidad sin romper la paleta envolvente."
+},
+{
+"tip": "Compensa con iluminación cálida puntual",
+"idea": "Aplique de pared proyectando un haz cálido rasante sobre una esquina monocromática en tono terracota apagado."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-12"
 }
 ],
 "obra": [

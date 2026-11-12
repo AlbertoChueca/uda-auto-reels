@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-11-11)
+# Cuaderno de viralidad (2026-11-12)
 
-- Seguir haciendo: Retos directos al criterio y ego técnico del arquitecto («Solo un arquitecto acierta los cuatro», 2.445 views).
-- Dejar de hacer: Copys corporativos de venta directa sin fricción ni reto profesional («Factura más delegando», 0 compartidos).
-- Probar: Dinámicas de «detecta el gazapo en este plano de ejecución» para desatar debate técnico y menciones a socios de estudio.
+- Seguir haciendo: Retos directos al conocimiento y ego del arquitecto («Solo un arquitecto acierta los cuatro», «¿Qué es este plano?»).
+- Dejar de hacer: Ganchos impersonales o teóricos de historia («El libro más antiguo», 0 compartidos).
+- Probar: Dinámica «encuentra el error normativo en este detalle constructivo» para generar discusión técnica en comentarios y envíos entre socios de despacho.
