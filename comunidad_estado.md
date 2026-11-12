@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-12 03:54 UTC · 0 respuestas_
+_Última pasada: 2026-11-12 11:58 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -46,6 +46,8 @@ _Última pasada: 2026-11-12 03:54 UTC · 0 respuestas_
 | 2026-11-11 | instagram | galeria | La vuelta de la cocina dividida | 1 | — |
 | 2026-11-11 | tiktok | galeria | La vuelta de la cocina dividida | 1 | — |
 | 2026-11-11 | linkedin | galeria | La vuelta de la cocina dividida | 2 | — |
+| 2026-11-12 | tiktok | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
+| 2026-11-12 | linkedin | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
 | 2026-11-05 | instagram | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
 | 2026-11-05 | tiktok | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
 | 2026-11-05 | linkedin | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |

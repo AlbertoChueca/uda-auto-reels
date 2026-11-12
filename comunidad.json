@@ -32,7 +32,8 @@
 "urn:li:comment:(urn:li:ugcPost:7525920337449041920,7525920824797638657)",
 "urn:li:comment:(urn:li:ugcPost:7526237406203740160,7526283374374846464)",
 "urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526283431232602113)",
-"urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526391218784833538)"
+"urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526391218784833538)",
+"urn:li:comment:(urn:li:ugcPost:7526599798477529088,7526602042153275392)"
 ],
 "posts": {
 "tiktok:6ad7bfa4543d02f449a6bd81": {
@@ -1221,6 +1222,18 @@
 "uniondearquitectos"
 ],
 "comentarios": 2
+},
+"tiktok:6af59c35b044311d8c8e514d": {
+"pregunta": "7707008483333407520",
+"personas": [],
+"comentarios": 1
+},
+"linkedin:6af59c33e29b21db5665270f": {
+"pregunta": "urn:li:comment:(urn:li:ugcPost:7526599798477529088,7526602042153275392)",
+"personas": [
+"uniondearquitectos"
+],
+"comentarios": 1
 }
 },
 "errores": {},
@@ -1376,6 +1389,8 @@
 "6af44ab5e1cca26086bf3df4": "7706867078363352353",
 "6af44ab387dccbf3c5c0b523": "urn:li:ugcPost:7526237406203740160",
 "6af474e6306f983a8e80d7a1": "7706913513121336609",
-"6af474e43565d465e35ae68c": "urn:li:ugcPost:7526282718335156224"
+"6af474e43565d465e35ae68c": "urn:li:ugcPost:7526282718335156224",
+"6af59c35b044311d8c8e514d": "7707238184752516385",
+"6af59c33e29b21db5665270f": "urn:li:ugcPost:7526599798477529088"
 }
 }
