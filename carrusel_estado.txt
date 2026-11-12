@@ -1,9 +1,2 @@
-Carrusel 2026-11-12 16:26 UTC
-carrusel: verificado (Escalar producción sin contratar)
-carrusel: revisión 8.1/10 ['La planta esquemática de la portada es excesivamente básica y simplista (parece una estancia mínima); no proyecta la envergadura técnica ni el nivel de un despacho que ejecuta bloques de viviendas complejos.', 'La diapositiva de cierre (05/05) sufre de exceso de estímulos y llamadas a la acción cruzadas: compiten la petición de guardar/compartir, los tres checks, el botón dorado con copy largo y la pastilla blanca de la web.', "En la lámina 03, reducir el impacto de cálculo estructural, instalaciones y BIM a 'cuellos de botella de delineación' abarata conceptualmente la propuesta técnica ante un titular de despacho."]
-carrusel: Facturar más y ganar tiempo delegando · Escalar producción sin contratar · 5 imágenes
-Instagram carrusel: https://www.instagram.com/p/DfpfG1MFzw8/
-Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
-Zernio tiktok carrusel: creado 6af5e93d4766e83f27c73c45
-Zernio linkedin documento: creado 6af5e94b4766e83f27c73cda
-publicación: {"instagram_carrusel": "ig:18121023662053178", "tiktok_carrusel": "6af5e93d4766e83f27c73c45", "linkedin_documento": "6af5e94b4766e83f27c73cda"}
+Carrusel 2026-11-12 16:29 UTC
+ya se publicó el carrusel de hoy
