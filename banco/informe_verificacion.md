@@ -1,4 +1,4 @@
-# Informe del verificador (2026-11-09)
+# Informe del verificador (2026-11-12)
 
 - Piezas en el banco: 678 · revisadas: 492 · **publicables sin usar: 253** (negocio 28, contratar 33, servicios 192, proyecto 0) · pendientes: 20
 - Errores: 61 · dudosas: 13 · correctas pero sin cita comprobada: 0
