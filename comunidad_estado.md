@@ -1,15 +1,9 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-11 22:51 UTC · 1 respuestas_
+_Última pasada: 2026-11-12 03:54 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-04 | instagram | obra | POV: tu casa, de la zanja a la llave | 1 | — |
-| 2026-11-04 | tiktok | obra | POV: tu casa, de la zanja a la llave | 1 | — |
-| 2026-11-04 | linkedin | obra | POV: tu casa, de la zanja a la llave | 1 | — |
-| 2026-11-04 | instagram | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
-| 2026-11-04 | tiktok | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
-| 2026-11-04 | linkedin | galeria | ¿Lujo de catálogo o casas con alma? | 1 | — |
 | 2026-11-05 | instagram | tips | 5 claves para zonificar sin tabiques | 2 | — |
 | 2026-11-05 | tiktok | tips | 5 claves para zonificar sin tabiques | 1 | — |
 | 2026-11-05 | linkedin | tips | 5 claves para zonificar sin tabiques | 1 | — |
