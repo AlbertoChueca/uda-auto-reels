@@ -222,5 +222,25 @@
 "linkedin_documento": "6af35112aaa2ef036158fb74"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-11-12",
+"bloque": "negocio",
+"tema": "uda_delegar",
+"subtema": "Escalar producción sin contratar",
+"titulo": "ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS",
+"fragmentos": [
+"Delineación y Proyectos de Ejecución para Arquitectos | UDA"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.1,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18121023662053178",
+"tiktok_carrusel": "6af5e93d4766e83f27c73c45",
+"linkedin_documento": "6af5e94b4766e83f27c73cda"
+},
+"dry_run": false
 }
 ]
