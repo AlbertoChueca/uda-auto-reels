@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-12 14:51 UTC · 0 respuestas_
+_Última pasada: 2026-11-12 20:55 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -57,3 +57,6 @@ _Última pasada: 2026-11-12 14:51 UTC · 0 respuestas_
 | 2026-11-10 | instagram | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | tiktok | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | linkedin | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
+| 2026-11-12 | instagram | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
+| 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
+| 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
