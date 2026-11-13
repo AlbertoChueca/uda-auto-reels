@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-13 09:42 UTC · 0 respuestas_
+_Última pasada: 2026-11-13 11:51 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -45,6 +45,9 @@ _Última pasada: 2026-11-13 09:42 UTC · 0 respuestas_
 | 2026-11-12 | instagram | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-12 | tiktok | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-12 | linkedin | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
+| 2026-11-13 | instagram | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
+| 2026-11-13 | tiktok | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
+| 2026-11-13 | linkedin | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-11-10 | instagram | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | tiktok | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | linkedin | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
