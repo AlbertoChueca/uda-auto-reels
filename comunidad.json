@@ -1280,6 +1280,21 @@
 "pregunta": "urn:li:comment:(urn:li:ugcPost:7526962198145900544,7526962876696182784)",
 "personas": [],
 "comentarios": 1
+},
+"instagram:ig:18074685944521046": {
+"pregunta": "17983320087130061",
+"personas": [],
+"comentarios": 1
+},
+"tiktok:6af717e7145bdbb67eb19a67": {
+"pregunta": "7707406294696887072",
+"personas": [],
+"comentarios": 1
+},
+"linkedin:6af717e4a83b3aa26a75baf2": {
+"pregunta": "urn:li:comment:(urn:li:ugcPost:7527007495815376897,7527009119296241664)",
+"personas": [],
+"comentarios": 1
 }
 },
 "errores": {},
@@ -1443,6 +1458,8 @@
 "6af5e93d4766e83f27c73c45": "7707322800897396000",
 "6af5e94b4766e83f27c73cda": "urn:li:ugcPost:7526682499914141696",
 "6af6edb5b4dc7086fdf7d72b": "7707609248141757729",
-"6af6edb369c5fb951d7179c8": "urn:li:ugcPost:7526962198145900544"
+"6af6edb369c5fb951d7179c8": "urn:li:ugcPost:7526962198145900544",
+"6af717e7145bdbb67eb19a67": "7707655659885530400",
+"6af717e4a83b3aa26a75baf2": "urn:li:ugcPost:7527007495815376897"
 }
 }
