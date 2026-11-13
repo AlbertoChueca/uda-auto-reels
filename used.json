@@ -909,5 +909,26 @@
 "fecha": "2026-11-13",
 "formato": "visual",
 "grupo": "adivina"
+},
+{
+"id": "visual:t20261103a",
+"tema": "visual",
+"fecha": "2026-11-13",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:t20261108a",
+"tema": "visual",
+"fecha": "2026-11-13",
+"formato": "visual",
+"grupo": "antes_despues"
+},
+{
+"id": "visual:a4",
+"tema": "visual",
+"fecha": "2026-11-13",
+"formato": "visual",
+"grupo": "antes_despues"
 }
 ]
