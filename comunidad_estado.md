@@ -1,15 +1,9 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-12 20:55 UTC · 0 respuestas_
+_Última pasada: 2026-11-13 01:56 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-05 | instagram | tips | 5 claves para zonificar sin tabiques | 2 | — |
-| 2026-11-05 | tiktok | tips | 5 claves para zonificar sin tabiques | 1 | — |
-| 2026-11-05 | linkedin | tips | 5 claves para zonificar sin tabiques | 1 | — |
-| 2026-11-05 | instagram | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
-| 2026-11-05 | tiktok | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
-| 2026-11-05 | linkedin | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-06 | instagram | inspiracion | Proyectó hasta los 104 años | 0 | — |
 | 2026-11-06 | tiktok | inspiracion | Proyectó hasta los 104 años | 0 | — |
 | 2026-11-06 | linkedin | inspiracion | Proyectó hasta los 104 años | 0 | — |
@@ -51,9 +45,6 @@ _Última pasada: 2026-11-12 20:55 UTC · 0 respuestas_
 | 2026-11-12 | instagram | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-12 | tiktok | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-12 | linkedin | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
-| 2026-11-05 | instagram | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
-| 2026-11-05 | tiktok | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
-| 2026-11-05 | linkedin | carrusel | DELEGAR PROYECTOS PASO A PASO | 0 | — |
 | 2026-11-10 | instagram | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | tiktok | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | linkedin | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
