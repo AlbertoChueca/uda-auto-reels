@@ -35,7 +35,8 @@
 "urn:li:comment:(urn:li:ugcPost:7526282718335156224,7526391218784833538)",
 "urn:li:comment:(urn:li:ugcPost:7526599798477529088,7526602042153275392)",
 "urn:li:comment:(urn:li:ugcPost:7526645115646386176,7526645658817175552)",
-"urn:li:comment:(urn:li:ugcPost:7526962198145900544,7526962876696182784)"
+"urn:li:comment:(urn:li:ugcPost:7526962198145900544,7526962876696182784)",
+"urn:li:comment:(urn:li:ugcPost:7527007495815376897,7527009119296241664)"
 ],
 "posts": {
 "tiktok:6ad7bfa4543d02f449a6bd81": {
@@ -1293,11 +1294,15 @@
 },
 "linkedin:6af717e4a83b3aa26a75baf2": {
 "pregunta": "urn:li:comment:(urn:li:ugcPost:7527007495815376897,7527009119296241664)",
-"personas": [],
+"personas": [
+"uniondearquitectos"
+],
 "comentarios": 1
 }
 },
-"errores": {},
+"errores": {
+"instagram": "Instagram comentarios 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":460,\"fbtrace_id\":\"AhsJTJPsMJsox9F8Wfhn8F7\"}}"
+},
 "nativos": {
 "6ad7bfa4543d02f449a6bd81": "7698832867194948896",
 "6ad7d59ba5704ca0850d9acc": "7698857021851897120",
