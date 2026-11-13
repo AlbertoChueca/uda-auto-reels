@@ -881,5 +881,33 @@
 "fecha": "2026-11-12",
 "formato": "visual",
 "grupo": "proceso"
+},
+{
+"id": "portfolio:lamina:a_cimentacion",
+"tema": "portfolio",
+"fecha": "2026-11-13",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:b_planta",
+"tema": "portfolio",
+"fecha": "2026-11-13",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:a_detalles",
+"tema": "portfolio",
+"fecha": "2026-11-13",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:a_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-13",
+"formato": "visual",
+"grupo": "adivina"
 }
 ]

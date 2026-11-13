@@ -1,74 +1,71 @@
 {
-"fecha": "2026-11-12",
+"fecha": "2026-11-13",
 "temas": [
 {
-"tema": "Color Drenching en estancias completas",
-"por_que": "Pintar paredes, techos, puertas y molduras exactamente del mismo tono crea un efecto monocromático muy inmersivo que retiene la atención en los primeros segundos del vídeo y resulta muy estético en cámara."
+"tema": "Interiorismo emocional y sensorial",
+"por_que": "La gente busca espacios que transmitan calidez y cuenten una historia personal, alejándose de las casas de catálogo frías y perfectas."
 },
 {
-"tema": "La doble cocina o 'cocina oculta'",
-"por_que": "Mostrar una cocina principal impecable y luego revelar una puerta secreta o panel corredero hacia la zona de trabajo real genera el factor sorpresa que fomenta los compartidos y guardados."
+"tema": "El baño como spa doméstico",
+"por_que": "Se viralizan las reformas que convierten el baño en un refugio de bienestar, destacando hornacinas integradas a la arquitectura y materiales crudos."
 },
 {
-"tema": "Baños de superficies continuas",
-"por_que": "El uso de microcemento o porcelánicos de gran formato (120x280) sin juntas, con duchas a ras de suelo, transmite un 'lujo silencioso' muy visual y fácil de grabar en recorridos fluidos sin cortes."
+"tema": "Diseño bioclimático visible",
+"por_que": "Mostrar cómo la luz natural, la ventilación cruzada y los aislamientos mejoran el confort térmico en invierno sin gastar de más genera mucha interacción."
 },
 {
-"tema": "Brutalismo cálido y texturas honestas",
-"por_que": "Enseñar de cerca materiales con imperfecciones como hormigón pigmentado, barro, piedra natural o madera de poro abierto funciona muy bien para vídeos sensoriales con sonido ASMR."
+"tema": "Muebles con historia y texturas reales",
+"por_que": "Hay un boom por recuperar piezas antiguas o de mercadillo y mezclarlas con paredes de estuco, cal o maderas con vetas muy marcadas."
 },
 {
-"tema": "Minimalismo cálido y formas orgánicas",
-"por_que": "La transición visual de líneas rectas a arcos, espejos fluidos y mobiliario redondeado resulta muy acogedora, rompiendo la rigidez visual y siendo altamente 'guardable' por los usuarios para inspiración."
-},
-{
-"tema": "El 'Lujo Humano' en el hogar",
-"por_que": "Mostrar casas que se sienten vividas y reales, con textiles desordenados pero elegantes, conecta emocionalmente mejor con la audiencia actual que los espacios que parecen renders fríos."
+"tema": "Espacios fluidos y curvas útiles",
+"por_que": "Los arcos, bordes suaves y transiciones sin puertas rígidas generan mayor amplitud visual y un recorrido más orgánico en la vivienda."
 }
 ],
 "estilos": [
-"marrón chocolate y burdeos",
-"verde oliva y salvia",
-"madera natural de poro abierto",
-"microcemento y superficies continuas",
-"amarillo mantequilla (buttercream)",
-"cerámica artesanal y barro"
+"verde oliva",
+"marrón chocolate y tonos arcilla",
+"madera oscura con veta visible",
+"acero inoxidable y cromo cepillado",
+"piedra natural y travertino",
+"estilo bistró europeo"
 ],
 "formatos": [
-"carruseles estratégicos (cambiando la foto de portada si el algoritmo no arranca en las primeras 24h)",
-"reels crudos y sin filtros centrados en retener los 3 primeros segundos para evitar el 'skip rate'",
-"vídeos de 'antes y después' con transiciones rápidas y texturas ASMR",
-"tours de reformas narrados en voz en off explicando el porqué de cada material"
+"Carruseles de fotos con portada gancho y reordenamiento estratégico",
+"Reels de antes y después con transiciones dinámicas al ritmo del audio",
+"Mini-vlogs narrados mostrando el proceso real de una reforma",
+"Vídeos ASMR destacando el sonido y la textura de los materiales"
 ],
 "busquedas": [
-"reformas baños microcemento",
-"colores salon otoño 2026",
-"cocina oculta panel corredero",
-"color drenching dormitorio",
-"minimalismo calido salon",
-"ideas decoracion verde oliva",
-"casas lujo silencioso"
+"ideas salon acogedor invierno",
+"reforma baño sin obras",
+"colores tendencia pared 2026",
+"decoracion verde oliva",
+"casas calidas minimalistas",
+"como combinar madera oscura",
+"errores al reformar cocina"
 ],
 "hashtags": [
+"#interiorismoemocional",
 "#reformasespaña",
-"#interiorismo2026",
-"#minimalismocalido",
-"#colordrenching",
-"#lujosilencioso",
 "#decoracionotoño",
-"#bañosmodernos",
-"#cocinasocultas"
+"#casasreales",
+"#bañospa",
+"#tendenciasdeco2026",
+"#diseñobioclimatico",
+"#maderaoscura"
 ],
 "quemado": [
-"el minimalismo frío, aséptico y los espacios que parecen catálogos sin vida",
-"el uso excesivo de grises azulados y blancos clínicos en paredes",
-"vídeos hiper-editados o renders 3D perfectos (penalizados por las nuevas etiquetas obligatorias de IA en redes)"
+"El blanco nuclear y los grises fríos en todas las paredes",
+"El minimalismo aséptico que parece un hospital",
+"El abuso del latón dorado en griferías y lámparas",
+"El mármol blanco con veta gris sobreutilizado en cocinas"
 ],
 "por_tipo": {
-"galeria": "brutalismo calido interiorismo casas",
-"tips": "color drenching pintura salon",
-"antes_despues": "reforma bano microcemento antes despues",
-"proceso": "reforma casa muros barro roble"
+"galeria": "interiorismo texturas cal y madera",
+"tips": "arquitectura bioclimatica y confort termico",
+"antes_despues": "reforma baño estilo spa travertino",
+"proceso": "rehabilitacion casa de pueblo bioclimatica"
 },
 "musica_tiktok": [
 "Cool Girl · Jayde Mari",
@@ -76,23 +73,22 @@
 "Dance Like Nobody’s Watching - Instrumental Version · Siine",
 "Man on the Run · Jon Sumner",
 "Flowers · Adrián Berenguer",
-"Kaleidoscope · Adrián Berenguer",
+"古风 大气 修仙 影视配乐 · 当歌音乐",
 "Neon Bass · Tangelene Bolton",
+"危机压迫 (F) · Music Time",
 "浪漫 诙谐 生活 · Victoria",
-"Neon Nights · Adrian Rover",
-"Spectacular Moment · life motivation"
+"Kaleidoscope · Adrián Berenguer"
 ],
 "fuentes": [
-"https://kiga.es/tendencias-interiorismo-2026-espana",
-"https://lobointeriors.com/tendencias-interiorismo-2026-8-cambios-reales",
-"https://www.hola.com/decoracion/galeria/20260827258741/colores-tendencia-otono-invierno-2026/",
-"https://www.revistainteriores.es/decoracion/tendencias-decoracion-otono-2026-tonos-calidos-texturas-piezas-vintage_130739",
-"https://klorofila.com/novedades-instagram-2026-cambios-reels-algoritmo"
+"https://www.larazon.es/sociedad/tendencias-interiorismo-2026-asi-sera-nueva-decoracion-hogares-segun-experta_2025120767538b34827012000185b9b9.html",
+"https://www.elmueble.com/decoracion/tendencias-decoracion-dormitorios-2026-2027_54123",
+"https://www.nordicnest.es/inspiracion/tendencias-de-interiorismo/tendencias-de-decoracion-otono/",
+"https://plecstudio.com/tendencias-arquitectura-alta-gama-2026/"
 ],
 "piezas": {
-"galeria": "t20261112g",
-"tips": "t20261112t",
-"antes_despues": "t20261112a",
-"proceso": "t20261112p"
+"galeria": "t20261113g",
+"tips": "t20261113t",
+"antes_despues": "t20261113a",
+"proceso": "t20261113p"
 }
 }

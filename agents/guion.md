@@ -1,7 +1,5 @@
-# Cuaderno de guion (2026-11-12)
+# Cuaderno de guion (2026-11-13)
 
-# Cuaderno de guion
-
-• Seguir haciendo: Despiece técnico y secuencial de entregables de ejecución reales («Capa a capa: las instalaciones», 17 guardados, score 10.86; «Top 4: lo que te llega cuando nos delegas», 10 guardados).
-• Dejar de hacer: Anécdotas teóricas sin utilidad inmediata para la redacción de proyectos («El libro de arquitectura más antiguo», score 8.52).
-• Probar: Estructura técnica: mostrar 3 errores habituales en planos de saneamiento y cómo debe redactarse la solución para evitar requerimientos.
+• Seguir haciendo: Despiece técnico secuencial de entregables de ejecución reales e instalaciones («Capa a capa», 18 guardados, score 10.89; «Top 4: lo que te llega», 10 guardados).
+• Dejar de hacer: Anécdotas teóricas sin aplicación práctica en proyectos («El libro de arquitectura más antiguo», score 8.52).
+• Probar: Resolver en 3 pasos una incompatibilidad típica entre estructura e instalaciones en fase de Proyecto de Ejecución.

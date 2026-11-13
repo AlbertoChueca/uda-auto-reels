@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-12)
+# Cuaderno de revisora_visual (2026-11-13)
 
-- Seguir haciendo: Filtro estricto de rigor técnico, grafismo profesional creíble y ausencia absoluta de texto ilegible o artefactos de IA.
-- Dejar de hacer: Validar escenas con incoherencias geométricas (como cubiertas dispares entre fases) o escenas decorativas desconectadas del proyecto de ejecución.
-- Probar: Comprobar proporciones normativas, grosores de línea arquitectónicos y encuentros forjado-fachada físicamente viables antes de dar el visto bueno.
+- Seguir haciendo: Control estricto de grafismo profesional: planos legibles, cotas coherentes y ausencia total de texto inventado por IA.
+- Dejar de hacer: Validar incoherencias constructivas o volumetrías dispares entre fases de proyecto (como cubiertas planas frente a dos aguas).
+- Probar: Verificar que los detalles constructivos cumplan proporciones y lógica del CTE antes de producción para blindar el rigor técnico.

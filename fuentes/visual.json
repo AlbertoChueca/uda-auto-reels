@@ -838,6 +838,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-12"
+},
+{
+"id": "t20261113g",
+"hook": "Casas con textura y memoria",
+"cierre": "¿Cuál guardarías de portada?",
+"escenas": [
+{
+"idea": "Salón con pared de estuco de cal en tono arcilla, banco de nogal y gran ventanal inundado de sol invernal.",
+"label": "Arcilla y cal"
+},
+{
+"idea": "Cocina con frente de acero inoxidable cepillado conviviendo con muebles bajos de roble tostado y encimera de travertino crudo.",
+"label": "Acero y roble"
+},
+{
+"idea": "Arco elíptico enlucido de cal que da paso a un distribuidor con pavimento continuo de barro cocido recuperado.",
+"label": "Paso fluido"
+},
+{
+"idea": "Baño con hornacina corrida de travertino, grifería empotrada en cromo cepillado y luz indirecta rasante sobre mortero crudo.",
+"label": "Piedra viva"
+},
+{
+"idea": "Rincón de lectura con butaca vintage retapizada en bouclé verde oliva junto a una estantería empotrada de mampostería.",
+"label": "Verde y caliza"
+},
+{
+"idea": "Mesa de comedor de castaño macizo decapado bajo lámpara suspendida de metal batido, con ventanal hacia patio vegetal.",
+"label": "Madera viva"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-13"
 }
 ],
 "proceso": [
@@ -982,6 +1015,13 @@
 "descripcion": "una vivienda unifamiliar reformada con patio central, muros de barro cocido y carpinterías de roble",
 "tendencia": true,
 "fecha": "2026-11-12"
+},
+{
+"id": "t20261113p",
+"tipo": "casa",
+"descripcion": "una vivienda entre medianeras rehabilitada con patios bioclimáticos, muros de tapial y carpinterías de nogal",
+"tendencia": true,
+"fecha": "2026-11-13"
 }
 ],
 "antes_despues": [
@@ -1142,6 +1182,14 @@
 "estilo": "baño continuo de microcemento arena con ducha enrasada y grifería cobre cepillado",
 "tendencia": true,
 "fecha": "2026-11-12"
+},
+{
+"id": "t20261113a",
+"tipo": "estancia",
+"descripcion": "un cuarto de baño anticuado con bañera acrílica oxidada, azulejo verde botella agrietado y techo de escayola amarillento",
+"estilo": "baño spa monolítico con travertino pulido, hornacinas iluminadas y grifería empotrada de cromo cepillado",
+"tendencia": true,
+"fecha": "2026-11-13"
 }
 ],
 "tips": [
@@ -1686,6 +1734,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-12"
+},
+{
+"id": "t20261113t",
+"hook": "5 claves para ganar confort térmico",
+"tips": [
+{
+"tip": "Orientar huecos a mediodía",
+"idea": "Gran ventanal orientado al sur recogiendo luz rasante invernal que baña un suelo oscuro de piedra térmica acumuladora."
+},
+{
+"tip": "Diseñar ventilación cruzada efectiva",
+"idea": "Distribución diáfana con vanos alineados enfrentados que conectan visualmente un patio vegetal sombreado con la fachada principal."
+},
+{
+"tip": "Integrar masa térmica en muros",
+"idea": "Muro interior visto de mampostería de piedra caliza que almacena calor diurno en un salón cálido y sobrio."
+},
+{
+"tip": "Emplear revocos de cal natural",
+"idea": "Paredes maestras revocadas en estuco de cal transpirable en tono tierra suave que regulan la humedad ambiental."
+},
+{
+"tip": "Proteger con aleros corridos calculados",
+"idea": "Voladizo exterior de hormigón que bloquea el sol vertical en verano pero permite la entrada de luz baja invernal."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-13"
 }
 ],
 "obra": [

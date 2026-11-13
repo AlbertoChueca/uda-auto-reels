@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-12)
+# Cuaderno de ilustradora (2026-11-13)
 
-- Seguir haciendo: Fondos negro profundo con sutil iluminación rasante cálida dorada sobre planimetría técnica e isometrías nítidas.
-- Dejar de hacer: Composiciones de mobiliario o estilismo residencial («alacena», «banco de teca») que atraen público no profesional.
-- Probar: Esquemas gráficos de capas de instalaciones superpuestas y despieces constructivos vectoriales limpios sin texto invasivo ni ruido visual.
+- Seguir haciendo: Fondos negro profundo con iluminación puntual cálida dorada sobre detalles técnicos y capas vectoriales nítidas.
+- Dejar de hacer: Escenas de mobiliario interior o estilismo doméstico («alacenas», «bancos tapizados») que atraen público no profesional.
+- Probar: Despieces isométricos de encuentros constructivos críticos (cubierta-fachada, zapatas) en monocromo riguroso sin ruido visual ni texto.

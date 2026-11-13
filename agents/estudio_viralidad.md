@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-11-12)
+# Cuaderno de viralidad (2026-11-13)
 
-- Seguir haciendo: Retos directos al conocimiento y ego del arquitecto («Solo un arquitecto acierta los cuatro», «¿Qué es este plano?»).
-- Dejar de hacer: Ganchos impersonales o teóricos de historia («El libro más antiguo», 0 compartidos).
-- Probar: Dinámica «encuentra el error normativo en este detalle constructivo» para generar discusión técnica en comentarios y envíos entre socios de despacho.
+- Seguir haciendo: Retos directos al ego y conocimiento del arquitecto («Solo un arquitecto acierta los cuatro», récord de 2.445 views).
+- Dejar de hacer: Efemérides pasivas o curiosidades teóricas («El libro más antiguo», 0 compartidos).
+- Probar: Formato «Encuentra el fallo normativo/constructivo en este plano» para generar debate técnico en comentarios y envíos entre socios de despacho.
