@@ -1,6 +1,8 @@
-# Cuaderno de comunidad (2026-11-13)
+# Cuaderno de comunidad (2026-11-14)
 
-• Datos de audiencia: Sin comentarios recientes registrados en este ciclo; datos directos insuficientes. El volumen histórico (4-6 comentarios) responde exclusivamente a retos visuales o debates sobre cocinas.
-• Seguir haciendo: Cierres con preguntas de validación técnica que confronten la experiencia de obra del arquitecto.
-• Dejar de hacer: Mensajes puramente informativos sin pregunta final que invite a opinar.
-• Probar: Preguntar abiertamente: «¿Qué cálculo o plano prefieres no volver a hacer tú mismo en una entrega?».
+# Cuaderno de comunidad (2026-11-14)
+
+• Datos de audiencia: Pocos datos; sin comentarios nuevos registrados en este ciclo. La interacción previa (hasta 5 comentarios) se concentra en debates de distribución (cocinas) y gestión de horas.
+• Seguir haciendo: Preguntas finales que fuercen al arquitecto a tomar postura sobre decisiones de proyecto u horas dedicadas a tareas repetitivas.
+• Dejar de hacer: Cierres genéricos que no apelen a la rutina del despacho.
+• Probar: Pregunta directa en el post: «¿Qué parte del Proyecto de Ejecución te quita más fines de semana?».

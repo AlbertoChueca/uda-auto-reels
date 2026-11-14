@@ -930,5 +930,33 @@
 "fecha": "2026-11-13",
 "formato": "visual",
 "grupo": "antes_despues"
+},
+{
+"id": "portfolio:lamina:c_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-14",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:b_estructura",
+"tema": "portfolio",
+"fecha": "2026-11-14",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:c_detalles_estructura",
+"tema": "portfolio",
+"fecha": "2026-11-14",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:c_saneamiento",
+"tema": "portfolio",
+"fecha": "2026-11-14",
+"formato": "visual",
+"grupo": "top"
 }
 ]

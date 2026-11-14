@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-11-13)
+# Cuaderno de ritmo (2026-11-14)
 
-- Seguir haciendo: Ritmo visual ágil que sostiene la retención técnica por encima de 4.500 ms («Solo un arquitecto», 5.090 ms).
-- Dejar de hacer: Entradas lentas o introducciones narrativas que tarden más de 2 segundos en mostrar el plano en pantalla.
-- Probar: Impacto del detalle constructivo en el segundo 0–1, acelerando transiciones a cortes de 1,2 segundos con base sobria.
+- Seguir haciendo: Estructura visual inmersiva que retiene más de 10 segundos («Cerramientos», 10.550 ms; «POV: compras», 10.830 ms).
+- Dejar de hacer: Ritmos lentos con transiciones estáticas que caen a los 2.500 ms.
+- Probar: Dinamismo de cortes cada 1,3 segundos aplicado a despieces de planos técnicos para mantener retención alta.

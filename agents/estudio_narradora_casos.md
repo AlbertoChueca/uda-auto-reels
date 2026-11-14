@@ -1,5 +1,5 @@
-# Cuaderno de narradora_casos (2026-11-13)
+# Cuaderno de narradora_casos (2026-11-14)
 
-- Seguir haciendo: Escenas de tensión real en despacho y entregables técnicos tangibles («Capa a capa», «Top 4: lo que te llega cuando nos delegas»).
-- Dejar de hacer: Narrativas de autopromotor o cliente particular («POV: compras para reformar»).
-- Probar: Microhistorias de entregas al límite (visado de ejecución, justificación DB-HE/DB-SI) donde delegar a UDA evita trasnochar al titular del estudio.
+- Seguir haciendo: Fricciones reales de gestión de despachos («Plantilla o delegar por encargo», 89 clics; instalaciones, 3 clics).
+- Dejar de hacer: Debates abstractos o decorativos («Lujo de catálogo», score 8.15) que no movilizan al titular del estudio.
+- Probar: Casos de bloqueo por picos de entrega: visados inminentes, cambios de última hora y externalización del proyecto de ejecución.

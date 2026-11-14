@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-13)
+# Cuaderno de seo (2026-11-14)
 
-- Seguir haciendo: Palabras clave operativas de despacho: «proyecto de ejecución», «instalaciones», «planos», «CTE», «despacho».
-- Dejar de hacer: Términos generalistas de interiorismo y reforma («artesanía», «islas de cocina», «hogar consciente»).
-- Probar: Posicionar búsquedas de externalización y dolor técnico: «subcontratar proyecto de ejecución», «delineación externa», «justificación DB-HE».
+- Seguir haciendo: Palabras clave operativas de despacho: «instalaciones», «proyecto de ejecución», «planos», «cerramientos».
+- Dejar de hacer: Términos decorativos o vagos («hogar consciente», «casas con alma»).
+- Probar: Posicionar intenciones de búsqueda B2B: «externalizar delineación», «cálculo de instalaciones CTE», «apoyo técnico para arquitectos».

@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-11-13)
+# Cuaderno de diseno (2026-11-14)
 
-• Seguir haciendo: Formato infografía animada sobre fondo negro/carbón, garantizando legibilidad técnica y retenciones de más de 5 a 10 segundos.
-• Dejar de hacer: Formatos render estático o carrusel; quedan en la parte baja del score (8.52 - 8.77) con mínimo engagement.
-• Probar: Macro-detalle a plano técnico con acento bronce UDA para resaltar cotas críticas, asegurando texto 100% en zona segura central.
+# Cuaderno de diseno (2026-11-14)
+
+• Seguir haciendo: Formato infografía animada sobre fondo carbón; concentra el top del ranking (scores hasta 9.84) y retenciones superiores a 10 segundos.
+• Dejar de hacer: Formato render estático; se ubica consistentemente en la parte baja (scores 7.83 - 8.77).
+• Probar: Detalle técnico en plano 2D con llamada gráfica en bronce UDA para resaltar cotas y espesores dentro de la zona segura central.

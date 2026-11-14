@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-11-13)
+# Cuaderno de viralidad (2026-11-14)
 
-- Seguir haciendo: Retos directos al ego y conocimiento del arquitecto («Solo un arquitecto acierta los cuatro», récord de 2.445 views).
-- Dejar de hacer: Efemérides pasivas o curiosidades teóricas («El libro más antiguo», 0 compartidos).
-- Probar: Formato «Encuentra el fallo normativo/constructivo en este plano» para generar debate técnico en comentarios y envíos entre socios de despacho.
+- Seguir haciendo: Retos directos al criterio profesional («Solo un arquitecto acierta», genera debate y compartidos).
+- Dejar de hacer: Curiosidades teóricas («El libro más antiguo», 0 compartidos).
+- Probar: Formato «Encuentra el error de CTE en este detalle» para provocar comentarios y envíos directos entre compañeros de estudio.

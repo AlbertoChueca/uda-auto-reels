@@ -1,71 +1,76 @@
 {
-"fecha": "2026-11-13",
+"fecha": "2026-11-14",
 "temas": [
 {
-"tema": "Interiorismo emocional y sensorial",
-"por_que": "La gente busca espacios que transmitan calidez y cuenten una historia personal, alejándose de las casas de catálogo frías y perfectas."
+"tema": "Minimalismo cálido y sensorial",
+"por_que": "La gente busca hogares acogedores, huyendo del blanco hospital. Se priorizan texturas naturales, luz cálida y espacios que transmitan paz visual sin estar recargados."
 },
 {
-"tema": "El baño como spa doméstico",
-"por_que": "Se viralizan las reformas que convierten el baño en un refugio de bienestar, destacando hornacinas integradas a la arquitectura y materiales crudos."
+"tema": "El regreso de la madera oscura (Sapeli y Nogal)",
+"por_que": "Tras años de maderas claras estilo nórdico, las maderas oscuras típicas de los pisos españoles de los 70 y 80 vuelven para aportar elegancia, contraste y un toque retro en puertas y mobiliario."
 },
 {
-"tema": "Diseño bioclimático visible",
-"por_que": "Mostrar cómo la luz natural, la ventilación cruzada y los aislamientos mejoran el confort térmico en invierno sin gastar de más genera mucha interacción."
+"tema": "Cerámica y porcelánico de gran formato",
+"por_que": "Se viralizan los baños y cocinas sin apenas juntas. Da sensación de amplitud, limpieza y lujo accesible imitando piedra natural o cemento pulido."
 },
 {
-"tema": "Muebles con historia y texturas reales",
-"por_que": "Hay un boom por recuperar piezas antiguas o de mercadillo y mezclarlas con paredes de estuco, cal o maderas con vetas muy marcadas."
+"tema": "Tendencia 'Bold' y formas curvas",
+"por_que": "Los arcos en pasillos, sofás curvos y mesas redondeadas rompen la rigidez de las líneas rectas, haciendo los espacios más fluidos, orgánicos y relajantes."
 },
 {
-"tema": "Espacios fluidos y curvas útiles",
-"por_que": "Los arcos, bordes suaves y transiciones sin puertas rígidas generan mayor amplitud visual y un recorrido más orgánico en la vivienda."
+"tema": "Cocinas integradas pero delimitadas",
+"por_que": "Gusta el concepto abierto, pero se buscan soluciones como cerramientos de cristal acanalado o puertas escamoteables para evitar olores y esconder el desorden visual."
+},
+{
+"tema": "Brutalismo suave en interiores",
+"por_que": "Mostrar materiales en bruto como microcemento, vigas vistas o paredes texturizadas, pero suavizados con textiles cálidos, maderas y luz indirecta para no perder confort."
 }
 ],
 "estilos": [
-"verde oliva",
-"marrón chocolate y tonos arcilla",
-"madera oscura con veta visible",
-"acero inoxidable y cromo cepillado",
-"piedra natural y travertino",
-"estilo bistró europeo"
+"marrón chocolate",
+"madera de sapeli",
+"amarillo mantequilla",
+"microcemento arena",
+"azul cobalto intenso",
+"suelos de terracota"
 ],
 "formatos": [
-"Carruseles de fotos con portada gancho y reordenamiento estratégico",
-"Reels de antes y después con transiciones dinámicas al ritmo del audio",
-"Mini-vlogs narrados mostrando el proceso real de una reforma",
-"Vídeos ASMR destacando el sonido y la textura de los materiales"
+"Antes y después con transiciones rápidas de chasquido o tapando la cámara",
+"Storytime: 'Errores que no debes cometer al reformar tu casa'",
+"ASMR visual y sonoro tocando texturas de materiales (maderas, piedras, cerámicas)",
+"Tours rápidos de 20 segundos por estancias con audios virales en tendencia",
+"Presupuestos desglosados y transparentes: 'Cuánto me costó reformar esta cocina'"
 ],
 "busquedas": [
-"ideas salon acogedor invierno",
-"reforma baño sin obras",
-"colores tendencia pared 2026",
-"decoracion verde oliva",
-"casas calidas minimalistas",
+"ideas reforma baño pequeño",
+"colores tendencia salon 2026",
+"cocinas modernas sin tiradores",
+"errores al reformar casa",
+"minimalismo calido decoracion",
 "como combinar madera oscura",
-"errores al reformar cocina"
+"cerramientos cristal cocina"
 ],
 "hashtags": [
-"#interiorismoemocional",
-"#reformasespaña",
-"#decoracionotoño",
-"#casasreales",
-"#bañospa",
+"#reformasintegrales",
+"#interiorismoespaña",
 "#tendenciasdeco2026",
-"#diseñobioclimatico",
-"#maderaoscura"
+"#arquitecturainterior",
+"#decoraciondeinteriores",
+"#antesydespuesreforma",
+"#casasreales",
+"#tipsdecoracion"
 ],
 "quemado": [
-"El blanco nuclear y los grises fríos en todas las paredes",
-"El minimalismo aséptico que parece un hospital",
-"El abuso del latón dorado en griferías y lámparas",
-"El mármol blanco con veta gris sobreutilizado en cocinas"
+"El 'total white' o gris frío en todas las paredes y suelos",
+"Muebles hechos con palets de madera",
+"Paredes de acento con papel pintado de hojas tropicales gigantes",
+"Tiras de luces LED RGB visibles en techos o rodapiés"
 ],
 "por_tipo": {
-"galeria": "interiorismo texturas cal y madera",
-"tips": "arquitectura bioclimatica y confort termico",
-"antes_despues": "reforma baño estilo spa travertino",
-"proceso": "rehabilitacion casa de pueblo bioclimatica"
+"galeria": "suelo terracota salon moderno",
+"tips": "porcelanico gran formato sin juntas",
+"antes_despues": "reforma galeria antes y despues",
+"proceso": "reforma casa arquitectura organica arcos"
 },
 "musica_tiktok": [
 "Cool Girl · Jayde Mari",
@@ -80,15 +85,15 @@
 "Kaleidoscope · Adrián Berenguer"
 ],
 "fuentes": [
-"https://www.larazon.es/sociedad/tendencias-interiorismo-2026-asi-sera-nueva-decoracion-hogares-segun-experta_2025120767538b34827012000185b9b9.html",
-"https://www.elmueble.com/decoracion/tendencias-decoracion-dormitorios-2026-2027_54123",
-"https://www.nordicnest.es/inspiracion/tendencias-de-interiorismo/tendencias-de-decoracion-otono/",
-"https://plecstudio.com/tendencias-arquitectura-alta-gama-2026/"
+"https://www.arquitecturaydiseno.es/decoracion/tendencias-decoracion-2026_12906",
+"https://www.hola.com/decoracion/galeria/20261001/colores-tendencia-decoracion-otono/",
+"https://www.elmueble.com/decoracion/tendencias-deco-otono-2026",
+"https://www.xataka.com/otros/cruzada-cerramientos-arquitectos-empenados-que-ciudades-espanolas-vuelvan-a-ser-bonitas"
 ],
 "piezas": {
-"galeria": "t20261113g",
-"tips": "t20261113t",
-"antes_despues": "t20261113a",
-"proceso": "t20261113p"
+"galeria": "t20261114g",
+"tips": "t20261114t",
+"antes_despues": "t20261114a",
+"proceso": "t20261114p"
 }
 }

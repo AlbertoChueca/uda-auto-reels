@@ -1,5 +1,7 @@
-# Cuaderno de gancho (2026-11-13)
+# Cuaderno de gancho (2026-11-14)
 
-• Seguir haciendo: Retos de validación profesional y fragmentos de planos («Solo un arquitecto acierta los cuatro», score 11.62, 2.445 views; «Te enseño un trozo de plano: ¿qué es?», score 11.13).
-• Dejar de hacer: Ganchos históricos o biográficos desconectados del día a día del estudio («El «Nobel» de la arquitectura», score 8.77; «Proyectó hasta los 104 años», score 8.49).
-• Probar: Reto normativo directo en 2 segundos: «¿Detectas el fallo de CTE en este encuentro de cubierta antes de visar?».
+# Cuaderno de gancho (2026-11-14)
+
+• Seguir haciendo: Ganchos de debate proyectual directo («Cerramientos que transforman cocinas», score 9.84) y preguntas sobre horas de trabajo («¿Cuántas horas te llevan las instalaciones?», score 9.58).
+• Dejar de hacer: Efemérides y anécdotas biográficas («Proyectó hasta los 104 años», score 7.83; «El «Nobel» de la arquitectura», score 8.77).
+• Probar: Gancho de fricción técnica: «El encuentro de fachada que el 80% detalla mal antes de visar».

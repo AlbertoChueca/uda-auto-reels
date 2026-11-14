@@ -1,31 +1,32 @@
-# Cuaderno de cazatendencias (2026-11-13)
+# Cuaderno de cazatendencias (2026-11-14)
 
 ## Tendencias de la semana
-- Interiorismo emocional y sensorial: La gente busca espacios que transmitan calidez y cuenten una historia personal, alejándose de las casas de catálogo frías y perfectas.
-- El baño como spa doméstico: Se viralizan las reformas que convierten el baño en un refugio de bienestar, destacando hornacinas integradas a la arquitectura y materiales crudos.
-- Diseño bioclimático visible: Mostrar cómo la luz natural, la ventilación cruzada y los aislamientos mejoran el confort térmico en invierno sin gastar de más genera mucha interacción.
-- Muebles con historia y texturas reales: Hay un boom por recuperar piezas antiguas o de mercadillo y mezclarlas con paredes de estuco, cal o maderas con vetas muy marcadas.
-- Espacios fluidos y curvas útiles: Los arcos, bordes suaves y transiciones sin puertas rígidas generan mayor amplitud visual y un recorrido más orgánico en la vivienda.
+- Minimalismo cálido y sensorial: La gente busca hogares acogedores, huyendo del blanco hospital. Se priorizan texturas naturales, luz cálida y espacios que transmitan paz visual sin estar recargados.
+- El regreso de la madera oscura (Sapeli y Nogal): Tras años de maderas claras estilo nórdico, las maderas oscuras típicas de los pisos españoles de los 70 y 80 vuelven para aportar elegancia, contraste y un toque retro en puertas y mobiliario.
+- Cerámica y porcelánico de gran formato: Se viralizan los baños y cocinas sin apenas juntas. Da sensación de amplitud, limpieza y lujo accesible imitando piedra natural o cemento pulido.
+- Tendencia 'Bold' y formas curvas: Los arcos en pasillos, sofás curvos y mesas redondeadas rompen la rigidez de las líneas rectas, haciendo los espacios más fluidos, orgánicos y relajantes.
+- Cocinas integradas pero delimitadas: Gusta el concepto abierto, pero se buscan soluciones como cerramientos de cristal acanalado o puertas escamoteables para evitar olores y esconder el desorden visual.
+- Brutalismo suave en interiores: Mostrar materiales en bruto como microcemento, vigas vistas o paredes texturizadas, pero suavizados con textiles cálidos, maderas y luz indirecta para no perder confort.
 
 ## Estilos
-- verde oliva
-- marrón chocolate y tonos arcilla
-- madera oscura con veta visible
-- acero inoxidable y cromo cepillado
-- piedra natural y travertino
-- estilo bistró europeo
+- marrón chocolate
+- madera de sapeli
+- amarillo mantequilla
+- microcemento arena
+- azul cobalto intenso
+- suelos de terracota
 
 ## Para nuestro equipo
-- Mostrar encuentros constructivos reales: el contraste entre acero cepillado y maderas oscuras atrae tanto al arquitecto técnico como al cliente final.
-- Descartar por completo el blanco nuclear aséptico y las griferías doradas pulidas; el interés actual está en la textura mineral honesta y el cromo mate.
-- Abordar el diseño bioclimático desde la imagen sensorial: enseñar cómo la radiación solar invernal y los materiales densos generan confort visible.
-- Proponer curvas con función arquitectónica clara (fluidez de paso, embocaduras de luz) para diferenciarse del mero ornamento curvo superficial.
+- Aprovechar el fuerte tirón de la terracota y el barro cocido integrados en arquitectura contemporánea y limpia.
+- Enfatizar la precisión en el despiece y colocación de placas cerámicas de gran formato, algo muy valorado por estudios técnicos.
+- Evitar por completo los blancos hospitalarios, grises industriales fríos y tiras led vistas, ya percibidos como impersonales.
+- Priorizar composiciones táctiles que transmitan calma sensorial mediante acabados mates, texturas ricas y luz rasante.
 
 ## Ya quemado
-- El blanco nuclear y los grises fríos en todas las paredes
-- El minimalismo aséptico que parece un hospital
-- El abuso del latón dorado en griferías y lámparas
-- El mármol blanco con veta gris sobreutilizado en cocinas
+- El 'total white' o gris frío en todas las paredes y suelos
+- Muebles hechos con palets de madera
+- Paredes de acento con papel pintado de hojas tropicales gigantes
+- Tiras de luces LED RGB visibles en techos o rodapiés
 
 ## Música en tendencia (TikTok, España)
 - Cool Girl · Jayde Mari

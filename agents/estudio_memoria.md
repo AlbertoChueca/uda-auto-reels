@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-11-13)
+# Cuaderno de memoria (2026-11-14)
 
-- Seguir haciendo: Desgloses sistemáticos de instalaciones y planos técnicos («Capa a capa» logró 18 guardados; «Solo un arquitecto», 16).
-- Dejar de hacer: Consejos genéricos de diseño o decoración («Hogar consciente», «Lujo de catálogo», 0 guardados).
-- Probar: Recordatorio explícito: «Guarda este detalle para tu próxima memoria de ejecución», enfocado en nudos constructivos problemáticos.
+- Seguir haciendo: Despieces sistemáticos y listas técnicas («5 claves», 4 guardados; «Capa a capa», 3 guardados).
+- Dejar de hacer: Comparativas rápidas de consumo efímero («Boceto al render», 0 guardados).
+- Probar: Llamada explícita al guardado: «Guarda este criterio de trazado para tu próximo proyecto de ejecución».

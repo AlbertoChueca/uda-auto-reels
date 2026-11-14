@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-11-13)
+# Cuaderno de directora_creativa (2026-11-14)
 
-- Seguir haciendo: Formato portfolio técnico y despieces de planimetría real («Solo un arquitecto», score 11.62; «Capa a capa», 18 guardados).
-- Dejar de hacer: Temas decorativos residenciales B2C («Islas de cocina») e historia/efemérides («El Nobel de la arquitectura»).
-- Probar: Axonometrías explotadas de encuentros constructivos singulares y detalles del CTE con estética sobria y técnica.
+- Seguir haciendo: Desgloses de planos técnicos e instalaciones («Capa a capa», «¿Cuántas horas te llevan...?», score >9.5).
+- Dejar de hacer: Efemérides y biografías («Proyectó hasta los 104 años», score 7.83; «El Nobel», 0 clics).
+- Probar: Trasladar el éxito visual de cerramientos a axonométricas explotadas de encuentros constructivos singulares.

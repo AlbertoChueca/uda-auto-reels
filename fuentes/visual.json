@@ -871,6 +871,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-13"
+},
+{
+"id": "t20261114g",
+"hook": "¿Pondrías suelo de terracota hoy?",
+"cierre": "¿Terracota o microcemento?",
+"escenas": [
+{
+"idea": "Salón amplio con suelo de barro cocido mate, alfombra de lino crudo y ventanal abierto al jardín.",
+"label": "Salón en calma"
+},
+{
+"idea": "Cocina abierta con baldosas manuales rojizas combinadas con carpintería en nogal y encimera de caliza.",
+"label": "Cocina y nogal"
+},
+{
+"idea": "Patio interior andaluz con pavimento tradicional de terracota en espiga rodeado de muros encalados.",
+"label": "Patio en espiga"
+},
+{
+"idea": "Baño con solado continuo de barro cocido tratado, lavabo de piedra y grifería de cobre envejecido.",
+"label": "Baño artesanal"
+},
+{
+"idea": "Comedor bañado por sol de tarde con pavimento rojizo geométrico y mesa de roble macizo natural.",
+"label": "Comedor cálido"
+},
+{
+"idea": "Dormitorio sereno con suelo de baldosas de terracota cuadradas, ropa de cama blanca y luz tenue.",
+"label": "Dormitorio sobrio"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-14"
 }
 ],
 "proceso": [
@@ -1022,6 +1055,13 @@
 "descripcion": "una vivienda entre medianeras rehabilitada con patios bioclimáticos, muros de tapial y carpinterías de nogal",
 "tendencia": true,
 "fecha": "2026-11-13"
+},
+{
+"id": "t20261114p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar reformada con líneas orgánicas, suelo continuo de terracota y ventanales en arco.",
+"tendencia": true,
+"fecha": "2026-11-14"
 }
 ],
 "antes_despues": [
@@ -1190,6 +1230,14 @@
 "estilo": "baño spa monolítico con travertino pulido, hornacinas iluminadas y grifería empotrada de cromo cepillado",
 "tendencia": true,
 "fecha": "2026-11-13"
+},
+{
+"id": "t20261114a",
+"tipo": "estancia",
+"descripcion": "una galería cerrada con carpintería de aluminio dorado, suelo de sintasol desgastado y persianas rotas.",
+"estilo": "Brutalismo suave con microcemento arena, carpintería oculta y banco corrido de madera maciza.",
+"tendencia": true,
+"fecha": "2026-11-14"
 }
 ],
 "tips": [
@@ -1762,6 +1810,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-13"
+},
+{
+"id": "t20261114t",
+"hook": "5 claves para acertar con gran formato",
+"tips": [
+{
+"tip": "Minimiza las juntas visuales",
+"idea": "Frontal de ducha con una sola pieza porcelánica continua que imita piedra arenisca sin interrupciones."
+},
+{
+"tip": "Elige acabados mates o apomazados",
+"idea": "Isla de cocina monolítica revestida en porcelánico grisáceo mate con textura sedosa a la luz natural."
+},
+{
+"tip": "Alinea las vetas con precisión",
+"idea": "Pared de salón con dos grandes placas enfrentadas creando un dibujo simétrico en libro perfectamente ejecutado."
+},
+{
+"tip": "Planifica los accesos de obra",
+"idea": "Placa cerámica de gran tamaño entrando protegida por un amplio ventanal corredero hacia el salón."
+},
+{
+"tip": "Combínalo con maderas cálidas",
+"idea": "Revestimiento continuo de piedra sinterizada junto a panelados de roble acanalado y luz indirecta rasante."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-14"
 }
 ],
 "obra": [
