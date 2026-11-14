@@ -958,5 +958,12 @@
 "fecha": "2026-11-14",
 "formato": "visual",
 "grupo": "top"
+},
+{
+"id": "visual:t20261114g",
+"tema": "visual",
+"fecha": "2026-11-14",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
