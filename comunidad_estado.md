@@ -1,10 +1,10 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-14 06:42 UTC · 0 respuestas_
+_Última pasada: 2026-11-14 11:50 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"ARpELPNEe7KnbIO-BynmO9r"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"A0OCcrxbfQWQWayq-3d4DI1"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -36,6 +36,8 @@ _Última pasada: 2026-11-14 06:42 UTC · 0 respuestas_
 | 2026-11-13 | linkedin | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-11-13 | tiktok | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-11-13 | linkedin | antes_despues | POV: compras para reformar | 1 | — |
+| 2026-11-14 | tiktok | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
+| 2026-11-14 | linkedin | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
 | 2026-11-10 | tiktok | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | linkedin | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
