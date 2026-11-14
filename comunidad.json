@@ -1320,12 +1320,14 @@
 },
 "linkedin:6af86964ad6f8aba90efb600": {
 "pregunta": "urn:li:comment:(urn:li:ugcPost:7527369896721039360,7527370352004435968)",
-"personas": [],
+"personas": [
+"uniondearquitectos"
+],
 "comentarios": 1
 }
 },
 "errores": {
-"instagram": "Instagram comentarios 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":460,\"fbtrace_id\":\"A_lxL6rnEgcUvvsPyxYJY-t\"}}"
+"instagram": "Instagram comentarios 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":460,\"fbtrace_id\":\"AjxlFNt4BtPI65i0p510uk-\"}}"
 },
 "nativos": {
 "6ad7bfa4543d02f449a6bd81": "7698832867194948896",
