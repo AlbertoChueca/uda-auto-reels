@@ -1,17 +1,13 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-13 23:41 UTC · 0 respuestas_
+_Última pasada: 2026-11-14 06:42 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"Az1Fvn2U0pcCTuDQfpTcDCA"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"ARpELPNEe7KnbIO-BynmO9r"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-06 | tiktok | inspiracion | Proyectó hasta los 104 años | 0 | — |
-| 2026-11-06 | linkedin | inspiracion | Proyectó hasta los 104 años | 0 | — |
-| 2026-11-06 | tiktok | antes_despues | POV: compras para reformar | 2 | — |
-| 2026-11-06 | linkedin | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-11-07 | tiktok | galeria | Cerramientos que transforman cocinas | 1 | — |
 | 2026-11-07 | linkedin | galeria | Cerramientos que transforman cocinas | 1 | — |
 | 2026-11-07 | tiktok | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
