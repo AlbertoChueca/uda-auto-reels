@@ -993,5 +993,12 @@
 "fecha": "2026-11-15",
 "formato": "visual",
 "grupo": "capas"
+},
+{
+"id": "visual:o2",
+"tema": "visual",
+"fecha": "2026-11-15",
+"formato": "visual",
+"grupo": "obra"
 }
 ]
