@@ -1,10 +1,10 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-15 11:51 UTC · 1 respuestas_
+_Última pasada: 2026-11-15 14:50 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"AH3O84ObAJSXNJjwUYmjmkf"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"ACKxZAKixFOAwgPRs1GCVK5"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -38,6 +38,8 @@ _Última pasada: 2026-11-15 11:51 UTC · 1 respuestas_
 | 2026-11-14 | linkedin | galeria | ¿Pondrías suelo de terracota hoy? | 1 | — |
 | 2026-11-15 | tiktok | portfolio | Capa a capa: las instalaciones de una vi | 1 | — |
 | 2026-11-15 | linkedin | portfolio | Capa a capa: las instalaciones de una vi | 1 | — |
+| 2026-11-15 | tiktok | obra | POV: tu casa, de la zanja a la llave | 1 | — |
+| 2026-11-15 | linkedin | obra | POV: tu casa, de la zanja a la llave | 1 | — |
 | 2026-11-10 | tiktok | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-10 | linkedin | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
