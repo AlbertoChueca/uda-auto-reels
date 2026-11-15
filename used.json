@@ -965,5 +965,33 @@
 "fecha": "2026-11-14",
 "formato": "visual",
 "grupo": "galeria"
+},
+{
+"id": "portfolio:lamina:a_fontaneria",
+"tema": "portfolio",
+"fecha": "2026-11-15",
+"formato": "visual",
+"grupo": "capas"
+},
+{
+"id": "portfolio:lamina:a_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-15",
+"formato": "visual",
+"grupo": "capas"
+},
+{
+"id": "portfolio:lamina:a_iluminacion",
+"tema": "portfolio",
+"fecha": "2026-11-15",
+"formato": "visual",
+"grupo": "capas"
+},
+{
+"id": "portfolio:lamina:a_cimentacion",
+"tema": "portfolio",
+"fecha": "2026-11-15",
+"formato": "visual",
+"grupo": "capas"
 }
 ]

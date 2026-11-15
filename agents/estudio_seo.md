@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-14)
+# Cuaderno de seo (2026-11-15)
 
-- Seguir haciendo: Palabras clave operativas de despacho: «instalaciones», «proyecto de ejecución», «planos», «cerramientos».
-- Dejar de hacer: Términos decorativos o vagos («hogar consciente», «casas con alma»).
-- Probar: Posicionar intenciones de búsqueda B2B: «externalizar delineación», «cálculo de instalaciones CTE», «apoyo técnico para arquitectos».
+- Seguir haciendo: Términos de búsqueda con intención profesional: «instalaciones», «proyecto de ejecución», «cerramientos», «reformar».
+- Dejar de hacer: Etiquetas conceptuales o poéticas sin volumen B2B («hogar consciente», «casas con alma»).
+- Probar: Posicionar intenciones transaccionales de arquitectos: «subcontratar delineación BIM», «cálculo CTE instalaciones», «soporte proyectos de ejecución».

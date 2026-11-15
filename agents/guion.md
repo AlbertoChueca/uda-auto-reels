@@ -1,7 +1,5 @@
-# Cuaderno de guion (2026-11-14)
+# Cuaderno de guion (2026-11-15)
 
-# Cuaderno de guion (2026-11-14)
-
-• Seguir haciendo: Explicación secuencial de instalaciones y soluciones constructivas concretas («Capa a capa», «Cerramientos»), logrando los mayores tiempos de visionado (>10.500 ms).
-• Dejar de hacer: Guiones conceptuales o comparativas estéticas sin criterio constructivo («Del boceto al render», score 8.25).
-• Probar: Guion técnico en 3 pasos: cómo resolver el paso de patinillos de instalaciones sin penalizar metros útiles en vivienda.
+• Seguir haciendo: Guiones de desglose constructivo e instalaciones capa a capa; logran la máxima retención del histórico (>10.500 ms).
+• Dejar de hacer: Comparativas estéticas vacías sin resolución técnica («Del boceto al render», scores <8.40 y retenciones de 2.800 ms).
+• Probar: Guion técnico de 45 segundos: checklist de 3 puntos críticos al replantear patinillos de instalaciones en reformas integrales para no perder metros útiles.

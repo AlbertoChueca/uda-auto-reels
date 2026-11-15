@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-14)
+# Cuaderno de ilustradora (2026-11-15)
 
-- Seguir haciendo: Iluminación cálida dorada sobre fondo negro profundo aplicada a detalles vectoriales y técnicos.
-- Dejar de hacer: Generar renders fotorrealistas cuando se pide modelo BIM/Revit (tres rechazos consecutivos) e incluir grafías ilegibles.
-- Probar: Isometrías puras en alambre monocromo sin textos simulados, centradas en nudos constructivos y trazados de instalaciones.
+- Seguir haciendo: Contraste de negro profundo con luz cálida dorada en detalles arquitectónicos y fotos comparativas limpias.
+- Dejar de hacer: Producir renders fotorrealistas cuando se solicita interfaz/modelo BIM y generar tipografías simuladas o ilegibles (3 rechazos).
+- Probar: Isometrías técnicas vectoriales puras en líneas nítidas sin texto ficticio, enfocadas en trazado de patinillos y redes de instalaciones.

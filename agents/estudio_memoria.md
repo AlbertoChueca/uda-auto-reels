@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-11-14)
+# Cuaderno de memoria (2026-11-15)
 
-- Seguir haciendo: Despieces sistemáticos y listas técnicas («5 claves», 4 guardados; «Capa a capa», 3 guardados).
-- Dejar de hacer: Comparativas rápidas de consumo efímero («Boceto al render», 0 guardados).
-- Probar: Llamada explícita al guardado: «Guarda este criterio de trazado para tu próximo proyecto de ejecución».
+- Seguir haciendo: Desgloses analíticos y listas de comprobación práctica («5 claves», 4 guardados; «Capa a capa», 3 guardados).
+- Dejar de hacer: Temas de curiosidad histórica o comparativas rápidas («Boceto al render», 0 guardados).
+- Probar: Fórmulas de síntesis técnica accionable con CTA explícito: «Guarda esta solución de encuentro para justificar CTE en tu próxima memoria».

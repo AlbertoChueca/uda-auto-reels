@@ -1,41 +1,41 @@
-# Cuaderno de cazatendencias (2026-11-14)
+# Cuaderno de cazatendencias (2026-11-15)
 
 ## Tendencias de la semana
-- Minimalismo cálido y sensorial: La gente busca hogares acogedores, huyendo del blanco hospital. Se priorizan texturas naturales, luz cálida y espacios que transmitan paz visual sin estar recargados.
-- El regreso de la madera oscura (Sapeli y Nogal): Tras años de maderas claras estilo nórdico, las maderas oscuras típicas de los pisos españoles de los 70 y 80 vuelven para aportar elegancia, contraste y un toque retro en puertas y mobiliario.
-- Cerámica y porcelánico de gran formato: Se viralizan los baños y cocinas sin apenas juntas. Da sensación de amplitud, limpieza y lujo accesible imitando piedra natural o cemento pulido.
-- Tendencia 'Bold' y formas curvas: Los arcos en pasillos, sofás curvos y mesas redondeadas rompen la rigidez de las líneas rectas, haciendo los espacios más fluidos, orgánicos y relajantes.
-- Cocinas integradas pero delimitadas: Gusta el concepto abierto, pero se buscan soluciones como cerramientos de cristal acanalado o puertas escamoteables para evitar olores y esconder el desorden visual.
-- Brutalismo suave en interiores: Mostrar materiales en bruto como microcemento, vigas vistas o paredes texturizadas, pero suavizados con textiles cálidos, maderas y luz indirecta para no perder confort.
+- Minimalismo cálido y 'Lujo Humano': La gente huye de los espacios fríos de catálogo. Buscan casas que se sientan vividas, con texturas táctiles, formas curvas y materiales honestos que abracen visualmente.
+- El regreso de la madera oscura: Tras años de maderas nórdicas blanqueadas, el nogal y el roble oscuro aportan profundidad, elegancia y un toque retro de los años 70 que está arrasando en los vídeos de transformaciones.
+- Baños tipo spa con superficies continuas: El microcemento y los porcelánicos de gran formato sin juntas, junto con hornacinas integradas en la pared, dan sensación de refugio de bienestar, lujo silencioso y limpieza visual.
+- Cocinas con zona de trabajo oculta: Se mantiene la cocina abierta al salón para socializar, pero se viralizan las puertas ocultas o paneles correderos que esconden la zona de fuegos, los electrodomésticos y el desorden.
+- Color Drenching (Baño de color): Pintar paredes, techos, puertas y molduras exactamente del mismo tono (especialmente tonos tierra o terracota) crea atmósferas envolventes y resulta visualmente muy impactante en redes.
+- Navidad en tonos chocolate y oliva: De cara a las fiestas de este año, los vídeos de decoración navideña rechazan el rojo tradicional y apuestan por marrones, verde salvia y champagne para un look mucho más sofisticado y natural.
 
 ## Estilos
+- madera de nogal
+- verde oliva
 - marrón chocolate
-- madera de sapeli
-- amarillo mantequilla
-- microcemento arena
-- azul cobalto intenso
-- suelos de terracota
+- microcemento continuo
+- terracota suave
+- estilo mediterráneo contemporáneo
 
 ## Para nuestro equipo
-- Aprovechar el fuerte tirón de la terracota y el barro cocido integrados en arquitectura contemporánea y limpia.
-- Enfatizar la precisión en el despiece y colocación de placas cerámicas de gran formato, algo muy valorado por estudios técnicos.
-- Evitar por completo los blancos hospitalarios, grises industriales fríos y tiras led vistas, ya percibidos como impersonales.
-- Priorizar composiciones táctiles que transmitan calma sensorial mediante acabados mates, texturas ricas y luz rasante.
+- Aprovechar la sofisticación de la paleta chocolate y verde oliva para desmarcarse del rojo festivo tradicional.
+- Evitar los interiores clínicos completamente blancos; la audiencia busca tactilidad, curvas amables y madera con veta visible.
+- Destacar soluciones de arquitectura que resuelvan el desorden cotidiano sin renunciar a la continuidad de los espacios.
+- Priorizar texturas honestas como mortero de cal, microcemento y piedra apomazada frente a acabados sintéticos o brillantes.
 
 ## Ya quemado
-- El 'total white' o gris frío en todas las paredes y suelos
-- Muebles hechos con palets de madera
-- Paredes de acento con papel pintado de hojas tropicales gigantes
-- Tiras de luces LED RGB visibles en techos o rodapiés
+- El minimalismo frío con exceso de blanco clínico y gris azulado
+- Las maderas muy claras o blanqueadas estilo nórdico masivo
+- El 'rojo inesperado' (ahora sustituido por naranja retro o burdeos)
+- Árboles de Navidad recargados con espumillón y plástico brillante
 
 ## Música en tendencia (TikTok, España)
+- Dance Like Nobody’s Watching - Instrumental Version · Siine
 - Cool Girl · Jayde Mari
 - cool girls · Sonatara
-- Dance Like Nobody’s Watching - Instrumental Version · Siine
 - Man on the Run · Jon Sumner
 - Flowers · Adrián Berenguer
 - 古风 大气 修仙 影视配乐 · 当歌音乐
 - Neon Bass · Tangelene Bolton
 - 危机压迫 (F) · Music Time
-- 浪漫 诙谐 生活 · Victoria
-- Kaleidoscope · Adrián Berenguer
+- Bulls · Mary Riddle
+- One More Time · Jamie Mercer

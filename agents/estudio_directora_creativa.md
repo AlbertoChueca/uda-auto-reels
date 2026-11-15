@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-11-14)
+# Cuaderno de directora_creativa (2026-11-15)
 
-- Seguir haciendo: Desgloses de planos técnicos e instalaciones («Capa a capa», «¿Cuántas horas te llevan...?», score >9.5).
-- Dejar de hacer: Efemérides y biografías («Proyectó hasta los 104 años», score 7.83; «El Nobel», 0 clics).
-- Probar: Trasladar el éxito visual de cerramientos a axonométricas explotadas de encuentros constructivos singulares.
+- Seguir haciendo: Conceptos de arquitectura técnica real e interiorismo constructivo (cerramientos y despiece de instalaciones, scores >9.5).
+- Dejar de hacer: Formatos de boceto a render y efemérides teóricas (scores <8.5 y baja retención).
+- Probar: Axonométricas explotadas de encuentros singulares que aúnen el atractivo visual de los cerramientos con el rigor técnico del proyecto de ejecución.

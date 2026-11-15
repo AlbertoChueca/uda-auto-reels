@@ -1,8 +1,6 @@
-# Cuaderno de comunidad (2026-11-14)
+# Cuaderno de comunidad (2026-11-15)
 
-# Cuaderno de comunidad (2026-11-14)
-
-• Datos de audiencia: Pocos datos; sin comentarios nuevos registrados en este ciclo. La interacción previa (hasta 5 comentarios) se concentra en debates de distribución (cocinas) y gestión de horas.
-• Seguir haciendo: Preguntas finales que fuercen al arquitecto a tomar postura sobre decisiones de proyecto u horas dedicadas a tareas repetitivas.
-• Dejar de hacer: Cierres genéricos que no apelen a la rutina del despacho.
-• Probar: Pregunta directa en el post: «¿Qué parte del Proyecto de Ejecución te quita más fines de semana?».
+• Datos de audiencia: Pocos datos; no hay comentarios de texto registrados en este periodo. La interacción cuantitativa (3 a 5 comentarios) se concentra en dilemas de distribución (cocinas) y gestión de horas en el despacho.
+• Seguir haciendo: Preguntas de remate que polaricen sobre soluciones de proyecto o roces con el cliente.
+• Dejar de hacer: Cierres neutros que no interroguen directamente la práctica del arquitecto.
+• Probar: Pregunta de cierre al post: «¿Qué porcentaje de tus clientes te pide tirar tabiques de cocina y cuántos te piden cerramiento acristalado?».

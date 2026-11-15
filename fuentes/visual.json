@@ -904,6 +904,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-14"
+},
+{
+"id": "t20261115g",
+"hook": "Interiores en chocolate y oliva",
+"cierre": "¿Cuál guardarías primero?",
+"escenas": [
+{
+"idea": "Salón amplio con paredes verde oliva mate, sofá tapizado en bouclé crudo y mesa de centro de nogal macizo.",
+"label": "Salón envolvente"
+},
+{
+"idea": "Comedor luminoso con mesa de roble oscuro, sillas tapizadas en terciopelo marrón chocolate y lámpara suspendida de lino natural.",
+"label": "Comedor sereno"
+},
+{
+"idea": "Rincón de lectura con butaca tapizada en lana oliva, estantería empotrada de nogal oscuro y luz cálida rasante.",
+"label": "Rincón de lectura"
+},
+{
+"idea": "Cocina abierta con frentes lacados en verde salvia oscuro, encimera de cuarcita marrón y detalles de carpintería en nogal.",
+"label": "Cocina y madera"
+},
+{
+"idea": "Dormitorio principal con cabecero alistonado en madera oscura, ropa de cama de lino chocolate y apliques de bronce cepillado.",
+"label": "Dormitorio sobrio"
+},
+{
+"idea": "Mesa festiva decorada con ramas frescas de olivo, velas cónicas color chocolate y vajilla artesanal de cerámica beige.",
+"label": "Mesa festiva"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-15"
 }
 ],
 "proceso": [
@@ -1062,6 +1095,13 @@
 "descripcion": "una vivienda unifamiliar reformada con líneas orgánicas, suelo continuo de terracota y ventanales en arco.",
 "tendencia": true,
 "fecha": "2026-11-14"
+},
+{
+"id": "t20261115p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar reformada con carpinterías de nogal, revocos de cal y patios ajardinados",
+"tendencia": true,
+"fecha": "2026-11-15"
 }
 ],
 "antes_despues": [
@@ -1238,6 +1278,14 @@
 "estilo": "Brutalismo suave con microcemento arena, carpintería oculta y banco corrido de madera maciza.",
 "tendencia": true,
 "fecha": "2026-11-14"
+},
+{
+"id": "t20261115a",
+"tipo": "estancia",
+"descripcion": "un baño anticuado con sanitarios turquesa, azulejos esmaltados brillantes con cenefas florales y mampara de aluminio rayada",
+"estilo": "baño tipo spa con microcemento continuo gris cálido, hornacina retroiluminada y grifería empotrada",
+"tendencia": true,
+"fecha": "2026-11-15"
 }
 ],
 "tips": [
@@ -1838,6 +1886,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-14"
+},
+{
+"id": "t20261115t",
+"hook": "5 claves para un interior táctil",
+"tips": [
+{
+"tip": "Combina lino grueso con madera rugosa",
+"idea": "Primer plano de cojines de lino natural apoyados sobre un banco rústico de madera oscura sin barnizar."
+},
+{
+"tip": "Introduce revocos de cal en paredes",
+"idea": "Pared con textura artesanal de mortero de cal iluminada lateralmente por un ventanal de suelo a techo."
+},
+{
+"tip": "Apuesta por piedra natural apomazada",
+"idea": "Encimera de mármol travertino con acabado mate suave y aristas redondeadas en un espacio abierto."
+},
+{
+"tip": "Incorpora piezas de cerámica artesanal",
+"idea": "Conjunto de jarrones de barro cocido con formas imperfectas dispuestos sobre una consola de nogal."
+},
+{
+"tip": "Viste el suelo con lana",
+"idea": "Alfombra de lana pura trenzada a mano sobre un pavimento continuo de microcemento en tono arena."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-15"
 }
 ],
 "obra": [

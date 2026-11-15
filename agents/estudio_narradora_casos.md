@@ -1,5 +1,5 @@
-# Cuaderno de narradora_casos (2026-11-14)
+# Cuaderno de narradora_casos (2026-11-15)
 
-- Seguir haciendo: Fricciones reales de gestión de despachos («Plantilla o delegar por encargo», 89 clics; instalaciones, 3 clics).
-- Dejar de hacer: Debates abstractos o decorativos («Lujo de catálogo», score 8.15) que no movilizan al titular del estudio.
-- Probar: Casos de bloqueo por picos de entrega: visados inminentes, cambios de última hora y externalización del proyecto de ejecución.
+- Seguir haciendo: Fricciones reales de gestión de despachos («Plantilla o delegar», 89 clics; horas perdidas en instalaciones, 3 clics).
+- Dejar de hacer: Disquisiciones abstractas sobre diseño o lujo que no movilizan al arquitecto titular.
+- Probar: Escenas de entrega límite: visado en 48 horas, cambios de cliente en fase de ejecución y resolución de solapes de instalaciones.

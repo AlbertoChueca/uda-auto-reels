@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-14)
+# Cuaderno de revisora_visual (2026-11-15)
 
-- Seguir haciendo: Rechazar taxativamente texto ilegible de IA y renders que no cumplan el estilo técnico solicitado.
-- Dejar de hacer: Pasar por alto inconsistencias en el modelado técnico frente al concepto pedido.
-- Probar: Protocolo de verificación estricta: plano sin letras inventadas, coherencia geométrica CTE y acabado estrictamente vectorial/BIM.
+- Seguir haciendo: Rechazo inmediato de imágenes con texto ilegible o renders hiperrealistas que no representan un modelo técnico creíble.
+- Dejar de hacer: Aprobar planos con grafismos ambiguos o incoherencias constructivas visibles para arquitectos colegiados.
+- Probar: Check-list estricto de validación: 0 texto generado por IA, coherencia de capas según CTE y estética editorial sobria.
