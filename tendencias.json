@@ -1,97 +1,99 @@
 {
-"fecha": "2026-11-15",
+"fecha": "2026-11-16",
 "temas": [
 {
-"tema": "Minimalismo cálido y 'Lujo Humano'",
-"por_que": "La gente huye de los espacios fríos de catálogo. Buscan casas que se sientan vividas, con texturas táctiles, formas curvas y materiales honestos que abracen visualmente."
+"tema": "Casas que sanan y diseño emocional",
+"por_que": "La audiencia busca refugios de paz frente al estrés diario. Se viralizan los espacios que transmiten calma mediante iluminación cálida, orden visual y materiales naturales que fomentan el bienestar mental."
 },
 {
-"tema": "El regreso de la madera oscura",
-"por_que": "Tras años de maderas nórdicas blanqueadas, el nogal y el roble oscuro aportan profundidad, elegancia y un toque retro de los años 70 que está arrasando en los vídeos de transformaciones."
+"tema": "Cocinas abiertas con 'office' oculto",
+"por_que": "Gusta la estética de la cocina integrada al salón para socializar, pero se necesita ocultar el desorden. Triunfan los vídeos mostrando paneles correderos y puertas invisibles que esconden la zona de trabajo sucio."
 },
 {
-"tema": "Baños tipo spa con superficies continuas",
-"por_que": "El microcemento y los porcelánicos de gran formato sin juntas, junto con hornacinas integradas en la pared, dan sensación de refugio de bienestar, lujo silencioso y limpieza visual."
+"tema": "Baños concebidos como spas domésticos",
+"por_que": "El autocuidado es prioridad este mes. Los vídeos mostrando duchas a ras de suelo, hornacinas integradas en la pared y superficies continuas sin juntas generan mucho 'engagement' y guardados."
 },
 {
-"tema": "Cocinas con zona de trabajo oculta",
-"por_que": "Se mantiene la cocina abierta al salón para socializar, pero se viralizan las puertas ocultas o paneles correderos que esconden la zona de fuegos, los electrodomésticos y el desorden."
+"tema": "Tecnología invisible y domótica estética",
+"por_que": "El público quiere casas inteligentes pero sin cables ni aparatos a la vista. Se comparten masivamente los trucos sobre cómo ocultar electrodomésticos o integrar tiras LED de forma sutil en la arquitectura."
 },
 {
-"tema": "Color Drenching (Baño de color)",
-"por_que": "Pintar paredes, techos, puertas y molduras exactamente del mismo tono (especialmente tonos tierra o terracota) crea atmósferas envolventes y resulta visualmente muy impactante en redes."
+"tema": "Texturas 'abrazo' para el otoño-invierno",
+"por_que": "Con la bajada de temperaturas de noviembre, triunfa el contenido que muestra cómo hacer la casa más acogedora superponiendo capas de textiles, alfombras mullidas y tapicerías táctiles."
 },
 {
-"tema": "Navidad en tonos chocolate y oliva",
-"por_que": "De cara a las fiestas de este año, los vídeos de decoración navideña rechazan el rojo tradicional y apuestan por marrones, verde salvia y champagne para un look mucho más sofisticado y natural."
+"tema": "Lujo silencioso y minimalismo cálido",
+"por_que": "Hay un rechazo al consumismo rápido y a los espacios recargados. Se valora la artesanía imperfecta, las piezas con historia y los ambientes despejados pero con materiales de alta calidad visual."
 }
 ],
 "estilos": [
-"madera de nogal",
-"verde oliva",
-"marrón chocolate",
-"microcemento continuo",
-"terracota suave",
-"estilo mediterráneo contemporáneo"
+"verde oliva y tonos bosque",
+"maderas oscuras como el nogal",
+"microcemento continuo en tonos arena",
+"formas curvas y orgánicas en mobiliario",
+"cristal acanalado o estriado",
+"terracota y colores arcilla"
 ],
 "formatos": [
-"House tour con reacción sorpresa del cliente al ver la reforma terminada",
-"ASMR de texturas tocando materiales naturales (piedra, madera, bouclé)",
-"Antes y después con transiciones rápidas de 'Color Drenching' en una habitación",
-"Storytime de 'errores que cometí en mi reforma y cómo evitarlos'"
+"House tours rápidos y dinámicos (estilo POV inmersivo)",
+"Transiciones de 'Antes y Después' de reformas con audio en tendencia",
+"ASMR de orden, limpieza y organización en cocinas o baños",
+"Vídeos de 'Errores comunes al decorar' (gancho negativo que retiene audiencia)",
+"Tips de interiorismo narrados con voz en off en menos de 1 minuto"
 ],
 "busquedas": [
+"tendencias decoracion otoño invierno 2026",
+"ideas cocinas pequeñas modernas",
+"reforma baño sin obras",
 "colores tendencia salon 2026",
-"ideas baños microcemento",
-"cocinas ocultas modernas",
-"decoracion navidad elegante",
-"madera oscura decoracion",
-"reformas antes y despues españa",
-"casas calidas y acogedoras"
+"casas que sanan",
+"minimalismo calido",
+"como decorar con madera oscura"
 ],
 "hashtags": [
 "#interiorismoespaña",
 "#reformasintegrales",
+"#tendenciasdeco2026",
+"#casasquesanan",
 "#minimalismocalido",
-"#tendenciasdeco",
-"#casasreales",
-"#bañosmodernos",
 "#decoracioninteriores",
-"#colordrenching"
+"#lujosilencioso",
+"#bañospa",
+"#reformasbaños"
 ],
 "quemado": [
-"El minimalismo frío con exceso de blanco clínico y gris azulado",
-"Las maderas muy claras o blanqueadas estilo nórdico masivo",
-"El 'rojo inesperado' (ahora sustituido por naranja retro o burdeos)",
-"Árboles de Navidad recargados con espumillón y plástico brillante"
+"Gris frío en paredes y suelos (estilo década pasada)",
+"Azulejos tipo metro blancos con junta negra muy marcada",
+"Muebles blancos lacados en alto brillo",
+"Minimalismo extremo, estéril y sin personalidad"
 ],
 "por_tipo": {
-"galeria": "interiores verde oliva nogal",
-"tips": "decoracion minimalismo calido texturas",
-"antes_despues": "reforma baño microcemento spa",
-"proceso": "reforma integral casa nogal"
+"galeria": "cocina con despensa oculta",
+"tips": "domotica invisible en casa",
+"antes_despues": "reforma bano spa antes despues",
+"proceso": "casa minimalismo calido proceso"
 },
 "musica_tiktok": [
 "Dance Like Nobody’s Watching - Instrumental Version · Siine",
 "Cool Girl · Jayde Mari",
 "cool girls · Sonatara",
+"维也纳贵族-2 (F) · Music Time",
+"Neon Nights · Adrian Rover",
 "Man on the Run · Jon Sumner",
 "Flowers · Adrián Berenguer",
 "古风 大气 修仙 影视配乐 · 当歌音乐",
 "Neon Bass · Tangelene Bolton",
-"危机压迫 (F) · Music Time",
-"Bulls · Mary Riddle",
-"One More Time · Jamie Mercer"
+"危机压迫 (F) · Music Time"
 ],
 "fuentes": [
-"https://www.elmueble.com/decoracion/tendencias-decoracion-otono-invierno-2026-2027_53337",
-"https://www.arquitecturaydiseno.es/decoracion/tendencias-decoracion-2026_12906",
-"https://www.hola.com/decoracion/20260409252634/casa-decor-2026-tendencias-decoracion/"
+"https://www.hola.com/decoracion/20261001/colores-tendencia-otono/",
+"https://www.fotocasa.es/blog/hogar/decoracion/tendencias-decoracion-espana-2026/",
+"https://www.westwing.es/inspiration/tendencias/tendencias-de-interiores-2026/",
+"https://www.elmueble.com/decoracion/tendencias-deco-otono-2026"
 ],
 "piezas": {
-"galeria": "t20261115g",
-"tips": "t20261115t",
-"antes_despues": "t20261115a",
-"proceso": "t20261115p"
+"galeria": "t20261116g",
+"antes_despues": "t20261116a",
+"proceso": "t20261116p"
 }
 }

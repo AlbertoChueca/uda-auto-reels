@@ -937,6 +937,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-15"
+},
+{
+"id": "t20261116g",
+"hook": "El arte de ocultar el desorden",
+"cierre": "¿Lo integrarías en tu casa?",
+"escenas": [
+{
+"idea": "Panel alistonado de nogal continuo del suelo al techo que se abre pivotando hacia una despensa iluminada.",
+"label": "Panel pivotante"
+},
+{
+"idea": "Frente de cocina en microcemento arena con puertas escamoteables que revelan un desayunador completo de roble.",
+"label": "Frente escamoteable"
+},
+{
+"idea": "Armario empotrado lacado en verde oliva cuya puerta central da paso a un lavadero oculto con luz cálida.",
+"label": "Paso secreto"
+},
+{
+"idea": "Tabique revestido en lamas de madera con puerta coplanaria integrada que oculta la zona de electrodomésticos y almacenaje.",
+"label": "Puerta coplanaria"
+},
+{
+"idea": "Cerramiento con cristal estriado y perfiles oscuros que separa el salón de un office de trabajo sin restar luz.",
+"label": "Cristal estriado"
+},
+{
+"idea": "Muro curvo de arcilla con hornacina profunda y una puerta oculta sin marco que conduce a una cocina secundaria.",
+"label": "Muro curvo"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-16"
 }
 ],
 "proceso": [
@@ -1102,6 +1135,13 @@
 "descripcion": "una vivienda unifamiliar reformada con carpinterías de nogal, revocos de cal y patios ajardinados",
 "tendencia": true,
 "fecha": "2026-11-15"
+},
+{
+"id": "t20261116p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar bioclimática con muros de arcilla, patios interiores y carpintería de nogal",
+"tendencia": true,
+"fecha": "2026-11-16"
 }
 ],
 "antes_despues": [
@@ -1286,6 +1326,14 @@
 "estilo": "baño tipo spa con microcemento continuo gris cálido, hornacina retroiluminada y grifería empotrada",
 "tendencia": true,
 "fecha": "2026-11-15"
+},
+{
+"id": "t20261116a",
+"tipo": "estancia",
+"descripcion": "un aseo setentero estrecho con sanitarios azul celeste, alicatado brillo amarillento y bañera reducida",
+"estilo": "baño spa continuo en microcemento arena con ducha enrasada y grifería empotrada",
+"tendencia": true,
+"fecha": "2026-11-16"
 }
 ],
 "tips": [

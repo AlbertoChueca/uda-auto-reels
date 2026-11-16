@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-11-15)
+# Cuaderno de directora_creativa (2026-11-16)
 
-- Seguir haciendo: Conceptos de arquitectura técnica real e interiorismo constructivo (cerramientos y despiece de instalaciones, scores >9.5).
-- Dejar de hacer: Formatos de boceto a render y efemérides teóricas (scores <8.5 y baja retención).
-- Probar: Axonométricas explotadas de encuentros singulares que aúnen el atractivo visual de los cerramientos con el rigor técnico del proyecto de ejecución.
+- Seguir haciendo: Enfoque en arquitectura interior técnica y despiece constructivo real (cerramientos y cocinas divididas; scores >9.7).
+- Dejar de hacer: Formatos de «boceto a render» o curiosidades históricas (scores <8.5 y baja retención).
+- Probar: Axonométricas y secciones constructivas editoriales en negro profundo y luz dorada, fusionando estética premium con rigor de ejecución.

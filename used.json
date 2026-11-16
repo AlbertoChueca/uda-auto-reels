@@ -1000,5 +1000,12 @@
 "fecha": "2026-11-15",
 "formato": "visual",
 "grupo": "obra"
+},
+{
+"id": "visual:t20261115t",
+"tema": "visual",
+"fecha": "2026-11-16",
+"formato": "visual",
+"grupo": "tips"
 }
 ]

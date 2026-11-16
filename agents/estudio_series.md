@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-11-15)
+# Cuaderno de series (2026-11-16)
 
-- Seguir haciendo: Datos insuficientes para evaluar rendimiento de series (100% de publicaciones registradas como «serie None»).
-- Dejar de hacer: Publicaciones sueltas sin fidelización de seguimiento.
-- Probar: Implementar dos series fijas numeradas basadas en los formatos ganadores: «Capa a Capa» (técnica y detalle) y «Despacho al Día» (gestión y delegación).
+- Seguir haciendo: Datos insuficientes para evaluar retención seriada (el 100% de publicaciones registradas sigue en «serie None»).
+- Dejar de hacer: Publicar piezas aisladas sin estructura de cita recurrente.
+- Probar: Lanzar dos series semanales fijas numeradas: «Capa a Capa» (despiece técnico) y «Despacho al Día» (gestión, plantilla y delegación).

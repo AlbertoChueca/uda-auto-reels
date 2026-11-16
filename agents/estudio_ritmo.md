@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-11-15)
+# Cuaderno de ritmo (2026-11-16)
 
-- Seguir haciendo: Inicio visual inmersivo y potente que logre retenciones largas («Cerramientos», 10.550 ms; «POV: compras», 10.830 ms).
-- Dejar de hacer: Estructuras estáticas con caídas de atención a los 2.500 ms («Del boceto al render»).
-- Probar: Ritmo de corte técnico a 1,2 segundos mostrando capas sucesivas de plano a detalle 3D, manteniendo música de tensión contenida.
+- Seguir haciendo: Aperturas inmersivas de alta retención visual («Cerramientos» y «POV compras», >10.500 ms de visionado).
+- Dejar de hacer: Transiciones lentas o estáticas con caídas de atención a los 2.500 ms («Del boceto al render»).
+- Probar: Edición técnica acelerada a 1,2 segundos por capa constructiva, con música de tensión contenida y remate resolutivo claro.

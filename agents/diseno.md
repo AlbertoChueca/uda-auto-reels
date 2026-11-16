@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-11-15)
+# Cuaderno de diseno (2026-11-16)
 
-• Seguir haciendo: Infografía técnica animada sobre fondo carbón; domina el top de resultados (scores superiores a 9.40 y retenciones récord).
-• Dejar de hacer: Formato render estático; queda sistemáticamente relegado al fondo de la tabla (scores 8.47 - 8.77).
-• Probar: Detalle en sección 2D con cotas limpias y líneas de llamada en bronce UDA, respetando márgenes y zona segura para evitar solapes con la interfaz.
+# Cuaderno de diseno (2026-11-16)
+
+• Seguir haciendo: Infografía técnica animada en estilo negro/carbón; lidera el top con scores >9.40 y retenciones récord.
+• Dejar de hacer: Formato render aislado; queda relegado al fondo de métricas (scores 8.47 a 8.77).
+• Probar: Planimetría técnica 2D despiezada con cotas limpias y líneas guía en bronce UDA, respetando estrictamente la zona segura móvil.

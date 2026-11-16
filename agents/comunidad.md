@@ -1,6 +1,8 @@
-# Cuaderno de comunidad (2026-11-15)
+# Cuaderno de comunidad (2026-11-16)
 
-• Datos de audiencia: Pocos datos; no hay comentarios de texto registrados en este periodo. La interacción cuantitativa (3 a 5 comentarios) se concentra en dilemas de distribución (cocinas) y gestión de horas en el despacho.
-• Seguir haciendo: Preguntas de remate que polaricen sobre soluciones de proyecto o roces con el cliente.
-• Dejar de hacer: Cierres neutros que no interroguen directamente la práctica del arquitecto.
-• Probar: Pregunta de cierre al post: «¿Qué porcentaje de tus clientes te pide tirar tabiques de cocina y cuántos te piden cerramiento acristalado?».
+# Cuaderno de comunidad (2026-11-16)
+
+• Datos de audiencia: Pocos datos; aún no hay comentarios de texto registrados. El volumen de comentarios (3 a 5) se concentra en debates de distribución de cocinas y gestión de horas de trabajo.
+• Seguir haciendo: Preguntas de cierre polarizantes sobre decisiones de proyecto y gestión real del despacho.
+• Dejar de hacer: Remates neutros que no interroguen la práctica diaria del arquitecto.
+• Probar: Pregunta al público: «¿Qué porcentaje de tus clientes te exige cocina abierta frente a cerramiento acristalado?».

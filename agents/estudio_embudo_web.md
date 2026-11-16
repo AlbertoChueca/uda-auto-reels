@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-11-15)
+# Cuaderno de embudo_web (2026-11-16)
 
-- Seguir haciendo: Planteamiento directo del dilema de capacidad del estudio («Plantilla o delegar por encargo», récord de 89 clics).
-- Dejar de hacer: Reels exclusivamente contemplativos sin vinculación comercial con uniondearquitectos.com (la mayoría en 0 clics).
-- Probar: CTA sobrio en reels de instalaciones: «Externaliza la redacción técnica de tus proyectos de ejecución en uniondearquitectos.com».
+- Seguir haciendo: Atacar el cuello de botella de producción del estudio («Plantilla o delegar», récord absoluto de 89 clics).
+- Dejar de hacer: Reels meramente contemplativos sin conexión con uniondearquitectos.com (la mayoría en 0 clics).
+- Probar: CTA sobrio y natural en reels técnicos: «Externaliza la redacción del proyecto de ejecución y las instalaciones en uniondearquitectos.com».

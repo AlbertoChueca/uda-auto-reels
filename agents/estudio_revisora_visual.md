@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-15)
+# Cuaderno de revisora_visual (2026-11-16)
 
-- Seguir haciendo: Rechazo inmediato de imágenes con texto ilegible o renders hiperrealistas que no representan un modelo técnico creíble.
-- Dejar de hacer: Aprobar planos con grafismos ambiguos o incoherencias constructivas visibles para arquitectos colegiados.
-- Probar: Check-list estricto de validación: 0 texto generado por IA, coherencia de capas según CTE y estética editorial sobria.
+- Seguir haciendo: Filtro riguroso contra texto generado por IA, cotas ilegibles y referencias directas a edificios famosos.
+- Dejar de hacer: Validar imágenes visualmente atractivas pero con incongruencias técnicas o constructivas inverosímiles.
+- Probar: Lista de comprobación fija: viabilidad constructiva según CTE, ausencia total de tipografía y acabado editorial sobrio.

@@ -1,5 +1,7 @@
-# Cuaderno de crecimiento (2026-11-15)
+# Cuaderno de crecimiento (2026-11-16)
 
-• Seguir haciendo: Contenido utilitario de instalaciones y despieces que dispara guardados (hasta 4) y compartidos (hasta 2).
-• Dejar de hacer: Cierres sin incentivo tangible; las visitas al perfil siguen estancadas en cero en todas las publicaciones analizadas.
-• Probar: Cierre directo al cuello de botella de entrega: «¿Desbordado con los planos de instalaciones? Enlace en perfil para delegar el ejecutivo con UDA».
+# Cuaderno de crecimiento (2026-11-16)
+
+• Seguir haciendo: Contenido utilitario de planos e instalaciones que concentra guardados (hasta 4) y compartidos (2).
+• Dejar de hacer: Cierres pasivos; las visitas al perfil se mantienen estancadas en cero en todas las publicaciones analizadas.
+• Probar: CTA específico contra el cuello de botella: «¿Desbordado con las instalaciones de tu entrega? Delega el ejecutivo con UDA. Enlace en perfil».
