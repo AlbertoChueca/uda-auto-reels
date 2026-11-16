@@ -1,17 +1,13 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-15 22:57 UTC · 0 respuestas_
+_Última pasada: 2026-11-16 02:51 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"A4OoXCCi-JMeIJ5n9XLyDOn"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"Aq1Lv10Igpz9Kp7KFdl5owr"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-08 | tiktok | tips | 5 claves para mezclar diseño y artesanía | 1 | — |
-| 2026-11-08 | linkedin | tips | 5 claves para mezclar diseño y artesanía | 1 | — |
-| 2026-11-08 | tiktok | inspiracion | El «Nobel» de la arquitectura | 0 | — |
-| 2026-11-08 | linkedin | inspiracion | El «Nobel» de la arquitectura | 0 | — |
 | 2026-11-09 | tiktok | portfolio | 4 planos que no pueden faltar en tu proy | 1 | — |
 | 2026-11-09 | linkedin | portfolio | 4 planos que no pueden faltar en tu proy | 1 | — |
 | 2026-11-09 | tiktok | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
