@@ -41,7 +41,8 @@
 "urn:li:comment:(urn:li:ugcPost:7527369896721039360,7527370352004435968)",
 "urn:li:comment:(urn:li:ugcPost:7527686929086083072,7527687385350934528)",
 "urn:li:comment:(urn:li:ugcPost:7527732270917398528,7527732752868163584)",
-"urn:li:comment:(urn:li:ugcPost:7528049334492270592,7528049813188222976)"
+"urn:li:comment:(urn:li:ugcPost:7528049334492270592,7528049813188222976)",
+"urn:li:comment:(urn:li:ugcPost:7528094667100368898,7528095297168842752)"
 ],
 "posts": {
 "tiktok:6ad7bfa4543d02f449a6bd81": {
@@ -1363,10 +1364,22 @@
 "uniondearquitectos"
 ],
 "comentarios": 1
+},
+"tiktok:6afb0c68ea6f4139103ea456": {
+"pregunta": "7708668828393784096",
+"personas": [],
+"comentarios": 1
+},
+"linkedin:6afb0c63555bd16c620a2800": {
+"pregunta": "urn:li:comment:(urn:li:ugcPost:7528094667100368898,7528095297168842752)",
+"personas": [
+"uniondearquitectos"
+],
+"comentarios": 1
 }
 },
 "errores": {
-"instagram": "Instagram comentarios 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":460,\"fbtrace_id\":\"AefKCUUa6AMDhmeg3LNZnHy\"}}"
+"instagram": "Instagram comentarios 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":460,\"fbtrace_id\":\"ALo1N6uG3XuYmGtpYpBI8Yq\"}}"
 },
 "nativos": {
 "6ad7bfa4543d02f449a6bd81": "7698832867194948896",
@@ -1540,6 +1553,8 @@
 "6af9bae5de90350bcb64b7ce": "7708397891206892832",
 "6af9bae434a57a5ca778e893": "urn:li:ugcPost:7527732270917398528",
 "6afae239d6e4c66280ece36f": "7708722548237831457",
-"6afae2330b225b4542b3b117": "urn:li:ugcPost:7528049334492270592"
+"6afae2330b225b4542b3b117": "urn:li:ugcPost:7528049334492270592",
+"6afb0c68ea6f4139103ea456": "7708768962426735904",
+"6afb0c63555bd16c620a2800": "urn:li:ugcPost:7528094667100368898"
 }
 }
