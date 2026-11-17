@@ -1,17 +1,13 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-16 22:18 UTC · 0 respuestas_
+_Última pasada: 2026-11-17 04:38 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"ACSgofi_lhqNd4su4GC3xDA"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"AlKVakV1LI_xAHijH8jOYz0"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-09 | tiktok | portfolio | 4 planos que no pueden faltar en tu proy | 1 | — |
-| 2026-11-09 | linkedin | portfolio | 4 planos que no pueden faltar en tu proy | 1 | — |
-| 2026-11-09 | tiktok | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
-| 2026-11-09 | linkedin | antes_despues | Así quedó. Mira cómo estaba | 1 | — |
 | 2026-11-10 | tiktok | portfolio | Misma planta, tres instalaciones | 1 | — |
 | 2026-11-10 | linkedin | portfolio | Misma planta, tres instalaciones | 1 | — |
 | 2026-11-10 | tiktok | obra | De la zanja a la llave | 1 | — |
