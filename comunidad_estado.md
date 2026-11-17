@@ -1,10 +1,10 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-17 14:52 UTC · 0 respuestas_
+_Última pasada: 2026-11-17 22:58 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"AayWBMVJjMvZ5F5V6IbqEhT"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"AkbQqk2j8V5zODYOyR3_jFR"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -22,7 +22,7 @@ _Última pasada: 2026-11-17 14:52 UTC · 0 respuestas_
 | 2026-11-12 | linkedin | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-13 | tiktok | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-11-13 | linkedin | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
-| 2026-11-13 | tiktok | antes_despues | POV: compras para reformar | 1 | — |
+| 2026-11-13 | tiktok | antes_despues | POV: compras para reformar | 2 | — |
 | 2026-11-13 | linkedin | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-11-14 | tiktok | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
 | 2026-11-14 | linkedin | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
@@ -44,3 +44,5 @@ _Última pasada: 2026-11-17 14:52 UTC · 0 respuestas_
 | 2026-11-10 | linkedin | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
+| 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
+| 2026-11-17 | linkedin | carrusel | Punto de partida del proyecto | 0 | — |

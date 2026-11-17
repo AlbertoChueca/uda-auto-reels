@@ -2,6 +2,7 @@
 "contestados": [
 "17890251837476717",
 "7705097698684961568",
+"7709247789722632982",
 "urn:li:comment:(urn:li:ugcPost:7519231585569759232,7519478060585431041)",
 "urn:li:comment:(urn:li:ugcPost:7519232480210567168,7519660236148764673)",
 "urn:li:comment:(urn:li:ugcPost:7519360622640300032,7519660291178086400)",
@@ -1296,7 +1297,7 @@
 "tiktok:6af717e7145bdbb67eb19a67": {
 "pregunta": "7707406294696887072",
 "personas": [],
-"comentarios": 1
+"comentarios": 2
 },
 "linkedin:6af717e4a83b3aa26a75baf2": {
 "pregunta": "urn:li:comment:(urn:li:ugcPost:7527007495815376897,7527009119296241664)",
@@ -1396,10 +1397,18 @@
 "pregunta": "urn:li:comment:(urn:li:ugcPost:7528457018341507074,7528457474962595841)",
 "personas": [],
 "comentarios": 1
+},
+"tiktok:6afc8217b82e4cc0502ec603": {
+"personas": [],
+"comentarios": 0
+},
+"linkedin:6afc822539fb3aec4b02e1c2": {
+"personas": [],
+"comentarios": 0
 }
 },
 "errores": {
-"instagram": "Instagram comentarios 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":460,\"fbtrace_id\":\"AayWBMVJjMvZ5F5V6IbqEhT\"}}"
+"instagram": "Instagram comentarios 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":460,\"fbtrace_id\":\"AkbQqk2j8V5zODYOyR3_jFR\"}}"
 },
 "nativos": {
 "6ad7bfa4543d02f449a6bd81": "7698832867194948896",
@@ -1579,6 +1588,8 @@
 "6afc33b922093c4f5d993c4a": "7709093596464549152",
 "6afc33b33afa3af34c1fcea0": "urn:li:ugcPost:7528411751621718016",
 "6afc5de6a07e167d453c6307": "7709139986024566049",
-"6afc5de341a3ece3c5851333": "urn:li:ugcPost:7528457018341507074"
+"6afc5de341a3ece3c5851333": "urn:li:ugcPost:7528457018341507074",
+"6afc8217b82e4cc0502ec603": "7709179704825138465",
+"6afc822539fb3aec4b02e1c2": "urn:li:ugcPost:7528495895181549570"
 }
 }
