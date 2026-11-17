@@ -242,5 +242,26 @@
 "linkedin_documento": "6af5e94b4766e83f27c73cda"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-11-17",
+"bloque": "servicios",
+"tema": "uda_servicios",
+"subtema": "Punto de partida del encargo",
+"titulo": "Punto de partida del proyecto",
+"fragmentos": [
+"04 Entorno de trabajo y punto de partida *",
+"01 Datos del despacho y del proyecto"
+],
+"quiz_id": null,
+"imagenes": 5,
+"nota": 8.2,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "error: 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AKCQU_z8OZcnMKWgFFyWgtc\"}}",
+"tiktok_carrusel": "6afc8217b82e4cc0502ec603",
+"linkedin_documento": "6afc822539fb3aec4b02e1c2"
+},
+"dry_run": false
 }
 ]

@@ -1,5 +1,8 @@
-Carrusel 2026-11-17 16:30 UTC
-carrusel: guion no válido (menos de 3 diapositivas válidas (o citas que no están en la fuente))
-carrusel: el verificador pide cambios: [{"frase": "La externalización incluye edificios de **industrial y logístico**, equipamiento público, servicios o actuaciones específicas.", "motivo": "La fuente indica 'Equipamiento y servicios', pero no especifica que el equipamiento deba ser 'público' (también puede ser privado). Es un dato inventado que restringe la tipología original."}, {"frase": "¿Prefieres delegar el Proyecto Básico comple
-carrusel: tema uda_servicios descartado: no hay carrusel verificado para Qué hace UDA por tu despacho
-NO PUBLICADO: hoy no hay carrusel verificado (mejor no publicar que publicar un error)
+Carrusel 2026-11-17 16:33 UTC
+carrusel: verificado (Punto de partida del encargo)
+carrusel: revisión 8.2/10 ["El pie de página técnico ('Fuente: Listado de documentos de UDA, Apartados 01, 02 y 04') en todas las diapositivas añade ruido burocrático e irrelevante para una lectura rápida en móvil.", "El esquema de planta en la portada es excesivamente elemental (recuerda a una caseta básica) y no transmite el nivel de 'proyectos de envergadura o bloques de viviendas' al que se dirige el despacho.", 'La diapositiva final (05) sufre de sobrecarga visual y jerarquía difusa: compiten el subtítulo, los dos bloques de texto, los tres checks con tildes y dos botones de llamada a la acción superpuestos.']
+carrusel: Qué hace UDA por tu despacho · Punto de partida del encargo · 5 imágenes
+Zernio cuentas de UDA: {'instagram': False, 'tiktok': True, 'linkedin': True} · conectadas: {'tiktok': ['uniondearquitectos'], 'linkedin': ['UDA - Union de Arquitectos']}
+Zernio tiktok carrusel: creado 6afc8217b82e4cc0502ec603
+Zernio linkedin documento: creado 6afc822539fb3aec4b02e1c2
+publicación: {"instagram_carrusel": "error: 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AKCQU_z8OZcnMKWgFFyWgtc\"}}", "tiktok_carrusel": "6afc8217b82e4cc0502ec603", "linkedin_documento": "6afc822539fb3aec4b02e1c2"}
