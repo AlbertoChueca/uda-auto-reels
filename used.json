@@ -1063,5 +1063,12 @@
 "fecha": "2026-11-17",
 "formato": "visual",
 "grupo": "caso"
+},
+{
+"id": "visual:t20261117t",
+"tema": "visual",
+"fecha": "2026-11-17",
+"formato": "visual",
+"grupo": "tips"
 }
 ]
