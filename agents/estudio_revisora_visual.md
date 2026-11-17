@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-16)
+# Cuaderno de revisora_visual (2026-11-17)
 
-- Seguir haciendo: Filtro riguroso contra texto generado por IA, cotas ilegibles y referencias directas a edificios famosos.
-- Dejar de hacer: Validar imágenes visualmente atractivas pero con incongruencias técnicas o constructivas inverosímiles.
-- Probar: Lista de comprobación fija: viabilidad constructiva según CTE, ausencia total de tipografía y acabado editorial sobrio.
+- Seguir haciendo: Verificación rigurosa de verosimilitud constructiva en detalles de instalaciones y reformas.
+- Dejar de hacer: Aprobar imágenes con geometría estructural inverosímil o texturas que emulen planos con tipografía ilegible.
+- Probar: Control estricto previo a publicación: viabilidad técnica según criterios CTE y cero presencia de texto generado por IA.

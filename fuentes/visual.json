@@ -970,6 +970,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-16"
+},
+{
+"id": "t20261117g",
+"hook": "Baños que parecen un spa de piedra",
+"cierre": "¿Cuál elegirías para tu casa?",
+"escenas": [
+{
+"idea": "Baño con hornacina iluminada, paredes en estuco de cal cálido y lavabo tallado en bloque macizo de travertino.",
+"label": "Travertino macizo"
+},
+{
+"idea": "Ducha a ras de suelo sin mampara visible con revestimiento continuo de microcemento arena y grifería empotrada en latón cepillado.",
+"label": "Ducha continua"
+},
+{
+"idea": "Bañera exenta redondeada junto a un ventanal bajo, rodeada de muros de piedra caliza con luz cenital rasante.",
+"label": "Luz cenital"
+},
+{
+"idea": "Mueble bajo suspendido de roble tostado con frente alistonado y encimera de caliza beige con espejo retroiluminado circular.",
+"label": "Roble y caliza"
+},
+{
+"idea": "Gran hornacina corrida sobre la bañera iluminada tenuemente y revestimiento mineral en tono arcilla natural.",
+"label": "Hornacina cálida"
+},
+{
+"idea": "Ducha doble integrada bajo un lucernario rectangular, con suelo de canto rodado pulido y desagüe invisible perimetral.",
+"label": "Desagüe invisible"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-17"
 }
 ],
 "proceso": [
@@ -1142,6 +1175,13 @@
 "descripcion": "una vivienda unifamiliar bioclimática con muros de arcilla, patios interiores y carpintería de nogal",
 "tendencia": true,
 "fecha": "2026-11-16"
+},
+{
+"id": "t20261117p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar bioclimática con muros de piedra caliza, luz cenital y carpintería móvil integrada",
+"tendencia": true,
+"fecha": "2026-11-17"
 }
 ],
 "antes_despues": [
@@ -1334,6 +1374,14 @@
 "estilo": "baño spa continuo en microcemento arena con ducha enrasada y grifería empotrada",
 "tendencia": true,
 "fecha": "2026-11-16"
+},
+{
+"id": "t20261117a",
+"tipo": "estancia",
+"descripcion": "un salón cerrado y compartimentado con paredes de gotelé crema, zócalos oscuros y carpintería metálica fría",
+"estilo": "minimalismo cálido con carpintería oculta, formas orgánicas y paleta en tonos terracota",
+"tendencia": true,
+"fecha": "2026-11-17"
 }
 ],
 "tips": [
@@ -1962,6 +2010,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-15"
+},
+{
+"id": "t20261117t",
+"hook": "5 claves para integrar tabiques móviles",
+"tips": [
+{
+"tip": "Guía oculta en falso techo",
+"idea": "Gran panel de madera corredera que desliza suavemente sin carril inferior sobre un suelo continuo de hormigón pulido."
+},
+{
+"tip": "Alinea materiales de suelo a techo",
+"idea": "Puertas correderas alistonadas de suelo a techo que se integran en el revestimiento mural al estar cerradas."
+},
+{
+"tip": "Aprovecha el espacio entre tabiques",
+"idea": "Puerta corredera que desaparece completamente dentro de un tabique hueco junto a la zona de estudio."
+},
+{
+"tip": "Filtra la luz con lamas",
+"idea": "Tabique divisorio pivotante de lamas de madera natural que gradúa visuales y luz entre cocina y salón."
+},
+{
+"tip": "Incorpora aislamiento acústico interno",
+"idea": "Panel corredero tapizado en fieltro de lana gruesa que independiza el despacho de trabajo del resto de la vivienda."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-17"
 }
 ],
 "obra": [

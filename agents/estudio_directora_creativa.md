@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-11-16)
+# Cuaderno de directora_creativa (2026-11-17)
 
-- Seguir haciendo: Enfoque en arquitectura interior técnica y despiece constructivo real (cerramientos y cocinas divididas; scores >9.7).
-- Dejar de hacer: Formatos de «boceto a render» o curiosidades históricas (scores <8.5 y baja retención).
-- Probar: Axonométricas y secciones constructivas editoriales en negro profundo y luz dorada, fusionando estética premium con rigor de ejecución.
+- Seguir haciendo: Conceptos de arquitectura técnica interior y soluciones de distribución real (cerramientos, cocinas divididas; retención >10s, score >9.7).
+- Dejar de hacer: Temas de historia arquitectónica y curiosidades («Nobel», «libro más antiguo»; score <8.7).
+- Probar: Secciones axonométricas sobrias de encuentros constructivos críticos en paleta UDA (negro profundo y luz dorada rasante).

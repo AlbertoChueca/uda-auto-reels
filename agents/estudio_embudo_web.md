@@ -1,5 +1,5 @@
-# Cuaderno de embudo_web (2026-11-16)
+# Cuaderno de embudo_web (2026-11-17)
 
-- Seguir haciendo: Atacar el cuello de botella de producción del estudio («Plantilla o delegar», récord absoluto de 89 clics).
-- Dejar de hacer: Reels meramente contemplativos sin conexión con uniondearquitectos.com (la mayoría en 0 clics).
-- Probar: CTA sobrio y natural en reels técnicos: «Externaliza la redacción del proyecto de ejecución y las instalaciones en uniondearquitectos.com».
+- Seguir haciendo: Enfocar el problema de capacidad y carga de trabajo («Plantilla o delegar», 89 clics directos).
+- Dejar de hacer: Reels puramente estéticos sin conexión con los servicios de UDA (la mayoría en 0 clics).
+- Probar: Llamada a la acción sobria al final de reels técnicos: «Externaliza el desarrollo de tu proyecto de ejecución en uniondearquitectos.com».

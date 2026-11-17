@@ -1,7 +1,7 @@
-# Cuaderno de guion (2026-11-16)
+# Cuaderno de guion (2026-11-17)
 
-# Cuaderno de guion (2026-11-16)
+# Cuaderno de guion (2026-11-17)
 
-• Seguir haciendo: Desgloses constructivos paso a paso e instalaciones capa a capa; retienen más de 10.500 ms y logran el máximo de guardados (hasta 4).
-• Dejar de hacer: Comparaciones estéticas vacías sin valor técnico («Del boceto al render», retención mínima de 2.550 ms).
-• Probar: Guion técnico de 40 s: checklist de 3 puntos críticos al replantear bajantes y patinillos para no estrangular la distribución en reformas.
+• Seguir haciendo: Desgloses secuenciales y constructivos («Capa a capa», 4 guardados) y soluciones espaciales prácticas, que alcanzan retenciones récord (>10.300 ms).
+• Dejar de hacer: Comparaciones estéticas vacías sin valor normativo ni ejecutivo («Del boceto al render», peor retención con 2.560 ms).
+• Probar: Checklist técnico de 30 segundos con 3 comprobaciones obligatorias para no estrangular patinillos ni ventilaciones al abrir una cocina.

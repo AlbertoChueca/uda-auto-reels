@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-16)
+# Cuaderno de ilustradora (2026-11-17)
 
-- Seguir haciendo: Paleta UDA (negro profundo, luz cálida rasante) y texturas de materialidad noble (terracota, roble, caliza).
-- Dejar de hacer: Renders fotorrealistas genéricos y generación de textos, rótulos o cotas falsas por IA.
-- Probar: Isometrías vectoriales limpias y despieces por capas de encuentros e instalaciones, totalmente libres de grafía ficticia.
+- Seguir haciendo: Iluminación cálida rasante sobre fondos oscuros y texturas de materialidad noble (cal, travertino, roble).
+- Dejar de hacer: Estética de render genérico y generación de cotas o rótulos ilegibles con IA.
+- Probar: Despieces axonométricos limpios por capas constructivas, enfatizando texturas reales y completamente libres de grafismo tipográfico.

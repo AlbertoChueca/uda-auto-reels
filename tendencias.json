@@ -1,77 +1,73 @@
 {
-"fecha": "2026-11-16",
+"fecha": "2026-11-17",
 "temas": [
 {
-"tema": "Casas que sanan y diseño emocional",
-"por_que": "La audiencia busca refugios de paz frente al estrés diario. Se viralizan los espacios que transmiten calma mediante iluminación cálida, orden visual y materiales naturales que fomentan el bienestar mental."
+"tema": "Minimalismo cálido y formas orgánicas",
+"por_que": "La gente busca que sus casas sean refugios acogedores. Se viralizan los arcos, bordes suaves y mobiliario redondeado que rompen con la rigidez de las líneas rectas y aportan confort visual."
 },
 {
-"tema": "Cocinas abiertas con 'office' oculto",
-"por_que": "Gusta la estética de la cocina integrada al salón para socializar, pero se necesita ocultar el desorden. Triunfan los vídeos mostrando paneles correderos y puertas invisibles que esconden la zona de trabajo sucio."
+"tema": "Materiales crudos con textura real",
+"por_que": "Hay un fuerte rechazo a lo artificial y excesivamente pulido. Triunfan los vídeos mostrando vetas de madera muy marcadas, piedra caliza, travertino y paredes con estuco o pintura a la cal que aportan profundidad."
 },
 {
-"tema": "Baños concebidos como spas domésticos",
-"por_que": "El autocuidado es prioridad este mes. Los vídeos mostrando duchas a ras de suelo, hornacinas integradas en la pared y superficies continuas sin juntas generan mucho 'engagement' y guardados."
+"tema": "El baño como spa de lujo silencioso",
+"por_que": "Es la estancia estrella de las reformas este mes. Funcionan muy bien las duchas a ras de suelo, superficies continuas sin juntas y hornacinas integradas en la pared con iluminación indirecta cálida."
 },
 {
-"tema": "Tecnología invisible y domótica estética",
-"por_que": "El público quiere casas inteligentes pero sin cables ni aparatos a la vista. Se comparten masivamente los trucos sobre cómo ocultar electrodomésticos o integrar tiras LED de forma sutil en la arquitectura."
+"tema": "Tonos tierra profundos y oscuros",
+"por_que": "El otoño-invierno 2026 ha desterrado al blanco roto. Los salones y dormitorios se llenan de marrón chocolate, burdeos, terracota y verde oliva para crear atmósferas más envolventes, elegantes y habitadas."
 },
 {
-"tema": "Texturas 'abrazo' para el otoño-invierno",
-"por_que": "Con la bajada de temperaturas de noviembre, triunfa el contenido que muestra cómo hacer la casa más acogedora superponiendo capas de textiles, alfombras mullidas y tapicerías táctiles."
+"tema": "Espacios flexibles y tabiques móviles",
+"por_que": "Las distribuciones estáticas ya no sirven. Se guardan masivamente los vídeos que muestran grandes puertas correderas de suelo a techo o paneles de madera alistonada que ocultan cocinas o zonas de teletrabajo."
 },
 {
-"tema": "Lujo silencioso y minimalismo cálido",
-"por_que": "Hay un rechazo al consumismo rápido y a los espacios recargados. Se valora la artesanía imperfecta, las piezas con historia y los ambientes despejados pero con materiales de alta calidad visual."
+"tema": "Diseño bioclimático y luz natural",
+"por_que": "La sostenibilidad es una prioridad real. Gustan mucho los recorridos visuales que muestran cómo la luz del sol entra en la casa según la hora del día y el uso de materiales naturales que aíslan térmica y acústicamente."
 }
 ],
 "estilos": [
-"verde oliva y tonos bosque",
-"maderas oscuras como el nogal",
-"microcemento continuo en tonos arena",
-"formas curvas y orgánicas en mobiliario",
-"cristal acanalado o estriado",
-"terracota y colores arcilla"
+"madera oscura con veta visible",
+"piedra travertino y caliza",
+"verde oliva y burdeos",
+"microcemento continuo",
+"textiles gruesos como bouclé y lana"
 ],
 "formatos": [
-"House tours rápidos y dinámicos (estilo POV inmersivo)",
-"Transiciones de 'Antes y Después' de reformas con audio en tendencia",
-"ASMR de orden, limpieza y organización en cocinas o baños",
-"Vídeos de 'Errores comunes al decorar' (gancho negativo que retiene audiencia)",
-"Tips de interiorismo narrados con voz en off en menos de 1 minuto"
+"Antes y después de reformas con transiciones dinámicas al ritmo del audio (snap o tap)",
+"ASMR visual y sonoro tocando texturas de materiales de obra (madera, piedra, cal)",
+"Mini-vlogs narrados en primera persona de 'un día en la obra' o 'proceso de diseño'",
+"Tours rápidos por estancias destacando soluciones ingeniosas de almacenaje oculto"
 ],
 "busquedas": [
-"tendencias decoracion otoño invierno 2026",
-"ideas cocinas pequeñas modernas",
-"reforma baño sin obras",
-"colores tendencia salon 2026",
-"casas que sanan",
-"minimalismo calido",
-"como decorar con madera oscura"
+"tendencias decoracion otoño 2026",
+"ideas baños pequeños modernos",
+"colores para salones 2026",
+"reformas sin obra cocina",
+"minimalismo calido casa",
+"como decorar con madera oscura",
+"paredes con textura"
 ],
 "hashtags": [
 "#interiorismoespaña",
 "#reformasintegrales",
 "#tendenciasdeco2026",
-"#casasquesanan",
 "#minimalismocalido",
-"#decoracioninteriores",
-"#lujosilencioso",
-"#bañospa",
-"#reformasbaños"
+"#bañosmodernos",
+"#arquitecturainterior",
+"#decoraciondeinteriores",
+"#casasreales"
 ],
 "quemado": [
-"Gris frío en paredes y suelos (estilo década pasada)",
-"Azulejos tipo metro blancos con junta negra muy marcada",
-"Muebles blancos lacados en alto brillo",
-"Minimalismo extremo, estéril y sin personalidad"
+"El minimalismo frío de tonos grises y blancos estériles",
+"El beige pálido o 'taupe' como único color neutro en toda la casa",
+"Muebles lacados de alto brillo y superficies sin textura"
 ],
 "por_tipo": {
-"galeria": "cocina con despensa oculta",
-"tips": "domotica invisible en casa",
-"antes_despues": "reforma bano spa antes despues",
-"proceso": "casa minimalismo calido proceso"
+"galeria": "baño spa lujo silencioso",
+"tips": "puertas correderas suelo techo",
+"antes_despues": "reforma salon minimalismo calido",
+"proceso": "diseño bioclimatico vivienda unifamiliar"
 },
 "musica_tiktok": [
 "Dance Like Nobody’s Watching - Instrumental Version · Siine",
@@ -80,20 +76,21 @@
 "维也纳贵族-2 (F) · Music Time",
 "Neon Nights · Adrian Rover",
 "Man on the Run · Jon Sumner",
-"Flowers · Adrián Berenguer",
-"古风 大气 修仙 影视配乐 · 当歌音乐",
 "Neon Bass · Tangelene Bolton",
+"古风 大气 修仙 影视配乐 · 当歌音乐",
+"Flowers · Adrián Berenguer",
 "危机压迫 (F) · Music Time"
 ],
 "fuentes": [
-"https://www.hola.com/decoracion/20261001/colores-tendencia-otono/",
-"https://www.fotocasa.es/blog/hogar/decoracion/tendencias-decoracion-espana-2026/",
-"https://www.westwing.es/inspiration/tendencias/tendencias-de-interiores-2026/",
-"https://www.elmueble.com/decoracion/tendencias-deco-otono-2026"
+"https://www.hola.com/decoracion/20260409252345/casa-decor-2026-tendencias-decoracion/",
+"https://plecstudio.com/las-10-tendencias-en-arquitectura-de-alta-gama-para-2026/",
+"https://toppcreate.com/tendencias-arquitectura-2026/",
+"https://www.arquitecturaydiseno.es/decoracion/tendencias-decoracion-2026_12906"
 ],
 "piezas": {
-"galeria": "t20261116g",
-"antes_despues": "t20261116a",
-"proceso": "t20261116p"
+"galeria": "t20261117g",
+"tips": "t20261117t",
+"antes_despues": "t20261117a",
+"proceso": "t20261117p"
 }
 }
