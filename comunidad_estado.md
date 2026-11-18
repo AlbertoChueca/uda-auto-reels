@@ -1,17 +1,13 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-17 22:58 UTC · 0 respuestas_
+_Última pasada: 2026-11-18 04:32 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"AkbQqk2j8V5zODYOyR3_jFR"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"A_q9IZ62Mktg0zaVkOF07LI"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-10 | tiktok | portfolio | Misma planta, tres instalaciones | 1 | — |
-| 2026-11-10 | linkedin | portfolio | Misma planta, tres instalaciones | 1 | — |
-| 2026-11-10 | tiktok | obra | De la zanja a la llave | 1 | — |
-| 2026-11-10 | linkedin | obra | De la zanja a la llave | 1 | — |
 | 2026-11-11 | tiktok | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
 | 2026-11-11 | linkedin | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
 | 2026-11-11 | tiktok | galeria | La vuelta de la cocina dividida | 1 | — |
@@ -39,9 +35,6 @@ _Última pasada: 2026-11-17 22:58 UTC · 0 respuestas_
 | 2026-11-17 | tiktok | portfolio | Caso real: del diseño del estudio al pro | 1 | — |
 | 2026-11-17 | linkedin | portfolio | Caso real: del diseño del estudio al pro | 1 | — |
 | 2026-11-17 | tiktok | tips | 5 claves para integrar tabiques móviles | 1 | — |
-| 2026-11-17 | linkedin | tips | 5 claves para integrar tabiques móviles | 1 | — |
-| 2026-11-10 | tiktok | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
-| 2026-11-10 | linkedin | carrusel | Proyecto Básico qué incluye cada partida | 0 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
