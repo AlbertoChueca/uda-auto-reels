@@ -1,10 +1,10 @@
-# Estado (2026-11-16)
+# Estado (2026-11-18)
 
 | comprobación | detalle |
 |---|---|
 | ✅ TikTok (Zernio) | conectada (@uniondearquitectos) |
 | ✅ LinkedIn (Zernio) | conectada (@uniondearquitectos) |
-| ❌ Instagram (API de Meta) | token no válido: 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the se |
+| ✅ Instagram (API de Meta) | @uniondearquitectos · publica directo, sin Zernio |
 | ✅ Gemini texto | 49 modelos disponibles |
 | ✅ Gemini voz | gemini-2.5-flash-preview-tts, gemini-2.5-pro-preview-tts, gemini-3.1-flash-tts-preview |
 | ✅ Voz de España (Google Cloud TTS) | es-ES-Chirp3-HD-Orus · 1.9 s de audio |
@@ -15,11 +15,9 @@
 | ✅ Piezas de servicios | 192 publicables |
 | ⚠️ Piezas de proyecto | 0 publicables · lanza 'Generar banco' |
 | ✅ Fuentes | 15/15 |
-| ⚠️ Publicaciones (7 días) | instagram_reel: 9 ok / 7 fallos · instagram_story: 10 ok / 6 fallos · tiktok_video: 16 ok / 0 fallos · linkedin_video: 16 ok / 0 fallos · instagram_carrusel: 2 ok / 0 fallos · tiktok_carrusel: 2 ok / 0 fallos · linkedin_documento: 2 ok / 0 fallos |
+| ⚠️ Publicaciones (7 días) | instagram_reel: 5 ok / 11 fallos · instagram_story: 6 ok / 10 fallos · tiktok_video: 16 ok / 0 fallos · linkedin_video: 16 ok / 0 fallos · instagram_carrusel: 1 ok / 1 fallos · tiktok_carrusel: 2 ok / 0 fallos · linkedin_documento: 2 ok / 0 fallos |
 | ⚠️ LinkedIn (máx. 1 al día) | 18 publicaciones en 8 días |
 | **Publicaciones en Zernio (estado real)** | |
-| 2026-10-27 · carrusel_tiktok_carrusel | published · tiktok: published  https://www.tiktok.com/@uniondearquitectos/video/7701375906782121248 |
-| 2026-10-27 · carrusel_linkedin_documento | published · linkedin: published  https://www.linkedin.com/feed/update/urn:li:ugcPost:7520874993161949185/ |
 | 2026-10-29 · carrusel_tiktok_carrusel | published · tiktok: published  https://www.tiktok.com/@uniondearquitectos/video/7702118179971009824 |
 | 2026-10-29 · carrusel_linkedin_documento | published · linkedin: published  https://www.linkedin.com/feed/update/urn:li:ugcPost:7521599857136955395/ |
 | 2026-11-03 · carrusel_tiktok_carrusel | published · tiktok: published  https://www.tiktok.com/@uniondearquitectos/video/7703985575841451296 |
@@ -30,3 +28,5 @@
 | 2026-11-10 · carrusel_linkedin_documento | published · linkedin: published  https://www.linkedin.com/feed/update/urn:li:ugcPost:7525969301732835328/ |
 | 2026-11-12 · carrusel_tiktok_carrusel | published · tiktok: published  https://www.tiktok.com/@uniondearquitectos/video/7707322800897396000 |
 | 2026-11-12 · carrusel_linkedin_documento | published · linkedin: published  https://www.linkedin.com/feed/update/urn:li:ugcPost:7526682499914141696/ |
+| 2026-11-17 · carrusel_tiktok_carrusel | published · tiktok: published  https://www.tiktok.com/@uniondearquitectos/video/7709179704825138465 |
+| 2026-11-17 · carrusel_linkedin_documento | published · linkedin: published  https://www.linkedin.com/feed/update/urn:li:ugcPost:7528495895181549570/ |
