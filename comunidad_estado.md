@@ -1,23 +1,24 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-18 14:52 UTC · 1 respuestas_
-
-## Avisos
-
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"AK_D0yBSB-_x9slxJH6uSUL"}}
+_Última pasada: 2026-11-18 22:07 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
+| 2026-11-11 | instagram | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
 | 2026-11-11 | tiktok | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
 | 2026-11-11 | linkedin | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
+| 2026-11-11 | instagram | galeria | La vuelta de la cocina dividida | 1 | — |
 | 2026-11-11 | tiktok | galeria | La vuelta de la cocina dividida | 1 | — |
 | 2026-11-11 | linkedin | galeria | La vuelta de la cocina dividida | 2 | — |
 | 2026-11-12 | tiktok | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
 | 2026-11-12 | linkedin | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
+| 2026-11-12 | instagram | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-12 | tiktok | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-12 | linkedin | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
+| 2026-11-13 | instagram | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-11-13 | tiktok | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-11-13 | linkedin | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
+| 2026-11-13 | instagram | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-11-13 | tiktok | antes_despues | POV: compras para reformar | 2 | — |
 | 2026-11-13 | linkedin | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-11-14 | tiktok | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
@@ -40,6 +41,7 @@ _Última pasada: 2026-11-18 14:52 UTC · 1 respuestas_
 | 2026-11-18 | linkedin | portfolio | Los detalles que el cliente nunca ve | 1 | — |
 | 2026-11-18 | tiktok | galeria | Casas pensadas como refugio | 1 | — |
 | 2026-11-18 | linkedin | galeria | Casas pensadas como refugio | 1 | — |
+| 2026-11-12 | instagram | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
