@@ -11,7 +11,7 @@ Interruptores (Settings > Secrets and variables > Actions > Variables): IG_STORY
 "true", "false" o el hueco en el que actúan ("manana" / "mediodia" / "noche"). LINKEDIN: "carrusel" (por defecto: el
 carrusel diario va a LinkedIn), "manana" / "mediodia" / "noche" (ese reel va a LinkedIn) o "false".
 """
-import os, threading
+import datetime, os, threading
 from concurrent.futures import ThreadPoolExecutor
 
 SLOT = [""]
@@ -21,6 +21,11 @@ def on(name, default="true"):
     """"true"/"false", o el nombre de un hueco ("mediodia"/"noche") para activarlo solo en ese hueco."""
     v = os.environ.get(name, default).lower()
     return v == "true" or (v == SLOT[0] and v != "")
+
+
+def _token_caido(e):
+    s = str(e)
+    return any(x in s for x in ("access token", "OAuthException", "Session has expired", "session has been invalidated"))
 
 
 def publish(reel, story, caption, meta, slot=""):
@@ -52,6 +57,9 @@ def publish(reel, story, caption, meta, slot=""):
             try:
                 m = IG.publish_reel(light, caption, thumb_ms=meta.get("thumb_ms"), cover_url=cu)
             except Exception as e:
+                if _token_caido(e):                        # token de Meta invalidado: por Zernio si la cuenta está allí
+                    print("Instagram: el token de Meta no vale; pruebo por Zernio:", str(e)[:120], flush=True)
+                    return Z.instagram_reel(url(light), caption, meta.get("thumb_ms"))
                 if not cu:
                     raise
                 print("Instagram no acepta la portada; uso el fotograma del gancho:", str(e)[:150], flush=True)
@@ -61,7 +69,14 @@ def publish(reel, story, caption, meta, slot=""):
         if not morning:
             jobs["instagram_reel"] = ig_reel
         if on("IG_STORY") or morning:
-            jobs["instagram_story"] = lambda: f"ig:{IG.publish_story(Z.story_safe(src)).get('id')}"
+            def ig_story():
+                try:
+                    return f"ig:{IG.publish_story(Z.story_safe(src)).get('id')}"
+                except Exception as e:
+                    if _token_caido(e):
+                        return Z.instagram_story(url(Z.story_safe(src)))
+                    raise
+            jobs["instagram_story"] = ig_story
     else:                                             # o por Zernio, si la cuenta está conectada allí
         if not morning:
             jobs["instagram_reel"] = lambda: Z.instagram_reel(url(light), caption, meta.get("thumb_ms"))
@@ -95,8 +110,18 @@ def publish(reel, story, caption, meta, slot=""):
         jobs["tiktok_video"] = tt_video
     if on("TIKTOK_STORY_BORRADOR") and tt_ok and story and not morning:
         jobs["tiktok_story_borrador"] = lambda: Z.tiktok_draft(url(story), caption.split("\n", 1)[0])
-    lk = os.environ.get("LINKEDIN", "todos").lower()
-    if lk in ("todos", "true"):                       # todos los reels también en LinkedIn (como vídeo nativo)
+    lk = os.environ.get("LINKEDIN", "b2b").lower()
+    if lk == "b2b":                                   # 1 al día, la pieza para despachos: el explicado; si hoy no hay, el portfolio
+        import tematicas as T
+        hoy = datetime.date.today()
+        hay_expl = "explicado" in [T.plan(hoy, s_) for s_ in ("mediodia", "tarde")]
+        tem = meta.get("tematica")
+        toca = tem == "explicado" or (tem == "portfolio" and not hay_expl) or slot == "manual"
+        if toca and not Z.linkedin_used_today():
+            jobs["linkedin_video"] = lambda: Z.linkedin_video(url(light), caption)
+        else:
+            print("LinkedIn: 1 publicación al día (la de despachos); este reel no va", flush=True)
+    elif lk in ("todos", "true"):                     # todos los reels también en LinkedIn (como vídeo nativo)
         jobs["linkedin_video"] = lambda: Z.linkedin_video(url(light), caption)
     elif lk == slot and slot:
         if Z.linkedin_used_today():

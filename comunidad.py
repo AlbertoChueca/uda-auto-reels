@@ -214,7 +214,7 @@ class Zernio:
         pid = self.nativo(pid)
         body = {"accountId": self._acc(), **body}
         r = self._req("POST", f"{self.API}/inbox/comments/{pid}", json=body,
-                      headers={**self._h(), "Idempotency-Key": hashlib.sha1(json.dumps(body, sort_keys=True).encode()).hexdigest()})
+                      headers={**self._h(), "Idempotency-Key": hashlib.sha1((str(pid) + json.dumps(body, sort_keys=True)).encode()).hexdigest()})
         if r.status_code >= 400:
             raise RuntimeError(f"Zernio {self.red} {r.status_code}: {r.text[:300]}")
         return (r.json().get("data") or {}).get("commentId")
@@ -334,10 +334,17 @@ def _plantilla(lista, **kw):
     return t.format(**{k: v for k, v in kw.items() if k != "n"})
 
 
+CLAVE = re.compile(r"\blistado\b", re.I)                 # «Comenta LISTADO»: contestación fija con el siguiente paso
+RESP_CLAVE = ["¡Hecho{n}! Entra en {web} (link en la bio) y agenda una reunión: te enviamos el listado, marcas lo que quieres delegar y en 24 h tienes tu presupuesto cerrado. 🙌",
+              "¡Vamos{n}! En {web} (link en la bio) agendas una reunión y te pasamos el listado: marcas solo lo que te sobra y en 24 h tienes presupuesto cerrado."]
+
+
 def respuesta(com, pieza, info, revelada):
     """Texto de respuesta o None (no contestar)."""
     sol = _sol(pieza)
     n = (com["autor"] or "").split()[0][:20] if com["autor"] else ""
+    if CLAVE.search(com["texto"] or "") and len(com["texto"]) <= 80:
+        return RESP_CLAVE[len(com["texto"]) % 2].format(n=f", {n}" if n and com.get("red") != "tiktok" else "", web=WEB)
     if sol:
         L = letra(com["texto"], sol)
         if L and len(com["texto"]) <= 60:                 # contestación «de juego»: plantilla, rápida y segura

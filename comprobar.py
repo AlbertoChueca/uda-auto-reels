@@ -40,6 +40,16 @@ if os.environ.get("IG_TOKEN"):
         from publish_ig import whoami
         me = whoami(os.environ["IG_TOKEN"])
         ok("Instagram (API de Meta)", True, f"@{me['username']} · publica directo, sin Zernio")
+        try:                                               # ¿se pueden leer las métricas de los reels?
+            import json as _j, publish_ig as _IG
+            ult = next((str(v)[3:] for l in reversed(open("log.jsonl").readlines())
+                        for k, v in (_j.loads(l).get("publicado") or {}).items() if k == "instagram_reel" and str(v).startswith("ig:")), None)
+            if ult:
+                mm = _IG.media_insights(ult)
+                ok("Métricas de Instagram", bool(mm.get("views") is not None or mm.get("reach") is not None),
+                   ", ".join(f"{k} {v}" for k, v in mm.items() if v is not None)[:200] or "sin datos")
+        except Exception as e:
+            ok("Métricas de Instagram", False, f"no se pueden leer: {str(e)[:200]}")
     except Exception as e:
         ok("Instagram (API de Meta)", False, f"token no válido: {str(e)[:160]}", True)
 

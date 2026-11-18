@@ -55,7 +55,7 @@ HOOKS = {
 ESTRUCTURAS = ["recorrido", "capas", "adivina", "top", "caso"]
 PREGUNTAS = ["¿Y esto?", "¿Y este plano?", "¿Lo adivinas?", "¿Qué es esto?"]
 CIERRE_VOZ = "Desarrollado por UDA para un estudio de arquitectura."
-MIN_LAMINA = 5.0                         # segundos mínimos por lámina: que dé tiempo a verla entera y su detalle
+MIN_LAMINA = 4.2                         # segundos mínimos por lámina (más corto = más gente lo ve entero)
 ZOOM = 2.1
 
 
@@ -279,10 +279,10 @@ def guion(estructura, cual, seed=0, V=None):
     sel, P = [], None
     if estructura == "recorrido" and cual.startswith("proyecto-"):
         P = proy[cual.split("-", 1)[1]]
-        sel = [(P, l) for l in sorted(P["laminas"], key=lambda l: orden[l["tipo"]])][:6]
+        sel = sorted(sorted([(P, l) for l in P["laminas"]], key=menos)[:5], key=lambda pl: orden[pl[1]["tipo"]])
     elif estructura == "recorrido":
         quiero = ("instalacion",) if cual == "instalaciones" else ("estructura", "detalle")
-        sel = sorted([(p, l) for p, l in todas if l["tipo"] in quiero], key=menos)[:6]
+        sel = sorted([(p, l) for p, l in todas if l["tipo"] in quiero], key=menos)[:5]
         sel.sort(key=lambda pl: (pl[0]["id"], orden[pl[1]["tipo"]]))
     elif estructura == "capas":
         P = proy[cual]
@@ -348,7 +348,7 @@ def comentar(G):
         import gemini
         partes = [{"text": f"""Eres arquitecto en España y comentas a otros arquitectos, en un reel, láminas REALES de un
 proyecto que tu equipo (UDA) desarrolló para un estudio. Titular: «{G['hook']}». Para CADA lámina escribe "voz": 1 o 2
-frases habladas, 12 a 20 palabras en total, que digan algo CONCRETO que se ve en ese plano (qué resuelve, cómo está
+frases habladas, 9 a 15 palabras en total, que digan algo CONCRETO que se ve en ese plano (qué resuelve, cómo está
 organizado, qué cuidado tiene) con naturalidad, como quien lo enseña a un colega con orgullo. Español de España.
 Prohibido: nombres de clientes, estudios, calles o municipios, fechas, precios, normativa, cifras que no se lean en el
 plano, palabras de venta («contrata», «presupuesto», «servicio»), y empezar todas igual. El titular ya se ha dicho:
@@ -434,6 +434,8 @@ def render(G, out, seed=0):
     t_fin = t; d_fin = max(dur[-1] + 0.9, 2.8); total = t_fin + d_fin
     vo_at.append(t_fin + 0.3)
     t_ini = seg[0][1]
+    import subs
+    S = subs.Subs(clips, textos, vo_at, size=50)                 # subtítulos palabra a palabra (casi todos lo ven sin sonido)
 
     hook_big = V._panel(fx.headline(G["hook"], 98, 960, 3, color=CREMA, hot=ORO, shadow=True), 44, 225)
     tit = V._panel(fx.headline(G["hook"], 46, 940, 2, color=CREMA, hot=ORO, shadow=True), 22, 120)
@@ -483,6 +485,9 @@ def render(G, out, seed=0):
             r = [(0, *pz), (0.3, *pz), (1, *fin)]
         elif g["modo"] == "recorrer":                               # detalles: se recorre la lámina de lado a lado
             r = [(0, 1, .5, .5), (ver, 1, .5, .5), (ver + .15, 1.85, .3, f[1]), (1, 1.85, .7, f[1])]
+        elif k == 0 and not intro:                                  # gancho: arranca dentro del detalle y se abre
+            ab = min(0.3, 1.5 / d)
+            r = [(0, ZOOM * 0.95, f[0], f[1]), (ab, 1, .5, .5), (max(ver, ab + 0.15), 1, .5, .5), (1, ZOOM, f[0], f[1])]
         else:
             r = [(0, 1, .5, .5), (ver, 1, .5, .5), (1, ZOOM, f[0], f[1])]
         rutas.append(r)
@@ -552,8 +557,8 @@ def render(G, out, seed=0):
             elif k > 0 and lt < 0.25:
                 prev = vista(imgs[k - 1], *cam(k - 1, seg[k - 1][2] - seg[k - 1][1], seg[k - 1][2] - seg[k - 1][1]))
                 v = Image.blend(prev, v, lt / 0.25)
-            if k == 0 and lt < 0.6 and not intro:                      # la primera lámina aparece con un fundido
-                v = Image.blend(Image.new("RGB", v.size, FONDO), v, eo(lt / 0.6))
+            if k == 0 and lt < 0.2 and not intro:                      # entrada casi inmediata: el primer segundo manda
+                v = Image.blend(Image.new("RGB", v.size, FONDO), v, eo(lt / 0.2))
             fr.paste(v, (BOX[0], BOX[1]))
             fr.alpha_composite(marco)
             hook_t = 0 if intro else dur[0] + 0.6
@@ -561,8 +566,8 @@ def render(G, out, seed=0):
                 a = eob(clamp(tt / 0.35)) * (1 - clamp((tt - hook_t + 0.25) / 0.25))
                 fx.paste_center(fr, hook_big, W / 2, 330 + hook_big.height / 2 - 60, alpha=clamp(a))
             else:
-                fx.paste_center(fr, tit, W / 2, 300 + tit.height / 2)
-                fx.paste_center(fr, real, W / 2, 300 + tit.height + 26)
+                fx.paste_center(fr, real, W / 2, 286)
+                S.pinta(fr, tt, y=366)
             ent = (hook_t if k == 0 else 0.3) if reveal[k] is None else reveal[k] + 0.2
             if reveal[k] is not None and lt < reveal[k] + 0.2 and not (k == 0 and tt < hook_t):
                 a = eob(clamp((lt - (hook_t if k == 0 else 0.25)) / 0.3)) * (1 - clamp((lt - reveal[k]) / 0.2))
@@ -660,7 +665,10 @@ def descripcion(G):
                 "caso": "👇 ¿Qué parte de tu proyecto delegarías primero?"}.get(est, "👇 ¿Qué parte del proyecto te lleva más horas?")
     return (f"{G['hook']} 📐\nproyecto de ejecución · planos de arquitectura · instalaciones y estructura\n\n"
             f"{contexto} El estudio diseña y firma; nosotros lo desarrollamos. Datos del cliente ocultos.\n\n{lista}\n\n"
-            f"{pregunta}\n\n#arquitectura #proyectodeejecucion #arquitecto #autocad #planos")
+            f"{pregunta}\n📩 Pásaselo a ese compañero que va justo de equipo.\n\n"
+            "¿Vas justo de equipo? Somos el equipo técnico externo de tu estudio → uniondearquitectos.com (link en la bio). "
+            "Comenta LISTADO y te contamos cómo delegar solo lo que te sobra.\n\n"
+            "#arquitectura #proyectodeejecucion #arquitecto #autocad #planos")
 
 
 def hacer(out, seed=0, max_rondas=2):
@@ -689,6 +697,7 @@ def hacer(out, seed=0, max_rondas=2):
             "thumb_ms": 2500, "review_score": rev["overall"], "design_score": rev["overall"], "ids": ids, "temas": [],
             "story_base": cover, "variante": "portfolio", "tematica": "portfolio", "guion": "portfolio",
             "ai": False, "tt_video": tt if os.path.exists(tt) else None, "con_voz": True,
-            "pregunta": descripcion(G).split("\n\n")[-2].strip(), "estructura": tipo, "contenido": cual}
+            "pregunta": next((l for l in descripcion(G).split("\n") if l.startswith("👇")), "👇 ¿Qué parte del proyecto te lleva más horas?"),
+            "estructura": tipo, "contenido": cual}
     say(f"listo en {time.time() - t0:.0f} s · {info['duration']} s")
     return meta, [{"id": i, "tema": "portfolio", "grupo": tipo} for i in ids]

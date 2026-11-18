@@ -259,7 +259,7 @@ def analizar(formato, hook, pasos):
     import gemini
     partes = [{"text": f"""Eres arquitecto en España (equipo técnico UDA · Unión de Arquitectos) y pones la voz a un reel
 de «{NOMBRE[formato]}» con el titular «{hook}». Te paso {len(pasos)} imágenes en orden con su etiqueta. Para CADA imagen:
-- "voz": UNA frase hablada, natural, de 8 a 15 palabras, con criterio de arquitecto sobre algo CONCRETO que se ve
+- "voz": UNA frase hablada, natural, de 6 a 11 palabras, con criterio de arquitecto sobre algo CONCRETO que se ve
   (proporción, luz, material, detalle constructivo, por qué funciona o qué falla). Nada genérico ni de catálogo.
   Español de España, tuteando. Sin cifras inventadas, sin normativa, sin precios, sin hablar de IA ni de «render».
 - "nota": 2 a 4 palabras para escribir sobre la imagen (p. ej. «Luz cenital», «Roble sin barniz», «Hueco a eje»).
@@ -427,6 +427,12 @@ def render(G, out, seed=0, bpm=84):
         if g.get("voz") is not None:
             voz(g["voz"], t0s[k] + (hook_t0 if k == 0 else 0) + 0.25)
     voz(G.get("voz_cierre"), t_fin + 0.35)
+    S = None
+    if G.get("textos_voz") and G.get("voz_gancho") is not None:        # subtítulos palabra a palabra
+        import subs
+        gv = [(k, g) for k, g in enumerate(golpes) if g.get("voz") is not None]
+        S = subs.Subs([G["voz_gancho"]] + [g["voz"] for _, g in gv], [G["textos_voz"][0]] + [g.get("texto_voz", "") for _, g in gv],
+                      [0.2] + [t0s[k] + (hook_t0 if k == 0 else 0) + 0.25 for k, _ in gv], size=54)
     import soundfile as sf
     vwav = out.replace(".mp4", "_voz.wav")
     if os.path.exists(vwav): os.remove(vwav)
@@ -471,7 +477,10 @@ def render(G, out, seed=0, bpm=84):
                     s_ = 0.9 + 0.1 * a; im = hook_big.resize((int(hook_big.width * s_), int(hook_big.height * s_)))
                 fx.paste_center(fr, im, W / 2, 760, alpha=clamp(a * 1.5) * (1 - clamp((lt - hook_t + 0.25) / 0.25)))
             else:
-                fx.paste_center(fr, tit, W / 2, SAFE_TOP + 60 + tit.height / 2)
+                if S is not None:
+                    S.pinta(fr, tt, y=SAFE_TOP + 96)
+                else:
+                    fx.paste_center(fr, tit, W / 2, SAFE_TOP + 60 + tit.height / 2)
             if not (k == 0 and lt < hook_t):
                 la = labs[k]; a = eo(clamp((lt - (hook_t if k == 0 else 0.18) - (0.16 if k > 0 else 0)) / 0.3))   # sin rebote
                 cy = 1270 if fmt != "tips" else 1180

@@ -189,6 +189,15 @@ def media_insights(media_id, token=None):
         if r.status_code == 200:
             for d in r.json().get("data", []):
                 out[d["name"]] = (d.get("values") or [{}])[0].get("value")
+        else:
+            out.setdefault("_errores", []).append(f"{m}: {r.status_code} {r.text[:140]}")
+    if not any(k for k in out if k != "_errores"):          # sin permiso de insights: al menos likes y comentarios
+        r = requests.get(f"{GRAPH}/{media_id}", params={"fields": "like_count,comments_count", "access_token": token}, timeout=30)
+        if r.status_code == 200:
+            j = r.json(); out["likes"] = j.get("like_count"); out["comments"] = j.get("comments_count")
+    err = out.pop("_errores", None)
+    if err and not out:
+        raise RuntimeError("; ".join(err[:2]))
     return out
 
 

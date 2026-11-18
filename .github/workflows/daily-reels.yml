@@ -39,6 +39,7 @@ on:
 permissions:
   contents: write
   actions: write
+  issues: write
 
 concurrency:
   group: reels
@@ -153,7 +154,7 @@ jobs:
           IG_STORY: ${{ vars.IG_STORY || 'true' }}
           TIKTOK: ${{ vars.TIKTOK || 'true' }}
           TIKTOK_STORY_BORRADOR: ${{ vars.TIKTOK_STORY_BORRADOR || 'false' }}
-          LINKEDIN: ${{ vars.LINKEDIN || 'todos' }}
+          LINKEDIN: ${{ vars.LINKEDIN || 'b2b' }}
           PUBLISH_MAX_WAIT_MIN: ${{ vars.PUBLISH_MAX_WAIT_MIN || '80' }}
           PUBLISH_AT_MANUAL: ${{ github.event_name == 'workflow_dispatch' && inputs.publicar_a || '' }}
         run: python run_daily.py ${{ steps.slot.outputs.slot }}
@@ -188,9 +189,19 @@ jobs:
           python ampliar_banco.py
           python explicado.py --ampliar || true
 
+      - name: Informe de resultados y avisos (si una red deja de publicar, abre una incidencia)
+        if: always() && steps.slot.outputs.slot != 'skip' && !inputs.dry_run
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python informe.py
+          python alerta.py
+
       - name: Recordar piezas usadas, verificaciones y aprendizajes
         if: always() && steps.slot.outputs.slot != 'skip'
-        run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" fuentes/interaccion.json fuentes/curiosidades.json used.json log.jsonl review_log.jsonl performance.json fuentes/visual.json fuentes/explicados.json tendencias.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl errores_reels.log tiempos.log agents
+        run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" fuentes/interaccion.json fuentes/curiosidades.json used.json log.jsonl review_log.jsonl performance.json informe_redes.md fuentes/visual.json fuentes/explicados.json tendencias.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl errores_reels.log tiempos.log agents
 
       - name: Bot de comunidad en la primera hora (pregunta fijada y respuestas rápidas)
         if: success() && steps.slot.outputs.slot != 'skip' && !inputs.dry_run
