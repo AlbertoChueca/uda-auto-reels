@@ -1,10 +1,10 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-18 04:32 UTC · 0 respuestas_
+_Última pasada: 2026-11-18 11:49 UTC · 0 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"A_q9IZ62Mktg0zaVkOF07LI"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"ADi1RPUuZPUlf7DBRpIJy2F"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -35,6 +35,9 @@ _Última pasada: 2026-11-18 04:32 UTC · 0 respuestas_
 | 2026-11-17 | tiktok | portfolio | Caso real: del diseño del estudio al pro | 1 | — |
 | 2026-11-17 | linkedin | portfolio | Caso real: del diseño del estudio al pro | 1 | — |
 | 2026-11-17 | tiktok | tips | 5 claves para integrar tabiques móviles | 1 | — |
+| 2026-11-17 | linkedin | tips | 5 claves para integrar tabiques móviles | 1 | — |
+| 2026-11-18 | tiktok | portfolio | Los detalles que el cliente nunca ve | 1 | — |
+| 2026-11-18 | linkedin | portfolio | Los detalles que el cliente nunca ve | 1 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
