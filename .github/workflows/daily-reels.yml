@@ -97,7 +97,11 @@ jobs:
         run: |
           timeout 360 pip install --prefer-binary --timeout 20 --retries 2 -q -r requirements.txt || pip install --prefer-binary --timeout 20 -q -r requirements.txt   # si PyPI va lento: corta a los 6 min y reintenta
           # Skia (dibujo vectorial de los reels explicados) necesita estas librerías del sistema; casi siempre ya están
-          python -c "import skia" 2>/dev/null || (timeout 300 sudo apt-get install -y -qq --no-install-recommends libgl1 libegl1 libfontconfig1 && python -c "import skia") || echo "::warning::Skia no disponible: los reels explicados usarán la reserva"
+          if ! python -c "import skia" 2>/dev/null; then
+            (timeout 120 sudo apt-get update -qq || true)
+            timeout 300 sudo apt-get install -y -qq --no-install-recommends libegl1 libgl1 libopengl0 libfontconfig1 || timeout 300 sudo apt-get install -y -qq libegl1 libgl1 || true
+            python -c "import skia; print('Skia', skia.__version__, 'listo')" || echo "::warning::Skia no disponible: los reels explicados usarán la reserva"
+          fi
 
       - name: Caché de modelos de voz y subtítulos
         if: steps.slot.outputs.slot != 'skip'

@@ -13,6 +13,8 @@
     presupuesto   el documento de presupuesto: partidas, sello y pagos por fases
     equipo        tu equipo y las manos que se suman
     edificio      un bloque que sube planta a planta, con viviendas resaltadas
+    tribunal      la mesa del tribunal (o el tutor) con tu panel detrás y sus gestos
+    lamina        los 7 bloques de un TFM como un panel que se va llenando
     movil         «pásaselo a…»: el reel en un móvil y la hoja de enviar
     cierre        la marca
 """
@@ -261,20 +263,23 @@ def cifra(c, st):
 _CARGA = [0.30, 0.52, 0.92, 0.98, 0.80, 0.62, 0.30, 0.08, 0.70, 0.95, 0.72, 0.22]
 
 
-def _px(i):
-    return 110 + i * (860 / 11)
-
-
 def curva(c, st):
+    """p: datos (lista 0..1; por defecto la carga de un estudio en el año), eje (etiquetas), capacidad ("fija" |
+    "elastica"), nivel (altura de la línea fija), cap_texto, resalta ("picos" | "valles"), txt_picos, txt_valles."""
     base, alto = 1400, 600
+    datos = st.get("datos") or _CARGA
+    eje = st.get("eje") or (list(MESES) if len(datos) == 12 else [str(i + 1) for i in range(len(datos))])
+    n = len(datos)
+    px = lambda i: 110 + i * (860 / max(1, n - 1))
     cap = st.get("capacidad"); tc = st.since("capacidad") if cap else 0
-    lvl = 0.52
+    lvl = float(st.get("nivel", 0.52))
     te = _entra(st, 1.6)
     line(c, 90, base, 990, base, ORO_D, 4)
-    for i, m in enumerate(MESES):
-        text(c, m, _px(i), base + 46, 28, ORO_D, 1, bold=False)
-    pts = [(_px(i), base - alto * v) for i, v in enumerate(_CARGA)]
-    # suavizado
+    for i, m in enumerate(eje[:n]):
+        text(c, str(m), px(i), base + 46, 28, ORO_D, 1, bold=False)
+    if st.get("eje_texto"):
+        text(c, st.get("eje_texto"), 990, base + 92, 24, ORO_D, 1, align="r", track=0.1)
+    pts = [(px(i), base - alto * v) for i, v in enumerate(datos)]
     p = skia.Path(); p.moveTo(*pts[0])
     for i in range(1, len(pts)):
         x0, y0 = pts[i - 1]; x1, y1 = pts[i]; mx = (x0 + x1) / 2
@@ -283,16 +288,13 @@ def curva(c, st):
     res = st.get("resalta")
     if cap == "fija":
         k = eo(tc / 0.7)
-        for (clip_top, clip_h, rgb, quien) in ((0, ycap, CORAL, "picos"), (ycap, base - ycap, ORO_D, "valles")):
+        for (clip_top, clip_h, rgb, quien) in ((0, ycap, CORAL, "picos"), (ycap, base - ycap, CREMA, "valles")):
             c.save(); c.clipRect(skia.Rect.MakeXYWH(0, clip_top, W, clip_h))
-            if quien == "picos":
-                area = skia.Path(p); area.lineTo(990, ycap); area.lineTo(110, ycap); area.close()
-            else:
-                area = skia.Path(p); area.lineTo(990, ycap); area.lineTo(110, ycap); area.close()
+            area = skia.Path(p); area.lineTo(990, ycap); area.lineTo(110, ycap); area.close()
             al = 0.34 if res == quien else 0.16
             if res == quien:
                 al += 0.12 * math.sin(st.t * 5)
-            c.drawPath(area, fill(rgb if quien == "picos" else CREMA, al * k))
+            c.drawPath(area, fill(rgb, al * k))
             c.restore()
         pa = stroke(CREMA, 5, 0.9 * k); pa.setPathEffect(skia.DashPathEffect.Make([18, 14], 0))
         c.drawLine(90, ycap, 90 + 900 * k, ycap, pa)
@@ -302,7 +304,7 @@ def curva(c, st):
         L = skia.PathMeasure(p, False).getLength(); pa.setPathEffect(skia.DashPathEffect.Make([L * te, L], 0))
     c.drawPath(p, pa)
     for i, q in enumerate(pts):
-        if te * 11 >= i:
+        if te * (n - 1) >= i:
             circle(c, q[0], q[1], 9, NEGRO, ORO, 5)
     if cap == "elastica":
         k = eo(tc / 1.2)
@@ -313,11 +315,16 @@ def curva(c, st):
         pa = stroke(ORO_L, 6, 0.95); pa.setPathEffect(skia.DashPathEffect.Make([18, 14], st.t * 30))
         c.drawPath(p2, pa)
         text(c, st.get("cap_texto", "TU EQUIPO + EXTERNO"), 986, base - alto - 30, 26, ORO_L, k, align="r", track=0.08)
-    if res == "picos" and cap == "fija":
-        for i in (3, 9):
-            text(c, "NO LLEGAS", pts[i][0] - (30 if i == 9 else -10), pts[i][1] - 34, 30, CORAL, eo(st.since("resalta") * 2 - 0.2), outline=8)
-    if res == "valles" and cap == "fija":
-        text(c, "PAGAS IGUAL", pts[7][0], ycap + 120, 30, CREMA, eo(st.since("resalta") * 2 - 0.2), outline=8)
+    imax = max(range(n), key=lambda i: datos[i]); imin = min(range(n), key=lambda i: datos[i])
+    if res == "picos" and (cap == "fija" or st.get("txt_picos")):
+        tx = st.get("txt_picos", "NO LLEGAS")
+        cand = [i for i in range(n) if datos[i] >= 0.9] or [imax]
+        for i in (cand[0], cand[-1]) if len(cand) > 1 and cand[-1] - cand[0] > 2 else (cand[-1],):
+            xx = min(max(pts[i][0], 110 + tw(tx, 30) / 2), 990 - tw(tx, 30) / 2)
+            text(c, tx, xx, pts[i][1] - 34, 30, CORAL, eo(st.since("resalta") * 2 - 0.2), outline=8)
+    if res == "valles" and (cap == "fija" or st.get("txt_valles")):
+        text(c, st.get("txt_valles", "PAGAS IGUAL"), min(max(pts[imin][0], 220), 880), (ycap + 120) if cap == "fija" else pts[imin][1] - 40, 30, CREMA,
+             eo(st.since("resalta") * 2 - 0.2), outline=8)
 
 
 # ------------------------------------------------------------------ meses (trabajo y coste de cada mes)
@@ -535,6 +542,81 @@ def edificio(c, st):
         text(c, st.get("texto"), CX, top - 40, 34, CREMA, eo(st.since("texto") * 2), track=0.08, outline=8)
 
 
+# ------------------------------------------------------------------ tribunal (defensa / corrección)
+def tribunal(c, st):
+    """p: miembros (1-3), gesto (None | "duda" | "ok" | "no"), foco (índice que habla), panel (bool: tu lámina detrás),
+    alumno (bool)."""
+    n = int(st.get("miembros", 3)); gesto = st.get("gesto"); tg = st.since("gesto") if gesto else 0
+    a0 = _entra(st, 0.6)
+    halo(c, CX, 980, 620, ORO, 0.12)
+    if st.get("panel", True):                                         # tu panel, colgado detrás
+        rrect(c, CX - 250, 640, 500, 330, 10, (13, 12, 11), ORO_D, 5, a0)
+        rrect(c, CX - 226, 664, 210, 150, 6, None, ORO_D, 4, a0); rrect(c, CX + 4, 664, 222, 96, 6, None, ORO_D, 4, a0)
+        for i in range(4):
+            line(c, CX + 8, 790 + i * 22, CX + 8 + 200 - (i * 47) % 90, 790 + i * 22, ORO_D, 4, a0 * 0.8)
+        rrect(c, CX - 226, 836, 452, 110, 6, None, ORO_D, 4, a0)
+    foco = st.get("foco")
+    for i in range(n):
+        a = eob(st.t * 2.2 - i * 0.2); x = CX + (i - (n - 1) / 2) * 290
+        on = foco is None or foco == i
+        rgb = ORO if on else ORO_D
+        icono(c, "persona", x, 1085, 104, rgb, 1.0 if on else 0.7, sc=max(0.01, a))
+        if gesto and (foco is None or foco == i):
+            k = eob(tg * 3 - i * 0.25)
+            if k > 0:
+                gx, gy = x + 84, 905
+                rgbg = CORAL if gesto in ("duda", "no") else ORO_L
+                circle(c, gx, gy, 46 * k, (13, 12, 11), rgbg, 5)
+                if gesto == "duda":
+                    text(c, "?", gx, gy + 22 * k, 64 * k, rgbg)
+                elif gesto == "ok":
+                    icono(c, "check", gx, gy + 2, 24 * k, rgbg, 1.0)
+                else:
+                    icono(c, "cruz", gx, gy, 22 * k, rgbg, 1.0)
+    rrect(c, 60, 1196, 960, 44, 12, CARBON, ORO, 6, a0)                # la mesa del tribunal
+    rrect(c, 110, 1240, 860, 150, 6, (13, 12, 11), ORO_D, 5, a0)
+    if st.get("alumno", True):                                        # tú, de espaldas
+        figura(c, CX, 1560, 0.72, st.get("pose", "mira"), st.t, ORO_L, a0)
+
+
+# ------------------------------------------------------------------ lámina / paneles del TFM por bloques
+BLOQUES = ["Urbanismo", "Planos", "Construcción", "Instalaciones", "Estructuras", "Imágenes 3D", "Memoria"]
+
+
+def lamina(c, st):
+    """Los 7 bloques de un TFM como un panel que se va llenando. p: hechos (cuántos están cerrados, 0-7), resaltar
+    (índices atascados, en coral), nombres (bool), activo (índice en el que estás)."""
+    hechos = st.mix("hechos", 0, d=1.0); res = st.get("resaltar") or []; tr = st.since("resaltar")
+    act = st.get("activo")
+    cajas = [(-400, -380, 380, 240), (0, -380, 400, 240), (-400, -120, 260, 240), (-120, -120, 250, 240), (150, -120, 250, 240),
+             (-400, 140, 520, 240), (140, 140, 260, 240)]
+    halo(c, CX, 1050, 640, ORO, 0.10)
+    a0 = _entra(st, 0.5)
+    rrect(c, CX - 430, 1050 - 410, 860, 820, 16, (13, 12, 11), ORO_D, 5, a0)
+    for i, (x, y, w_, h_) in enumerate(cajas):
+        a = eob(st.t * 2.4 - i * 0.13)
+        if a <= 0:
+            continue
+        hecho = clamp(hechos - i); mal = i in res
+        km = eob(tr * 3 - res.index(i) * 0.25) if mal else 0
+        rgb = CORAL if (mal and km > 0) else (ORO_L if hecho >= 1 else ORO if act == i else ORO_D)
+        bx, by = CX + x + 10, 1050 + y + 10; bw, bh = w_ - 20, h_ - 20
+        c.save(); c.translate(bx + bw / 2, by + bh / 2); c.scale(max(0.01, a), max(0.01, a)); c.translate(-bw / 2, -bh / 2)
+        if mal and km > 0:
+            halo(c, bw / 2, bh / 2, bw * 0.7, CORAL, 0.20 + 0.08 * math.sin(st.t * 5))
+        rrect(c, 0, 0, bw, bh, 10, mixc(CARBON, rgb, 0.22 * hecho if not mal else 0.12), rgb, 5 if (hecho >= 1 or mal or act == i) else 4)
+        if hecho > 0 and not mal:                                     # contenido dibujado a medida que se cierra
+            for j in range(3):
+                line(c, 22, bh - 30 - j * 24, 22 + (bw - 44) * clamp(hecho * 1.5 - j * 0.25) * (1 - j * 0.22), bh - 30 - j * 24, rgb, 5, 0.75)
+            icono(c, "check", bw - 34, 34, 16, ORO_L, clamp(hecho), t=clamp(hecho * 1.5 - 0.3))
+        if mal and km > 0.3:
+            icono(c, "cruz", bw - 34, 34, 15, CORAL, 1.0, t=clamp(km * 1.5 - 0.3))
+        if st.get("nombres", True):
+            sz, ls = fit(BLOQUES[i], 34, bw - 36, 1, min_size=22)
+            text(c, ls[0], 20, 48, sz, CREMA if (hecho >= 1 or mal or act == i) else ORO_D, 1, align="l")
+        c.restore()
+
+
 # ------------------------------------------------------------------ móvil: pásaselo a…
 def movil(c, st):
     t = st.t; a = eob(_entra(st, 0.5))
@@ -551,7 +633,7 @@ def movil(c, st):
     rrect(c, -250, yh, 500, 400, 36, CREMA, None, 0)
     rrect(c, -40, yh + 16, 80, 8, 4, (200, 194, 182), None, 0)
     text(c, "Enviar a", -214, yh + 78, 34, NEGRO, 1, align="l")
-    cont = st.get("contactos", ["Tu socio", "Equipo", "Estudio"])
+    cont = st.get("contactos") or st.get("_contactos") or ["Tu socio", "Equipo", "Estudio"]
     tap = 1.5; env = t > tap + 0.25
     for i, nom in enumerate(cont[:3]):
         x = -150 + i * 150; y = yh + 168
@@ -588,17 +670,17 @@ def cierre(c, st):
                         skia.SamplingOptions(skia.FilterMode.kLinear, skia.MipmapMode.kLinear), pa)
     k = eo((st.t - 0.35) / 0.5)
     line(c, CX - 160 * k, 980, CX + 160 * k, 980, ORO, 4, k)
-    sz, ls = fit(st.get("claim", "Tu equipo técnico de arquitectura, sin plantilla"), 46, 860, 2, bold=False)
+    sz, ls = fit(st.get("claim") or st.get("_claim") or "Tu equipo técnico de arquitectura, sin plantilla", 46, 860, 2, bold=False)
     for i, l_ in enumerate(ls[:2]):
         text(c, l_, CX, 1070 + i * 60, sz, CREMA, k, bold=False)
     k2 = eo((st.t - 0.6) / 0.5)
-    text(c, st.get("handle", "@uniondearquitectos"), CX, 1290, 40, ORO_L, k2)
-    text(c, st.get("web", "uniondearquitectos.com"), CX, 1350, 32, ORO_D, k2, bold=False)
+    text(c, st.get("handle") or st.get("_handle") or "@uniondearquitectos", CX, 1290, 40, ORO_L, k2)
+    text(c, st.get("web") or st.get("_web") or "uniondearquitectos.com", CX, 1350, 32, ORO_D, k2, bold=False)
 
 
 ESCENAS = {"despacho": despacho, "llamada": llamada, "rejilla": rejilla, "barras": barras, "cifra": cifra, "curva": curva,
            "meses": meses, "plano": plano_grande, "flujo": flujo, "versus": versus, "presupuesto": presupuesto,
-           "equipo": equipo, "edificio": edificio, "movil": movil, "cierre": cierre}
+           "equipo": equipo, "edificio": edificio, "tribunal": tribunal, "lamina": lamina, "movil": movil, "cierre": cierre}
 # parámetros que cada escena entiende (lo usa el validador de guiones)
 PARAMS = {
     "despacho": {"hora", "luz", "dia", "entrega", "pantalla", "pendientes", "aviso", "aviso_color", "correos", "pila", "pila_color", "pose"},
@@ -606,7 +688,7 @@ PARAMS = {
     "rejilla": {"n", "cols", "icono", "resaltar", "resaltar_fin", "color", "numeros", "marca"},
     "barras": {"barras"},
     "cifra": {"valor", "desde", "dur", "decimales", "prefijo", "sufijo", "color", "sub", "icono"},
-    "curva": {"capacidad", "cap_texto", "resalta"},
+    "curva": {"datos", "eje", "eje_texto", "nivel", "capacidad", "cap_texto", "resalta", "txt_picos", "txt_valles"},
     "meses": {"trabajo", "coste", "resalta", "arriba", "abajo"},
     "plano": {"capas", "dibujo", "firma", "firma_texto", "etiqueta"},
     "flujo": {"pasos", "activo"},
@@ -614,6 +696,8 @@ PARAMS = {
     "presupuesto": {"titulo", "partidas", "marcadas", "cerrado", "total", "sello", "sello_sub", "pago", "pago_a", "pago_b"},
     "equipo": {"propios", "extra", "extra_texto", "saturado"},
     "edificio": {"plantas", "cols", "resaltar", "color", "grua", "texto"},
+    "tribunal": {"miembros", "gesto", "foco", "panel", "alumno", "pose"},
+    "lamina": {"hechos", "resaltar", "nombres", "activo"},
     "movil": {"contactos"},
     "cierre": {"claim", "handle", "web"},
 }
