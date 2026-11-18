@@ -1,10 +1,10 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-18 11:49 UTC · 0 respuestas_
+_Última pasada: 2026-11-18 14:50 UTC · 1 respuestas_
 
 ## Avisos
 
-- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"ADi1RPUuZPUlf7DBRpIJy2F"}}
+- **instagram**: Instagram comentarios 400: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","code":190,"type":"OAuthException","error_subcode":460,"fbtrace_id":"ASeD2TjS7U-qnZZoCj1BP1m"}}
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -30,7 +30,7 @@ _Última pasada: 2026-11-18 11:49 UTC · 0 respuestas_
 | 2026-11-15 | linkedin | obra | POV: tu casa, de la zanja a la llave | 1 | — |
 | 2026-11-16 | tiktok | tips | 5 claves para un interior táctil | 1 | — |
 | 2026-11-16 | linkedin | tips | 5 claves para un interior táctil | 1 | — |
-| 2026-11-16 | tiktok | antes_despues | ¿Adivinas cómo estaba antes? | 1 | — |
+| 2026-11-16 | tiktok | antes_despues | ¿Adivinas cómo estaba antes? | 2 | — |
 | 2026-11-16 | linkedin | antes_despues | ¿Adivinas cómo estaba antes? | 1 | — |
 | 2026-11-17 | tiktok | portfolio | Caso real: del diseño del estudio al pro | 1 | — |
 | 2026-11-17 | linkedin | portfolio | Caso real: del diseño del estudio al pro | 1 | — |
@@ -38,6 +38,8 @@ _Última pasada: 2026-11-18 11:49 UTC · 0 respuestas_
 | 2026-11-17 | linkedin | tips | 5 claves para integrar tabiques móviles | 1 | — |
 | 2026-11-18 | tiktok | portfolio | Los detalles que el cliente nunca ve | 1 | — |
 | 2026-11-18 | linkedin | portfolio | Los detalles que el cliente nunca ve | 1 | — |
+| 2026-11-18 | tiktok | galeria | Casas pensadas como refugio | 1 | — |
+| 2026-11-18 | linkedin | galeria | Casas pensadas como refugio | 1 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
