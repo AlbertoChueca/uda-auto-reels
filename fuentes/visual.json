@@ -1003,6 +1003,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-17"
+},
+{
+"id": "t20261118g",
+"hook": "Casas pensadas como refugio",
+"cierre": "¿Vivirías en un refugio así?",
+"escenas": [
+{
+"idea": "Hornacina redondeada revestida de estuco calizo color topo con banco tapizado en lana bouclé y luz rasante suave.",
+"label": "Rincón de lectura"
+},
+{
+"idea": "Mesa redonda de nogal macizo bajo lámpara cerámica colgante, rodeada de muros terracota y ventanal hacia jardín frondoso.",
+"label": "Comedor sereno"
+},
+{
+"idea": "Embocadura curvada en yeso continuo que enmarca un salón con alfombra de yute grueso y sofás bajos en lino crudo.",
+"label": "Paso abovedado"
+},
+{
+"idea": "Cabecero corrido de roble ahumado iluminado indirectamente, con paredes en mortero de arcilla y ropa de cama en lino canela.",
+"label": "Dormitorio envolvente"
+},
+{
+"idea": "Hogar de leña sobre bancada continua de piedra caliza abujardada, integrado en una pared curva con revoco mineral.",
+"label": "Zona de fuego"
+},
+{
+"idea": "Isla monolítica de travertino mate fundida con frentes panelados en nogal oscuro bajo lucernario cenital tamizado.",
+"label": "Cocina integrada"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-18"
 }
 ],
 "proceso": [
@@ -1182,6 +1215,13 @@
 "descripcion": "una vivienda unifamiliar bioclimática con muros de piedra caliza, luz cenital y carpintería móvil integrada",
 "tendencia": true,
 "fecha": "2026-11-17"
+},
+{
+"id": "t20261118p",
+"tipo": "casa",
+"descripcion": "Una vivienda bioclimática con muros curvos de tierra compactada, nogal y patios de ventilación cruzada.",
+"tendencia": true,
+"fecha": "2026-11-18"
 }
 ],
 "antes_despues": [
@@ -1382,6 +1422,14 @@
 "estilo": "minimalismo cálido con carpintería oculta, formas orgánicas y paleta en tonos terracota",
 "tendencia": true,
 "fecha": "2026-11-17"
+},
+{
+"id": "t20261118a",
+"tipo": "estancia",
+"descripcion": "Una cocina segregada y sombría con armarios de chapa amarillenta, linóleo desgastado y tubos fluorescentes a la vista.",
+"estilo": "Espacio fluido con nogal oscuro integrado, encimera de caliza y revestimientos minerales envolventes.",
+"tendencia": true,
+"fecha": "2026-11-18"
 }
 ],
 "tips": [

@@ -1,39 +1,40 @@
-# Cuaderno de cazatendencias (2026-11-17)
+# Cuaderno de cazatendencias (2026-11-18)
 
 ## Tendencias de la semana
-- Minimalismo cálido y formas orgánicas: La gente busca que sus casas sean refugios acogedores. Se viralizan los arcos, bordes suaves y mobiliario redondeado que rompen con la rigidez de las líneas rectas y aportan confort visual.
-- Materiales crudos con textura real: Hay un fuerte rechazo a lo artificial y excesivamente pulido. Triunfan los vídeos mostrando vetas de madera muy marcadas, piedra caliza, travertino y paredes con estuco o pintura a la cal que aportan profundidad.
-- El baño como spa de lujo silencioso: Es la estancia estrella de las reformas este mes. Funcionan muy bien las duchas a ras de suelo, superficies continuas sin juntas y hornacinas integradas en la pared con iluminación indirecta cálida.
-- Tonos tierra profundos y oscuros: El otoño-invierno 2026 ha desterrado al blanco roto. Los salones y dormitorios se llenan de marrón chocolate, burdeos, terracota y verde oliva para crear atmósferas más envolventes, elegantes y habitadas.
-- Espacios flexibles y tabiques móviles: Las distribuciones estáticas ya no sirven. Se guardan masivamente los vídeos que muestran grandes puertas correderas de suelo a techo o paneles de madera alistonada que ocultan cocinas o zonas de teletrabajo.
-- Diseño bioclimático y luz natural: La sostenibilidad es una prioridad real. Gustan mucho los recorridos visuales que muestran cómo la luz del sol entra en la casa según la hora del día y el uso de materiales naturales que aíslan térmica y acústicamente.
+- Minimalismo cálido y efecto cocooning: La audiencia rechaza los espacios fríos. Buscan refugio visual mediante tonos tierra, texturas envolventes y una decoración más emocional que transmita paz y calidez en el hogar.
+- Baños concebidos como spa doméstico: El baño deja de ser puramente funcional. Triunfan los vídeos mostrando hornacinas integradas en la obra, luz cálida e indirecta, y materiales crudos y orgánicos.
+- Arquitectura sensorial y bioclimática: Hay un boom por mostrar casas que responden al clima natural (ventilación cruzada, luz) y que usan materiales con textura real que dialogan con la iluminación a lo largo del día.
+- Curvas útiles y orgánicas: Los arcos y bordes redondeados se viralizan no solo por estética, sino para suavizar transiciones entre estancias y mejorar el flujo visual en espacios pequeños.
+- Cocinas integradas de maderas oscuras: Las maderas oscuras vuelven con fuerza para dar carácter. Se muestran cocinas continuas que se funden con el salón, priorizando la convivencia y la elegancia atemporal.
 
 ## Estilos
-- madera oscura con veta visible
-- piedra travertino y caliza
-- verde oliva y burdeos
-- microcemento continuo
-- textiles gruesos como bouclé y lana
+- marrón chocolate
+- rojo burdeos y tonos vino
+- verde oliva y musgo
+- madera de nogal oscura
+- piedra caliza y travertino
+- acabados minerales en paredes
 
 ## Para nuestro equipo
-- Aprovechar el fuerte contraste entre maderas tostadas y piedra natural rugosa bañado por luz rasante.
-- Destacar soluciones de carpintería técnica a medida que resuelven divisiones móviles con herrajes totalmente invisibles.
-- Prescindir por completo de blancos fríos, grises estériles y acabados lacados de alto brillo.
-- Enfatizar en los vídeos la entrada de luz solar directa sobre texturas minerales a distintas horas del día.
+- Potenciar la luz rasante cálida sobre revocos minerales y morteros de arcilla para resaltar la rugosidad táctil.
+- Centrar los contenidos en detalles de encuentro constructivo real (arcos sin tapajuntas, carpinterías ocultas) para atraer al perfil técnico de arquitectos.
+- Evitar por completo los blancos puros hospitalarios, la perfilería negra de estética industrial y el abuso de porcelánicos grises.
+- Abordar el concepto de refugio y cocooning desde la solidez de la arquitectura construida, alejándose del simple atrezzo decorativo efímero.
 
 ## Ya quemado
-- El minimalismo frío de tonos grises y blancos estériles
-- El beige pálido o 'taupe' como único color neutro en toda la casa
-- Muebles lacados de alto brillo y superficies sin textura
+- minimalismo aséptico de paredes totalmente blancas
+- abuso del color gris en suelos y paredes
+- mármol blanco veteado sobreutilizado en cocinas
+- estilo industrial con lámparas de metal negro
 
 ## Música en tendencia (TikTok, España)
 - Dance Like Nobody’s Watching - Instrumental Version · Siine
-- Cool Girl · Jayde Mari
 - cool girls · Sonatara
-- 维也纳贵族-2 (F) · Music Time
+- Cool Girl · Jayde Mari
 - Neon Nights · Adrian Rover
-- Man on the Run · Jon Sumner
+- 维也纳贵族-2 (F) · Music Time
 - Neon Bass · Tangelene Bolton
+- Man on the Run · Jon Sumner
 - 古风 大气 修仙 影视配乐 · 当歌音乐
 - Flowers · Adrián Berenguer
 - 危机压迫 (F) · Music Time

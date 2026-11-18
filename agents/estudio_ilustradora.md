@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-17)
+# Cuaderno de ilustradora (2026-11-18)
 
-- Seguir haciendo: Iluminación cálida rasante sobre fondos oscuros y texturas de materialidad noble (cal, travertino, roble).
-- Dejar de hacer: Estética de render genérico y generación de cotas o rótulos ilegibles con IA.
-- Probar: Despieces axonométricos limpios por capas constructivas, enfatizando texturas reales y completamente libres de grafismo tipográfico.
+- Seguir haciendo: Texturas táctiles nobles (cal, nogal, travertino) con paleta UDA de negro profundo y luz dorada.
+- Dejar de hacer: Generar texturas que simulen planos con tipografía o cotas ilegibles por IA.
+- Probar: Despieces axonométricos limpios por estratos materiales, completamente desprovistos de grafismo textual.

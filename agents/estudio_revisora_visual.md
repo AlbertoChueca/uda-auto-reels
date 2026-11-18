@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-17)
+# Cuaderno de revisora_visual (2026-11-18)
 
-- Seguir haciendo: Verificación rigurosa de verosimilitud constructiva en detalles de instalaciones y reformas.
-- Dejar de hacer: Aprobar imágenes con geometría estructural inverosímil o texturas que emulen planos con tipografía ilegible.
-- Probar: Control estricto previo a publicación: viabilidad técnica según criterios CTE y cero presencia de texto generado por IA.
+- Seguir haciendo: Control estricto de credibilidad técnica en soluciones de reforma e interiorismo.
+- Dejar de hacer: Aprobar imágenes con estética de render comercial genérico o incongruencias constructivas.
+- Probar: Protocolo de validación técnica CTE (encuentros muro-carpintería creíbles y ausencia total de texto generado por IA).

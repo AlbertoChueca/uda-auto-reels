@@ -1,5 +1,5 @@
-# Cuaderno de ritmo (2026-11-17)
+# Cuaderno de ritmo (2026-11-18)
 
-- Seguir haciendo: Entradas directas con alta inmersión visual («Cerramientos», «POV», superando los 10 segundos de retención).
-- Dejar de hacer: Ritmos lentos o transiciones contemplativas con caídas de atención a los 2.500 ms («Del boceto al render»).
-- Probar: Edición técnica rápida a 1,2 segundos por capa constructiva, con música de tensión contenida y conclusión nítida.
+- Seguir haciendo: Aperturas inmersivas directas al grano que logran retener más de 10 segundos.
+- Dejar de hacer: Entradas pausadas o contemplativas que hunden el visionado por debajo de los 3.000 ms.
+- Probar: Ritmo de corte dinámico (1,2 segundos por estrato constructivo) con tensión sonora contenida y remate claro.

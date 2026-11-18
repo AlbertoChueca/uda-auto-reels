@@ -1,5 +1,5 @@
-# Cuaderno de narradora_casos (2026-11-17)
+# Cuaderno de narradora_casos (2026-11-18)
 
-- Seguir haciendo: Situaciones de fricción operativa en el estudio («horas en instalaciones», «plantilla o delegar», récord de 89 clics).
-- Dejar de hacer: Planteamientos reflexivos o nostálgicos («hogar consciente», anécdotas teóricas).
-- Probar: Escenas de entrega crítica: colisión imprevista entre estructura e instalaciones a 48 horas de visar el proyecto de ejecución.
+- Seguir haciendo: Dilemas de carga de trabajo y operativa de despacho («Plantilla o delegar» generó 89 clics directos).
+- Dejar de hacer: Discursos contemplativos o teóricos sin fricción profesional real.
+- Probar: Casos de fricción inmediata: colisión imprevista entre trazado de instalaciones y estructura a horas del visado.

@@ -1,7 +1,5 @@
-# Cuaderno de crecimiento (2026-11-17)
+# Cuaderno de crecimiento (2026-11-18)
 
-# Cuaderno de crecimiento (2026-11-17)
-
-• Seguir haciendo: Contenido enfocado a instalaciones y detalle de plano, líder indiscutible en guardados (hasta 4) y compartidos (2).
-• Dejar de hacer: Cierres neutros; el contador de visitas al perfil sigue a cero en todas las publicaciones registradas.
-• Probar: CTA directo al cuello de botella de entregas: «¿Atascado con las instalaciones de tu proyecto? Delega el ejecutivo con UDA. Enlace en el perfil».
+• Seguir haciendo: Temas de instalaciones y detalle constructivo, líderes indiscutibles en guardados (hasta 4) y compartidos (2).
+• Dejar de hacer: Cierres sin llamada a la acción específica; las visitas al perfil se mantienen en cero en todo el histórico.
+• Probar: CTA con incentivo concreto y directo al cuello de botella: «Si las instalaciones te colapsan la entrega, delega tu proyecto ejecutivo con UDA. Enlace en perfil».

@@ -1,7 +1,5 @@
-# Cuaderno de guion (2026-11-17)
+# Cuaderno de guion (2026-11-18)
 
-# Cuaderno de guion (2026-11-17)
-
-• Seguir haciendo: Desgloses secuenciales y constructivos («Capa a capa», 4 guardados) y soluciones espaciales prácticas, que alcanzan retenciones récord (>10.300 ms).
-• Dejar de hacer: Comparaciones estéticas vacías sin valor normativo ni ejecutivo («Del boceto al render», peor retención con 2.560 ms).
-• Probar: Checklist técnico de 30 segundos con 3 comprobaciones obligatorias para no estrangular patinillos ni ventilaciones al abrir una cocina.
+• Seguir haciendo: Desgloses secuenciales constructivos («Capa a capa», 4 guardados) y soluciones espaciales ejecutables que retienen más de 10 segundos.
+• Dejar de hacer: Contenidos descriptivos sin implicación técnica ni normativa de proyecto.
+• Probar: Protocolo técnico en 3 pasos para encajar patinillos y ventilación obligatoria al reubicar cocinas en reforma.
