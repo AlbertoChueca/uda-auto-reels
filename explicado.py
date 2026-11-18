@@ -316,7 +316,7 @@ class Montaje:
                 marca_agua(c, ie)
                 rotulo(c, b, t, self.golpes[gi + 1] if gi + 1 < len(self.golpes) else None)
                 if b.get("fuente"):
-                    K.text(c, b["fuente"], W / 2, 1474, 24, CREMA, 0.55 * eo((t - b["t0"]) / 0.5), bold=False)
+                    K.text(c, b["fuente"], W / 2, 1474, 29, CREMA, 0.8 * eo((t - b["t0"]) / 0.5), bold=False)
                 subtitulos(c, self.trozos, t)
         return self.sf
 
@@ -404,8 +404,8 @@ def portada(g, info, path):
     y0 = 430
     for i, l_ in enumerate(ls):
         K.text(c, l_, W / 2, y0 + i * size * 1.1, size, CREMA if i % 2 == 0 or len(ls) == 1 else ORO_L, 1.0, outline=18)
-    K.rrect(c, W / 2 - 190, 1420, 380, 64, 10, ORO, None, 0)
-    K.text(c, "EXPLICADO EN 40 S", W / 2, 1464, 30, NEGRO, 1, track=0.08)
+    K.rrect(c, W / 2 - 190, 250, 380, 62, 10, ORO, None, 0)                       # etiqueta sobre el titular (no tapa el dibujo)
+    K.text(c, "EXPLICADO EN 40 S", W / 2, 293, 30, NEGRO, 1, track=0.08)
     K.rrect(c, 34, 34, W - 68, H - 68, 4, None, ORO_D, 3, 0.9)
     from PIL import Image
     a = sf_.makeImageSnapshot().toarray(colorType=skia.kRGBA_8888_ColorType)

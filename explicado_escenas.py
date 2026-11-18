@@ -612,8 +612,8 @@ def lamina(c, st):
         if mal and km > 0.3:
             icono(c, "cruz", bw - 34, 34, 15, CORAL, 1.0, t=clamp(km * 1.5 - 0.3))
         if st.get("nombres", True):
-            sz, ls = fit(BLOQUES[i], 34, bw - 36, 1, min_size=22)
-            text(c, ls[0], 20, 48, sz, CREMA if (hecho >= 1 or mal or act == i) else ORO_D, 1, align="l")
+            sz = max(18, min(34, 34 * (bw - 84) / max(1, tw(BLOQUES[i], 34))))   # deja sitio a la marca de la esquina
+            text(c, BLOQUES[i], 20, 30 + sz * 0.6, sz, CREMA if (hecho >= 1 or mal or act == i) else ORO_D, 1, align="l")
         c.restore()
 
 
