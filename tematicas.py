@@ -21,7 +21,7 @@ import casos
 HERE = os.path.dirname(os.path.abspath(__file__))
 INTERACCION = ["test", "vf", "encuesta", "atajos", "inspiracion"]
 UDA = ["coste", "contratar", "partidas", "actuaciones", "revit", "proceso"]
-VISUAL = ["portfolio", "antes_despues", "tips", "proceso_visual", "galeria", "obra"]   # visual.py (100 % del calendario)
+VISUAL = ["portfolio", "explicado", "antes_despues", "galeria", "tips", "proceso_visual", "obra"]   # visual.py (100 % del calendario)
 TEMAS = INTERACCION + UDA + VISUAL
 NOMBRE = {"test": "Test de arquitecto", "vf": "¿Verdadero o falso?", "encuesta": "Encuesta", "atajos": "Guárdalo: atajos",
           "inspiracion": "Renders y curiosidades",
@@ -30,16 +30,20 @@ NOMBRE = {"test": "Test de arquitecto", "vf": "¿Verdadero o falso?", "encuesta"
           "revit": "UDA · CAD o Revit", "proceso": "UDA · Cómo trabajamos", "uda": "UDA (rota entre sus 6 temas)",
           "galeria": "Galería: «Interiores que pondría en mi casa»", "tips": "Tips visuales",
           "antes_despues": "Antes y después de una reforma", "proceso_visual": "Del boceto al render",
-          "obra": "De la zanja a la llave", "portfolio": "Proyecto real de UDA (portafolio)"}
+          "obra": "De la zanja a la llave", "portfolio": "Proyecto real de UDA (portafolio)",
+          "explicado": "Explicado: animación para estudios que necesitan delegar"}
 VARIANTE = {"coste": "caso", "contratar": "contratar", "proceso": "proceso"}       # nombre interno en casos.py
 TEMA_DE_VARIANTE = {v: k for k, v in VARIANTE.items()}
 SLOTS = {"manana": 0, "mediodia": 1, "tarde": 2}
-# 2 reels al día (12:00 y 15:00). Lo que mejor funciona es enseñar NUESTRO trabajo: proyecto real todos los días a las
-# 12:00 (con 5 estructuras distintas que se rotan, ver portafolio.py) y, a las 15:00, el resto de temas visuales.
-PLAN = [[None, "portfolio", "antes_despues"], [None, "portfolio", "tips"], [None, "portfolio", "galeria"],
-        [None, "portfolio", "proceso_visual"], [None, "portfolio", "antes_despues"], [None, "portfolio", "galeria"],
-        [None, "portfolio", "tips"]]
-ROTACION = [t for t in VISUAL if t != "obra"]
+# 2 reels al día (12:00 y 15:00), según los datos reales de TikTok (nov 2026):
+#   12:00  proyecto real de UDA todos los días (el formato con más vistas; 5 estructuras que se rotan, portafolio.py)
+#   15:00  lunes, miércoles y viernes: EXPLICADO (animación para estudios que necesitan delegar, explicado.py);
+#          el resto, los dos visuales que más retienen: antes/después y galería. Tips, boceto→render y obra (los
+#          que menos se ven) quedan solo como reserva si otro formato no llega al 8.
+PLAN = [[None, "portfolio", "explicado"], [None, "portfolio", "antes_despues"], [None, "portfolio", "explicado"],
+        [None, "portfolio", "galeria"], [None, "portfolio", "explicado"], [None, "portfolio", "antes_despues"],
+        [None, "portfolio", "galeria"]]
+ROTACION = ["portfolio", "explicado", "antes_despues", "galeria"]
 
 
 def _ultimo(t, rec):
@@ -61,11 +65,17 @@ def tema_de(fecha, slot, recientes=()):
     return min([t for t in ROTACION if not rec or t != rec[-1]], key=lambda t: (_ultimo(t, rec), ROTACION.index(t)))
 
 
+RESERVA = {"explicado": ["antes_despues", "galeria"], "portfolio": ["antes_despues", "galeria"],
+           "antes_despues": ["galeria", "tips"], "galeria": ["antes_despues", "tips"]}
+
+
 def reserva(tema, recientes=(), n=2):
-    """Si un reel no llega al 8: otros del mismo grupo (visual, interacción o UDA), los menos recientes."""
+    """Si un reel no llega al 8: los formatos de reserva de ese tema (o, si no los tiene, otros de su grupo)."""
+    if tema in RESERVA:
+        return RESERVA[tema][:n]
     rec = [r for r in recientes if r]
     grupo = VISUAL if tema in VISUAL else UDA if tema in UDA else [t for t in INTERACCION if t != "inspiracion"]
-    otras = [t for t in grupo if t not in (tema, "inspiracion")]
+    otras = [t for t in grupo if t not in (tema, "inspiracion", "explicado", "portfolio")]
     return sorted(otras, key=lambda t: _ultimo(t, rec))[:n]
 
 

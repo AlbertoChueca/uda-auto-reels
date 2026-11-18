@@ -3,6 +3,7 @@ numpy
 soundfile
 requests
 num2words
+skia-python==144.1
 kokoro-onnx
 faster-whisper==1.1.1
 piper-tts==1.8.0

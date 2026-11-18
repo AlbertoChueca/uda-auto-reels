@@ -1,0 +1,1752 @@
+{
+ "_info": "Guiones de los reels «explicados» (explicado.py). Cada golpe = una frase de voz + una escena (explicado_escenas.py; «=» sigue en la misma) + un rótulo opcional. Solo cifras verificadas de UDA (assets/uda/hechos.md, Listado de Documentos, Tabla de Referencia). Estructura: escena con giro → mito tachado → por qué → dato → salida → reencuadre → «pásaselo a…».",
+ "guiones": [
+  {
+   "id": "noche_entrega",
+   "hook": "Las 21:00 del día antes de entregar",
+   "portada": 1,
+   "golpes": [
+    {
+     "voz": "Son las nueve de la noche. Mañana entregas.",
+     "escena": "despacho",
+     "p": {
+      "hora": 21.0,
+      "pantalla": "plano",
+      "pose": "trabaja",
+      "pila": 2
+     },
+     "rotulo": "21:00",
+     "color": "oro_l"
+    },
+    {
+     "voz": "Y todavía te quedan diecisiete planos.",
+     "escena": "=",
+     "p": {
+      "pantalla": "pendientes",
+      "pendientes": 17,
+      "pose": "agobio",
+      "hora": 21.6,
+      "pila": 4
+     },
+     "rotulo": "17 planos",
+     "color": "coral",
+     "cam": [
+      540,
+      960,
+      1.22
+     ],
+     "claves": [
+      "diecisiete"
+     ],
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, no es por organizarte mal.",
+     "escena": "=",
+     "p": {
+      "hora": 22.0
+     },
+     "rotulo": "Organizarte mal",
+     "tachado": true,
+     "cam": [
+      540,
+      1050,
+      1.0
+     ]
+    },
+    {
+     "voz": "Un Proyecto de Ejecución completo son dieciocho documentos.",
+     "escena": "rejilla",
+     "p": {
+      "n": 18,
+      "icono": "doc",
+      "cols": 6
+     },
+     "rotulo": "18 documentos",
+     "color": "oro_l",
+     "claves": [
+      "dieciocho"
+     ],
+     "fuente": "Fuente: Listado de Documentos a Delegar de UDA"
+    },
+    {
+     "voz": "Detalles, carpinterías, seis instalaciones, estructura, memoria, mediciones…",
+     "escena": "=",
+     "p": {
+      "numeros": true
+     },
+     "cam": [
+      540,
+      1050,
+      1.12
+     ],
+     "tono": "porque"
+    },
+    {
+     "voz": "Y ninguno es diseñar: todo eso es producción.",
+     "escena": "=",
+     "p": {
+      "resaltar": 18,
+      "color": "coral"
+     },
+     "rotulo": "Producción",
+     "color": "coral",
+     "cam": [
+      540,
+      1050,
+      1.0
+     ],
+     "claves": [
+      "producción."
+     ]
+    },
+    {
+     "voz": "El diseño es tuyo. La producción se puede delegar.",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "Tú diseñas",
+        "i": "lapiz"
+       },
+       {
+        "t": "Se desarrolla fuera",
+        "i": "planos"
+       },
+       {
+        "t": "Tú firmas",
+        "i": "firma"
+       }
+      ],
+      "activo": 0
+     },
+     "rotulo": "Delegar",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Un equipo externo desarrolla los planos. Tú revisas y firmas.",
+     "escena": "=",
+     "p": {
+      "activo": [
+       1,
+       2
+      ]
+     },
+     "tono": "salida"
+    },
+    {
+     "voz": "Mismas entregas. Sin noches.",
+     "escena": "despacho",
+     "p": {
+      "hora": 18.0,
+      "luz": "dia",
+      "pantalla": "ok",
+      "pose": "celebra",
+      "pila": 0
+     },
+     "rotulo": "Sin noches",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "No necesitas más horas: necesitas más manos.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3,
+      "extra": 4
+     },
+     "rotulo": "Más manos",
+     "color": "oro_l",
+     "claves": [
+      "manos."
+     ],
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio que siempre entrega de madrugada.",
+   "pregunta": "¿Cuál fue tu entrega más al límite?",
+   "descripcion": "Un Proyecto de Ejecución completo son 18 documentos, y ninguno es diseñar. El diseño es tuyo; la producción (detalles, instalaciones, estructura, memoria, mediciones) se puede delegar.",
+   "puntos": [
+    "Tú diseñas",
+    "Un equipo externo desarrolla la producción",
+    "Tú revisas y firmas"
+   ]
+  },
+  {
+   "id": "coste_fijo",
+   "hook": "Lo caro no es el sueldo",
+   "portada": 2,
+   "golpes": [
+    {
+     "voz": "Contratas a un arquitecto porque no llegas.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3,
+      "saturado": true
+     },
+     "rotulo": "No llegas",
+     "color": "coral"
+    },
+    {
+     "voz": "Marzo, abril, mayo: vais a tope.",
+     "escena": "meses",
+     "p": {
+      "coste": "fijo"
+     },
+     "rotulo": "A tope",
+     "color": "oro_l"
+    },
+    {
+     "voz": "Llega agosto. No entra nada… y la nómina sí.",
+     "escena": "=",
+     "p": {
+      "resalta": true
+     },
+     "rotulo": "La nómina sí",
+     "color": "coral",
+     "rotulo_en": "nómina",
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, lo caro no es el sueldo.",
+     "escena": "=",
+     "rotulo": "El sueldo",
+     "tachado": true
+    },
+    {
+     "voz": "Un arquitecto en plantilla cuesta entre cuarenta y cuarenta y siete mil euros al año.",
+     "escena": "cifra",
+     "p": {
+      "valor": 47000,
+      "desde": 40000,
+      "sufijo": " €",
+      "dur": 2.2
+     },
+     "rotulo": "En plantilla",
+     "color": "crema",
+     "fuente": "Referencia UDA 2026: salario, Seguridad Social, licencias, puesto y formación"
+    },
+    {
+     "voz": "Haya proyectos… o no.",
+     "escena": "=",
+     "p": {
+      "sub": "al año, haya proyectos o no"
+     },
+     "cam": [
+      540,
+      1100,
+      1.12
+     ],
+     "tono": "giro"
+    },
+    {
+     "voz": "Lo caro es pagarlo cuando no hay trabajo.",
+     "escena": "meses",
+     "p": {
+      "coste": "fijo",
+      "resalta": true
+     },
+     "rotulo": "Coste fijo",
+     "color": "coral",
+     "claves": [
+      "trabajo."
+     ]
+    },
+    {
+     "voz": "Si delegas, pagas por proyecto: solo cuando hay proyecto.",
+     "escena": "=",
+     "p": {
+      "coste": "variable",
+      "resalta": false
+     },
+     "rotulo": "Coste variable",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Y con presupuesto cerrado antes de empezar.",
+     "escena": "presupuesto",
+     "p": {
+      "sello": "24 h"
+     },
+     "rotulo": "Cerrado",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "No es contratar o no crecer. Es crecer sin coste fijo.",
+     "escena": "curva",
+     "p": {
+      "capacidad": "elastica",
+      "cap_texto": "TU CAPACIDAD"
+     },
+     "rotulo": "Crecer sin coste fijo",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio que está a punto de publicar una oferta de empleo.",
+   "pregunta": "¿Contratar o delegar? ¿Qué harías tú?",
+   "descripcion": "Un arquitecto en plantilla cuesta 40.000–47.000 € al año (salario, Seguridad Social, licencias, puesto y formación), haya proyectos o no. Lo caro no es el sueldo: es pagarlo los meses sin trabajo.",
+   "puntos": [
+    "Plantilla: coste fijo todo el año",
+    "Delegar: pagas por proyecto",
+    "Presupuesto cerrado antes de empezar"
+   ]
+  },
+  {
+   "id": "encargo_no",
+   "hook": "El encargo que no puedes coger",
+   "portada": 0,
+   "golpes": [
+    {
+     "voz": "Te llama un promotor: un bloque de treinta y dos viviendas.",
+     "escena": "llamada",
+     "p": {
+      "quien": "Promotor",
+      "asunto": "Bloque de 32 viviendas",
+      "icono": "casa"
+     },
+     "rotulo": "32 viviendas",
+     "color": "oro_l",
+     "rotulo_en": "bloque"
+    },
+    {
+     "voz": "Y le dices que no.",
+     "escena": "=",
+     "p": {
+      "respuesta": "no"
+     },
+     "rotulo": "Dices que no",
+     "color": "coral",
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, no es por falta de talento.",
+     "escena": "=",
+     "rotulo": "Falta de talento",
+     "tachado": true
+    },
+    {
+     "voz": "Es capacidad. Tu equipo ya va lleno.",
+     "escena": "curva",
+     "p": {
+      "capacidad": "fija",
+      "resalta": "picos"
+     },
+     "rotulo": "Capacidad",
+     "color": "crema"
+    },
+    {
+     "voz": "En los picos no llegas. Y en los valles, pagas igual.",
+     "escena": "=",
+     "p": {
+      "resalta": "valles"
+     },
+     "tono": "porque"
+    },
+    {
+     "voz": "Y un bloque no son treinta y dos proyectos.",
+     "escena": "rejilla",
+     "p": {
+      "n": 32,
+      "icono": "casa",
+      "cols": 8
+     },
+     "rotulo": "32 proyectos",
+     "tachado": true,
+     "tachado_t": 0.9
+    },
+    {
+     "voz": "La vivienda tipo se desarrolla una vez. Las repetidas apenas suman.",
+     "escena": "=",
+     "p": {
+      "resaltar": [
+       0
+      ],
+      "color": "oro_l"
+     },
+     "rotulo": "Vivienda tipo",
+     "color": "oro_l",
+     "cam": [
+      300,
+      860,
+      1.25
+     ],
+     "tono": "porque"
+    },
+    {
+     "voz": "Con un equipo externo, tu capacidad sigue a la carga.",
+     "escena": "curva",
+     "p": {
+      "capacidad": "elastica",
+      "cap_texto": "TU EQUIPO + EXTERNO"
+     },
+     "rotulo": "Capacidad elástica",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Tú diseñas y firmas. La producción se desarrolla fuera.",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "Tú diseñas",
+        "i": "lapiz"
+       },
+       {
+        "t": "Se desarrolla fuera",
+        "i": "planos"
+       },
+       {
+        "t": "Tú firmas",
+        "i": "firma"
+       }
+      ]
+     },
+     "tono": "salida"
+    },
+    {
+     "voz": "La próxima vez que llame… di que sí.",
+     "escena": "llamada",
+     "p": {
+      "quien": "Promotor",
+      "asunto": "Otro bloque de viviendas",
+      "icono": "casa",
+      "respuesta": "si"
+     },
+     "rotulo": "Di que sí",
+     "color": "oro_l",
+     "rotulo_en": "di",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio que siempre dice «no llegamos».",
+   "pregunta": "¿Has dicho que no a un encargo por falta de equipo?",
+   "descripcion": "Decir que no a un encargo grande casi nunca es falta de talento: es capacidad. Y un bloque no son 32 proyectos: la vivienda tipo se desarrolla una vez y las repetidas apenas suman.",
+   "puntos": [
+    "Tu equipo fijo no sigue los picos de trabajo",
+    "Un equipo externo da capacidad elástica",
+    "Tú diseñas y firmas"
+   ]
+  },
+  {
+   "id": "trece_proyectos",
+   "hook": "13 proyectos por un sueldo",
+   "portada": 5,
+   "golpes": [
+    {
+     "voz": "No llegas, así que vas a contratar. Ya tienes la oferta escrita.",
+     "escena": "despacho",
+     "p": {
+      "pantalla": "aviso",
+      "aviso": "Se busca arquitecto",
+      "aviso_color": "oro",
+      "pose": "trabaja",
+      "hora": 10.0,
+      "luz": "dia",
+      "entrega": false,
+      "pila": 3
+     },
+     "rotulo": "Se busca arquitecto",
+     "color": "oro_l"
+    },
+    {
+     "voz": "Antes de publicarla, haz esta cuenta.",
+     "escena": "=",
+     "p": {
+      "pose": "mira"
+     },
+     "rotulo": "Haz la cuenta",
+     "color": "crema",
+     "cam": [
+      540,
+      960,
+      1.18
+     ],
+     "tono": "giro"
+    },
+    {
+     "voz": "Un arquitecto en plantilla cuesta, como mínimo, cuarenta mil euros al año.",
+     "escena": "cifra",
+     "p": {
+      "valor": 40000,
+      "sufijo": " €",
+      "sub": "al año, como mínimo",
+      "dur": 1.6
+     },
+     "rotulo": "En plantilla",
+     "color": "crema",
+     "claves": [
+      "cuarenta",
+      "mil"
+     ],
+     "fuente": "Referencia UDA 2026: salario, Seguridad Social, licencias, puesto y formación"
+    },
+    {
+     "voz": "Y no, no es solo el sueldo: Seguridad Social, licencias, puesto, formación…",
+     "escena": "=",
+     "rotulo": "Solo el sueldo",
+     "tachado": true,
+     "cam": [
+      540,
+      1050,
+      1.1
+     ]
+    },
+    {
+     "voz": "Delegar el básico y el ejecución de una vivienda de 150 metros: 2.955 euros.",
+     "escena": "cifra",
+     "p": {
+      "valor": 2955,
+      "sufijo": " €",
+      "sub": "Básico + Ejecución · vivienda de 150 m²",
+      "dur": 1.4
+     },
+     "rotulo": "Delegar",
+     "color": "oro_l",
+     "fuente": "Precio de referencia UDA 2026, orientativo"
+    },
+    {
+     "voz": "Con lo que cuesta ese año en plantilla, delegas trece proyectos así.",
+     "escena": "rejilla",
+     "p": {
+      "n": 13,
+      "icono": "casa",
+      "cols": 5,
+      "resaltar": 13,
+      "color": "oro_l"
+     },
+     "rotulo": "13 proyectos",
+     "color": "oro_l",
+     "claves": [
+      "trece"
+     ],
+     "tono": "dato"
+    },
+    {
+     "voz": "¿Tu estudio hace trece unifamiliares completas al año?",
+     "escena": "=",
+     "rotulo": "¿13 al año?",
+     "color": "crema",
+     "cam": [
+      540,
+      1050,
+      1.14
+     ],
+     "tono": "giro"
+    },
+    {
+     "voz": "Si no llegas a esa cifra, estás pagando un coste fijo por meses vacíos.",
+     "escena": "meses",
+     "p": {
+      "coste": "fijo",
+      "resalta": true
+     },
+     "rotulo": "Meses vacíos",
+     "color": "coral",
+     "tono": "porque"
+    },
+    {
+     "voz": "Primero delega. Y contrata cuando los números lo pidan.",
+     "escena": "meses",
+     "p": {
+      "coste": "variable"
+     },
+     "rotulo": "Primero delega",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio que ya tiene la oferta de empleo redactada.",
+   "pregunta": "¿Cuántos proyectos completos saca tu estudio al año?",
+   "descripcion": "Un arquitecto en plantilla cuesta, como mínimo, 40.000 € al año. Delegar el Básico y el Ejecución de una vivienda de 150 m² son 2.955 € (referencia orientativa). Con el coste de un año en plantilla se delegan 13 proyectos así.",
+   "puntos": [
+    "Plantilla: 40.000–47.000 €/año, haya proyectos o no",
+    "Delegar: pagas por proyecto",
+    "Contrata cuando los números lo pidan"
+   ]
+  },
+  {
+   "id": "cheque_blanco",
+   "hook": "Delegar no es un cheque en blanco",
+   "portada": 4,
+   "golpes": [
+    {
+     "voz": "Te da miedo delegar un proyecto. ¿Cuánto me va a costar al final?",
+     "escena": "despacho",
+     "p": {
+      "pose": "agobio",
+      "pantalla": "correo",
+      "correos": 4,
+      "entrega": false,
+      "hora": 17.0,
+      "luz": "dia",
+      "pila": 3
+     },
+     "rotulo": "¿Cuánto al final?",
+     "color": "coral",
+     "rotulo_en": "cuánto"
+    },
+    {
+     "voz": "Y no: externalizar no es firmar un cheque en blanco.",
+     "escena": "=",
+     "rotulo": "Cheque en blanco",
+     "tachado": true
+    },
+    {
+     "voz": "Marcas en una lista solo lo que quieres delegar.",
+     "escena": "presupuesto",
+     "p": {
+      "titulo": "LISTADO",
+      "partidas": [
+       "Construcción",
+       "Instalaciones",
+       "Estructuras",
+       "Memoria",
+       "Mediciones y anejos"
+      ],
+      "marcadas": [
+       1,
+       2
+      ],
+      "cerrado": false
+     },
+     "rotulo": "Tú marcas",
+     "color": "oro_l",
+     "tono": "porque"
+    },
+    {
+     "voz": "Lo que no marcas, lo sigue haciendo tu despacho.",
+     "escena": "=",
+     "cam": [
+      540,
+      960,
+      1.12
+     ],
+     "tono": "porque"
+    },
+    {
+     "voz": "En veinticuatro horas tienes el presupuesto. Cerrado.",
+     "escena": "=",
+     "p": {
+      "titulo": "PRESUPUESTO",
+      "cerrado": true,
+      "sello": "24 h"
+     },
+     "rotulo": "Cerrado en 24 h",
+     "color": "oro_l",
+     "claves": [
+      "Cerrado."
+     ],
+     "cam": [
+      540,
+      1050,
+      1.0
+     ],
+     "tono": "dato"
+    },
+    {
+     "voz": "Cada fase se paga aparte: sesenta por ciento al empezar, cuarenta antes de la entrega.",
+     "escena": "=",
+     "p": {
+      "pago": 60
+     },
+     "rotulo": "60 / 40",
+     "color": "crema",
+     "tono": "dato"
+    },
+    {
+     "voz": "Así validas cada entrega, y nunca pagas todo de golpe.",
+     "escena": "=",
+     "cam": [
+      540,
+      1200,
+      1.15
+     ],
+     "tono": "porque"
+    },
+    {
+     "voz": "Y como es cerrado, lo sumas a tus honorarios desde el primer día.",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "Presupuesto cerrado",
+        "i": "doc"
+       },
+       {
+        "t": "Lo sumas a tus honorarios",
+        "i": "moneda"
+       },
+       {
+        "t": "Tu cliente lo paga",
+        "i": "persona"
+       }
+      ]
+     },
+     "rotulo": "Repercútelo",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "El riesgo no es delegar. Es no saber cuánto cuesta.",
+     "escena": "presupuesto",
+     "p": {
+      "titulo": "PRESUPUESTO",
+      "sello": "24 h"
+     },
+     "rotulo": "Saber cuánto cuesta",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio que no delega «por si acaso».",
+   "pregunta": "¿Qué es lo que más te frena para delegar?",
+   "descripcion": "Externalizar no es un cheque en blanco: marcas solo lo que quieres delegar, recibes un presupuesto cerrado en 24 h y cada fase se paga aparte (60 % al iniciarla y 40 % antes de su entrega).",
+   "puntos": [
+    "Solo se presupuesta lo que marcas",
+    "Presupuesto cerrado en 24 h",
+    "Pagos por fases: 60 % / 40 %"
+   ]
+  },
+  {
+   "id": "quien_firma",
+   "hook": "Si delegas, ¿quién firma?",
+   "portada": 6,
+   "golpes": [
+    {
+     "voz": "Delegas el proyecto de ejecución. Y te entra la duda.",
+     "escena": "plano",
+     "p": {
+      "capas": [],
+      "dibujo": 2.6
+     },
+     "rotulo": "¿Quién firma?",
+     "color": "crema"
+    },
+    {
+     "voz": "¿De quién es el proyecto ahora?",
+     "escena": "=",
+     "p": {
+      "capas": [
+       "cotas"
+      ]
+     },
+     "cam": [
+      540,
+      1000,
+      1.1
+     ],
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, delegar no es perder el control.",
+     "escena": "=",
+     "rotulo": "Perder el control",
+     "tachado": true,
+     "cam": [
+      540,
+      1050,
+      1.0
+     ]
+    },
+    {
+     "voz": "El diseño es tuyo: tú decides la planta, los materiales y los criterios.",
+     "escena": "=",
+     "rotulo": "El diseño es tuyo",
+     "color": "oro_l",
+     "tono": "porque"
+    },
+    {
+     "voz": "Un equipo externo desarrolla la producción: estructura, instalaciones, detalles.",
+     "escena": "=",
+     "p": {
+      "capas": [
+       "cotas",
+       "estructura",
+       "fontaneria",
+       "electricidad"
+      ]
+     },
+     "rotulo": "Producción",
+     "color": "crema",
+     "cam": [
+      540,
+      1000,
+      1.12
+     ],
+     "tono": "porque"
+    },
+    {
+     "voz": "Con una revisión por fase, para ajustar lo que haga falta.",
+     "escena": "=",
+     "p": {
+      "etiqueta": "1 revisión por fase incluida"
+     },
+     "rotulo": "Tú revisas",
+     "color": "oro_l",
+     "cam": [
+      540,
+      1050,
+      1.0
+     ],
+     "tono": "salida"
+    },
+    {
+     "voz": "Y la firma, el visado y la dirección de obra siguen siendo tuyos.",
+     "escena": "=",
+     "p": {
+      "firma": true,
+      "firma_texto": "FIRMA: TU ESTUDIO"
+     },
+     "rotulo": "Tú firmas",
+     "color": "oro_l",
+     "claves": [
+      "firma,"
+     ],
+     "tono": "dato"
+    },
+    {
+     "voz": "Es marca blanca: tu cliente trata contigo. Siempre.",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "Tu cliente",
+        "i": "persona"
+       },
+       {
+        "t": "Tu estudio: diseña y firma",
+        "i": "firma"
+       },
+       {
+        "t": "Equipo externo: produce",
+        "i": "planos"
+       }
+      ],
+      "activo": [
+       0,
+       1
+      ]
+     },
+     "rotulo": "Marca blanca",
+     "color": "crema",
+     "tono": "salida"
+    },
+    {
+     "voz": "Delegar no es soltar el proyecto. Es soltar las horas.",
+     "escena": "despacho",
+     "p": {
+      "pose": "celebra",
+      "pantalla": "ok",
+      "luz": "dia",
+      "hora": 17.0,
+      "entrega": false,
+      "pila": 0
+     },
+     "rotulo": "Suelta las horas",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese compañero que cree que delegar es perder el control.",
+   "pregunta": "¿Delegarías la producción si la firma sigue siendo tuya?",
+   "descripcion": "Delegar la producción no es perder el proyecto: el diseño es tuyo, y la firma, el visado y la dirección de obra siguen siendo del despacho. El equipo externo trabaja en marca blanca, con 1 revisión por fase.",
+   "puntos": [
+    "El diseño y los criterios: tuyos",
+    "La producción: se desarrolla fuera",
+    "Firma, visado y dirección de obra: tuyos"
+   ]
+  },
+  {
+   "id": "picos_valles",
+   "hook": "Tu estudio no tiene un problema de trabajo",
+   "portada": 5,
+   "golpes": [
+    {
+     "voz": "Marzo: te entran tres encargos a la vez.",
+     "escena": "despacho",
+     "p": {
+      "pila": 6,
+      "pila_color": "coral",
+      "pantalla": "correo",
+      "correos": 3,
+      "pose": "agobio",
+      "luz": "dia",
+      "hora": 11.0,
+      "entrega": false
+     },
+     "rotulo": "3 a la vez",
+     "color": "coral"
+    },
+    {
+     "voz": "Agosto: no entra ninguno.",
+     "escena": "=",
+     "p": {
+      "pila": 0,
+      "pantalla": "vacia",
+      "pose": "mira",
+      "hora": 12.0
+     },
+     "rotulo": "Ninguno",
+     "color": "crema",
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, tu estudio no tiene un problema de trabajo.",
+     "escena": "=",
+     "rotulo": "Problema de trabajo",
+     "tachado": true
+    },
+    {
+     "voz": "Tiene un problema de forma: la carga sube y baja…",
+     "escena": "curva",
+     "p": {},
+     "rotulo": "Sube y baja",
+     "color": "oro_l",
+     "tono": "porque"
+    },
+    {
+     "voz": "…y tu equipo es una línea recta.",
+     "escena": "=",
+     "p": {
+      "capacidad": "fija"
+     },
+     "rotulo": "Línea recta",
+     "color": "crema",
+     "tono": "porque"
+    },
+    {
+     "voz": "Arriba, no llegas.",
+     "escena": "=",
+     "p": {
+      "resalta": "picos"
+     },
+     "rotulo": "No llegas",
+     "color": "coral",
+     "tono": "dato"
+    },
+    {
+     "voz": "Abajo, pagas horas vacías.",
+     "escena": "=",
+     "p": {
+      "resalta": "valles"
+     },
+     "rotulo": "Horas vacías",
+     "color": "crema",
+     "tono": "dato"
+    },
+    {
+     "voz": "La salida no es contratar para el pico.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3
+     },
+     "rotulo": "Contratar para el pico",
+     "tachado": true,
+     "tachado_t": 0.8
+    },
+    {
+     "voz": "Es un equipo que aparece cuando sube, y desaparece cuando baja.",
+     "escena": "curva",
+     "p": {
+      "capacidad": "elastica",
+      "cap_texto": "TU EQUIPO + EXTERNO"
+     },
+     "rotulo": "Equipo elástico",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Plantilla para lo fijo. Externo para los picos.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3,
+      "extra": 4,
+      "extra_texto": "SOLO CUANDO HACE FALTA"
+     },
+     "rotulo": "Fijo + elástico",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio que en marzo no duerme y en agosto no factura.",
+   "pregunta": "¿Cuál es el mes más loco de tu estudio?",
+   "descripcion": "El trabajo de un estudio sube y baja, pero la plantilla es una línea recta: en los picos no llegas y en los valles pagas horas vacías. La salida no es contratar para el pico, sino sumar un equipo externo solo cuando hace falta.",
+   "puntos": [
+    "La carga de trabajo sube y baja",
+    "Una plantilla fija no la sigue",
+    "Plantilla para lo fijo, externo para los picos"
+   ]
+  },
+  {
+   "id": "revit_exigen",
+   "hook": "Te piden BIM y trabajas en CAD",
+   "portada": 1,
+   "golpes": [
+    {
+     "voz": "El promotor te lo suelta en la reunión: el proyecto, en BIM.",
+     "escena": "llamada",
+     "p": {
+      "quien": "Promotor",
+      "asunto": "«El proyecto, en BIM»",
+      "icono": "casa"
+     },
+     "rotulo": "En BIM",
+     "color": "oro_l",
+     "rotulo_en": "BIM"
+    },
+    {
+     "voz": "Y tu estudio trabaja en CAD.",
+     "escena": "despacho",
+     "p": {
+      "pantalla": "plano",
+      "pose": "agobio",
+      "entrega": false,
+      "luz": "dia",
+      "hora": 12.0,
+      "pila": 2
+     },
+     "rotulo": "Trabajas en CAD",
+     "color": "coral",
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, la salida no es formar a todo el equipo este mes.",
+     "escena": "=",
+     "rotulo": "Formar al equipo",
+     "tachado": true
+    },
+    {
+     "voz": "Licencias, curva de aprendizaje, plantillas, familias…",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "Licencias",
+        "i": "moneda",
+        "c": "coral"
+       },
+       {
+        "t": "Curva de aprendizaje",
+        "i": "calendario",
+        "c": "coral"
+       },
+       {
+        "t": "Plantillas y familias",
+        "i": "planos",
+        "c": "coral"
+       }
+      ]
+     },
+     "rotulo": "Meses",
+     "color": "coral",
+     "tono": "porque"
+    },
+    {
+     "voz": "Y mientras tanto, el encargo no espera.",
+     "escena": "despacho",
+     "p": {
+      "pantalla": "aviso",
+      "aviso": "El encargo no espera",
+      "pose": "mira",
+      "entrega": true,
+      "luz": "dia",
+      "hora": 13.0,
+      "pila": 3
+     },
+     "rotulo": "No espera",
+     "color": "coral",
+     "tono": "giro"
+    },
+    {
+     "voz": "Puedes delegar el modelado en Revit de ese proyecto.",
+     "escena": "plano",
+     "p": {
+      "capas": [
+       "cotas",
+       "estructura"
+      ],
+      "dibujo": 1.8
+     },
+     "rotulo": "Delega el modelo",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Recibes el IFC durante el trabajo y el RVT al final. El modelo es tuyo.",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "IFC durante el trabajo",
+        "i": "planos"
+       },
+       {
+        "t": "RVT con el pago final",
+        "i": "doc"
+       },
+       {
+        "t": "El modelo es tuyo",
+        "i": "firma"
+       }
+      ]
+     },
+     "rotulo": "IFC + RVT",
+     "color": "crema",
+     "tono": "dato"
+    },
+    {
+     "voz": "Y el proyecto completo cuesta lo mismo en CAD que en Revit.",
+     "escena": "barras",
+     "p": {
+      "barras": [
+       {
+        "e": "EN CAD",
+        "v": 72,
+        "c": "oro"
+       },
+       {
+        "e": "EN REVIT",
+        "v": 72,
+        "c": "oro_l"
+       }
+      ]
+     },
+     "rotulo": "Mismo precio",
+     "color": "oro_l",
+     "fuente": "Tabla de Referencia UDA 2026 · proyecto completo",
+     "tono": "dato"
+    },
+    {
+     "voz": "No necesitas ser un estudio BIM mañana. Necesitas entregar en BIM.",
+     "escena": "despacho",
+     "p": {
+      "pose": "celebra",
+      "pantalla": "ok",
+      "luz": "dia",
+      "hora": 17.0,
+      "entrega": false,
+      "pila": 0
+     },
+     "rotulo": "Entregar en BIM",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese compañero al que le acaban de pedir el proyecto en Revit.",
+   "pregunta": "¿Ya te han pedido un proyecto en BIM?",
+   "descripcion": "Si te piden el proyecto en BIM y tu estudio trabaja en CAD, no hace falta formar a todo el equipo este mes: se puede delegar el modelado en Revit. Recibes IFC durante el trabajo y RVT con el pago final, y el proyecto completo cuesta lo mismo en CAD que en Revit.",
+   "puntos": [
+    "Delegas el modelado en Revit",
+    "IFC durante el trabajo, RVT al final",
+    "Mismo precio en CAD que en Revit (proyecto completo)"
+   ],
+   "hashtags": "#arquitectura #revit #bim #estudiodearquitectura #proyectodeejecucion"
+  },
+  {
+   "id": "solo_una_parte",
+   "hook": "No hace falta delegarlo todo",
+   "portada": 5,
+   "golpes": [
+    {
+     "voz": "Tu equipo clava el diseño y los planos.",
+     "escena": "plano",
+     "p": {
+      "capas": [
+       "cotas"
+      ],
+      "dibujo": 2.0
+     },
+     "rotulo": "Lo tuyo",
+     "color": "oro_l"
+    },
+    {
+     "voz": "Pero llegan las instalaciones… y el proyecto se atasca.",
+     "escena": "=",
+     "p": {
+      "capas": [
+       "cotas",
+       "fontaneria",
+       "electricidad"
+      ]
+     },
+     "rotulo": "Se atasca",
+     "color": "coral",
+     "cam": [
+      620,
+      1120,
+      1.22
+     ],
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, delegar no es soltar el proyecto entero.",
+     "escena": "=",
+     "rotulo": "El proyecto entero",
+     "tachado": true,
+     "cam": [
+      540,
+      1050,
+      1.0
+     ]
+    },
+    {
+     "voz": "Un proyecto de ejecución tiene cinco partidas.",
+     "escena": "presupuesto",
+     "p": {
+      "titulo": "P. EJECUCIÓN",
+      "partidas": [
+       "Construcción",
+       "Instalaciones",
+       "Estructuras",
+       "Memoria",
+       "Mediciones y anejos"
+      ],
+      "marcadas": [],
+      "cerrado": false
+     },
+     "rotulo": "5 partidas",
+     "color": "crema",
+     "claves": [
+      "cinco"
+     ],
+     "fuente": "Fuente: Listado de Documentos a Delegar de UDA",
+     "tono": "dato"
+    },
+    {
+     "voz": "Marcas solo la que te atasca.",
+     "escena": "=",
+     "p": {
+      "marcadas": [
+       1
+      ]
+     },
+     "rotulo": "Solo esa",
+     "color": "oro_l",
+     "cam": [
+      480,
+      980,
+      1.18
+     ],
+     "tono": "salida"
+    },
+    {
+     "voz": "¿La estructura en CYPE? ¿Las seis instalaciones? ¿Las mediciones?",
+     "escena": "=",
+     "p": {
+      "marcadas": [
+       1,
+       2,
+       4
+      ]
+     },
+     "tono": "porque"
+    },
+    {
+     "voz": "Solo se presupuesta, y solo se hace, lo que marcas.",
+     "escena": "=",
+     "p": {
+      "cerrado": true,
+      "total": "SOLO ESO"
+     },
+     "rotulo": "Lo que marcas",
+     "color": "oro_l",
+     "cam": [
+      540,
+      1050,
+      1.0
+     ],
+     "tono": "dato"
+    },
+    {
+     "voz": "El resto sigue en tu despacho, como siempre.",
+     "escena": "despacho",
+     "p": {
+      "pose": "trabaja",
+      "pantalla": "plano",
+      "luz": "dia",
+      "hora": 11.0,
+      "entrega": false,
+      "pila": 1
+     },
+     "rotulo": "El resto, en casa",
+     "color": "crema",
+     "tono": "salida"
+    },
+    {
+     "voz": "Delegar no es todo o nada. Es quitarte el cuello de botella.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3,
+      "extra": 2,
+      "extra_texto": "SOLO PARA LO QUE ATASCA"
+     },
+     "rotulo": "Tu cuello de botella",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese compañero que odia calcular instalaciones.",
+   "pregunta": "¿Qué partida delegarías mañana mismo?",
+   "descripcion": "Delegar no es todo o nada. Un Proyecto de Ejecución tiene 5 partidas (construcción, instalaciones, estructuras, memoria, y mediciones y anejos): marcas solo la que te atasca y el resto sigue en tu despacho.",
+   "puntos": [
+    "5 partidas en un Proyecto de Ejecución",
+    "Marcas solo lo que quieres delegar",
+    "Solo se presupuesta y se hace lo marcado"
+   ]
+  },
+  {
+   "id": "hora_socio",
+   "hook": "La hora más cara de tu estudio",
+   "portada": 0,
+   "golpes": [
+    {
+     "voz": "Eres el socio del estudio. Y llevas toda la tarde acotando un plano.",
+     "escena": "despacho",
+     "p": {
+      "pose": "trabaja",
+      "pantalla": "plano",
+      "hora": 16.0,
+      "luz": "dia",
+      "entrega": false,
+      "pila": 2
+     },
+     "rotulo": "Toda la tarde",
+     "color": "crema",
+     "rotulo_en": "toda"
+    },
+    {
+     "voz": "Mientras, dos clientes esperan tu llamada.",
+     "escena": "=",
+     "p": {
+      "pantalla": "correo",
+      "correos": 2,
+      "hora": 19.5,
+      "pose": "agobio"
+     },
+     "rotulo": "2 clientes esperan",
+     "color": "coral",
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, no es que te falte disciplina.",
+     "escena": "=",
+     "rotulo": "Disciplina",
+     "tachado": true
+    },
+    {
+     "voz": "Tu hora no vale lo mismo en todas las tareas.",
+     "escena": "barras",
+     "p": {
+      "barras": [
+       {
+        "e": "CAPTAR Y DISEÑAR",
+        "v": 18,
+        "c": "oro_l"
+       },
+       {
+        "e": "PRODUCIR PLANOS",
+        "v": 18,
+        "c": "coral"
+       }
+      ]
+     },
+     "rotulo": "Tu hora",
+     "color": "crema",
+     "tono": "porque"
+    },
+    {
+     "voz": "Captando un cliente, o diseñando, es la hora más valiosa del estudio.",
+     "escena": "=",
+     "p": {
+      "barras": [
+       {
+        "e": "CAPTAR Y DISEÑAR",
+        "v": 96,
+        "c": "oro_l",
+        "t": "LA MÁS VALIOSA"
+       },
+       {
+        "e": "PRODUCIR PLANOS",
+        "v": 18,
+        "c": "coral"
+       }
+      ]
+     },
+     "rotulo": "La más valiosa",
+     "color": "oro_l",
+     "tono": "porque"
+    },
+    {
+     "voz": "Acotando, es la más cara.",
+     "escena": "=",
+     "p": {
+      "barras": [
+       {
+        "e": "CAPTAR Y DISEÑAR",
+        "v": 96,
+        "c": "oro_l"
+       },
+       {
+        "e": "PRODUCIR PLANOS",
+        "v": 34,
+        "c": "coral",
+        "t": "LA MÁS CARA"
+       }
+      ]
+     },
+     "rotulo": "La más cara",
+     "color": "coral",
+     "tono": "dato"
+    },
+    {
+     "voz": "Cada hora que produces es una hora que no vendes.",
+     "escena": "despacho",
+     "p": {
+      "pose": "trabaja",
+      "pantalla": "plano",
+      "hora": 22.0,
+      "luz": "noche",
+      "entrega": false,
+      "pila": 5,
+      "pila_color": "coral"
+     },
+     "rotulo": "No vendes",
+     "color": "coral",
+     "tono": "porque"
+    },
+    {
+     "voz": "Diseña, decide y firma. Y delega la producción.",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "Diseñas y decides",
+        "i": "lapiz"
+       },
+       {
+        "t": "Se produce fuera",
+        "i": "planos"
+       },
+       {
+        "t": "Revisas y firmas",
+        "i": "firma"
+       }
+      ]
+     },
+     "rotulo": "Delega la producción",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Delegar no es un gasto. Es recomprar tus horas.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3,
+      "extra": 4
+     },
+     "rotulo": "Recompra tus horas",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio que sigue acotando planos a las diez de la noche.",
+   "pregunta": "¿Cuántas horas a la semana pasas produciendo en vez de diseñar?",
+   "descripcion": "La hora del socio no vale lo mismo en todas las tareas: captando o diseñando es la más valiosa del estudio; acotando planos, la más cara. Cada hora que produces es una hora que no vendes.",
+   "puntos": [
+    "Tu hora más valiosa: captar y diseñar",
+    "Tu hora más cara: producir",
+    "Diseña, decide, firma… y delega la producción"
+   ]
+  },
+  {
+   "id": "tres_pasos",
+   "hook": "Así se delega un proyecto, de verdad",
+   "portada": 5,
+   "golpes": [
+    {
+     "voz": "Tienes un proyecto de ejecución encima de la mesa. Y cero horas.",
+     "escena": "despacho",
+     "p": {
+      "pila": 4,
+      "pose": "agobio",
+      "pantalla": "pendientes",
+      "pendientes": 18,
+      "hora": 20.0
+     },
+     "rotulo": "Cero horas",
+     "color": "coral",
+     "rotulo_en": "cero"
+    },
+    {
+     "voz": "Delegarlo suena a lío: explicar, corregir, perseguir…",
+     "escena": "=",
+     "p": {
+      "pantalla": "correo",
+      "correos": 4
+     },
+     "rotulo": "Suena a lío",
+     "color": "crema",
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, no hace falta una reunión de tres horas.",
+     "escena": "=",
+     "rotulo": "Reunión de 3 horas",
+     "tachado": true
+    },
+    {
+     "voz": "Uno: marcas en un listado lo que quieres delegar.",
+     "escena": "presupuesto",
+     "p": {
+      "titulo": "LISTADO",
+      "partidas": [
+       "Construcción",
+       "Instalaciones",
+       "Estructuras",
+       "Memoria",
+       "Mediciones y anejos"
+      ],
+      "marcadas": [
+       0,
+       1,
+       2
+      ],
+      "cerrado": false
+     },
+     "rotulo": "1 · Marcas",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Dos: en veinticuatro horas tienes un presupuesto cerrado.",
+     "escena": "=",
+     "p": {
+      "titulo": "PRESUPUESTO",
+      "cerrado": true,
+      "sello": "24 h"
+     },
+     "rotulo": "2 · Presupuesto",
+     "color": "oro_l",
+     "claves": [
+      "veinticuatro",
+      "horas"
+     ],
+     "tono": "salida"
+    },
+    {
+     "voz": "Tres: recibes el proyecto por fases, en PDF y en editable.",
+     "escena": "plano",
+     "p": {
+      "capas": [
+       "cotas",
+       "estructura",
+       "electricidad"
+      ],
+      "dibujo": 1.6
+     },
+     "rotulo": "3 · Entregas",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Con una revisión por fase, y siete días de soporte tras la entrega.",
+     "escena": "cifra",
+     "p": {
+      "valor": 7,
+      "sub": "días de soporte tras cada entrega",
+      "dur": 0.8
+     },
+     "rotulo": "Soporte",
+     "color": "crema",
+     "claves": [
+      "siete"
+     ],
+     "fuente": "Condiciones del Listado de Documentos de UDA",
+     "tono": "dato"
+    },
+    {
+     "voz": "Tú revisas, firmas y se lo entregas a tu cliente.",
+     "escena": "plano",
+     "p": {
+      "capas": [
+       "cotas",
+       "estructura",
+       "electricidad"
+      ],
+      "dibujo": 0.1,
+      "firma": true,
+      "firma_texto": "FIRMA: TU ESTUDIO"
+     },
+     "rotulo": "Tú firmas",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "Delegar bien no es explicar más. Es tener un proceso.",
+     "escena": "flujo",
+     "p": {
+      "pasos": [
+       {
+        "t": "Marcas",
+        "i": "doc"
+       },
+       {
+        "t": "Presupuesto en 24 h",
+        "i": "calendario"
+       },
+       {
+        "t": "Entregas por fases",
+        "i": "planos"
+       }
+      ]
+     },
+     "rotulo": "Es un proceso",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese compañero que no delega porque «tardo más en explicarlo».",
+   "pregunta": "¿Qué es lo que más cuesta de delegar?",
+   "descripcion": "Delegar un proyecto en 3 pasos: marcas en un listado lo que quieres delegar, recibes un presupuesto cerrado en 24 h y te llega por fases, en PDF y editable, con 1 revisión por fase y 7 días de soporte tras la entrega.",
+   "puntos": [
+    "1 · Marcas lo que delegas",
+    "2 · Presupuesto cerrado en 24 h",
+    "3 · Entregas por fases, PDF + editables"
+   ]
+  },
+  {
+   "id": "crecer_proyectos",
+   "hook": "Tu techo no es el mercado",
+   "portada": 3,
+   "golpes": [
+    {
+     "voz": "Este año te han llegado nueve encargos.",
+     "escena": "rejilla",
+     "p": {
+      "n": 9,
+      "icono": "casa",
+      "cols": 3
+     },
+     "rotulo": "9 encargos",
+     "color": "oro_l"
+    },
+    {
+     "voz": "Y has cogido seis. Los otros tres… se fueron a otro estudio.",
+     "escena": "=",
+     "p": {
+      "resaltar": 3,
+      "resaltar_fin": true,
+      "color": "coral",
+      "marca": "cruz"
+     },
+     "rotulo": "3 se fueron",
+     "color": "coral",
+     "rotulo_en": "tres",
+     "tono": "giro"
+    },
+    {
+     "voz": "Y no, tu techo no es el mercado.",
+     "escena": "=",
+     "rotulo": "El mercado",
+     "tachado": true
+    },
+    {
+     "voz": "Tu techo son las manos que tienes.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3,
+      "saturado": true
+     },
+     "rotulo": "Tus manos",
+     "color": "coral",
+     "tono": "porque"
+    },
+    {
+     "voz": "Cada encargo que rechazas es facturación que no entra.",
+     "escena": "barras",
+     "p": {
+      "barras": [
+       {
+        "e": "LO QUE COGES",
+        "v": 60,
+        "c": "oro"
+       },
+       {
+        "e": "LO QUE TE LLEGA",
+        "v": 92,
+        "c": "coral"
+       }
+      ]
+     },
+     "rotulo": "No entra",
+     "color": "coral",
+     "tono": "porque"
+    },
+    {
+     "voz": "Con un equipo externo, coges el proyecto, lo diriges y lo firmas.",
+     "escena": "equipo",
+     "p": {
+      "propios": 3,
+      "extra": 4
+     },
+     "rotulo": "Coges el proyecto",
+     "color": "oro_l",
+     "tono": "salida"
+    },
+    {
+     "voz": "La producción tiene un coste cerrado, que puedes repercutir a tu cliente.",
+     "escena": "presupuesto",
+     "p": {
+      "titulo": "PRESUPUESTO",
+      "sello": "24 h"
+     },
+     "rotulo": "Coste cerrado",
+     "color": "oro_l",
+     "tono": "dato"
+    },
+    {
+     "voz": "Y el estudio factura los nueve.",
+     "escena": "rejilla",
+     "p": {
+      "n": 9,
+      "icono": "casa",
+      "cols": 3,
+      "resaltar": 9,
+      "color": "oro_l",
+      "marca": "check"
+     },
+     "rotulo": "Los 9",
+     "color": "oro_l",
+     "claves": [
+      "nueve."
+     ],
+     "tono": "salida"
+    },
+    {
+     "voz": "No hace falta crecer en nóminas para crecer en proyectos.",
+     "escena": "curva",
+     "p": {
+      "capacidad": "elastica",
+      "cap_texto": "TU CAPACIDAD"
+     },
+     "rotulo": "Crecer en proyectos",
+     "color": "oro_l",
+     "tono": "reencuadre"
+    }
+   ],
+   "compartir": "Pásaselo a ese socio con el que siempre hablas de «dar el salto».",
+   "pregunta": "¿Cuántos encargos has dejado pasar este año?",
+   "descripcion": "El techo de un estudio casi nunca es el mercado: son las manos que tiene. Con un equipo externo coges el proyecto, lo diriges y lo firmas; la producción tiene un coste cerrado que puedes repercutir a tu cliente.",
+   "puntos": [
+    "Tu techo: la capacidad de producción",
+    "Equipo externo: coges más proyectos",
+    "Coste cerrado, repercutible a tu cliente"
+   ]
+  }
+ ]
+}

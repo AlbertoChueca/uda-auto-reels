@@ -26,10 +26,11 @@ from fx import W, H, FPS, SR, F_BOLD, F_REG, F900, clamp, eo, eob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BANCO = os.path.join(HERE, "fuentes", "visual.json")
-FORMATOS = ["galeria", "proceso_visual", "antes_despues", "tips", "obra", "portfolio"]
+FORMATOS = ["galeria", "proceso_visual", "antes_despues", "tips", "obra", "portfolio", "explicado"]
 BANCO_DE = {"proceso_visual": "proceso"}                     # nombre de la sección del banco
 NOMBRE = {"galeria": "Galería de inspiración", "proceso_visual": "Del boceto al render", "proceso": "Del boceto al render", "antes_despues": "Antes y después",
-          "tips": "Tips visuales", "obra": "De la zanja a la llave", "portfolio": "Proyecto real de UDA"}
+          "tips": "Tips visuales", "obra": "De la zanja a la llave", "portfolio": "Proyecto real de UDA",
+          "explicado": "Explicado (animación)"}
 # galerías que mejor funcionan (interiores): el resto del banco queda en reserva
 GALERIAS_TOP = {"interiores", "cocinas", "banos", "doble_altura", "dormitorios", "escaleras"}
 # ganchos de primer segundo: pregunta, POV o reto (uno por reel; {h} = titular de la pieza)
@@ -617,6 +618,9 @@ def descripcion(G):
 # ------------------------------------------------------------------ todo junto
 def hacer(formato, out, seed=0, max_rondas=2):
     """Genera, monta, revisa y deja el reel listo. Devuelve meta (como run_daily) y la pieza (para marcarla usada)."""
+    if formato == "explicado":                               # explicativos animados (explicado.py)
+        import explicado
+        return explicado.hacer(out, seed)
     if formato == "portfolio":                               # proyectos reales de UDA (portafolio.py)
         import portafolio
         return portafolio.hacer(out, seed)

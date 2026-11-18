@@ -21,7 +21,7 @@ on:
       variante:
         description: "Temática (auto = la que toca según el calendario semanal)"
         type: choice
-        options: [auto, portfolio, galeria, tips, antes_despues, proceso_visual, obra, inspiracion, test, vf, encuesta, atajos, coste, contratar, partidas, actuaciones, revit, proceso]
+        options: [auto, explicado, portfolio, galeria, tips, antes_despues, proceso_visual, obra, inspiracion, test, vf, encuesta, atajos, coste, contratar, partidas, actuaciones, revit, proceso]
         default: auto
       hueco:
         description: "Hueco al que cuenta este reel (manual = uno extra; manana/mediodia/tarde = cubre ese hueco del día)"
@@ -93,7 +93,10 @@ jobs:
 
       - name: Paquetes de Python
         if: steps.slot.outputs.slot != 'skip'
-        run: timeout 360 pip install --prefer-binary --timeout 20 --retries 2 -q -r requirements.txt || pip install --prefer-binary --timeout 20 -q -r requirements.txt   # si PyPI va lento: corta a los 6 min y reintenta
+        run: |
+          timeout 360 pip install --prefer-binary --timeout 20 --retries 2 -q -r requirements.txt || pip install --prefer-binary --timeout 20 -q -r requirements.txt   # si PyPI va lento: corta a los 6 min y reintenta
+          # Skia (dibujo vectorial de los reels explicados) necesita estas librerías del sistema; casi siempre ya están
+          python -c "import skia" 2>/dev/null || (timeout 300 sudo apt-get install -y -qq --no-install-recommends libgl1 libegl1 libfontconfig1 && python -c "import skia") || echo "::warning::Skia no disponible: los reels explicados usarán la reserva"
 
       - name: Caché de modelos de voz y subtítulos
         if: steps.slot.outputs.slot != 'skip'
@@ -181,11 +184,13 @@ jobs:
         timeout-minutes: 15
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python ampliar_banco.py
+        run: |
+          python ampliar_banco.py
+          python explicado.py --ampliar || true
 
       - name: Recordar piezas usadas, verificaciones y aprendizajes
         if: always() && steps.slot.outputs.slot != 'skip'
-        run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" fuentes/interaccion.json fuentes/curiosidades.json used.json log.jsonl review_log.jsonl performance.json fuentes/visual.json tendencias.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl errores_reels.log tiempos.log agents
+        run: python sincronizar.py "Reel ${{ steps.slot.outputs.slot }} $(date +%F)" fuentes/interaccion.json fuentes/curiosidades.json used.json log.jsonl review_log.jsonl performance.json fuentes/visual.json fuentes/explicados.json tendencias.json strategy_arms.json strategy_report.md playbook.md banco/verificacion.json image_log.jsonl errores_reels.log tiempos.log agents
 
       - name: Bot de comunidad en la primera hora (pregunta fijada y respuestas rápidas)
         if: success() && steps.slot.outputs.slot != 'skip' && !inputs.dry_run
