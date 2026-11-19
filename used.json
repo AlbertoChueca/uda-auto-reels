@@ -1119,5 +1119,33 @@
 "fecha": "2026-11-18",
 "formato": "visual",
 "grupo": "galeria"
+},
+{
+"id": "portfolio:lamina:c_electricidad",
+"tema": "portfolio",
+"fecha": "2026-11-19",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:c_fontaneria",
+"tema": "portfolio",
+"fecha": "2026-11-19",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:b_planta",
+"tema": "portfolio",
+"fecha": "2026-11-19",
+"formato": "visual",
+"grupo": "adivina"
+},
+{
+"id": "portfolio:lamina:c_saneamiento",
+"tema": "portfolio",
+"fecha": "2026-11-19",
+"formato": "visual",
+"grupo": "adivina"
 }
 ]

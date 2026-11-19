@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-11-18)
+# Cuaderno de memoria (2026-11-19)
 
-- Seguir haciendo: Desgloses secuenciales y listas técnicas («Capa a capa», «5 claves», líderes con 4 guardados).
-- Dejar de hacer: Publicaciones de impacto visual efímero que no aporten criterio de diseño para el día a día (0 guardados).
-- Probar: Esquemas de cumplimiento normativo directo con llamada explícita: «Guárdalo para redactar tu próxima memoria técnica».
+- Seguir haciendo: Desgloses secuenciales y listas de capas reales («Capa a capa» sumó 18 guardados; «Solo un arquitecto», 17).
+- Dejar de hacer: Piezas puramente estéticas sin utilidad práctica para el desarrollo de proyectos (múltiples registros con 0 guardados).
+- Probar: Fórmulas de comprobación CTE directa con CTA explícito: «Guárdalo para redactar tu próxima memoria de ejecución».

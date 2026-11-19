@@ -1036,6 +1036,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-18"
+},
+{
+"id": "t20261119g",
+"hook": "¿Vuelven los interiores envolventes?",
+"cierre": "¿Cuál elegirías para tu casa?",
+"escenas": [
+{
+"idea": "Salón bañado en luz suave de tarde con sofá bajo tapizado en bouclé crudo y alfombra de lana gruesa.",
+"label": "Salón cocooning"
+},
+{
+"idea": "Rincón de lectura con revestimiento vertical de sapeli acanalado y butaca tapizada en terciopelo color chocolate.",
+"label": "Rincón en sapeli"
+},
+{
+"idea": "Dormitorio sereno con paredes enlucidas en arcilla color burdeos apagado y ropa de cama en lino lavado.",
+"label": "Arcilla y lino"
+},
+{
+"idea": "Espacio de estar con pavimento de baldosas de barro cocido irregular y cortinas pesadas de terciopelo verde salvia.",
+"label": "Barro y salvia"
+},
+{
+"idea": "Pasillo iluminado con luz indirecta rasante sobre paramentos continuos de mortero de cal y puertas de nogal enrasadas.",
+"label": "Mortero y nogal"
+},
+{
+"idea": "Comedor cálido con gran mesa maciza de madera oscura recuperada y lámpara colgante textil de papel artesanal japonés.",
+"label": "Madera y papel"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-19"
 }
 ],
 "proceso": [
@@ -1222,6 +1255,13 @@
 "descripcion": "Una vivienda bioclimática con muros curvos de tierra compactada, nogal y patios de ventilación cruzada.",
 "tendencia": true,
 "fecha": "2026-11-18"
+},
+{
+"id": "t20261119p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar de campo rehabilitada con techos de sapeli, barro cocido y aislamiento continuo",
+"tendencia": true,
+"fecha": "2026-11-19"
 }
 ],
 "antes_despues": [
@@ -1430,6 +1470,14 @@
 "estilo": "Espacio fluido con nogal oscuro integrado, encimera de caliza y revestimientos minerales envolventes.",
 "tendencia": true,
 "fecha": "2026-11-18"
+},
+{
+"id": "t20261119a",
+"tipo": "estancia",
+"descripcion": "un aseo setentero estrecho con azulejos marrones pequeños, sanitarios amarillos y una ventana diminuta",
+"estilo": "un baño spa minimalista con cerámica de gran formato y panelados en sapeli",
+"tendencia": true,
+"fecha": "2026-11-19"
 }
 ],
 "tips": [

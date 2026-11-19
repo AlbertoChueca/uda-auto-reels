@@ -1,5 +1,7 @@
-# Cuaderno de gancho (2026-11-18)
+# Cuaderno de gancho (2026-11-19)
 
-• Seguir haciendo: Dilemas de distribución espacial («Cerramientos que transforman cocinas», score 9.84) y preguntas directas sobre carga de trabajo («¿Cuántas horas te llevan las instalaciones?», score 9.64).
-• Dejar de hacer: Curiosidades teóricas («El Nobel», 8.76) y comparativas estéticas («Boceto al render», retención mínima de 2.560 ms).
-• Probar: Gancho de fricción normativa y espacial: «El error de CTE que te obliga a cerrar una cocina aunque el cliente la quiera abierta».
+# Cuaderno de gancho (2026-11-19)
+
+• Seguir haciendo: Retos de conocimiento técnico y preguntas de plano («Solo un arquitecto acierta», score 11.62; «Te enseño un trozo de plano», 11.13) con hook_style de facturación, dato y precio/hora.
+• Dejar de hacer: Ganchos inspiracionales genéricos («5 claves para un hogar consciente», 9.05) y renders de curiosidades («Nobel», 8.95).
+• Probar: Reto normativo técnico directo: «Solo un proyectista detecta el error en esta sección de CTE».

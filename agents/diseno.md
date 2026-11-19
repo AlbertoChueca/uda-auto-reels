@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-11-18)
+# Cuaderno de diseno (2026-11-19)
 
-• Seguir haciendo: Infografía técnica animada en estilo carbón/negro; monopoliza los mejores resultados y retenciones de más de 10.000 ms.
-• Dejar de hacer: Formato render estático o aislado; queda rezagado en engagement y score (8.76).
-• Probar: Planimetría técnica 2D animada por capas con líneas de guía en bronce UDA, respetando la zona segura central móvil.
+# Cuaderno de diseno (2026-11-19)
+
+• Seguir haciendo: Infografía técnica animada en fondo negro/carbón (acapara todo el top 5 con retenciones >5s) y think_time largo.
+• Dejar de hacer: Formato render y carruseles estáticos con escaso visionado (<3s).
+• Probar: Zooms sobre detalles de plano CAD/BIM con contrastes en bronce UDA para resaltar fallos normativos en zona segura vertical.

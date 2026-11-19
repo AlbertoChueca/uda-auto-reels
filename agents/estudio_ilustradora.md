@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-18)
+# Cuaderno de ilustradora (2026-11-19)
 
-- Seguir haciendo: Texturas táctiles nobles (cal, nogal, travertino) con paleta UDA de negro profundo y luz dorada.
-- Dejar de hacer: Generar texturas que simulen planos con tipografía o cotas ilegibles por IA.
-- Probar: Despieces axonométricos limpios por estratos materiales, completamente desprovistos de grafismo textual.
+- Seguir haciendo: Atmósferas con negro profundo, luz dorada y materiales táctiles (roble, mortero de cal, microcemento).
+- Dejar de hacer: Simular planos con tipografía o acotaciones ficticias que la IA deforma y restan credibilidad.
+- Probar: Axonometrías de estratos constructivos puros y despieces espaciales completamente limpios de texto.

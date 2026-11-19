@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-18)
+# Cuaderno de seo (2026-11-19)
 
-- Seguir haciendo: Términos técnicos con intención de búsqueda profesional: «instalaciones», «cerramientos», «proyecto de ejecución».
-- Dejar de hacer: Conceptos abstractos o aspiracionales («hogar consciente», «del boceto al render»).
-- Probar: Incorporar palabras clave técnicas de alta intención: «externalizar delineación BIM», «justificación DB-HE», «cálculo de instalaciones».
+- Seguir haciendo: Palabras clave operativas con alta intención de búsqueda profesional: «instalaciones», «proyecto de ejecución», «cerramientos».
+- Dejar de hacer: Términos vagos o aspiracionales de bajo impacto («hogar consciente», «del boceto al render»).
+- Probar: Posicionar combinaciones técnicas de contratación: «externalizar delineación BIM», «justificación DB-HE» y «cálculo de instalaciones».

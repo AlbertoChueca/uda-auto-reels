@@ -1,6 +1,8 @@
-# Cuaderno de comunidad (2026-11-18)
+# Cuaderno de comunidad (2026-11-19)
 
-• Datos de audiencia: Pocos datos (aún no constan textos en comentarios). El volumen numérico (hasta 5 comentarios) se concentra en el debate de cocinas cerradas vs abiertas y la sobrecarga horaria en instalaciones.
-• Seguir haciendo: Interpelar sobre decisiones críticas de proyecto y fricciones reales de despacho.
-• Dejar de hacer: Remates pasivos que no exijan posicionarse como proyectista.
-• Probar: «¿En tu estudio resolvéis las instalaciones internamente o las externalizáis para llegar a entrega?».
+# Cuaderno de comunidad (2026-11-19)
+
+• Datos de audiencia: Pocos datos (sin texto en comentarios registrados). El volumen cuantitativo (5-6 comentarios) sube al plantear retos de plano, dudas de instalaciones y distribución de cocinas.
+• Seguir haciendo: Preguntas que reten el criterio del arquitecto y toquen dolores de gestión del despacho.
+• Dejar de hacer: Cierres neutros que no susciten debate profesional.
+• Probar: «¿Cuántas horas le dedica tu estudio a corregir planos de instalaciones antes de visar?».

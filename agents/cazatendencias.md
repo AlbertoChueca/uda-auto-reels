@@ -1,31 +1,30 @@
-# Cuaderno de cazatendencias (2026-11-18)
+# Cuaderno de cazatendencias (2026-11-19)
 
 ## Tendencias de la semana
-- Minimalismo cálido y efecto cocooning: La audiencia rechaza los espacios fríos. Buscan refugio visual mediante tonos tierra, texturas envolventes y una decoración más emocional que transmita paz y calidez en el hogar.
-- Baños concebidos como spa doméstico: El baño deja de ser puramente funcional. Triunfan los vídeos mostrando hornacinas integradas en la obra, luz cálida e indirecta, y materiales crudos y orgánicos.
-- Arquitectura sensorial y bioclimática: Hay un boom por mostrar casas que responden al clima natural (ventilación cruzada, luz) y que usan materiales con textura real que dialogan con la iluminación a lo largo del día.
-- Curvas útiles y orgánicas: Los arcos y bordes redondeados se viralizan no solo por estética, sino para suavizar transiciones entre estancias y mejorar el flujo visual en espacios pequeños.
-- Cocinas integradas de maderas oscuras: Las maderas oscuras vuelven con fuerza para dar carácter. Se muestran cocinas continuas que se funden con el salón, priorizando la convivencia y la elegancia atemporal.
+- El regreso de la madera oscura como el sapeli y el nogal: Aporta una calidez vintage inspirada en los años 70 y 80, rompiendo con la hegemonía de las maderas nórdicas muy claras y dando un toque más sofisticado a los espacios.
+- Efecto 'Cocooning' para el otoño-invierno: Con la bajada de temperaturas de noviembre, los usuarios buscan crear espacios refugio muy envolventes utilizando superposición de texturas gruesas y cálidas en sofás y camas.
+- Baños tipo spa con cerámica de gran formato: Las piezas gigantes reducen las juntas visibles, facilitan la limpieza y generan una sensación de lujo continuo que imita a la piedra natural o al cemento pulido.
+- Cocinas abiertas con islas multifuncionales: La cocina se consolida definitivamente como el centro social del hogar, integrándose con el salón mediante materiales continuos, tonos tierra y electrodomésticos panelados.
+- Materiales naturales, imperfectos y sostenibles: Hay una fuerte conciencia ecológica que impulsa el uso de barro cocido, arcilla, piedra natural y maderas recicladas, valorando la imperfección artesanal frente a lo industrial.
+- Aislamiento térmico y confort invisible: Ante la llegada del frío, se viralizan los trucos y reformas enfocadas en mejorar el aislamiento de ventanas y suelos para ahorrar energía sin perder estética.
 
 ## Estilos
-- marrón chocolate
-- rojo burdeos y tonos vino
-- verde oliva y musgo
-- madera de nogal oscura
-- piedra caliza y travertino
-- acabados minerales en paredes
+- marrón chocolate y burdeos
+- verde salvia y oliva
+- madera de sapeli
+- barro cocido y terracota
+- tejido bouclé y terciopelo
 
 ## Para nuestro equipo
-- Potenciar la luz rasante cálida sobre revocos minerales y morteros de arcilla para resaltar la rugosidad táctil.
-- Centrar los contenidos en detalles de encuentro constructivo real (arcos sin tapajuntas, carpinterías ocultas) para atraer al perfil técnico de arquitectos.
-- Evitar por completo los blancos puros hospitalarios, la perfilería negra de estética industrial y el abuso de porcelánicos grises.
-- Abordar el concepto de refugio y cocooning desde la solidez de la arquitectura construida, alejándose del simple atrezzo decorativo efímero.
+- Apostar por el retorno del sapeli y el nogal con acabados mate o al aceite; evitar a toda costa el brillo barnizado ochentero.
+- Destacar el cocooning desde la arquitectura interior (iluminación indirecta, revestimientos de arcilla, morteros) y no solo con textiles decorativos.
+- En cocinas abiertas, mostrar integración arquitectónica real: panelados continuos y superficies de piedra que eliminen el aspecto técnico.
+- Descartar totalmente el blanco clínico y el gris aséptico; la audiencia madura busca profundidad cromática en marrones, salvia y terracotas.
 
 ## Ya quemado
-- minimalismo aséptico de paredes totalmente blancas
-- abuso del color gris en suelos y paredes
-- mármol blanco veteado sobreutilizado en cocinas
-- estilo industrial con lámparas de metal negro
+- El gris frío y el blanco nuclear en todas las paredes (el llamado 'estilo hospital').
+- Paredes de acento con papel pintado de hojas tropicales gigantes.
+- Muebles de melamina blanca de usar y tirar sin ningún tipo de textura o personalidad.
 
 ## Música en tendencia (TikTok, España)
 - Dance Like Nobody’s Watching - Instrumental Version · Siine

@@ -1,5 +1,5 @@
-# Cuaderno de viralidad (2026-11-18)
+# Cuaderno de viralidad (2026-11-19)
 
-- Seguir haciendo: Retos de criterio profesional exigente («Solo un arquitecto acierta», único formato que tracciona compartidos).
-- Dejar de hacer: Preguntas retóricas de opinión estética («¿Pondrías suelo de...?») con cero compartidos.
-- Probar: Desafío de errores de ejecución: «Envíaselo a tu socio: ¿dónde está el fallo de replanteo en este detalle?».
+- Seguir haciendo: Desafíos profesionales de alta exigencia («Solo un arquitecto acierta los cuatro» monopoliza el récord de compartidos y comentarios).
+- Dejar de hacer: Preguntas retóricas abiertas sobre decoración que no generan interacción profesional.
+- Probar: Reto de detección de errores en obra: «Pásaselo a tu socio: ¿dónde está el fallo de replanteo en este encuentro?».

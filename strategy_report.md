@@ -1,50 +1,50 @@
 # Piloto automático UDA - qué está funcionando
 
-_Updated 2026-11-18 · 51 reels with results (3+ days old) · average score 6.63_
+_Updated 2026-11-19 · 54 reels with results (3+ days old) · average score 7.12_
 
 
 ## formato
 
 | option | reels | avg score |
 |---|---|---|
-| infografia | 45 | 6.82 |
-| render | 4 | 6.27 |
+| infografia | 48 | 7.33 |
+| render | 4 | 6.49 |
 
 ## estilo
 
 | option | reels | avg score |
 |---|---|---|
-| negro | 51 | 6.63 |
+| negro | 54 | 7.12 |
 
 ## hook_style
 
 | option | reels | avg score |
 |---|---|---|
-| coste_oportunidad | 5 | 8.99 |
-| precio/hora | 9 | 8.75 |
-| colapso_entrega | 10 | 8.60 |
-| dato | 5 | 6.87 |
-| facturación | 6 | 6.04 |
-| contraste | 4 | 4.30 |
-| escena | 5 | 3.41 |
-| socio senior | 7 | 3.40 |
+| colapso_entrega | 10 | 9.27 |
+| coste_oportunidad | 6 | 9.23 |
+| precio/hora | 10 | 8.79 |
+| dato | 5 | 7.89 |
+| facturación | 7 | 7.06 |
+| contraste | 4 | 4.44 |
+| escena | 5 | 3.54 |
+| socio senior | 7 | 3.47 |
 
 ## bloque
 
 | option | reels | avg score |
 |---|---|---|
-| contratar | 28 | 8.04 |
-| mixto | 10 | 5.90 |
-| negocio | 8 | 4.71 |
-| servicios | 5 | 3.28 |
+| contratar | 30 | 8.58 |
+| mixto | 11 | 5.95 |
+| negocio | 8 | 5.52 |
+| servicios | 5 | 3.54 |
 
 ## think_time
 
 | option | reels | avg score |
 |---|---|---|
-| largo | 24 | 6.85 |
-| corto | 16 | 6.53 |
-| normal | 11 | 6.32 |
+| largo | 25 | 7.29 |
+| corto | 17 | 7.04 |
+| normal | 12 | 6.88 |
 
 ---
 # Playbook (actualizado 2026-10-26)
