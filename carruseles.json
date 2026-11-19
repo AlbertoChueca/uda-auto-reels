@@ -263,5 +263,25 @@
 "linkedin_documento": "6afc822539fb3aec4b02e1c2"
 },
 "dry_run": false
+},
+{
+"fecha": "2026-11-19",
+"bloque": "negocio",
+"tema": "uda_delegar",
+"subtema": "Absorber picos de proyectos",
+"titulo": "Absorber picos de proyectos",
+"fragmentos": [
+" (cont.)"
+],
+"quiz_id": null,
+"imagenes": 6,
+"nota": 8.0,
+"publicado": true,
+"destinos": {
+"instagram_carrusel": "ig:18189229420419715",
+"tiktok_carrusel": "6aff26e0340c2fb951bb6758",
+"linkedin_documento": "6aff26f19e053769fd8ff9b9"
+},
+"dry_run": false
 }
 ]
