@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-19 14:50 UTC · 0 respuestas_
+_Última pasada: 2026-11-19 22:16 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -45,3 +45,6 @@ _Última pasada: 2026-11-19 14:50 UTC · 0 respuestas_
 | 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
 | 2026-11-17 | linkedin | carrusel | Punto de partida del proyecto | 0 | — |
+| 2026-11-19 | instagram | carrusel | Absorber picos de proyectos | 0 | — |
+| 2026-11-19 | tiktok | carrusel | Absorber picos de proyectos | 0 | — |
+| 2026-11-19 | linkedin | carrusel | Absorber picos de proyectos | 0 | — |
