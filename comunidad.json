@@ -1443,6 +1443,16 @@
 "pregunta": "urn:li:comment:(urn:li:ugcPost:7529136494549078017,7529136979507331072)",
 "personas": [],
 "comentarios": 1
+},
+"instagram:ig:18227864395341840": {
+"pregunta": "18133988945484425",
+"personas": [],
+"comentarios": 1
+},
+"tiktok:6aff00e43a115f5d65ac52f2": {
+"pregunta": "7709842846085317408",
+"personas": [],
+"comentarios": 1
 }
 },
 "errores": {},
@@ -1632,6 +1642,7 @@
 "6afdaf65b5f5d0cc4136bf35": "7709511043390688544",
 "6afdaf64b3d2de887fa675df": "urn:li:ugcPost:7528819449244794883",
 "6afed6b557cb0a9a74fa98f2": "7709835753152351521",
-"6afed6b3da3cbf69d570b145": "urn:li:ugcPost:7529136494549078017"
+"6afed6b3da3cbf69d570b145": "urn:li:ugcPost:7529136494549078017",
+"6aff00e43a115f5d65ac52f2": "7709882155907697953"
 }
 }

@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-19 13:32 UTC · 0 respuestas_
+_Última pasada: 2026-11-19 14:50 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -38,6 +38,8 @@ _Última pasada: 2026-11-19 13:32 UTC · 0 respuestas_
 | 2026-11-19 | instagram | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
 | 2026-11-19 | tiktok | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
 | 2026-11-19 | linkedin | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
+| 2026-11-19 | instagram | galeria | ¿Vuelven los interiores envolventes? | 1 | — |
+| 2026-11-19 | tiktok | galeria | ¿Vuelven los interiores envolventes? | 1 | — |
 | 2026-11-12 | instagram | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
