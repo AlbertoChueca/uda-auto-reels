@@ -1,13 +1,14 @@
-# Estado (2026-11-18)
+# Estado (2026-11-19)
 
 | comprobación | detalle |
 |---|---|
 | ✅ TikTok (Zernio) | conectada (@uniondearquitectos) |
 | ✅ LinkedIn (Zernio) | conectada (@uniondearquitectos) |
 | ✅ Instagram (API de Meta) | @uniondearquitectos · publica directo, sin Zernio |
-| ✅ Gemini texto | 49 modelos disponibles |
+| ✅ Métricas de Instagram | views 8, reach 4, likes 0, comments 1, shares 0, saved 0, ig_reels_avg_watch_time 1783 |
+| ✅ Gemini texto | 50 modelos disponibles |
 | ✅ Gemini voz | gemini-2.5-flash-preview-tts, gemini-2.5-pro-preview-tts, gemini-3.1-flash-tts-preview |
-| ✅ Voz de España (Google Cloud TTS) | es-ES-Chirp3-HD-Orus · 1.9 s de audio |
+| ✅ Voz de España (Google Cloud TTS) | es-ES-Chirp3-HD-Orus · 2.1 s de audio |
 | ✅ Gemini imagen | gemini-2.5-flash-image, gemini-3-pro-image-preview, gemini-3-pro-image |
 | ✅ Banco verificado | 253 piezas publicables sin usar (negocio 28, contratar 33, servicios 192, proyecto 0) · 20 pendientes de verificar · ~63 días de reserva |
 | ✅ Piezas de negocio | 28 publicables |
@@ -15,8 +16,8 @@
 | ✅ Piezas de servicios | 192 publicables |
 | ⚠️ Piezas de proyecto | 0 publicables · lanza 'Generar banco' |
 | ✅ Fuentes | 15/15 |
-| ⚠️ Publicaciones (7 días) | instagram_reel: 5 ok / 11 fallos · instagram_story: 6 ok / 10 fallos · tiktok_video: 16 ok / 0 fallos · linkedin_video: 16 ok / 0 fallos · instagram_carrusel: 1 ok / 1 fallos · tiktok_carrusel: 2 ok / 0 fallos · linkedin_documento: 2 ok / 0 fallos |
-| ⚠️ LinkedIn (máx. 1 al día) | 18 publicaciones en 8 días |
+| ⚠️ Publicaciones (7 días) | instagram_reel: 5 ok / 11 fallos · instagram_story: 6 ok / 10 fallos · tiktok_video: 16 ok / 0 fallos · linkedin_video: 15 ok / 0 fallos · instagram_carrusel: 1 ok / 1 fallos · tiktok_carrusel: 2 ok / 0 fallos · linkedin_documento: 2 ok / 0 fallos |
+| ⚠️ LinkedIn (máx. 1 al día) | 17 publicaciones en 8 días |
 | **Publicaciones en Zernio (estado real)** | |
 | 2026-10-29 · carrusel_tiktok_carrusel | published · tiktok: published  https://www.tiktok.com/@uniondearquitectos/video/7702118179971009824 |
 | 2026-10-29 · carrusel_linkedin_documento | published · linkedin: published  https://www.linkedin.com/feed/update/urn:li:ugcPost:7521599857136955395/ |
