@@ -1,15 +1,9 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-18 22:07 UTC · 0 respuestas_
+_Última pasada: 2026-11-19 03:39 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-11 | instagram | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
-| 2026-11-11 | tiktok | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
-| 2026-11-11 | linkedin | portfolio | Caso real: así desarrollamos el proyecto | 1 | — |
-| 2026-11-11 | instagram | galeria | La vuelta de la cocina dividida | 1 | — |
-| 2026-11-11 | tiktok | galeria | La vuelta de la cocina dividida | 1 | — |
-| 2026-11-11 | linkedin | galeria | La vuelta de la cocina dividida | 2 | — |
 | 2026-11-12 | tiktok | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
 | 2026-11-12 | linkedin | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
 | 2026-11-12 | instagram | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
