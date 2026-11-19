@@ -1147,5 +1147,12 @@
 "fecha": "2026-11-19",
 "formato": "visual",
 "grupo": "adivina"
+},
+{
+"id": "visual:t20261119g",
+"tema": "visual",
+"fecha": "2026-11-19",
+"formato": "visual",
+"grupo": "galeria"
 }
 ]
