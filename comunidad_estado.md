@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-20 13:10 UTC · 0 respuestas_
+_Última pasada: 2026-11-20 14:49 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -37,6 +37,9 @@ _Última pasada: 2026-11-20 13:10 UTC · 0 respuestas_
 | 2026-11-19 | tiktok | galeria | ¿Vuelven los interiores envolventes? | 1 | — |
 | 2026-11-20 | instagram | portfolio | 4 láminas que entregamos en un Proyecto  | 1 | — |
 | 2026-11-20 | tiktok | portfolio | 4 láminas que entregamos en un Proyecto  | 1 | — |
+| 2026-11-20 | instagram | explicado | Las 21:00 del día antes de entregar | 1 | — |
+| 2026-11-20 | tiktok | explicado | Las 21:00 del día antes de entregar | 1 | — |
+| 2026-11-20 | linkedin | explicado | Las 21:00 del día antes de entregar | 1 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
 | 2026-11-17 | linkedin | carrusel | Punto de partida del proyecto | 0 | — |
 | 2026-11-19 | instagram | carrusel | Absorber picos de proyectos | 0 | — |
