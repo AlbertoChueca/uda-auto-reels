@@ -1,14 +1,9 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-19 22:16 UTC · 0 respuestas_
+_Última pasada: 2026-11-20 03:31 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-12 | tiktok | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
-| 2026-11-12 | linkedin | portfolio | ¿Cuántas horas te llevan las instalacion | 1 | — |
-| 2026-11-12 | instagram | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
-| 2026-11-12 | tiktok | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
-| 2026-11-12 | linkedin | proceso_visual | ¿Cuánto cambia del boceto al render? | 1 | — |
 | 2026-11-13 | instagram | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-11-13 | tiktok | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
 | 2026-11-13 | linkedin | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
@@ -40,9 +35,6 @@ _Última pasada: 2026-11-19 22:16 UTC · 0 respuestas_
 | 2026-11-19 | linkedin | portfolio | Te enseño un trozo de plano: ¿qué es? | 1 | — |
 | 2026-11-19 | instagram | galeria | ¿Vuelven los interiores envolventes? | 1 | — |
 | 2026-11-19 | tiktok | galeria | ¿Vuelven los interiores envolventes? | 1 | — |
-| 2026-11-12 | instagram | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
-| 2026-11-12 | tiktok | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
-| 2026-11-12 | linkedin | carrusel | ESCALA TU ESTUDIO SIN NUEVAS NÓMINAS | 0 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
 | 2026-11-17 | linkedin | carrusel | Punto de partida del proyecto | 0 | — |
 | 2026-11-19 | instagram | carrusel | Absorber picos de proyectos | 0 | — |
