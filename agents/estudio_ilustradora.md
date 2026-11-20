@@ -1,5 +1,5 @@
-# Cuaderno de ilustradora (2026-11-19)
+# Cuaderno de ilustradora (2026-11-20)
 
-- Seguir haciendo: Atmósferas con negro profundo, luz dorada y materiales táctiles (roble, mortero de cal, microcemento).
-- Dejar de hacer: Simular planos con tipografía o acotaciones ficticias que la IA deforma y restan credibilidad.
-- Probar: Axonometrías de estratos constructivos puros y despieces espaciales completamente limpios de texto.
+- Seguir haciendo: Atmósferas con negro profundo, contrastes dorados cálidos y texturas minerales sobrias (microcemento, roble tostado, piedra caliza).
+- Dejar de hacer: Intentar grafiar cotas o textos falsos de planos que la IA deforma y restan rigor.
+- Probar: Isometrías puras de estratos constructivos e instalaciones superpuestas, absolutamente limpias de texto y con máxima verosimilitud material.

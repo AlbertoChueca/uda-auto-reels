@@ -1,7 +1,5 @@
-# Cuaderno de crecimiento (2026-11-19)
+# Cuaderno de crecimiento (2026-11-20)
 
-# Cuaderno de crecimiento (2026-11-19)
-
-• Seguir haciendo: Foco en instalaciones y entregables de ejecución, líderes absolutos en guardados (16 a 18) y compartidos.
-• Dejar de hacer: Copys sin vinculación al cuello de botella de entrega (visitas al perfil en 0).
-• Probar: CTA orientada a descargar carga de trabajo: «Guarda esta plantilla de revisión. Si no llegas a la entrega, cotiza en uniondearquitectos.com».
+• Seguir haciendo: Enfocar copys en documentación de instalaciones y entregas críticas (máximos guardados: 16-18 y compartidos).
+• Dejar de hacer: Llamadas a la acción genéricas que dejan las visitas al perfil a cero en todos los reels analizados.
+• Probar: CTA directa al cuello de botella de plazos: «¿Sin tiempo para la entrega de este viernes? Guarda el checklist y delega el proyecto en uniondearquitectos.com».

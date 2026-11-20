@@ -1154,5 +1154,33 @@
 "fecha": "2026-11-19",
 "formato": "visual",
 "grupo": "galeria"
+},
+{
+"id": "portfolio:lamina:b_climatizacion",
+"tema": "portfolio",
+"fecha": "2026-11-20",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:a_forjado",
+"tema": "portfolio",
+"fecha": "2026-11-20",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:a_seccion",
+"tema": "portfolio",
+"fecha": "2026-11-20",
+"formato": "visual",
+"grupo": "top"
+},
+{
+"id": "portfolio:lamina:a_fontaneria",
+"tema": "portfolio",
+"fecha": "2026-11-20",
+"formato": "visual",
+"grupo": "top"
 }
 ]

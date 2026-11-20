@@ -1,50 +1,50 @@
 # Piloto automático UDA - qué está funcionando
 
-_Updated 2026-11-19 · 54 reels with results (3+ days old) · average score 7.12_
+_Updated 2026-11-20 · 56 reels with results (3+ days old) · average score 7.20_
 
 
 ## formato
 
 | option | reels | avg score |
 |---|---|---|
-| infografia | 48 | 7.33 |
+| infografia | 50 | 7.41 |
 | render | 4 | 6.49 |
 
 ## estilo
 
 | option | reels | avg score |
 |---|---|---|
-| negro | 54 | 7.12 |
+| negro | 56 | 7.20 |
 
 ## hook_style
 
 | option | reels | avg score |
 |---|---|---|
-| colapso_entrega | 10 | 9.27 |
+| colapso_entrega | 10 | 9.31 |
 | coste_oportunidad | 6 | 9.23 |
 | precio/hora | 10 | 8.79 |
 | dato | 5 | 7.89 |
-| facturación | 7 | 7.06 |
-| contraste | 4 | 4.44 |
-| escena | 5 | 3.54 |
-| socio senior | 7 | 3.47 |
+| facturación | 8 | 7.29 |
+| contraste | 4 | 4.46 |
+| escena | 6 | 4.45 |
+| socio senior | 7 | 3.48 |
 
 ## bloque
 
 | option | reels | avg score |
 |---|---|---|
-| contratar | 30 | 8.58 |
+| contratar | 32 | 8.62 |
 | mixto | 11 | 5.95 |
 | negocio | 8 | 5.52 |
-| servicios | 5 | 3.54 |
+| servicios | 5 | 3.55 |
 
 ## think_time
 
 | option | reels | avg score |
 |---|---|---|
-| largo | 25 | 7.29 |
-| corto | 17 | 7.04 |
-| normal | 12 | 6.88 |
+| largo | 25 | 7.30 |
+| corto | 18 | 7.17 |
+| normal | 13 | 7.04 |
 
 ---
 # Playbook (actualizado 2026-10-26)

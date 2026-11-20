@@ -1,39 +1,41 @@
-# Cuaderno de cazatendencias (2026-11-19)
+# Cuaderno de cazatendencias (2026-11-20)
 
 ## Tendencias de la semana
-- El regreso de la madera oscura como el sapeli y el nogal: Aporta una calidez vintage inspirada en los años 70 y 80, rompiendo con la hegemonía de las maderas nórdicas muy claras y dando un toque más sofisticado a los espacios.
-- Efecto 'Cocooning' para el otoño-invierno: Con la bajada de temperaturas de noviembre, los usuarios buscan crear espacios refugio muy envolventes utilizando superposición de texturas gruesas y cálidas en sofás y camas.
-- Baños tipo spa con cerámica de gran formato: Las piezas gigantes reducen las juntas visibles, facilitan la limpieza y generan una sensación de lujo continuo que imita a la piedra natural o al cemento pulido.
-- Cocinas abiertas con islas multifuncionales: La cocina se consolida definitivamente como el centro social del hogar, integrándose con el salón mediante materiales continuos, tonos tierra y electrodomésticos panelados.
-- Materiales naturales, imperfectos y sostenibles: Hay una fuerte conciencia ecológica que impulsa el uso de barro cocido, arcilla, piedra natural y maderas recicladas, valorando la imperfección artesanal frente a lo industrial.
-- Aislamiento térmico y confort invisible: Ante la llegada del frío, se viralizan los trucos y reformas enfocadas en mejorar el aislamiento de ventanas y suelos para ahorrar energía sin perder estética.
+- Duchas a ras de suelo y superficies continuas: Generan sensación de amplitud visual y limpieza extrema. Son perfectas para vídeos de 'antes y después' porque el cambio de un baño antiguo con bañera a uno continuo es muy impactante y retiene a la audiencia.
+- El regreso de las maderas oscuras (sapeli y nogal): Aportan una elegancia clásica que contrasta con la saturación de maderas claras de años anteriores. En vídeo, combinadas con luz cálida, dan un aspecto premium muy aspiracional que genera muchos 'likes'.
+- Minimalismo cálido y texturas imperfectas: La audiencia busca hogares que transmitan paz y desconexión. Mostrar paredes de cal, barro o microcemento con texturas orgánicas genera muchos 'guardados' para futuras referencias de reformas.
+- Desglose real de presupuestos de reformas: La transparencia económica es altamente viral. Los usuarios interactúan, guardan y comparten vídeos que explican cuánto cuesta exactamente reformar una cocina o baño en España hoy, debatiendo los precios en comentarios.
+- Tecnología invisible y espacios multifuncionales: Mostrar cómo se ocultan electrodomésticos, enchufes o televisiones detrás de paneles de madera genera el efecto 'wow' que detiene el scroll en TikTok e Instagram.
+- Errores comunes al distribuir espacios: El contenido educativo enfocado en 'lo que no debes hacer' (ej. distancias en cocinas, colocación de sofás) genera debate en comentarios, lo que aumenta drásticamente el alcance del algoritmo.
 
 ## Estilos
-- marrón chocolate y burdeos
-- verde salvia y oliva
-- madera de sapeli
-- barro cocido y terracota
-- tejido bouclé y terciopelo
+- suelo de terrazo cálido
+- verde mineral y tonos berenjena
+- microcemento continuo
+- formas orgánicas y curvas
+- madera de sapeli mate
+- paredes de cal o barro
 
 ## Para nuestro equipo
-- Apostar por el retorno del sapeli y el nogal con acabados mate o al aceite; evitar a toda costa el brillo barnizado ochentero.
-- Destacar el cocooning desde la arquitectura interior (iluminación indirecta, revestimientos de arcilla, morteros) y no solo con textiles decorativos.
-- En cocinas abiertas, mostrar integración arquitectónica real: panelados continuos y superficies de piedra que eliminen el aspecto técnico.
-- Descartar totalmente el blanco clínico y el gris aséptico; la audiencia madura busca profundidad cromática en marrones, salvia y terracotas.
+- Aprovechar la combinación de maderas oscuras como sapeli y nogal con revocos de cal para transmitir calidez atemporal.
+- Enfocar el contenido de baños en la continuidad visual y la eliminación visual del plato de ducha tradicional.
+- Evitar rotundamente el blanco puro aséptico, la grifería negra mate saturada y el mármol brillante de estilo frío.
+- Explicar la distribución espacial desde el confort de paso y las visuales arquitectónicas sin mencionar presupuestos ni mediciones.
 
 ## Ya quemado
-- El gris frío y el blanco nuclear en todas las paredes (el llamado 'estilo hospital').
-- Paredes de acento con papel pintado de hojas tropicales gigantes.
-- Muebles de melamina blanca de usar y tirar sin ningún tipo de textura o personalidad.
+- El blanco aséptico y los grises fríos en todas las paredes
+- El mármol pulido de alto brillo
+- El estilo industrial puro con exceso de metal negro
+- Los vídeos de 'house tour' lentos, con música de ascensor y sin voz en off
 
 ## Música en tendencia (TikTok, España)
-- Dance Like Nobody’s Watching - Instrumental Version · Siine
-- cool girls · Sonatara
 - Cool Girl · Jayde Mari
+- cool girls · Sonatara
+- Dance Like Nobody’s Watching - Instrumental Version · Siine
 - Neon Nights · Adrian Rover
 - 维也纳贵族-2 (F) · Music Time
 - Neon Bass · Tangelene Bolton
 - Man on the Run · Jon Sumner
-- 古风 大气 修仙 影视配乐 · 当歌音乐
-- Flowers · Adrián Berenguer
-- 危机压迫 (F) · Music Time
+- Beijing Spring · BCD Studio
+- Happy, summer, ukulele, background · Kirill Kharchenko
+- Restart (Lofi) · Muspace Lofi

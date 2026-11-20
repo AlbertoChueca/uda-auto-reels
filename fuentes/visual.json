@@ -1069,6 +1069,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-19"
+},
+{
+"id": "t20261120g",
+"hook": "Duchas a ras que transforman el baño",
+"cierre": "¿Cuál pondrías en tu baño?",
+"escenas": [
+{
+"idea": "Plato de ducha enrasado integrado en microcemento beige continuo con hornacina suavemente iluminada y grifería empotrada en cobre mate.",
+"label": "Microcemento sereno"
+},
+{
+"idea": "Ducha abierta sin mampara con pavimento de terrazo cálido continuo que sube por la pared bajo una luz cenital difusa.",
+"label": "Terrazo continuo"
+},
+{
+"idea": "Zona de ducha a ras de suelo en mortero de cal verde mineral con desagüe lineal oculto y perfilería totalmente invisible.",
+"label": "Verde mineral"
+},
+{
+"idea": "Espacio de baño donde la piedra caliza arenada fluye sin juntas hacia la ducha junto a un panelado vertical de nogal.",
+"label": "Caliza y nogal"
+},
+{
+"idea": "Ducha pasante con suelo continuo de barro cocido mate y mampara fija de vidrio estriado encastrada en techo y suelo.",
+"label": "Barro cocido"
+},
+{
+"idea": "Ducha integrada en suite principal con continuidad de microterrazzo arena y repisa corrida de obra bajo luz natural rasante.",
+"label": "Mortero arena"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-20"
 }
 ],
 "proceso": [
@@ -1262,6 +1295,13 @@
 "descripcion": "una vivienda unifamiliar de campo rehabilitada con techos de sapeli, barro cocido y aislamiento continuo",
 "tendencia": true,
 "fecha": "2026-11-19"
+},
+{
+"id": "t20261120p",
+"tipo": "casa",
+"descripcion": "una vivienda luminosa entre medianeras con patio central, paredes de cal y madera oscura mate",
+"tendencia": true,
+"fecha": "2026-11-20"
 }
 ],
 "antes_despues": [
@@ -1478,6 +1518,14 @@
 "estilo": "un baño spa minimalista con cerámica de gran formato y panelados en sapeli",
 "tendencia": true,
 "fecha": "2026-11-19"
+},
+{
+"id": "t20261120a",
+"tipo": "estancia",
+"descripcion": "un ático compartimentado con falsos techos de escayola, carpintería metálica oxidada y suelo sintético abombado",
+"estilo": "minimalismo cálido con paredes de cal, terrazo beige continuo y maderas oscuras mates",
+"tendencia": true,
+"fecha": "2026-11-20"
 }
 ],
 "tips": [
@@ -2134,6 +2182,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-17"
+},
+{
+"id": "t20261120t",
+"hook": "5 errores de distribución a evitar",
+"tips": [
+{
+"tip": "Evita pasillos largos sin luz natural",
+"idea": "Eje de circulación fluido iluminado cenitalmente conectando salón y cocina sin tabiques ciegos innecesarios."
+},
+{
+"tip": "Respeta el triángulo de trabajo culinario",
+"idea": "Cocina ergonómica con distancias limpias entre fuegos, fregadero e isla central revestida en nogal mate."
+},
+{
+"tip": "Alinea visuales hacia las ventanas exteriores",
+"idea": "Salón diáfano con vistas directas al ventanal principal sin muebles altos que interrumpan la perspectiva exterior."
+},
+{
+"tip": "Integra almacenaje en muros divisorios continuos",
+"idea": "Pared panelada en sapeli mate que camufla armarios y accesos a estancias privadas de forma limpia."
+},
+{
+"tip": "Zonifica mediante cambios sutiles de pavimento",
+"idea": "Transición limpia entre suelo de madera en espiga y terrazo cálido en cocina sin pletinas vistas."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-20"
 }
 ],
 "obra": [

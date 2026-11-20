@@ -1,5 +1,5 @@
-# Cuaderno de series (2026-11-19)
+# Cuaderno de series (2026-11-20)
 
-- Seguir haciendo: Datos insuficientes para evaluar retención serializada real; el 100% de los reels analizados figura actualmente como «serie None».
-- Dejar de hacer: Publicaciones aisladas que diluyen la fidelización y el hábito de seguimiento.
-- Probar: Lanzar dos series con carátula y número explícito: «Capa a Capa» (martes de técnica) y «Dilemas de Despacho» (jueves de gestión).
+- Seguir haciendo: Datos insuficientes para evaluar retención serializada; el 100% del histórico analizado figura con «serie None».
+- Dejar de hacer: Publicar piezas aisladas sin continuidad de formato ni fidelización de audiencia.
+- Probar: Abrir dos series fijas numeradas: «Capa a Capa» (martes técnico de instalaciones) y «Dilemas de Estudio» (jueves de gestión y delegación).

@@ -1,5 +1,5 @@
-# Cuaderno de directora_creativa (2026-11-19)
+# Cuaderno de directora_creativa (2026-11-20)
 
-- Seguir haciendo: Retos de criterio técnico y despieces analíticos («Solo un arquitecto acierta» y «Capa a capa», líderes con scores >10.8 y hasta 18 guardados).
-- Dejar de hacer: Formatos ambiguos o trillados como «del boceto al render» (retención de apenas 2.560 ms y score bajo).
-- Probar: Detalles constructivos axonométricos en capas aisladas sobre fondo negro UDA y luz cálida rasante.
+- Seguir haciendo: Retos de agudeza técnica y portfolio analítico («Solo un arquitecto acierta», «Capa a capa»), líderes en score (>10.8) y guardados (18).
+- Dejar de hacer: Piezas decorativas residenciales o formatos desgastados («boceto al render», score bajo y retención de 2.560 ms).
+- Probar: Axonometrías de detalle constructivo por capas con iluminación cálida rasante sobre fondo negro UDA, combinando reto profesional y estética editorial.

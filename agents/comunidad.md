@@ -1,8 +1,6 @@
-# Cuaderno de comunidad (2026-11-19)
+# Cuaderno de comunidad (2026-11-20)
 
-# Cuaderno de comunidad (2026-11-19)
-
-• Datos de audiencia: Pocos datos (sin texto en comentarios registrados). El volumen cuantitativo (5-6 comentarios) sube al plantear retos de plano, dudas de instalaciones y distribución de cocinas.
-• Seguir haciendo: Preguntas que reten el criterio del arquitecto y toquen dolores de gestión del despacho.
-• Dejar de hacer: Cierres neutros que no susciten debate profesional.
-• Probar: «¿Cuántas horas le dedica tu estudio a corregir planos de instalaciones antes de visar?».
+• Datos de audiencia: Muy escasos (sin texto en comentarios registrados). El mayor volumen de interacciones (4-6 comentarios) surge con retos técnicos de planos, dudas de distribución de cocinas y debate sobre horas invertidas en planos.
+• Seguir haciendo: Preguntas de fricción operativa y cálculo de tiempos en estudio.
+• Dejar de hacer: Preguntas abiertas sin controversia profesional.
+• Probar: Preguntar directamente: «¿Cuántas horas perdiste revisando instalaciones en tu último proyecto?».
