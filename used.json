@@ -1182,5 +1182,12 @@
 "fecha": "2026-11-20",
 "formato": "visual",
 "grupo": "top"
+},
+{
+"id": "explicado:noche_entrega",
+"tema": "explicado",
+"fecha": "2026-11-20",
+"formato": "visual",
+"grupo": "explicado"
 }
 ]
