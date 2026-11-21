@@ -1102,6 +1102,39 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-20"
+},
+{
+"id": "t20261121g",
+"hook": "¿Vivirías en una casa monocromática?",
+"cierre": "¿Te atreverías en tu salón?",
+"escenas": [
+{
+"idea": "Salón espacioso donde paredes, molduras y techo están bañados en un idéntico tono arcilla terracota bañado por luz de tarde.",
+"label": "Arcilla envolvente"
+},
+{
+"idea": "Zona de lectura con paneles y carpinterías lacadas en verde oliva profundo, con butaca tapizada a juego.",
+"label": "Oliva profundo"
+},
+{
+"idea": "Dormitorio sobrio teñido completamente de marrón chocolate mate, contrastado únicamente por ropa de cama de lino crudo.",
+"label": "Marrón chocolate"
+},
+{
+"idea": "Cocina con puertas escamoteables cerradas de suelo a techo, camufladas en el mismo acabado que los muros adyacentes.",
+"label": "Frontal camuflado"
+},
+{
+"idea": "Baño con lavabo integrado y paredes ejecutadas en microcemento continuo de tono arena, sin juntas perceptibles.",
+"label": "Superficie continua"
+},
+{
+"idea": "Comedor bañado en luz cenital rodeado de panelados verticales de nogal oscuro con texturas de veta viva.",
+"label": "Nogal cálido"
+}
+],
+"tendencia": true,
+"fecha": "2026-11-21"
 }
 ],
 "proceso": [
@@ -1302,6 +1335,13 @@
 "descripcion": "una vivienda luminosa entre medianeras con patio central, paredes de cal y madera oscura mate",
 "tendencia": true,
 "fecha": "2026-11-20"
+},
+{
+"id": "t20261121p",
+"tipo": "casa",
+"descripcion": "una vivienda unifamiliar reformada con frentes de madera oscura e interiores monocromos integrados",
+"tendencia": true,
+"fecha": "2026-11-21"
 }
 ],
 "antes_despues": [
@@ -1526,6 +1566,14 @@
 "estilo": "minimalismo cálido con paredes de cal, terrazo beige continuo y maderas oscuras mates",
 "tendencia": true,
 "fecha": "2026-11-20"
+},
+{
+"id": "t20261121a",
+"tipo": "estancia",
+"descripcion": "una cocina alargada con baldosas cerámicas estampadas de los setenta y muebles de formica descoloridos",
+"estilo": "frente continuo con armarios escamoteables de nogal y encimera oculta integrada",
+"tendencia": true,
+"fecha": "2026-11-21"
 }
 ],
 "tips": [
@@ -2210,6 +2258,34 @@
 ],
 "tendencia": true,
 "fecha": "2026-11-20"
+},
+{
+"id": "t20261121t",
+"hook": "5 claves para unificar con color",
+"tips": [
+{
+"tip": "Pinta techo y rodapié igual",
+"idea": "Salón sereno con molduras clásicas y techo bañados exactamente en el mismo tono verde bosque empolvado."
+},
+{
+"tip": "Elige acabados mates sin brillo",
+"idea": "Primer plano de una pared en tono arcilla donde la luz rasante no produce reflejos gracias a la pintura mate."
+},
+{
+"tip": "Oculta puertas con panelados continuos",
+"idea": "Pasillo revestido en paneles de madera oscura que integran una puerta enrasada sin maneta aparente."
+},
+{
+"tip": "Añade contraste con textiles crudos",
+"idea": "Sofá esquinero en un salón monocromo chocolate suavizado con mantas y cojines de lino natural."
+},
+{
+"tip": "Ilumina con focos cálidos indirectos",
+"idea": "Fosa perimetral de luz cálida bañando verticalmente un paramento continuo de microcemento tostado."
+}
+],
+"tendencia": true,
+"fecha": "2026-11-21"
 }
 ],
 "obra": [

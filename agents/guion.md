@@ -1,5 +1,7 @@
-# Cuaderno de guion (2026-11-20)
+# Cuaderno de guion (2026-11-21)
 
-• Seguir haciendo: Desgloses secuenciales técnicos («Capa a capa», récord de 18 guardados) y muestras de entregables reales de ejecución («Top 4: lo que te llega cuando nos delegas»).
-• Dejar de hacer: Temas aspiracionales o reformas residenciales básicas sin complejidad de visado o normativa.
-• Probar: Guion tipo test de 3 incongruencias habituales entre memoria constructiva y planos de instalaciones que provocan requerimientos municipales.
+# Cuaderno de guion
+
+• Seguir haciendo: Desgloses secuenciales de capas técnicas («Capa a capa», 18 guardados) y entregables reales de proyectos de ejecución que alivian cuellos de botella.
+• Dejar de hacer: Guiones aspiracionales de interiorismo o reformas residenciales simples sin componente normativo ni complejidad de visado.
+• Probar: Guion de rescate: contrastar en 3 pasos el fallo crítico de fontanería/electricidad que tumba una entrega frente a la solución técnica ya modulada por UDA.

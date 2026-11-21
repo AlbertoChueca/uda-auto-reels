@@ -1,5 +1,7 @@
-# Cuaderno de diseno (2026-11-20)
+# Cuaderno de diseno (2026-11-21)
 
-• Seguir haciendo: Infografía técnica animada sobre fondo negro/carbón editorial (monopoliza el top 5) y think_time largo para retener el scroll.
-• Dejar de hacer: Carruseles estáticos (185 views, 0 guardados) y encuadres con baja densidad de información técnica.
-• Probar: Zoom progresivo a planos CAD/BIM destacando grafismos técnicos con acentos en bronce UDA dentro de la zona segura vertical.
+# Cuaderno de diseno
+
+• Seguir haciendo: Infografía técnica animada sobre fondo negro/carbón UDA (monopoliza todo el top 5) con legibilidad editorial sobria.
+• Dejar de hacer: Formato carrusel estático (hundido en 185 views y 0 guardados) y planos estáticos sin dinamismo visual.
+• Probar: Animación rápida de capas superpuestas en CAD/BIM marcando cotas e instalaciones en bronce UDA durante los primeros 2 segundos.

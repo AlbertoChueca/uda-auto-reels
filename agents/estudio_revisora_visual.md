@@ -1,5 +1,5 @@
-# Cuaderno de revisora_visual (2026-11-20)
+# Cuaderno de revisora_visual (2026-11-21)
 
-- Seguir haciendo: Supervisión estricta de encuentros constructivos (duchas enrasadas, griferías empotradas, carpinterías creíbles).
-- Dejar de hacer: Aprobar imágenes residenciales de catálogo que parezcan renders comerciales sin trasfondo arquitectónico real.
-- Probar: Filtro previo implacable: verificar coherencia de forjados, pasos de instalaciones lógicos y ausencia total de grafismos deformados antes de validar.
+- Seguir haciendo: Exigencia de encuentros constructivos verosímiles y lógica de replanteo real de obra.
+- Dejar de hacer: Validar imágenes de interiorismo de catálogo comercial sin trasfondo técnico ni conflicto arquitectónico.
+- Probar: Control implacable contra textos generados por IA, patologías imposibles o incoherencias estructurales antes de aprobar la lámina.

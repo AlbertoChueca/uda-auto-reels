@@ -1,5 +1,5 @@
-# Cuaderno de seo (2026-11-20)
+# Cuaderno de seo (2026-11-21)
 
-- Seguir haciendo: Palabras clave con alta intención profesional: «instalaciones», «proyecto de ejecución», «cerramientos», «despacho».
-- Dejar de hacer: Términos vagos o aspiracionales de bajo impacto («hogar consciente», «del boceto al render»).
-- Probar: Integrar términos técnicos de búsqueda activa en Instagram y LinkedIn: «justificación CTE», «cálculo de instalaciones» y «externalizar delineación».
+- Seguir haciendo: Palabras clave técnicas de búsqueda profesional: «proyecto de ejecución», «instalaciones», «cerramientos», «entregar».
+- Dejar de hacer: Términos decorativos o aspiracionales («hogar consciente», «interior táctil») de baja intención profesional.
+- Probar: Introducir términos con volumen de búsqueda en colegios y despachos: «justificación CTE», «delineación externa» y «cálculo de instalaciones».

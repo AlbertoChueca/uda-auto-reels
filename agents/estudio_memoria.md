@@ -1,5 +1,5 @@
-# Cuaderno de memoria (2026-11-20)
+# Cuaderno de memoria (2026-11-21)
 
-- Seguir haciendo: Desgloses secuenciales y capas técnicas («Capa a capa» sumó 18 guardados; «Solo un arquitecto», 17).
-- Dejar de hacer: Consejos generales de diseño que no se guardan como referencia útil de trabajo.
-- Probar: Fórmulas de comprobación CTE directa con CTA explícito: «Guarda este reel para cuando redactes la memoria de tu próximo proyecto».
+- Seguir haciendo: Desgloses secuenciales y láminas técnicas («Capa a capa» obtuvo 18 guardados; la entrega crítica, 42 guardados).
+- Dejar de hacer: Consejos estéticos generales sin utilidad directa para redactar un proyecto.
+- Probar: Listas de comprobación rápida de cumplimiento CTE con llamada a guardar para la próxima memoria de ejecución.
