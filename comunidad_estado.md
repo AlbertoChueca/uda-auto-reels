@@ -1,15 +1,9 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-20 21:16 UTC · 0 respuestas_
+_Última pasada: 2026-11-21 02:31 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
-| 2026-11-13 | instagram | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
-| 2026-11-13 | tiktok | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
-| 2026-11-13 | linkedin | portfolio | Solo un arquitecto acierta los cuatro | 1 | — |
-| 2026-11-13 | instagram | antes_despues | POV: compras para reformar | 1 | — |
-| 2026-11-13 | tiktok | antes_despues | POV: compras para reformar | 2 | — |
-| 2026-11-13 | linkedin | antes_despues | POV: compras para reformar | 1 | — |
 | 2026-11-14 | tiktok | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
 | 2026-11-14 | linkedin | portfolio | Top 4: lo que te llega cuando nos delega | 1 | — |
 | 2026-11-14 | tiktok | galeria | ¿Pondrías suelo de terracota hoy? | 1 | — |
