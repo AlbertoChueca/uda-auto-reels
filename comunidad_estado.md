@@ -1,6 +1,6 @@
 # Bot de comunidad
 
-_Última pasada: 2026-11-21 02:31 UTC · 0 respuestas_
+_Última pasada: 2026-11-21 11:49 UTC · 0 respuestas_
 
 | Fecha | Red | Tipo | Gancho | Comentarios | Solución publicada |
 |---|---|---|---|---|---|
@@ -34,6 +34,9 @@ _Última pasada: 2026-11-21 02:31 UTC · 0 respuestas_
 | 2026-11-20 | instagram | explicado | Las 21:00 del día antes de entregar | 1 | — |
 | 2026-11-20 | tiktok | explicado | Las 21:00 del día antes de entregar | 1 | — |
 | 2026-11-20 | linkedin | explicado | Las 21:00 del día antes de entregar | 1 | — |
+| 2026-11-21 | instagram | portfolio | Capa a capa: las instalaciones de una vi | 1 | — |
+| 2026-11-21 | tiktok | portfolio | Capa a capa: las instalaciones de una vi | 1 | — |
+| 2026-11-21 | linkedin | portfolio | Capa a capa: las instalaciones de una vi | 1 | — |
 | 2026-11-17 | tiktok | carrusel | Punto de partida del proyecto | 0 | — |
 | 2026-11-17 | linkedin | carrusel | Punto de partida del proyecto | 0 | — |
 | 2026-11-19 | instagram | carrusel | Absorber picos de proyectos | 0 | — |
